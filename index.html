@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S2B 결과 누적 대시보드</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f4f6f8;color:#1f2933;font-family:"Malgun Gothic",Arial,sans-serif;font-size:14px}
+    button,input,select{font:inherit}
+    .app{max-width:1340px;margin:0 auto;padding:22px}
+    .top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:18px}
+    h1{margin:0 0 6px;font-size:24px;letter-spacing:0}
+    h2{margin:0 0 12px;font-size:16px}
+    h3{margin:0 0 8px;font-size:13px;color:#52616f}
+    p{margin:0;color:#667085}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tab,.btn{border:1px solid #cfd7e2;background:#fff;color:#344054;border-radius:8px;padding:9px 13px;cursor:pointer}
+    .tab.active,.btn.primary{background:#1f5f99;color:#fff;border-color:#1f5f99}
+    .btn.warn{border-color:#efb5ac;color:#a43b2d;background:#fff7f5}
+    .btn:disabled{opacity:.55;cursor:not-allowed}
+    .panel{display:none}
+    .panel.active{display:block}
+    .section{background:#fff;border:1px solid #dde3ea;border-radius:8px;padding:16px;margin-bottom:14px}
+    .upload{display:grid;grid-template-columns:minmax(300px,430px) 1fr;gap:14px}
+    .drop{border:1.5px dashed #9fb3c8;border-radius:8px;padding:18px;background:#fbfdff;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+    .file{width:100%;border:1px solid #cfd7e2;border-radius:8px;padding:10px;background:#fff}
+    .status{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px;color:#667085;font-size:12px}
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .metric{border:1px solid #e4e9ef;background:#fbfcfd;border-radius:8px;padding:12px;min-height:70px}
+    .metric span{color:#667085;font-size:12px}
+    .metric strong{display:block;margin-top:4px;font-size:24px;color:#1f2933}
+    .chips{display:flex;flex-wrap:wrap;gap:6px;max-height:116px;overflow:auto}
+    .chip{display:inline-flex;align-items:center;border:1px solid #c9def5;background:#eef4ff;color:#184f83;border-radius:999px;padding:4px 9px;font-size:12px}
+    .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+    .toolbar input,.toolbar select{height:36px;border:1px solid #cfd7e2;border-radius:8px;padding:0 10px;background:#fff}
+    .toolbar input{min-width:300px}
+    .table-wrap{overflow:auto;border:1px solid #dde3ea;border-radius:8px;background:#fff}
+    table{width:100%;min-width:1040px;border-collapse:collapse}
+    th{position:sticky;top:0;background:#1f5f99;color:#fff;text-align:left;font-size:12px;font-weight:700;padding:10px;z-index:1}
+    td{border-bottom:1px solid #edf1f5;padding:9px 10px;vertical-align:top}
+    tr:hover td{background:#f8fbff}
+    .num{text-align:right;white-space:nowrap}
+    .center{text-align:center}
+    .muted{color:#667085;font-size:12px}
+    .link{color:#145ea8;text-decoration:none}
+    .tag{display:inline-block;background:#eef4ff;color:#184f83;border-radius:999px;padding:2px 7px;margin:2px 3px 0 0;font-size:11px}
+    .empty{padding:38px;text-align:center;color:#98a2b3}
+    .group-row td{background:#eef2f6!important;font-weight:700;color:#344054}
+    .danger{color:#b42318}
+    .ok{color:#1d7f45}
+    .right{margin-left:auto}
+    .hidden-file{display:none}
+    @media(max-width:920px){
+      .app{padding:14px}
+      .top{align-items:flex-start;flex-direction:column}
+      .upload,.summary{grid-template-columns:1fr}
+      .toolbar input{width:100%;min-width:0}
+      .right{margin-left:0}
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="top">
+      <div>
+        <h1>S2B 결과 누적 대시보드</h1>
+        <p>로컬 Python 크롤러가 만든 결과 HTML을 누적 관리합니다.</p>
+      </div>
+      <div class="tabs">
+        <button class="tab active" data-tab="today">오늘의 검색 결과</button>
+        <button class="tab" data-tab="cumulative">누적 검색 결과</button>
+      </div>
+    </div>
+
+    <section id="today" class="panel active">
+      <div class="section upload">
+        <div class="drop" id="dropZone">
+          <h2>결과 HTML 업로드</h2>
+          <input id="fileInput" class="file" type="file" accept=".html,.htm,text/html">
+          <div class="status">
+            <button id="importBtn" class="btn primary">업로드 반영</button>
+            <span id="uploadStatus">파일을 선택해 주세요.</span>
+          </div>
+        </div>
+        <div>
+          <h2>업로드 정보</h2>
+          <div class="summary">
+            <div class="metric"><span>이번 결과</span><strong id="todayTotal">0</strong></div>
+            <div class="metric"><span>신규 추가</span><strong id="newTotal">0</strong></div>
+            <div class="metric"><span>업데이트</span><strong id="updatedTotal">0</strong></div>
+            <div class="metric"><span>검색 기간</span><strong id="periodText">-</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="toolbar">
+          <input id="todaySearch" placeholder="오늘 결과 검색">
+          <select id="todaySchool">
+            <option value="all">전체 기관</option>
+            <option value="초">초등학교</option>
+            <option value="중">중학교</option>
+            <option value="고">고등학교</option>
+            <option value="기타">기타</option>
+          </select>
+          <select id="todayGroup">
+            <option value="none">묶지 않음</option>
+            <option value="counterpart">계약대상자별 묶기</option>
+            <option value="institution">계약기관별 묶기</option>
+          </select>
+        </div>
+        <div id="todayTable" class="table-wrap"></div>
+      </div>
+    </section>
+
+    <section id="cumulative" class="panel">
+      <div class="section">
+        <div class="toolbar">
+          <input id="cumSearch" placeholder="누적 결과 검색">
+          <select id="cumSchool">
+            <option value="all">전체 기관</option>
+            <option value="초">초등학교</option>
+            <option value="중">중학교</option>
+            <option value="고">고등학교</option>
+            <option value="기타">기타</option>
+          </select>
+          <select id="cumGroup">
+            <option value="none">묶지 않음</option>
+            <option value="counterpart">계약대상자별 묶기</option>
+            <option value="institution">계약기관별 묶기</option>
+          </select>
+          <button id="exportBtn" class="btn">JSON 내보내기</button>
+          <button id="importJsonBtn" class="btn">JSON 가져오기</button>
+          <input id="jsonInput" class="hidden-file" type="file" accept=".json,application/json">
+          <button id="clearBtn" class="btn warn right">누적 초기화</button>
+        </div>
+        <div class="summary" style="margin-bottom:12px">
+          <div class="metric"><span>누적 결과</span><strong id="cumTotal">0</strong></div>
+          <div class="metric"><span>현재 표시</span><strong id="cumVisible">0</strong></div>
+          <div class="metric"><span>계약대상자</span><strong id="counterpartTotal">0</strong></div>
+          <div class="metric"><span>마지막 반영</span><strong id="lastImported">-</strong></div>
+        </div>
+        <div id="cumTable" class="table-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const STORE_KEY = "s2b_cumulative_records_v1";
+    const META_KEY = "s2b_cumulative_meta_v1";
+    const state = {
+      today: [],
+      cumulative: loadRecords(),
+      meta: loadMeta(),
+      pendingFile: null,
+      lastMerge: { added: 0, updated: 0 }
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function loadRecords() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(STORE_KEY) || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function loadMeta() {
+      try {
+        return JSON.parse(localStorage.getItem(META_KEY) || "{}") || {};
+      } catch {
+        return {};
+      }
+    }
+
+    function saveRecords() {
+      localStorage.setItem(STORE_KEY, JSON.stringify(state.cumulative));
+      localStorage.setItem(META_KEY, JSON.stringify(state.meta));
+    }
+
+    function parseS2bHtml(html, filename) {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      const period = extractPeriod(doc, filename);
+      const rows = [...doc.querySelectorAll("#tbody tr")];
+      const records = rows.map((row, index) => parseResultRow(row, index, period, filename)).filter(Boolean);
+      if (!records.length) {
+        throw new Error("결과 테이블을 찾지 못했습니다. s2b_result_*.html 파일인지 확인해 주세요.");
+      }
+      return { records, period };
+    }
+
+    function extractPeriod(doc, filename) {
+      const text = doc.body ? doc.body.innerText.replace(/\s+/g, " ") : "";
+      const title = doc.title || "";
+      const source = `${text} ${title} ${filename || ""}`;
+      const match = source.match(/(20\d{2})[.\-](\d{2})[.\-](\d{2})\s*~\s*(20\d{2})[.\-](\d{2})[.\-](\d{2})/);
+      if (match) {
+        return {
+          from: `${match[1]}.${match[2]}.${match[3]}`,
+          to: `${match[4]}.${match[5]}.${match[6]}`,
+          label: `${match[1]}.${match[2]}.${match[3]} ~ ${match[4]}.${match[5]}.${match[6]}`
+        };
+      }
+      const dateMatch = (filename || "").match(/(20\d{2})(\d{2})(\d{2})/);
+      if (dateMatch) {
+        const label = `${dateMatch[1]}.${dateMatch[2]}.${dateMatch[3]}`;
+        return { from: label, to: label, label };
+      }
+      return { from: "", to: "", label: "-" };
+    }
+
+    function parseResultRow(row, index, period, filename) {
+      const cells = [...row.querySelectorAll("td")];
+      if (cells.length < 6) return null;
+      const link = cells[1].querySelector("a");
+      const keywords = [...cells[1].querySelectorAll(".tag")].map((tag) => cleanText(tag.textContent)).filter(Boolean);
+      const nameText = link ? cleanText(link.textContent.replace("↗", "")) : cleanText(cells[1].childNodes[0]?.textContent || cells[1].textContent);
+      const href = link ? link.href : "";
+      const tenderNo = extractTenderNo(href);
+      const institution = cleanText(cells[2].textContent);
+      const counterpart = cleanText(cells[3].textContent);
+      const amount = cleanText(cells[4].textContent);
+      const contractDate = cleanText(cells[5].textContent);
+      const fallbackKey = [nameText, institution, counterpart, amount, contractDate].join("|");
+      return {
+        id: tenderNo || hashString(fallbackKey),
+        tender_no: tenderNo,
+        contract_name: nameText,
+        institution,
+        counterpart,
+        amount,
+        contract_date: contractDate,
+        keywords,
+        link: href,
+        school_level: schoolLevel(institution),
+        source_file: filename || "",
+        search_period_from: period.from,
+        search_period_to: period.to,
+        first_imported_at: "",
+        last_imported_at: "",
+        import_count: 0,
+        row_index: index + 1
+      };
+    }
+
+    function extractTenderNo(href) {
+      if (!href) return "";
+      try {
+        const url = new URL(href, location.href);
+        return url.searchParams.get("tender_num") || "";
+      } catch {
+        const match = href.match(/tender_num=([^&]+)/);
+        return match ? decodeURIComponent(match[1]) : "";
+      }
+    }
+
+    function mergeRecords(records) {
+      const now = nowText();
+      let added = 0;
+      let updated = 0;
+      const byId = new Map(state.cumulative.map((record) => [record.id, record]));
+
+      records.forEach((incoming) => {
+        const existing = byId.get(incoming.id);
+        if (!existing) {
+          incoming.first_imported_at = now;
+          incoming.last_imported_at = now;
+          incoming.import_count = 1;
+          byId.set(incoming.id, incoming);
+          added += 1;
+          return;
+        }
+
+        const keywordSet = new Set([...(existing.keywords || []), ...(incoming.keywords || [])]);
+        Object.assign(existing, {
+          tender_no: incoming.tender_no || existing.tender_no,
+          contract_name: incoming.contract_name || existing.contract_name,
+          institution: incoming.institution || existing.institution,
+          counterpart: incoming.counterpart || existing.counterpart,
+          amount: incoming.amount || existing.amount,
+          contract_date: incoming.contract_date || existing.contract_date,
+          link: incoming.link || existing.link,
+          school_level: schoolLevel(incoming.institution || existing.institution),
+          source_file: incoming.source_file || existing.source_file,
+          search_period_from: incoming.search_period_from || existing.search_period_from,
+          search_period_to: incoming.search_period_to || existing.search_period_to,
+          keywords: [...keywordSet].sort((a, b) => a.localeCompare(b, "ko")),
+          last_imported_at: now,
+          import_count: Number(existing.import_count || 0) + 1
+        });
+        updated += 1;
+      });
+
+      state.cumulative = [...byId.values()].sort(compareRecords);
+      state.meta.lastImportedAt = now;
+      state.lastMerge = { added, updated };
+      saveRecords();
+      return state.lastMerge;
+    }
+
+    function compareRecords(a, b) {
+      return String(b.last_imported_at || "").localeCompare(String(a.last_imported_at || "")) ||
+        String(b.contract_date || "").localeCompare(String(a.contract_date || "")) ||
+        String(a.contract_name || "").localeCompare(String(b.contract_name || ""), "ko");
+    }
+
+    function schoolLevel(institution) {
+      const text = institution || "";
+      if (text.includes("초등학교") || /(^|[^가-힣])초($|[^가-힣])/.test(text)) return "초";
+      if (text.includes("중학교") || /(^|[^가-힣])중($|[^가-힣])/.test(text)) return "중";
+      if (text.includes("고등학교") || /(^|[^가-힣])고($|[^가-힣])/.test(text)) return "고";
+      return "기타";
+    }
+
+    function filterRecords(records, searchId, schoolId) {
+      const q = $(searchId).value.trim().toLowerCase();
+      const school = $(schoolId).value;
+      return records.filter((record) => {
+        const schoolOk = school === "all" || record.school_level === school;
+        const textOk = !q || recordText(record).includes(q);
+        return schoolOk && textOk;
+      });
+    }
+
+    function recordText(record) {
+      return [
+        record.contract_name,
+        record.tender_no,
+        record.institution,
+        record.counterpart,
+        record.amount,
+        record.contract_date,
+        record.search_period_from,
+        record.search_period_to,
+        ...(record.keywords || [])
+      ].join(" ").toLowerCase();
+    }
+
+    function renderTable(targetId, records, groupMode) {
+      if (!records.length) {
+        $(targetId).innerHTML = '<div class="empty">표시할 결과가 없습니다.</div>';
+        return;
+      }
+
+      const groups = buildGroups(records, groupMode);
+      let no = 1;
+      let html = '<table><thead><tr><th>No</th><th>계약명</th><th>계약기관</th><th>구분</th><th>계약대상자</th><th>금액</th><th>계약체결일</th><th>키워드</th><th>반영</th></tr></thead><tbody>';
+      groups.forEach((group) => {
+        if (group.title) {
+          html += `<tr class="group-row"><td colspan="9">${escapeHtml(group.title)} · ${group.rows.length}건</td></tr>`;
+        }
+        group.rows.forEach((record) => {
+          const name = record.link
+            ? `<a class="link" href="${escapeAttr(record.link)}" target="_blank" rel="noopener">${escapeHtml(record.contract_name)}</a>`
+            : escapeHtml(record.contract_name);
+          const tags = (record.keywords || []).map((keyword) => `<span class="tag">${escapeHtml(keyword)}</span>`).join("");
+          html += `<tr>
+            <td class="center">${no++}</td>
+            <td>${name}<div class="muted">${escapeHtml(record.tender_no || record.id || "")}</div></td>
+            <td>${escapeHtml(record.institution || "")}</td>
+            <td class="center">${escapeHtml(record.school_level || "기타")}</td>
+            <td>${escapeHtml(record.counterpart || "")}</td>
+            <td class="num">${escapeHtml(record.amount || "")}</td>
+            <td class="center">${escapeHtml(record.contract_date || "")}</td>
+            <td>${tags}</td>
+            <td class="center">${escapeHtml(String(record.import_count || ""))}</td>
+          </tr>`;
+        });
+      });
+      html += "</tbody></table>";
+      $(targetId).innerHTML = html;
+    }
+
+    function buildGroups(records, mode) {
+      if (mode === "none") return [{ title: "", rows: records }];
+      const field = mode === "institution" ? "institution" : "counterpart";
+      const fallback = mode === "institution" ? "계약기관 미기재" : "계약대상자 미기재";
+      const map = new Map();
+      records.forEach((record) => {
+        const key = record[field] || fallback;
+        if (!map.has(key)) map.set(key, []);
+        map.get(key).push(record);
+      });
+      return [...map.entries()]
+        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "ko"))
+        .map(([title, rows]) => ({ title, rows }));
+    }
+
+    function renderToday() {
+      const rows = filterRecords(state.today, "todaySearch", "todaySchool");
+      renderTable("todayTable", rows, $("todayGroup").value);
+      $("todayTotal").textContent = state.today.length;
+      $("newTotal").textContent = state.lastMerge.added;
+      $("updatedTotal").textContent = state.lastMerge.updated;
+    }
+
+    function renderCumulative() {
+      const rows = filterRecords(state.cumulative, "cumSearch", "cumSchool");
+      const counterpartCount = new Set(rows.map((record) => record.counterpart).filter(Boolean)).size;
+      $("cumTotal").textContent = state.cumulative.length;
+      $("cumVisible").textContent = rows.length;
+      $("counterpartTotal").textContent = counterpartCount;
+      $("lastImported").textContent = state.meta.lastImportedAt || "-";
+      renderTable("cumTable", rows, $("cumGroup").value);
+    }
+
+    async function importSelectedFile() {
+      const file = state.pendingFile || $("fileInput").files[0];
+      if (!file) {
+        setUploadStatus("파일을 선택해 주세요.", "danger");
+        return;
+      }
+
+      try {
+        const html = await file.text();
+        const parsed = parseS2bHtml(html, file.name);
+        state.today = parsed.records;
+        $("periodText").textContent = parsed.period.label;
+        const merge = mergeRecords(parsed.records);
+        setUploadStatus(`${file.name} · ${parsed.records.length}건 반영`, "ok");
+        state.lastMerge = merge;
+        renderToday();
+        renderCumulative();
+      } catch (error) {
+        setUploadStatus(error.message || "업로드 처리 중 오류가 발생했습니다.", "danger");
+      }
+    }
+
+    function exportJson() {
+      const payload = {
+        exported_at: nowText(),
+        records: state.cumulative,
+        meta: state.meta
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `s2b_cumulative_${dateStamp()}.json`;
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    async function importJsonFile(file) {
+      if (!file) return;
+      try {
+        const data = JSON.parse(await file.text());
+        const records = Array.isArray(data) ? data : data.records;
+        if (!Array.isArray(records)) throw new Error("records 배열을 찾지 못했습니다.");
+        const normalized = records.map((record) => ({
+          ...record,
+          id: record.id || record.tender_no || hashString(record.contract_name + record.institution + record.contract_date),
+          school_level: record.school_level || schoolLevel(record.institution)
+        }));
+        state.cumulative = normalized.sort(compareRecords);
+        state.meta = data.meta || state.meta || {};
+        state.meta.lastImportedAt = state.meta.lastImportedAt || nowText();
+        saveRecords();
+        renderCumulative();
+      } catch (error) {
+        alert(error.message || "JSON을 가져오지 못했습니다.");
+      }
+    }
+
+    function clearCumulative() {
+      if (!confirm("누적 데이터를 초기화할까요? 브라우저에 저장된 데이터가 삭제됩니다.")) return;
+      state.cumulative = [];
+      state.meta = {};
+      state.lastMerge = { added: 0, updated: 0 };
+      saveRecords();
+      renderToday();
+      renderCumulative();
+    }
+
+    function setUploadStatus(message, type) {
+      $("uploadStatus").className = type || "";
+      $("uploadStatus").textContent = message;
+    }
+
+    function cleanText(value) {
+      return String(value || "").replace(/\s+/g, " ").trim();
+    }
+
+    function nowText() {
+      const d = new Date();
+      const pad = (n) => String(n).padStart(2, "0");
+      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+    }
+
+    function dateStamp() {
+      const d = new Date();
+      const pad = (n) => String(n).padStart(2, "0");
+      return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
+    }
+
+    function hashString(value) {
+      let hash = 5381;
+      for (let i = 0; i < value.length; i += 1) {
+        hash = ((hash << 5) + hash) + value.charCodeAt(i);
+        hash >>>= 0;
+      }
+      return `local-${hash.toString(16)}`;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[ch]));
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value).replace(/`/g, "&#96;");
+    }
+
+    document.querySelectorAll(".tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach((item) => item.classList.remove("active"));
+        document.querySelectorAll(".panel").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        $(button.dataset.tab).classList.add("active");
+        renderCumulative();
+      });
+    });
+
+    $("fileInput").addEventListener("change", (event) => {
+      state.pendingFile = event.target.files[0] || null;
+      setUploadStatus(state.pendingFile ? state.pendingFile.name : "파일을 선택해 주세요.");
+    });
+    $("importBtn").addEventListener("click", importSelectedFile);
+    $("exportBtn").addEventListener("click", exportJson);
+    $("importJsonBtn").addEventListener("click", () => $("jsonInput").click());
+    $("jsonInput").addEventListener("change", (event) => importJsonFile(event.target.files[0]));
+    $("clearBtn").addEventListener("click", clearCumulative);
+
+    ["todaySearch", "todaySchool", "todayGroup"].forEach((id) => $(id).addEventListener("input", renderToday));
+    ["cumSearch", "cumSchool", "cumGroup"].forEach((id) => $(id).addEventListener("input", renderCumulative));
+
+    const dropZone = $("dropZone");
+    dropZone.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      dropZone.style.borderColor = "#1f5f99";
+    });
+    dropZone.addEventListener("dragleave", () => {
+      dropZone.style.borderColor = "#9fb3c8";
+    });
+    dropZone.addEventListener("drop", (event) => {
+      event.preventDefault();
+      dropZone.style.borderColor = "#9fb3c8";
+      state.pendingFile = event.dataTransfer.files[0] || null;
+      if (state.pendingFile) {
+        $("fileInput").value = "";
+        setUploadStatus(state.pendingFile.name);
+        importSelectedFile();
+      }
+    });
+
+    renderToday();
+    renderCumulative();
+  </script>
+</body>
+</html>
