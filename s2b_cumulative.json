@@ -23,7 +23,21 @@
       "id": "202607061353601",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "송악중학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 송악읍 송악로 165",
+          "school_code": "8291014"
+        }
+      ]
     },
     {
       "tender_no": "202607061351143",
@@ -43,7 +57,21 @@
       "id": "202607061351143",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "경주정보고등학교",
+          "region": "경북",
+          "district": "경주시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 경주시 충효7길 19",
+          "school_code": "8750433"
+        }
+      ]
     },
     {
       "tender_no": "202607061352138",
@@ -64,7 +92,21 @@
       "id": "202607061352138",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "가북초등학교",
+          "region": "경남",
+          "district": "거창군",
+          "education_office": "경상남도교육청",
+          "support_office": "거창교육지원청",
+          "address": "경상남도 거창군 가북면 가북로 628",
+          "school_code": "9211004"
+        }
+      ]
     },
     {
       "tender_no": "202607061351979",
@@ -84,7 +126,21 @@
       "id": "202607061351979",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대안여자중학교",
+          "region": "경기",
+          "district": "안양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안양과천교육지원청",
+          "address": "경기도 안양시 동안구 흥안대로223번길 46",
+          "school_code": "7569058"
+        }
+      ]
     },
     {
       "tender_no": "202607031348763",
@@ -104,7 +160,21 @@
       "id": "202607031348763",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전곡고등학교",
+          "region": "경기",
+          "district": "연천군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 연천군 전곡읍 전은길 9-89",
+          "school_code": "7530580"
+        }
+      ]
     },
     {
       "tender_no": "202607061354001",
@@ -124,7 +194,11 @@
       "id": "202607061354001",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061352769",
@@ -144,7 +218,11 @@
       "id": "202607061352769",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061352768",
@@ -164,7 +242,11 @@
       "id": "202607061352768",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061353010",
@@ -184,7 +266,21 @@
       "id": "202607061353010",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "옥정고등학교",
+          "region": "경기",
+          "district": "양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 양주시 옥정로7길 47",
+          "school_code": "7531158"
+        }
+      ]
     },
     {
       "tender_no": "202607021345637",
@@ -204,7 +300,11 @@
       "id": "202607021345637",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607021345601",
@@ -224,7 +324,30 @@
       "id": "202607021345601",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고창중학교",
+          "region": "경기",
+          "district": "김포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도김포교육지원청",
+          "address": "경기도 김포시 초당로 15",
+          "school_code": "7771073"
+        },
+        {
+          "school_name": "고창중학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도고창교육지원청",
+          "address": "전북특별자치도 고창군 고창읍 보릿골로 35",
+          "school_code": "8452049"
+        }
+      ]
     },
     {
       "tender_no": "202607061351392",
@@ -244,7 +367,21 @@
       "id": "202607061351392",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대진전자통신고등학교",
+          "region": "부산",
+          "district": "금정구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 금정구 수림로 92",
+          "school_code": "7150597"
+        }
+      ]
     },
     {
       "tender_no": "202607061353801",
@@ -264,7 +401,11 @@
       "id": "202607061353801",
       "school_level": "기타",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "세종",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061353997",
@@ -284,7 +425,21 @@
       "id": "202607061353997",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장흥관산중학교",
+          "region": "광주",
+          "district": "장흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장흥교육지원청",
+          "address": "전남광주통합특별시 장흥군 관산읍 죽교상하발로 41",
+          "school_code": "8622004"
+        }
+      ]
     },
     {
       "tender_no": "202607061353996",
@@ -304,7 +459,21 @@
       "id": "202607061353996",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장흥관산중학교",
+          "region": "광주",
+          "district": "장흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장흥교육지원청",
+          "address": "전남광주통합특별시 장흥군 관산읍 죽교상하발로 41",
+          "school_code": "8622004"
+        }
+      ]
     },
     {
       "tender_no": "202607061352617",
@@ -324,7 +493,21 @@
       "id": "202607061352617",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부원고등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 이천시 장호원읍 서동대로 8857",
+          "school_code": "7530842"
+        }
+      ]
     },
     {
       "tender_no": "202607061352616",
@@ -344,7 +527,21 @@
       "id": "202607061352616",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부원고등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 이천시 장호원읍 서동대로 8857",
+          "school_code": "7530842"
+        }
+      ]
     },
     {
       "tender_no": "202607061351426",
@@ -364,7 +561,11 @@
       "id": "202607061351426",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349686",
@@ -384,7 +585,21 @@
       "id": "202607031349686",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "설봉중학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 향교로 117",
+          "school_code": "7741008"
+        }
+      ]
     },
     {
       "tender_no": "202607061351974",
@@ -404,7 +619,21 @@
       "id": "202607061351974",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "녹수초등학교",
+          "region": "울산",
+          "district": "동구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 동구 봉수로 545",
+          "school_code": "7491097"
+        }
+      ]
     },
     {
       "tender_no": "202607061352325",
@@ -424,7 +653,30 @@
       "id": "202607061352325",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "민락초등학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 수영구 광남로257번길 12",
+          "school_code": "7211048"
+        },
+        {
+          "school_name": "민락초등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도의정부교육지원청",
+          "address": "경기도 의정부시 용현로159번길 26",
+          "school_code": "7561043"
+        }
+      ]
     },
     {
       "tender_no": "202607061352323",
@@ -444,7 +696,30 @@
       "id": "202607061352323",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "민락초등학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 수영구 광남로257번길 12",
+          "school_code": "7211048"
+        },
+        {
+          "school_name": "민락초등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도의정부교육지원청",
+          "address": "경기도 의정부시 용현로159번길 26",
+          "school_code": "7561043"
+        }
+      ]
     },
     {
       "tender_no": "202607061353112",
@@ -464,7 +739,11 @@
       "id": "202607061353112",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061350677",
@@ -484,7 +763,21 @@
       "id": "202607061350677",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신서고등학교",
+          "region": "서울",
+          "district": "양천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 양천구 은행정로 42",
+          "school_code": "7010765"
+        }
+      ]
     },
     {
       "tender_no": "202607061354020",
@@ -504,7 +797,11 @@
       "id": "202607061354020",
       "school_level": "기타",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "전북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061350891",
@@ -524,7 +821,21 @@
       "id": "202607061350891",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고색고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 권선구 서둔로17번길 32",
+          "school_code": "7530878"
+        }
+      ]
     },
     {
       "tender_no": "202607031348125",
@@ -544,7 +855,21 @@
       "id": "202607031348125",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동원동우고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 장안구 장안로 426-1",
+          "school_code": "7531598"
+        }
+      ]
     },
     {
       "tender_no": "202607061351216",
@@ -564,7 +889,30 @@
       "id": "202607061351216",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동곡초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 동곡로 151-17",
+          "school_code": "7402208"
+        },
+        {
+          "school_name": "동곡초등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도부천교육지원청",
+          "address": "경기도 부천시 안곡로 248",
+          "school_code": "7581048"
+        }
+      ]
     },
     {
       "tender_no": "202607061352036",
@@ -584,7 +932,21 @@
       "id": "202607061352036",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "송정여자중학교",
+          "region": "경북",
+          "district": "구미시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도구미교육지원청",
+          "address": "경상북도 구미시 송정대로6길 72-12",
+          "school_code": "8801149"
+        }
+      ]
     },
     {
       "tender_no": "202607021346313",
@@ -605,7 +967,21 @@
       "id": "202607021346313",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "휘봉고등학교",
+          "region": "서울",
+          "district": "동대문구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 동대문구 한천로 290",
+          "school_code": "7011113"
+        }
+      ]
     },
     {
       "tender_no": "202607061351688",
@@ -625,7 +1001,21 @@
       "id": "202607061351688",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "도둔초등학교",
+          "region": "경기",
+          "district": "양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도동두천양주교육지원청",
+          "address": "경기도 양주시 덕계로3길 51",
+          "school_code": "7602023"
+        }
+      ]
     },
     {
       "tender_no": "202607061352110",
@@ -645,7 +1035,39 @@
       "id": "202607061352110",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고산초등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도의정부교육지원청",
+          "address": "경기도 의정부시 문화로 41",
+          "school_code": "7561019"
+        },
+        {
+          "school_name": "고산초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 호저면 호저로 873",
+          "school_code": "7822079"
+        },
+        {
+          "school_name": "고산초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 고대면 서집들길 55",
+          "school_code": "8291020"
+        }
+      ]
     },
     {
       "tender_no": "202607061352109",
@@ -665,7 +1087,39 @@
       "id": "202607061352109",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고산초등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도의정부교육지원청",
+          "address": "경기도 의정부시 문화로 41",
+          "school_code": "7561019"
+        },
+        {
+          "school_name": "고산초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 호저면 호저로 873",
+          "school_code": "7822079"
+        },
+        {
+          "school_name": "고산초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 고대면 서집들길 55",
+          "school_code": "8291020"
+        }
+      ]
     },
     {
       "tender_no": "202606291338910",
@@ -685,7 +1139,30 @@
       "id": "202606291338910",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "아라초등학교",
+          "region": "경남",
+          "district": "함안군",
+          "education_office": "경상남도교육청",
+          "support_office": "함안교육지원청",
+          "address": "경상남도 함안군 가야읍 함안대로 491",
+          "school_code": "9131012"
+        },
+        {
+          "school_name": "아라초등학교",
+          "region": "제주",
+          "district": "제주시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "제주시교육지원청",
+          "address": "제주특별자치도 제주시 중앙로 518",
+          "school_code": "9296053"
+        }
+      ]
     },
     {
       "tender_no": "202607061350929",
@@ -707,7 +1184,21 @@
       "id": "202607061350929",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "포항중앙여자고등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 포항시 북구 소티재로151번길 7",
+          "school_code": "8750212"
+        }
+      ]
     },
     {
       "tender_no": "202607021345084",
@@ -727,7 +1218,11 @@
       "id": "202607021345084",
       "school_level": "기타",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061353305",
@@ -748,7 +1243,11 @@
       "id": "202607061353305",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202606171315410",
@@ -768,7 +1267,21 @@
       "id": "202606171315410",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "옥과초등학교",
+          "region": "광주",
+          "district": "곡성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시곡성교육지원청",
+          "address": "전남광주통합특별시 곡성군 옥과면 대학로 213",
+          "school_code": "8572011"
+        }
+      ]
     },
     {
       "tender_no": "202607061351163",
@@ -788,7 +1301,21 @@
       "id": "202607061351163",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "강남초등학교",
+          "region": "울산",
+          "district": "남구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 남구 중앙로166번길 51",
+          "school_code": "7501038"
+        }
+      ]
     },
     {
       "tender_no": "202607061352101",
@@ -810,7 +1337,21 @@
       "id": "202607061352101",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "가북초등학교",
+          "region": "경남",
+          "district": "거창군",
+          "education_office": "경상남도교육청",
+          "support_office": "거창교육지원청",
+          "address": "경상남도 거창군 가북면 가북로 628",
+          "school_code": "9211004"
+        }
+      ]
     },
     {
       "tender_no": "202607061353491",
@@ -830,7 +1371,21 @@
       "id": "202607061353491",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대원외국어고등학교",
+          "region": "서울",
+          "district": "광진구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 광진구 용마산로22길 26",
+          "school_code": "7010143"
+        }
+      ]
     },
     {
       "tender_no": "202607061350548",
@@ -850,7 +1405,21 @@
       "id": "202607061350548",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "인평자동차고등학교",
+          "region": "인천",
+          "district": "부평구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 부평구 화랑로 111",
+          "school_code": "7310479"
+        }
+      ]
     },
     {
       "tender_no": "202607061350524",
@@ -870,7 +1439,21 @@
       "id": "202607061350524",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연무여자중학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연무읍 동안로887번길 5",
+          "school_code": "8222018"
+        }
+      ]
     },
     {
       "tender_no": "202607061352392",
@@ -890,7 +1473,21 @@
       "id": "202607061352392",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "교하고등학교",
+          "region": "경기",
+          "district": "파주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 파주시 책향기로 180",
+          "school_code": "7530774"
+        }
+      ]
     },
     {
       "tender_no": "202607061351147",
@@ -910,7 +1507,21 @@
       "id": "202607061351147",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "포항여자중학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 장미길 49",
+          "school_code": "8761198"
+        }
+      ]
     },
     {
       "tender_no": "202607061351127",
@@ -930,7 +1541,21 @@
       "id": "202607061351127",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포대연초등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시목포교육지원청",
+          "address": "전남광주통합특별시 목포시 용당로 374",
+          "school_code": "8502037"
+        }
+      ]
     },
     {
       "tender_no": "202607061351125",
@@ -950,7 +1575,21 @@
       "id": "202607061351125",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포대연초등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시목포교육지원청",
+          "address": "전남광주통합특별시 목포시 용당로 374",
+          "school_code": "8502037"
+        }
+      ]
     },
     {
       "tender_no": "202607061350871",
@@ -970,7 +1609,21 @@
       "id": "202607061350871",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한국국제비즈니스고등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 논산시 연산면 계백로 1958-16",
+          "school_code": "8140510"
+        }
+      ]
     },
     {
       "tender_no": "202607061351478",
@@ -990,7 +1643,11 @@
       "id": "202607061351478",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061353180",
@@ -1010,7 +1667,21 @@
       "id": "202607061353180",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "다산한강초등학교",
+          "region": "경기",
+          "district": "남양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도구리남양주교육지원청",
+          "address": "경기도 남양주시 다산지금로146번길 11",
+          "school_code": "7652305"
+        }
+      ]
     },
     {
       "tender_no": "202607061353667",
@@ -1030,7 +1701,11 @@
       "id": "202607061353667",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031348020",
@@ -1050,7 +1725,21 @@
       "id": "202607031348020",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "도제원초등학교",
+          "region": "경기",
+          "district": "남양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도구리남양주교육지원청",
+          "address": "경기도 남양주시 퇴계원읍 경춘북로558번길 10-1",
+          "school_code": "7652063"
+        }
+      ]
     },
     {
       "tender_no": "202607061353409",
@@ -1070,7 +1759,11 @@
       "id": "202607061353409",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349190",
@@ -1090,7 +1783,11 @@
       "id": "202607031349190",
       "school_level": "기타",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607061353732",
@@ -1110,7 +1807,21 @@
       "id": "202607061353732",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해룡초등학교",
+          "region": "광주",
+          "district": "순천시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시순천교육지원청",
+          "address": "전남광주통합특별시 순천시 해룡면 해룡로 1119",
+          "school_code": "8522046"
+        }
+      ]
     },
     {
       "tender_no": "202607061351172",
@@ -1130,7 +1841,21 @@
       "id": "202607061351172",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해솔중학교",
+          "region": "경기",
+          "district": "파주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도파주교육지원청",
+          "address": "경기도 파주시 해솔로 60",
+          "school_code": "7681151"
+        }
+      ]
     },
     {
       "tender_no": "202607061351595",
@@ -1150,7 +1875,21 @@
       "id": "202607061351595",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "공주여자고등학교",
+          "region": "충남",
+          "district": "공주시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 공주시 공주여고길 14-1",
+          "school_code": "8140037"
+        }
+      ]
     },
     {
       "tender_no": "202607061351852",
@@ -1170,7 +1909,21 @@
       "id": "202607061351852",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구미여자상업고등학교",
+          "region": "경북",
+          "district": "구미시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 구미시 형곡로38길 9-14",
+          "school_code": "8750611"
+        }
+      ]
     },
     {
       "tender_no": "202607061351038",
@@ -1190,7 +1943,21 @@
       "id": "202607061351038",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양영초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 불정로406번길 17",
+          "school_code": "7551089"
+        }
+      ]
     },
     {
       "tender_no": "202607061351335",
@@ -1210,7 +1977,30 @@
       "id": "202607061351335",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동곡초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 동곡로 151-17",
+          "school_code": "7402208"
+        },
+        {
+          "school_name": "동곡초등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도부천교육지원청",
+          "address": "경기도 부천시 안곡로 248",
+          "school_code": "7581048"
+        }
+      ]
     },
     {
       "tender_no": "202607061353203",
@@ -1231,7 +2021,21 @@
       "id": "202607061353203",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "언양초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 언양읍 북문8길 49",
+          "school_code": "7501090"
+        }
+      ]
     },
     {
       "tender_no": "202607031349561",
@@ -1253,7 +2057,39 @@
       "id": "202607031349561",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "일동초등학교",
+          "region": "광주",
+          "district": "북구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주동부교육지원청",
+          "address": "전남광주통합특별시 북구 일곡택지로 45",
+          "school_code": "7392152"
+        },
+        {
+          "school_name": "일동초등학교",
+          "region": "경기",
+          "district": "포천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도포천교육지원청",
+          "address": "경기도 포천시 일동면 화동로 1019",
+          "school_code": "7711036"
+        },
+        {
+          "school_name": "일동초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 의창구 대산면 대산북로 461",
+          "school_code": "9022089"
+        }
+      ]
     },
     {
       "tender_no": "202607061351515",
@@ -1273,7 +2109,21 @@
       "id": "202607061351515",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ]
     },
     {
       "tender_no": "202607061351514",
@@ -1293,7 +2143,21 @@
       "id": "202607061351514",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ]
     },
     {
       "tender_no": "202607061351513",
@@ -1313,7 +2177,21 @@
       "id": "202607061351513",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ]
     },
     {
       "tender_no": "202607061351512",
@@ -1333,7 +2211,21 @@
       "id": "202607061351512",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ]
     },
     {
       "tender_no": "202607061351511",
@@ -1353,7 +2245,21 @@
       "id": "202607061351511",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ]
     },
     {
       "tender_no": "202607061351540",
@@ -1374,7 +2280,21 @@
       "id": "202607061351540",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주송원초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 와룡로 25",
+          "school_code": "8332135"
+        }
+      ]
     },
     {
       "tender_no": "202607031350287",
@@ -1394,7 +2314,21 @@
       "id": "202607031350287",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양주덕산초등학교",
+          "region": "경기",
+          "district": "양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도동두천양주교육지원청",
+          "address": "경기도 양주시 평화로 1418-6",
+          "school_code": "7602061"
+        }
+      ]
     },
     {
       "tender_no": "202607021346004",
@@ -1414,7 +2348,21 @@
       "id": "202607021346004",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군산기계공업고등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 군산시 군중길 28",
+          "school_code": "8321109"
+        }
+      ]
     },
     {
       "tender_no": "202607061351505",
@@ -1435,7 +2383,21 @@
       "id": "202607061351505",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "삼천포중학교",
+          "region": "경남",
+          "district": "사천시",
+          "education_office": "경상남도교육청",
+          "support_office": "사천교육지원청",
+          "address": "경상남도 사천시 벌리6길 77",
+          "school_code": "9081039"
+        }
+      ]
     },
     {
       "tender_no": "202607061353896",
@@ -1455,7 +2417,21 @@
       "id": "202607061353896",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "마산삼진고등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 창원시 마산합포구 진동면 삼진의거대로 661-13",
+          "school_code": "9010242"
+        }
+      ]
     },
     {
       "tender_no": "202606231327897",
@@ -1475,7 +2451,21 @@
       "id": "202606231327897",
       "school_level": "기타",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "소림학교",
+          "region": "광주",
+          "district": "영암군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 영암군 삼호읍 저두길 65-7",
+          "school_code": "7140259"
+        }
+      ]
     },
     {
       "tender_no": "202607061350705",
@@ -1495,7 +2485,21 @@
       "id": "202607061350705",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부광고등학교",
+          "region": "인천",
+          "district": "부평구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 부평구 화랑로 28",
+          "school_code": "7310046"
+        }
+      ]
     },
     {
       "tender_no": "202607061350701",
@@ -1515,7 +2519,21 @@
       "id": "202607061350701",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부광고등학교",
+          "region": "인천",
+          "district": "부평구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 부평구 화랑로 28",
+          "school_code": "7310046"
+        }
+      ]
     },
     {
       "tender_no": "202607061351025",
@@ -1535,7 +2553,21 @@
       "id": "202607061351025",
       "school_level": "고",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조일고등학교",
+          "region": "대구",
+          "district": "동구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 동구 신덕로 136-11",
+          "school_code": "7240402"
+        }
+      ]
     },
     {
       "tender_no": "202607061351294",
@@ -1555,7 +2587,21 @@
       "id": "202607061351294",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "현남중학교",
+          "region": "강원",
+          "district": "양양군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도속초양양교육지원청",
+          "address": "강원도 양양군 현남면 매호길 14",
+          "school_code": "7862011"
+        }
+      ]
     },
     {
       "tender_no": "202607061351293",
@@ -1575,7 +2621,21 @@
       "id": "202607061351293",
       "school_level": "중",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "현남중학교",
+          "region": "강원",
+          "district": "양양군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도속초양양교육지원청",
+          "address": "강원도 양양군 현남면 매호길 14",
+          "school_code": "7862011"
+        }
+      ]
     },
     {
       "tender_no": "202607031348291",
@@ -1597,7 +2657,21 @@
       "id": "202607031348291",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금부초등학교",
+          "region": "광주",
+          "district": "서구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 서구 금화로115번길 22",
+          "school_code": "7402210"
+        }
+      ]
     },
     {
       "tender_no": "202607061351197",
@@ -1617,7 +2691,21 @@
       "id": "202607061351197",
       "school_level": "초",
       "first_imported_at": "2026-07-07 08:34",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영덕야성초등학교",
+          "region": "경북",
+          "district": "영덕군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도영덕교육지원청",
+          "address": "경상북도 영덕군 영덕읍 덕곡길 96",
+          "school_code": "8901044"
+        }
+      ]
     },
     {
       "tender_no": "202607021346966",
@@ -1637,7 +2725,11 @@
       "id": "202607021346966",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349044",
@@ -1657,7 +2749,21 @@
       "id": "202607031349044",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안양공업고등학교",
+          "region": "경기",
+          "district": "안양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 안양시 만안구 양화로28번길 69",
+          "school_code": "7530270"
+        }
+      ]
     },
     {
       "tender_no": "202607031348695",
@@ -1677,7 +2783,21 @@
       "id": "202607031348695",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "봉일천중학교",
+          "region": "경기",
+          "district": "파주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도파주교육지원청",
+          "address": "경기도 파주시 조리읍 두루봉로 47",
+          "school_code": "7681008"
+        }
+      ]
     },
     {
       "tender_no": "202607031348224",
@@ -1697,7 +2817,21 @@
       "id": "202607031348224",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "운유초등학교",
+          "region": "경기",
+          "district": "김포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도김포교육지원청",
+          "address": "경기도 김포시 김포한강2로 239",
+          "school_code": "7771120"
+        }
+      ]
     },
     {
       "tender_no": "202607021346890",
@@ -1717,7 +2851,21 @@
       "id": "202607021346890",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "도래울중학교",
+          "region": "경기",
+          "district": "고양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도고양교육지원청",
+          "address": "경기도 고양시 덕양구 도래울로 57 ",
+          "school_code": "7621327"
+        }
+      ]
     },
     {
       "tender_no": "202607031348454",
@@ -1737,7 +2885,21 @@
       "id": "202607031348454",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금부초등학교",
+          "region": "광주",
+          "district": "서구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 서구 금화로115번길 22",
+          "school_code": "7402210"
+        }
+      ]
     },
     {
       "tender_no": "202607031350219",
@@ -1757,7 +2919,21 @@
       "id": "202607031350219",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전곡고등학교",
+          "region": "경기",
+          "district": "연천군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 연천군 전곡읍 전은길 9-89",
+          "school_code": "7530580"
+        }
+      ]
     },
     {
       "tender_no": "202607031348816",
@@ -1777,7 +2953,21 @@
       "id": "202607031348816",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부석고등학교",
+          "region": "충남",
+          "district": "서산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 서산시 부석면 무학로 1180-9",
+          "school_code": "8140051"
+        }
+      ]
     },
     {
       "tender_no": "202607031348373",
@@ -1797,7 +2987,21 @@
       "id": "202607031348373",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광양골약중학교",
+          "region": "광주",
+          "district": "광양시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시광양교육지원청",
+          "address": "전남광주통합특별시 광양시 도이2길 6",
+          "school_code": "8552011"
+        }
+      ]
     },
     {
       "tender_no": "202607031348650",
@@ -1817,7 +3021,21 @@
       "id": "202607031348650",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주만성중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 오공로 99",
+          "school_code": "8332226"
+        }
+      ]
     },
     {
       "tender_no": "202607031348374",
@@ -1837,7 +3055,30 @@
       "id": "202607031348374",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청명초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 영통구 봉영로1744번길 41",
+          "school_code": "7541118"
+        },
+        {
+          "school_name": "청명초등학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 구이면 구이로 1712",
+          "school_code": "8392059"
+        }
+      ]
     },
     {
       "tender_no": "202607031348818",
@@ -1857,7 +3098,21 @@
       "id": "202607031348818",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "수원정보과학고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 영통구 동수원로551번길 16",
+          "school_code": "7530899"
+        }
+      ]
     },
     {
       "tender_no": "202607031348427",
@@ -1877,7 +3132,21 @@
       "id": "202607031348427",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "봉일천중학교",
+          "region": "경기",
+          "district": "파주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도파주교육지원청",
+          "address": "경기도 파주시 조리읍 두루봉로 47",
+          "school_code": "7681008"
+        }
+      ]
     },
     {
       "tender_no": "202607021346094",
@@ -1897,7 +3166,21 @@
       "id": "202607021346094",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한국조형예술고등학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 남구 동명로169번길 38",
+          "school_code": "7150579"
+        }
+      ]
     },
     {
       "tender_no": "202607031349021",
@@ -1917,7 +3200,21 @@
       "id": "202607031349021",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "초림초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 수내로90번길 26",
+          "school_code": "7551095"
+        }
+      ]
     },
     {
       "tender_no": "202607021345338",
@@ -1937,7 +3234,21 @@
       "id": "202607021345338",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동탄중학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 동탄대로시범길 97",
+          "school_code": "7679105"
+        }
+      ]
     },
     {
       "tender_no": "202607031348443",
@@ -1957,7 +3268,11 @@
       "id": "202607031348443",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031348436",
@@ -1977,7 +3292,11 @@
       "id": "202607031348436",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031347579",
@@ -1997,7 +3316,11 @@
       "id": "202607031347579",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349587",
@@ -2017,7 +3340,21 @@
       "id": "202607031349587",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "강진중앙초등학교",
+          "region": "광주",
+          "district": "강진군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시강진교육지원청",
+          "address": "전남광주통합특별시 강진군 강진읍 중앙로 74",
+          "school_code": "8632011"
+        }
+      ]
     },
     {
       "tender_no": "202606301340913",
@@ -2038,7 +3375,11 @@
       "id": "202606301340913",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349649",
@@ -2059,7 +3400,11 @@
       "id": "202607031349649",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349820",
@@ -2079,7 +3424,21 @@
       "id": "202607031349820",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안수곡초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 수곡로 19-32",
+          "school_code": "8151040"
+        }
+      ]
     },
     {
       "tender_no": "202607031347854",
@@ -2099,7 +3458,11 @@
       "id": "202607031347854",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202607021346157",
@@ -2119,7 +3482,57 @@
       "id": "202607021346157",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "오산초등학교",
+          "region": "경기",
+          "district": "여주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도여주교육지원청",
+          "address": "경기도 여주시 가남읍 양화로 168",
+          "school_code": "7661032"
+        },
+        {
+          "school_name": "오산초등학교",
+          "region": "경기",
+          "district": "오산시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 오산시 고을1길 27",
+          "school_code": "7679087"
+        },
+        {
+          "school_name": "오산초등학교",
+          "region": "충남",
+          "district": "서산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도서산교육지원청",
+          "address": "충청남도 서산시 덕지천로 436",
+          "school_code": "8191041"
+        },
+        {
+          "school_name": "오산초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 오산면 오산로 38",
+          "school_code": "8352127"
+        },
+        {
+          "school_name": "오산초등학교",
+          "region": "광주",
+          "district": "곡성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시곡성교육지원청",
+          "address": "전남광주통합특별시 곡성군 오산면 오산로 616",
+          "school_code": "8572013"
+        }
+      ]
     },
     {
       "tender_no": "202607021345891",
@@ -2139,7 +3552,21 @@
       "id": "202607021345891",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안동중학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 동남구 충절로 363-11",
+          "school_code": "8151159"
+        }
+      ]
     },
     {
       "tender_no": "202607031348742",
@@ -2159,7 +3586,21 @@
       "id": "202607031348742",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부석고등학교",
+          "region": "충남",
+          "district": "서산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 서산시 부석면 무학로 1180-9",
+          "school_code": "8140051"
+        }
+      ]
     },
     {
       "tender_no": "202607031349931",
@@ -2179,7 +3620,21 @@
       "id": "202607031349931",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "여천고등학교",
+          "region": "광주",
+          "district": "여수시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 여수시 가곡길 63",
+          "school_code": "7140165"
+        }
+      ]
     },
     {
       "tender_no": "202607031349466",
@@ -2199,7 +3654,11 @@
       "id": "202607031349466",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031350126",
@@ -2219,7 +3678,11 @@
       "id": "202607031350126",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031348572",
@@ -2239,7 +3702,21 @@
       "id": "202607031348572",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안서여자중학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 동남구 천안여상로 44",
+          "school_code": "8151030"
+        }
+      ]
     },
     {
       "tender_no": "202607021347178",
@@ -2259,7 +3736,11 @@
       "id": "202607021347178",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349645",
@@ -2279,7 +3760,21 @@
       "id": "202607031349645",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성호중학교",
+          "region": "경기",
+          "district": "오산시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 오산시 동부대로436번길 34",
+          "school_code": "7679114"
+        }
+      ]
     },
     {
       "tender_no": "202607031348363",
@@ -2299,7 +3794,21 @@
       "id": "202607031348363",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군포중앙고등학교",
+          "region": "경기",
+          "district": "군포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 군포시 송부로 239",
+          "school_code": "7531272"
+        }
+      ]
     },
     {
       "tender_no": "202607031348362",
@@ -2319,7 +3828,21 @@
       "id": "202607031348362",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군포중앙고등학교",
+          "region": "경기",
+          "district": "군포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 군포시 송부로 239",
+          "school_code": "7531272"
+        }
+      ]
     },
     {
       "tender_no": "202607031348361",
@@ -2339,7 +3862,21 @@
       "id": "202607031348361",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군포중앙고등학교",
+          "region": "경기",
+          "district": "군포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 군포시 송부로 239",
+          "school_code": "7531272"
+        }
+      ]
     },
     {
       "tender_no": "202607031348529",
@@ -2359,7 +3896,21 @@
       "id": "202607031348529",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한림디자인고등학교",
+          "region": "충북",
+          "district": "충주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 충주시 야현1길 21",
+          "school_code": "8000269"
+        }
+      ]
     },
     {
       "tender_no": "202607021347130",
@@ -2379,7 +3930,11 @@
       "id": "202607021347130",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349189",
@@ -2399,7 +3954,11 @@
       "id": "202607031349189",
       "school_level": "기타",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349188",
@@ -2419,7 +3978,11 @@
       "id": "202607031349188",
       "school_level": "기타",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349187",
@@ -2439,7 +4002,11 @@
       "id": "202607031349187",
       "school_level": "기타",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607031349186",
@@ -2459,7 +4026,11 @@
       "id": "202607031349186",
       "school_level": "기타",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": []
     },
     {
       "tender_no": "202607021345423",
@@ -2479,7 +4050,21 @@
       "id": "202607021345423",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "개포중학교",
+          "region": "서울",
+          "district": "강남구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강남서초교육지원청",
+          "address": "서울특별시 강남구 선릉로 9",
+          "school_code": "7091421"
+        }
+      ]
     },
     {
       "tender_no": "202607031348173",
@@ -2499,7 +4084,30 @@
       "id": "202607031348173",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금호고등학교",
+          "region": "서울",
+          "district": "성동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 성동구 금호로 118",
+          "school_code": "7011319"
+        },
+        {
+          "school_name": "금호고등학교",
+          "region": "광주",
+          "district": "북구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 북구 금호로 100",
+          "school_code": "7140341"
+        }
+      ]
     },
     {
       "tender_no": "202607031347894",
@@ -2519,7 +4127,48 @@
       "id": "202607031347894",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성덕초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 풍영로 313",
+          "school_code": "7402258"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 용지로 60",
+          "school_code": "7832058"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 은진면 원앙로 1174",
+          "school_code": "8222043"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 성덕면 대석로 75",
+          "school_code": "8382070"
+        }
+      ]
     },
     {
       "tender_no": "202607031349103",
@@ -2540,7 +4189,21 @@
       "id": "202607031349103",
       "school_level": "중",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "오션중학교",
+          "region": "부산",
+          "district": "강서구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 강서구 명지오션시티1로 221",
+          "school_code": "7201262"
+        }
+      ]
     },
     {
       "tender_no": "202607031349710",
@@ -2560,7 +4223,21 @@
       "id": "202607031349710",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해운대관광고등학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 해운대구 우동2로60번길 38",
+          "school_code": "7150367"
+        }
+      ]
     },
     {
       "tender_no": "202607031349730",
@@ -2580,7 +4257,21 @@
       "id": "202607031349730",
       "school_level": "고",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해운대관광고등학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 해운대구 우동2로60번길 38",
+          "school_code": "7150367"
+        }
+      ]
     },
     {
       "tender_no": "202607031348817",
@@ -2602,7 +4293,21 @@
       "id": "202607031348817",
       "school_level": "초",
       "first_imported_at": "2026-07-06 17:15",
-      "import_count": 1
+      "import_count": 1,
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "도학초등학교",
+          "region": "강원",
+          "district": "고성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도고성교육지원청",
+          "address": "강원특별자치도 고성군 토성면 무릉도원로 486",
+          "school_code": "7972019"
+        }
+      ]
     }
   ]
 }
