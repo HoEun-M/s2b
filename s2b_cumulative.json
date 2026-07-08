@@ -1,10 +1,1605 @@
 {
-  "exported_at": "2026-07-07 08:34",
+  "exported_at": "2026-07-08 15:14",
   "meta": {
-    "lastImportedAt": "2026-07-07 08:34",
-    "lastSearchPeriod": "20260706~20260706"
+    "lastImportedAt": "2026-07-08 15:14",
+    "lastSearchPeriod": "20260707~20260707"
   },
   "records": [
+    {
+      "tender_no": "202607071357144",
+      "contract_name": "화랑초 영어교육센터 복사용지 구입",
+      "institution": "화랑초등학교",
+      "counterpart": "(주)한솔페이퍼",
+      "amount": "130,200",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357144&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357144",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354981",
+      "contract_name": "퓨너스 레고 에듀케이션 컴퓨터 사이언스 AI 11 플러스 외 3종",
+      "institution": "도촌초등학교",
+      "counterpart": "위드플러스",
+      "amount": "2,372,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354981&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354981",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355544",
+      "contract_name": "클로드 프로 인공지능 AI 챗봇 ClaudePro 라이선스  (안심구독)",
+      "institution": "인천과학예술영재학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "99,800",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355544&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355544",
+      "school_level": "기타",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355182",
+      "contract_name": "클로드 프로 Claude Pro 인공지능 AI 챗봇 라이선스 (안심구독)",
+      "institution": "계산공업고등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "349,300",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355182&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355182",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357182",
+      "contract_name": "클로드 프로 Claude AI PRO 인공지능 챗봇 라이선스",
+      "institution": "왕남초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "49,800",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357182&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357182",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356950",
+      "contract_name": "클로드 프로 Claude AI PRO 인공지능 챗봇 라이선스",
+      "institution": "안면고등학교",
+      "counterpart": "나이스쿨",
+      "amount": "99,800",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356950&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356950",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355953",
+      "contract_name": "클로드 프로 Claude AI PRO 인공지능 챗봇 라이선스",
+      "institution": "대평초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "199,600",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355953&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355953",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355596",
+      "contract_name": "클로드 프로 Claude AI PRO 인공지능 챗봇 라이선스",
+      "institution": "전곡고등학교",
+      "counterpart": "나이스쿨",
+      "amount": "960,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355596&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355596",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353806",
+      "contract_name": "클로드 프로 Claude AI PRO 외 1종",
+      "institution": "군포중앙고등학교",
+      "counterpart": "위드테크",
+      "amount": "45,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353806&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353806",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353805",
+      "contract_name": "클로드 프로 Claude AI PRO 외 1종",
+      "institution": "군포중앙고등학교",
+      "counterpart": "주식회사 가짐",
+      "amount": "111,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353805&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353805",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353369",
+      "contract_name": "클로드 프로 Claude AI PRO 외 1종",
+      "institution": "대진전자통신고등학교",
+      "counterpart": "주식회사 가짐",
+      "amount": "1,720,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353369&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353369",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353368",
+      "contract_name": "클로드 프로 Claude AI PRO 외 1종",
+      "institution": "대진전자통신고등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "1,520,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353368&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353368",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354974",
+      "contract_name": "클로드 Claude AI PRO 인공지능 서비스 라이선스 12개월",
+      "institution": "포항이동초등학교",
+      "counterpart": "위드플러스",
+      "amount": "430,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354974&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354974",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355485",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "의정부고산초등학교",
+      "counterpart": "위드플러스",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355485&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355485",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355484",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "의정부고산초등학교",
+      "counterpart": "주안테크",
+      "amount": "660,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355484&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355484",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354878",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "오상고등학교",
+      "counterpart": "위드플러스",
+      "amount": "40,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354878&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354878",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354877",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "오상고등학교",
+      "counterpart": "스트로베리필즈",
+      "amount": "79,800",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354877&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354877",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354127",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "인천진산과학고등학교",
+      "counterpart": "위드플러스",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354127&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354127",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354126",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스 외 1종",
+      "institution": "인천진산과학고등학교",
+      "counterpart": "나이스쿨",
+      "amount": "70,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354126&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354126",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357476",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스",
+      "institution": "한밭중학교",
+      "counterpart": "위드플러스",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357476&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357476",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354817",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스",
+      "institution": "벌교중앙초등학교",
+      "counterpart": "위드플러스",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354817&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354817",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354163",
+      "contract_name": "클로드 Claude  AI PRO 인공지능  라이선스 안심구독 서비스",
+      "institution": "경문고등학교",
+      "counterpart": "위드플러스",
+      "amount": "800,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354163&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354163",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354451",
+      "contract_name": "캡컷 프로 동영상 에디터 6개월 AI 에듀테크 라이선스",
+      "institution": "양산상북초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "138,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354451&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354451",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356823",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산 외 1종",
+      "institution": "서울영원초등학교",
+      "counterpart": "주식회사 성주코퍼레이션",
+      "amount": "77,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356823&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356823",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356822",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산 외 1종",
+      "institution": "서울영원초등학교",
+      "counterpart": "(주)매쓰마스터",
+      "amount": "108,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356822&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356822",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354019",
+      "contract_name": "젭 퀴즈 프로 플랜 ZEP QUIZ PRO 무제한 AI 퀴즈 구독권 외 3종",
+      "institution": "전북특별자치도진안교육지원청",
+      "counterpart": "주식회사 모노플로우",
+      "amount": "766,900",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354019&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354019",
+      "school_level": "기타",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354344",
+      "contract_name": "젭 퀴즈 프로 플랜 ZEP QUIZ PRO 무제한 AI 퀴즈 구독권",
+      "institution": "충북반도체고등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "660,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354344&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354344",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356118",
+      "contract_name": "젭 퀴즈 베이직 플랜 ZEP QUIZ BASIC 무제한 AI 퀴즈 구독권",
+      "institution": "청주중학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "528,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356118&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356118",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357004",
+      "contract_name": "젠스파크 플러스 Genspark Plus AI Workspace 5개월",
+      "institution": "서울세륜초등학교",
+      "counterpart": "에듀스토리",
+      "amount": "225,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357004&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357004",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355105",
+      "contract_name": "젠스파크 Genspark 생성형 AI 플러스, 프로 라이선스 (안심구독)",
+      "institution": "쌍계초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "315,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355105&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355105",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354959",
+      "contract_name": "이음AI PRO",
+      "institution": "경주고등학교",
+      "counterpart": "(주)화이트소프트",
+      "amount": "504,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354959&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354959",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353809",
+      "contract_name": "이음AI PLUS",
+      "institution": "부천일신중학교",
+      "counterpart": "(주)화이트소프트",
+      "amount": "126,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353809&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353809",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354872",
+      "contract_name": "율곡초등학교 수학 온다학교 운영을 위한 소프트웨어 구입",
+      "institution": "율곡초등학교",
+      "counterpart": "비케이 에듀",
+      "amount": "296,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354872&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354872",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355979",
+      "contract_name": "영어독후활동프로그램",
+      "institution": "도현중학교",
+      "counterpart": "주식회사 리딩게이트",
+      "amount": "1,500,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355979&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355979",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356298",
+      "contract_name": "엘지 냉장고 333L LG 모던엣지 AI 오브제 Q3 일반냉장고",
+      "institution": "경기도미래세대재단 청년본부",
+      "counterpart": "(주)원앤원솔루션",
+      "amount": "886,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356298&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356298",
+      "school_level": "기타",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356032",
+      "contract_name": "엘지 75인치 TV LG 나노셀 AI UHD 4K 1등급 천장형 설치포함",
+      "institution": "관모초등학교",
+      "counterpart": "위드스쿨(주)",
+      "amount": "2,000,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356032&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356032",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355261",
+      "contract_name": "에듀테크(하이러닝) 수업관리 솔루션 소프트웨어 구입",
+      "institution": "창신초등학교",
+      "counterpart": "(주)윈테크",
+      "amount": "6,160,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355261&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355261",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356266",
+      "contract_name": "에듀테크 및 코스웨어 프로그램 구입(수노AI)",
+      "institution": "포항펜타초등학교",
+      "counterpart": "에듀스쿨(경북)",
+      "amount": "189,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "코스웨어",
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356266&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356266",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354086",
+      "contract_name": "앱코 ABKO x SOAI 콜라보 3모드 블루투스 기계식 키보드",
+      "institution": "전주북일초등학교",
+      "counterpart": "스쿨메이트",
+      "amount": "93,900",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354086&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354086",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355374",
+      "contract_name": "아이글(AiGLE), 손글씨로 작성하는 서논술AI평가지원 서비스",
+      "institution": "온양온천초등학교",
+      "counterpart": "주식회사 네오랩컨버전스",
+      "amount": "5,000,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355374&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355374",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357184",
+      "contract_name": "스쿨플랫 수학 AI 코스웨어",
+      "institution": "세마고등학교",
+      "counterpart": "(주)프리윌린",
+      "amount": "6,000,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "코스웨어",
+        "수학",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607071357184&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357184",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355736",
+      "contract_name": "스마트카라 블레이드X AI 건조분쇄 음식물처리기 패키지",
+      "institution": "대구한샘초등학교",
+      "counterpart": "에이알컴퍼니",
+      "amount": "1,200,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355736&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355736",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355010",
+      "contract_name": "수노(SUNO) AI 작곡 프로그램",
+      "institution": "포항이동초등학교",
+      "counterpart": "클레버링크",
+      "amount": "1,353,600",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355010&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355010",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353398",
+      "contract_name": "수노 Suno 음악 작곡 생성 AI 인공지능 에듀테크 외 1종",
+      "institution": "귀인중학교",
+      "counterpart": "스피커블",
+      "amount": "166,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353398&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353398",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353397",
+      "contract_name": "수노 Suno 음악 작곡 생성 AI 인공지능 에듀테크 외 1종",
+      "institution": "귀인중학교",
+      "counterpart": "리프레쉬업",
+      "amount": "132,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353397&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353397",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061351137",
+      "contract_name": "수노 Suno 음악 작곡 생성 AI 인공지능 에듀테크",
+      "institution": "성내초등학교",
+      "counterpart": "리프레쉬업",
+      "amount": "22,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061351137&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061351137",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355224",
+      "contract_name": "생활기록부(학생부) 학생 맞춤형 생기부AI 하마룸(한 학기)",
+      "institution": "상하중학교",
+      "counterpart": "주식회사티처라인",
+      "amount": "38,500",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355224&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355224",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355737",
+      "contract_name": "생활기록부(학생부) 학생 맞춤형 생기부AI 하마룸(1년)",
+      "institution": "논산여자상업고등학교",
+      "counterpart": "주식회사티처라인",
+      "amount": "2,695,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355737&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355737",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356575",
+      "contract_name": "삼성정품 AI 슬림 키보드 북커버 구입",
+      "institution": "원주청원학교",
+      "counterpart": "패션마스터",
+      "amount": "3,384,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356575&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356575",
+      "school_level": "기타",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356331",
+      "contract_name": "삼성 청소기 VS 비스포크 AI 제트 400W 물걸레겸용 무선청소기  외 1종",
+      "institution": "인천병방초등학교",
+      "counterpart": "에이포",
+      "amount": "395,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356331&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356331",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356330",
+      "contract_name": "삼성 청소기 VS 비스포크 AI 제트 400W 물걸레겸용 무선청소기  외 1종",
+      "institution": "인천병방초등학교",
+      "counterpart": "(주)에듀에이드",
+      "amount": "1,280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356330&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356330",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354835",
+      "contract_name": "마주온 활용 학교 운영 아이글(AiGLE) AI평가지원 서비스 계정 사용",
+      "institution": "수청초등학교",
+      "counterpart": "주식회사 네오랩컨버전스",
+      "amount": "5,000,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354835&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354835",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357841",
+      "contract_name": "독서교육 플랫폼 리딩오션(국어/문해력/문제풀이/전자책/독서국가) 외 1종",
+      "institution": "서울강동초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "108,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "국어",
+        "문해력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357841&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357841",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061351126",
+      "contract_name": "기탄 기탄수학 D단계 세트 1-5집  외 7종",
+      "institution": "목포대연초등학교",
+      "counterpart": "전남기프트",
+      "amount": "86,100",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061351126&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061351126",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354450",
+      "contract_name": "금곡고 2026학년도 AI중점학교 인공지능 한마당 운영비 견적제출 요청",
+      "institution": "금곡고등학교",
+      "counterpart": "(주) 와이즈교육",
+      "amount": "8,938,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607071354450&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354450",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607031348183",
+      "contract_name": "구글 제미나이 프로 Google Gemini Pro 구글 AI 프로",
+      "institution": "계산공업고등학교",
+      "counterpart": "바오스토어",
+      "amount": "99,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607031348183&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607031348183",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356811",
+      "contract_name": "구글 제미나이 프로 Gemini Pro 3.0 울트라 AI",
+      "institution": "경북영천중학교",
+      "counterpart": "가애림공간",
+      "amount": "262,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356811&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356811",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356210",
+      "contract_name": "구글 AI 프로 Google AI Pro 구독권(개인계정에서 이용 가능)",
+      "institution": "반곡초등학교",
+      "counterpart": "위드현 에듀테크",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356210&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356210",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354620",
+      "contract_name": "구글 AI ONE 프로 제미나이 어드밴스드 외 3종",
+      "institution": "금촌고등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "2,982,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354620&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354620",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356001",
+      "contract_name": "구글 AI ONE 프로 제미나이 어드밴스드",
+      "institution": "노산초등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "320,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356001&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356001",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354374",
+      "contract_name": "구글 AI ONE 제미나이 플러스 Google Gemini Plus 외 1종",
+      "institution": "옥계중학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "202,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354374&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354374",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356341",
+      "contract_name": "구AI 기반 영상 편집 소프트웨어 캡컷 프로(CapCut Pro) 이용권",
+      "institution": "구리초등학교",
+      "counterpart": "사자곰",
+      "amount": "160,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356341&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356341",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356292",
+      "contract_name": "갈매유치원 인공지능 에듀테크 도구 구입",
+      "institution": "갈매유치원",
+      "counterpart": "주안테크",
+      "amount": "3,312,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356292&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356292",
+      "school_level": "기타",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353932",
+      "contract_name": "PTZ AI 원격수업용 HDMI 12배율 RS 웹캠 디지털 화상카메라",
+      "institution": "서울오현초등학교",
+      "counterpart": "다온닷컴",
+      "amount": "1,298,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353932&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353932",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607031349425",
+      "contract_name": "Gemini 제미나이 구글 AI Pro",
+      "institution": "인수중학교",
+      "counterpart": "클리프7.3",
+      "amount": "280,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607031349425&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607031349425",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357005",
+      "contract_name": "Chat GPT Plus 챗GPT 플러스 챗지피티 에듀테크",
+      "institution": "광주수피아여자중학교",
+      "counterpart": "비케이 에듀",
+      "amount": "78,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357005&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357005",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355326",
+      "contract_name": "Chat GPT Plus 챗GPT 플러스 챗지피티 에듀테크",
+      "institution": "옥천여자중학교",
+      "counterpart": "비케이 에듀",
+      "amount": "624,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355326&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355326",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071357388",
+      "contract_name": "AI디지털선도학교 패들렛 플래티넘 12개월 구독권 구입",
+      "institution": "대이초등학교",
+      "counterpart": "디스픽트",
+      "amount": "167,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357388&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071357388",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356596",
+      "contract_name": "AI디지털교육 에듀테크 구입",
+      "institution": "화진초등학교",
+      "counterpart": "위드현 에듀테크",
+      "amount": "240,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356596&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356596",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356595",
+      "contract_name": "AI디지털교육 에듀테크 구입",
+      "institution": "화진초등학교",
+      "counterpart": "주식회사 오늘배움",
+      "amount": "250,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI",
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356595&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356595",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355738",
+      "contract_name": "AI기반 교우관계 분석 서비스",
+      "institution": "동안초등학교",
+      "counterpart": "(주)퓨전소프트",
+      "amount": "360,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355738&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355738",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354011",
+      "contract_name": "AI·게이미피케이션 팀빌딩 학습 플랫폼 라포라포",
+      "institution": "조치원교동초등학교",
+      "counterpart": "(주)큐리어드",
+      "amount": "165,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354011&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354011",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061352117",
+      "contract_name": "AI 디지털 기반 영어 AI 코스웨어 쿠키영어",
+      "institution": "가북초등학교",
+      "counterpart": "한교육",
+      "amount": "900,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "코스웨어",
+        "영어",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061352117&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061352117",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071355779",
+      "contract_name": "2026학년도 방교중 AI중점학교 운영 구독료(클로드맥스 외 1종)",
+      "institution": "방교중학교",
+      "counterpart": "행복장터",
+      "amount": "885,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071355779&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071355779",
+      "school_level": "중",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071356789",
+      "contract_name": "2026학년도 2학년 AI 서비스 구독(제미나이)",
+      "institution": "우송고등학교",
+      "counterpart": "올아이피정보통신 주식회사",
+      "amount": "759,800",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356789&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071356789",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607071354522",
+      "contract_name": "2026년 북평고 AI 제미나이 외 8종 프로그램 구입",
+      "institution": "북평고등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "3,294,300",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071354522&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607071354522",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061354022",
+      "contract_name": "2026. 수업혁신 전문적 학습공동체 운영을 위한 에듀테크 구독 신청",
+      "institution": "마산삼진고등학교",
+      "counterpart": "(주)화이트소프트",
+      "amount": "450,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354022&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061354022",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607061353636",
+      "contract_name": "2026. 기후변화와 순천만 공동교육과정 운영 에듀테크 구입",
+      "institution": "순천제일고등학교",
+      "counterpart": "스트로베리필즈",
+      "amount": "1,619,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607061353636&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607061353636",
+      "school_level": "고",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
+    {
+      "tender_no": "202607011342218",
+      "contract_name": "(본사) 알공 영어 (초등 AI 코스웨어)",
+      "institution": "내포초등학교",
+      "counterpart": "주식회사 디엔소프트",
+      "amount": "240,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "코스웨어",
+        "영어",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607011342218&excelSection=N",
+      "source_file": "s2b_result_20260707.html",
+      "search_period_from": "2026.07.07",
+      "search_period_to": "2026.07.07",
+      "last_imported_at": "2026-07-08 15:14",
+      "id": "202607011342218",
+      "school_level": "초",
+      "first_imported_at": "2026-07-08 15:14",
+      "import_count": 1
+    },
     {
       "tender_no": "202607061353601",
       "contract_name": "휴대용 양쪽가리개 영어 단어장 수능 암기장",
