@@ -67,8 +67,9 @@ else:
     APP_DIR = os.path.dirname(os.path.abspath(__file__))
 CUMULATIVE_JSON_FILE = os.path.join(APP_DIR, "s2b_cumulative.json")
 CUMULATIVE_HTML_FILE = os.path.join(APP_DIR, "s2b_cumulative.html")
+INDEX_HTML_FILE = os.path.join(APP_DIR, "index.html")
 AUTO_GITHUB_UPLOAD = os.environ.get("S2B_AUTO_GITHUB", "1").lower() not in ("0", "false", "no", "off")
-GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html")
+GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html")
 
 
 def normalize_date(value):
@@ -677,6 +678,9 @@ def save_cumulative_html(data):
     with open(CUMULATIVE_HTML_FILE, "w", encoding="utf-8") as file:
         file.write(html_text)
     print("[html] saved: " + CUMULATIVE_HTML_FILE)
+    with open(INDEX_HTML_FILE, "w", encoding="utf-8") as file:
+        file.write(html_text)
+    print("[html] saved: " + INDEX_HTML_FILE)
     return CUMULATIVE_HTML_FILE
 
 
