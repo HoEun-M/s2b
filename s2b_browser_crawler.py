@@ -1,6 +1,8 @@
 # coding: utf-8
 import argparse
 import os
+import shutil
+import tempfile
 import random
 import re
 import sys
@@ -68,7 +70,26 @@ def find_browser_executable(browser_name):
 
 
 def get_user_data_dir():
-    return os.path.join(os.path.abspath("."), "browser_profile")
+    base_dir = os.path.join(tempfile.gettempdir(), "s2b_browser_profiles")
+    os.makedirs(base_dir, exist_ok=True)
+    return tempfile.mkdtemp(prefix="profile_", dir=base_dir)
+
+
+def cleanup_user_data_dir(path):
+    if path and os.path.isdir(path):
+        try:
+            shutil.rmtree(path, ignore_errors=True)
+        except Exception:
+            pass
+
+
+def close_context(context):
+    profile_dir = getattr(context, "s2b_user_data_dir", "")
+    try:
+        context.close()
+    except Exception:
+        pass
+    cleanup_user_data_dir(profile_dir)
 
 
 def launch_browser(playwright, args):
@@ -115,7 +136,13 @@ def create_context_page(playwright, args):
     else:
         print("[browser] using Playwright-managed Chromium")
 
-    context = playwright.chromium.launch_persistent_context(get_user_data_dir(), **launch_args)
+    user_data_dir = get_user_data_dir()
+    try:
+        context = playwright.chromium.launch_persistent_context(user_data_dir, **launch_args)
+    except Exception:
+        cleanup_user_data_dir(user_data_dir)
+        raise
+    context.s2b_user_data_dir = user_data_dir
     page = context.new_page()
     page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
     return context, page
@@ -318,10 +345,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                     page = context.new_page()
                     page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
                 except Exception:
-                    try:
-                        context.close()
-                    except Exception:
-                        pass
+                    close_context(context)
                     context, page = create_context_page(playwright, args)
 
             print("[" + keyword + "] searching in browser...")
@@ -347,17 +371,11 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                         break
                     if attempt == 1:
                         print("[browser] closed again. skipping this keyword and continuing.")
-                        try:
-                            context.close()
-                        except Exception:
-                            pass
+                        close_context(context)
                         context, page = create_context_page(playwright, args)
                         break
                     print("[browser] closed unexpectedly. reopening and retrying this keyword once.")
-                    try:
-                        context.close()
-                    except Exception:
-                        pass
+                    close_context(context)
                     context, page = create_context_page(playwright, args)
 
             if fatal_error:
@@ -368,10 +386,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                     page = context.new_page()
                     page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
                 except Exception:
-                    try:
-                        context.close()
-                    except Exception:
-                        pass
+                    close_context(context)
                     context, page = create_context_page(playwright, args)
             print("  -> " + str(len(items)) + " found\n")
 
@@ -387,7 +402,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
             if keyword != keywords[-1]:
                 sleep_random(args.keyword_delay_range, "keyword delay")
 
-        context.close()
+        close_context(context)
 
     for item in all_results:
         item["매칭키워드"] = keyword_map.get(item["계약번호"], [])
@@ -395,7 +410,6 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     print("=" * 55)
     print("이번 검색 결과: " + str(len(all_results)) + "건(중복 제거)")
     return all_results
-
 
 def get_keywords_from_user(args):
     if args.keywords is not None:
