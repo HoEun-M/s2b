@@ -603,19 +603,37 @@ def build_cumulative_html(data):
 
         record_id = esc(row.get("id") or row.get("tender_no") or str(index))
         region = row.get("region", "")
-        options_html = '<option value="">지역 선택</option>'
-        for region_name in regions:
-            selected = ' selected' if region_name == region else ''
-            options_html += '<option value="' + esc(region_name) + '"' + selected + '>' + esc(region_name) + '</option>'
+        candidates = row.get("region_candidates", []) or []
         if region:
-            region_html = (
-                '<div class="region-editor region-confirmed" data-region-id="' + record_id + '">'
-                '<span class="region-text">' + esc(region) + '</span>'
-                '<select class="region-select" aria-label="지역 변경">' + options_html + '</select>'
-                '<button type="button" class="region-save" onclick="saveRegion(this)">저장</button>'
-                '</div>'
-            )
+            region_html = '<span class="region-text fixed-region" data-region-id="' + record_id + '">' + esc(region) + '</span>'
         else:
+            options_html = '<option value="">지역 선택</option>'
+            seen_options = set()
+            for candidate in candidates:
+                cand_region = candidate.get("region", "")
+                if not cand_region:
+                    continue
+                label_parts = [cand_region]
+                school_name = candidate.get("school_name", "")
+                district = candidate.get("district", "")
+                address = candidate.get("address", "")
+                if school_name:
+                    label_parts.append(school_name)
+                if district:
+                    label_parts.append(district)
+                elif address:
+                    label_parts.append(address)
+                label = " · ".join(label_parts)
+                key = cand_region + "|" + label
+                if key in seen_options:
+                    continue
+                seen_options.add(key)
+                options_html += '<option value="' + esc(cand_region) + '">' + esc(label) + '</option>'
+            if candidates:
+                options_html += '<option value="" disabled>──────────</option>'
+            for region_name in regions:
+                if region_name not in [candidate.get("region", "") for candidate in candidates]:
+                    options_html += '<option value="' + esc(region_name) + '">' + esc(region_name) + '</option>'
             region_html = (
                 '<div class="region-editor" data-region-id="' + record_id + '">'
                 '<select class="region-select" aria-label="지역 선택">' + options_html + '</select>'
@@ -625,7 +643,8 @@ def build_cumulative_html(data):
 
         rows_html += (
             '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-level="' + esc(row.get("school_level", "")) + '">'
-            '<td class="tc">' + str(index) + '</td>'
+            '<td class="tc select-cell"><input type="checkbox" class="row-check" aria-label="삭제할 공고 선택"></td>'
+            '<td class="tc row-no">' + str(index) + '</td>'
             '<td>' + name_html + '</td>'
             '<td><div class="tags">' + tag_html + '</div></td>'
             '<td class="tc region-cell">' + region_html + '</td>'
@@ -648,149 +667,45 @@ def build_cumulative_html(data):
         )
 
     css = """
-*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel{background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:14px 16px;margin-bottom:14px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters{display:flex;flex-wrap:wrap;gap:7px}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.sync-panel{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:#fff;border:1px solid #dce4ec;border-radius:8px;padding:10px 12px;margin-bottom:14px}.sync-panel input{height:30px;min-width:280px;border:1px solid #b9c7d6;border-radius:6px;padding:0 8px;font-family:inherit;font-size:12px}.sync-btn{height:30px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.sync-btn.secondary{background:#fff;color:#245a92}.sync-status{font-size:12px;color:#5c6670}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1060px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.region-cell{min-width:180px}.region-editor{display:flex;gap:6px;justify-content:center;align-items:center}.region-confirmed .region-text{min-width:34px}.region-select{height:28px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 6px}.region-save{height:28px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 8px;cursor:pointer}.region-save:hover,.sync-btn:hover{background:#1d4c7d}.region-save:disabled{opacity:.65;cursor:wait}.region-text{font-weight:600;color:#263442}td:nth-child(1){color:#89939e;width:42px}td:nth-child(7){font-weight:600;white-space:nowrap}td:nth-child(8){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary,.sync-panel{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}.sync-panel input{min-width:0;width:100%}.region-editor{flex-direction:column}.region-select,.region-save{width:100%}}
+*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel,.toolbar,.sync-panel{background:#fff;border:1px solid #dce4ec;border-radius:8px;margin-bottom:14px}.panel{padding:14px 16px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters,.toolbar,.sync-panel{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.toolbar{padding:10px 12px}.toolbar-spacer{flex:1}.sync-panel{padding:10px 12px}.sync-panel input{height:30px;min-width:280px;border:1px solid #b9c7d6;border-radius:6px;padding:0 8px;font-family:inherit;font-size:12px}.action-btn,.sync-btn{height:30px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.action-btn.danger{border-color:#b33a3a;background:#b33a3a}.sync-btn.secondary,.action-btn.secondary{background:#fff;color:#245a92}.action-btn:hover,.sync-btn:hover{filter:brightness(.95)}.sync-status{font-size:12px;color:#5c6670}.sync-status.ok{color:#1d7a38}.sync-status.error{color:#b33a3a}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1120px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.select-cell{width:36px}.row-no{color:#89939e;width:42px}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.region-cell{min-width:210px}.region-editor{display:flex;gap:6px;justify-content:center;align-items:center}.region-select{height:28px;max-width:160px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 6px}.region-save{height:28px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 8px;cursor:pointer}.region-save:disabled,.action-btn:disabled{opacity:.65;cursor:wait}.region-text{font-weight:600;color:#263442}td:nth-child(8){font-weight:600;white-space:nowrap}td:nth-child(9){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary,.toolbar,.sync-panel{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}.sync-panel input{min-width:0;width:100%}.region-editor{flex-direction:column}.region-select,.region-save{width:100%;max-width:none}}
 """.strip()
 
     js = """
 var activeKeyword='all';
+var unsavedOnly=false;
 var regionStorageKey='s2b-region-overrides-v1';
+var deletedStorageKey='s2b-deleted-records-v1';
 var tokenStorageKey='s2b-github-token-v1';
 var githubOwner='HoEun-M';
 var githubRepo='s2b';
 var githubBranch='main';
 var regionFile='region_overrides.json';
-var regionApiUrl='https://api.github.com/repos/'+githubOwner+'/'+githubRepo+'/contents/'+regionFile;
-function getRegionOverrides(){
-  try{return JSON.parse(localStorage.getItem(regionStorageKey)||'{}');}
-  catch(e){return {};}
-}
-function setStatus(message){
-  var el=document.getElementById('sync-status');
-  if(el){el.textContent=message||'';}
-}
+var deletedFile='deleted_records.json';
+function githubApiUrl(path){return 'https://api.github.com/repos/'+githubOwner+'/'+githubRepo+'/contents/'+path;}
+function readJsonStorage(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
+function writeJsonStorage(key,value){localStorage.setItem(key,JSON.stringify(value));}
+function getRegionOverrides(){return readJsonStorage(regionStorageKey,{});}
+function getDeletedRecords(){return readJsonStorage(deletedStorageKey,[]);}
+function setStatus(message,type){var el=document.getElementById('sync-status');if(!el){return;}el.textContent=message||'';el.className='sync-status '+(type||'');}
 function getToken(){return localStorage.getItem(tokenStorageKey)||'';}
-function saveToken(){
-  var input=document.getElementById('github-token');
-  var token=input?input.value.trim():'';
-  if(!token){setStatus('토큰을 입력하세요.');return;}
-  localStorage.setItem(tokenStorageKey,token);
-  if(input){input.value='';input.placeholder='토큰 저장됨';}
-  setStatus('GitHub 토큰을 이 브라우저에 저장했습니다.');
-}
-function clearToken(){
-  localStorage.removeItem(tokenStorageKey);
-  var input=document.getElementById('github-token');
-  if(input){input.value='';input.placeholder='GitHub fine-grained token';}
-  setStatus('저장된 토큰을 삭제했습니다.');
-}
-function encodeBase64Unicode(text){
-  var bytes=new TextEncoder().encode(text);
-  var binary='';
-  bytes.forEach(function(byte){binary+=String.fromCharCode(byte);});
-  return btoa(binary);
-}
-function decodeBase64Unicode(text){
-  var binary=atob((text||'').replace(/\n/g,''));
-  var bytes=new Uint8Array(binary.length);
-  for(var i=0;i<binary.length;i++){bytes[i]=binary.charCodeAt(i);}
-  return new TextDecoder('utf-8').decode(bytes);
-}
-async function fetchRemoteRegions(token){
-  var headers={'Accept':'application/vnd.github+json'};
-  if(token){headers.Authorization='Bearer '+token;}
-  var response=await fetch(regionApiUrl+'?ref='+githubBranch+'&t='+Date.now(),{headers:headers});
-  if(response.status===404){return {regions:{},sha:null};}
-  if(!response.ok){throw new Error('GitHub 파일 읽기 실패: '+response.status);}
-  var data=await response.json();
-  var parsed={};
-  if(data.content){parsed=JSON.parse(decodeBase64Unicode(data.content)||'{}');}
-  return {regions:parsed,sha:data.sha||null};
-}
-function applyRegions(regions){
-  document.querySelectorAll('.region-editor').forEach(function(editor){
-    var id=editor.getAttribute('data-region-id');
-    var value=id?regions[id]:'';
-    if(!value){return;}
-    var text=editor.querySelector('.region-text');
-    var select=editor.querySelector('.region-select');
-    if(text){text.textContent=value;}else{
-      text=document.createElement('span');
-      text.className='region-text';
-      text.textContent=value;
-      editor.insertBefore(text,editor.firstChild);
-      editor.classList.add('region-confirmed');
-    }
-    if(select){select.value=value;}
-  });
-}
-async function loadRemoteRegions(){
-  try{
-    var remote=await fetchRemoteRegions(getToken());
-    localStorage.setItem(regionStorageKey,JSON.stringify(remote.regions||{}));
-    applyRegions(remote.regions||{});
-    setStatus('GitHub 저장 지역을 불러왔습니다.');
-  }catch(error){
-    applyRegions(getRegionOverrides());
-    setStatus('GitHub 지역 파일을 불러오지 못해 브라우저 저장값을 적용했습니다.');
-  }
-}
-async function saveRegion(button){
-  var editor=button.closest('.region-editor');
-  if(!editor){return;}
-  var select=editor.querySelector('.region-select');
-  var value=select?select.value:'';
-  var id=editor.getAttribute('data-region-id');
-  if(!value||!id){return;}
-  var token=getToken();
-  if(!token){setStatus('먼저 GitHub 토큰을 저장하세요.');return;}
-  button.disabled=true;
-  button.textContent='저장중';
-  setStatus('GitHub에 지역을 저장하는 중입니다...');
-  try{
-    var remote=await fetchRemoteRegions(token);
-    var regions=remote.regions||{};
-    regions[id]=value;
-    var body={
-      message:'Update S2B region override '+id,
-      content:encodeBase64Unicode(JSON.stringify(regions,null,2)+'\n'),
-      branch:githubBranch
-    };
-    if(remote.sha){body.sha=remote.sha;}
-    var response=await fetch(regionApiUrl,{method:'PUT',headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(body)});
-    if(!response.ok){throw new Error('GitHub 저장 실패: '+response.status);}
-    localStorage.setItem(regionStorageKey,JSON.stringify(regions));
-    applyRegions(regions);
-    setStatus('GitHub에 저장했습니다. Pages 반영에는 잠시 걸릴 수 있습니다.');
-  }catch(error){
-    setStatus(error.message||'GitHub 저장에 실패했습니다.');
-  }finally{
-    button.disabled=false;
-    button.textContent='저장';
-  }
-}
-function filterTable(btn,kind,value){
-  activeKeyword=value;
-  document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});
-  btn.classList.add('active');
-  var rows=document.querySelectorAll('#tbody tr');
-  var visible=0;
-  rows.forEach(function(row){
-    var kws=(row.getAttribute('data-keywords')||'').split(',');
-    var show=activeKeyword==='all'||kws.indexOf(activeKeyword)!==-1;
-    row.style.display=show?'':'none';
-    if(show){visible++;}
-  });
-  document.getElementById('visible-count').textContent=visible;
-  document.getElementById('no-result').style.display=visible===0?'block':'none';
-  var number=1;
-  rows.forEach(function(row){if(row.style.display!=='none'){row.cells[0].textContent=number++;}});
-}
-document.addEventListener('DOMContentLoaded',function(){
-  var input=document.getElementById('github-token');
-  if(input&&getToken()){input.placeholder='토큰 저장됨';}
-  applyRegions(getRegionOverrides());
-  loadRemoteRegions();
-});
+function saveToken(){var input=document.getElementById('github-token');var token=input?input.value.trim():'';if(!token){setStatus('토큰을 입력하세요.','error');return;}localStorage.setItem(tokenStorageKey,token);if(input){input.value='';input.placeholder='토큰 저장됨';}setStatus('토큰 저장 완료. 이제 지역 저장/삭제를 사용할 수 있습니다.','ok');}
+function clearToken(){localStorage.removeItem(tokenStorageKey);var input=document.getElementById('github-token');if(input){input.value='';input.placeholder='GitHub fine-grained token';}setStatus('저장된 토큰을 삭제했습니다.','ok');}
+function encodeBase64Unicode(text){var bytes=new TextEncoder().encode(text);var binary='';bytes.forEach(function(byte){binary+=String.fromCharCode(byte);});return btoa(binary);}
+function decodeBase64Unicode(text){var binary=atob((text||'').replace(/\n/g,''));var bytes=new Uint8Array(binary.length);for(var i=0;i<binary.length;i++){bytes[i]=binary.charCodeAt(i);}return new TextDecoder('utf-8').decode(bytes);}
+async function fetchGithubJson(path,token){var headers={'Accept':'application/vnd.github+json'};if(token){headers.Authorization='Bearer '+token;}var response=await fetch(githubApiUrl(path)+'?ref='+githubBranch+'&t='+Date.now(),{headers:headers});if(response.status===404){return {value:path===deletedFile?[]:{},sha:null};}if(!response.ok){throw new Error(path+' 읽기 실패: '+response.status);}var data=await response.json();var parsed=path===deletedFile?[]:{};if(data.content){parsed=JSON.parse(decodeBase64Unicode(data.content)||JSON.stringify(parsed));}return {value:parsed,sha:data.sha||null};}
+async function putGithubJson(path,value,sha,message,token){var body={message:message,content:encodeBase64Unicode(JSON.stringify(value,null,2)+'\n'),branch:githubBranch};if(sha){body.sha=sha;}var response=await fetch(githubApiUrl(path),{method:'PUT',headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+token,'Content-Type':'application/json'},body:JSON.stringify(body)});if(!response.ok){throw new Error(path+' 저장 실패: '+response.status);}return response.json();}
+function rowHasRegion(row){var id=row.getAttribute('data-record-id');var regions=getRegionOverrides();var fixed=row.querySelector('.fixed-region');return !!(fixed||(id&&regions[id]));}
+function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(!value){return;}var select=editor.querySelector('.region-select');if(select){select.value=value;}var text=editor.querySelector('.region-text');if(!text){text=document.createElement('span');text.className='region-text';editor.insertBefore(text,editor.firstChild);}text.textContent=value;});}
+function applyDeleted(deleted){var deletedSet=new Set(deleted||[]);document.querySelectorAll('#tbody tr').forEach(function(row){row.setAttribute('data-deleted',deletedSet.has(row.getAttribute('data-record-id'))?'1':'0');});filterCurrent();}
+async function loadRemoteState(){try{var token=getToken();var regionRemote=await fetchGithubJson(regionFile,token);var deletedRemote=await fetchGithubJson(deletedFile,token);writeJsonStorage(regionStorageKey,regionRemote.value||{});writeJsonStorage(deletedStorageKey,deletedRemote.value||[]);applyRegions(regionRemote.value||{});applyDeleted(deletedRemote.value||[]);setStatus('GitHub 저장값을 불러왔습니다.','ok');}catch(error){applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());setStatus('GitHub 저장값을 불러오지 못해 브라우저 저장값을 적용했습니다.','error');}}
+async function saveRegion(button){var editor=button.closest('.region-editor');if(!editor){return;}var select=editor.querySelector('.region-select');var value=select?select.value:'';var id=editor.getAttribute('data-region-id');if(!value||!id){setStatus('지역을 선택하세요.','error');return;}var token=getToken();if(!token){setStatus('먼저 GitHub 토큰을 저장하세요.','error');return;}button.disabled=true;button.textContent='저장중';setStatus('GitHub에 지역을 저장하는 중입니다...');try{var remote=await fetchGithubJson(regionFile,token);var regions=remote.value||{};regions[id]=value;await putGithubJson(regionFile,regions,remote.sha,'Update S2B region override '+id,token);writeJsonStorage(regionStorageKey,regions);applyRegions(regions);filterCurrent();setStatus('지역을 GitHub에 저장했습니다.','ok');}catch(error){setStatus(error.message||'GitHub 저장에 실패했습니다.','error');}finally{button.disabled=false;button.textContent='저장';}}
+function selectedIds(){return Array.from(document.querySelectorAll('#tbody tr')).filter(function(row){return row.style.display!=='none'&&row.querySelector('.row-check')&&row.querySelector('.row-check').checked;}).map(function(row){return row.getAttribute('data-record-id');});}
+async function deleteSelected(){var ids=selectedIds();if(!ids.length){setStatus('삭제할 공고를 체크하세요.','error');return;}var token=getToken();if(!token){setStatus('먼저 GitHub 토큰을 저장하세요.','error');return;}if(!confirm(ids.length+'건을 목록에서 삭제할까요?')){return;}var btn=document.getElementById('delete-selected');btn.disabled=true;setStatus('선택 공고를 GitHub에 저장 삭제 처리 중입니다...');try{var remote=await fetchGithubJson(deletedFile,token);var merged=Array.from(new Set((remote.value||[]).concat(ids))).sort();await putGithubJson(deletedFile,merged,remote.sha,'Delete S2B records '+ids.length+' item(s)',token);writeJsonStorage(deletedStorageKey,merged);applyDeleted(merged);setStatus('선택한 공고를 삭제했습니다.','ok');}catch(error){setStatus(error.message||'삭제 저장에 실패했습니다.','error');}finally{btn.disabled=false;}}
+function toggleAll(master){document.querySelectorAll('#tbody tr').forEach(function(row){if(row.style.display!=='none'){var cb=row.querySelector('.row-check');if(cb){cb.checked=master.checked;}}});}
+function filterCurrent(){var rows=document.querySelectorAll('#tbody tr');var visible=0;rows.forEach(function(row){var kws=(row.getAttribute('data-keywords')||'').split(',');var keywordMatch=activeKeyword==='all'||kws.indexOf(activeKeyword)!==-1;var deleted=row.getAttribute('data-deleted')==='1';var unsavedMatch=!unsavedOnly||!rowHasRegion(row);var show=keywordMatch&&!deleted&&unsavedMatch;row.style.display=show?'':'none';if(show){visible++;}});document.getElementById('visible-count').textContent=visible;document.getElementById('no-result').style.display=visible===0?'block':'none';var number=1;rows.forEach(function(row){if(row.style.display!=='none'){row.querySelector('.row-no').textContent=number++;}});}
+function filterTable(btn,kind,value){activeKeyword=value;document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});btn.classList.add('active');filterCurrent();}
+function toggleUnsavedOnly(btn){unsavedOnly=!unsavedOnly;btn.classList.toggle('active',unsavedOnly);filterCurrent();}
+document.addEventListener('DOMContentLoaded',function(){var input=document.getElementById('github-token');if(input&&getToken()){input.placeholder='토큰 저장됨';}applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());loadRemoteState();});
 """.strip()
 
     return (
@@ -807,12 +722,15 @@ document.addEventListener('DOMContentLoaded',function(){
         "<div class='sync-panel'><input id='github-token' type='password' autocomplete='off' placeholder='GitHub fine-grained token'>"
         "<button type='button' class='sync-btn' onclick='saveToken()'>토큰 저장</button>"
         "<button type='button' class='sync-btn secondary' onclick='clearToken()'>토큰 삭제</button>"
-        "<span id='sync-status' class='sync-status'>지역 저장은 GitHub 저장소의 region_overrides.json에 기록됩니다.</span></div>"
+        "<span id='sync-status' class='sync-status'>토큰 저장 후 지역 저장/삭제를 사용할 수 있습니다.</span></div>"
+        "<div class='toolbar'><button type='button' id='delete-selected' class='action-btn danger' onclick='deleteSelected()'>선택 삭제</button>"
+        "<button type='button' class='action-btn secondary' onclick='toggleUnsavedOnly(this)'>지역 미저장만 보기</button>"
+        "<span class='toolbar-spacer'></span></div>"
         "<div class='table-wrap'><table><thead><tr>"
-        "<th>No</th><th style='text-align:left'>계약명</th><th>검색키워드</th><th>지역</th><th>계약기관</th><th>계약대상자</th>"
+        "<th><input type='checkbox' aria-label='전체 선택' onclick='toggleAll(this)'></th><th>No</th><th style='text-align:left'>계약명</th><th>검색키워드</th><th>지역</th><th>계약기관</th><th>계약대상자</th>"
         "<th>금액</th><th>계약체결일</th>"
         "</tr></thead><tbody id='tbody'>" + rows_html + "</tbody></table>"
-        "<div class='no-result' id='no-result'>해당 검색어의 계약내역이 없습니다.</div></div>"
+        "<div class='no-result' id='no-result'>표시할 계약내역이 없습니다.</div></div>"
         "<div class='footer'>로컬 파일 자동 생성 · " + esc(exported_at) + "</div>"
         "</div><script>" + js + "</script></body></html>"
     )
@@ -855,6 +773,11 @@ def publish_to_github(date_from, date_to, enabled=AUTO_GITHUB_UPLOAD):
     if remote.returncode != 0:
         print("[github] skipped: origin remote is not configured.")
         print(remote.stdout.strip())
+        return False
+
+    sync = run_git(["pull", "--rebase", "--autostash", "origin", "main"], timeout=180)
+    if sync.returncode != 0:
+        print("[github] git pull failed:\n" + sync.stdout.strip())
         return False
 
     files = [name for name in GITHUB_UPLOAD_FILES if os.path.exists(os.path.join(APP_DIR, name))]
