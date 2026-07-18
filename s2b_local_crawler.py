@@ -579,8 +579,8 @@ def esc(value):
 def build_cumulative_html(data):
     records = data.get("records", [])
     exported_at = data.get("exported_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
-    last_period = data.get("meta", {}).get("lastSearchPeriod", "")
     ref_url = LIST_URL + "?forwardName=list03"
+    regions = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
 
     all_keywords = []
     for keyword in KEYWORDS:
@@ -601,17 +601,31 @@ def build_cumulative_html(data):
         else:
             name_html = contract_name
 
+        record_id = esc(row.get("id") or row.get("tender_no") or str(index))
+        region = row.get("region", "")
+        if region:
+            region_html = '<span class="region-text" data-region-id="' + record_id + '">' + esc(region) + '</span>'
+        else:
+            options_html = '<option value="">지역 선택</option>'
+            for region_name in regions:
+                options_html += '<option value="' + esc(region_name) + '">' + esc(region_name) + '</option>'
+            region_html = (
+                '<div class="region-editor" data-region-id="' + record_id + '">'
+                '<select class="region-select" aria-label="지역 선택">' + options_html + '</select>'
+                '<button type="button" class="region-save" onclick="saveRegion(this)">저장</button>'
+                '</div>'
+            )
+
         rows_html += (
-            '<tr data-keywords="' + esc(keywords_joined) + '" data-level="' + esc(row.get("school_level", "")) + '">'
+            '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-level="' + esc(row.get("school_level", "")) + '">'
             '<td class="tc">' + str(index) + '</td>'
             '<td>' + name_html + '</td>'
             '<td><div class="tags">' + tag_html + '</div></td>'
-            '<td class="tc">' + esc(row.get("region", "")) + '</td>'
+            '<td class="tc region-cell">' + region_html + '</td>'
             '<td>' + esc(row.get("institution", "")) + '</td>'
             '<td>' + esc(row.get("counterpart", "")) + '</td>'
             '<td class="tr">' + esc(row.get("amount", "")) + '</td>'
             '<td class="tc">' + esc(row.get("contract_date", "")) + '</td>'
-            '<td class="tc">' + esc(row.get("search_period_from", "")) + '~' + esc(row.get("search_period_to", "")) + '</td>'
             '</tr>\n'
         )
 
@@ -627,11 +641,49 @@ def build_cumulative_html(data):
         )
 
     css = """
-*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel{background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:14px 16px;margin-bottom:14px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters{display:flex;flex-wrap:wrap;gap:7px}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1220px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}td:nth-child(1){color:#89939e;width:42px}td:nth-child(7){font-weight:600;white-space:nowrap}td:nth-child(8),td:nth-child(9){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}}
+*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel{background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:14px 16px;margin-bottom:14px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters{display:flex;flex-wrap:wrap;gap:7px}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1060px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.region-cell{min-width:118px}.region-editor{display:flex;gap:6px;justify-content:center;align-items:center}.region-select{height:28px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 6px}.region-save{height:28px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 8px;cursor:pointer}.region-save:hover{background:#1d4c7d}.region-text{font-weight:600;color:#263442}td:nth-child(1){color:#89939e;width:42px}td:nth-child(7){font-weight:600;white-space:nowrap}td:nth-child(8){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}.region-editor{flex-direction:column}.region-select,.region-save{width:100%}}
 """.strip()
 
     js = """
 var activeKeyword='all';
+var regionStorageKey='s2b-region-overrides-v1';
+function getRegionOverrides(){
+  try{return JSON.parse(localStorage.getItem(regionStorageKey)||'{}');}
+  catch(e){return {};}
+}
+function setRegionOverride(id,value){
+  var saved=getRegionOverrides();
+  saved[id]=value;
+  localStorage.setItem(regionStorageKey,JSON.stringify(saved));
+}
+function replaceRegionEditor(container,value){
+  var span=document.createElement('span');
+  span.className='region-text';
+  span.setAttribute('data-region-id',container.getAttribute('data-region-id')||'');
+  span.textContent=value;
+  container.replaceWith(span);
+}
+function applySavedRegions(){
+  var saved=getRegionOverrides();
+  document.querySelectorAll('[data-region-id]').forEach(function(item){
+    var id=item.getAttribute('data-region-id');
+    if(!id||!saved[id]){return;}
+    if(item.classList.contains('region-editor')){
+      replaceRegionEditor(item,saved[id]);
+    }else if(item.classList.contains('region-text')){
+      item.textContent=saved[id];
+    }
+  });
+}
+function saveRegion(button){
+  var editor=button.closest('.region-editor');
+  if(!editor){return;}
+  var select=editor.querySelector('.region-select');
+  var value=select?select.value:'';
+  if(!value){return;}
+  setRegionOverride(editor.getAttribute('data-region-id'),value);
+  replaceRegionEditor(editor,value);
+}
 function filterTable(btn,kind,value){
   activeKeyword=value;
   document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});
@@ -649,29 +701,28 @@ function filterTable(btn,kind,value){
   var number=1;
   rows.forEach(function(row){if(row.style.display!=='none'){row.cells[0].textContent=number++;}});
 }
+document.addEventListener('DOMContentLoaded',applySavedRegions);
 """.strip()
 
     return (
         "<!DOCTYPE html><html lang='ko'><head>"
         "<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>"
-        "<title>S2B 누적 수의계약 내역</title>"
+        "<title>S2B 수의계약 누적 내역</title>"
         "<style>" + css + "</style></head><body>"
         "<div class='wrap'>"
         "<div class='header'><h1>S2B 수의계약 누적 내역</h1>"
-        "<div class='meta'>누적 생성: " + esc(exported_at) + " &nbsp;|&nbsp; 마지막 검색기간: "
-        + esc(last_period) + "</div></div>"
+        "<div class='meta'>누적 생성: " + esc(exported_at) + "</div></div>"
         "<div class='panel'><h2>검색어로 필터링</h2><div class='filters'>" + keyword_buttons + "</div></div>"
         "<div class='summary'><span>총 <strong id='visible-count'>" + str(len(records)) + "</strong>건 표시 중</span>"
         "<a href='" + esc(ref_url) + "' target='_blank' rel='noopener' class='s2b-link'>S2B 수의계약 내역 바로가기 &#8599;</a></div>"
         "<div class='table-wrap'><table><thead><tr>"
         "<th>No</th><th style='text-align:left'>계약명</th><th>검색키워드</th><th>지역</th><th>계약기관</th><th>계약대상자</th>"
-        "<th>금액</th><th>계약체결일</th><th>수집 검색기간</th>"
+        "<th>금액</th><th>계약체결일</th>"
         "</tr></thead><tbody id='tbody'>" + rows_html + "</tbody></table>"
         "<div class='no-result' id='no-result'>해당 검색어의 계약내역이 없습니다.</div></div>"
         "<div class='footer'>로컬 파일 자동 생성 · " + esc(exported_at) + "</div>"
         "</div><script>" + js + "</script></body></html>"
     )
-
 
 def save_cumulative_html(data):
     html_text = build_cumulative_html(data)
