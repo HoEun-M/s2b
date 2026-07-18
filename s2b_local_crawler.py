@@ -9,7 +9,7 @@ import re
 import subprocess
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from urllib.parse import quote, urlencode
 
 import requests
@@ -70,6 +70,7 @@ CUMULATIVE_HTML_FILE = os.path.join(APP_DIR, "s2b_cumulative.html")
 INDEX_HTML_FILE = os.path.join(APP_DIR, "index.html")
 AUTO_GITHUB_UPLOAD = os.environ.get("S2B_AUTO_GITHUB", "1").lower() not in ("0", "false", "no", "off")
 GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html")
+HOLIDAY_API_KEY = "0ff126d5fe6324dc2b8b3b8ee7dc0ccdd9e7d2203962e065703c3c7b78ff4809"
 
 
 def normalize_date(value):
@@ -572,6 +573,59 @@ def update_cumulative_json(results, date_from, date_to):
     return payload
 
 
+
+def get_holidays(year, months=None):
+    holidays = set()
+    try:
+        url = "https://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo"
+        for month in (months or range(1, 13)):
+            params = {
+                "serviceKey": HOLIDAY_API_KEY,
+                "solYear": str(year),
+                "solMonth": str(month).zfill(2),
+                "numOfRows": "20",
+                "_type": "json",
+            }
+            response = requests.get(url, params=params, timeout=3)
+            data = response.json()
+            items = data.get("response", {}).get("body", {}).get("items", {})
+            if not items:
+                continue
+            item_list = items.get("item", [])
+            if isinstance(item_list, dict):
+                item_list = [item_list]
+            for item in item_list:
+                locdate = str(item.get("locdate", ""))
+                if locdate:
+                    holidays.add(locdate)
+    except Exception as exc:
+        print("[holiday] API error: " + str(exc))
+    return holidays
+
+
+def previous_workday_range(today=None):
+    today = today or datetime.now()
+    date_to = today - timedelta(days=1)
+    month_map = {today.year: {today.month, date_to.month}}
+    if date_to.year != today.year:
+        month_map.setdefault(date_to.year, set()).add(date_to.month)
+    holidays = set()
+    for year, months in month_map.items():
+        holidays |= get_holidays(year, sorted(months))
+    if today.month == 1:
+        holidays |= get_holidays(today.year - 1, [12])
+    if today.month == 12:
+        holidays |= get_holidays(today.year + 1, [1])
+
+    cursor = date_to
+    date_from = date_to
+    for _ in range(14):
+        locdate = cursor.strftime("%Y%m%d")
+        if cursor.weekday() < 5 and locdate not in holidays:
+            date_from = cursor
+            break
+        cursor -= timedelta(days=1)
+    return date_from.strftime("%Y-%m-%d"), date_to.strftime("%Y-%m-%d"), sorted(holidays)
 def esc(value):
     return html.escape(str(value or ""), quote=True)
 
@@ -581,6 +635,9 @@ def build_cumulative_html(data):
     exported_at = data.get("exported_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
     ref_url = LIST_URL + "?forwardName=list03"
     regions = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
+    default_date_from, default_date_to, holidays = previous_workday_range()
+    default_range_label = default_date_from if default_date_from == default_date_to else default_date_from + " ~ " + default_date_to
+
 
     all_keywords = []
     for keyword in KEYWORDS:
@@ -588,9 +645,16 @@ def build_cumulative_html(data):
             all_keywords.append(keyword)
 
     rows_html = ""
+    default_visible_count = 0
     for index, row in enumerate(records, 1):
         keywords = row.get("keywords", [])
         keywords_joined = ",".join(keywords)
+        contract_date = row.get("contract_date", "")
+        in_default_range = bool(contract_date) and default_date_from <= contract_date <= default_date_to
+        if in_default_range:
+            default_visible_count += 1
+        display_number = str(default_visible_count) if in_default_range else ""
+        row_display_attr = "" if in_default_range else ' style="display:none"'
         tag_html = "".join('<span class="tag">' + esc(keyword) + "</span>" for keyword in keywords)
         contract_name = esc(row.get("contract_name", ""))
         if row.get("link"):
@@ -642,9 +706,9 @@ def build_cumulative_html(data):
             )
 
         rows_html += (
-            '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-level="' + esc(row.get("school_level", "")) + '">'
+            '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-level="' + esc(row.get("school_level", "")) + '" data-contract-date="' + esc(contract_date) + '"' + row_display_attr + '>'
             '<td class="tc select-cell"><input type="checkbox" class="row-check" aria-label="삭제할 공고 선택"></td>'
-            '<td class="tc row-no">' + str(index) + '</td>'
+            '<td class="tc row-no">' + display_number + '</td>'
             '<td>' + name_html + '</td>'
             '<td><div class="tags">' + tag_html + '</div></td>'
             '<td class="tc region-cell">' + region_html + '</td>'
@@ -667,18 +731,22 @@ def build_cumulative_html(data):
         )
 
     css = """
-*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel,.toolbar{background:#fff;border:1px solid #dce4ec;border-radius:8px;margin-bottom:14px}.panel{padding:14px 16px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters,.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.toolbar{padding:10px 12px}.toolbar-spacer{flex:1}.action-btn{height:30px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.action-btn.danger{border-color:#b33a3a;background:#b33a3a}.action-btn.secondary{background:#fff;color:#245a92}.action-btn:hover{filter:brightness(.95)}.sync-status{font-size:12px;color:#5c6670}.sync-status.ok{color:#1d7a38}.sync-status.error{color:#b33a3a}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1120px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr{content-visibility:auto;contain-intrinsic-size:52px}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.select-cell{width:36px}.row-no{color:#89939e;width:42px}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.region-cell{min-width:210px}.region-editor{display:flex;gap:6px;justify-content:center;align-items:center}.region-select{height:28px;max-width:160px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 6px}.region-save{height:28px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 8px;cursor:pointer}.region-save:disabled,.action-btn:disabled{opacity:.65;cursor:wait}.region-text{font-weight:600;color:#263442}td:nth-child(8){font-weight:600;white-space:nowrap}td:nth-child(9){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary,.toolbar{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}.region-editor{flex-direction:column}.region-select,.region-save{width:100%;max-width:none}}
+*{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px}.header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.panel,.toolbar{background:#fff;border:1px solid #dce4ec;border-radius:8px;margin-bottom:14px}.panel{padding:14px 16px}.panel h2{font-size:12px;color:#69727d;margin:0 0 10px}.filters,.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.btn{border:1px solid #2f6fa8;color:#245a92;background:#fff;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit}.btn:hover{background:#eef5fb}.btn.active{background:#245a92;color:#fff}.cnt{background:rgba(36,90,146,.1);border-radius:10px;padding:1px 6px;margin-left:3px}.btn.active .cnt{background:rgba(255,255,255,.25)}.summary{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 16px;margin-bottom:14px}.summary strong{font-size:17px;color:#c0392b}.s2b-link{color:#245a92;text-decoration:none}.toolbar{padding:10px 12px}.toolbar-spacer{flex:1}.action-btn{height:30px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.action-btn.danger{border-color:#b33a3a;background:#b33a3a}.action-btn.secondary{background:#fff;color:#245a92}.action-btn:hover{filter:brightness(.95)}.date-tools{gap:10px}.date-toggle{display:inline-flex;align-items:center;gap:5px;height:30px;border:1px solid #bfd0df;border-radius:16px;padding:0 10px;background:#fff;color:#263442;font-size:12px}.date-toggle input{margin:0}.date-input{height:30px;border:1px solid #b9c7d6;border-radius:6px;padding:0 8px;font-family:inherit;font-size:12px}.range-note{font-size:12px;color:#5c6670}.sync-status{font-size:12px;color:#5c6670}.sync-status.ok{color:#1d7a38}.sync-status.error{color:#b33a3a}.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto}table{width:100%;border-collapse:collapse;min-width:1120px}thead tr{background:#245a92;color:#fff}th{padding:11px 9px;font-size:12px;font-weight:600;white-space:nowrap}td{padding:10px 9px;border-bottom:1px solid #edf0f2;vertical-align:middle}tbody tr{content-visibility:auto;contain-intrinsic-size:52px}tbody tr:hover td{background:#f8fbff}.tc{text-align:center}.tr{text-align:right}.select-cell{width:36px}.row-no{color:#89939e;width:42px}.contract-link{color:#1769aa;text-decoration:none}.contract-link:hover{text-decoration:underline}.tags{margin-top:5px}.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.region-cell{min-width:210px}.region-editor{display:flex;gap:6px;justify-content:center;align-items:center}.region-select{height:28px;max-width:160px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 6px}.region-save{height:28px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;font-family:inherit;font-size:12px;padding:0 8px;cursor:pointer}.region-save:disabled,.action-btn:disabled{opacity:.65;cursor:wait}.region-text{font-weight:600;color:#263442}td:nth-child(8){font-weight:600;white-space:nowrap}td:nth-child(9){font-size:12px;color:#5c6670;white-space:nowrap}.no-result{text-align:center;padding:54px 20px;color:#8a94a0;display:none}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}@media(max-width:720px){.wrap{padding:12px 8px}.header{padding:16px}.summary,.toolbar{align-items:flex-start;flex-direction:column}.panel{padding:12px}.btn{padding:6px 10px}.region-editor{flex-direction:column}.region-select,.region-save{width:100%;max-width:none}}
 """.strip()
 
     js = """
 var activeKeyword='all';
 var unsavedOnly=false;
+var dateMode='previous';
+var selectedDate='';
+var defaultDateFrom='__DEFAULT_DATE_FROM__';
+var defaultDateTo='__DEFAULT_DATE_TO__';
 var regionStorageKey='s2b-region-overrides-v1';
 var deletedStorageKey='s2b-deleted-records-v1';
 var supabaseUrlKey='s2b-supabase-url-v1';
 var supabaseAnonKey='s2b-supabase-anon-key-v1';
 var supabaseDefaultUrl='https://fozuzbszeujgskjasvzq.supabase.co';
-var supabaseDefaultAnonKey='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvenV6YnN6ZXVqZ3NramFzdnpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNDEwNzAsImV4cCI6MjA5OTkxNzA3MH0.IJw9LIMiL7SZ81Rf1xMsUj69CHBJ5IyrQRQZdz2MrVk';
+var supabaseDefaultAnonKey='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvenV6YnNramFzdnpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNDEwNzAsImV4cCI6MjA5OTkxNzA3MH0.IJw9LIMiL7SZ81Rf1xMsUj69CHBJ5IyrQRQZdz2MrVk';
 function readJsonStorage(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
 function writeJsonStorage(key,value){localStorage.setItem(key,JSON.stringify(value));}
 function getRegionOverrides(){return readJsonStorage(regionStorageKey,{});}
@@ -686,27 +754,33 @@ function getDeletedRecords(){return readJsonStorage(deletedStorageKey,[]);}
 function setStatus(message,type){var el=document.getElementById('sync-status');if(!el){return;}el.textContent=message||'';el.className='sync-status '+(type||'');}
 function cleanSupabaseUrl(url){return (url||'').trim().replace(/\\/$/,'');}
 function getSupabaseConfig(){return {url:cleanSupabaseUrl(localStorage.getItem(supabaseUrlKey)||supabaseDefaultUrl||''),key:localStorage.getItem(supabaseAnonKey)||supabaseDefaultAnonKey||''};}
-function saveSupabaseConfig(){var urlInput=document.getElementById('supabase-url');var keyInput=document.getElementById('supabase-key');var url=cleanSupabaseUrl((urlInput&&urlInput.value)?urlInput.value:supabaseDefaultUrl);var key=(keyInput&&keyInput.value)?keyInput.value.trim():supabaseDefaultAnonKey;if(!url||!key){setStatus('Supabase URL과 anon key를 모두 입력하세요.','error');return;}localStorage.setItem(supabaseUrlKey,url);localStorage.setItem(supabaseAnonKey,key);if(urlInput){urlInput.value='';urlInput.placeholder=url;}if(keyInput){keyInput.value='';keyInput.placeholder='anon key 저장됨';}setStatus('Supabase 설정 저장 완료. 이제 지역 저장/삭제를 사용할 수 있습니다.','ok');loadRemoteState();}
-function clearSupabaseConfig(){localStorage.removeItem(supabaseUrlKey);localStorage.removeItem(supabaseAnonKey);var urlInput=document.getElementById('supabase-url');var keyInput=document.getElementById('supabase-key');if(urlInput){urlInput.value='';urlInput.placeholder=supabaseDefaultUrl||'Supabase project URL';}if(keyInput){keyInput.value='';keyInput.placeholder=supabaseDefaultAnonKey?'anon key 기본값 사용':'Supabase anon public key';}setStatus('브라우저에 저장된 Supabase 설정을 삭제했습니다.','ok');}
 function supabaseHeaders(){var cfg=getSupabaseConfig();return {'apikey':cfg.key,'Authorization':'Bearer '+cfg.key,'Content-Type':'application/json'};}
-async function supabaseFetch(path,options){var cfg=getSupabaseConfig();if(!cfg.url||!cfg.key){throw new Error('먼저 Supabase 설정을 저장하세요.');}var response=await fetch(cfg.url+path,Object.assign({headers:supabaseHeaders()},options||{}));if(!response.ok){var text='';try{text=await response.text();}catch(e){}throw new Error('Supabase 요청 실패: '+response.status+(text?' '+text.slice(0,120):''));}return response;}
+async function supabaseFetch(path,options){var cfg=getSupabaseConfig();if(!cfg.url||!cfg.key){throw new Error('Supabase config is required.');}var response=await fetch(cfg.url+path,Object.assign({headers:supabaseHeaders()},options||{}));if(!response.ok){var text='';try{text=await response.text();}catch(e){}throw new Error('Supabase ?? ??: '+response.status+(text?' '+text.slice(0,120):''));}return response;}
 async function loadSupabaseRegions(){var response=await supabaseFetch('/rest/v1/region_overrides?select=record_id,region',{method:'GET'});var rows=await response.json();var map={};rows.forEach(function(row){if(row.record_id&&row.region){map[row.record_id]=row.region;}});return map;}
 async function loadSupabaseDeleted(){var response=await supabaseFetch('/rest/v1/deleted_records?select=record_id',{method:'GET'});var rows=await response.json();return rows.map(function(row){return row.record_id;}).filter(Boolean);}
 async function upsertSupabaseRegion(id,region){await supabaseFetch('/rest/v1/region_overrides',{method:'POST',headers:Object.assign(supabaseHeaders(),{'Prefer':'resolution=merge-duplicates,return=minimal'}),body:JSON.stringify({record_id:id,region:region})});}
 async function upsertSupabaseDeleted(ids){var rows=ids.map(function(id){return {record_id:id};});await supabaseFetch('/rest/v1/deleted_records',{method:'POST',headers:Object.assign(supabaseHeaders(),{'Prefer':'resolution=merge-duplicates,return=minimal'}),body:JSON.stringify(rows)});}
 function rowHasRegion(row){var id=row.getAttribute('data-record-id');var regions=getRegionOverrides();var fixed=row.querySelector('.fixed-region');return !!(fixed||(id&&regions[id]));}
-function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);}function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(!value){return;}renderSavedRegion(editor,value);});}
+function rowMatchesDate(row){var date=row.getAttribute('data-contract-date')||'';if(dateMode==='all'){return true;}if(dateMode==='search'){return !!selectedDate&&date===selectedDate;}return !!date&&date>=defaultDateFrom&&date<=defaultDateTo;}
+function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);}
+function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(value){renderSavedRegion(editor,value);}});}
 function applyDeleted(deleted){var deletedSet=new Set(deleted||[]);document.querySelectorAll('#tbody tr').forEach(function(row){row.setAttribute('data-deleted',deletedSet.has(row.getAttribute('data-record-id'))?'1':'0');});filterCurrent();}
-async function loadRemoteState(){try{var cfg=getSupabaseConfig();if(!cfg.url||!cfg.key){applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());setStatus('Supabase 설정을 저장하면 서버 저장값을 불러옵니다.');return;}var regionRemote=await loadSupabaseRegions();var deletedRemote=await loadSupabaseDeleted();writeJsonStorage(regionStorageKey,regionRemote);writeJsonStorage(deletedStorageKey,deletedRemote);applyRegions(regionRemote);applyDeleted(deletedRemote);setStatus('Supabase 저장값을 불러왔습니다.','ok');}catch(error){applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());setStatus(error.message||'Supabase 저장값을 불러오지 못했습니다.','error');}}
-async function saveRegion(button){var editor=button.closest('.region-editor');if(!editor){return;}var select=editor.querySelector('.region-select');var value=select?select.value:'';var id=editor.getAttribute('data-region-id');if(!value||!id){setStatus('지역을 선택하세요.','error');return;}button.disabled=true;button.textContent='저장중';setStatus('Supabase에 지역을 저장하는 중입니다...');try{await upsertSupabaseRegion(id,value);var regions=getRegionOverrides();regions[id]=value;writeJsonStorage(regionStorageKey,regions);renderSavedRegion(editor,value);if(unsavedOnly){filterCurrent();}setStatus('지역을 Supabase에 저장했습니다.','ok');}catch(error){setStatus(error.message||'지역 저장에 실패했습니다.','error');button.disabled=false;button.textContent='저장';}}
+async function loadRemoteState(){try{var regionRemote=await loadSupabaseRegions();var deletedRemote=await loadSupabaseDeleted();writeJsonStorage(regionStorageKey,regionRemote);writeJsonStorage(deletedStorageKey,deletedRemote);applyRegions(regionRemote);applyDeleted(deletedRemote);setStatus('Supabase data loaded.','ok');}catch(error){applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());setStatus(error.message||'Could not load Supabase data.','error');}}
+async function saveRegion(button){var editor=button.closest('.region-editor');if(!editor){return;}var select=editor.querySelector('.region-select');var value=select?select.value:'';var id=editor.getAttribute('data-region-id');if(!value||!id){setStatus('Select a region.','error');return;}button.disabled=true;button.textContent='Saving';setStatus('Saving region to Supabase...');try{await upsertSupabaseRegion(id,value);var regions=getRegionOverrides();regions[id]=value;writeJsonStorage(regionStorageKey,regions);renderSavedRegion(editor,value);if(unsavedOnly){filterCurrent();}setStatus('Region saved to Supabase.','ok');}catch(error){setStatus(error.message||'Failed to save deletes.','error');button.disabled=false;button.textContent='Save';}}
 function selectedIds(){return Array.from(document.querySelectorAll('#tbody tr')).filter(function(row){return row.style.display!=='none'&&row.querySelector('.row-check')&&row.querySelector('.row-check').checked;}).map(function(row){return row.getAttribute('data-record-id');});}
-async function deleteSelected(){var ids=selectedIds();if(!ids.length){setStatus('삭제할 공고를 체크하세요.','error');return;}if(!confirm(ids.length+'건을 목록에서 삭제할까요?')){return;}var btn=document.getElementById('delete-selected');btn.disabled=true;setStatus('선택 공고를 Supabase에 삭제 저장 중입니다...');try{await upsertSupabaseDeleted(ids);var merged=Array.from(new Set(getDeletedRecords().concat(ids))).sort();writeJsonStorage(deletedStorageKey,merged);applyDeleted(merged);setStatus('선택한 공고를 삭제했습니다.','ok');}catch(error){setStatus(error.message||'삭제 저장에 실패했습니다.','error');}finally{btn.disabled=false;}}
+async function deleteSelected(){var ids=selectedIds();if(!ids.length){setStatus('Check notices to delete.','error');return;}if(!confirm(ids.length+' items will be deleted from the list. Continue?')){return;}var btn=document.getElementById('delete-selected');btn.disabled=true;setStatus('Saving selected deletes to Supabase...');try{await upsertSupabaseDeleted(ids);var merged=Array.from(new Set(getDeletedRecords().concat(ids))).sort();writeJsonStorage(deletedStorageKey,merged);applyDeleted(merged);setStatus('Selected notices deleted.','ok');}catch(error){setStatus(error.message||'Failed to save deletes.','error');}finally{btn.disabled=false;}}
 function toggleAll(master){document.querySelectorAll('#tbody tr').forEach(function(row){if(row.style.display!=='none'){var cb=row.querySelector('.row-check');if(cb){cb.checked=master.checked;}}});}
-function filterCurrent(){var rows=document.querySelectorAll('#tbody tr');var visible=0;rows.forEach(function(row){var kws=(row.getAttribute('data-keywords')||'').split(',');var keywordMatch=activeKeyword==='all'||kws.indexOf(activeKeyword)!==-1;var deleted=row.getAttribute('data-deleted')==='1';var unsavedMatch=!unsavedOnly||!rowHasRegion(row);var show=keywordMatch&&!deleted&&unsavedMatch;row.style.display=show?'':'none';if(show){visible++;}});document.getElementById('visible-count').textContent=visible;document.getElementById('no-result').style.display=visible===0?'block':'none';var number=1;rows.forEach(function(row){if(row.style.display!=='none'){row.querySelector('.row-no').textContent=number++;}});}
+function filterCurrent(){var rows=document.querySelectorAll('#tbody tr');var visible=0;rows.forEach(function(row){var kws=(row.getAttribute('data-keywords')||'').split(',');var keywordMatch=activeKeyword==='all'||kws.indexOf(activeKeyword)!==-1;var deleted=row.getAttribute('data-deleted')==='1';var unsavedMatch=!unsavedOnly||!rowHasRegion(row);var show=keywordMatch&&!deleted&&unsavedMatch&&rowMatchesDate(row);row.style.display=show?'':'none';var cb=row.querySelector('.row-check');if(!show&&cb){cb.checked=false;}if(show){visible++;}});document.getElementById('visible-count').textContent=visible;document.getElementById('no-result').style.display=visible===0?'block':'none';var number=1;rows.forEach(function(row){if(row.style.display!=='none'){row.querySelector('.row-no').textContent=number++;}});var master=document.querySelector('thead input[type="checkbox"]');if(master){master.checked=false;}}
 function filterTable(btn,kind,value){activeKeyword=value;document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});btn.classList.add('active');filterCurrent();}
 function toggleUnsavedOnly(btn){unsavedOnly=!unsavedOnly;btn.classList.toggle('active',unsavedOnly);filterCurrent();}
-document.addEventListener('DOMContentLoaded',function(){var start=function(){loadRemoteState();};if('requestIdleCallback' in window){requestIdleCallback(start,{timeout:1200});}else{setTimeout(start,250);}});
+function syncDateToggles(){var previous=document.getElementById('previous-view');var all=document.getElementById('all-view');if(previous){previous.checked=dateMode==='previous';}if(all){all.checked=dateMode==='all';}}
+function setPreviousView(checked){dateMode=checked?'previous':'all';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
+function setAllView(checked){dateMode=checked?'all':'previous';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
+function applyDateSearch(){var input=document.getElementById('date-filter');selectedDate=input?input.value:'';if(!selectedDate){setStatus('Select a contract date.','error');return;}dateMode='search';syncDateToggles();filterCurrent();setStatus('Showing selected contract date.','ok');}
+function clearDateSearch(){dateMode='previous';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
+document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filterCurrent();var start=function(){loadRemoteState();};if('requestIdleCallback' in window){requestIdleCallback(start,{timeout:1200});}else{setTimeout(start,250);}});
 """.strip()
+    js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
 
     return (
         "<!DOCTYPE html><html lang='ko'><head>"
@@ -717,9 +791,10 @@ document.addEventListener('DOMContentLoaded',function(){var start=function(){loa
         "<div class='header'><h1>S2B 수의계약 누적 내역</h1>"
         "<div class='meta'>누적 생성: " + esc(exported_at) + "</div></div>"
         "<div class='panel'><h2>검색어로 필터링</h2><div class='filters'>" + keyword_buttons + "</div></div>"
-        "<div class='summary'><span>총 <strong id='visible-count'>" + str(len(records)) + "</strong>건 표시 중</span>"
+        "<div class='summary'><span>총 <strong id='visible-count'>" + str(default_visible_count) + "</strong>건 표시 중</span>"
         "<a href='" + esc(ref_url) + "' target='_blank' rel='noopener' class='s2b-link'>S2B 수의계약 내역 바로가기 &#8599;</a></div>"
-        "<div class='toolbar'><button type='button' id='delete-selected' class='action-btn danger' onclick='deleteSelected()'>선택 삭제</button>"
+        "<div class='toolbar date-tools'><label class='date-toggle'><input type='checkbox' id='previous-view' checked onchange='setPreviousView(this.checked)'>&#51060;&#51204;&#51068; &#48372;&#44592;</label><label class='date-toggle'><input type='checkbox' id='all-view' onchange='setAllView(this.checked)'>&#51204;&#52404; &#48372;&#44592;</label><span class='range-note'>&#44592;&#48376; &#48276;&#50948;: " + esc(default_range_label) + "</span><input type='date' id='date-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#44160;&#49353;'><button type='button' class='action-btn secondary' onclick='applyDateSearch()'>&#45216;&#51676; &#44160;&#49353;</button><button type='button' class='action-btn secondary' onclick='clearDateSearch()'>&#52488;&#44592;&#54868;</button></div>"
+        "<div class='toolbar'><button type='button' id='delete-selected' class='action-btn danger' onclick='deleteSelected()'>&#49440;&#53469; &#49325;&#51228;</button>"
         "<button type='button' class='action-btn secondary' onclick='toggleUnsavedOnly(this)'>지역 미저장만 보기</button>"
         "<span class='toolbar-spacer'></span></div>"
         "<div class='table-wrap'><table><thead><tr>"
