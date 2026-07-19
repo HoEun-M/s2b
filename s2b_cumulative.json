@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-18 17:01",
+  "exported_at": "2026-07-19 15:30",
   "meta": {
-    "lastImportedAt": "2026-07-18 17:01",
-    "lastSearchPeriod": "20260401~20260531",
-    "total": 1152
+    "lastImportedAt": "2026-07-19 15:30",
+    "lastSearchPeriod": "20260201~20260331",
+    "total": 1155
   },
   "records": [
     {
@@ -33027,6 +33027,39 @@
       "import_count": 1
     },
     {
+      "id": "202603271104508",
+      "tender_no": "202603271104508",
+      "contract_name": "한걸음 수학 기초학력 워크북",
+      "institution": "함덕초등학교",
+      "counterpart": "코코몰",
+      "amount": "60,000",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271104508&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-19 15:30",
+      "school_level": "초",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "함덕초등학교",
+          "region": "제주",
+          "district": "제주시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "제주시교육지원청",
+          "address": "제주특별자치도 제주시 조천읍 일주동로 1231",
+          "school_code": "9296085"
+        }
+      ],
+      "first_imported_at": "2026-07-19 15:30",
+      "import_count": 1
+    },
+    {
       "id": "202603271104515",
       "tender_no": "202603271104515",
       "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
@@ -33961,6 +33994,72 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-17 17:39",
+      "import_count": 1
+    },
+    {
+      "id": "202603251096924",
+      "tender_no": "202603251096924",
+      "contract_name": "기초학력향샹 프로그램 구입",
+      "institution": "새만금초등학교",
+      "counterpart": "(주)감각교육",
+      "amount": "9,900,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603251096924&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-19 15:30",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "새만금초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 요죽5길 42",
+          "school_code": "8342115"
+        }
+      ],
+      "first_imported_at": "2026-07-19 15:30",
+      "import_count": 1
+    },
+    {
+      "id": "202603241094408",
+      "tender_no": "202603241094408",
+      "contract_name": "2026. 정기고사 및 기초학력 진단평가 운영을 위한 용품 구입",
+      "institution": "제천고등학교",
+      "counterpart": "(주) 비.엘소프트",
+      "amount": "1,190,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603241094408&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-19 15:30",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "제천고등학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 제천시 칠성로 105",
+          "school_code": "8000057"
+        }
+      ],
+      "first_imported_at": "2026-07-19 15:30",
       "import_count": 1
     },
     {
