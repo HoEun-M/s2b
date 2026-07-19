@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-19 16:47",
+  "exported_at": "2026-07-19 16:52",
   "meta": {
     "lastImportedAt": "2026-07-19 16:47",
     "lastSearchPeriod": "20260401~20260531",
-    "total": 1146
+    "total": 1149
   },
   "records": [
     {
@@ -26366,6 +26366,29 @@
       "import_count": 2
     },
     {
+      "id": "202604061131150",
+      "tender_no": "202604061131150",
+      "contract_name": "2026. 금성초 1학기 기초학력향상 운영용품 구입",
+      "institution": "전남금성초등학교",
+      "counterpart": "알파문구(샘터서점)",
+      "amount": "1,766,340",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604061131150&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-19 15:36",
+      "school_level": "초",
+      "region": "전남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-19 15:36",
+      "import_count": 1
+    },
+    {
       "id": "202604081139616",
       "tender_no": "202604081139616",
       "contract_name": "영어, 국어 코스웨어 구입",
@@ -32009,6 +32032,29 @@
       "import_count": 1
     },
     {
+      "id": "202603311113710",
+      "tender_no": "202603311113710",
+      "contract_name": "2026. 이중언어 및 한국어 집중교실 운영용품 견적 요청",
+      "institution": "전라남도영암교육지원청",
+      "counterpart": "알파문구 목포남악점",
+      "amount": "1,100,000",
+      "contract_date": "2026-03-31",
+      "keywords": [
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603311113710&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-18 13:20",
+      "school_level": "기타",
+      "region": "전남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-18 13:20",
+      "import_count": 1
+    },
+    {
       "id": "202603311112223",
       "tender_no": "202603311112223",
       "contract_name": "코드모스 AI코스웨어",
@@ -33981,6 +34027,39 @@
           "support_office": "전북특별자치도군산교육지원청",
           "address": "전북특별자치도 군산시 요죽5길 42",
           "school_code": "8342115"
+        }
+      ],
+      "first_imported_at": "2026-07-19 15:30",
+      "import_count": 1
+    },
+    {
+      "id": "202603241094408",
+      "tender_no": "202603241094408",
+      "contract_name": "2026. 정기고사 및 기초학력 진단평가 운영을 위한 용품 구입",
+      "institution": "제천고등학교",
+      "counterpart": "(주) 비.엘소프트",
+      "amount": "1,190,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603241094408&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-19 15:30",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "제천고등학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 제천시 칠성로 105",
+          "school_code": "8000057"
         }
       ],
       "first_imported_at": "2026-07-19 15:30",
