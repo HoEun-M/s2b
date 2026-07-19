@@ -870,10 +870,16 @@ def run_git(args, timeout=120):
         ["git"] + args,
         cwd=APP_DIR,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         timeout=timeout,
     )
+
+
+def git_output(result):
+    return (result.stdout or "").strip()
 
 
 def publish_to_github(date_from, date_to, enabled=AUTO_GITHUB_UPLOAD):
@@ -890,12 +896,12 @@ def publish_to_github(date_from, date_to, enabled=AUTO_GITHUB_UPLOAD):
     remote = run_git(["remote", "get-url", "origin"])
     if remote.returncode != 0:
         print("[github] skipped: origin remote is not configured.")
-        print(remote.stdout.strip())
+        print(git_output(remote))
         return False
 
     sync = run_git(["pull", "--rebase", "--autostash", "origin", "main"], timeout=180)
     if sync.returncode != 0:
-        print("[github] git pull failed:\n" + sync.stdout.strip())
+        print("[github] git pull failed:\n" + git_output(sync))
         return False
 
     files = [name for name in GITHUB_UPLOAD_FILES if os.path.exists(os.path.join(APP_DIR, name))]
@@ -905,26 +911,26 @@ def publish_to_github(date_from, date_to, enabled=AUTO_GITHUB_UPLOAD):
 
     add = run_git(["add"] + files)
     if add.returncode != 0:
-        print("[github] git add failed:\n" + add.stdout.strip())
+        print("[github] git add failed:\n" + git_output(add))
         return False
 
     status = run_git(["status", "--porcelain", "--"] + files)
     if status.returncode != 0:
-        print("[github] git status failed:\n" + status.stdout.strip())
+        print("[github] git status failed:\n" + git_output(status))
         return False
-    if not status.stdout.strip():
+    if not git_output(status):
         print("[github] no changes to upload")
         return True
 
     msg = "Update S2B cumulative data " + display_date(date_from) + "~" + display_date(date_to)
     commit = run_git(["commit", "-m", msg])
     if commit.returncode != 0:
-        print("[github] git commit failed:\n" + commit.stdout.strip())
+        print("[github] git commit failed:\n" + git_output(commit))
         return False
 
     push = run_git(["push"], timeout=180)
     if push.returncode != 0:
-        print("[github] git push failed:\n" + push.stdout.strip())
+        print("[github] git push failed:\n" + git_output(push))
         print("[github] check GitHub login/token or run the first push manually.")
         return False
 
