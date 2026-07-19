@@ -420,13 +420,16 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     print("이번 검색 결과: " + str(len(all_results)) + "건(중복 제거)")
     return all_results
 
+
 def get_keywords_from_user(args):
     if args.keywords is not None:
         return select_keywords(args)
 
-    print("\n등록 키워드:")
-    print(", ".join(KEYWORDS))
-    typed = input("검색 키워드 입력(쉼표로 구분, Enter=전체): ").strip()
+    print('\nRegistered keywords:')
+    for index, keyword in enumerate(KEYWORDS, 1):
+        print('  ' + str(index).rjust(2) + '. ' + keyword)
+    print('\nTip: enter numbers to avoid Korean input issues. Example: 5 or 1,5,9 or 5-7')
+    typed = input('Keyword numbers/names separated by comma (Enter=all): ').strip()
     if typed:
         args.keywords = typed
     return select_keywords(args)
