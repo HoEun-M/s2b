@@ -236,6 +236,10 @@ def current_active_page(page):
     return pages[-1] if pages else page
 
 
+def is_page_closed_error(exc):
+    return "Target page, context or browser has been closed" in str(exc)
+
+
 def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
     if not is_captcha(page_content_bytes(page)):
         return page, False
@@ -273,36 +277,43 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
             wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
         except Exception as exc:
             print("    browser error: " + str(exc))
-            if "Target page, context or browser has been closed" in str(exc) and results:
+            if is_page_closed_error(exc) and results:
                 print("    page closed after partial results. keeping this keyword's collected records.")
                 return results, page
             raise
 
-        page, captcha_was_solved = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
-        if captcha_was_solved:
-            records, has_data = parse_page(page_content_bytes(page))
-            if has_data:
-                print("    [captcha] result table loaded after CAPTCHA.")
-            else:
-                try:
-                    print("    [captcha] no result table after CAPTCHA. retrying the search in the same browser session...")
-                    submit_search(page, keyword, date_from, date_to, page_no, timeout_ms)
-                    wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
-                except Exception as exc:
-                    print("    browser error after CAPTCHA: " + str(exc))
-                    if "Target page, context or browser has been closed" in str(exc) and results:
-                        print("    page closed after CAPTCHA. keeping this keyword's collected records.")
-                        return results, page
-                    raise
-
-                page, captcha_again = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
-                if captcha_again:
-                    print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
-                    save_debug_page(page, keyword, page_no, "captcha_repeated")
-                    break
+        try:
+            page, captcha_was_solved = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
+            if captcha_was_solved:
                 records, has_data = parse_page(page_content_bytes(page))
-        else:
-            records, has_data = parse_page(page_content_bytes(page))
+                if has_data:
+                    print("    [captcha] result table loaded after CAPTCHA.")
+                else:
+                    try:
+                        print("    [captcha] no result table after CAPTCHA. retrying the search in the same browser session...")
+                        submit_search(page, keyword, date_from, date_to, page_no, timeout_ms)
+                        wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
+                    except Exception as exc:
+                        print("    browser error after CAPTCHA: " + str(exc))
+                        if is_page_closed_error(exc) and results:
+                            print("    page closed after CAPTCHA. keeping this keyword's collected records.")
+                            return results, page
+                        raise
+
+                    page, captcha_again = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
+                    if captcha_again:
+                        print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
+                        save_debug_page(page, keyword, page_no, "captcha_repeated")
+                        break
+                    records, has_data = parse_page(page_content_bytes(page))
+            else:
+                records, has_data = parse_page(page_content_bytes(page))
+        except Exception as exc:
+            print("    browser error while reading page: " + str(exc))
+            if is_page_closed_error(exc) and results:
+                print("    page closed after partial results. keeping this keyword's collected records.")
+                return results, page
+            raise
 
         if not has_data:
             if page_no > 1 and saw_data_page:
@@ -373,7 +384,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                     )
                     break
                 except Exception as exc:
-                    page_was_closed = "Target page, context or browser has been closed" in str(exc)
+                    page_was_closed = is_page_closed_error(exc)
                     if not page_was_closed:
                         print("[browser] stopped: " + str(exc))
                         fatal_error = True
