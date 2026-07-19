@@ -260,6 +260,7 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
 
     page_no = 1
+    saw_data_page = False
     while max_pages is None or page_no <= max_pages:
         if page_no > 1:
             sleep_random(page_delay_range, "request delay")
@@ -304,20 +305,28 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
             records, has_data = parse_page(page_content_bytes(page))
 
         if not has_data:
-            if page_no > 1 and results:
+            if page_no > 1 and saw_data_page:
                 print("    page " + str(page_no) + ": no more results")
                 break
             print("    no parsable result table. url: " + page.url)
             save_debug_page(page, keyword, page_no, "no_table")
             break
 
+        saw_data_page = True
+        keyword_matched = [record for record in records if keyword in record["계약명"]]
         filtered = [
-            record for record in records
-            if keyword in record["계약명"]
-            and not is_excluded_contract_name(record["계약명"])
+            record for record in keyword_matched
+            if not is_excluded_contract_name(record["계약명"])
         ]
+        excluded_count = len(keyword_matched) - len(filtered)
+        keyword_miss_count = len(records) - len(keyword_matched)
         results.extend(filtered)
-        print("    page " + str(page_no) + ": " + str(len(records)) + " recv, " + str(len(filtered)) + " matched")
+        print(
+            "    page " + str(page_no) + ": " + str(len(records)) + " recv, "
+            + str(len(filtered)) + " matched"
+            + ", " + str(excluded_count) + " excluded"
+            + ", " + str(keyword_miss_count) + " keyword-miss"
+        )
 
         if len(records) == 0:
             break
@@ -460,7 +469,10 @@ def main():
     results = fetch_all_browser(date_from, date_to, keywords, args)
     data = update_cumulative_json(results, date_from, date_to)
     save_cumulative_html(data)
-    publish_to_github(date_from, date_to, args.github_upload)
+    try:
+        publish_to_github(date_from, date_to, args.github_upload)
+    except Exception as exc:
+        print("[github] upload failed, but local files were saved: " + str(exc))
     print("done.")
     if getattr(sys, "frozen", False):
         input("Press Enter to exit...")
