@@ -788,7 +788,7 @@ var deletedStorageKey='s2b-deleted-records-v1';
 var supabaseUrlKey='s2b-supabase-url-v1';
 var supabaseAnonKey='s2b-supabase-anon-key-v1';
 var supabaseDefaultUrl='https://fozuzbszeujgskjasvzq.supabase.co';
-var supabaseDefaultAnonKey='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvenV6YnNramFzdnpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNDEwNzAsImV4cCI6MjA5OTkxNzA3MH0.IJw9LIMiL7SZ81Rf1xMsUj69CHBJ5IyrQRQZdz2MrVk';
+var supabaseDefaultAnonKey='sb_publishable_bFJbCmjIbzCEracNlI-lhA_9hYn1rdc';
 function readJsonStorage(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
 function writeJsonStorage(key,value){localStorage.setItem(key,JSON.stringify(value));}
 function getRegionOverrides(){return readJsonStorage(regionStorageKey,{});}
