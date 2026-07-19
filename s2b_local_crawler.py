@@ -286,24 +286,63 @@ def fetch_by_keyword(session, keyword, date_from, date_to):
     return results
 
 
+
+def parse_keyword_selection(raw_keywords):
+    requested = [keyword.strip() for keyword in (raw_keywords or '').split(',') if keyword.strip()]
+    if not requested:
+        return KEYWORDS[:]
+
+    selected = []
+    unknown = []
+    for token in requested:
+        lowered = token.lower()
+        if lowered in ('all', '*') or token == '\uc804\uccb4':
+            return KEYWORDS[:]
+
+        match = re.fullmatch(r'(\d+)(?:\s*-\s*(\d+))?', token)
+        if match:
+            first = int(match.group(1))
+            last = int(match.group(2) or match.group(1))
+            if first > last:
+                first, last = last, first
+            if first < 1 or last > len(KEYWORDS):
+                unknown.append(token)
+                continue
+            selected.extend(KEYWORDS[index - 1] for index in range(first, last + 1))
+            continue
+
+        if token not in KEYWORDS:
+            unknown.append(token)
+            continue
+        selected.append(token)
+
+    if unknown:
+        raise ValueError('Unknown keyword or number: ' + ', '.join(unknown))
+
+    unique_selected = []
+    seen = set()
+    for keyword in selected:
+        if keyword in seen:
+            continue
+        seen.add(keyword)
+        unique_selected.append(keyword)
+    return unique_selected
+
+
 def select_keywords(args):
-    selected = KEYWORDS
+    selected = KEYWORDS[:]
     if args.keywords:
-        requested = [keyword.strip() for keyword in args.keywords.split(",") if keyword.strip()]
-        unknown = [keyword for keyword in requested if keyword not in KEYWORDS]
-        if unknown:
-            raise ValueError("등록되지 않은 검색 키워드입니다: " + ", ".join(unknown))
-        selected = requested
+        selected = parse_keyword_selection(args.keywords)
 
     if args.batch_size:
         if args.batch_size < 1:
-            raise ValueError("--batch-size는 1 이상이어야 합니다.")
+            raise ValueError('--batch-size must be 1 or greater.')
         if args.batch_index < 1:
-            raise ValueError("--batch-index는 1 이상이어야 합니다.")
+            raise ValueError('--batch-index must be 1 or greater.')
         start = (args.batch_index - 1) * args.batch_size
         end = start + args.batch_size
         if start >= len(selected):
-            raise ValueError("선택한 키워드 묶음에 포함되는 키워드가 없습니다.")
+            raise ValueError('Selected keyword batch is empty.')
         selected = selected[start:end]
 
     return selected
