@@ -25,14 +25,16 @@ KEYWORDS = [
 EXCLUDE_WORDS = [
     "거치대", "건설", "경연대회", "고등학교", "공사", "공연", "공책",
     "과학고", "교구", "교재", "급식", "기기", "기자재", "기숙사",
-    "기업", "논문", "노트", "노후", "대학", "대학교", "대회", "도서",
-    "도서관", "도시", "로봇", "물품", "문화상품권", "보건실", "보드게임",
-    "비품", "사회대", "사회복무요원", "샤워", "성인", "센서", "수리",
-    "수학여행", "실험실", "안전", "어린이집", "연설대", "연필", "예술",
-    "옥수수", "외국어", "외국어학교", "재료", "전자칠판", "체육", "체험",
-    "축제", "취업", "캠프", "콘센트릴", "키트", "특수학교", "특수학급",
-    "페스타", "페스티벌", "폐기물", "폐수통", "폐시약", "학술", "해외학교",
-    "행사", "현장체험", "하루 한장",
+    "기업", "논문", "노트", "노후", "대학", "대학교", "대회",
+    "도서", "도서관", "도시", "로봇", "물품", "문화상품권", "보건실",
+    "보드게임", "비품", "사회대", "사회복무요원", "샤워", "성인", "센서",
+    "수리", "수학여행", "실험실", "안전", "어린이집", "연설대", "연필",
+    "예술", "옥수수", "외국어", "외국어학교", "재료", "전자칠판", "체육",
+    "체험", "축제", "취업", "캠프", "콘센트릴", "키트", "특수학교",
+    "특수학급", "페스타", "페스티벌", "폐기물", "폐수통", "폐시약", "학술",
+    "해외학교", "행사", "현장체험", "하루 한장", "??", "????", "???",
+    "플라스크", "용품", "간식", "워크북", "준비물", "용역", "스탠드",
+    "강사", "차량",
 ]
 
 BASE_URL = "https://www.s2b.kr"
@@ -738,7 +740,8 @@ def build_cumulative_html(data):
 var activeKeyword='all';
 var unsavedOnly=false;
 var dateMode='previous';
-var selectedDate='';
+var selectedDateFrom='';
+var selectedDateTo='';
 var defaultDateFrom='__DEFAULT_DATE_FROM__';
 var defaultDateTo='__DEFAULT_DATE_TO__';
 var regionStorageKey='s2b-region-overrides-v1';
@@ -761,7 +764,7 @@ async function loadSupabaseDeleted(){var response=await supabaseFetch('/rest/v1/
 async function upsertSupabaseRegion(id,region){await supabaseFetch('/rest/v1/region_overrides?on_conflict=record_id',{method:'POST',headers:Object.assign(supabaseHeaders(),{'Prefer':'resolution=merge-duplicates,return=minimal'}),body:JSON.stringify({record_id:id,region:region})});}
 async function upsertSupabaseDeleted(ids){var rows=ids.map(function(id){return {record_id:id};});await supabaseFetch('/rest/v1/deleted_records?on_conflict=record_id',{method:'POST',headers:Object.assign(supabaseHeaders(),{'Prefer':'resolution=merge-duplicates,return=minimal'}),body:JSON.stringify(rows)});}
 function rowHasRegion(row){var id=row.getAttribute('data-record-id');var regions=getRegionOverrides();var fixed=row.querySelector('.fixed-region');return !!(fixed||(id&&regions[id]));}
-function rowMatchesDate(row){var date=row.getAttribute('data-contract-date')||'';if(dateMode==='all'){return true;}if(dateMode==='search'){return !!selectedDate&&date===selectedDate;}return !!date&&date>=defaultDateFrom&&date<=defaultDateTo;}
+function rowMatchesDate(row){var date=row.getAttribute('data-contract-date')||'';if(dateMode==='all'){return true;}if(dateMode==='search'){return !!date&&!!selectedDateFrom&&!!selectedDateTo&&date>=selectedDateFrom&&date<=selectedDateTo;}return !!date&&date>=defaultDateFrom&&date<=defaultDateTo;}
 function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);}
 function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(value){renderSavedRegion(editor,value);}});}
 function applyDeleted(deleted){var deletedSet=new Set(deleted||[]);document.querySelectorAll('#tbody tr').forEach(function(row){row.setAttribute('data-deleted',deletedSet.has(row.getAttribute('data-record-id'))?'1':'0');});filterCurrent();}
@@ -774,10 +777,11 @@ function filterCurrent(){var rows=document.querySelectorAll('#tbody tr');var vis
 function filterTable(btn,kind,value){activeKeyword=value;document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});btn.classList.add('active');filterCurrent();}
 function toggleUnsavedOnly(btn){unsavedOnly=!unsavedOnly;btn.classList.toggle('active',unsavedOnly);filterCurrent();}
 function syncDateToggles(){var previous=document.getElementById('previous-view');var all=document.getElementById('all-view');if(previous){previous.checked=dateMode==='previous';}if(all){all.checked=dateMode==='all';}}
-function setPreviousView(checked){dateMode=checked?'previous':'all';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
-function setAllView(checked){dateMode=checked?'all':'previous';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
-function applyDateSearch(){var input=document.getElementById('date-filter');selectedDate=input?input.value:'';if(!selectedDate){setStatus('Select a contract date.','error');return;}dateMode='search';syncDateToggles();filterCurrent();setStatus('Showing selected contract date.','ok');}
-function clearDateSearch(){dateMode='previous';selectedDate='';var input=document.getElementById('date-filter');if(input){input.value='';}syncDateToggles();filterCurrent();}
+function clearDateInputs(){var from=document.getElementById('date-from-filter');var to=document.getElementById('date-to-filter');if(from){from.value='';}if(to){to.value='';}}
+function setPreviousView(checked){dateMode=checked?'previous':'all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
+function setAllView(checked){dateMode=checked?'all':'previous';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
+function applyDateSearch(){var from=document.getElementById('date-from-filter');var to=document.getElementById('date-to-filter');selectedDateFrom=from?from.value:'';selectedDateTo=to?to.value:'';if(!selectedDateFrom&&!selectedDateTo){setStatus('Select a date range.','error');return;}if(!selectedDateFrom){selectedDateFrom=selectedDateTo;}if(!selectedDateTo){selectedDateTo=selectedDateFrom;}if(selectedDateFrom>selectedDateTo){var tmp=selectedDateFrom;selectedDateFrom=selectedDateTo;selectedDateTo=tmp;}if(from){from.value=selectedDateFrom;}if(to){to.value=selectedDateTo;}dateMode='search';syncDateToggles();filterCurrent();setStatus('Showing selected date range.','ok');}
+function clearDateSearch(){dateMode='previous';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
 document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filterCurrent();var start=function(){loadRemoteState();};if('requestIdleCallback' in window){requestIdleCallback(start,{timeout:1200});}else{setTimeout(start,250);}});
 """.strip()
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
@@ -793,7 +797,7 @@ document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filter
         "<div class='panel'><h2>검색어로 필터링</h2><div class='filters'>" + keyword_buttons + "</div></div>"
         "<div class='summary'><span>총 <strong id='visible-count'>" + str(default_visible_count) + "</strong>건 표시 중</span>"
         "<a href='" + esc(ref_url) + "' target='_blank' rel='noopener' class='s2b-link'>S2B 수의계약 내역 바로가기 &#8599;</a></div>"
-        "<div class='toolbar date-tools'><label class='date-toggle'><input type='checkbox' id='previous-view' checked onchange='setPreviousView(this.checked)'>&#51060;&#51204;&#51068; &#48372;&#44592;</label><label class='date-toggle'><input type='checkbox' id='all-view' onchange='setAllView(this.checked)'>&#51204;&#52404; &#48372;&#44592;</label><span class='range-note'>&#44592;&#48376; &#48276;&#50948;: " + esc(default_range_label) + "</span><input type='date' id='date-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#44160;&#49353;'><button type='button' class='action-btn secondary' onclick='applyDateSearch()'>&#45216;&#51676; &#44160;&#49353;</button><button type='button' class='action-btn secondary' onclick='clearDateSearch()'>&#52488;&#44592;&#54868;</button></div>"
+        "<div class='toolbar date-tools'><label class='date-toggle'><input type='checkbox' id='previous-view' checked onchange='setPreviousView(this.checked)'>&#51060;&#51204;&#51068; &#48372;&#44592;</label><label class='date-toggle'><input type='checkbox' id='all-view' onchange='setAllView(this.checked)'>&#51204;&#52404; &#48372;&#44592;</label><span class='range-note'>&#44592;&#48376; &#48276;&#50948;: " + esc(default_range_label) + "</span><input type='date' id='date-from-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#49884;&#51089;&#51068;'><span class='range-note'>~</span><input type='date' id='date-to-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#51333;&#47308;&#51068;'><button type='button' class='action-btn secondary' onclick='applyDateSearch()'>&#45216;&#51676; &#44160;&#49353;</button><button type='button' class='action-btn secondary' onclick='clearDateSearch()'>&#52488;&#44592;&#54868;</button></div>"
         "<div class='toolbar'><button type='button' id='delete-selected' class='action-btn danger' onclick='deleteSelected()'>&#49440;&#53469; &#49325;&#51228;</button>"
         "<button type='button' class='action-btn secondary' onclick='toggleUnsavedOnly(this)'>지역 미저장만 보기</button>"
         "<span class='toolbar-spacer'></span><span id='sync-status' class='sync-status'>Supabase sync pending.</span></div>"
