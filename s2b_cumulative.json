@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-20 14:55",
+  "exported_at": "2026-07-20 15:26",
   "meta": {
-    "lastImportedAt": "2026-07-20 14:55",
-    "lastSearchPeriod": "20260208~20260228",
-    "total": 267
+    "lastImportedAt": "2026-07-20 15:26",
+    "lastSearchPeriod": "20260301~20260307",
+    "total": 299
   },
   "records": [
     {
@@ -6866,6 +6866,361 @@
       "import_count": 1
     },
     {
+      "id": "202603061037375",
+      "tender_no": "202603061037375",
+      "contract_name": "진짜 재밌는 일일수학 초등 2-1 외 7종",
+      "institution": "연동초등학교",
+      "counterpart": "드림로켓",
+      "amount": "13,800",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037375&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연동초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 고분로56번길 40",
+          "school_code": "7191083"
+        },
+        {
+          "school_name": "연동초등학교",
+          "region": "세종",
+          "district": "연동면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연동면 청연로 606-36",
+          "school_code": "9300029"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061037374",
+      "tender_no": "202603061037374",
+      "contract_name": "진짜 재밌는 일일수학 초등 2-1 외 7종",
+      "institution": "연동초등학교",
+      "counterpart": "하늘너머 주식회사",
+      "amount": "27,000",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037374&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연동초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 고분로56번길 40",
+          "school_code": "7191083"
+        },
+        {
+          "school_name": "연동초등학교",
+          "region": "세종",
+          "district": "연동면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연동면 청연로 606-36",
+          "school_code": "9300029"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061037373",
+      "tender_no": "202603061037373",
+      "contract_name": "진짜 재밌는 일일수학 초등 2-1 외 7종",
+      "institution": "연동초등학교",
+      "counterpart": "북오피스",
+      "amount": "21,600",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037373&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연동초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 고분로56번길 40",
+          "school_code": "7191083"
+        },
+        {
+          "school_name": "연동초등학교",
+          "region": "세종",
+          "district": "연동면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연동면 청연로 606-36",
+          "school_code": "9300029"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061037371",
+      "tender_no": "202603061037371",
+      "contract_name": "진짜 재밌는 일일수학 초등 2-1 외 7종",
+      "institution": "연동초등학교",
+      "counterpart": "바이비즈(BY BIZ)",
+      "amount": "20,300",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037371&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연동초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 고분로56번길 40",
+          "school_code": "7191083"
+        },
+        {
+          "school_name": "연동초등학교",
+          "region": "세종",
+          "district": "연동면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연동면 청연로 606-36",
+          "school_code": "9300029"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061037370",
+      "tender_no": "202603061037370",
+      "contract_name": "진짜 재밌는 일일수학 초등 2-1 외 7종",
+      "institution": "연동초등학교",
+      "counterpart": "한국문구도매센터 활문사",
+      "amount": "47,440",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037370&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연동초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 고분로56번길 40",
+          "school_code": "7191083"
+        },
+        {
+          "school_name": "연동초등학교",
+          "region": "세종",
+          "district": "연동면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연동면 청연로 606-36",
+          "school_code": "9300029"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061040412",
+      "tender_no": "202603061040412",
+      "contract_name": "매쓰홀릭T 수학앱",
+      "institution": "겸백초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "633,600",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061040412&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "겸백초등학교",
+          "region": "광주",
+          "district": "보성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시보성교육지원청",
+          "address": "전남광주통합특별시 보성군 겸백면 충의로 2496",
+          "school_code": "8602021"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061040264",
+      "tender_no": "202603061040264",
+      "contract_name": "교수학습용 중질지(A4) 구입",
+      "institution": "증산고등학교",
+      "counterpart": "희망나라-장애인보호작업장",
+      "amount": "570,000",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061040264&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증산고등학교",
+          "region": "경남",
+          "district": "양산시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 양산시 물금읍 새실로 99",
+          "school_code": "9010699"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061037132",
+      "tender_no": "202603061037132",
+      "contract_name": "AI활용 수학학습프로그램 사용권",
+      "institution": "대구운암중학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "996,600",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061037132&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061038767",
+      "tender_no": "202603061038767",
+      "contract_name": "AI 디지털 교육자료 구입(미래엔 AIDT 교육자료(공통수학 외 1종)",
+      "institution": "협성고등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "8,190,000",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061038767&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "협성고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 효성로 33",
+          "school_code": "7240105"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603061041066",
+      "tender_no": "202603061041066",
+      "contract_name": "2026학년도 수학 교과서형 AI·디지털 교육자료 구입 계약",
+      "institution": "대구한실초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "13,717,100",
+      "contract_date": "2026-03-06",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603061041066&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
       "id": "202603061041067",
       "tender_no": "202603061041067",
       "contract_name": "AI 국어 학습 튜터 레서(문해력 및 기초 학력 지원 에듀테크 코스웨어)",
@@ -6931,12 +7286,13 @@
       "amount": "78,000",
       "contract_date": "2026-03-05",
       "keywords": [
+        "수학",
         "코스웨어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051033964&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 12:10",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
       "region": "전북",
       "region_status": "matched",
@@ -6953,6 +7309,338 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 2
+    },
+    {
+      "id": "202603051035634",
+      "tender_no": "202603051035634",
+      "contract_name": "수학과 학생 과제 관리 웹페이지 사용권 구입(다했니)",
+      "institution": "인항고등학교",
+      "counterpart": "에듀지원주식회사",
+      "amount": "99,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051035634&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "인항고등학교",
+          "region": "인천",
+          "district": "미추홀구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 미추홀구 매소홀로 135",
+          "school_code": "7310086"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051033999",
+      "tender_no": "202603051033999",
+      "contract_name": "수학공부A단계5수준",
+      "institution": "이리신흥초등학교",
+      "counterpart": "꿈나무교재사",
+      "amount": "18,150",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051033999&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이리신흥초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 하나로3길 10",
+          "school_code": "8352102"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051034011",
+      "tender_no": "202603051034011",
+      "contract_name": "수학공부A단계2 외 2종",
+      "institution": "이리신흥초등학교",
+      "counterpart": "꿈나무교재교구사",
+      "amount": "52,500",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051034011&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이리신흥초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 하나로3길 10",
+          "school_code": "8352102"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603041030983",
+      "tender_no": "202603041030983",
+      "contract_name": "동아출판 AI 디지털 교육자료(중학교 수학1)",
+      "institution": "성화중학교",
+      "counterpart": "동아출판(주)",
+      "amount": "18,859,500",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603041030983&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성화중학교",
+          "region": "대구",
+          "district": "북구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시서부교육지원청",
+          "address": "대구광역시 북구 복현로 140",
+          "school_code": "7261039"
+        },
+        {
+          "school_name": "성화중학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 서원구 신성화로 20",
+          "school_code": "8011116"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051036013",
+      "tender_no": "202603051036013",
+      "contract_name": "YBM AIDT 교육자료(공통수학1) 구입",
+      "institution": "포산고등학교",
+      "counterpart": "주식회사 와이비엠",
+      "amount": "8,351,200",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051036013&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "포산고등학교",
+          "region": "대구",
+          "district": "달성군",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 달성군 현풍읍 비슬로 556-13",
+          "school_code": "7240189"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051036008",
+      "tender_no": "202603051036008",
+      "contract_name": "AI활용수학학습프로그램 사용권",
+      "institution": "광양골약중학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051036008&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광양골약중학교",
+          "region": "광주",
+          "district": "광양시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시광양교육지원청",
+          "address": "전남광주통합특별시 광양시 도이2길 6",
+          "school_code": "8552011"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051034575",
+      "tender_no": "202603051034575",
+      "contract_name": "2026학년도 AI 디지털교육자료(수학)계약 (비상교육)",
+      "institution": "대구이현초등학교",
+      "counterpart": "(주)비상교육",
+      "amount": "12,364,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051034575&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202602271026272",
+      "tender_no": "202602271026272",
+      "contract_name": "2026학년도 3,4,5,6학년 수학 디지텔교과서 구입",
+      "institution": "서울대학교사범대학부설초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "33,783,600",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602271026272&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051033985",
+      "tender_no": "202603051033985",
+      "contract_name": "1학기 수학 AI·디지털 교육자료 구독료 전자계약",
+      "institution": "대구동곡초등학교",
+      "counterpart": "(주)비상교육",
+      "amount": "1,496,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051033985&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051035235",
+      "tender_no": "202603051035235",
+      "contract_name": "(본사) 토도수학 외 1종",
+      "institution": "서울방학초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "540,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051035235&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603051036598",
+      "tender_no": "202603051036598",
+      "contract_name": "(본사) 토도수학",
+      "institution": "아야진초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "130,000",
+      "contract_date": "2026-03-05",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603051036598&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "아야진초등학교",
+          "region": "강원",
+          "district": "고성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도고성교육지원청",
+          "address": "강원특별자치도 고성군 토성면 아야진길 15",
+          "school_code": "7972021"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
       "import_count": 1
     },
     {
@@ -6986,6 +7674,138 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603041030281",
+      "tender_no": "202603041030281",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산",
+      "institution": "성환초등학교",
+      "counterpart": "(주)매쓰마스터",
+      "amount": "216,000",
+      "contract_date": "2026-03-04",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603041030281&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성환초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 성환읍 성환12길 37",
+          "school_code": "8151053"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027300",
+      "tender_no": "202603031027300",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "에듀앤비",
+      "amount": "128,700",
+      "contract_date": "2026-03-04",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027300&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603041031889",
+      "tender_no": "202603041031889",
+      "contract_name": "AI활용수학학습프로그램 사용권",
+      "institution": "대암중학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "528,000",
+      "contract_date": "2026-03-04",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603041031889&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대암중학교",
+          "region": "강원",
+          "district": "양구군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도양구교육지원청",
+          "address": "강원특별자치도 양구군 동면 남동로 651",
+          "school_code": "7952023"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603041032524",
+      "tender_no": "202603041032524",
+      "contract_name": "(본사) 토도수학",
+      "institution": "성광온누리학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "65,000",
+      "contract_date": "2026-03-04",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603041032524&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "기타",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성광온누리학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 논산시 성동면 병촌길 89",
+          "school_code": "8140388"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
       "import_count": 1
     },
     {
@@ -7028,6 +7848,255 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027882",
+      "tender_no": "202603031027882",
+      "contract_name": "영산성지고 수학실 책.걸상 구입",
+      "institution": "영산성지고등학교",
+      "counterpart": "삐삐점방",
+      "amount": "768,000",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027882&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영산성지고등학교",
+          "region": "광주",
+          "district": "영광군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 영광군 백수읍 성지로 1218-6",
+          "school_code": "7140252"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027302",
+      "tender_no": "202603031027302",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "꿈나무교재교구사",
+      "amount": "1,339,200",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027302&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027301",
+      "tender_no": "202603031027301",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "누리빛오피스앤커머스",
+      "amount": "1,218,000",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027301&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027299",
+      "tender_no": "202603031027299",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "픽스룸",
+      "amount": "60,000",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027299&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027298",
+      "tender_no": "202603031027298",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "(주)쿨마켓",
+      "amount": "475,200",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027298&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031027297",
+      "tender_no": "202603031027297",
+      "contract_name": "개념연결 초등수학사전 외 6종",
+      "institution": "완산중학교",
+      "counterpart": "(주)에스와이엠(SYM CO.LTD)",
+      "amount": "52,000",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031027297&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완산중학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 덕적골1길 60",
+          "school_code": "8332233"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
+      "import_count": 1
+    },
+    {
+      "id": "202603031026861",
+      "tender_no": "202603031026861",
+      "contract_name": "강동중학교 (비상교육) AIDT 교육자료 (중학교 수학 1학년)",
+      "institution": "강동중학교",
+      "counterpart": "(주)비상교육",
+      "amount": "21,918,500",
+      "contract_date": "2026-03-03",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603031026861&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.07",
+      "last_imported_at": "2026-07-20 15:26",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "강동중학교",
+          "region": "서울",
+          "district": "강동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강동송파교육지원청",
+          "address": "서울특별시 강동구 풍산로 237",
+          "school_code": "7130167"
+        },
+        {
+          "school_name": "강동중학교",
+          "region": "대구",
+          "district": "동구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시동부교육지원청",
+          "address": "대구광역시 동구 동호로 112",
+          "school_code": "7251026"
+        },
+        {
+          "school_name": "강동중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 산음12길 10",
+          "school_code": "7491148"
+        }
+      ],
+      "first_imported_at": "2026-07-20 15:26",
       "import_count": 1
     },
     {
