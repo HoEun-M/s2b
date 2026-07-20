@@ -1,11 +1,329 @@
 {
-  "exported_at": "2026-07-20 09:30",
+  "exported_at": "2026-07-20 09:56",
   "meta": {
-    "lastImportedAt": "2026-07-20 09:30",
+    "lastImportedAt": "2026-07-20 09:56",
     "lastSearchPeriod": "20260716~20260719",
-    "total": 2
+    "total": 10
   },
   "records": [
+    {
+      "id": "202607161383512",
+      "tender_no": "202607161383512",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산",
+      "institution": "금구초등학교",
+      "counterpart": "(주)매쓰마스터",
+      "amount": "192,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161383512&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금구초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 임방울대로165번길 60",
+          "school_code": "7402229"
+        },
+        {
+          "school_name": "금구초등학교",
+          "region": "충북",
+          "district": "진천군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도진천교육지원청",
+          "address": "충청북도 진천군 이월면 진광로 972-12",
+          "school_code": "8081011"
+        },
+        {
+          "school_name": "금구초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 금구면 금구로 40",
+          "school_code": "8382056"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607161381169",
+      "tender_no": "202607161381169",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산",
+      "institution": "청평초등학교",
+      "counterpart": "(주)매쓰마스터",
+      "amount": "3,528,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161381169&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청평초등학교",
+          "region": "경기",
+          "district": "가평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도가평교육지원청",
+          "address": "경기도 가평군 청평면 잠곡로 27",
+          "school_code": "7721021"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607161383494",
+      "tender_no": "202607161383494",
+      "contract_name": "수학사랑 스트링아트 스트링매쓰 포켓50 원형 (50인용) 외 2종",
+      "institution": "연제초등학교",
+      "counterpart": "엘피300",
+      "amount": "216,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161383494&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연제초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 중앙대로1065번길 14",
+          "school_code": "7191089"
+        },
+        {
+          "school_name": "연제초등학교",
+          "region": "광주",
+          "district": "북구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주동부교육지원청",
+          "address": "전남광주통합특별시 북구 하서로229번길 47",
+          "school_code": "7392157"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607161383493",
+      "tender_no": "202607161383493",
+      "contract_name": "수학사랑 스트링아트 스트링매쓰 포켓50 원형 (50인용) 외 2종",
+      "institution": "연제초등학교",
+      "counterpart": "주식회사 스쿨에듀",
+      "amount": "523,800",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161383493&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연제초등학교",
+          "region": "부산",
+          "district": "연제구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 연제구 중앙대로1065번길 14",
+          "school_code": "7191089"
+        },
+        {
+          "school_name": "연제초등학교",
+          "region": "광주",
+          "district": "북구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주동부교육지원청",
+          "address": "전남광주통합특별시 북구 하서로229번길 47",
+          "school_code": "7392157"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607161380385",
+      "tender_no": "202607161380385",
+      "contract_name": "덕양초 교실 및 영어실 선로 및 케이블 정비 견적요청",
+      "institution": "덕양초등학교",
+      "counterpart": "보광전산",
+      "amount": "4,341,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607161380385&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "덕양초등학교",
+          "region": "부산",
+          "district": "북구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 북구 함박봉로 42",
+          "school_code": "7201064"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607151378054",
+      "tender_no": "202607151378054",
+      "contract_name": "교수학습자료 구입[구글 제미나이 Google Gemini Pro 3.0",
+      "institution": "호계고등학교",
+      "counterpart": "원자",
+      "amount": "99,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607151378054&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "고",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "호계고등학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시교육청",
+          "address": "울산광역시 북구 동대11길 31",
+          "school_code": "7480109"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607131369459",
+      "tender_no": "202607131369459",
+      "contract_name": "강동초 영어1실 가구 보수 작업",
+      "institution": "강동초등학교",
+      "counterpart": "가온사무가구",
+      "amount": "1,078,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607131369459&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "강동초등학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 해운대구 해운대로349번길 10",
+          "school_code": "7211039"
+        },
+        {
+          "school_name": "강동초등학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 화암4길 5",
+          "school_code": "7491093"
+        },
+        {
+          "school_name": "강동초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 단경로 20",
+          "school_code": "7832044"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607161382345",
+      "tender_no": "202607161382345",
+      "contract_name": "2026학년도 교원 교수학습자료 개발 지원용 생성형AI 구매(클로드)",
+      "institution": "매곡고등학교",
+      "counterpart": "스트로베리필즈",
+      "amount": "4,368,600",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161382345&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:56",
+      "school_level": "고",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "매곡고등학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시교육청",
+          "address": "울산광역시 북구 매산로 45",
+          "school_code": "7480199"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:56",
+      "import_count": 1
+    },
     {
       "id": "202607151377267",
       "tender_no": "202607151377267",
