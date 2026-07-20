@@ -1,0 +1,67 @@
+{
+  "exported_at": "2026-07-20 09:30",
+  "meta": {
+    "lastImportedAt": "2026-07-20 09:30",
+    "lastSearchPeriod": "20260716~20260719",
+    "total": 2
+  },
+  "records": [
+    {
+      "id": "202607151377267",
+      "tender_no": "202607151377267",
+      "contract_name": "엘리스스쿨 LXP(AI 코스웨어)  Basic 플랜",
+      "institution": "재능고등학교",
+      "counterpart": "(주)엘리스그룹",
+      "amount": "6,000,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607151377267&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:30",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "재능고등학교",
+          "region": "인천",
+          "district": "제물포구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 제물포구 재능로 178",
+          "school_code": "7310627"
+        }
+      ],
+      "first_imported_at": "2026-07-20 09:30",
+      "import_count": 1
+    },
+    {
+      "id": "202607161380589",
+      "tender_no": "202607161380589",
+      "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
+      "institution": "대구반도체마이스터고등학교",
+      "counterpart": "주식회사 비주얼캠프",
+      "amount": "750,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "코스웨어",
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161380589&excelSection=N",
+      "search_period_from": "2026.07.16",
+      "search_period_to": "2026.07.19",
+      "last_imported_at": "2026-07-20 09:30",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 09:30",
+      "import_count": 1
+    }
+  ]
+}
