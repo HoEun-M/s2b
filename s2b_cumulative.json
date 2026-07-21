@@ -1,11 +1,67 @@
 {
-  "exported_at": "2026-07-21 12:05",
+  "exported_at": "2026-07-21 12:47",
   "meta": {
-    "lastImportedAt": "2026-07-21 12:05",
+    "lastImportedAt": "2026-07-21 12:47",
     "lastSearchPeriod": "20260720~20260720",
-    "total": 708
+    "total": 710
   },
   "records": [
+    {
+      "id": "202607201386033",
+      "tender_no": "202607201386033",
+      "contract_name": "(본사) 토도한글 외 1종",
+      "institution": "점동고등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "279,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "토도한글"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386033&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 12:47",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "점동고등학교",
+          "region": "경기",
+          "district": "여주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 여주시 점동면 청안로 152",
+          "school_code": "7530836"
+        }
+      ],
+      "first_imported_at": "2026-07-21 12:47",
+      "import_count": 1
+    },
+    {
+      "id": "202607161382027",
+      "tender_no": "202607161382027",
+      "contract_name": "(본사) 토도한글 외 1종",
+      "institution": "보령대천초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "522,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "토도한글"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161382027&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 12:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 12:47",
+      "import_count": 1
+    },
     {
       "id": "202607201386671",
       "tender_no": "202607201386671",
