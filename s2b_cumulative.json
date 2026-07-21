@@ -1,11 +1,78 @@
 {
-  "exported_at": "2026-07-21 11:34",
+  "exported_at": "2026-07-21 12:05",
   "meta": {
-    "lastImportedAt": "2026-07-21 11:34",
+    "lastImportedAt": "2026-07-21 12:05",
     "lastSearchPeriod": "20260720~20260720",
-    "total": 707
+    "total": 708
   },
   "records": [
+    {
+      "id": "202607201386671",
+      "tender_no": "202607201386671",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "마산고운초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "180,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "리딩앤",
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386671&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 12:05",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "마산고운초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 마산합포구 가포로 141",
+          "school_code": "9022486"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 2
+    },
+    {
+      "id": "202607161382478",
+      "tender_no": "202607161382478",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 3종",
+      "institution": "단국대학교부속소프트웨어고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "40,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161382478&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 12:05",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "단국대학교부속소프트웨어고등학교",
+          "region": "서울",
+          "district": "강남구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강남구 도곡로64길 21",
+          "school_code": "7011489"
+        }
+      ],
+      "first_imported_at": "2026-07-21 12:05",
+      "import_count": 1
+    },
     {
       "id": "202607201384932",
       "tender_no": "202607201384932",
@@ -520,39 +587,6 @@
       "region_status": "unknown",
       "region_source": "neis_school_info",
       "region_candidates": [],
-      "first_imported_at": "2026-07-21 10:27",
-      "import_count": 1
-    },
-    {
-      "id": "202607201386671",
-      "tender_no": "202607201386671",
-      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
-      "institution": "마산고운초등학교",
-      "counterpart": "(주)아이포트폴리오",
-      "amount": "180,000",
-      "contract_date": "2026-07-20",
-      "keywords": [
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386671&excelSection=N",
-      "search_period_from": "2026.07.20",
-      "search_period_to": "2026.07.20",
-      "last_imported_at": "2026-07-21 10:27",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "마산고운초등학교",
-          "region": "경남",
-          "district": "창원시",
-          "education_office": "경상남도교육청",
-          "support_office": "창원교육지원청",
-          "address": "경상남도 창원시 마산합포구 가포로 141",
-          "school_code": "9022486"
-        }
-      ],
       "first_imported_at": "2026-07-21 10:27",
       "import_count": 1
     },
