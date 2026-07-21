@@ -1,11 +1,67 @@
 {
-  "exported_at": "2026-07-21 10:45",
+  "exported_at": "2026-07-21 11:34",
   "meta": {
-    "lastImportedAt": "2026-07-21 10:45",
+    "lastImportedAt": "2026-07-21 11:34",
     "lastSearchPeriod": "20260720~20260720",
-    "total": 705
+    "total": 707
   },
   "records": [
+    {
+      "id": "202607201384932",
+      "tender_no": "202607201384932",
+      "contract_name": "레고에듀케이션 LEGO 코딩교육용 STEAM 스파이크 프라임 코어 세트",
+      "institution": "서울강월초등학교",
+      "counterpart": "(주)에듀에이드",
+      "amount": "3,321,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201384932&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 11:34",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 11:34",
+      "import_count": 1
+    },
+    {
+      "id": "202607201386563",
+      "tender_no": "202607201386563",
+      "contract_name": "레고 에듀케이션 스파이크 프라임 확장세트 STEAM 코딩교육용 외 1종",
+      "institution": "전주팔복초등학교",
+      "counterpart": "주식회사 퓨너스",
+      "amount": "65,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386563&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 11:34",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주팔복초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 팔과정로 181",
+          "school_code": "8332154"
+        }
+      ],
+      "first_imported_at": "2026-07-21 11:34",
+      "import_count": 1
+    },
     {
       "id": "202607201386737",
       "tender_no": "202607201386737",
