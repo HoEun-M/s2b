@@ -1,11 +1,156 @@
 {
-  "exported_at": "2026-07-21 09:15",
+  "exported_at": "2026-07-21 10:27",
   "meta": {
-    "lastImportedAt": "2026-07-21 09:15",
-    "lastSearchPeriod": "20260201~20260331",
-    "total": 686
+    "lastImportedAt": "2026-07-21 10:27",
+    "lastSearchPeriod": "20260720~20260720",
+    "total": 691
   },
   "records": [
+    {
+      "id": "202607161382765",
+      "tender_no": "202607161382765",
+      "contract_name": "코드모스 AI코스웨어",
+      "institution": "진천성암초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "710,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161382765&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:27",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 1
+    },
+    {
+      "id": "202607161382199",
+      "tender_no": "202607161382199",
+      "contract_name": "코드모스 AI코스웨어",
+      "institution": "증평초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "2,000,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161382199&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:27",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증평초등학교",
+          "region": "충북",
+          "district": "증평군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도괴산증평교육지원청",
+          "address": "충청북도 증평군 증평읍 광장로 152",
+          "school_code": "8092033"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 1
+    },
+    {
+      "id": "202607201383951",
+      "tender_no": "202607201383951",
+      "contract_name": "코드모스 AI 코스웨어",
+      "institution": "홍성대정초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "1,050,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201383951&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:27",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 1
+    },
+    {
+      "id": "202607201386671",
+      "tender_no": "202607201386671",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "마산고운초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "180,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386671&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:27",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "마산고운초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 마산합포구 가포로 141",
+          "school_code": "9022486"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 1
+    },
+    {
+      "id": "202607201384909",
+      "tender_no": "202607201384909",
+      "contract_name": "2026학년도 AI코스웨어 및 에듀테크 2차 구입",
+      "institution": "연세초등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "1,995,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607201384909&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:27",
+      "school_level": "초",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연세초등학교",
+          "region": "세종",
+          "district": "다솜로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  다솜로 291",
+          "school_code": "9300111"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:27",
+      "import_count": 1
+    },
     {
       "id": "202607161382477",
       "tender_no": "202607161382477",
