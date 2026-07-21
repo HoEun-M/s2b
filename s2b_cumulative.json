@@ -1,11 +1,393 @@
 {
-  "exported_at": "2026-07-21 10:27",
+  "exported_at": "2026-07-21 10:45",
   "meta": {
-    "lastImportedAt": "2026-07-21 10:27",
+    "lastImportedAt": "2026-07-21 10:45",
     "lastSearchPeriod": "20260720~20260720",
-    "total": 691
+    "total": 705
   },
   "records": [
+    {
+      "id": "202607201386737",
+      "tender_no": "202607201386737",
+      "contract_name": "영어과 수업 프로그램 구입(패들렛(플래티넘) X 체더스 외 1종)",
+      "institution": "포천중학교",
+      "counterpart": "드림스쿨",
+      "amount": "609,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386737&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "포천중학교",
+          "region": "경기",
+          "district": "포천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도포천교육지원청",
+          "address": "경기도 포천시 신북면 중앙로207번길 65",
+          "school_code": "7711015"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201386736",
+      "tender_no": "202607201386736",
+      "contract_name": "영어과 수업 프로그램 구입(패들렛(플래티넘) X 체더스 외 1종)",
+      "institution": "포천중학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "160,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386736&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "포천중학교",
+          "region": "경기",
+          "district": "포천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도포천교육지원청",
+          "address": "경기도 포천시 신북면 중앙로207번길 65",
+          "school_code": "7711015"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201383949",
+      "tender_no": "202607201383949",
+      "contract_name": "두드림학교 프로그램 운영",
+      "institution": "정관중학교",
+      "counterpart": "(주)미라클",
+      "amount": "2,000,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607201383949&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "정관중학교",
+          "region": "부산",
+          "district": "기장군",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 기장군 정관읍 정관로 531",
+          "school_code": "7211226"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385821",
+      "tender_no": "202607201385821",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "지한상사(강원)",
+      "amount": "12,800",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385821&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385820",
+      "tender_no": "202607201385820",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "도현",
+      "amount": "12,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385820&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385819",
+      "tender_no": "202607201385819",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "좋은날",
+      "amount": "16,800",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385819&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385818",
+      "tender_no": "202607201385818",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "대성문구",
+      "amount": "45,800",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385818&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385817",
+      "tender_no": "202607201385817",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "모멘웍스",
+      "amount": "49,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385817&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385816",
+      "tender_no": "202607201385816",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "온스쿨_대구",
+      "amount": "83,200",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385816&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385815",
+      "tender_no": "202607201385815",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "센디(Sendy)",
+      "amount": "9,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385815&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201385814",
+      "tender_no": "202607201385814",
+      "contract_name": "교수학습지원부 사무용품",
+      "institution": "대구미래교육연구원",
+      "counterpart": "행복한 쩡이",
+      "amount": "105,600",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385814&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "기타",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607161382700",
+      "tender_no": "202607161382700",
+      "contract_name": "[디지털]2026학년도 디지털 기반 수학 프로그램 구입",
+      "institution": "수원동신초등학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "5,000,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607161382700&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "수원동신초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 장안구 만석로68번길 46",
+          "school_code": "7541384"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607201384359",
+      "tender_no": "202607201384359",
+      "contract_name": "[Ai영어쌤] 선생님이 편해지는 AI 영어 학습",
+      "institution": "강경상업고등학교",
+      "counterpart": "주식회사 로드와이즈",
+      "amount": "4,000,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201384359&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "고",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "강경상업고등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 논산시 강경읍 계백로 220",
+          "school_code": "8140378"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
+    {
+      "id": "202607161383399",
+      "tender_no": "202607161383399",
+      "contract_name": "2026학년도 녹산초 AI 디지털활용 선도학교 수학교과 에듀테크 구입",
+      "institution": "녹산초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "8,002,000",
+      "contract_date": "2026-07-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607161383399&excelSection=N",
+      "search_period_from": "2026.07.20",
+      "search_period_to": "2026.07.20",
+      "last_imported_at": "2026-07-21 10:45",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "녹산초등학교",
+          "region": "부산",
+          "district": "강서구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 강서구 과학산단2로20번길 55",
+          "school_code": "7201211"
+        }
+      ],
+      "first_imported_at": "2026-07-21 10:45",
+      "import_count": 1
+    },
     {
       "id": "202607161382765",
       "tender_no": "202607161382765",
