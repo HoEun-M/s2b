@@ -1,11 +1,90 @@
 {
-  "exported_at": "2026-07-22 18:46",
+  "exported_at": "2026-07-23 08:17",
   "meta": {
-    "lastImportedAt": "2026-07-22 18:46",
-    "lastSearchPeriod": "20260501~20260715",
-    "total": 817
+    "lastImportedAt": "2026-07-23 08:17",
+    "lastSearchPeriod": "20260722~20260722",
+    "total": 820
   },
   "records": [
+    {
+      "id": "202607221393028",
+      "tender_no": "202607221393028",
+      "contract_name": "풀리수학 자기주도 수학 AI 코스웨어",
+      "institution": "보람고등학교",
+      "counterpart": "(주)프리윌린",
+      "amount": "5,775,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221393028&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 08:17",
+      "school_level": "고",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "보람고등학교",
+          "region": "세종",
+          "district": "한누리대로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  한누리대로 2176",
+          "school_code": "9300191"
+        }
+      ],
+      "first_imported_at": "2026-07-23 08:17",
+      "import_count": 1
+    },
+    {
+      "id": "202607211389762",
+      "tender_no": "202607211389762",
+      "contract_name": "엘리스스쿨 LXP(AI 코스웨어)  Basic 플랜",
+      "institution": "인천온라인학교",
+      "counterpart": "(주)엘리스그룹",
+      "amount": "1,370,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389762&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 08:17",
+      "school_level": "기타",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 08:17",
+      "import_count": 1
+    },
+    {
+      "id": "202607221392169",
+      "tender_no": "202607221392169",
+      "contract_name": "2026학년도 기초학력책임지도 스쿨플랫 수학 AI 코스웨어 구입 건",
+      "institution": "서울세종고등학교",
+      "counterpart": "(주)프리윌린",
+      "amount": "360,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221392169&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 08:17",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 08:17",
+      "import_count": 1
+    },
     {
       "id": "202607211389577",
       "tender_no": "202607211389577",
