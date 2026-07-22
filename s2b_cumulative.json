@@ -1,11 +1,90 @@
 {
-  "exported_at": "2026-07-22 12:58",
+  "exported_at": "2026-07-22 13:25",
   "meta": {
-    "lastImportedAt": "2026-07-22 12:58",
+    "lastImportedAt": "2026-07-22 13:25",
     "lastSearchPeriod": "20260721~20260721",
-    "total": 730
+    "total": 733
   },
   "records": [
+    {
+      "id": "202607211389577",
+      "tender_no": "202607211389577",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 1종",
+      "institution": "대구평리초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "20,845,200",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389577&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 13:25",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 13:25",
+      "import_count": 1
+    },
+    {
+      "id": "202607211388651",
+      "tender_no": "202607211388651",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 1종",
+      "institution": "대구동부초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "9,823,600",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388651&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 13:25",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 13:25",
+      "import_count": 1
+    },
+    {
+      "id": "202607211389956",
+      "tender_no": "202607211389956",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등) 외 2종",
+      "institution": "칠성고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "8,033,900",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389956&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 13:25",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "칠성고등학교",
+          "region": "대구",
+          "district": "북구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 북구 칠성로 13",
+          "school_code": "7240282"
+        }
+      ],
+      "first_imported_at": "2026-07-22 13:25",
+      "import_count": 1
+    },
     {
       "id": "202607211388768",
       "tender_no": "202607211388768",
