@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-22 16:16",
+  "exported_at": "2026-07-22 16:53",
   "meta": {
-    "lastImportedAt": "2026-07-22 16:16",
-    "lastSearchPeriod": "20260601~20260715",
-    "total": 760
+    "lastImportedAt": "2026-07-22 16:53",
+    "lastSearchPeriod": "20260201~20260331",
+    "total": 762
   },
   "records": [
     {
@@ -9163,6 +9163,39 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603201083259",
+      "tender_no": "202603201083259",
+      "contract_name": "이리부송초 두드림학교 4,6학년 그림심리검사",
+      "institution": "이리부송초등학교",
+      "counterpart": "폴아동청소년상담센터",
+      "amount": "1,150,000",
+      "contract_date": "2026-03-24",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603201083259&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-22 16:53",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이리부송초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 부송로2길 27",
+          "school_code": "8352093"
+        }
+      ],
+      "first_imported_at": "2026-07-22 16:53",
       "import_count": 1
     },
     {
@@ -22192,6 +22225,48 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 14:55",
+      "import_count": 1
+    },
+    {
+      "id": "202602241011118",
+      "tender_no": "202602241011118",
+      "contract_name": "2026학년도 남원초 두드림실 정수기 렌탈 계약",
+      "institution": "남원초등학교",
+      "counterpart": "에프엠정수기",
+      "amount": "396,000",
+      "contract_date": "2026-02-26",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602241011118&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-22 16:53",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남원초등학교",
+          "region": "전북",
+          "district": "남원시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도남원교육지원청",
+          "address": "전북특별자치도 남원시 가방뜰길 18",
+          "school_code": "8372040"
+        },
+        {
+          "school_name": "남원초등학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 남원읍 태위로 647",
+          "school_code": "9299054"
+        }
+      ],
+      "first_imported_at": "2026-07-22 16:53",
       "import_count": 1
     },
     {
