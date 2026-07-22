@@ -1,11 +1,134 @@
 {
-  "exported_at": "2026-07-22 11:12",
+  "exported_at": "2026-07-22 12:29",
   "meta": {
-    "lastImportedAt": "2026-07-22 11:12",
+    "lastImportedAt": "2026-07-22 12:29",
     "lastSearchPeriod": "20260721~20260721",
-    "total": 723
+    "total": 726
   },
   "records": [
+    {
+      "id": "202607211388505",
+      "tender_no": "202607211388505",
+      "contract_name": "코딩드론 BRC-105 스쿨패키지 (10인세트)",
+      "institution": "모덕초등학교",
+      "counterpart": "나은몰",
+      "amount": "4,475,600",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388505&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 12:29",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "모덕초등학교",
+          "region": "부산",
+          "district": "사상구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 사상구 덕상로 120",
+          "school_code": "7201074"
+        }
+      ],
+      "first_imported_at": "2026-07-22 12:29",
+      "import_count": 1
+    },
+    {
+      "id": "202607211388389",
+      "tender_no": "202607211388389",
+      "contract_name": "코딩 마이크로비트 V2.21 기초 패키지 외 1종",
+      "institution": "세종특별자치시교육청 학교정책과",
+      "counterpart": "스쿨투",
+      "amount": "646,250",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388389&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 12:29",
+      "school_level": "기타",
+      "region": "세종",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 12:29",
+      "import_count": 1
+    },
+    {
+      "id": "202607211388963",
+      "tender_no": "202607211388963",
+      "contract_name": "수학점핑학교 학습플랫폼 달달수학 이용",
+      "institution": "광양동초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "4,000,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "달달",
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607211388963&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 12:29",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광양동초등학교",
+          "region": "광주",
+          "district": "광양시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시광양교육지원청",
+          "address": "전남광주통합특별시 광양시 광양읍 읍성길 61",
+          "school_code": "8552018"
+        }
+      ],
+      "first_imported_at": "2026-07-22 11:12",
+      "import_count": 2
+    },
+    {
+      "id": "202607201386562",
+      "tender_no": "202607201386562",
+      "contract_name": "레고 에듀케이션 스파이크 프라임 확장세트 STEAM 코딩교육용 외 1종",
+      "institution": "전주팔복초등학교",
+      "counterpart": "스쿨몬(주)",
+      "amount": "225,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386562&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 12:29",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주팔복초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 팔과정로 181",
+          "school_code": "8332154"
+        }
+      ],
+      "first_imported_at": "2026-07-22 12:29",
+      "import_count": 1
+    },
     {
       "id": "202607211388399",
       "tender_no": "202607211388399",
@@ -100,39 +223,6 @@
           "support_office": "전북특별자치도전주교육지원청",
           "address": "전북특별자치도 전주시 완산구 효천중앙로 31",
           "school_code": "8332194"
-        }
-      ],
-      "first_imported_at": "2026-07-22 11:12",
-      "import_count": 1
-    },
-    {
-      "id": "202607211388963",
-      "tender_no": "202607211388963",
-      "contract_name": "수학점핑학교 학습플랫폼 달달수학 이용",
-      "institution": "광양동초등학교",
-      "counterpart": "(주)미래엔",
-      "amount": "4,000,000",
-      "contract_date": "2026-07-21",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607211388963&excelSection=N",
-      "search_period_from": "2026.07.21",
-      "search_period_to": "2026.07.21",
-      "last_imported_at": "2026-07-22 11:12",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "광양동초등학교",
-          "region": "광주",
-          "district": "광양시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시광양교육지원청",
-          "address": "전남광주통합특별시 광양시 광양읍 읍성길 61",
-          "school_code": "8552018"
         }
       ],
       "first_imported_at": "2026-07-22 11:12",
