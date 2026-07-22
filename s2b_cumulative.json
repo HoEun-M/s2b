@@ -1,11 +1,209 @@
 {
-  "exported_at": "2026-07-21 12:47",
+  "exported_at": "2026-07-22 10:55",
   "meta": {
-    "lastImportedAt": "2026-07-21 12:47",
-    "lastSearchPeriod": "20260720~20260720",
-    "total": 710
+    "lastImportedAt": "2026-07-22 10:55",
+    "lastSearchPeriod": "20260721~20260721",
+    "total": 716
   },
   "records": [
+    {
+      "id": "202607211389265",
+      "tender_no": "202607211389265",
+      "contract_name": "코드모스 AI코스웨어",
+      "institution": "아산월천초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "570,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389265&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "아산월천초등학교",
+          "region": "충남",
+          "district": "아산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도아산교육지원청",
+          "address": "충청남도 아산시 배방읍 월천3길 10",
+          "school_code": "8181176"
+        }
+      ],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
+    {
+      "id": "202607201386370",
+      "tender_no": "202607201386370",
+      "contract_name": "코드모스 AI코스웨어",
+      "institution": "천태초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "240,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201386370&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천태초등학교",
+          "region": "광주",
+          "district": "화순군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시화순교육지원청",
+          "address": "전남광주통합특별시 화순군 도암면 천태로 526",
+          "school_code": "8612020"
+        }
+      ],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
+    {
+      "id": "202607211387772",
+      "tender_no": "202607211387772",
+      "contract_name": "책임교육학년제 인공지능 코스웨어 활용 지원 프로그램 구입(매쓰홀릭)",
+      "institution": "울산화봉초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "554,400",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211387772&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
+    {
+      "id": "202607211389620",
+      "tender_no": "202607211389620",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "구자곡초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "54,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389620&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구자곡초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연무로 369",
+          "school_code": "8222027"
+        }
+      ],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
+    {
+      "id": "202607211388723",
+      "tender_no": "202607211388723",
+      "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
+      "institution": "샘고을중학교",
+      "counterpart": "주식회사 비주얼캠프",
+      "amount": "1,180,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어",
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388723&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "샘고을중학교",
+          "region": "전북",
+          "district": "정읍시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도정읍교육지원청",
+          "address": "전북특별자치도 정읍시 초산로 110",
+          "school_code": "8362079"
+        }
+      ],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
+    {
+      "id": "202607211390074",
+      "tender_no": "202607211390074",
+      "contract_name": "(본사) 알공 영어 Premium (초등 AI 코스웨어)",
+      "institution": "한마음초등학교",
+      "counterpart": "주식회사 디엔소프트",
+      "amount": "810,000",
+      "contract_date": "2026-07-21",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211390074&excelSection=N",
+      "search_period_from": "2026.07.21",
+      "search_period_to": "2026.07.21",
+      "last_imported_at": "2026-07-22 10:55",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한마음초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 동탄숲속로 69-6",
+          "school_code": "7679063"
+        },
+        {
+          "school_name": "한마음초등학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 표선면 한마음초등로 408",
+          "school_code": "9299050"
+        }
+      ],
+      "first_imported_at": "2026-07-22 10:55",
+      "import_count": 1
+    },
     {
       "id": "202607201386033",
       "tender_no": "202607201386033",
