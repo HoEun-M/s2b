@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-22 16:53",
+  "exported_at": "2026-07-22 17:03",
   "meta": {
-    "lastImportedAt": "2026-07-22 16:53",
-    "lastSearchPeriod": "20260201~20260331",
-    "total": 762
+    "lastImportedAt": "2026-07-22 17:03",
+    "lastSearchPeriod": "20260401~20260531",
+    "total": 797
   },
   "records": [
     {
@@ -2104,6 +2104,39 @@
       "import_count": 1
     },
     {
+      "id": "202605291272587",
+      "tender_no": "202605291272587",
+      "contract_name": "두드림학교 통합진단검사 검사지 구입",
+      "institution": "전주만성초등학교",
+      "counterpart": "하늘문고",
+      "amount": "2,155,000",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605291272587&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주만성초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 중동로 32",
+          "school_code": "8332128"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202605281270615",
       "tender_no": "202605281270615",
       "contract_name": "기초학력 향상 AI코스웨어 지니아튜터 구독 계약",
@@ -2134,6 +2167,321 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605271265861",
+      "tender_no": "202605271265861",
+      "contract_name": "남원중학교 두드림 호연지기 프로그램 버스임차계약",
+      "institution": "남원중학교",
+      "counterpart": "내일관광여행사사회적협동조합",
+      "amount": "500,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605271265861&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남원중학교",
+          "region": "전북",
+          "district": "남원시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도남원교육지원청",
+          "address": "전북특별자치도 남원시 만인로 41-51",
+          "school_code": "8372061"
+        },
+        {
+          "school_name": "남원중학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 남원읍 남한로 36",
+          "school_code": "9299017"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605271265452",
+      "tender_no": "202605271265452",
+      "contract_name": "2026학년도 일광중 두드림학교 프로그램 견적요청",
+      "institution": "일광중학교",
+      "counterpart": "한국가이던스",
+      "amount": "1,800,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605271265452&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "일광중학교",
+          "region": "부산",
+          "district": "기장군",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 기장군 일광읍 해빛3로 99",
+          "school_code": "7211242"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605221260787",
+      "tender_no": "202605221260787",
+      "contract_name": "2026학년도 두드림학교 학년별 표준화 심리검사",
+      "institution": "전주효천초등학교",
+      "counterpart": "하늘문고",
+      "amount": "5,000,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605221260787&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주효천초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 효천중앙로 31",
+          "school_code": "8332194"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191249028",
+      "tender_no": "202605191249028",
+      "contract_name": "광일초 두드림학교 마음원예 교실 견적 요청",
+      "institution": "광일초등학교",
+      "counterpart": "디어립",
+      "amount": "1,200,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605191249028&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광일초등학교",
+          "region": "부산",
+          "district": "중구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 중구 중구로 74",
+          "school_code": "7171093"
+        },
+        {
+          "school_name": "광일초등학교",
+          "region": "경기",
+          "district": "광명시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도광명교육지원청",
+          "address": "경기도 광명시 목감로 34-6",
+          "school_code": "7591023"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605201250727",
+      "tender_no": "202605201250727",
+      "contract_name": "2026학년도 용안초 어울림학교 및 두드림학교 상담프로그램 운영 실시",
+      "institution": "용안초등학교",
+      "counterpart": "마음쉼심리상담센터",
+      "amount": "1,800,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605201250727&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "용안초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 용안면 용안교동1길 6-1",
+          "school_code": "8352134"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605181244309",
+      "tender_no": "202605181244309",
+      "contract_name": "두드림 정서지원 개인상담 모래치료 상담비",
+      "institution": "대연중학교",
+      "counterpart": "참그루아동가족심리상담연구소",
+      "amount": "3,200,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605181244309&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대연중학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 남구 천제등로16번길 81",
+          "school_code": "7181077"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605141234986",
+      "tender_no": "202605141234986",
+      "contract_name": "가람초등학교 학력증진교실 및 두드림 학교 견적요청",
+      "institution": "가람초등학교",
+      "counterpart": "드림오피스학생사",
+      "amount": "1,659,440",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605141234986&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "가람초등학교",
+          "region": "경기",
+          "district": "고양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도고양교육지원청",
+          "address": "경기도 고양시 덕양구 행신로311번길 78",
+          "school_code": "7621042"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191247750",
+      "tender_no": "202605191247750",
+      "contract_name": "2026학년도 감전초등학교 두드림학교 프로그램 운영 견적요청",
+      "institution": "감전초등학교",
+      "counterpart": "온열린문화공동체사회적협동조합",
+      "amount": "2,000,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605191247750&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "감전초등학교",
+          "region": "부산",
+          "district": "사상구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 사상구 괘감로 132",
+          "school_code": "7201045"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605151241010",
+      "tender_no": "202605151241010",
+      "contract_name": "2026학년도 1학기 두드림학교 학습코칭 프로그램  견적요청",
+      "institution": "초연중학교",
+      "counterpart": "루하공간",
+      "amount": "1,200,000",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605151241010&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "초연중학교",
+          "region": "부산",
+          "district": "부산진구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 부산진구 초읍천로77번가길 9",
+          "school_code": "7181098"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2170,6 +2518,81 @@
       "import_count": 1
     },
     {
+      "id": "202605151238950",
+      "tender_no": "202605151238950",
+      "contract_name": "운봉초등학교 두드림학교 프로그램 운영",
+      "institution": "운봉초등학교",
+      "counterpart": "(주)미라클",
+      "amount": "1,696,210",
+      "contract_date": "2026-05-15",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605151238950&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "운봉초등학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 해운대구 신반송로 11-20",
+          "school_code": "7211065"
+        },
+        {
+          "school_name": "운봉초등학교",
+          "region": "전북",
+          "district": "남원시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도남원교육지원청",
+          "address": "전북특별자치도 남원시 운봉읍 운봉로 725",
+          "school_code": "8372041"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121228894",
+      "tender_no": "202605121228894",
+      "contract_name": "2026학년도 전주삼천남초 두드림 집단상담 운영",
+      "institution": "전주삼천남초등학교",
+      "counterpart": "조이심리상담연구소",
+      "amount": "2,000,000",
+      "contract_date": "2026-05-15",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121228894&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주삼천남초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 거마남로 65",
+          "school_code": "8332163"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202605131232002",
       "tender_no": "202605131232002",
       "contract_name": "기초학력 맞춤형 플랫폼(교육용 소프트웨어 아이스크림홈런(관리형))",
@@ -2200,6 +2623,188 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605111225467",
+      "tender_no": "202605111225467",
+      "contract_name": "대동중학교 두드림학교 학습지원대상  학생 심리검사지 구입",
+      "institution": "대동중학교",
+      "counterpart": "동기상사",
+      "amount": "99,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111225467&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대동중학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 을숙도대로709번길 27",
+          "school_code": "7171034"
+        },
+        {
+          "school_name": "대동중학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 우창서길 34",
+          "school_code": "8761202"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605131231957",
+      "tender_no": "202605131231957",
+      "contract_name": "두드림학교 클래스팅 AI 구입",
+      "institution": "대구동곡초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,000,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131231957&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121228708",
+      "tender_no": "202605121228708",
+      "contract_name": "2026학년도 두드림학교 자기주도학습 프로그램 운영비",
+      "institution": "해연중학교",
+      "counterpart": "스터디에듀",
+      "amount": "2,000,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121228708&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해연중학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 남구 진남로110번길 25",
+          "school_code": "7181109"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121228524",
+      "tender_no": "202605121228524",
+      "contract_name": "2026 신동초 두드림중점학교 학습지원대상 학급 집단상담 프로그램",
+      "institution": "신동초등학교",
+      "counterpart": "토브심리상담연구소",
+      "amount": "4,200,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121228524&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신동초등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도의정부교육지원청",
+          "address": "경기도 의정부시 시민로179번길 42",
+          "school_code": "7561044"
+        },
+        {
+          "school_name": "신동초등학교",
+          "region": "강원",
+          "district": "삼척시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도삼척교육지원청",
+          "address": "강원도 삼척시 신기면 강원남부로 2997",
+          "school_code": "7872027"
+        },
+        {
+          "school_name": "신동초등학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도춘천교육지원청",
+          "address": "강원특별자치도 춘천시 우두로 100",
+          "school_code": "7812075"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605081219497",
+      "tender_no": "202605081219497",
+      "contract_name": "2026학년도 두드림학교 자존감 증진 프로그램 실시",
+      "institution": "반안중학교",
+      "counterpart": "공감과성장",
+      "amount": "1,100,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605081219497&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "반안중학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 해운대구 명장로67번길 40-32",
+          "school_code": "7211027"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2236,6 +2841,90 @@
       "import_count": 1
     },
     {
+      "id": "202605071217145",
+      "tender_no": "202605071217145",
+      "contract_name": "내성초등학교 두드림 프로그램운영 견적요청",
+      "institution": "내성초등학교",
+      "counterpart": "한국학습클리닉센터",
+      "amount": "2,000,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605071217145&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "내성초등학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 동래구 동래로 173",
+          "school_code": "7191061"
+        },
+        {
+          "school_name": "내성초등학교",
+          "region": "강원",
+          "district": "영월군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도영월교육지원청",
+          "address": "강원특별자치도 영월군 영월읍 내성안길 9",
+          "school_code": "7902018"
+        },
+        {
+          "school_name": "내성초등학교",
+          "region": "경북",
+          "district": "봉화군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도봉화교육지원청",
+          "address": "경상북도 봉화군 봉화읍 교촌1길 37",
+          "school_code": "8961025"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605061213273",
+      "tender_no": "202605061213273",
+      "contract_name": "2026학년도 양운초 두드림학교 상담프로그램 운영 견적",
+      "institution": "양운초등학교",
+      "counterpart": "부산심리상담연구소",
+      "amount": "4,000,000",
+      "contract_date": "2026-05-06",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605061213273&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양운초등학교",
+          "region": "부산",
+          "district": "해운대구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 해운대구 대천로67번길 36",
+          "school_code": "7211064"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202605041209196",
       "tender_no": "202605041209196",
       "contract_name": "스마트리 영어 기초학력 해결 프로그램 구입",
@@ -2256,6 +2945,48 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604291203239",
+      "tender_no": "202604291203239",
+      "contract_name": "두드림학교 심리치료프로그램 상담 견적 요청",
+      "institution": "교동초등학교",
+      "counterpart": "마인드숲심리상담센터",
+      "amount": "2,000,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604291203239&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "교동초등학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 동래구 시실로 73-13",
+          "school_code": "7191049"
+        },
+        {
+          "school_name": "교동초등학교",
+          "region": "인천",
+          "district": "강화군",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시강화교육지원청",
+          "address": "인천광역시 강화군 교동면 대룡안길 29",
+          "school_code": "7351008"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2289,6 +3020,72 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604281199798",
+      "tender_no": "202604281199798",
+      "contract_name": "토카 젬베(젬베이) 두드림 타악기 12인치",
+      "institution": "천안쌍용중학교",
+      "counterpart": "에스제이트랜드",
+      "amount": "238,000",
+      "contract_date": "2026-04-28",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281199798&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안쌍용중학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 쌍용12길 13",
+          "school_code": "8151019"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604221182452",
+      "tender_no": "202604221182452",
+      "contract_name": "2026학년도 두드림학교 학습클리닉(미술치료) 프로그램 운영",
+      "institution": "감만중학교",
+      "counterpart": "스터디에듀",
+      "amount": "500,000",
+      "contract_date": "2026-04-28",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604221182452&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "감만중학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 남구 홍곡로 313-14",
+          "school_code": "7181071"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2367,6 +3164,105 @@
       "import_count": 1
     },
     {
+      "id": "202604241191521",
+      "tender_no": "202604241191521",
+      "contract_name": "광안중학교 두드림학교 학습자신감향상 프로그램 운영 견적 요청",
+      "institution": "광안중학교",
+      "counterpart": "온맘플러스",
+      "amount": "1,500,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604241191521&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광안중학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 수영구 연수로310번길 127",
+          "school_code": "7211010"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604231186653",
+      "tender_no": "202604231186653",
+      "contract_name": "2026학년도 여산중 두드림학교 대상 학생 상담 계약",
+      "institution": "여산중학교",
+      "counterpart": "치유앤성장협동조합",
+      "amount": "900,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604231186653&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "여산중학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 여산면 가람로 459-10",
+          "school_code": "8352153"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604211179914",
+      "tender_no": "202604211179914",
+      "contract_name": "2026학년도 두드림학교 학습클리닉(U&I 학습검사 정서검사) 프로그램 운영",
+      "institution": "감만중학교",
+      "counterpart": "사이심리연구소",
+      "amount": "1,490,000",
+      "contract_date": "2026-04-23",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211179914&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "감만중학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 남구 홍곡로 313-14",
+          "school_code": "7181071"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202604231186813",
       "tender_no": "202604231186813",
       "contract_name": "기초학력 통합진단 검사 견적 요청",
@@ -2433,6 +3329,156 @@
       "import_count": 1
     },
     {
+      "id": "202604211178209",
+      "tender_no": "202604211178209",
+      "contract_name": "학교맞춤선택제 두드림학교 학습코칭프로그램",
+      "institution": "현산중학교",
+      "counterpart": "한국학습코칭센터",
+      "amount": "1,700,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211178209&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "현산중학교",
+          "region": "경기",
+          "district": "고양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도고양교육지원청",
+          "address": "경기도 고양시 일산서구 일청로 85",
+          "school_code": "7621009"
+        },
+        {
+          "school_name": "현산중학교",
+          "region": "광주",
+          "district": "해남군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시해남교육지원청",
+          "address": "전남광주통합특별시 해남군 현산면 탑동리길 ",
+          "school_code": "8642010"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604211178979",
+      "tender_no": "202604211178979",
+      "contract_name": "산외초등학교 두드림학교 진단검사 견적 요청",
+      "institution": "산외초등학교",
+      "counterpart": "인퍼트",
+      "amount": "900,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211178979&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "산외초등학교",
+          "region": "전북",
+          "district": "정읍시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도정읍교육지원청",
+          "address": "전북특별자치도 정읍시 산외면 운전2길 7",
+          "school_code": "8362065"
+        },
+        {
+          "school_name": "산외초등학교",
+          "region": "경남",
+          "district": "밀양시",
+          "education_office": "경상남도교육청",
+          "support_office": "밀양교육지원청",
+          "address": "경상남도 밀양시 산외면 산외로 257",
+          "school_code": "9101016"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604221181566",
+      "tender_no": "202604221181566",
+      "contract_name": "2026학년도 전주기린초 두드림학교 통합진단 검사도구 구입",
+      "institution": "전주기린초등학교",
+      "counterpart": "하늘문고",
+      "amount": "1,235,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604221181566&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주기린초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 견훤로 260",
+          "school_code": "8332123"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604211178552",
+      "tender_no": "202604211178552",
+      "contract_name": "2026학년도 수안초 두드림학교 마음쑥쑥 프로그램 운영 견적요청",
+      "institution": "수안초등학교",
+      "counterpart": "(주)미라클",
+      "amount": "1,500,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211178552&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "수안초등학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 동래구 온천천로 215",
+          "school_code": "7191077"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202604221182932",
       "tender_no": "202604221182932",
       "contract_name": "교육국제화특구, AI 및 기초학력증진 프로그램 구독",
@@ -2466,6 +3512,39 @@
       "import_count": 1
     },
     {
+      "id": "202604211177957",
+      "tender_no": "202604211177957",
+      "contract_name": "2026학년도 두드림학교 교과기초 및 정서지원 프로그램 견적 요청",
+      "institution": "달북초등학교",
+      "counterpart": "(주)미라클",
+      "amount": "1,650,000",
+      "contract_date": "2026-04-21",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211177957&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "달북초등학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 동래구 쇠미로 131",
+          "school_code": "7191062"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202604201171941",
       "tender_no": "202604201171941",
       "contract_name": "이천양정여중 기초학력향상AI플랫폼 체리 구독",
@@ -2496,6 +3575,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604171168427",
+      "tender_no": "202604171168427",
+      "contract_name": "2026학년도 두드림학교 통합 진단검사",
+      "institution": "소룡초등학교",
+      "counterpart": "인제도서",
+      "amount": "1,390,000",
+      "contract_date": "2026-04-17",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604171168427&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "소룡초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 설림길 55",
+          "school_code": "8342102"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2550,6 +3662,39 @@
       "import_count": 1
     },
     {
+      "id": "202604141153736",
+      "tender_no": "202604141153736",
+      "contract_name": "2026학년도 두드림학교 운영 견적요청",
+      "institution": "덕양초등학교",
+      "counterpart": "주식회사빛마루",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-15",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604141153736&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "덕양초등학교",
+          "region": "부산",
+          "district": "북구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 북구 함박봉로 42",
+          "school_code": "7201064"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
       "id": "202604141156660",
       "tender_no": "202604141156660",
       "contract_name": "덕도초등학교 기초학력 일프로연산 소프트웨어(1년 이용) 구입",
@@ -2580,6 +3725,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604101147500",
+      "tender_no": "202604101147500",
+      "contract_name": "전주용흥초 두드림학교 통합진단검사 실시 견적서 제출 요청",
+      "institution": "전주용흥초등학교",
+      "counterpart": "하늘문고",
+      "amount": "1,035,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604101147500&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주용흥초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 삼천천변1길 16",
+          "school_code": "8332178"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
@@ -2692,6 +3870,62 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604031124704",
+      "tender_no": "202604031124704",
+      "contract_name": "제스파 레그더블랑 두드림 공기압 종아리 발 마사지기",
+      "institution": "전남미래자동차고등학교",
+      "counterpart": "주식회사 더위즈",
+      "amount": "351,000",
+      "contract_date": "2026-04-03",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604031124704&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "고",
+      "region": "전남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202603311114677",
+      "tender_no": "202603311114677",
+      "contract_name": "전주대정초 두드림학교 통합진단검사 실시",
+      "institution": "전주대정초등학교",
+      "counterpart": "하늘문고",
+      "amount": "2,668,000",
+      "contract_date": "2026-04-03",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603311114677&excelSection=N",
+      "search_period_from": "2026.04.01",
+      "search_period_to": "2026.05.31",
+      "last_imported_at": "2026-07-22 17:03",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주대정초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 맏내로 57",
+          "school_code": "8332159"
+        }
+      ],
+      "first_imported_at": "2026-07-22 17:03",
       "import_count": 1
     },
     {
