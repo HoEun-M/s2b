@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-22 18:43",
+  "exported_at": "2026-07-22 18:46",
   "meta": {
-    "lastImportedAt": "2026-07-22 18:43",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 815
+    "lastImportedAt": "2026-07-22 18:46",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 817
   },
   "records": [
     {
@@ -1930,6 +1930,39 @@
       "import_count": 1
     },
     {
+      "id": "202607131371148",
+      "tender_no": "202607131371148",
+      "contract_name": "창의과학한마당 및 스공학 교과보충프로그램 시상품 구입",
+      "institution": "봉의중학교",
+      "counterpart": "주식회사 문화상품권",
+      "amount": "389,500",
+      "contract_date": "2026-07-14",
+      "keywords": [
+        "교과보충"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607131371148&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-22 18:46",
+      "school_level": "중",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "봉의중학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도춘천교육지원청",
+          "address": "강원특별자치도 춘천시 춘천로296번길 55",
+          "school_code": "7812110"
+        }
+      ],
+      "first_imported_at": "2026-07-22 18:46",
+      "import_count": 1
+    },
+    {
       "id": "202607141376001",
       "tender_no": "202607141376001",
       "contract_name": "아라초등학교 학생맞춤통합지원 2학년 기초학력 신장 자료 구입",
@@ -2758,6 +2791,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605271268363",
+      "tender_no": "202605271268363",
+      "contract_name": "초등 출발선 보장 교과보충 통합 프로그램 운영 용품(토도한글) 구입",
+      "institution": "구영초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "121,500",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "교과보충"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271268363&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-22 18:46",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구영초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 범서읍 점촌1길 10",
+          "school_code": "7501069"
+        }
+      ],
+      "first_imported_at": "2026-07-22 18:46",
       "import_count": 1
     },
     {
