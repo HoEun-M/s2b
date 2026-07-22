@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-22 15:52",
+  "exported_at": "2026-07-22 15:57",
   "meta": {
-    "lastImportedAt": "2026-07-22 15:52",
-    "lastSearchPeriod": "20260201~20260228",
-    "total": 733
+    "lastImportedAt": "2026-07-22 15:57",
+    "lastSearchPeriod": "20260301~20260331",
+    "total": 735
   },
   "records": [
     {
@@ -7259,6 +7259,72 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603251096924",
+      "tender_no": "202603251096924",
+      "contract_name": "기초학력향샹 프로그램 구입",
+      "institution": "새만금초등학교",
+      "counterpart": "(주)감각교육",
+      "amount": "9,900,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603251096924&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-22 15:57",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "새만금초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 요죽5길 42",
+          "school_code": "8342115"
+        }
+      ],
+      "first_imported_at": "2026-07-22 15:57",
+      "import_count": 1
+    },
+    {
+      "id": "202603241094408",
+      "tender_no": "202603241094408",
+      "contract_name": "2026. 정기고사 및 기초학력 진단평가 운영을 위한 용품 구입",
+      "institution": "제천고등학교",
+      "counterpart": "(주) 비.엘소프트",
+      "amount": "1,190,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603241094408&excelSection=N",
+      "search_period_from": "2026.03.01",
+      "search_period_to": "2026.03.31",
+      "last_imported_at": "2026-07-22 15:57",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "제천고등학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 제천시 칠성로 105",
+          "school_code": "8000057"
+        }
+      ],
+      "first_imported_at": "2026-07-22 15:57",
       "import_count": 1
     },
     {
