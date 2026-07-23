@@ -1,11 +1,90 @@
 {
-  "exported_at": "2026-07-23 16:15",
+  "exported_at": "2026-07-23 16:40",
   "meta": {
-    "lastImportedAt": "2026-07-23 16:15",
+    "lastImportedAt": "2026-07-23 16:40",
     "lastSearchPeriod": "20260722~20260722",
-    "total": 832
+    "total": 835
   },
   "records": [
+    {
+      "id": "202607211389576",
+      "tender_no": "202607211389576",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 1종",
+      "institution": "대구평리초등학교",
+      "counterpart": "(주)디딤돌교육",
+      "amount": "9,148,900",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389576&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 16:40",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 16:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607221391076",
+      "tender_no": "202607221391076",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등)",
+      "institution": "경북공업고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "4,890,200",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391076&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 16:40",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 16:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607221392782",
+      "tender_no": "202607221392782",
+      "contract_name": "(본사) 토도한글",
+      "institution": "감계초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "81,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "토도한글"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221392782&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 16:40",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "감계초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 의창구 북면 감계로140번길 51",
+          "school_code": "9022443"
+        }
+      ],
+      "first_imported_at": "2026-07-23 16:40",
+      "import_count": 1
+    },
     {
       "id": "202607211389865",
       "tender_no": "202607211389865",
