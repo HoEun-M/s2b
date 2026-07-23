@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-23 18:27",
+  "exported_at": "2026-07-23 18:31",
   "meta": {
-    "lastImportedAt": "2026-07-23 18:27",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 879
+    "lastImportedAt": "2026-07-23 18:31",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 918
   },
   "records": [
     {
@@ -2567,6 +2567,164 @@
       "import_count": 1
     },
     {
+      "id": "202607101365527",
+      "tender_no": "202607101365527",
+      "contract_name": "미래엔초코 초코팝 전과목 초코클래스 (국,영,수,사,과) 외 1종",
+      "institution": "섬강초등학교",
+      "counterpart": "주식회사 디엔소프트",
+      "amount": "330,000",
+      "contract_date": "2026-07-10",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101365527&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "섬강초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 지정면 가곡로 91",
+          "school_code": "7822078"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607101365526",
+      "tender_no": "202607101365526",
+      "contract_name": "미래엔초코 초코팝 전과목 초코클래스 (국,영,수,사,과) 외 1종",
+      "institution": "섬강초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "38,000",
+      "contract_date": "2026-07-10",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101365526&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "섬강초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 지정면 가곡로 91",
+          "school_code": "7822078"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607081361484",
+      "tender_no": "202607081361484",
+      "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어 외 5종",
+      "institution": "보령대천초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "203,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607081361484&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607081361482",
+      "tender_no": "202607081361482",
+      "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어 외 5종",
+      "institution": "보령대천초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "150,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607081361482&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607081361480",
+      "tender_no": "202607081361480",
+      "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어 외 5종",
+      "institution": "보령대천초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "320,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607081361480&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607081361481",
+      "tender_no": "202607081361481",
+      "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어 외 5종",
+      "institution": "보령대천초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "1,260,000",
+      "contract_date": "2026-07-08",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607081361481&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202607071357634",
       "tender_no": "202607071357634",
       "contract_name": "2026 기초학력보장 선도학교 운영에 따른 문해력진단평가",
@@ -2600,6 +2758,62 @@
       "import_count": 1
     },
     {
+      "id": "202607031350176",
+      "tender_no": "202607031350176",
+      "contract_name": "인터넷 수강 지원 미래엔 초코클래스( 6개월 이상 1과목) 구독",
+      "institution": "포천가산초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "3,621,000",
+      "contract_date": "2026-07-06",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607031350176&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202607061352101",
+      "tender_no": "202607061352101",
+      "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
+      "institution": "가북초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "510,000",
+      "contract_date": "2026-07-06",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061352101&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "가북초등학교",
+          "region": "경남",
+          "district": "거창군",
+          "education_office": "경상남도교육청",
+          "support_office": "거창교육지원청",
+          "address": "경상남도 거창군 가북면 가북로 628",
+          "school_code": "9211004"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202607061351476",
       "tender_no": "202607061351476",
       "contract_name": "두드림학교 우수학생 시상품_ 상품권",
@@ -2630,6 +2844,29 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607021345822",
+      "tender_no": "202607021345822",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (4과목 결합)",
+      "institution": "보령대천초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "8,000,000",
+      "contract_date": "2026-07-02",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607021345822&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -2675,6 +2912,39 @@
       "import_count": 1
     },
     {
+      "id": "202606301340916",
+      "tender_no": "202606301340916",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "대관초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "51,000",
+      "contract_date": "2026-06-30",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606301340916&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대관초등학교",
+          "region": "충남",
+          "district": "보령시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도보령교육지원청",
+          "address": "충청남도 보령시 대관초등길 97",
+          "school_code": "8171026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202606261335755",
       "tender_no": "202606261335755",
       "contract_name": "교육복지, 학생맞춤통합지원, 두드림학교 연계 학급상담 프로그램 운영",
@@ -2705,6 +2975,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606291337417",
+      "tender_no": "202606291337417",
+      "contract_name": "미래엔초코 초코팝 전과목 초코클래스 (국,영,수,사,과) 외 1종",
+      "institution": "이담초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "190,000",
+      "contract_date": "2026-06-29",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606291337417&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이담초등학교",
+          "region": "경기",
+          "district": "동두천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도동두천양주교육지원청",
+          "address": "경기도 동두천시 이담로 21",
+          "school_code": "7602076"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -2804,6 +3107,113 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606251331783",
+      "tender_no": "202606251331783",
+      "contract_name": "미래엔 초코클래스",
+      "institution": "대구논공초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "1,195,000",
+      "contract_date": "2026-06-26",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606251331783&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606161311609",
+      "tender_no": "202606161311609",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (4과목 결합)",
+      "institution": "옥동초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "1,360,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606161311609&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "옥동초등학교",
+          "region": "울산",
+          "district": "남구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 남구 문수로 401",
+          "school_code": "7501056"
+        },
+        {
+          "school_name": "옥동초등학교",
+          "region": "강원",
+          "district": "영월군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도영월교육지원청",
+          "address": "강원특별자치도 영월군 김삿갓면 영월동로 1679",
+          "school_code": "7902027"
+        },
+        {
+          "school_name": "옥동초등학교",
+          "region": "충북",
+          "district": "진천군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도진천교육지원청",
+          "address": "충청북도 진천군 덕산읍 예지로 43",
+          "school_code": "8081018"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606091296793",
+      "tender_no": "202606091296793",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "장성중앙초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "918,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091296793&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장성중앙초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 장성읍 제봉로 84",
+          "school_code": "8692009"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -2962,6 +3372,105 @@
       "import_count": 1
     },
     {
+      "id": "202606081292673",
+      "tender_no": "202606081292673",
+      "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
+      "institution": "장성중앙초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "4,505,000",
+      "contract_date": "2026-06-15",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081292673&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장성중앙초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 장성읍 제봉로 84",
+          "school_code": "8692009"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606121304949",
+      "tender_no": "202606121304949",
+      "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어",
+      "institution": "연남초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "1,092,000",
+      "contract_date": "2026-06-15",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606121304949&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연남초등학교",
+          "region": "세종",
+          "district": "연기면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  연기면 연기길 2",
+          "school_code": "9300034"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606101298568",
+      "tender_no": "202606101298568",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "대관초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "59,500",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101298568&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대관초등학교",
+          "region": "충남",
+          "district": "보령시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도보령교육지원청",
+          "address": "충청남도 보령시 대관초등길 97",
+          "school_code": "8171026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202606041285579",
       "tender_no": "202606041285579",
       "contract_name": "두드림학교 프로그램 상담비",
@@ -3069,6 +3578,52 @@
       "import_count": 1
     },
     {
+      "id": "202606081290836",
+      "tender_no": "202606081290836",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 14종",
+      "institution": "거제아주초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "810,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081290836&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606081290835",
+      "tender_no": "202606081290835",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 14종",
+      "institution": "거제아주초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "1,920,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081290835&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202606081289952",
       "tender_no": "202606081289952",
       "contract_name": "청학초 두드림학교 프로그램 견적 요청",
@@ -3168,6 +3723,39 @@
       "import_count": 1
     },
     {
+      "id": "202606021280032",
+      "tender_no": "202606021280032",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "부여초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "7,650,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021280032&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부여초등학교",
+          "region": "충남",
+          "district": "부여군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도부여교육지원청",
+          "address": "충청남도 부여군 부여읍 부소로 105-10",
+          "school_code": "8231027"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202606021281479",
       "tender_no": "202606021281479",
       "contract_name": "2026학년도 두드림학교 언어치료프로그램운영비 견적 요청",
@@ -3198,6 +3786,72 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606021282948",
+      "tender_no": "202606021282948",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "대관초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "59,500",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021282948&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대관초등학교",
+          "region": "충남",
+          "district": "보령시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도보령교육지원청",
+          "address": "충청남도 보령시 대관초등길 97",
+          "school_code": "8171026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606021283042",
+      "tender_no": "202606021283042",
+      "contract_name": "미래엔 초코 초코팝 초코클래스 전과목 AI 코스웨어 (국,영,수,사,과)",
+      "institution": "순천도사초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "2,091,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021283042&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "순천도사초등학교",
+          "region": "광주",
+          "district": "순천시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시순천교육지원청",
+          "address": "전남광주통합특별시 순천시 순천만길 166",
+          "school_code": "8522028"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -3267,6 +3921,105 @@
       "import_count": 1
     },
     {
+      "id": "202605291274326",
+      "tender_no": "202605291274326",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "귀래초등학교",
+      "counterpart": "디자인수",
+      "amount": "280,000",
+      "contract_date": "2026-06-01",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605291274326&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "귀래초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 귀래면 북원로 89",
+          "school_code": "7822084"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605291274327",
+      "tender_no": "202605291274327",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "귀래초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "4,160,000",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605291274327&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "귀래초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 귀래면 북원로 89",
+          "school_code": "7822084"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605291274325",
+      "tender_no": "202605291274325",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "귀래초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "175,000",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605291274325&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "귀래초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 귀래면 북원로 89",
+          "school_code": "7822084"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202605291272587",
       "tender_no": "202605291272587",
       "contract_name": "두드림학교 통합진단검사 검사지 구입",
@@ -3330,6 +4083,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605281269748",
+      "tender_no": "202605281269748",
+      "contract_name": "2026학년도 정보과 미래엔 AI디지털 교육자료 구독권 구매",
+      "institution": "현대청운중학교",
+      "counterpart": "(주)미래엔",
+      "amount": "29,510,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281269748&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "현대청운중학교",
+          "region": "울산",
+          "district": "동구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 동구 방어진순환도로 1073",
+          "school_code": "7491174"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -3474,6 +4260,62 @@
       "import_count": 1
     },
     {
+      "id": "202605221259586",
+      "tender_no": "202605221259586",
+      "contract_name": "미래엔 초코 달달독해 초코클래스 AI 초등 독해력 코스웨어 구입",
+      "institution": "대구달성초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "612,000",
+      "contract_date": "2026-05-22",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605221259586&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605201253233",
+      "tender_no": "202605201253233",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목) 외 1종",
+      "institution": "위미중학교",
+      "counterpart": "(주)미래엔",
+      "amount": "2,097,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605201253233&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "중",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "위미중학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 남원읍 위미상원북로 34",
+          "school_code": "9299018"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202605191249028",
       "tender_no": "202605191249028",
       "contract_name": "광일초 두드림학교 마음원예 교실 견적 요청",
@@ -3546,6 +4388,147 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191247169",
+      "tender_no": "202605191247169",
+      "contract_name": "미래엔 초코클래스 1개월 (1과목)",
+      "institution": "천마초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "3,200,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191247169&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천마초등학교",
+          "region": "부산",
+          "district": "서구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 서구 천해로7번길 38",
+          "school_code": "7171082"
+        },
+        {
+          "school_name": "천마초등학교",
+          "region": "경기",
+          "district": "남양주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도구리남양주교육지원청",
+          "address": "경기도 남양주시 화도읍 경춘로 1707",
+          "school_code": "7652127"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605181245532",
+      "tender_no": "202605181245532",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "홍북초등학교",
+      "counterpart": "주식회사 에이치투케이",
+      "amount": "105,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181245532&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "홍북초등학교",
+          "region": "충남",
+          "district": "홍성군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도홍성교육지원청",
+          "address": "충청남도 홍성군 홍북읍 자경로 33",
+          "school_code": "8261039"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605181245531",
+      "tender_no": "202605181245531",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "홍북초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "336,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181245531&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "홍북초등학교",
+          "region": "충남",
+          "district": "홍성군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도홍성교육지원청",
+          "address": "충청남도 홍성군 홍북읍 자경로 33",
+          "school_code": "8261039"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605181245530",
+      "tender_no": "202605181245530",
+      "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 2종",
+      "institution": "홍북초등학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "105,600",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181245530&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "홍북초등학교",
+          "region": "충남",
+          "district": "홍성군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도홍성교육지원청",
+          "address": "충청남도 홍성군 홍북읍 자경로 33",
+          "school_code": "8261039"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -3645,6 +4628,62 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605181242907",
+      "tender_no": "202605181242907",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "인천선학초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "11,245,500",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181242907&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605151240901",
+      "tender_no": "202605151240901",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "대관초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "59,500",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605151240901&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대관초등학교",
+          "region": "충남",
+          "district": "보령시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도보령교육지원청",
+          "address": "충청남도 보령시 대관초등길 97",
+          "school_code": "8171026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
@@ -3971,6 +5010,128 @@
       "import_count": 1
     },
     {
+      "id": "202605121228263",
+      "tender_no": "202605121228263",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (3과목 결합) 외 1종",
+      "institution": "완도초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "7,470,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121228263&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완도초등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시완도교육지원청",
+          "address": "전남광주통합특별시 완도군 완도읍 중앙길 43",
+          "school_code": "8702017"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605121229893",
+      "tender_no": "202605121229893",
+      "contract_name": "미래엔 초코 초코팝 초코클래스 전과목 AI 코스웨어 (국,영,수,사,과)",
+      "institution": "동일중앙초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "4,769,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121229893&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동일중앙초등학교",
+          "region": "부산",
+          "district": "동구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 동구 구봉로 46",
+          "school_code": "7181026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605071216942",
+      "tender_no": "202605071216942",
+      "contract_name": "미래엔 초코 달달독해 초코클래스 초등 독해력 AI 코스웨어",
+      "institution": "대전둔산초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "1,173,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605071216942&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605111224974",
+      "tender_no": "202605111224974",
+      "contract_name": "2026. 미래엔 초코클래스",
+      "institution": "금일초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "6,256,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111224974&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금일초등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시완도교육지원청",
+          "address": "전남광주통합특별시 완도군 금일읍 구동2길 38",
+          "school_code": "8702026"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
       "id": "202605081219497",
       "tender_no": "202605081219497",
       "contract_name": "2026학년도 두드림학교 자존감 증진 프로그램 실시",
@@ -4141,6 +5302,48 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604171168371",
+      "tender_no": "202604171168371",
+      "contract_name": "미래엔 초코 초코팝 달달독해 달달수학 초코클래스 (결합형)",
+      "institution": "청산초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "144,000",
+      "contract_date": "2026-05-04",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604171168371&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-23 18:31",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청산초등학교",
+          "region": "충북",
+          "district": "옥천군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도옥천교육지원청",
+          "address": "충청북도 옥천군 청산면 지전길 36-19",
+          "school_code": "8061020"
+        },
+        {
+          "school_name": "청산초등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시완도교육지원청",
+          "address": "전남광주통합특별시 완도군 청산면 청산로 1579-74",
+          "school_code": "8702030"
+        }
+      ],
+      "first_imported_at": "2026-07-23 18:31",
       "import_count": 1
     },
     {
