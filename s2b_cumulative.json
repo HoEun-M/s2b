@@ -1,11 +1,103 @@
 {
-  "exported_at": "2026-07-24 08:22",
+  "exported_at": "2026-07-24 08:56",
   "meta": {
-    "lastImportedAt": "2026-07-24 08:22",
+    "lastImportedAt": "2026-07-24 08:56",
     "lastSearchPeriod": "20260723~20260723",
-    "total": 933
+    "total": 935
   },
   "records": [
+    {
+      "id": "202607221391622",
+      "tender_no": "202607221391622",
+      "contract_name": "코딩교육 소모품(멀티탭 외) 구입",
+      "institution": "인천구산초등학교",
+      "counterpart": "엠아이시스템",
+      "amount": "480,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391622&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:56",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 08:56",
+      "import_count": 1
+    },
+    {
+      "id": "202607231394628",
+      "tender_no": "202607231394628",
+      "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
+      "institution": "한들물빛초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "9,500",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "달달",
+        "미래엔",
+        "수학",
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394628&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:56",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한들물빛초등학교",
+          "region": "충남",
+          "district": "아산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도아산교육지원청",
+          "address": "충청남도 아산시 탕정면 한들물빛도시로 49",
+          "school_code": "8181165"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 3
+    },
+    {
+      "id": "202607231394581",
+      "tender_no": "202607231394581",
+      "contract_name": "CREDECA AI코딩 풀세트",
+      "institution": "서창중학교",
+      "counterpart": "아이디어리소스",
+      "amount": "1,440,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394581&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:56",
+      "school_level": "중",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "서창중학교",
+          "region": "경남",
+          "district": "양산시",
+          "education_office": "경상남도교육청",
+          "support_office": "양산교육지원청",
+          "address": "경상남도 양산시 대운9길 8",
+          "school_code": "9151040"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:56",
+      "import_count": 1
+    },
     {
       "id": "202607231394238",
       "tender_no": "202607231394238",
@@ -68,40 +160,6 @@
           "support_office": "전북특별자치도정읍교육지원청",
           "address": "전북특별자치도 정읍시 신태인읍 정신로 1094",
           "school_code": "8362095"
-        }
-      ],
-      "first_imported_at": "2026-07-24 08:05",
-      "import_count": 2
-    },
-    {
-      "id": "202607231394628",
-      "tender_no": "202607231394628",
-      "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
-      "institution": "한들물빛초등학교",
-      "counterpart": "올댓스쿨 주식회사",
-      "amount": "9,500",
-      "contract_date": "2026-07-23",
-      "keywords": [
-        "수학",
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394628&excelSection=N",
-      "search_period_from": "2026.07.23",
-      "search_period_to": "2026.07.23",
-      "last_imported_at": "2026-07-24 08:22",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "한들물빛초등학교",
-          "region": "충남",
-          "district": "아산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도아산교육지원청",
-          "address": "충청남도 아산시 탕정면 한들물빛도시로 49",
-          "school_code": "8181165"
         }
       ],
       "first_imported_at": "2026-07-24 08:05",
