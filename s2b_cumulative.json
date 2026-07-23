@@ -1,8 +1,8 @@
 {
-  "exported_at": "2026-07-23 18:18",
+  "exported_at": "2026-07-23 18:21",
   "meta": {
-    "lastImportedAt": "2026-07-23 18:18",
-    "lastSearchPeriod": "20260201~20260430",
+    "lastImportedAt": "2026-07-23 18:21",
+    "lastSearchPeriod": "20260501~20260715",
     "total": 835
   },
   "records": [
@@ -2482,7 +2482,7 @@
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607131371148&excelSection=N",
       "search_period_from": "2026.05.01",
       "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-07-22 18:46",
+      "last_imported_at": "2026-07-23 18:21",
       "school_level": "중",
       "region": "강원",
       "region_status": "matched",
@@ -2499,7 +2499,7 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:46",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202607141376001",
@@ -3346,7 +3346,7 @@
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271268363&excelSection=N",
       "search_period_from": "2026.05.01",
       "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-07-22 18:46",
+      "last_imported_at": "2026-07-23 18:21",
       "school_level": "초",
       "region": "울산",
       "region_status": "matched",
@@ -3363,7 +3363,7 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:46",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202605271265861",
