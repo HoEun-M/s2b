@@ -1,11 +1,221 @@
 {
-  "exported_at": "2026-07-23 18:31",
+  "exported_at": "2026-07-24 08:05",
   "meta": {
-    "lastImportedAt": "2026-07-23 18:31",
-    "lastSearchPeriod": "20260501~20260715",
-    "total": 918
+    "lastImportedAt": "2026-07-24 08:05",
+    "lastSearchPeriod": "20260723~20260723",
+    "total": 923
   },
   "records": [
+    {
+      "id": "202607231396524",
+      "tender_no": "202607231396524",
+      "contract_name": "코스웨어(스마트리 파닉스) 구입",
+      "institution": "군북초등학교",
+      "counterpart": "주식회사 커넥트에듀",
+      "amount": "224,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231396524&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:05",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군북초등학교",
+          "region": "충남",
+          "district": "금산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도금산교육지원청",
+          "address": "충청남도 금산군 군북면 군북로 714",
+          "school_code": "8201013"
+        },
+        {
+          "school_name": "군북초등학교",
+          "region": "경남",
+          "district": "함안군",
+          "education_office": "경상남도교육청",
+          "support_office": "함안교육지원청",
+          "address": "경상남도 함안군 군북면 덕대길 26-16",
+          "school_code": "9131007"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 1
+    },
+    {
+      "id": "202607231396129",
+      "tender_no": "202607231396129",
+      "contract_name": "코드모스 AI코스웨어",
+      "institution": "동양초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "500,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231396129&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:05",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동양초등학교",
+          "region": "부산",
+          "district": "부산진구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시남부교육지원청",
+          "address": "부산광역시 부산진구 백양산로 99",
+          "school_code": "7181024"
+        },
+        {
+          "school_name": "동양초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 만세구 남양읍 시청로45번길 11",
+          "school_code": "7679020"
+        },
+        {
+          "school_name": "동양초등학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 소양면 전진로 1059",
+          "school_code": "8392065"
+        },
+        {
+          "school_name": "동양초등학교",
+          "region": "경북",
+          "district": "봉화군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도봉화교육지원청",
+          "address": "경상북도 봉화군 봉성면 다덕로 523-14",
+          "school_code": "8961027"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 1
+    },
+    {
+      "id": "202607231394110",
+      "tender_no": "202607231394110",
+      "contract_name": "스쿨플랫 수학 AI 코스웨어(구, 매쓰플랫)",
+      "institution": "왕신여자중학교",
+      "counterpart": "(주)프리윌린",
+      "amount": "1,350,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394110&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:05",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "왕신여자중학교",
+          "region": "전북",
+          "district": "정읍시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도정읍교육지원청",
+          "address": "전북특별자치도 정읍시 신태인읍 정신로 1094",
+          "school_code": "8362095"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 1
+    },
+    {
+      "id": "202607231394628",
+      "tender_no": "202607231394628",
+      "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
+      "institution": "한들물빛초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "9,500",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394628&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:05",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한들물빛초등학교",
+          "region": "충남",
+          "district": "아산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도아산교육지원청",
+          "address": "충청남도 아산시 탕정면 한들물빛도시로 49",
+          "school_code": "8181165"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 1
+    },
+    {
+      "id": "202607231394684",
+      "tender_no": "202607231394684",
+      "contract_name": "AI 국어 수업 도구 러니",
+      "institution": "동북초등학교",
+      "counterpart": "주식회사 아티피셜 소사이어티",
+      "amount": "4,635,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231394684&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 08:05",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동북초등학교",
+          "region": "서울",
+          "district": "도봉구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시북부교육지원청",
+          "address": "서울특별시 도봉구 시루봉로 53",
+          "school_code": "7051109"
+        },
+        {
+          "school_name": "동북초등학교",
+          "region": "전북",
+          "district": "부안군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도부안교육지원청",
+          "address": "전북특별자치도 부안군 동진면 제전길 63",
+          "school_code": "8462032"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:05",
+      "import_count": 1
+    },
     {
       "id": "202607211389576",
       "tender_no": "202607211389576",
