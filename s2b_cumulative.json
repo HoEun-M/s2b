@@ -1,11 +1,77 @@
 {
-  "exported_at": "2026-07-23 10:23",
+  "exported_at": "2026-07-23 16:15",
   "meta": {
-    "lastImportedAt": "2026-07-23 10:23",
+    "lastImportedAt": "2026-07-23 16:15",
     "lastSearchPeriod": "20260722~20260722",
-    "total": 830
+    "total": 832
   },
   "records": [
+    {
+      "id": "202607211389865",
+      "tender_no": "202607211389865",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "창신중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "7,560,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389865&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 16:15",
+      "school_level": "중",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "창신중학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 마산회원구 봉암북7길 11",
+          "school_code": "9022164"
+        }
+      ],
+      "first_imported_at": "2026-07-23 16:15",
+      "import_count": 1
+    },
+    {
+      "id": "202607211389211",
+      "tender_no": "202607211389211",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "남해초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,232,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389211&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 16:15",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남해초등학교",
+          "region": "경남",
+          "district": "남해군",
+          "education_office": "경상남도교육청",
+          "support_office": "남해교육지원청",
+          "address": "경상남도 남해군 남해읍 망운로 14",
+          "school_code": "9171007"
+        }
+      ],
+      "first_imported_at": "2026-07-23 16:15",
+      "import_count": 1
+    },
     {
       "id": "202607221391623",
       "tender_no": "202607221391623",
