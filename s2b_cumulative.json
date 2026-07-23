@@ -1,11 +1,125 @@
 {
-  "exported_at": "2026-07-23 08:34",
+  "exported_at": "2026-07-23 10:23",
   "meta": {
-    "lastImportedAt": "2026-07-23 08:34",
+    "lastImportedAt": "2026-07-23 10:23",
     "lastSearchPeriod": "20260722~20260722",
-    "total": 827
+    "total": 830
   },
   "records": [
+    {
+      "id": "202607221391623",
+      "tender_no": "202607221391623",
+      "contract_name": "코딩교육 소모품(멀티탭 외) 구입",
+      "institution": "인천구산초등학교",
+      "counterpart": "스쿨투",
+      "amount": "80,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391623&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 10:23",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 10:23",
+      "import_count": 1
+    },
+    {
+      "id": "202607221391715",
+      "tender_no": "202607221391715",
+      "contract_name": "코딩교육 소모품(네오박스 정리함) 구입",
+      "institution": "인천구산초등학교",
+      "counterpart": "드림스쿨",
+      "amount": "100,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391715&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 10:23",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-23 10:23",
+      "import_count": 1
+    },
+    {
+      "id": "202607211390004",
+      "tender_no": "202607211390004",
+      "contract_name": "미래엔초코 초코팝 전과목 초코클래스 (국,영,수,사,과)",
+      "institution": "민세초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "266,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "미래엔",
+        "초코팝"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211390004&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 10:23",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "민세초등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도평택교육지원청",
+          "address": "경기도 평택시 고덕국제1로 200",
+          "school_code": "7631275"
+        }
+      ],
+      "first_imported_at": "2026-07-23 10:23",
+      "import_count": 1
+    },
+    {
+      "id": "202607221392407",
+      "tender_no": "202607221392407",
+      "contract_name": "달달수학 콘텐츠 구독",
+      "institution": "보길동초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "3,200,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "달달",
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607221392407&excelSection=N",
+      "search_period_from": "2026.07.22",
+      "search_period_to": "2026.07.22",
+      "last_imported_at": "2026-07-23 10:23",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "보길동초등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시완도교육지원청",
+          "address": "전남광주통합특별시 완도군 보길면 중리1길 6-18",
+          "school_code": "8702039"
+        }
+      ],
+      "first_imported_at": "2026-07-23 08:34",
+      "import_count": 2
+    },
     {
       "id": "202607221393028",
       "tender_no": "202607221393028",
@@ -200,39 +314,6 @@
           "support_office": "경기도동두천양주교육지원청",
           "address": "경기도 양주시 장흥면 일영로 641",
           "school_code": "7602044"
-        }
-      ],
-      "first_imported_at": "2026-07-23 08:34",
-      "import_count": 1
-    },
-    {
-      "id": "202607221392407",
-      "tender_no": "202607221392407",
-      "contract_name": "달달수학 콘텐츠 구독",
-      "institution": "보길동초등학교",
-      "counterpart": "(주)미래엔",
-      "amount": "3,200,000",
-      "contract_date": "2026-07-22",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607221392407&excelSection=N",
-      "search_period_from": "2026.07.22",
-      "search_period_to": "2026.07.22",
-      "last_imported_at": "2026-07-23 08:34",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "보길동초등학교",
-          "region": "광주",
-          "district": "완도군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시완도교육지원청",
-          "address": "전남광주통합특별시 완도군 보길면 중리1길 6-18",
-          "school_code": "8702039"
         }
       ],
       "first_imported_at": "2026-07-23 08:34",
