@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-24 15:06",
+  "exported_at": "2026-07-24 15:12",
   "meta": {
-    "lastImportedAt": "2026-07-24 15:06",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 1005
+    "lastImportedAt": "2026-07-24 15:12",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 1030
   },
   "records": [
     {
@@ -3096,6 +3096,132 @@
       "import_count": 1
     },
     {
+      "id": "202607101366237",
+      "tender_no": "202607101366237",
+      "contract_name": "칸쵸, 홈런볼, 예감, ABC쵸콜릿, 하리보",
+      "institution": "대덕초등학교",
+      "counterpart": "도훈퓨쳐스",
+      "amount": "76,200",
+      "contract_date": "2026-07-13",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101366237&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대덕초등학교",
+          "region": "대전",
+          "district": "유성구",
+          "education_office": "대전광역시교육청",
+          "support_office": "대전광역시서부교육지원청",
+          "address": "대전광역시 유성구 대덕대로556번길 102",
+          "school_code": "7451063"
+        },
+        {
+          "school_name": "대덕초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 대덕면 모산로 84",
+          "school_code": "7761022"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202607101366235",
+      "tender_no": "202607101366235",
+      "contract_name": "칸쵸, 홈런볼, 예감, ABC쵸콜릿, 하리보",
+      "institution": "대덕초등학교",
+      "counterpart": "에듀앤비",
+      "amount": "52,960",
+      "contract_date": "2026-07-13",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101366235&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대덕초등학교",
+          "region": "대전",
+          "district": "유성구",
+          "education_office": "대전광역시교육청",
+          "support_office": "대전광역시서부교육지원청",
+          "address": "대전광역시 유성구 대덕대로556번길 102",
+          "school_code": "7451063"
+        },
+        {
+          "school_name": "대덕초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 대덕면 모산로 84",
+          "school_code": "7761022"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202606241329451",
+      "tender_no": "202606241329451",
+      "contract_name": "아이스크림홈런 교육용 소프트웨어(무관리) 외 1종",
+      "institution": "온정초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "7,404,000",
+      "contract_date": "2026-07-13",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606241329451&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "온정초등학교",
+          "region": "강원",
+          "district": "속초시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도속초양양교육지원청",
+          "address": "강원특별자치도 속초시 온천로 107",
+          "school_code": "7863039"
+        },
+        {
+          "school_name": "온정초등학교",
+          "region": "경북",
+          "district": "울진군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도울진교육지원청",
+          "address": "경상북도 울진군 온정면 온정학교길 49",
+          "school_code": "8971032"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202607101365920",
       "tender_no": "202607101365920",
       "contract_name": "두드림학교 학습능력향상 프로그램 운영",
@@ -3116,6 +3242,72 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607101366236",
+      "tender_no": "202607101366236",
+      "contract_name": "칸쵸, 홈런볼, 예감, ABC쵸콜릿, 하리보",
+      "institution": "대덕초등학교",
+      "counterpart": "365스쿨",
+      "amount": "45,000",
+      "contract_date": "2026-07-10",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101366236&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대덕초등학교",
+          "region": "대전",
+          "district": "유성구",
+          "education_office": "대전광역시교육청",
+          "support_office": "대전광역시서부교육지원청",
+          "address": "대전광역시 유성구 대덕대로556번길 102",
+          "school_code": "7451063"
+        },
+        {
+          "school_name": "대덕초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 대덕면 모산로 84",
+          "school_code": "7761022"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202607081361536",
+      "tender_no": "202607081361536",
+      "contract_name": "AI·디지털 활용 선도학교 구독형 AI 학습관리프로그램아이스크림에듀 홈런 스쿨런 구입",
+      "institution": "서울동광초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "11,000,000",
+      "contract_date": "2026-07-10",
+      "keywords": [
+        "홈런",
+        "스쿨런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607081361536&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
@@ -3185,6 +3377,29 @@
       ],
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2
+    },
+    {
+      "id": "202607081359418",
+      "tender_no": "202607081359418",
+      "contract_name": "2026학년도 증도초 아이스크림 홈런 콘텐츠 구독",
+      "institution": "신안증도초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "14,220,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607081359418&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
     },
     {
       "id": "202607081361484",
@@ -3259,6 +3474,39 @@
       "import_count": 2
     },
     {
+      "id": "202606221324716",
+      "tender_no": "202606221324716",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "석양초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "632,000",
+      "contract_date": "2026-07-08",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606221324716&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석양초등학교",
+          "region": "충남",
+          "district": "부여군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도부여교육지원청",
+          "address": "충청남도 부여군 석성면 증산로39번길 31",
+          "school_code": "8231029"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202607081361481",
       "tender_no": "202607081361481",
       "contract_name": "미래엔 초코 달달독해, 달달수학 2과목 초코클래스 AI 코스웨어 외 5종",
@@ -3313,6 +3561,62 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:16",
+      "import_count": 1
+    },
+    {
+      "id": "202607071357321",
+      "tender_no": "202607071357321",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "정선함백초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "632,000",
+      "contract_date": "2026-07-07",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071357321&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202607061352875",
+      "tender_no": "202607061352875",
+      "contract_name": "가북초등학교 아이스크림 홈런(태블릿) 무관리형 구매 계약",
+      "institution": "가북초등학교",
+      "counterpart": "제이로이",
+      "amount": "10,764,000",
+      "contract_date": "2026-07-06",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061352875&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "가북초등학교",
+          "region": "경남",
+          "district": "거창군",
+          "education_office": "경상남도교육청",
+          "support_office": "거창교육지원청",
+          "address": "경상남도 거창군 가북면 가북로 628",
+          "school_code": "9211004"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
@@ -3935,6 +4239,29 @@
       "import_count": 1
     },
     {
+      "id": "202606221324050",
+      "tender_no": "202606221324050",
+      "contract_name": "연구학교 AI코스웨어(아이스크림홈런) 구입(3차)",
+      "institution": "해남화원초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "4,424,000",
+      "contract_date": "2026-06-23",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606221324050&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202606221322797",
       "tender_no": "202606221322797",
       "contract_name": "두드림학교 학습지원대상 종합 심리검사 실시",
@@ -4021,6 +4348,72 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606151307424",
+      "tender_no": "202606151307424",
+      "contract_name": "초처초 아이스크림 홈런 콘텐스 사용료 견적요청",
+      "institution": "초처초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "553,000",
+      "contract_date": "2026-06-16",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606151307424&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "초처초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 봉남면 초처로 233",
+          "school_code": "8382068"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202606151308013",
+      "tender_no": "202606151308013",
+      "contract_name": "아이스크림 홈런(태블릿) 관리형",
+      "institution": "안의초등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "5,056,000",
+      "contract_date": "2026-06-16",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151308013&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안의초등학교",
+          "region": "경남",
+          "district": "함양군",
+          "education_office": "경상남도교육청",
+          "support_office": "함양교육지원청",
+          "address": "경상남도 함양군 안의면 안의초등길 8",
+          "school_code": "9201012"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
@@ -4156,6 +4549,39 @@
       ],
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2
+    },
+    {
+      "id": "202606091295062",
+      "tender_no": "202606091295062",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "상사초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "11,376,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091295062&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "상사초등학교",
+          "region": "광주",
+          "district": "순천시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시순천교육지원청",
+          "address": "전남광주통합특별시 순천시 상사면 상사초등길 55",
+          "school_code": "8522056"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
     },
     {
       "id": "202606101298568",
@@ -4447,6 +4873,48 @@
       "import_count": 1
     },
     {
+      "id": "202606021282413",
+      "tender_no": "202606021282413",
+      "contract_name": "아이스크림 스쿨런",
+      "institution": "덕신초등학교",
+      "counterpart": "엘위드",
+      "amount": "5,145,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "스쿨런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021282413&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "덕신초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 온산읍 서영남1길 27",
+          "school_code": "7501075"
+        },
+        {
+          "school_name": "덕신초등학교",
+          "region": "충북",
+          "district": "충주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도충주교육지원청",
+          "address": "충청북도 충주시 주덕읍 매남구술길 12",
+          "school_code": "8021055"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202606021280032",
       "tender_no": "202606021280032",
       "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
@@ -4510,6 +4978,57 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606011278764",
+      "tender_no": "202606011278764",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "동광초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "2,212,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606011278764&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동광초등학교",
+          "region": "서울",
+          "district": "금천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시남부교육지원청",
+          "address": "서울특별시 금천구 탑골로10길 45",
+          "school_code": "7041099"
+        },
+        {
+          "school_name": "동광초등학교",
+          "region": "강원",
+          "district": "고성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도고성교육지원청",
+          "address": "강원특별자치도 고성군 토성면 교암1길 15",
+          "school_code": "7972020"
+        },
+        {
+          "school_name": "동광초등학교",
+          "region": "충북",
+          "district": "보은군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도보은교육지원청",
+          "address": "충청북도 보은군 보은읍 동광길 26",
+          "school_code": "8051013"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
@@ -4840,6 +5359,39 @@
       "import_count": 1
     },
     {
+      "id": "202605271267987",
+      "tender_no": "202605271267987",
+      "contract_name": "아이스크림 스쿨런",
+      "institution": "화암초등학교",
+      "counterpart": "엘위드",
+      "amount": "315,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "스쿨런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271267987&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "화암초등학교",
+          "region": "울산",
+          "district": "동구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 동구 화문로 55",
+          "school_code": "7491144"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202605281269748",
       "tender_no": "202605281269748",
       "contract_name": "2026학년도 정보과 미래엔 AI디지털 교육자료 구독권 구매",
@@ -5014,6 +5566,52 @@
       "import_count": 1
     },
     {
+      "id": "202605151240828",
+      "tender_no": "202605151240828",
+      "contract_name": "2026. 관산초등학교 아이스크림 홈런 학습",
+      "institution": "장흥관산초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "12,000,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605151240828&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605211257216",
+      "tender_no": "202605211257216",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "서천기산초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "14,220,000",
+      "contract_date": "2026-05-22",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211257216&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
       "id": "202605221259586",
       "tender_no": "202605221259586",
       "contract_name": "미래엔 초코 달달독해 초코클래스 AI 초등 독해력 코스웨어 구입",
@@ -5036,6 +5634,57 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2
+    },
+    {
+      "id": "202605211256403",
+      "tender_no": "202605211256403",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "장기중학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "3,950,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211256403&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장기중학교",
+          "region": "세종",
+          "district": "장군면",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  장군면 장척로 359",
+          "school_code": "9300051"
+        },
+        {
+          "school_name": "장기중학교",
+          "region": "경기",
+          "district": "김포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도김포교육지원청",
+          "address": "경기도 김포시 청송로 5",
+          "school_code": "7771010"
+        },
+        {
+          "school_name": "장기중학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 남구 장기면 읍내길 53",
+          "school_code": "8761209"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
     },
     {
       "id": "202605201253233",
@@ -5514,6 +6163,40 @@
       "import_count": 1
     },
     {
+      "id": "202605131232002",
+      "tender_no": "202605131232002",
+      "contract_name": "기초학력 맞춤형 플랫폼(교육용 소프트웨어 아이스크림홈런(관리형))",
+      "institution": "영광중앙초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "12,008,000",
+      "contract_date": "2026-05-15",
+      "keywords": [
+        "기초학력",
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131232002&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영광중앙초등학교",
+          "region": "광주",
+          "district": "영광군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시영광교육지원청",
+          "address": "전남광주통합특별시 영광군 영광읍 천년로13길 57-9",
+          "school_code": "8682013"
+        }
+      ],
+      "first_imported_at": "2026-07-22 16:13",
+      "import_count": 2
+    },
+    {
       "id": "202605151238950",
       "tender_no": "202605151238950",
       "contract_name": "운봉초등학교 두드림학교 프로그램 운영",
@@ -5589,36 +6272,36 @@
       "import_count": 1
     },
     {
-      "id": "202605131232002",
-      "tender_no": "202605131232002",
-      "contract_name": "기초학력 맞춤형 플랫폼(교육용 소프트웨어 아이스크림홈런(관리형))",
-      "institution": "영광중앙초등학교",
-      "counterpart": "(주)아이스크림에듀",
-      "amount": "12,008,000",
-      "contract_date": "2026-05-15",
+      "id": "202605141238455",
+      "tender_no": "202605141238455",
+      "contract_name": "아이스크림 홈런(태블릿) 무관리형 구매",
+      "institution": "경산동부초등학교",
+      "counterpart": "엘위드",
+      "amount": "483,000",
+      "contract_date": "2026-05-14",
       "keywords": [
-        "기초학력"
+        "홈런"
       ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131232002&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-07-22 16:13",
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141238455&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
       "school_level": "초",
-      "region": "광주",
+      "region": "경북",
       "region_status": "matched",
       "region_source": "neis_school_info",
       "region_candidates": [
         {
-          "school_name": "영광중앙초등학교",
-          "region": "광주",
-          "district": "영광군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영광교육지원청",
-          "address": "전남광주통합특별시 영광군 영광읍 천년로13길 57-9",
-          "school_code": "8682013"
+          "school_name": "경산동부초등학교",
+          "region": "경북",
+          "district": "경산시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도경산교육지원청",
+          "address": "경상북도 경산시 원효로28길 60-6",
+          "school_code": "8851057"
         }
       ],
-      "first_imported_at": "2026-07-22 16:13",
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
@@ -6024,6 +6707,169 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605081218989",
+      "tender_no": "202605081218989",
+      "contract_name": "중앙초등학교 아이크림홈런 구입 견적요청",
+      "institution": "원주중앙초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "4,400,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605081218989&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605081219193",
+      "tender_no": "202605081219193",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런",
+      "institution": "안양초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "11,000,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605081219193&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안양초등학교",
+          "region": "경기",
+          "district": "안양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안양과천교육지원청",
+          "address": "경기도 안양시 만안구 현충로28번길 54",
+          "school_code": "7569032"
+        },
+        {
+          "school_name": "안양초등학교",
+          "region": "광주",
+          "district": "장흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장흥교육지원청",
+          "address": "전남광주통합특별시 장흥군 안양면 운정2길 14",
+          "school_code": "8622017"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605071214848",
+      "tender_no": "202605071214848",
+      "contract_name": "남원도통초 아이스크림 홈런 8개월 구독 견적 요청",
+      "institution": "남원도통초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "552,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605071214848&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남원도통초등학교",
+          "region": "전북",
+          "district": "남원시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도남원교육지원청",
+          "address": "전북특별자치도 남원시 대교2길 22",
+          "school_code": "8372035"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605071216806",
+      "tender_no": "202605071216806",
+      "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
+      "institution": "대구고산초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "7,742,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605071216806&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202604281199899",
+      "tender_no": "202604281199899",
+      "contract_name": "2026. AI 맞춤형 온라인 학습 콘텐츠 이용 아이스크림 홈런 견적 요청",
+      "institution": "석교초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "12,000,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604281199899&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-24 15:12",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석교초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 상당구 대성로 14",
+          "school_code": "8011188"
+        },
+        {
+          "school_name": "석교초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 임회면 석교길 47-18",
+          "school_code": "8712020"
+        }
+      ],
+      "first_imported_at": "2026-07-24 15:12",
       "import_count": 1
     },
     {
