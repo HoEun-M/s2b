@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-24 10:42",
+  "exported_at": "2026-07-24 13:40",
   "meta": {
-    "lastImportedAt": "2026-07-24 10:42",
-    "lastSearchPeriod": "20260723~20260723",
-    "total": 935
+    "lastImportedAt": "2026-07-24 13:40",
+    "lastSearchPeriod": "20260201~20260430",
+    "total": 936
   },
   "records": [
     {
@@ -6321,12 +6321,13 @@
       "amount": "12,024,000",
       "contract_date": "2026-04-22",
       "keywords": [
-        "미래엔"
+        "미래엔",
+        "초코팝"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604211176907&excelSection=N",
       "search_period_from": "2026.02.01",
       "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-23 18:27",
+      "last_imported_at": "2026-07-24 13:40",
       "school_level": "초",
       "region": "강원",
       "region_status": "matched",
@@ -6343,7 +6344,7 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:27",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202604221183431",
@@ -6354,12 +6355,13 @@
       "amount": "2,880,000",
       "contract_date": "2026-04-22",
       "keywords": [
-        "미래엔"
+        "미래엔",
+        "초코팝"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221183431&excelSection=N",
       "search_period_from": "2026.02.01",
       "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-23 18:27",
+      "last_imported_at": "2026-07-24 13:40",
       "school_level": "초",
       "region": "경북",
       "region_status": "matched",
@@ -6376,7 +6378,7 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:27",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202604211178209",
@@ -7290,6 +7292,39 @@
       "import_count": 1
     },
     {
+      "id": "202604071133629",
+      "tender_no": "202604071133629",
+      "contract_name": "AI, 디지털 활용 선도학교 초코팝 AI 코스웨어 구독",
+      "institution": "석화초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "5,900,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "초코팝"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604071133629&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-24 13:40",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석화초등학교",
+          "region": "강원",
+          "district": "홍천군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도홍천교육지원청",
+          "address": "강원도 홍천군 홍천읍 석화안길1길 12",
+          "school_code": "7881029"
+        }
+      ],
+      "first_imported_at": "2026-07-24 13:40",
+      "import_count": 1
+    },
+    {
       "id": "202604091143279",
       "tender_no": "202604091143279",
       "contract_name": "미래엔초코 ＋ 달달독해",
@@ -7476,12 +7511,13 @@
       "amount": "1,836,000",
       "contract_date": "2026-04-03",
       "keywords": [
-        "미래엔"
+        "미래엔",
+        "초코팝"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604021122972&excelSection=N",
       "search_period_from": "2026.02.01",
       "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-23 18:27",
+      "last_imported_at": "2026-07-24 13:40",
       "school_level": "초",
       "region": "강원",
       "region_status": "matched",
@@ -7498,7 +7534,7 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:27",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202604031125701",
