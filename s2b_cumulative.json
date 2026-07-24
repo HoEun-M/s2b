@@ -1,11 +1,79 @@
 {
-  "exported_at": "2026-07-24 09:26",
+  "exported_at": "2026-07-24 10:42",
   "meta": {
-    "lastImportedAt": "2026-07-24 09:26",
+    "lastImportedAt": "2026-07-24 10:42",
     "lastSearchPeriod": "20260723~20260723",
     "total": 935
   },
   "records": [
+    {
+      "id": "202607231395243",
+      "tender_no": "202607231395243",
+      "contract_name": "(본사) 토도영어",
+      "institution": "이리동남초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "81,970",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "영어",
+        "토도영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231395243&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 10:42",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이리동남초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 동천로7길 18",
+          "school_code": "8352086"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:22",
+      "import_count": 2
+    },
+    {
+      "id": "202607141374857",
+      "tender_no": "202607141374857",
+      "contract_name": "(본사) 토도수학",
+      "institution": "목포임성초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "65,000",
+      "contract_date": "2026-07-23",
+      "keywords": [
+        "수학",
+        "토도수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607141374857&excelSection=N",
+      "search_period_from": "2026.07.23",
+      "search_period_to": "2026.07.23",
+      "last_imported_at": "2026-07-24 10:42",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포임성초등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시목포교육지원청",
+          "address": "전남광주통합특별시 목포시 신지마을1길 41",
+          "school_code": "8502036"
+        }
+      ],
+      "first_imported_at": "2026-07-24 08:22",
+      "import_count": 2
+    },
     {
       "id": "202607221391622",
       "tender_no": "202607221391622",
@@ -343,72 +411,6 @@
       "region_status": "direct",
       "region_source": "institution_name",
       "region_candidates": [],
-      "first_imported_at": "2026-07-24 08:22",
-      "import_count": 1
-    },
-    {
-      "id": "202607231395243",
-      "tender_no": "202607231395243",
-      "contract_name": "(본사) 토도영어",
-      "institution": "이리동남초등학교",
-      "counterpart": "주식회사 에누마코리아",
-      "amount": "81,970",
-      "contract_date": "2026-07-23",
-      "keywords": [
-        "영어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231395243&excelSection=N",
-      "search_period_from": "2026.07.23",
-      "search_period_to": "2026.07.23",
-      "last_imported_at": "2026-07-24 08:22",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "이리동남초등학교",
-          "region": "전북",
-          "district": "익산시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도익산교육지원청",
-          "address": "전북특별자치도 익산시 동천로7길 18",
-          "school_code": "8352086"
-        }
-      ],
-      "first_imported_at": "2026-07-24 08:22",
-      "import_count": 1
-    },
-    {
-      "id": "202607141374857",
-      "tender_no": "202607141374857",
-      "contract_name": "(본사) 토도수학",
-      "institution": "목포임성초등학교",
-      "counterpart": "주식회사 에누마코리아",
-      "amount": "65,000",
-      "contract_date": "2026-07-23",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607141374857&excelSection=N",
-      "search_period_from": "2026.07.23",
-      "search_period_to": "2026.07.23",
-      "last_imported_at": "2026-07-24 08:22",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "목포임성초등학교",
-          "region": "광주",
-          "district": "목포시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시목포교육지원청",
-          "address": "전남광주통합특별시 목포시 신지마을1길 41",
-          "school_code": "8502036"
-        }
-      ],
       "first_imported_at": "2026-07-24 08:22",
       "import_count": 1
     },
