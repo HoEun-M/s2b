@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-26 18:24",
+  "exported_at": "2026-07-26 18:32",
   "meta": {
-    "lastImportedAt": "2026-07-26 18:24",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 1651
+    "lastImportedAt": "2026-07-26 18:32",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 1679
   },
   "records": [
     {
@@ -3152,6 +3152,52 @@
       "import_count": 1
     },
     {
+      "id": "202607131368973",
+      "tender_no": "202607131368973",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "대구반야월초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,557,400",
+      "contract_date": "2026-07-13",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607131368973&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202607131371082",
+      "tender_no": "202607131371082",
+      "contract_name": "AI 디지털 활용 선도학교 교육자료(지니아튜터) 구독료",
+      "institution": "서울한산초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "19,600,000",
+      "contract_date": "2026-07-13",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607131371082&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202607101366329",
       "tender_no": "202607101366329",
       "contract_name": "AI 디지털 기반 수학 도구 클래스팅 AI 구입",
@@ -3331,6 +3377,29 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607101367210",
+      "tender_no": "202607101367210",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "대구감천초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "5,810,300",
+      "contract_date": "2026-07-10",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101367210&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -3797,6 +3866,29 @@
       "import_count": 1
     },
     {
+      "id": "202607061353112",
+      "tender_no": "202607061353112",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "경북예천초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "8,925,100",
+      "contract_date": "2026-07-06",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353112&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202607061352875",
       "tender_no": "202607061352875",
       "contract_name": "가북초등학교 아이스크림 홈런(태블릿) 무관리형 구매 계약",
@@ -4173,6 +4265,39 @@
       "import_count": 1
     },
     {
+      "id": "202606261334936",
+      "tender_no": "202606261334936",
+      "contract_name": "지니아튜터",
+      "institution": "굴화초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,960,000",
+      "contract_date": "2026-06-29",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606261334936&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "굴화초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 범서읍 굴화3길 30",
+          "school_code": "7501070"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202606291337417",
       "tender_no": "202606291337417",
       "contract_name": "미래엔초코 초코팝 전과목 초코클래스 (국,영,수,사,과) 외 1종",
@@ -4415,6 +4540,29 @@
       "region_source": "neis_school_info",
       "region_candidates": [],
       "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606231327980",
+      "tender_no": "202606231327980",
+      "contract_name": "천재교과서 밀크T 초등",
+      "institution": "해남화원초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "3,871,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231327980&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -5039,6 +5187,29 @@
       "import_count": 1
     },
     {
+      "id": "202606161312187",
+      "tender_no": "202606161312187",
+      "contract_name": "천재교과서 밀크T 초등 Lite",
+      "institution": "홍성장곡초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "5,832,000",
+      "contract_date": "2026-06-17",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606161312187&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202606151309030",
       "tender_no": "202606151309030",
       "contract_name": "자작자작 AI 글쓰기 교육 플랫폼 안심수독 라이선스",
@@ -5275,6 +5446,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606151307441",
+      "tender_no": "202606151307441",
+      "contract_name": "지니아튜터",
+      "institution": "봉의초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "3,087,000",
+      "contract_date": "2026-06-15",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151307441&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "봉의초등학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도춘천교육지원청",
+          "address": "강원특별자치도 춘천시 춘천로 141",
+          "school_code": "7812065"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -5942,6 +6146,29 @@
       "import_count": 1
     },
     {
+      "id": "202606081291153",
+      "tender_no": "202606081291153",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등) 외 5종",
+      "institution": "부산해사고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "65,000",
+      "contract_date": "2026-06-09",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081291153&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202606081292410",
       "tender_no": "202606081292410",
       "contract_name": "전주서곡중 클래스팅AI 프로그램 이용권",
@@ -6038,6 +6265,52 @@
         }
       ],
       "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081291154",
+      "tender_no": "202606081291154",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등) 외 5종",
+      "institution": "부산해사고등학교",
+      "counterpart": "에듀테크나인",
+      "amount": "5,469,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081291154&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202606081291152",
+      "tender_no": "202606081291152",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등) 외 5종",
+      "institution": "부산해사고등학교",
+      "counterpart": "에듀지원주식회사",
+      "amount": "99,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081291152&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -6895,6 +7168,52 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606021279663",
+      "tender_no": "202606021279663",
+      "contract_name": "지니아튜터",
+      "institution": "서울역삼초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "5,488,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021279663&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202606011277046",
+      "tender_no": "202606011277046",
+      "contract_name": "지니아튜터",
+      "institution": "서울정덕초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,029,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606011277046&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -7787,6 +8106,40 @@
       "import_count": 3
     },
     {
+      "id": "202605281270615",
+      "tender_no": "202605281270615",
+      "contract_name": "기초학력 향상 AI코스웨어 지니아튜터 구독 계약",
+      "institution": "원광중학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,575,000",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "기초학력",
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605281270615&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "원광중학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 무왕로31길 154",
+          "school_code": "8352160"
+        }
+      ],
+      "first_imported_at": "2026-07-22 16:13",
+      "import_count": 2
+    },
+    {
       "id": "202605271268541",
       "tender_no": "202605271268541",
       "contract_name": "플랭스쿨 크레딧 구매",
@@ -7966,39 +8319,6 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
-      "import_count": 1
-    },
-    {
-      "id": "202605281270615",
-      "tender_no": "202605281270615",
-      "contract_name": "기초학력 향상 AI코스웨어 지니아튜터 구독 계약",
-      "institution": "원광중학교",
-      "counterpart": "(주) 천재교과서",
-      "amount": "1,575,000",
-      "contract_date": "2026-05-29",
-      "keywords": [
-        "기초학력"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605281270615&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-07-22 16:13",
-      "school_level": "중",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "원광중학교",
-          "region": "전북",
-          "district": "익산시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도익산교육지원청",
-          "address": "전북특별자치도 익산시 무왕로31길 154",
-          "school_code": "8352160"
-        }
-      ],
-      "first_imported_at": "2026-07-22 16:13",
       "import_count": 1
     },
     {
@@ -8410,6 +8730,75 @@
       "import_count": 1
     },
     {
+      "id": "202605261263156",
+      "tender_no": "202605261263156",
+      "contract_name": "천재교과서 밀크T 초등",
+      "institution": "거창신원초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "5,600,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605261263156&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605261263374",
+      "tender_no": "202605261263374",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 1종",
+      "institution": "거창신원초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,198,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605261263374&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202604231187628",
+      "tender_no": "202604231187628",
+      "contract_name": "2026학년도 천재교과서 디지털교육자료 구입",
+      "institution": "울산동평초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "16,352,700",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604231187628&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202605261263909",
       "tender_no": "202605261263909",
       "contract_name": "클래스팅 AI 외 2종",
@@ -8733,6 +9122,29 @@
       "region_source": "neis_school_info",
       "region_candidates": [],
       "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605221259749",
+      "tender_no": "202605221259749",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "홍성서부초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,018,640",
+      "contract_date": "2026-05-22",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605221259749&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -9909,6 +10321,29 @@
       "import_count": 1
     },
     {
+      "id": "202605181242852",
+      "tender_no": "202605181242852",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "인천먼우금초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,908,000",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181242852&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202605151241975",
       "tender_no": "202605151241975",
       "contract_name": "클래스팅 AI 수학(7개월)",
@@ -10454,6 +10889,62 @@
       "import_count": 1
     },
     {
+      "id": "202605141236734",
+      "tender_no": "202605141236734",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등)",
+      "institution": "덕암고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "4,722,920",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141236734&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "덕암고등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 김제시 하공로 9",
+          "school_code": "8321163"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605141235733",
+      "tender_no": "202605141235733",
+      "contract_name": "대전법동중학교 AI.디지털 선도학교 지니아튜터 구입",
+      "institution": "대전법동중학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "5,250,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141235733&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "중",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202605141237403",
       "tender_no": "202605141237403",
       "contract_name": "클래스팅 AI",
@@ -10994,6 +11485,39 @@
       "import_count": 1
     },
     {
+      "id": "202605121226657",
+      "tender_no": "202605121226657",
+      "contract_name": "천재교과서 밀크T 초등 Lite",
+      "institution": "인흥초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "3,528,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121226657&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "인흥초등학교",
+          "region": "강원",
+          "district": "고성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도고성교육지원청",
+          "address": "강원특별자치도 고성군 토성면 인흥1길 26",
+          "school_code": "7972023"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202605121227437",
       "tender_no": "202605121227437",
       "contract_name": "클래스팅 AI",
@@ -11408,6 +11932,39 @@
       "import_count": 1
     },
     {
+      "id": "202605111226057",
+      "tender_no": "202605111226057",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등)",
+      "institution": "오천고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "13,390,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111226057&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "오천고등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 포항시 남구 오천읍 해병로 293",
+          "school_code": "8750468"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
       "id": "202605111222569",
       "tender_no": "202605111222569",
       "contract_name": "2026학년도 오봉초 AI 코스웨어(클래스팅 AI) 이용",
@@ -11650,6 +12207,149 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202605081219664",
+      "tender_no": "202605081219664",
+      "contract_name": "천재교과서 밀크T 초등 Lite",
+      "institution": "홍성서부초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "2,268,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605081219664&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605081219729",
+      "tender_no": "202605081219729",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 2종",
+      "institution": "홍성서부초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,996,920",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605081219729&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605081218720",
+      "tender_no": "202605081218720",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등) 외 1종",
+      "institution": "기산초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,597,920",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605081218720&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "기산초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 동탄지성로 344",
+          "school_code": "7679014"
+        },
+        {
+          "school_name": "기산초등학교",
+          "region": "충남",
+          "district": "서천군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도서천교육지원청",
+          "address": "충청남도 서천군 기산면 기산길 107",
+          "school_code": "8241014"
+        },
+        {
+          "school_name": "기산초등학교",
+          "region": "광주",
+          "district": "함평군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시함평교육지원청",
+          "address": "전남광주통합특별시 함평군 함평읍 기산길 63",
+          "school_code": "8672010"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605081221548",
+      "tender_no": "202605081221548",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등)",
+      "institution": "인천비즈니스고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,733,200",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605081221548&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
+      "import_count": 1
+    },
+    {
+      "id": "202605061213318",
+      "tender_no": "202605061213318",
+      "contract_name": "지니아튜터",
+      "institution": "서울신계초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "882,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "지니아튜터"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061213318&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
@@ -12168,6 +12868,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605061210878",
+      "tender_no": "202605061210878",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (중학)",
+      "institution": "완주중학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "7,656,700",
+      "contract_date": "2026-05-06",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061210878&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 18:32",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "완주중학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 봉동읍 봉동동서로 60-6",
+          "school_code": "8392074"
+        }
+      ],
+      "first_imported_at": "2026-07-26 18:32",
       "import_count": 1
     },
     {
