@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-26 16:03",
+  "exported_at": "2026-07-26 17:47",
   "meta": {
-    "lastImportedAt": "2026-07-26 16:03",
-    "lastSearchPeriod": "20260501~20260715",
-    "total": 1257
+    "lastImportedAt": "2026-07-26 17:47",
+    "lastSearchPeriod": "20260201~20260430",
+    "total": 1351
   },
   "records": [
     {
@@ -9975,6 +9975,29 @@
       "import_count": 3
     },
     {
+      "id": "202604301207287",
+      "tender_no": "202604301207287",
+      "contract_name": "AI 활용 플랭스쿨 프로그램 이용료",
+      "institution": "대전성모여자고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604301207287&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604281200663",
       "tender_no": "202604281200663",
       "contract_name": "디지털선도학교 자작자작 스쿨 멤버십 견적 요청",
@@ -10281,6 +10304,246 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604291202724",
+      "tender_no": "202604291202724",
+      "contract_name": "클래스팅 AI 외 2종",
+      "institution": "만경여자중학교",
+      "counterpart": "주식회사 제로엑스플로우",
+      "amount": "490,000",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604291202724&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만경여자중학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 만경읍 만경로 823",
+          "school_code": "8382089"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604291202723",
+      "tender_no": "202604291202723",
+      "contract_name": "클래스팅 AI 외 2종",
+      "institution": "만경여자중학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "646,800",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604291202723&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만경여자중학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 만경읍 만경로 823",
+          "school_code": "8382089"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604291202722",
+      "tender_no": "202604291202722",
+      "contract_name": "클래스팅 AI 외 2종",
+      "institution": "만경여자중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,548,400",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604291202722&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만경여자중학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 만경읍 만경로 823",
+          "school_code": "8382089"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604281200428",
+      "tender_no": "202604281200428",
+      "contract_name": "클래스팅 AI 외 2종",
+      "institution": "고창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "380,800",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281200428&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고창초등학교",
+          "region": "경기",
+          "district": "김포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도김포교육지원청",
+          "address": "경기도 김포시 김포한강1로98번길 35",
+          "school_code": "7771017"
+        },
+        {
+          "school_name": "고창초등학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도고창교육지원청",
+          "address": "전북특별자치도 고창군 고창읍 중앙로 259",
+          "school_code": "8452028"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604291202213",
+      "tender_no": "202604291202213",
+      "contract_name": "클래스팅 AI",
+      "institution": "대룡초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "3,355,800",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604291202213&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대룡초등학교",
+          "region": "경북",
+          "district": "김천시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도김천교육지원청",
+          "address": "경상북도 김천시 대항면 대룡로 82",
+          "school_code": "8781062"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604281198583",
+      "tender_no": "202604281198583",
+      "contract_name": "AI점핑수학학교 및 AI디지털 선도학교 운영 클래스팅 구독",
+      "institution": "대불초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "13,558,050",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281198583&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대불초등학교",
+          "region": "광주",
+          "district": "영암군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시영암교육지원청",
+          "address": "전남광주통합특별시 영암군 삼호읍 대불주거6로 41",
+          "school_code": "8652030"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604281198152",
+      "tender_no": "202604281198152",
+      "contract_name": "2026 전북미래학교 AI코스웨어(클래스팅) 사용료 지출",
+      "institution": "순창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "8,150,000",
+      "contract_date": "2026-04-29",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604281198152&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "순창초등학교",
+          "region": "전북",
+          "district": "순창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도순창교육지원청",
+          "address": "전북특별자치도 순창군 순창읍 순창7길 40",
+          "school_code": "8442021"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -10797,6 +11060,89 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604281200243",
+      "tender_no": "202604281200243",
+      "contract_name": "클래스팅 AI",
+      "institution": "마산성호초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,513,280",
+      "contract_date": "2026-04-28",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281200243&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604281199904",
+      "tender_no": "202604281199904",
+      "contract_name": "클래스팅 AI",
+      "institution": "한솔초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,929,500",
+      "contract_date": "2026-04-28",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281199904&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한솔초등학교",
+          "region": "세종",
+          "district": "누리로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  누리로 32",
+          "school_code": "9300087"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 돌마로 303",
+          "school_code": "7551101"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 하평2길 45",
+          "school_code": "7832078"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 서원구 구룡산로 291",
+          "school_code": "8011208"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -11325,6 +11671,180 @@
       "import_count": 1
     },
     {
+      "id": "202604241189922",
+      "tender_no": "202604241189922",
+      "contract_name": "클래스팅 AI",
+      "institution": "백산초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,740,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604241189922&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "백산초등학교",
+          "region": "부산",
+          "district": "북구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 북구 덕천로259번길 23",
+          "school_code": "7201079"
+        },
+        {
+          "school_name": "백산초등학교",
+          "region": "전북",
+          "district": "부안군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도부안교육지원청",
+          "address": "전북특별자치도 부안군 백산면 백산로 306-7",
+          "school_code": "8462035"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604231188414",
+      "tender_no": "202604231188414",
+      "contract_name": "클래스팅 AI",
+      "institution": "도안초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "9,401,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604231188414&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "도안초등학교",
+          "region": "충북",
+          "district": "증평군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도괴산증평교육지원청",
+          "address": "충청북도 증평군 도안면 화성로 101",
+          "school_code": "8092021"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604241190122",
+      "tender_no": "202604241190122",
+      "contract_name": "청란여중 영어학습 팀플 운영 에듀테크 프로그램 구매(플랭스쿨크레딧)",
+      "institution": "청란여자중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "1,000,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604241190122&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "대전",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청란여자중학교",
+          "region": "대전",
+          "district": "중구",
+          "education_office": "대전광역시교육청",
+          "support_office": "대전광역시동부교육지원청",
+          "address": "대전광역시 중구 보문로 95번길40",
+          "school_code": "7441041"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604241189465",
+      "tender_no": "202604241189465",
+      "contract_name": "남춘천초 클래스팅 AI 구독료",
+      "institution": "남춘천초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "7,900,000",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604241189465&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남춘천초등학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도춘천교육지원청",
+          "address": "강원특별자치도 춘천시 충혼길 33",
+          "school_code": "7812058"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604241192451",
+      "tender_no": "202604241192451",
+      "contract_name": "AI·디지털 선도학교 운영을 위한 소프트웨어 구독(클래스팅 AI)",
+      "institution": "고대중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,293,600",
+      "contract_date": "2026-04-24",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604241192451&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고대중학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 고대면 고대로 215",
+          "school_code": "8291004"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604241191058",
       "tender_no": "202604241191058",
       "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
@@ -11486,6 +12006,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604231187278",
+      "tender_no": "202604231187278",
+      "contract_name": "클래스팅 AI",
+      "institution": "만대초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "8,530,000",
+      "contract_date": "2026-04-23",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604231187278&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만대초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 만대로 65",
+          "school_code": "7822092"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -11963,6 +12516,150 @@
       "import_count": 1
     },
     {
+      "id": "202604221180706",
+      "tender_no": "202604221180706",
+      "contract_name": "클래스팅 AI",
+      "institution": "평산초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "15,000,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221180706&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평산초등학교",
+          "region": "울산",
+          "district": "중구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 중구 평산로 25",
+          "school_code": "7491139"
+        },
+        {
+          "school_name": "평산초등학교",
+          "region": "경북",
+          "district": "경산시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도경산교육지원청",
+          "address": "경상북도 경산시 솔숲길 47",
+          "school_code": "8851102"
+        },
+        {
+          "school_name": "평산초등학교",
+          "region": "경남",
+          "district": "양산시",
+          "education_office": "경상남도교육청",
+          "support_office": "양산교육지원청",
+          "address": "경상남도 양산시 평산중앙5길 11",
+          "school_code": "9151033"
+        },
+        {
+          "school_name": "평산초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육청(폐지)",
+          "address": "경상남도 창원시 의창구 사화로104번길 17",
+          "school_code": "9022104"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604221182711",
+      "tender_no": "202604221182711",
+      "contract_name": "성호중학교 [AI 소프트웨어 플랭스쿨 2026 프로모션] 구매 계약",
+      "institution": "성호중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221182711&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성호중학교",
+          "region": "경기",
+          "district": "오산시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 오산시 동부대로436번길 34",
+          "school_code": "7679114"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604221183840",
+      "tender_no": "202604221183840",
+      "contract_name": "2026학년도 AI·디지털활용 선도학교 운영 코스웨어 구입(클래스팅 AI",
+      "institution": "금구초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "789,600",
+      "contract_date": "2026-04-22",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221183840&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금구초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 임방울대로165번길 60",
+          "school_code": "7402229"
+        },
+        {
+          "school_name": "금구초등학교",
+          "region": "충북",
+          "district": "진천군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도진천교육지원청",
+          "address": "충청북도 진천군 이월면 진광로 972-12",
+          "school_code": "8081011"
+        },
+        {
+          "school_name": "금구초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 금구면 금구로 40",
+          "school_code": "8382056"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604221181734",
       "tender_no": "202604221181734",
       "contract_name": "백현중학교 AI 글쓰기 교육 플랫폼, 자작자작",
@@ -12371,6 +13068,66 @@
       "import_count": 1
     },
     {
+      "id": "202604201174782",
+      "tender_no": "202604201174782",
+      "contract_name": "보성초 2026학년도 클래스팅 구독",
+      "institution": "보성초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,000,000",
+      "contract_date": "2026-04-21",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604201174782&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "보성초등학교",
+          "region": "충남",
+          "district": "예산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도예산교육지원청",
+          "address": "충청남도 예산군 삽교읍 예학로 127",
+          "school_code": "8271022"
+        },
+        {
+          "school_name": "보성초등학교",
+          "region": "전북",
+          "district": "정읍시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도정읍교육지원청",
+          "address": "전북특별자치도 정읍시 북면 연지길 38-27",
+          "school_code": "8362062"
+        },
+        {
+          "school_name": "보성초등학교",
+          "region": "광주",
+          "district": "보성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시보성교육지원청",
+          "address": "전남광주통합특별시 보성군 보성읍 송재로 161-8",
+          "school_code": "8602014"
+        },
+        {
+          "school_name": "보성초등학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 대정읍 추사로55번길 6-1",
+          "school_code": "9299060"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604211177783",
       "tender_no": "202604211177783",
       "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
@@ -12708,6 +13465,200 @@
       "import_count": 1
     },
     {
+      "id": "202604201174938",
+      "tender_no": "202604201174938",
+      "contract_name": "클래스팅 AI 외 2종",
+      "institution": "칠곡인평초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,580,000",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201174938&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604201172483",
+      "tender_no": "202604201172483",
+      "contract_name": "클래스팅 AI",
+      "institution": "영덕중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "254,100",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201172483&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영덕중학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 영통구 청명로 146",
+          "school_code": "7541033"
+        },
+        {
+          "school_name": "영덕중학교",
+          "region": "경북",
+          "district": "영덕군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도영덕교육지원청",
+          "address": "경상북도 영덕군 영덕읍 군청1길 13",
+          "school_code": "8901039"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604171170179",
+      "tender_no": "202604171170179",
+      "contract_name": "클래스팅 AI",
+      "institution": "성덕초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "138,600",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604171170179&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성덕초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 광산구 풍영로 313",
+          "school_code": "7402258"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 용지로 60",
+          "school_code": "7832058"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 은진면 원앙로 1174",
+          "school_code": "8222043"
+        },
+        {
+          "school_name": "성덕초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 성덕면 대석로 75",
+          "school_code": "8382070"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604201172662",
+      "tender_no": "202604201172662",
+      "contract_name": "성암초 클래스팅 AI 견적요청",
+      "institution": "진천성암초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,185,000",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604201172662&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604201172780",
+      "tender_no": "202604201172780",
+      "contract_name": "동대부금산고 플랭스쿨 구독",
+      "institution": "동대사대부속금산고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201172780&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604201172733",
+      "tender_no": "202604201172733",
+      "contract_name": "동대부금산고 클래스팅 AI 구독",
+      "institution": "동대사대부속금산고등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,960,000",
+      "contract_date": "2026-04-20",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201172733&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604201174498",
       "tender_no": "202604201174498",
       "contract_name": "장승초 AI디지털교육 프로그램(자작자작) 구매",
@@ -12968,6 +13919,39 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:27",
+      "import_count": 1
+    },
+    {
+      "id": "202604171167326",
+      "tender_no": "202604171167326",
+      "contract_name": "에듀테크 수업관리 솔루션(플랭스쿨 이용권) 구입",
+      "institution": "증포초등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "9,400",
+      "contract_date": "2026-04-17",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604171167326&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "증포초등학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 이섭대천로 1418",
+          "school_code": "7741015"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -13290,6 +14274,217 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604161165273",
+      "tender_no": "202604161165273",
+      "contract_name": "클래스팅 AI 구입",
+      "institution": "해남화원초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,216,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161165273&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161165589",
+      "tender_no": "202604161165589",
+      "contract_name": "클래스팅 AI",
+      "institution": "운동초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,580,680",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161165589&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "운동초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 상당구 운동로 31",
+          "school_code": "8011195"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161163885",
+      "tender_no": "202604161163885",
+      "contract_name": "클래스팅 AI",
+      "institution": "춘포초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "8,028,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161163885&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "춘포초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 춘포면 춘포로 408",
+          "school_code": "8352137"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161166745",
+      "tender_no": "202604161166745",
+      "contract_name": "발산중-AI소프트웨어(플랭스쿨)연간이용권 구입",
+      "institution": "발산중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161166745&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "발산중학교",
+          "region": "경기",
+          "district": "고양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도고양교육지원청",
+          "address": "경기도 고양시 일산서구 고봉로 99",
+          "school_code": "7621019"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161165996",
+      "tender_no": "202604161165996",
+      "contract_name": "디지털 선도학교 AI 코스웨어 클래스팅 AI 구입",
+      "institution": "근화여자중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "10,000,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604161165996&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "근화여자중학교",
+          "region": "경북",
+          "district": "경주시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도경주교육지원청",
+          "address": "경상북도 경주시 승삼2길 55",
+          "school_code": "8771130"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161165658",
+      "tender_no": "202604161165658",
+      "contract_name": "AI디지털활용 연구학교 AI코스웨어 및 에듀테크 구입(클래스팅 AI)",
+      "institution": "대전대신초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,953,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161165658&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604161164924",
+      "tender_no": "202604161164924",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션 프로그램 구입",
+      "institution": "정발중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-16",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604161164924&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "정발중학교",
+          "region": "경기",
+          "district": "고양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도고양교육지원청",
+          "address": "경기도 고양시 일산동구 정발산로 115",
+          "school_code": "7621032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -13969,6 +15164,123 @@
       "import_count": 1
     },
     {
+      "id": "202604151159343",
+      "tender_no": "202604151159343",
+      "contract_name": "클래스팅 AI 외 1종",
+      "institution": "월포초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "5,712,000",
+      "contract_date": "2026-04-15",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604151159343&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "월포초등학교",
+          "region": "경기",
+          "district": "시흥시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도시흥교육지원청",
+          "address": "경기도 시흥시 월곶중앙로 18",
+          "school_code": "7781090"
+        },
+        {
+          "school_name": "월포초등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 청하면 월포로 146",
+          "school_code": "8761140"
+        },
+        {
+          "school_name": "월포초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 마산합포구 월영북15길 35",
+          "school_code": "9022087"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604151159251",
+      "tender_no": "202604151159251",
+      "contract_name": "보은삼산초 클래스팅 AI러닝 패키지 견적요청",
+      "institution": "보은삼산초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,000,000",
+      "contract_date": "2026-04-15",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604151159251&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "보은삼산초등학교",
+          "region": "충북",
+          "district": "보은군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도보은교육지원청",
+          "address": "충청북도 보은군 보은읍 보은로 109-6",
+          "school_code": "8051046"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604141156096",
+      "tender_no": "202604141156096",
+      "contract_name": "동두천고 플랭 프로그램 구입",
+      "institution": "동두천고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-15",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604141156096&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동두천고등학교",
+          "region": "경기",
+          "district": "동두천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 동두천시 평화로2434번길 8",
+          "school_code": "7530153"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604151158949",
       "tender_no": "202604151158949",
       "contract_name": "생각 중심 글쓰기 자작자작 외 1종",
@@ -14149,6 +15461,155 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604101148167",
+      "tender_no": "202604101148167",
+      "contract_name": "함창초등학교 클래스팅 ai 견적 요청",
+      "institution": "함창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "10,522,800",
+      "contract_date": "2026-04-14",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604101148167&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "함창초등학교",
+          "region": "경북",
+          "district": "상주시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도상주교육지원청",
+          "address": "경상북도 상주시 함창읍 구향3길 38",
+          "school_code": "8831070"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604101146775",
+      "tender_no": "202604101146775",
+      "contract_name": "플랭 Plang 외 2종",
+      "institution": "화봉중학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "810,000",
+      "contract_date": "2026-04-14",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604101146775&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "화봉중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 통샘1길 2",
+          "school_code": "7491176"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604141156249",
+      "tender_no": "202604141156249",
+      "contract_name": "클래스팅 AI.학습 플랫폼 및 소프트웨어 사용료 계약",
+      "institution": "서울한강초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "8,800,000",
+      "contract_date": "2026-04-14",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604141156249&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604141155122",
+      "tender_no": "202604141155122",
+      "contract_name": "클래스팅 AI",
+      "institution": "계성초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "11,396,000",
+      "contract_date": "2026-04-14",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604141155122&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "계성초등학교",
+          "region": "서울",
+          "district": "서초구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강남서초교육지원청",
+          "address": "서울특별시 서초구 신반포로19길 23",
+          "school_code": "7091368"
+        },
+        {
+          "school_name": "계성초등학교",
+          "region": "대구",
+          "district": "중구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시동부교육지원청",
+          "address": "대구광역시 중구 달성로 15",
+          "school_code": "7251116"
+        },
+        {
+          "school_name": "계성초등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도평택교육지원청",
+          "address": "경기도 평택시 팽성읍 계성새싹길 85",
+          "school_code": "7631027"
+        },
+        {
+          "school_name": "계성초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 당진중앙1로 290",
+          "school_code": "8291018"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -14570,6 +16031,39 @@
       "import_count": 1
     },
     {
+      "id": "202604131150113",
+      "tender_no": "202604131150113",
+      "contract_name": "클래스팅 AI",
+      "institution": "왕궁남초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,785,600",
+      "contract_date": "2026-04-13",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604131150113&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "왕궁남초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 왕궁면 학호길 12",
+          "school_code": "8352128"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604091141584",
       "tender_no": "202604091141584",
       "contract_name": "생각 중심 글쓰기 자작자작 외 10종",
@@ -14809,6 +16303,171 @@
       ],
       "first_imported_at": "2026-07-23 18:27",
       "import_count": 2
+    },
+    {
+      "id": "202604101146774",
+      "tender_no": "202604101146774",
+      "contract_name": "플랭 Plang 외 2종",
+      "institution": "화봉중학교",
+      "counterpart": "아이티존(주)",
+      "amount": "162,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604101146774&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "화봉중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 통샘1길 2",
+          "school_code": "7491176"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604101146773",
+      "tender_no": "202604101146773",
+      "contract_name": "플랭 Plang 외 2종",
+      "institution": "화봉중학교",
+      "counterpart": "위멘토피아",
+      "amount": "990,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604101146773&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "화봉중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 통샘1길 2",
+          "school_code": "7491176"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091140945",
+      "tender_no": "202604091140945",
+      "contract_name": "클래스팅 AI 외 6종",
+      "institution": "숲실초등학교",
+      "counterpart": "주식회사 매쓰홀릭",
+      "amount": "330,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091140945&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "숲실초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 임곡로 890-14",
+          "school_code": "7832094"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604101147842",
+      "tender_no": "202604101147842",
+      "contract_name": "클래스팅 AI",
+      "institution": "명륜여자중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,310,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604101147842&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "명륜여자중학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 장기로103번길 22",
+          "school_code": "7761011"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604101147999",
+      "tender_no": "202604101147999",
+      "contract_name": "2026학년도 AI·디지털 활용 선도학교 운영을 위한 학생용 AI코스웨어 클래스팅 구입 견적 요청",
+      "institution": "북삼중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "19,404,000",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604101147999&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "북삼중학교",
+          "region": "경북",
+          "district": "칠곡군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도칠곡교육지원청",
+          "address": "경상북도 칠곡군 북삼읍 북삼로 29",
+          "school_code": "8941062"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
     },
     {
       "id": "202604071134662",
@@ -15108,6 +16767,312 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604091143406",
+      "tender_no": "202604091143406",
+      "contract_name": "플랭 Plang 외 8종",
+      "institution": "화봉중학교",
+      "counterpart": "주식회사 데이터드리븐",
+      "amount": "396,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091143406&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "화봉중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 통샘1길 2",
+          "school_code": "7491176"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091140949",
+      "tender_no": "202604091140949",
+      "contract_name": "클래스팅 AI 외 6종",
+      "institution": "숲실초등학교",
+      "counterpart": "주식회사 성주코퍼레이션",
+      "amount": "59,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091140949&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "숲실초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 임곡로 890-14",
+          "school_code": "7832094"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091140948",
+      "tender_no": "202604091140948",
+      "contract_name": "클래스팅 AI 외 6종",
+      "institution": "숲실초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "189,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091140948&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "숲실초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 임곡로 890-14",
+          "school_code": "7832094"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091140947",
+      "tender_no": "202604091140947",
+      "contract_name": "클래스팅 AI 외 6종",
+      "institution": "숲실초등학교",
+      "counterpart": "주식회사 리얼스터디",
+      "amount": "24,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091140947&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "숲실초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 임곡로 890-14",
+          "school_code": "7832094"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091140946",
+      "tender_no": "202604091140946",
+      "contract_name": "클래스팅 AI 외 6종",
+      "institution": "숲실초등학교",
+      "counterpart": "리프레쉬업",
+      "amount": "3,582,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091140946&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "숲실초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 강동면 임곡로 890-14",
+          "school_code": "7832094"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604081139895",
+      "tender_no": "202604081139895",
+      "contract_name": "창오초 클래스팅 AI러닝 패키지 견적요청",
+      "institution": "창오초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,000,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604081139895&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "창오초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 성산면 동군산로 393",
+          "school_code": "8342114"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604061130303",
+      "tender_no": "202604061130303",
+      "contract_name": "상관초 AI/디지털 활용 선도학교 클래스팅 구입",
+      "institution": "상관초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "7,000,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604061130303&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "상관초등학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 상관면 신리로 115",
+          "school_code": "8392064"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091143011",
+      "tender_no": "202604091143011",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "남이초등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091143011&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남이초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 서원구 남이면 대련길 61",
+          "school_code": "8011294"
+        },
+        {
+          "school_name": "남이초등학교",
+          "region": "충남",
+          "district": "금산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도금산교육지원청",
+          "address": "충청남도 금산군 남이면 진악로 51",
+          "school_code": "8201019"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604091142384",
+      "tender_no": "202604091142384",
+      "contract_name": "(에듀테크몰) 플랭스쿨 이용권",
+      "institution": "제천제일고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-09",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604091142384&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "제천제일고등학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 제천시 의병대로 177",
+          "school_code": "8000216"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -15752,6 +17717,72 @@
       "import_count": 1
     },
     {
+      "id": "202604081137649",
+      "tender_no": "202604081137649",
+      "contract_name": "클래스팅 AI",
+      "institution": "건국대학교사범대학부속중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,500,000",
+      "contract_date": "2026-04-08",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604081137649&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "건국대학교사범대학부속중학교",
+          "region": "서울",
+          "district": "광진구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시성동광진교육지원청",
+          "address": "서울특별시 광진구 자양로 145-1",
+          "school_code": "7134119"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604081137500",
+      "tender_no": "202604081137500",
+      "contract_name": "2026학년도 전주초포초 AI, 디지털활용 클래스팅 AI 풀패키지 구입",
+      "institution": "전주초포초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "19,440,000",
+      "contract_date": "2026-04-08",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604081137500&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주초포초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 초포로 171",
+          "school_code": "8332153"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604081139366",
       "tender_no": "202604081139366",
       "contract_name": "생각 중심 글쓰기 자작자작 외 1종",
@@ -15927,6 +17958,132 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:27",
+      "import_count": 1
+    },
+    {
+      "id": "202604071131967",
+      "tender_no": "202604071131967",
+      "contract_name": "플랭스쿨 무제한 요금제 견적 요청",
+      "institution": "한일고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-07",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604071131967&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한일고등학교",
+          "region": "충남",
+          "district": "공주시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 공주시 정안면 어물길 81",
+          "school_code": "8140107"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604071132349",
+      "tender_no": "202604071132349",
+      "contract_name": "플랭스쿨",
+      "institution": "대청중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-07",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604071132349&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대청중학교",
+          "region": "서울",
+          "district": "강남구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강남서초교육지원청",
+          "address": "서울특별시 강남구 양재천로 321",
+          "school_code": "7091426"
+        },
+        {
+          "school_name": "대청중학교",
+          "region": "부산",
+          "district": "기장군",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 기장군 기장읍 차성서로 3",
+          "school_code": "7211028"
+        },
+        {
+          "school_name": "대청중학교",
+          "region": "인천",
+          "district": "옹진군",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시남부교육지원청",
+          "address": "인천광역시 옹진군 대청면 대청로244번길 116-45",
+          "school_code": "7321072"
+        },
+        {
+          "school_name": "대청중학교",
+          "region": "경남",
+          "district": "김해시",
+          "education_office": "경상남도교육청",
+          "support_office": "김해교육지원청",
+          "address": "경상남도 김해시 번화1로 8",
+          "school_code": "9091177"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604061131187",
+      "tender_no": "202604061131187",
+      "contract_name": "클래스팅 AI",
+      "institution": "비두초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "3,400,000",
+      "contract_date": "2026-04-07",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604061131187&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "비두초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원도 원주시 문막읍 귀문로 1070",
+          "school_code": "7821042"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -16410,6 +18567,122 @@
       "import_count": 1
     },
     {
+      "id": "202604061130992",
+      "tender_no": "202604061130992",
+      "contract_name": "플랭스쿨 무제한 요금제 계약",
+      "institution": "금산중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-04-06",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604061130992&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금산중학교",
+          "region": "충남",
+          "district": "금산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도금산교육지원청",
+          "address": "충청남도 금산군 금산읍 탑선길 5",
+          "school_code": "8201006"
+        },
+        {
+          "school_name": "금산중학교",
+          "region": "광주",
+          "district": "고흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시고흥교육지원청",
+          "address": "전남광주통합특별시 고흥군 금산면 돈청길 36",
+          "school_code": "8592008"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604061129305",
+      "tender_no": "202604061129305",
+      "contract_name": "플랭스쿨 AI 영어교육 소프트웨어",
+      "institution": "성공회대학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "1,980,000",
+      "contract_date": "2026-04-06",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604061129305&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "기타",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604061129984",
+      "tender_no": "202604061129984",
+      "contract_name": "2026학년도 미래학교 AI 코스웨어 클래스팅 이용권 구입",
+      "institution": "청운초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "2,402,400",
+      "contract_date": "2026-04-06",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604061129984&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청운초등학교",
+          "region": "경기",
+          "district": "양평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도양평교육지원청",
+          "address": "경기도 양평군 청운면 용두로156번길 30",
+          "school_code": "7731036"
+        },
+        {
+          "school_name": "청운초등학교",
+          "region": "강원",
+          "district": "동해시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도동해교육지원청",
+          "address": "강원특별자치도 동해시 청운로 60",
+          "school_code": "7842031"
+        },
+        {
+          "school_name": "청운초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 금구면 황토로 168-30",
+          "school_code": "8382057"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202603201083152",
       "tender_no": "202603201083152",
       "contract_name": "이리부송초 기초학력 통합진단검사",
@@ -16463,6 +18736,122 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604031124559",
+      "tender_no": "202604031124559",
+      "contract_name": "태안초 클래스팅AI 이용권 구매",
+      "institution": "화성태안초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "12,000,000",
+      "contract_date": "2026-04-03",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604031124559&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604031124557",
+      "tender_no": "202604031124557",
+      "contract_name": "클래스팅 AI",
+      "institution": "수남초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,039,500",
+      "contract_date": "2026-04-03",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604031124557&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "수남초등학교",
+          "region": "경기",
+          "district": "김포시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도김포교육지원청",
+          "address": "경기도 김포시 대곶면 수남로21번길 24",
+          "school_code": "7771029"
+        },
+        {
+          "school_name": "수남초등학교",
+          "region": "전북",
+          "district": "장수군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도장수교육지원청",
+          "address": "전북특별자치도 장수군 장수읍 장수로 1898",
+          "school_code": "8422014"
+        },
+        {
+          "school_name": "수남초등학교",
+          "region": "경남",
+          "district": "김해시",
+          "education_office": "경상남도교육청",
+          "support_office": "김해교육지원청",
+          "address": "경상남도 김해시 율하2로 183",
+          "school_code": "9091038"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604031124042",
+      "tender_no": "202604031124042",
+      "contract_name": "칠보초등학교 AI 디지털 활용 선도학교 클래스팅 AI 구독",
+      "institution": "칠보초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "3,124,800",
+      "contract_date": "2026-04-03",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604031124042&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "칠보초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 권선구 금호로37번길 15",
+          "school_code": "7541119"
+        },
+        {
+          "school_name": "칠보초등학교",
+          "region": "전북",
+          "district": "정읍시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도정읍교육지원청",
+          "address": "전북특별자치도 정읍시 칠보면 칠보중앙로 130",
+          "school_code": "8362076"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -16687,6 +19076,90 @@
       "import_count": 1
     },
     {
+      "id": "202604021120817",
+      "tender_no": "202604021120817",
+      "contract_name": "플랭스쿨 크레딧 요금(200원/개)",
+      "institution": "연무중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "2,500,000",
+      "contract_date": "2026-04-02",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604021120817&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연무중학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 영통구 센트럴타운로100번길 30",
+          "school_code": "7541032"
+        },
+        {
+          "school_name": "연무중학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연무읍 연무로 160",
+          "school_code": "8222010"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604011118508",
+      "tender_no": "202604011118508",
+      "contract_name": "클래스팅 AI",
+      "institution": "사창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,410,000",
+      "contract_date": "2026-04-02",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011118508&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사창초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 양감면 정문회화로 7",
+          "school_code": "7679033"
+        },
+        {
+          "school_name": "사창초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
+          "school_code": "8692016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604021120270",
       "tender_no": "202604021120270",
       "contract_name": "생각 중심 글쓰기 자작자작",
@@ -16875,6 +19348,156 @@
       "import_count": 1
     },
     {
+      "id": "202603311111962",
+      "tender_no": "202603311111962",
+      "contract_name": "클래스팅 AI 외 1종",
+      "institution": "이서초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "2,150,000",
+      "contract_date": "2026-04-01",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603311111962&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이서초등학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 이서면 이서로 76",
+          "school_code": "8392070"
+        },
+        {
+          "school_name": "이서초등학교",
+          "region": "경북",
+          "district": "청도군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도청도교육지원청",
+          "address": "경상북도 청도군 이서면 학산2길 56",
+          "school_code": "8911033"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603311111961",
+      "tender_no": "202603311111961",
+      "contract_name": "클래스팅 AI 외 1종",
+      "institution": "이서초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,582,600",
+      "contract_date": "2026-04-01",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603311111961&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이서초등학교",
+          "region": "전북",
+          "district": "완주군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도완주교육지원청",
+          "address": "전북특별자치도 완주군 이서면 이서로 76",
+          "school_code": "8392070"
+        },
+        {
+          "school_name": "이서초등학교",
+          "region": "경북",
+          "district": "청도군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도청도교육지원청",
+          "address": "경상북도 청도군 이서면 학산2길 56",
+          "school_code": "8911033"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604011117905",
+      "tender_no": "202604011117905",
+      "contract_name": "클래스팅 AI",
+      "institution": "천안쌍정초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,777,500",
+      "contract_date": "2026-04-01",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011117905&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안쌍정초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 충무로 5-44",
+          "school_code": "8151109"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202604011117792",
+      "tender_no": "202604011117792",
+      "contract_name": "클래스팅 AI",
+      "institution": "천안쌍정초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "11,088,000",
+      "contract_date": "2026-04-01",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011117792&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안쌍정초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 충무로 5-44",
+          "school_code": "8151109"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202604011116012",
       "tender_no": "202604011116012",
       "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 7종",
@@ -17044,6 +19667,151 @@
       ],
       "first_imported_at": "2026-07-23 18:27",
       "import_count": 1
+    },
+    {
+      "id": "202603271106387",
+      "tender_no": "202603271106387",
+      "contract_name": "미원초 AI 에듀테크 프로그램 (클래스팅 AI 수학)구독료",
+      "institution": "미원초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "11,180,400",
+      "contract_date": "2026-03-31",
+      "keywords": [
+        "수학",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271106387&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "미원초등학교",
+          "region": "경기",
+          "district": "가평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도가평교육지원청",
+          "address": "경기도 가평군 설악면 신천중앙로120번길 11",
+          "school_code": "7721013"
+        },
+        {
+          "school_name": "미원초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 상당구 미원면 단재로 2482",
+          "school_code": "8011304"
+        }
+      ],
+      "first_imported_at": "2026-07-20 12:44",
+      "import_count": 3
+    },
+    {
+      "id": "202603311112853",
+      "tender_no": "202603311112853",
+      "contract_name": "AI코스웨어 클래스팅AI 수학,과학 구입 건의",
+      "institution": "진장중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,255,400",
+      "contract_date": "2026-03-31",
+      "keywords": [
+        "수학",
+        "코스웨어",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603311112853&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "진장중학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 진장10길 24",
+          "school_code": "7491170"
+        }
+      ],
+      "first_imported_at": "2026-07-20 12:10",
+      "import_count": 4
+    },
+    {
+      "id": "202603301110881",
+      "tender_no": "202603301110881",
+      "contract_name": "AI수학점핑 운영물품 클래스팅 수학 구입",
+      "institution": "여수송현초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,000,000",
+      "contract_date": "2026-03-31",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603301110881&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "여수송현초등학교",
+          "region": "광주",
+          "district": "여수시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시여수교육지원청",
+          "address": "전남광주통합특별시 여수시 웅천로 219",
+          "school_code": "8512138"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603301110482",
+      "tender_no": "202603301110482",
+      "contract_name": "2026학년도 클래스팅AI 수학 구입",
+      "institution": "전주효천초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "21,956,400",
+      "contract_date": "2026-03-31",
+      "keywords": [
+        "수학",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603301110482&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주효천초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 효천중앙로 31",
+          "school_code": "8332194"
+        }
+      ],
+      "first_imported_at": "2026-07-20 12:44",
+      "import_count": 3
     },
     {
       "id": "202603311115092",
@@ -18252,48 +21020,6 @@
       "import_count": 3
     },
     {
-      "id": "202603271106387",
-      "tender_no": "202603271106387",
-      "contract_name": "미원초 AI 에듀테크 프로그램 (클래스팅 AI 수학)구독료",
-      "institution": "미원초등학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "11,180,400",
-      "contract_date": "2026-03-31",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271106387&excelSection=N",
-      "search_period_from": "2026.03.22",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 17:51",
-      "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "미원초등학교",
-          "region": "경기",
-          "district": "가평군",
-          "education_office": "경기도교육청",
-          "support_office": "경기도가평교육지원청",
-          "address": "경기도 가평군 설악면 신천중앙로120번길 11",
-          "school_code": "7721013"
-        },
-        {
-          "school_name": "미원초등학교",
-          "region": "충북",
-          "district": "청주시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도청주교육지원청",
-          "address": "충청북도 청주시 상당구 미원면 단재로 2482",
-          "school_code": "8011304"
-        }
-      ],
-      "first_imported_at": "2026-07-20 12:44",
-      "import_count": 2
-    },
-    {
       "id": "202603311113247",
       "tender_no": "202603311113247",
       "contract_name": "매쓰홀릭T 수학앱",
@@ -18475,73 +21201,6 @@
           "support_office": "대구광역시교육청",
           "address": "대구광역시 달서구 새방로 77",
           "school_code": "7240074"
-        }
-      ],
-      "first_imported_at": "2026-07-20 12:44",
-      "import_count": 2
-    },
-    {
-      "id": "202603311112853",
-      "tender_no": "202603311112853",
-      "contract_name": "AI코스웨어 클래스팅AI 수학,과학 구입 건의",
-      "institution": "진장중학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "6,255,400",
-      "contract_date": "2026-03-31",
-      "keywords": [
-        "수학",
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603311112853&excelSection=N",
-      "search_period_from": "2026.03.22",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 17:51",
-      "school_level": "중",
-      "region": "울산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "진장중학교",
-          "region": "울산",
-          "district": "북구",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시강북교육지원청",
-          "address": "울산광역시 북구 진장10길 24",
-          "school_code": "7491170"
-        }
-      ],
-      "first_imported_at": "2026-07-20 12:10",
-      "import_count": 3
-    },
-    {
-      "id": "202603301110482",
-      "tender_no": "202603301110482",
-      "contract_name": "2026학년도 클래스팅AI 수학 구입",
-      "institution": "전주효천초등학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "21,956,400",
-      "contract_date": "2026-03-31",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603301110482&excelSection=N",
-      "search_period_from": "2026.03.22",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 17:51",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "전주효천초등학교",
-          "region": "전북",
-          "district": "전주시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도전주교육지원청",
-          "address": "전북특별자치도 전주시 완산구 효천중앙로 31",
-          "school_code": "8332194"
         }
       ],
       "first_imported_at": "2026-07-20 12:44",
@@ -19445,6 +22104,72 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603301110365",
+      "tender_no": "202603301110365",
+      "contract_name": "양평동초 클래스팅AI 견적요청",
+      "institution": "양평동초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "7,000,000",
+      "contract_date": "2026-03-30",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603301110365&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양평동초등학교",
+          "region": "경기",
+          "district": "양평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도양평교육지원청",
+          "address": "경기도 양평군 양평읍 창대길 20-8",
+          "school_code": "7731031"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603301108034",
+      "tender_no": "202603301108034",
+      "contract_name": "금창초등학교 클래스팅 AI 러닝 패키지 이용 계약",
+      "institution": "금창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,500,000",
+      "contract_date": "2026-03-30",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603301108034&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금창초등학교",
+          "region": "부산",
+          "district": "북구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 북구 효열로235번길 14",
+          "school_code": "7201052"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -20947,6 +23672,189 @@
       "import_count": 1
     },
     {
+      "id": "202603271104370",
+      "tender_no": "202603271104370",
+      "contract_name": "클래스팅 AI",
+      "institution": "신광초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,280,000",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271104370&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신광초등학교",
+          "region": "서울",
+          "district": "용산구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시중부교육지원청",
+          "address": "서울특별시 용산구 청파로 263",
+          "school_code": "7061092"
+        },
+        {
+          "school_name": "신광초등학교",
+          "region": "충남",
+          "district": "아산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도아산교육지원청",
+          "address": "충청남도 아산시 서부북로 933-10",
+          "school_code": "8181033"
+        },
+        {
+          "school_name": "신광초등학교",
+          "region": "광주",
+          "district": "함평군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시함평교육지원청",
+          "address": "전남광주통합특별시 함평군 신광면 신광중앙길 118",
+          "school_code": "8672013"
+        },
+        {
+          "school_name": "신광초등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 신광면 토성길 31",
+          "school_code": "8761132"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603271104239",
+      "tender_no": "202603271104239",
+      "contract_name": "클래스팅 AI",
+      "institution": "상주중동초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,896,000",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271104239&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603271103537",
+      "tender_no": "202603271103537",
+      "contract_name": "영선중학교 플랭스쿨 구입",
+      "institution": "영선중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603271103537&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영선중학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도고창교육지원청",
+          "address": "전북특별자치도 고창군 무장면 왕제산로 713",
+          "school_code": "8452060"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603271103943",
+      "tender_no": "202603271103943",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "대평고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603271103943&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대평고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 장안구 천천로22번길 21",
+          "school_code": "7530554"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603261102835",
+      "tender_no": "202603261102835",
+      "contract_name": "2026학년도 AI 디지털 활용 선도학교 클래스팅 AI 국어 외 1종 구매",
+      "institution": "진성여자고등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,782,200",
+      "contract_date": "2026-03-27",
+      "keywords": [
+        "국어",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603261102835&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "진성여자고등학교",
+          "region": "광주",
+          "district": "여수시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 여수시 봉강서4길 3",
+          "school_code": "7140244"
+        }
+      ],
+      "first_imported_at": "2026-07-20 12:28",
+      "import_count": 2
+    },
+    {
       "id": "202603271104797",
       "tender_no": "202603271104797",
       "contract_name": "2026년 AI 디지털 활동 선도학교 AI코스웨어(자작자작) 구독 구매",
@@ -22076,39 +24984,6 @@
       "import_count": 2
     },
     {
-      "id": "202603261102835",
-      "tender_no": "202603261102835",
-      "contract_name": "2026학년도 AI 디지털 활용 선도학교 클래스팅 AI 국어 외 1종 구매",
-      "institution": "진성여자고등학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "1,782,200",
-      "contract_date": "2026-03-27",
-      "keywords": [
-        "국어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603261102835&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 12:28",
-      "school_level": "고",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "진성여자고등학교",
-          "region": "광주",
-          "district": "여수시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
-          "address": "전남광주통합특별시 여수시 봉강서4길 3",
-          "school_code": "7140244"
-        }
-      ],
-      "first_imported_at": "2026-07-20 12:28",
-      "import_count": 1
-    },
-    {
       "id": "202603271105061",
       "tender_no": "202603271105061",
       "contract_name": "2026학년도 디지털선도학교 운영을 위한 AI코스웨어 구입(디지털교육자료",
@@ -22195,6 +25070,39 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603261099937",
+      "tender_no": "202603261099937",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "정관고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-26",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603261099937&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "정관고등학교",
+          "region": "부산",
+          "district": "기장군",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 기장군 정관읍 정관로 534",
+          "school_code": "7150580"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -22958,6 +25866,62 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603251097453",
+      "tender_no": "202603251097453",
+      "contract_name": "매송중 클래스팅AI 과학 구독 견적요청",
+      "institution": "매송중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "5,993,190",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603251097453&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "매송중학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 탄천로 49",
+          "school_code": "7551015"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603251096875",
+      "tender_no": "202603251096875",
+      "contract_name": "2026학년 문화고 클래스팅AI 패키지 견적요청",
+      "institution": "경주문화고등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "6,939,000",
+      "contract_date": "2026-03-25",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603251096875&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -24127,6 +27091,95 @@
       "import_count": 1
     },
     {
+      "id": "202603241092104",
+      "tender_no": "202603241092104",
+      "contract_name": "이천양정여중 플랭스쿨 무제한 요금",
+      "institution": "이천양정여자중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-24",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603241092104&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이천양정여자중학교",
+          "region": "경기",
+          "district": "이천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도이천교육지원청",
+          "address": "경기도 이천시 영창로 119",
+          "school_code": "7741014"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603241093165",
+      "tender_no": "202603241093165",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "광주송정초등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-24",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603241093165&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603241092077",
+      "tender_no": "202603241092077",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "매송중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-24",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603241092077&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "매송중학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 탄천로 49",
+          "school_code": "7551015"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202603241092729",
       "tender_no": "202603241092729",
       "contract_name": "받침대(빛의 굴절 실험용, 아이스크림, 미래엔) 외 5종",
@@ -25170,6 +28223,64 @@
       "import_count": 1
     },
     {
+      "id": "202603231086801",
+      "tender_no": "202603231086801",
+      "contract_name": "AI 수학 점핑학교 수학 AI 코스웨어(클래스팅 AI 수학) 구입",
+      "institution": "영암신북초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,801,800",
+      "contract_date": "2026-03-23",
+      "keywords": [
+        "수학",
+        "코스웨어",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603231086801&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 12:10",
+      "import_count": 3
+    },
+    {
+      "id": "202603231089191",
+      "tender_no": "202603231089191",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "계룡고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-23",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603231089191&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "계룡고등학교",
+          "region": "충남",
+          "district": "계룡시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 계룡시 두마면 서금암로 89",
+          "school_code": "8140237"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202603231086978",
       "tender_no": "202603231086978",
       "contract_name": "아이스크림홈런 교육용 소프트웨어(무관리)",
@@ -25894,30 +29005,6 @@
       ],
       "first_imported_at": "2026-07-20 17:51",
       "import_count": 1
-    },
-    {
-      "id": "202603231086801",
-      "tender_no": "202603231086801",
-      "contract_name": "AI 수학 점핑학교 수학 AI 코스웨어(클래스팅 AI 수학) 구입",
-      "institution": "영암신북초등학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "1,801,800",
-      "contract_date": "2026-03-23",
-      "keywords": [
-        "수학",
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603231086801&excelSection=N",
-      "search_period_from": "2026.03.22",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 17:51",
-      "school_level": "초",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
-      "region_candidates": [],
-      "first_imported_at": "2026-07-20 12:10",
-      "import_count": 2
     },
     {
       "id": "202603231089454",
@@ -26950,6 +30037,39 @@
       "import_count": 1
     },
     {
+      "id": "202603171072461",
+      "tender_no": "202603171072461",
+      "contract_name": "남성현초등학교 클래스팅 AI디지털 교육자료 견적요청",
+      "institution": "남성현초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "9,640,000",
+      "contract_date": "2026-03-19",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603171072461&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남성현초등학교",
+          "region": "경북",
+          "district": "청도군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도청도교육지원청",
+          "address": "경상북도 청도군 화양읍 남성현로 473-11",
+          "school_code": "8911026"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202603191081240",
       "tender_no": "202603191081240",
       "contract_name": "영어독후활동프로그램",
@@ -27865,6 +30985,48 @@
       "import_count": 2
     },
     {
+      "id": "202603171071165",
+      "tender_no": "202603171071165",
+      "contract_name": "클래스팅 AI",
+      "institution": "사창초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "5,940,000",
+      "contract_date": "2026-03-18",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603171071165&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사창초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 양감면 정문회화로 7",
+          "school_code": "7679033"
+        },
+        {
+          "school_name": "사창초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
+          "school_code": "8692016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202603181075302",
       "tender_no": "202603181075302",
       "contract_name": "새봄실 AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
@@ -28742,6 +31904,48 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603171071081",
+      "tender_no": "202603171071081",
+      "contract_name": "클래스팅 AI",
+      "institution": "용지초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "539,000",
+      "contract_date": "2026-03-17",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603171071081&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "용지초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 용지면 용지로 462",
+          "school_code": "8382073"
+        },
+        {
+          "school_name": "용지초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육청(폐지)",
+          "address": "경상남도 창원시 성산구 원이대로538번길 24",
+          "school_code": "9022076"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -32202,6 +35406,74 @@
       "import_count": 1
     },
     {
+      "id": "202603111054462",
+      "tender_no": "202603111054462",
+      "contract_name": "클래스팅 AI",
+      "institution": "노화초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "9,856,000",
+      "contract_date": "2026-03-11",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603111054462&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "노화초등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시완도교육지원청",
+          "address": "전남광주통합특별시 완도군 노화읍 노화서로 149",
+          "school_code": "8702033"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603111053845",
+      "tender_no": "202603111053845",
+      "contract_name": "2026학년도 맞춤형 학습지원 클래스팅 AI코스웨어 수학 구독",
+      "institution": "백석초등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "4,365,900",
+      "contract_date": "2026-03-11",
+      "keywords": [
+        "수학",
+        "코스웨어",
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603111053845&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "백석초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연산면 선비로 726",
+          "school_code": "8222038"
+        }
+      ],
+      "first_imported_at": "2026-07-20 12:10",
+      "import_count": 3
+    },
+    {
       "id": "202603111053397",
       "tender_no": "202603111053397",
       "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Enterprise",
@@ -32915,40 +36187,6 @@
       "import_count": 1
     },
     {
-      "id": "202603111053845",
-      "tender_no": "202603111053845",
-      "contract_name": "2026학년도 맞춤형 학습지원 클래스팅 AI코스웨어 수학 구독",
-      "institution": "백석초등학교",
-      "counterpart": "주식회사 씨티",
-      "amount": "4,365,900",
-      "contract_date": "2026-03-11",
-      "keywords": [
-        "수학",
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603111053845&excelSection=N",
-      "search_period_from": "2026.03.08",
-      "search_period_to": "2026.03.14",
-      "last_imported_at": "2026-07-20 16:49",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "백석초등학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 연산면 선비로 726",
-          "school_code": "8222038"
-        }
-      ],
-      "first_imported_at": "2026-07-20 12:10",
-      "import_count": 2
-    },
-    {
       "id": "202603101051079",
       "tender_no": "202603101051079",
       "contract_name": "2026학년도 교과서형 AI 대지털교육자료 구입(수학4-1, 6-1)",
@@ -33157,6 +36395,52 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:10",
+      "import_count": 1
+    },
+    {
+      "id": "202603101048544",
+      "tender_no": "202603101048544",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "대전노은중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-10",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603101048544&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
+      "id": "202603101047557",
+      "tender_no": "202603101047557",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "제주중앙여자중학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-03-10",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603101047557&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "중",
+      "region": "제주",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 17:47",
       "import_count": 1
     },
     {
@@ -38061,6 +41345,39 @@
       "import_count": 1
     },
     {
+      "id": "202602261023188",
+      "tender_no": "202602261023188",
+      "contract_name": "AI 소프트웨어 플랭스쿨 2026 프로모션",
+      "institution": "우석여자고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "3,000,000",
+      "contract_date": "2026-02-26",
+      "keywords": [
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602261023188&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "우석여자고등학교",
+          "region": "경북",
+          "district": "상주시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 상주시 북천로 117",
+          "school_code": "8750589"
+        }
+      ],
+      "first_imported_at": "2026-07-26 17:47",
+      "import_count": 1
+    },
+    {
       "id": "202602241011118",
       "tender_no": "202602241011118",
       "contract_name": "2026학년도 남원초 두드림실 정수기 렌탈 계약",
@@ -40089,6 +43406,30 @@
       "import_count": 1
     },
     {
+      "id": "202602030936243",
+      "tender_no": "202602030936243",
+      "contract_name": "플랭스쿨 (AI 영어교육 소프트웨어) 외 1종",
+      "institution": "전남과학고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "150,000",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "영어",
+        "플랭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602030936243&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 17:47",
+      "school_level": "고",
+      "region": "전남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-21 09:15",
+      "import_count": 2
+    },
+    {
       "id": "202602050943010",
       "tender_no": "202602050943010",
       "contract_name": "생각 중심 글쓰기 자작자작 외 6종",
@@ -40132,29 +43473,6 @@
       "region_source": "neis_school_info",
       "region_candidates": [],
       "first_imported_at": "2026-07-26 15:55",
-      "import_count": 1
-    },
-    {
-      "id": "202602030936243",
-      "tender_no": "202602030936243",
-      "contract_name": "플랭스쿨 (AI 영어교육 소프트웨어) 외 1종",
-      "institution": "전남과학고등학교",
-      "counterpart": "주식회사 플랭",
-      "amount": "150,000",
-      "contract_date": "2026-02-05",
-      "keywords": [
-        "영어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602030936243&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-21 09:15",
-      "school_level": "고",
-      "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "first_imported_at": "2026-07-21 09:15",
       "import_count": 1
     },
     {
