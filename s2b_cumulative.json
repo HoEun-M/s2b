@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-24 15:12",
+  "exported_at": "2026-07-26 15:30",
   "meta": {
-    "lastImportedAt": "2026-07-24 15:12",
-    "lastSearchPeriod": "20260501~20260715",
-    "total": 1030
+    "lastImportedAt": "2026-07-26 15:30",
+    "lastSearchPeriod": "20260201~20260430",
+    "total": 1037
   },
   "records": [
     {
@@ -7047,6 +7047,75 @@
       "import_count": 3
     },
     {
+      "id": "202604301208681",
+      "tender_no": "202604301208681",
+      "contract_name": "웅진씽크빅 스마트올초등(관리형) 외 2종",
+      "institution": "대구북비산초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "1,580,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "스마트올"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301208681&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 15:30",
+      "import_count": 1
+    },
+    {
+      "id": "202604301208680",
+      "tender_no": "202604301208680",
+      "contract_name": "웅진씽크빅 스마트올초등(관리형) 외 2종",
+      "institution": "대구북비산초등학교",
+      "counterpart": "(주)웅진씽크빅",
+      "amount": "2,370,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "스마트올"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301208680&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 15:30",
+      "import_count": 1
+    },
+    {
+      "id": "202604301208679",
+      "tender_no": "202604301208679",
+      "contract_name": "웅진씽크빅 스마트올초등(관리형) 외 2종",
+      "institution": "대구북비산초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "6,400,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "스마트올"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301208679&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 15:30",
+      "import_count": 1
+    },
+    {
       "id": "202604301207690",
       "tender_no": "202604301207690",
       "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
@@ -7359,6 +7428,29 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604271194248",
+      "tender_no": "202604271194248",
+      "contract_name": "2026학년도 웅진씽크빌 스마트올 공급 계약",
+      "institution": "장흥장동초등학교",
+      "counterpart": "(주)웅진씽크빅",
+      "amount": "5,530,000",
+      "contract_date": "2026-04-28",
+      "keywords": [
+        "스마트올"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604271194248&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 15:30",
       "import_count": 1
     },
     {
@@ -7762,6 +7854,39 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202604221182339",
+      "tender_no": "202604221182339",
+      "contract_name": "2026학년도 AI 디지털 활용 선도학교 기출탭탭 구독 견적요청",
+      "institution": "벌교고등학교",
+      "counterpart": "(주)비상교육",
+      "amount": "7,000,000",
+      "contract_date": "2026-04-23",
+      "keywords": [
+        "기출탭탭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604221182339&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "벌교고등학교",
+          "region": "광주",
+          "district": "보성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 보성군 벌교읍 채동선로 115",
+          "school_code": "7140229"
+        }
+      ],
+      "first_imported_at": "2026-07-26 15:30",
       "import_count": 1
     },
     {
@@ -8354,6 +8479,62 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:13",
+      "import_count": 1
+    },
+    {
+      "id": "202604211177480",
+      "tender_no": "202604211177480",
+      "contract_name": "더배움 스터디 운영을 위한 프로그램 이용권 구입(기출탭탭)",
+      "institution": "광주여자고등학교",
+      "counterpart": "(주)비상교육",
+      "amount": "1,935,000",
+      "contract_date": "2026-04-21",
+      "keywords": [
+        "기출탭탭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604211177480&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 15:30",
+      "import_count": 1
+    },
+    {
+      "id": "202604211176587",
+      "tender_no": "202604211176587",
+      "contract_name": "2026학년도 웅진스마트올 공급 계약 견적요청",
+      "institution": "압해서초등학교",
+      "counterpart": "(주)웅진씽크빅",
+      "amount": "5,530,000",
+      "contract_date": "2026-04-21",
+      "keywords": [
+        "스마트올"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211176587&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-07-26 15:30",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "압해서초등학교",
+          "region": "광주",
+          "district": "신안군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시신안교육지원청",
+          "address": "전남광주통합특별시 신안군 압해읍 압해로 1336-2",
+          "school_code": "8722040"
+        }
+      ],
+      "first_imported_at": "2026-07-26 15:30",
       "import_count": 1
     },
     {
