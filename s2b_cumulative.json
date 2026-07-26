@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-26 15:30",
+  "exported_at": "2026-07-26 15:39",
   "meta": {
-    "lastImportedAt": "2026-07-26 15:30",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 1037
+    "lastImportedAt": "2026-07-26 15:39",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 1038
   },
   "records": [
     {
@@ -6484,6 +6484,48 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605111225677",
+      "tender_no": "202605111225677",
+      "contract_name": "AI코스웨어 프로그램(비상기출탭탭) 구입",
+      "institution": "영광고등학교",
+      "counterpart": "(주)비상교육",
+      "amount": "3,693,270",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "기출탭탭"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111225677&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 15:39",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영광고등학교",
+          "region": "광주",
+          "district": "영광군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 영광군 영광읍 옥당로 13-22",
+          "school_code": "7140186"
+        },
+        {
+          "school_name": "영광고등학교",
+          "region": "경북",
+          "district": "영주시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 영주시 의상로 62",
+          "school_code": "8750188"
+        }
+      ],
+      "first_imported_at": "2026-07-26 15:39",
       "import_count": 1
     },
     {
