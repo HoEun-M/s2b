@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-26 15:55",
+  "exported_at": "2026-07-26 16:03",
   "meta": {
-    "lastImportedAt": "2026-07-26 15:55",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 1168
+    "lastImportedAt": "2026-07-26 16:03",
+    "lastSearchPeriod": "20260501~20260715",
+    "total": 1257
   },
   "records": [
     {
@@ -2956,6 +2956,29 @@
       "import_count": 1
     },
     {
+      "id": "202607151377652",
+      "tender_no": "202607151377652",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "대구동도중학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "18,000",
+      "contract_date": "2026-07-15",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607151377652&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202607141374687",
       "tender_no": "202607141374687",
       "contract_name": "인지중학교 두드림학교 프로그램 운영 견적요청",
@@ -3018,6 +3041,39 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202607141373566",
+      "tender_no": "202607141373566",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "구자곡초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "1,350,000",
+      "contract_date": "2026-07-14",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607141373566&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구자곡초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연무로 369",
+          "school_code": "8222027"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -3379,6 +3435,48 @@
       "import_count": 2
     },
     {
+      "id": "202607091364254",
+      "tender_no": "202607091364254",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "상천초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "240,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607091364254&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "상천초등학교",
+          "region": "경기",
+          "district": "가평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도가평교육지원청",
+          "address": "경기도 가평군 청평면 상천역로19번길 38",
+          "school_code": "7721017"
+        },
+        {
+          "school_name": "상천초등학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도춘천교육지원청",
+          "address": "강원특별자치도 춘천시 신북읍 상천2길 19",
+          "school_code": "7812067"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202607081359418",
       "tender_no": "202607081359418",
       "contract_name": "2026학년도 증도초 아이스크림 홈런 콘텐츠 구독",
@@ -3472,6 +3570,29 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2
+    },
+    {
+      "id": "202607081358127",
+      "tender_no": "202607081358127",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "대구경일중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "418,000",
+      "contract_date": "2026-07-08",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607081358127&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
     },
     {
       "id": "202606221324716",
@@ -3710,6 +3831,39 @@
       "import_count": 1
     },
     {
+      "id": "202607021345362",
+      "tender_no": "202607021345362",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "이수초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "384,000",
+      "contract_date": "2026-07-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607021345362&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이수초등학교",
+          "region": "충북",
+          "district": "영동군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도영동교육지원청",
+          "address": "충청북도 영동군 영동읍 영산로4길 9",
+          "school_code": "8071024"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202607021345822",
       "tender_no": "202607021345822",
       "contract_name": "미래엔 초코클래스 6개월 이상 (4과목 결합)",
@@ -3772,6 +3926,29 @@
         }
       ],
       "first_imported_at": "2026-07-22 16:16",
+      "import_count": 1
+    },
+    {
+      "id": "202607011343354",
+      "tender_no": "202607011343354",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "김해화정초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "92,000",
+      "contract_date": "2026-07-01",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607011343354&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -3974,6 +4151,39 @@
       "import_count": 1
     },
     {
+      "id": "202606251332915",
+      "tender_no": "202606251332915",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "안양고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,625,000",
+      "contract_date": "2026-06-26",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606251332915&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안양고등학교",
+          "region": "경기",
+          "district": "안양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 안양시 만안구 삼봉로 46",
+          "school_code": "7530098"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606251331783",
       "tender_no": "202606251331783",
       "contract_name": "미래엔 초코클래스",
@@ -3994,6 +4204,118 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202606251333733",
+      "tender_no": "202606251333733",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "양산오봉초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "240,000",
+      "contract_date": "2026-06-25",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606251333733&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606241329216",
+      "tender_no": "202606241329216",
+      "contract_name": "생각 중심 글쓰기 자작자작",
+      "institution": "천안희망초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "2,100,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606241329216&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안희망초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 동남구 단대로 21-7",
+          "school_code": "8151269"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606241328866",
+      "tender_no": "202606241328866",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "화순아산초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "320,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606241328866&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606231327545",
+      "tender_no": "202606231327545",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "예산중앙초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,152,000",
+      "contract_date": "2026-06-24",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231327545&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "예산중앙초등학교",
+          "region": "충남",
+          "district": "예산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도예산교육지원청",
+          "address": "충청남도 예산군 예산읍 주교로 21",
+          "school_code": "8271033"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -4239,6 +4561,39 @@
       "import_count": 1
     },
     {
+      "id": "202606231327559",
+      "tender_no": "202606231327559",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Enterprise",
+      "institution": "예산중앙초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "1,395,000",
+      "contract_date": "2026-06-23",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231327559&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "예산중앙초등학교",
+          "region": "충남",
+          "district": "예산군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도예산교육지원청",
+          "address": "충청남도 예산군 예산읍 주교로 21",
+          "school_code": "8271033"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606221324050",
       "tender_no": "202606221324050",
       "contract_name": "연구학교 AI코스웨어(아이스크림홈런) 구입(3차)",
@@ -4295,6 +4650,39 @@
       "import_count": 1
     },
     {
+      "id": "202606221322586",
+      "tender_no": "202606221322586",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "천안초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,920,000",
+      "contract_date": "2026-06-22",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606221322586&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 동남구 중앙로 169",
+          "school_code": "8151069"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606221323667",
       "tender_no": "202606221323667",
       "contract_name": "2026학년도 디지털 기반 기초학력 보장 및 진로연계교육 AI코스웨어",
@@ -4315,6 +4703,62 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-22 16:16",
+      "import_count": 1
+    },
+    {
+      "id": "202606191320316",
+      "tender_no": "202606191320316",
+      "contract_name": "2026 마주온 학교- 맞춤형 기반 영어 독서 프로그램(리딩앤스쿨) 구입",
+      "institution": "홍주중학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "9,000,000",
+      "contract_date": "2026-06-19",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606191320316&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "홍주중학교",
+          "region": "충남",
+          "district": "홍성군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도홍성교육지원청",
+          "address": "충청남도 홍성군 홍성읍 문화로 78",
+          "school_code": "8261015"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606151309792",
+      "tender_no": "202606151309792",
+      "contract_name": "리딩앤스쿨 콘텐츠 구독료",
+      "institution": "당진당산초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "9,000,000",
+      "contract_date": "2026-06-18",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606151309792&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -4348,6 +4792,113 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606151309030",
+      "tender_no": "202606151309030",
+      "contract_name": "자작자작 AI 글쓰기 교육 플랫폼 안심수독 라이선스",
+      "institution": "선단초등학교",
+      "counterpart": "주식회사 스쿨온담",
+      "amount": "422,400",
+      "contract_date": "2026-06-16",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151309030&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "선단초등학교",
+          "region": "경기",
+          "district": "포천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도포천교육지원청",
+          "address": "경기도 포천시 삼육사로2111번길 29",
+          "school_code": "7711024"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606161311548",
+      "tender_no": "202606161311548",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus 외 1종",
+      "institution": "거창고제초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "459,000",
+      "contract_date": "2026-06-16",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606161311548&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606151309340",
+      "tender_no": "202606151309340",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "서부초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "300,000",
+      "contract_date": "2026-06-16",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151309340&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "서부초등학교",
+          "region": "울산",
+          "district": "동구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 동구 봉수로 457",
+          "school_code": "7491119"
+        },
+        {
+          "school_name": "서부초등학교",
+          "region": "경기",
+          "district": "하남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도광주하남교육지원청",
+          "address": "경기도 하남시 서하남로 161",
+          "school_code": "7692025"
+        },
+        {
+          "school_name": "서부초등학교",
+          "region": "강원",
+          "district": "삼척시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도삼척교육지원청",
+          "address": "강원특별자치도 삼척시 오십천로 279",
+          "school_code": "7872026"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -4483,6 +5034,39 @@
       "import_count": 1
     },
     {
+      "id": "202606151308352",
+      "tender_no": "202606151308352",
+      "contract_name": "2026년 AI 디지털 채움학교 지원 리딩앤 AI코스웨어 구입",
+      "institution": "지품천초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "2,160,000",
+      "contract_date": "2026-06-15",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151308352&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "지품천초등학교",
+          "region": "경북",
+          "district": "김천시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도김천교육지원청",
+          "address": "경상북도 김천시 지례면 장터길 15",
+          "school_code": "8781122"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606081292673",
       "tender_no": "202606081292673",
       "contract_name": "미래엔 초코 달달수학 초코클래스 초등 수학 AI 코스웨어",
@@ -4549,6 +5133,171 @@
       ],
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2
+    },
+    {
+      "id": "202606101300128",
+      "tender_no": "202606101300128",
+      "contract_name": "자작자작 AI 글쓰기 교육 플랫폼 안심수독 라이선스 외 1종",
+      "institution": "신길초등학교",
+      "counterpart": "주식회사 스쿨온담",
+      "amount": "602,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101300128&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신길초등학교",
+          "region": "경기",
+          "district": "안산시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안산교육지원청",
+          "address": "경기도 안산시 단원구 새뿔길 100",
+          "school_code": "7611131"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606091296536",
+      "tender_no": "202606091296536",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 3종",
+      "institution": "석문초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "1,701,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091296536&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석문초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 석문면 다리들길 7",
+          "school_code": "8291032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606091296533",
+      "tender_no": "202606091296533",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 3종",
+      "institution": "석문초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "480,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091296533&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석문초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 석문면 다리들길 7",
+          "school_code": "8291032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606101297838",
+      "tender_no": "202606101297838",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "충주중앙초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "9,990,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101297838&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "충주중앙초등학교",
+          "region": "충북",
+          "district": "충주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도충주교육지원청",
+          "address": "충청북도 충주시 연원5길 19",
+          "school_code": "8021078"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606101300502",
+      "tender_no": "202606101300502",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Enterprise",
+      "institution": "풍세초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "2,250,000",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101300502&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "풍세초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 동남구 풍세면 풍세2길 5",
+          "school_code": "8151090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
     },
     {
       "id": "202606091295062",
@@ -4724,6 +5473,237 @@
       "import_count": 1
     },
     {
+      "id": "202606091296535",
+      "tender_no": "202606091296535",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 3종",
+      "institution": "석문초등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "320,000",
+      "contract_date": "2026-06-09",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091296535&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석문초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 석문면 다리들길 7",
+          "school_code": "8291032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606091296534",
+      "tender_no": "202606091296534",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 3종",
+      "institution": "석문초등학교",
+      "counterpart": "주식회사 모노플로우",
+      "amount": "135,000",
+      "contract_date": "2026-06-09",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606091296534&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "석문초등학교",
+          "region": "충남",
+          "district": "당진시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도당진교육지원청",
+          "address": "충청남도 당진시 석문면 다리들길 7",
+          "school_code": "8291032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081293588",
+      "tender_no": "202606081293588",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus 외 2종",
+      "institution": "만대초등학교",
+      "counterpart": "주식회사 로지브라더스",
+      "amount": "840,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081293588&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만대초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 만대로 65",
+          "school_code": "7822092"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081293587",
+      "tender_no": "202606081293587",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus 외 2종",
+      "institution": "만대초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "880,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081293587&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만대초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 만대로 65",
+          "school_code": "7822092"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081293586",
+      "tender_no": "202606081293586",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus 외 2종",
+      "institution": "만대초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "240,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081293586&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만대초등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도원주교육지원청",
+          "address": "강원특별자치도 원주시 만대로 65",
+          "school_code": "7822092"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081292157",
+      "tender_no": "202606081292157",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "사포초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "360,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606081292157&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사포초등학교",
+          "region": "경남",
+          "district": "밀양시",
+          "education_office": "경상남도교육청",
+          "support_office": "밀양교육지원청",
+          "address": "경상남도 밀양시 부북면 예림서원로 18-3",
+          "school_code": "9101012"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606081291221",
+      "tender_no": "202606081291221",
+      "contract_name": "2026 마주온 활용학교 리딩앤스쿨 콘텐츠 이용료 견적서 제출 요청",
+      "institution": "온양중앙초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "9,000,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606081291221&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "온양중앙초등학교",
+          "region": "충남",
+          "district": "아산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도아산교육지원청",
+          "address": "충청남도 아산시 중앙로 17",
+          "school_code": "8181045"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606081290836",
       "tender_no": "202606081290836",
       "contract_name": "미래엔 초코 초코팝, 달달수학, 달달독해 초코클래스 결합형 외 14종",
@@ -4873,6 +5853,204 @@
       "import_count": 1
     },
     {
+      "id": "202606041286686",
+      "tender_no": "202606041286686",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 2종",
+      "institution": "조도초등학교",
+      "counterpart": "클리프7.3",
+      "amount": "384,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286686&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606041286685",
+      "tender_no": "202606041286685",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 2종",
+      "institution": "조도초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "378,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286685&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606041286684",
+      "tender_no": "202606041286684",
+      "contract_name": "생각 중심 글쓰기 자작자작 외 2종",
+      "institution": "조도초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "384,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286684&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606041283275",
+      "tender_no": "202606041283275",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
+      "institution": "지동초등학교",
+      "counterpart": "위드현 에듀테크",
+      "amount": "205,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041283275&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "지동초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 팔달구 중부대로 67",
+          "school_code": "7541114"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606041283274",
+      "tender_no": "202606041283274",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
+      "institution": "지동초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "80,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041283274&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "지동초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 팔달구 중부대로 67",
+          "school_code": "7541114"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606041283273",
+      "tender_no": "202606041283273",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
+      "institution": "지동초등학교",
+      "counterpart": "주안테크",
+      "amount": "47,000",
+      "contract_date": "2026-06-04",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041283273&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "지동초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 팔달구 중부대로 67",
+          "school_code": "7541114"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202606021282413",
       "tender_no": "202606021282413",
       "contract_name": "아이스크림 스쿨런",
@@ -4978,6 +6156,410 @@
         }
       ],
       "first_imported_at": "2026-07-22 18:40",
+      "import_count": 1
+    },
+    {
+      "id": "202606011277716",
+      "tender_no": "202606011277716",
+      "contract_name": "동광초 AI 코스웨어 글쓰기 자작자작  구입",
+      "institution": "동광초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,100,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606011277716&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "동광초등학교",
+          "region": "서울",
+          "district": "금천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시남부교육지원청",
+          "address": "서울특별시 금천구 탑골로10길 45",
+          "school_code": "7041099"
+        },
+        {
+          "school_name": "동광초등학교",
+          "region": "강원",
+          "district": "고성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도고성교육지원청",
+          "address": "강원특별자치도 고성군 토성면 교암1길 15",
+          "school_code": "7972020"
+        },
+        {
+          "school_name": "동광초등학교",
+          "region": "충북",
+          "district": "보은군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도보은교육지원청",
+          "address": "충청북도 보은군 보은읍 동광길 26",
+          "school_code": "8051013"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281400",
+      "tender_no": "202606021281400",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 5종",
+      "institution": "효림초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "2,889,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281400&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효림초등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 장평로 106",
+          "school_code": "7171090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281399",
+      "tender_no": "202606021281399",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 5종",
+      "institution": "효림초등학교",
+      "counterpart": "주식회사 비주얼캠프",
+      "amount": "1,900,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281399&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효림초등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 장평로 106",
+          "school_code": "7171090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281398",
+      "tender_no": "202606021281398",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 5종",
+      "institution": "효림초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,044,009",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281398&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효림초등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 장평로 106",
+          "school_code": "7171090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281397",
+      "tender_no": "202606021281397",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 5종",
+      "institution": "효림초등학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "316,800",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281397&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효림초등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 장평로 106",
+          "school_code": "7171090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281396",
+      "tender_no": "202606021281396",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 5종",
+      "institution": "효림초등학교",
+      "counterpart": "주식회사 아티피셜 소사이어티",
+      "amount": "2,696,664",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281396&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효림초등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 장평로 106",
+          "school_code": "7171090"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281835",
+      "tender_no": "202606021281835",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 3종",
+      "institution": "조도초등학교",
+      "counterpart": "클리프7.3",
+      "amount": "384,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281835&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281834",
+      "tender_no": "202606021281834",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 3종",
+      "institution": "조도초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "384,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281834&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021281833",
+      "tender_no": "202606021281833",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 3종",
+      "institution": "조도초등학교",
+      "counterpart": "모두올",
+      "amount": "90,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021281833&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "조도초등학교",
+          "region": "광주",
+          "district": "진도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시진도교육지원청",
+          "address": "전남광주통합특별시 진도군 조도면 창유1길 36-14",
+          "school_code": "8712022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021282542",
+      "tender_no": "202606021282542",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "안양고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "130,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021282542&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안양고등학교",
+          "region": "경기",
+          "district": "안양시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 안양시 만안구 삼봉로 46",
+          "school_code": "7530098"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606021282208",
+      "tender_no": "202606021282208",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "미곡초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "384,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606021282208&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "미곡초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 양성면 안성맞춤대로 2304-9",
+          "school_code": "7761027"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202606011278690",
+      "tender_no": "202606011278690",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "충주대소원초중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,400,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606011278690&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -5359,6 +6941,39 @@
       "import_count": 1
     },
     {
+      "id": "202605271267383",
+      "tender_no": "202605271267383",
+      "contract_name": "리딩앤스쿨 중고등 스탠다드 견적 요청",
+      "institution": "새롬중학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "3,000,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605271267383&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "새롬중학교",
+          "region": "세종",
+          "district": "어울로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  어울로 41",
+          "school_code": "9300123"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605271267987",
       "tender_no": "202605271267987",
       "contract_name": "아이스크림 스쿨런",
@@ -5422,6 +7037,118 @@
         }
       ],
       "first_imported_at": "2026-07-23 18:31",
+      "import_count": 1
+    },
+    {
+      "id": "202605271265169",
+      "tender_no": "202605271265169",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 1종",
+      "institution": "안산관산초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,100,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271265169&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605271265168",
+      "tender_no": "202605271265168",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 1종",
+      "institution": "안산관산초등학교",
+      "counterpart": "스쿨위드",
+      "amount": "2,688,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271265168&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605271266801",
+      "tender_no": "202605271266801",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "태안여자고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,700,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271266801&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "태안여자고등학교",
+          "region": "충남",
+          "district": "태안군",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 태안군 태안읍 원이로 7-1",
+          "school_code": "8140197"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605271266763",
+      "tender_no": "202605271266763",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "남원국악예술고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "340,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271266763&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남원국악예술고등학교",
+          "region": "전북",
+          "district": "남원시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 남원시 용성로 323",
+          "school_code": "8321155"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -5566,6 +7293,85 @@
       "import_count": 1
     },
     {
+      "id": "202605261261201",
+      "tender_no": "202605261261201",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "거창신원초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "1,440,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605261261201&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605261261198",
+      "tender_no": "202605261261198",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "거창신원초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "524,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605261261198&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605261261081",
+      "tender_no": "202605261261081",
+      "contract_name": "2026년 2030본보기학교 운영에듀테크 구독(자작자작)",
+      "institution": "복자여자고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "348,000",
+      "contract_date": "2026-05-26",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605261261081&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "복자여자고등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도교육청",
+          "address": "충청남도 천안시 동남구 복자1길 1",
+          "school_code": "8140087"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605151240828",
       "tender_no": "202605151240828",
       "contract_name": "2026. 관산초등학교 아이스크림 홈런 학습",
@@ -5636,6 +7442,245 @@
       "import_count": 2
     },
     {
+      "id": "202605211257506",
+      "tender_no": "202605211257506",
+      "contract_name": "생각 중심 글쓰기 자작자작",
+      "institution": "대구조암초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "132,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211257506&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211255876",
+      "tender_no": "202605211255876",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 4종",
+      "institution": "양구초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "384,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211255876&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양구초등학교",
+          "region": "강원",
+          "district": "양구군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도양구교육지원청",
+          "address": "강원특별자치도 양구군 양구읍 양구새싹로 48",
+          "school_code": "7952016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211255875",
+      "tender_no": "202605211255875",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 4종",
+      "institution": "양구초등학교",
+      "counterpart": "리프레쉬업",
+      "amount": "559,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211255875&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양구초등학교",
+          "region": "강원",
+          "district": "양구군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도양구교육지원청",
+          "address": "강원특별자치도 양구군 양구읍 양구새싹로 48",
+          "school_code": "7952016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211255874",
+      "tender_no": "202605211255874",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 4종",
+      "institution": "양구초등학교",
+      "counterpart": "클라스온 주식회사",
+      "amount": "520,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211255874&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양구초등학교",
+          "region": "강원",
+          "district": "양구군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도양구교육지원청",
+          "address": "강원특별자치도 양구군 양구읍 양구새싹로 48",
+          "school_code": "7952016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211255873",
+      "tender_no": "202605211255873",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 4종",
+      "institution": "양구초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "300,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211255873&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양구초등학교",
+          "region": "강원",
+          "district": "양구군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도양구교육지원청",
+          "address": "강원특별자치도 양구군 양구읍 양구새싹로 48",
+          "school_code": "7952016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211256657",
+      "tender_no": "202605211256657",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "청원초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,800,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211256657&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청원초등학교",
+          "region": "서울",
+          "district": "노원구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시북부교육지원청",
+          "address": "서울특별시 노원구 한글비석로 506",
+          "school_code": "7051170"
+        },
+        {
+          "school_name": "청원초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 마도면 해운로 794",
+          "school_code": "7679058"
+        },
+        {
+          "school_name": "청원초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 청원구 오창읍 과학산업3로 228",
+          "school_code": "8011321"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605211255031",
+      "tender_no": "202605211255031",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "봉대가온학교",
+      "counterpart": "(주)팀플백",
+      "amount": "160,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605211255031&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "기타",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "봉대가온학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 원주시 봉대길 33",
+          "school_code": "7801219"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605211256403",
       "tender_no": "202605211256403",
       "contract_name": "교육용 소프트웨어 아이스크림홈런(관리형)",
@@ -5684,6 +7729,147 @@
         }
       ],
       "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605181244687",
+      "tender_no": "202605181244687",
+      "contract_name": "장성중앙초 생각 중심 글쓰기 자작자작 외 1종 구입",
+      "institution": "장성중앙초등학교",
+      "counterpart": "클리프7.3",
+      "amount": "474,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181244687&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장성중앙초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 장성읍 제봉로 84",
+          "school_code": "8692009"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191249587",
+      "tender_no": "202605191249587",
+      "contract_name": "자작자작 AI 글쓰기 교육 플랫폼 안심수독 라이선스 외 1종",
+      "institution": "장흥초등학교",
+      "counterpart": "주식회사 스쿨온담",
+      "amount": "384,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191249587&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장흥초등학교",
+          "region": "강원",
+          "district": "철원군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도철원교육지원청",
+          "address": "강원특별자치도 철원군 동송읍 태봉로 2017",
+          "school_code": "7932026"
+        },
+        {
+          "school_name": "장흥초등학교",
+          "region": "광주",
+          "district": "장흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장흥교육지원청",
+          "address": "전남광주통합특별시 장흥군 장흥읍 의향길 23",
+          "school_code": "8622011"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191249576",
+      "tender_no": "202605191249576",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
+      "institution": "한숲중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "100,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191249576&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한숲중학교",
+          "region": "경기",
+          "district": "용인시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도용인교육지원청",
+          "address": "경기도 용인시 처인구 남사읍 한숲로 109",
+          "school_code": "7751359"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191249574",
+      "tender_no": "202605191249574",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작 외 2종",
+      "institution": "한숲중학교",
+      "counterpart": "리프레쉬업",
+      "amount": "114,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191249574&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한숲중학교",
+          "region": "경기",
+          "district": "용인시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도용인교육지원청",
+          "address": "경기도 용인시 처인구 남사읍 한숲로 109",
+          "school_code": "7751359"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -5792,6 +7978,71 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191249588",
+      "tender_no": "202605191249588",
+      "contract_name": "자작자작 AI 글쓰기 교육 플랫폼 안심수독 라이선스 외 1종",
+      "institution": "장흥초등학교",
+      "counterpart": "주안테크",
+      "amount": "190,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191249588&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장흥초등학교",
+          "region": "강원",
+          "district": "철원군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도철원교육지원청",
+          "address": "강원특별자치도 철원군 동송읍 태봉로 2017",
+          "school_code": "7932026"
+        },
+        {
+          "school_name": "장흥초등학교",
+          "region": "광주",
+          "district": "장흥군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장흥교육지원청",
+          "address": "전남광주통합특별시 장흥군 장흥읍 의향길 23",
+          "school_code": "8622011"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605191248487",
+      "tender_no": "202605191248487",
+      "contract_name": "공동교육과정 운영 에듀테크 구독료(자작자작) 지출",
+      "institution": "영암신북초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "320,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605191248487&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -6038,6 +8289,72 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605181244686",
+      "tender_no": "202605181244686",
+      "contract_name": "장성중앙초 생각 중심 글쓰기 자작자작 외 1종 구입",
+      "institution": "장성중앙초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "1,152,000",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605181244686&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "장성중앙초등학교",
+          "region": "광주",
+          "district": "장성군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시장성교육지원청",
+          "address": "전남광주통합특별시 장성군 장성읍 제봉로 84",
+          "school_code": "8692009"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605181244909",
+      "tender_no": "202605181244909",
+      "contract_name": "순천왕지초 자작자작 멤버쉽 구입",
+      "institution": "순천왕지초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,128,000",
+      "contract_date": "2026-05-18",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605181244909&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "순천왕지초등학교",
+          "region": "광주",
+          "district": "순천시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시순천교육지원청",
+          "address": "전남광주통합특별시 순천시 연동남3길 8",
+          "school_code": "8522041"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -6347,6 +8664,72 @@
       "import_count": 1
     },
     {
+      "id": "202605121229970",
+      "tender_no": "202605121229970",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "천안월봉초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "6,642,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121229970&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천안월봉초등학교",
+          "region": "충남",
+          "district": "천안시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도천안교육지원청",
+          "address": "충청남도 천안시 서북구 월봉4로 120-8",
+          "school_code": "8151089"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605131231239",
+      "tender_no": "202605131231239",
+      "contract_name": "AI 디지털 활용 선도학교 콘텐츠(자작자작) 구독",
+      "institution": "목포중앙여자중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,000,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131231239&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포중앙여자중학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시목포교육지원청",
+          "address": "전남광주통합특별시 목포시 백년대로280번길 24",
+          "school_code": "8502010"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605131234353",
       "tender_no": "202605131234353",
       "contract_name": "비상교육 옥수수(수학AI 코스웨어)",
@@ -6484,6 +8867,213 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121227583",
+      "tender_no": "202605121227583",
+      "contract_name": "생각 중심 글쓰기 자작자작",
+      "institution": "칠서초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "80,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121227583&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "칠서초등학교",
+          "region": "경남",
+          "district": "함안군",
+          "education_office": "경상남도교육청",
+          "support_office": "함안교육지원청",
+          "address": "경상남도 함안군 칠서면 청계2길 9",
+          "school_code": "9131020"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121226456",
+      "tender_no": "202605121226456",
+      "contract_name": "생각 중심 글쓰기 자작자작",
+      "institution": "상진초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "384,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121226456&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "상진초등학교",
+          "region": "울산",
+          "district": "동구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 동구 봉수로 50",
+          "school_code": "7491118"
+        },
+        {
+          "school_name": "상진초등학교",
+          "region": "충북",
+          "district": "단양군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도단양교육지원청",
+          "address": "충청북도 단양군 단양읍 상진12길 17",
+          "school_code": "8111019"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121229574",
+      "tender_no": "202605121229574",
+      "contract_name": "광양중앙초 자작자작 이용료",
+      "institution": "광양중앙초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,300,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121229574&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광양중앙초등학교",
+          "region": "광주",
+          "district": "광양시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시광양교육지원청",
+          "address": "전남광주통합특별시 광양시 불무길 15",
+          "school_code": "8552031"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121230518",
+      "tender_no": "202605121230518",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "청주대성고등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,500,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121230518&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청주대성고등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 청주시 청원구 대성로300번길 18",
+          "school_code": "8000195"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121230354",
+      "tender_no": "202605121230354",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "금가초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,000,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121230354&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금가초등학교",
+          "region": "충북",
+          "district": "충주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도충주교육지원청",
+          "address": "충청북도 충주시 금가면 가마골길 16",
+          "school_code": "8021048"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605121226499",
+      "tender_no": "202605121226499",
+      "contract_name": "2026. AI 교육용 소프트웨어(생각 중심 글쓰기 자작자작) 구매",
+      "institution": "생극초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "400,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605121226499&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "생극초등학교",
+          "region": "충북",
+          "district": "음성군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도음성교육지원청",
+          "address": "충청북도 음성군 생극면 음성로 1649-8",
+          "school_code": "8101024"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -6629,6 +9219,105 @@
       "import_count": 1
     },
     {
+      "id": "202605111224336",
+      "tender_no": "202605111224336",
+      "contract_name": "백현중학교 AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "백현중학교",
+      "counterpart": "(주)팀플백",
+      "amount": "433,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111224336&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "백현중학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 황새울로 124",
+          "school_code": "7551016"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605111222716",
+      "tender_no": "202605111222716",
+      "contract_name": "디지털 선도학교 에듀테크 및 AI코스웨어 구입(자작자작)",
+      "institution": "무안행복초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "3,632,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111222716&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "무안행복초등학교",
+          "region": "광주",
+          "district": "무안군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시무안교육지원청",
+          "address": "전남광주통합특별시 무안군 일로읍 오룡중앙동로 38",
+          "school_code": "8662052"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605111223016",
+      "tender_no": "202605111223016",
+      "contract_name": "AI 코스웨어 구입 자작자작",
+      "institution": "광양가야초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "1,488,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111223016&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광양가야초등학교",
+          "region": "광주",
+          "district": "광양시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시광양교육지원청",
+          "address": "전남광주통합특별시 광양시 가야로 369",
+          "school_code": "8552034"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605071216942",
       "tender_no": "202605071216942",
       "contract_name": "미래엔 초코 달달독해 초코클래스 초등 독해력 AI 코스웨어",
@@ -6752,6 +9441,81 @@
       "import_count": 1
     },
     {
+      "id": "202605071216234",
+      "tender_no": "202605071216234",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "아름초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "621,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605071216234&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "아름초등학교",
+          "region": "세종",
+          "district": "달빛로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시 달빛로 174 ",
+          "school_code": "9300115"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605081221582",
+      "tender_no": "202605081221582",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "천천초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "900,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605081221582&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "천천초등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 장안구 정자로42번길 17",
+          "school_code": "7541117"
+        },
+        {
+          "school_name": "천천초등학교",
+          "region": "전북",
+          "district": "장수군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도장수교육지원청",
+          "address": "전북특별자치도 장수군 천천면 송탄로 22",
+          "school_code": "8422022"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
       "id": "202605081218989",
       "tender_no": "202605081218989",
       "contract_name": "중앙초등학교 아이크림홈런 구입 견적요청",
@@ -6814,6 +9578,72 @@
         }
       ],
       "first_imported_at": "2026-07-24 15:12",
+      "import_count": 1
+    },
+    {
+      "id": "202605071215828",
+      "tender_no": "202605071215828",
+      "contract_name": "양평초 디지털활용 AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "양평초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "400,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605071215828&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양평초등학교",
+          "region": "경기",
+          "district": "양평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도양평교육지원청",
+          "address": "경기도 양평군 양평읍 양근로 142",
+          "school_code": "7731029"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605071214905",
+      "tender_no": "202605071214905",
+      "contract_name": "AI코스웨어(글쓰기 교육 플랫폼, 자작자작) 구입",
+      "institution": "안산호원초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "3,150,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605071214905&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안산호원초등학교",
+          "region": "경기",
+          "district": "안산시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안산교육지원청",
+          "address": "경기도 안산시 단원구 초지1로 100",
+          "school_code": "7611032"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
@@ -6963,6 +9793,62 @@
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605061210166",
+      "tender_no": "202605061210166",
+      "contract_name": "만수초 리딩앤 이용권 구입",
+      "institution": "만수초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "3,000,000",
+      "contract_date": "2026-05-06",
+      "keywords": [
+        "리딩앤"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605061210166&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만수초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 흥덕구 오송읍 만수2길 11",
+          "school_code": "8011300"
+        }
+      ],
+      "first_imported_at": "2026-07-26 16:03",
+      "import_count": 1
+    },
+    {
+      "id": "202605061212039",
+      "tender_no": "202605061212039",
+      "contract_name": "AI 글쓰기 교육 플랫폼, 자작자작",
+      "institution": "대구학남초등학교",
+      "counterpart": "(주)팀플백",
+      "amount": "2,880,000",
+      "contract_date": "2026-05-06",
+      "keywords": [
+        "자작자작"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061212039&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.07.15",
+      "last_imported_at": "2026-07-26 16:03",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-26 16:03",
       "import_count": 1
     },
     {
