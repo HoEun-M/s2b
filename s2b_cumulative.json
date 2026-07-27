@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-27 16:07",
+  "exported_at": "2026-07-27 16:33",
   "meta": {
-    "lastImportedAt": "2026-07-27 16:07",
+    "lastImportedAt": "2026-07-27 16:33",
     "lastSearchPeriod": "20260724~20260726",
-    "total": 2172
+    "total": 2175
   },
   "records": [
     {
@@ -15,12 +15,13 @@
       "amount": "18,000",
       "contract_date": "2026-07-25",
       "keywords": [
-        "수학"
+        "수학",
+        "토도수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241398290&excelSection=N",
       "search_period_from": "2026.07.24",
       "search_period_to": "2026.07.26",
-      "last_imported_at": "2026-07-27 11:52",
+      "last_imported_at": "2026-07-27 16:33",
       "school_level": "초",
       "region": "경기",
       "region_status": "matched",
@@ -37,6 +38,85 @@
         }
       ],
       "first_imported_at": "2026-07-27 11:52",
+      "import_count": 2
+    },
+    {
+      "id": "202607241398543",
+      "tender_no": "202607241398543",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "법환초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "838,600",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241398543&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 16:33",
+      "school_level": "초",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "법환초등학교",
+          "region": "제주",
+          "district": "서귀포시",
+          "education_office": "제주특별자치도교육청",
+          "support_office": "서귀포시교육지원청",
+          "address": "제주특별자치도 서귀포시 이어도로 879",
+          "school_code": "9299028"
+        }
+      ],
+      "first_imported_at": "2026-07-27 16:33",
+      "import_count": 1
+    },
+    {
+      "id": "202607241397958",
+      "tender_no": "202607241397958",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "대구남부초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "4,732,100",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241397958&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 16:33",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-27 16:33",
+      "import_count": 1
+    },
+    {
+      "id": "202607241397250",
+      "tender_no": "202607241397250",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (초등)",
+      "institution": "대구범어초등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "1,437,600",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241397250&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 16:33",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-27 16:33",
       "import_count": 1
     },
     {
