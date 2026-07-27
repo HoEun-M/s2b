@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-27 13:10",
+  "exported_at": "2026-07-27 16:07",
   "meta": {
-    "lastImportedAt": "2026-07-27 13:10",
+    "lastImportedAt": "2026-07-27 16:07",
     "lastSearchPeriod": "20260724~20260726",
     "total": 2172
   },
@@ -38,6 +38,40 @@
       ],
       "first_imported_at": "2026-07-27 11:52",
       "import_count": 1
+    },
+    {
+      "id": "202607241397171",
+      "tender_no": "202607241397171",
+      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
+      "institution": "구자곡초등학교",
+      "counterpart": "(주)아이포트폴리오",
+      "amount": "54,000",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "리딩앤",
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241397171&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 16:07",
+      "school_level": "초",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구자곡초등학교",
+          "region": "충남",
+          "district": "논산시",
+          "education_office": "충청남도교육청",
+          "support_office": "충청남도논산계룡교육지원청",
+          "address": "충청남도 논산시 연무로 369",
+          "school_code": "8222027"
+        }
+      ],
+      "first_imported_at": "2026-07-27 11:37",
+      "import_count": 2
     },
     {
       "id": "202607231396632",
@@ -392,39 +426,6 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-27 11:37",
       "import_count": 2
-    },
-    {
-      "id": "202607241397171",
-      "tender_no": "202607241397171",
-      "contract_name": "리딩앤 AI코스웨어 초등,중등,고등 Premium Plus",
-      "institution": "구자곡초등학교",
-      "counterpart": "(주)아이포트폴리오",
-      "amount": "54,000",
-      "contract_date": "2026-07-24",
-      "keywords": [
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241397171&excelSection=N",
-      "search_period_from": "2026.07.24",
-      "search_period_to": "2026.07.26",
-      "last_imported_at": "2026-07-27 11:37",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "구자곡초등학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 연무로 369",
-          "school_code": "8222027"
-        }
-      ],
-      "first_imported_at": "2026-07-27 11:37",
-      "import_count": 1
     },
     {
       "id": "202607241398390",
