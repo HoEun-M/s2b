@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-07-27 11:52",
+  "exported_at": "2026-07-27 13:10",
   "meta": {
-    "lastImportedAt": "2026-07-27 11:52",
+    "lastImportedAt": "2026-07-27 13:10",
     "lastSearchPeriod": "20260724~20260726",
-    "total": 2170
+    "total": 2172
   },
   "records": [
     {
@@ -37,6 +37,96 @@
         }
       ],
       "first_imported_at": "2026-07-27 11:52",
+      "import_count": 1
+    },
+    {
+      "id": "202607231396632",
+      "tender_no": "202607231396632",
+      "contract_name": "비상교육 옥수수 수학프로그램 납품",
+      "institution": "심인중학교",
+      "counterpart": "비상교육FC",
+      "amount": "1,200,000",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "비상교육 옥수수",
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607231396632&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 13:10",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "심인중학교",
+          "region": "대구",
+          "district": "달성군",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시달성교육지원청",
+          "address": "대구광역시 달성군 다사읍 대실역남로1길 21",
+          "school_code": "7281123"
+        }
+      ],
+      "first_imported_at": "2026-07-27 11:52",
+      "import_count": 2
+    },
+    {
+      "id": "202607241397358",
+      "tender_no": "202607241397358",
+      "contract_name": "레고에듀케이션 컴퓨터 사이언스 AI 코딩 8 플러스 패키지",
+      "institution": "망미초등학교",
+      "counterpart": "이와이컴퍼니",
+      "amount": "3,000,000",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241397358&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 13:10",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "망미초등학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시해운대교육지원청",
+          "address": "부산광역시 수영구 수미로35번길 27",
+          "school_code": "7211047"
+        }
+      ],
+      "first_imported_at": "2026-07-27 13:10",
+      "import_count": 1
+    },
+    {
+      "id": "202607221393922",
+      "tender_no": "202607221393922",
+      "contract_name": "2026. 빈틈 없는 방학, 진천 온동네 돌봄 위탁운영, AI 코딩 교육 프로그램",
+      "institution": "충청북도진천교육지원청 학교지원센터",
+      "counterpart": "주식회사 놀이",
+      "amount": "20,000,000",
+      "contract_date": "2026-07-24",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607221393922&excelSection=N",
+      "search_period_from": "2026.07.24",
+      "search_period_to": "2026.07.26",
+      "last_imported_at": "2026-07-27 13:10",
+      "school_level": "기타",
+      "region": "충북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-27 13:10",
       "import_count": 1
     },
     {
@@ -109,39 +199,6 @@
           "support_office": "경기도교육청",
           "address": "경기도 용인시 처인구 백암면 백원로 519-9",
           "school_code": "7530650"
-        }
-      ],
-      "first_imported_at": "2026-07-27 11:52",
-      "import_count": 1
-    },
-    {
-      "id": "202607231396632",
-      "tender_no": "202607231396632",
-      "contract_name": "비상교육 옥수수 수학프로그램 납품",
-      "institution": "심인중학교",
-      "counterpart": "비상교육FC",
-      "amount": "1,200,000",
-      "contract_date": "2026-07-24",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607231396632&excelSection=N",
-      "search_period_from": "2026.07.24",
-      "search_period_to": "2026.07.26",
-      "last_imported_at": "2026-07-27 11:52",
-      "school_level": "중",
-      "region": "대구",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "심인중학교",
-          "region": "대구",
-          "district": "달성군",
-          "education_office": "대구광역시교육청",
-          "support_office": "대구광역시달성교육지원청",
-          "address": "대구광역시 달성군 다사읍 대실역남로1길 21",
-          "school_code": "7281123"
         }
       ],
       "first_imported_at": "2026-07-27 11:52",
