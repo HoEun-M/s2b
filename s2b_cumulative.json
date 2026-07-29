@@ -1,11 +1,431 @@
 {
-  "exported_at": "2026-07-27 16:33",
+  "exported_at": "2026-07-29 09:02",
   "meta": {
-    "lastImportedAt": "2026-07-27 16:33",
-    "lastSearchPeriod": "20260724~20260726",
-    "total": 2175
+    "lastImportedAt": "2026-07-29 09:02",
+    "lastSearchPeriod": "20260727~20260727",
+    "total": 2188
   },
   "records": [
+    {
+      "id": "202607271400898",
+      "tender_no": "202607271400898",
+      "contract_name": "초등 수학, 초등 연산 어플리케이션 APP 일프로연산",
+      "institution": "신안비금초등학교",
+      "counterpart": "(주)매쓰마스터",
+      "amount": "315,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271400898&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607211389957",
+      "tender_no": "202607211389957",
+      "contract_name": "천재교과서 AI 디지털 교육자료 (고등) 외 2종",
+      "institution": "칠성고등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "10,200,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211389957&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "칠성고등학교",
+          "region": "대구",
+          "district": "북구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 북구 칠성로 13",
+          "school_code": "7240282"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607241398453",
+      "tender_no": "202607241398453",
+      "contract_name": "영어교과실 레고블럭 구매",
+      "institution": "주양초등학교",
+      "counterpart": "주식회사 일인칭연구소",
+      "amount": "1,430,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607241398453&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "주양초등학교",
+          "region": "부산",
+          "district": "사상구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시북부교육지원청",
+          "address": "부산광역시 사상구 백양대로 372-6",
+          "school_code": "7201098"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607101366573",
+      "tender_no": "202607101366573",
+      "contract_name": "엔이능률 AIDT 교육자료 (영어) 외 1종",
+      "institution": "대구경일여자고등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "6,020,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101366573&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607241398514",
+      "tender_no": "202607241398514",
+      "contract_name": "아이스크림홈런 교육용 소프트웨어(무관리)",
+      "institution": "대구상인초등학교",
+      "counterpart": "(주)아이스크림에듀",
+      "amount": "483,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "홈런"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241398514&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271400329",
+      "tender_no": "202607271400329",
+      "contract_name": "수학영재 EBS 학습플랜 2학년 견적요청",
+      "institution": "남일중학교",
+      "counterpart": "한국도서",
+      "amount": "392,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607271400329&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "중",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "남일중학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시동래교육지원청",
+          "address": "부산광역시 동래구 온천천로531번길 49",
+          "school_code": "7191015"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271399560",
+      "tender_no": "202607271399560",
+      "contract_name": "매쓰홀릭T 수학앱 외 1종",
+      "institution": "척과초등학교",
+      "counterpart": "주식회사 디엔소프트",
+      "amount": "144,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271399560&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "척과초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 범서읍 갈매정길 16",
+          "school_code": "7501098"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271399559",
+      "tender_no": "202607271399559",
+      "contract_name": "매쓰홀릭T 수학앱 외 1종",
+      "institution": "척과초등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "72,600",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271399559&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "척과초등학교",
+          "region": "울산",
+          "district": "울주군",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강남교육지원청",
+          "address": "울산광역시 울주군 범서읍 갈매정길 16",
+          "school_code": "7501098"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271399454",
+      "tender_no": "202607271399454",
+      "contract_name": "레고에듀케이션 스파이크 프라임 코어 코딩교육 세트 외 1종",
+      "institution": "유영초등학교",
+      "counterpart": "올댓스쿨 주식회사",
+      "amount": "3,280,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "코딩"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271399454&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "유영초등학교",
+          "region": "경남",
+          "district": "통영시",
+          "education_office": "경상남도교육청",
+          "support_office": "통영교육지원청",
+          "address": "경상남도 통영시 중앙로 225",
+          "school_code": "9071026"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607241398667",
+      "tender_no": "202607241398667",
+      "contract_name": "디지털 선도학교 여름방학 기초학력 보장 프로그램 AI 코스웨어 구입",
+      "institution": "농소초등학교",
+      "counterpart": "엘위드",
+      "amount": "276,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "코스웨어",
+        "기초학력"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241398667&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "농소초등학교",
+          "region": "울산",
+          "district": "북구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시강북교육지원청",
+          "address": "울산광역시 북구 호계로 192",
+          "school_code": "7491099"
+        },
+        {
+          "school_name": "농소초등학교",
+          "region": "경북",
+          "district": "김천시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도김천교육지원청",
+          "address": "경상북도 김천시 해오름1로1길7",
+          "school_code": "8781059"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271400548",
+      "tender_no": "202607271400548",
+      "contract_name": "AI 국어 학습 튜터 레서",
+      "institution": "영만초등학교",
+      "counterpart": "주식회사 아티피셜 소사이어티",
+      "amount": "8,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271400548&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영만초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 오산면 선화로4길 42-9",
+          "school_code": "8352125"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607241398502",
+      "tender_no": "202607241398502",
+      "contract_name": "2026 원어민 화상영어 수업 프로그램 운영",
+      "institution": "토성초등학교",
+      "counterpart": "(주)민병철교육그룹",
+      "amount": "2,800,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607241398502&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "토성초등학교",
+          "region": "부산",
+          "district": "서구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 서구 구덕로134번길 45",
+          "school_code": "7171086"
+        },
+        {
+          "school_name": "토성초등학교",
+          "region": "강원",
+          "district": "철원군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도철원교육지원청",
+          "address": "강원특별자치도 철원군 갈말읍 토성길 43",
+          "school_code": "7932029"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
+    {
+      "id": "202607271400553",
+      "tender_no": "202607271400553",
+      "contract_name": "(본사) 알공 영어 Premium 수학 (초등 AI 코스웨어)",
+      "institution": "영만초등학교",
+      "counterpart": "주식회사 디엔소프트",
+      "amount": "26,000",
+      "contract_date": "2026-07-27",
+      "keywords": [
+        "코스웨어",
+        "수학",
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607271400553&excelSection=N",
+      "search_period_from": "2026.07.27",
+      "search_period_to": "2026.07.27",
+      "last_imported_at": "2026-07-29 09:02",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영만초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 오산면 선화로4길 42-9",
+          "school_code": "8352125"
+        }
+      ],
+      "first_imported_at": "2026-07-29 09:02",
+      "import_count": 1
+    },
     {
       "id": "202607241398290",
       "tender_no": "202607241398290",
