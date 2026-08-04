@@ -1,11 +1,225 @@
 {
-  "exported_at": "2026-07-31 15:26",
+  "exported_at": "2026-08-04 13:59",
   "meta": {
-    "lastImportedAt": "2026-07-31 15:26",
-    "lastSearchPeriod": "20260401~20260531",
-    "total": 3158
+    "lastImportedAt": "2026-08-04 13:59",
+    "lastSearchPeriod": "20260731~20260803",
+    "total": 3166
   },
   "records": [
+    {
+      "id": "202608031408717",
+      "tender_no": "202608031408717",
+      "contract_name": "미래엔 초코클래스 6개월 이상 (1과목)",
+      "institution": "홍성홍주초등학교",
+      "counterpart": "(주)미래엔",
+      "amount": "4,500,000",
+      "contract_date": "2026-08-03",
+      "keywords": [
+        "미래엔"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608031408717&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "초",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202608031408455",
+      "tender_no": "202608031408455",
+      "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
+      "institution": "매향중학교",
+      "counterpart": "주식회사 비주얼캠프",
+      "amount": "360,000",
+      "contract_date": "2026-08-03",
+      "keywords": [
+        "코스웨어",
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608031408455&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "매향중학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도수원교육지원청",
+          "address": "경기도 수원시 팔달구 매향삼일로 16",
+          "school_code": "7541059"
+        }
+      ],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202608021407831",
+      "tender_no": "202608021407831",
+      "contract_name": "2026. 진주교육지원청영재교육원 2학기 수업 교수학습자료 구입(클로드)",
+      "institution": "경상남도진주교육지원청",
+      "counterpart": "위드플러스",
+      "amount": "200,000",
+      "contract_date": "2026-08-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608021407831&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "기타",
+      "region": "경남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202608021407830",
+      "tender_no": "202608021407830",
+      "contract_name": "2026. 진주교육지원청영재교육원 2학기 수업 교수학습자료 구입(클로드)",
+      "institution": "경상남도진주교육지원청",
+      "counterpart": "위드플러스",
+      "amount": "40,000",
+      "contract_date": "2026-08-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608021407830&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "기타",
+      "region": "경남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202608021407829",
+      "tender_no": "202608021407829",
+      "contract_name": "2026. 진주교육지원청영재교육원 2학기 수업 교수학습자료 구입(GPT)",
+      "institution": "경상남도진주교육지원청",
+      "counterpart": "에듀넥스트",
+      "amount": "35,000",
+      "contract_date": "2026-08-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608021407829&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "기타",
+      "region": "경남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202608021407828",
+      "tender_no": "202608021407828",
+      "contract_name": "2026. 진주교육지원청영재교육원 2학기 수업 교수학습자료 구입(GPT)",
+      "institution": "경상남도진주교육지원청",
+      "counterpart": "에듀넥스트",
+      "amount": "210,000",
+      "contract_date": "2026-08-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202608021407828&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "기타",
+      "region": "경남",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202607311407566",
+      "tender_no": "202607311407566",
+      "contract_name": "대동중학교 영어교실 공간재구조화 사업관련 물품구입(벽시계)",
+      "institution": "대동중학교",
+      "counterpart": "(주)에듀에이드",
+      "amount": "135,000",
+      "contract_date": "2026-07-31",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607311407566&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "중",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대동중학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시서부교육지원청",
+          "address": "부산광역시 사하구 을숙도대로709번길 27",
+          "school_code": "7171034"
+        },
+        {
+          "school_name": "대동중학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 우창서길 34",
+          "school_code": "8761202"
+        }
+      ],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
+    {
+      "id": "202607291403972",
+      "tender_no": "202607291403972",
+      "contract_name": "2027학년도 수학능력시험 대비 3학년 모의고사 시험지 구입",
+      "institution": "경북일고등학교",
+      "counterpart": "종로교재사",
+      "amount": "1,264,000",
+      "contract_date": "2026-07-31",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607291403972&excelSection=N",
+      "search_period_from": "2026.07.31",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-04 13:59",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-04 13:59",
+      "import_count": 1
+    },
     {
       "id": "202607301406377",
       "tender_no": "202607301406377",
