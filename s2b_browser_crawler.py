@@ -83,13 +83,14 @@ def cleanup_user_data_dir(path):
             pass
 
 
-def close_context(context):
+def close_context(context, cleanup_profile=True):
     profile_dir = getattr(context, "s2b_user_data_dir", "")
     try:
         context.close()
     except Exception:
         pass
-    cleanup_user_data_dir(profile_dir)
+    if cleanup_profile:
+        cleanup_user_data_dir(profile_dir)
 
 
 def launch_browser(playwright, args):
@@ -117,7 +118,7 @@ def launch_browser(playwright, args):
         raise
 
 
-def create_context_page(playwright, args):
+def create_context_page(playwright, args, user_data_dir=None):
     executable_path = find_browser_executable(args.browser)
     launch_args = {
         "headless": args.headless,
@@ -136,7 +137,8 @@ def create_context_page(playwright, args):
     else:
         print("[browser] using Playwright-managed Chromium")
 
-    user_data_dir = get_user_data_dir()
+    if user_data_dir is None:
+        user_data_dir = get_user_data_dir()
     try:
         context = playwright.chromium.launch_persistent_context(user_data_dir, **launch_args)
     except Exception:
@@ -212,6 +214,8 @@ def wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError):
 
 
 def page_content_bytes(page):
+    if page.is_closed():
+        raise RuntimeError("Target page, context or browser has been closed")
     return page.content().encode("euc-kr", errors="replace")
 
 
@@ -354,83 +358,85 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     seen_nos = set()
     all_results = []
     keyword_map = {}
+    session_profile_dir = get_user_data_dir()
+    print("[browser] session profile: " + session_profile_dir)
 
     with sync_playwright() as playwright:
-        context, page = create_context_page(playwright, args)
+        context, page = create_context_page(playwright, args, session_profile_dir)
+        try:
+            for keyword in keywords:
+                if page.is_closed():
+                    print("[browser] page was closed. opening a new page.")
+                    try:
+                        page = context.new_page()
+                        page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
+                    except Exception:
+                        close_context(context, cleanup_profile=False)
+                        context, page = create_context_page(playwright, args, session_profile_dir)
 
-        for keyword in keywords:
-            if page.is_closed():
-                print("[browser] page was closed. opening a new page.")
-                try:
-                    page = context.new_page()
-                    page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
-                except Exception:
-                    close_context(context)
-                    context, page = create_context_page(playwright, args)
+                print("[" + keyword + "] searching in browser...")
+                items = []
+                fatal_error = False
+                for attempt in range(3):
+                    try:
+                        items, page = fetch_by_keyword_browser(
+                            page,
+                            keyword,
+                            date_from,
+                            date_to,
+                            args.page_delay_range,
+                            args.timeout * 1000,
+                            PlaywrightTimeoutError,
+                        )
+                        break
+                    except Exception as exc:
+                        page_was_closed = is_page_closed_error(exc)
+                        if not page_was_closed:
+                            print("[browser] stopped: " + str(exc))
+                            fatal_error = True
+                            break
+                        if attempt == 2:
+                            print("[browser] closed repeatedly. skipping this keyword and continuing.")
+                            close_context(context, cleanup_profile=False)
+                            context, page = create_context_page(playwright, args, session_profile_dir)
+                            break
+                        print("[browser] closed unexpectedly. reopening with the same session profile and retrying this keyword.")
+                        close_context(context, cleanup_profile=False)
+                        context, page = create_context_page(playwright, args, session_profile_dir)
 
-            print("[" + keyword + "] searching in browser...")
-            items = []
-            fatal_error = False
-            for attempt in range(2):
-                try:
-                    items, page = fetch_by_keyword_browser(
-                        page,
-                        keyword,
-                        date_from,
-                        date_to,
-                        args.page_delay_range,
-                        args.timeout * 1000,
-                        PlaywrightTimeoutError,
-                    )
+                if fatal_error:
                     break
-                except Exception as exc:
-                    page_was_closed = is_page_closed_error(exc)
-                    if not page_was_closed:
-                        print("[browser] stopped: " + str(exc))
-                        fatal_error = True
-                        break
-                    if attempt == 1:
-                        print("[browser] closed again. skipping this keyword and continuing.")
-                        close_context(context)
-                        context, page = create_context_page(playwright, args)
-                        break
-                    print("[browser] closed unexpectedly. reopening and retrying this keyword once.")
-                    close_context(context)
-                    context, page = create_context_page(playwright, args)
+                if page.is_closed():
+                    print("[browser] page is closed. opening a new page for the next keyword.")
+                    try:
+                        page = context.new_page()
+                        page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
+                    except Exception:
+                        close_context(context, cleanup_profile=False)
+                        context, page = create_context_page(playwright, args, session_profile_dir)
+                print("  -> " + str(len(items)) + " found\n")
 
-            if fatal_error:
-                break
-            if page.is_closed():
-                print("[browser] page is closed. opening a new page for the next keyword.")
-                try:
-                    page = context.new_page()
-                    page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
-                except Exception:
-                    close_context(context)
-                    context, page = create_context_page(playwright, args)
-            print("  -> " + str(len(items)) + " found\n")
+                for item in items:
+                    contract_no = item["\uacc4\uc57d\ubc88\ud638"]
+                    if contract_no not in seen_nos:
+                        seen_nos.add(contract_no)
+                        all_results.append(item)
+                        keyword_map[contract_no] = [keyword]
+                    elif contract_no in keyword_map and keyword not in keyword_map[contract_no]:
+                        keyword_map[contract_no].append(keyword)
 
-            for item in items:
-                contract_no = item["계약번호"]
-                if contract_no not in seen_nos:
-                    seen_nos.add(contract_no)
-                    all_results.append(item)
-                    keyword_map[contract_no] = [keyword]
-                elif contract_no in keyword_map and keyword not in keyword_map[contract_no]:
-                    keyword_map[contract_no].append(keyword)
-
-            if keyword != keywords[-1]:
-                sleep_random(args.keyword_delay_range, "keyword delay")
-
-        close_context(context)
+                if keyword != keywords[-1]:
+                    sleep_random(args.keyword_delay_range, "keyword delay")
+        finally:
+            close_context(context, cleanup_profile=False)
+            cleanup_user_data_dir(session_profile_dir)
 
     for item in all_results:
-        item["매칭키워드"] = keyword_map.get(item["계약번호"], [])
+        item["\ub9e4\uce6d\ud0a4\uc6cc\ub4dc"] = keyword_map.get(item["\uacc4\uc57d\ubc88\ud638"], [])
 
     print("=" * 55)
-    print("이번 검색 결과: " + str(len(all_results)) + "건(중복 제거)")
+    print("\uc774\ubc88 \uac80\uc0c9 \uacb0\uacfc: " + str(len(all_results)) + "\uac74(\uc911\ubcf5 \uc81c\uac70)")
     return all_results
-
 
 def get_keywords_from_user(args):
     if args.keywords is not None:
