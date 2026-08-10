@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-08-07 12:34",
+  "exported_at": "2026-08-10 09:53",
   "meta": {
-    "lastImportedAt": "2026-08-07 12:34",
-    "lastSearchPeriod": "20260501~20260715",
-    "total": 4961
+    "lastImportedAt": "2026-08-10 09:53",
+    "lastSearchPeriod": "20260201~20260228",
+    "total": 4992
   },
   "records": [
     {
@@ -157248,6 +157248,62 @@
       "import_count": 1
     },
     {
+      "id": "202602220997019",
+      "tender_no": "202602220997019",
+      "contract_name": "에듀테크 활용 미래놀이공간 냉난방기 설치",
+      "institution": "광주체육고등학교",
+      "counterpart": "주식회사 원엔지니어링",
+      "amount": "6,930,000",
+      "contract_date": "2026-02-26",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602220997019&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602261019264",
+      "tender_no": "202602261019264",
+      "contract_name": "2025. 디지털 선도학교 운영을 위한 과학 에듀테크 구입",
+      "institution": "대제중학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "1,100,000",
+      "contract_date": "2026-02-26",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602261019264&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대제중학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도제천교육지원청",
+          "address": "충청북도 제천시 청전대로1길 29",
+          "school_code": "8031006"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602261019515",
       "tender_no": "202602261019515",
       "contract_name": "레고에듀케이션 LEGO 코딩교육용 STEAM 스파이크 프라임 코어 세트",
@@ -157750,6 +157806,39 @@
         }
       ],
       "first_imported_at": "2026-07-20 14:55",
+      "import_count": 1
+    },
+    {
+      "id": "202602231001526",
+      "tender_no": "202602231001526",
+      "contract_name": "어도비 아크로밧 프로 Acrobat Pro AI 에듀테크 해외 구매대행",
+      "institution": "대소초등학교",
+      "counterpart": "주식회사 세진인포",
+      "amount": "450,000",
+      "contract_date": "2026-02-25",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602231001526&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대소초등학교",
+          "region": "충북",
+          "district": "음성군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도음성교육지원청",
+          "address": "충청북도 음성군 대소읍 오태로 110-12",
+          "school_code": "8101018"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
       "import_count": 1
     },
     {
@@ -158282,6 +158371,52 @@
       "import_count": 1
     },
     {
+      "id": "202602241010847",
+      "tender_no": "202602241010847",
+      "contract_name": "대구미래학교 운영을 위한 에듀테크 구입",
+      "institution": "대구고산중학교",
+      "counterpart": "디스픽트",
+      "amount": "1,027,950",
+      "contract_date": "2026-02-24",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241010847&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602241010846",
+      "tender_no": "202602241010846",
+      "contract_name": "대구미래학교 운영을 위한 에듀테크 구입",
+      "institution": "대구고산중학교",
+      "counterpart": "위멘토피아",
+      "amount": "5,131,080",
+      "contract_date": "2026-02-24",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241010846&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602241008808",
       "tender_no": "202602241008808",
       "contract_name": "파이보츠 앱 코딩 스타터 세트",
@@ -158690,6 +158825,39 @@
       "import_count": 1
     },
     {
+      "id": "202602230999652",
+      "tender_no": "202602230999652",
+      "contract_name": "신백현중학교 IB관심학교 에듀테크 이용",
+      "institution": "신백현중학교",
+      "counterpart": "한국메이커스협동조합 나래",
+      "amount": "2,040,960",
+      "contract_date": "2026-02-23",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602230999652&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신백현중학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 판교역로50번길 19",
+          "school_code": "7551237"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602230998471",
       "tender_no": "202602230998471",
       "contract_name": "해운대영어교육거점센터 BOB 온라인 영어북클럽 운영을 위한 독서 프로그램 라이선스 구입",
@@ -158925,6 +159093,146 @@
       "import_count": 1
     },
     {
+      "id": "202602190988165",
+      "tender_no": "202602190988165",
+      "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월",
+      "institution": "서인천고등학교",
+      "counterpart": "위멘토피아",
+      "amount": "600,000",
+      "contract_date": "2026-02-20",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602190988165&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602200992746",
+      "tender_no": "202602200992746",
+      "contract_name": "유튜브 YouTube Premium 프리 미엄 에듀테크 12개월",
+      "institution": "흥덕초등학교",
+      "counterpart": "비케이 에듀",
+      "amount": "240,000",
+      "contract_date": "2026-02-20",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602200992746&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "흥덕초등학교",
+          "region": "경기",
+          "district": "용인시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도용인교육지원청",
+          "address": "경기도 용인시 기흥구 흥덕1로62번길 26",
+          "school_code": "7751230"
+        },
+        {
+          "school_name": "흥덕초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 흥덕구 흥덕로 121",
+          "school_code": "8011209"
+        },
+        {
+          "school_name": "흥덕초등학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도고창교육지원청",
+          "address": "전북특별자치도 고창군 흥덕면 흥덕초등길 13",
+          "school_code": "8452048"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602200989460",
+      "tender_no": "202602200989460",
+      "contract_name": "수평공동체 평가 활동 자료 정리 및 활용을 위한 에듀테크 구입",
+      "institution": "협성고등학교",
+      "counterpart": "에듀테크나인",
+      "amount": "140,000",
+      "contract_date": "2026-02-20",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602200989460&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "협성고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 효성로 33",
+          "school_code": "7240105"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602200989459",
+      "tender_no": "202602200989459",
+      "contract_name": "수평공동체 평가 활동 자료 정리 및 활용을 위한 에듀테크 구입",
+      "institution": "협성고등학교",
+      "counterpart": "위드스쿨(주)",
+      "amount": "152,000",
+      "contract_date": "2026-02-20",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602200989459&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "협성고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 효성로 33",
+          "school_code": "7240105"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602200990499",
       "tender_no": "202602200990499",
       "contract_name": "2025 해밀학교 교직원 Vibe 코딩 연수",
@@ -159120,6 +159428,39 @@
         }
       ],
       "first_imported_at": "2026-07-20 12:28",
+      "import_count": 1
+    },
+    {
+      "id": "202602190985519",
+      "tender_no": "202602190985519",
+      "contract_name": "디지털선도학교 운영을 위한 에듀테크 프로그램 구입",
+      "institution": "익산가온초등학교",
+      "counterpart": "주식회사 클래스랩",
+      "amount": "1,326,000",
+      "contract_date": "2026-02-19",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602190985519&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "익산가온초등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도익산교육지원청",
+          "address": "전북특별자치도 익산시 선화로1길 106",
+          "school_code": "8352107"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
       "import_count": 1
     },
     {
@@ -159521,6 +159862,72 @@
       "import_count": 1
     },
     {
+      "id": "202602130978979",
+      "tender_no": "202602130978979",
+      "contract_name": "에듀테크 교육서비스(패들렛) 구입",
+      "institution": "산운초등학교",
+      "counterpart": "다품",
+      "amount": "238,000",
+      "contract_date": "2026-02-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602130978979&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "산운초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 판교원로117번길 11",
+          "school_code": "7551153"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602130979039",
+      "tender_no": "202602130979039",
+      "contract_name": "에듀테크 교육서비스(키네마스터) 구입",
+      "institution": "산운초등학교",
+      "counterpart": "위드스쿨(주)",
+      "amount": "414,000",
+      "contract_date": "2026-02-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602130979039&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "산운초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 판교원로117번길 11",
+          "school_code": "7551153"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602130975190",
       "tender_no": "202602130975190",
       "contract_name": "갈전초 코딩교육용 레고 세트 구입",
@@ -159800,6 +160207,77 @@
       "import_count": 1
     },
     {
+      "id": "202602110961535",
+      "tender_no": "202602110961535",
+      "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월",
+      "institution": "대구현풍초등학교",
+      "counterpart": "원자",
+      "amount": "740,000",
+      "contract_date": "2026-02-11",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602110961535&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602110965053",
+      "tender_no": "202602110965053",
+      "contract_name": "인천구산초 에듀테크 라이센스 구입",
+      "institution": "인천구산초등학교",
+      "counterpart": "주안테크",
+      "amount": "444,000",
+      "contract_date": "2026-02-11",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602110965053&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "인천",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602090950343",
+      "tender_no": "202602090950343",
+      "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
+      "institution": "대전이문고등학교",
+      "counterpart": "주식회사 비주얼캠프",
+      "amount": "2,500,000",
+      "contract_date": "2026-02-11",
+      "keywords": [
+        "국어",
+        "에듀테크",
+        "코스웨어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602090950343&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-07-20 12:10",
+      "import_count": 3
+    },
+    {
       "id": "202602110964713",
       "tender_no": "202602110964713",
       "contract_name": "마우스로 클릭 뽀로로 LCD 코딩 컴퓨터 스마트패드",
@@ -159937,30 +160415,6 @@
       "last_imported_at": "2026-07-20 14:55",
       "school_level": "고",
       "region": "인천",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "first_imported_at": "2026-07-20 12:10",
-      "import_count": 2
-    },
-    {
-      "id": "202602090950343",
-      "tender_no": "202602090950343",
-      "contract_name": "리드 인공지능 문해력 진단 및 훈련 어플리케이션 국어 에듀테크 코스웨어",
-      "institution": "대전이문고등학교",
-      "counterpart": "주식회사 비주얼캠프",
-      "amount": "2,500,000",
-      "contract_date": "2026-02-11",
-      "keywords": [
-        "국어",
-        "코스웨어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602090950343&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-07-20 12:28",
-      "school_level": "고",
-      "region": "대전",
       "region_status": "direct",
       "region_source": "institution_name",
       "region_candidates": [],
@@ -160275,6 +160729,95 @@
       "import_count": 1
     },
     {
+      "id": "202602050945168",
+      "tender_no": "202602050945168",
+      "contract_name": "카훗 Kahoot 에듀테크 구독 라이선스 (1년) 외 2종",
+      "institution": "청주여자고등학교",
+      "counterpart": "에듀넥스트",
+      "amount": "60,000",
+      "contract_date": "2026-02-06",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050945168&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청주여자고등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 청주시 청원구 충청대로107번길 82",
+          "school_code": "8000069"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602060947549",
+      "tender_no": "202602060947549",
+      "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월 외 1종",
+      "institution": "대구명곡초등학교",
+      "counterpart": "위멘토피아",
+      "amount": "450,000",
+      "contract_date": "2026-02-06",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602060947549&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602060947153",
+      "tender_no": "202602060947153",
+      "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월",
+      "institution": "구미문성초등학교",
+      "counterpart": "디스픽트",
+      "amount": "300,000",
+      "contract_date": "2026-02-06",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602060947153&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "구미문성초등학교",
+          "region": "경북",
+          "district": "구미시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도구미교육지원청",
+          "address": "경상북도 구미시 고아읍 들성로9길 13",
+          "school_code": "8801201"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602060948882",
       "tender_no": "202602060948882",
       "contract_name": "마이리틀타이거 한글 영어 200 사운드패드",
@@ -160444,6 +160987,194 @@
       "region_source": "institution_name",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 12:28",
+      "import_count": 1
+    },
+    {
+      "id": "202602050945167",
+      "tender_no": "202602050945167",
+      "contract_name": "카훗 Kahoot 에듀테크 구독 라이선스 (1년) 외 2종",
+      "institution": "청주여자고등학교",
+      "counterpart": "한빛에듀",
+      "amount": "349,300",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050945167&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청주여자고등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 청주시 청원구 충청대로107번길 82",
+          "school_code": "8000069"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602050945166",
+      "tender_no": "202602050945166",
+      "contract_name": "카훗 Kahoot 에듀테크 구독 라이선스 (1년) 외 2종",
+      "institution": "청주여자고등학교",
+      "counterpart": "(주)정원클래스",
+      "amount": "140,000",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050945166&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "청주여자고등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 청주시 청원구 충청대로107번길 82",
+          "school_code": "8000069"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602050942641",
+      "tender_no": "202602050942641",
+      "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월",
+      "institution": "진량중학교",
+      "counterpart": "가애림공간",
+      "amount": "700,000",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050942641&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "진량중학교",
+          "region": "경북",
+          "district": "경산시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도경산교육지원청",
+          "address": "경상북도 경산시 진량읍 대학로 1051",
+          "school_code": "8851099"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602020929307",
+      "tender_no": "202602020929307",
+      "contract_name": "디지컬기반 학생 맞춤교육 선도학교 에듀테크 구독료 구입비 견적 요청",
+      "institution": "사내고등학교",
+      "counterpart": "스트로베리필즈",
+      "amount": "6,865,650",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602020929307&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사내고등학교",
+          "region": "강원",
+          "district": "화천군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 화천군 사내면 포화로 1093",
+          "school_code": "7801138"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602050942008",
+      "tender_no": "202602050942008",
+      "contract_name": "교육용 에듀테크 구입",
+      "institution": "광주풍향초등학교",
+      "counterpart": "주식회사 에누마코리아",
+      "amount": "75,000",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050942008&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "광주",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602020928306",
+      "tender_no": "202602020928306",
+      "contract_name": "2025 단대초등학교 에듀테크 소프트웨어 구입",
+      "institution": "단대초등학교",
+      "counterpart": "행복장터",
+      "amount": "385,000",
+      "contract_date": "2026-02-05",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602020928306&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "단대초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 수정구 단대로 30",
+          "school_code": "7551056"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
       "import_count": 1
     },
     {
@@ -160648,6 +161379,147 @@
       "import_count": 1
     },
     {
+      "id": "202602040938905",
+      "tender_no": "202602040938905",
+      "contract_name": "에듀테크(HP 712 정품 플로터잉크 (노랑/대용량) 외 5종)",
+      "institution": "광신중학교",
+      "counterpart": "토너사랑",
+      "amount": "661,000",
+      "contract_date": "2026-02-04",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602040938905&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광신중학교",
+          "region": "서울",
+          "district": "관악구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시동작관악교육지원청",
+          "address": "서울특별시 관악구 광신길 141",
+          "school_code": "7132126"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602040938904",
+      "tender_no": "202602040938904",
+      "contract_name": "에듀테크(HP 712 정품 플로터잉크 (노랑/대용량) 외 5종)",
+      "institution": "광신중학교",
+      "counterpart": "(주) 키모",
+      "amount": "795,000",
+      "contract_date": "2026-02-04",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602040938904&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "중",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광신중학교",
+          "region": "서울",
+          "district": "관악구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시동작관악교육지원청",
+          "address": "서울특별시 관악구 광신길 141",
+          "school_code": "7132126"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602040937238",
+      "tender_no": "202602040937238",
+      "contract_name": "북크리에이터 Premium 라이센스 AI 에듀테크",
+      "institution": "양서초등학교",
+      "counterpart": "위드플러스",
+      "amount": "237,000",
+      "contract_date": "2026-02-04",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602040937238&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "양서초등학교",
+          "region": "경기",
+          "district": "양평군",
+          "education_office": "경기도교육청",
+          "support_office": "경기도양평교육지원청",
+          "address": "경기도 양평군 양서면 양서도곡길 8",
+          "school_code": "7731027"
+        },
+        {
+          "school_name": "양서초등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도포항교육지원청",
+          "address": "경상북도 포항시 북구 천마로 89",
+          "school_code": "8761258"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602040939618",
+      "tender_no": "202602040939618",
+      "contract_name": "덕문여고 자기주도학습 지원운영 에듀테크프로그램 구입(Snorkl)",
+      "institution": "덕문여자고등학교",
+      "counterpart": "주식회사 오늘배움",
+      "amount": "1,000,000",
+      "contract_date": "2026-02-04",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602040939618&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "덕문여자고등학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 수영구 연수로310번길 114",
+          "school_code": "7150130"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602040937808",
       "tender_no": "202602040937808",
       "contract_name": "엔트리 코딩교육용 DIY 전자피아노 기본형 만들기세트",
@@ -160779,6 +161651,39 @@
       "import_count": 1
     },
     {
+      "id": "202602020931255",
+      "tender_no": "202602020931255",
+      "contract_name": "2026년 디지털 기반 학생 맞춤교육 선도학교 에듀테크구글 에듀케이션 플러스 구독료 견적 요청",
+      "institution": "사내고등학교",
+      "counterpart": "(주)포인투랩",
+      "amount": "3,034,350",
+      "contract_date": "2026-02-03",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602020931255&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사내고등학교",
+          "region": "강원",
+          "district": "화천군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 화천군 사내면 포화로 1093",
+          "school_code": "7801138"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
       "id": "202602020928561",
       "tender_no": "202602020928561",
       "contract_name": "아두이노 코딩 십자형 나사 볼트 너트 M2 M2.5 M3 M4 M5 스텐 외 2종",
@@ -160822,6 +161727,62 @@
       "region_source": "",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 14:18",
+      "import_count": 1
+    },
+    {
+      "id": "202602020930599",
+      "tender_no": "202602020930599",
+      "contract_name": "유튜브 YouTube Premium 프리 미엄 에듀테크 12개월",
+      "institution": "서울미래초등학교",
+      "counterpart": "비케이 에듀",
+      "amount": "240,000",
+      "contract_date": "2026-02-02",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602020930599&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "초",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "first_imported_at": "2026-08-10 09:53",
+      "import_count": 1
+    },
+    {
+      "id": "202602020931712",
+      "tender_no": "202602020931712",
+      "contract_name": "디지털 기반 교육혁신 선도학교 운영을 위한 에듀테크 사용권 구입",
+      "institution": "협성고등학교",
+      "counterpart": "스피커블",
+      "amount": "9,600,000",
+      "contract_date": "2026-02-02",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602020931712&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.02.28",
+      "last_imported_at": "2026-08-10 09:53",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "협성고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 효성로 33",
+          "school_code": "7240105"
+        }
+      ],
+      "first_imported_at": "2026-08-10 09:53",
       "import_count": 1
     },
     {
