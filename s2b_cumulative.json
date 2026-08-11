@@ -29,7 +29,8 @@
       "first_imported_at": "2026-08-04 13:59",
       "import_count": 1,
       "business_place": "충청남도 홍성군 홍북읍 신대로 63 홍주초등학교 교무실",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202608031408455",
@@ -88,7 +89,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-04 13:59",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202608021407830",
@@ -112,7 +114,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-04 13:59",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202608021407829",
@@ -136,7 +139,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-04 13:59",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202608021407828",
@@ -160,7 +164,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-04 13:59",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202607291403972",
@@ -1094,7 +1099,8 @@
       "first_imported_at": "2026-07-31 13:06",
       "import_count": 1,
       "business_place": "전북 익산시 오산면 항쟁로 129 익산맑은샘유치원",
-      "support_office": ""
+      "support_office": "전북특별자치도익산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607271400896",
@@ -1922,7 +1928,8 @@
       "first_imported_at": "2026-07-29 09:02",
       "import_count": 2,
       "business_place": "전남 신안군 비금면 유옥우길 21-4 비금초등학교",
-      "support_office": ""
+      "support_office": "전라남도신안교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202607271400329",
@@ -2744,7 +2751,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-27 13:10",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청북도진천교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202607241398202",
@@ -2893,7 +2901,8 @@
       "first_imported_at": "2026-07-27 11:37",
       "import_count": 2,
       "business_place": "경북 성주군 선남면 선노로 185 도원초등학교",
-      "support_office": ""
+      "support_office": "경상북도성주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607241398390",
@@ -3058,7 +3067,8 @@
       "first_imported_at": "2026-07-24 08:22",
       "import_count": 2,
       "business_place": "경북 구미시 왕산로 90 (금오중학교)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607231396391",
@@ -3083,7 +3093,8 @@
       "first_imported_at": "2026-07-24 08:22",
       "import_count": 2,
       "business_place": "경북 구미시 왕산로 90 (금오중학교)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607231396390",
@@ -3108,7 +3119,8 @@
       "first_imported_at": "2026-07-24 08:22",
       "import_count": 2,
       "business_place": "경북 구미시 왕산로 90 (금오중학교)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607231396348",
@@ -5653,7 +5665,8 @@
       "first_imported_at": "2026-07-21 12:47",
       "import_count": 1,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607201386671",
@@ -5951,7 +5964,8 @@
       "first_imported_at": "2026-07-21 10:27",
       "import_count": 1,
       "business_place": "충북 진천군 진천읍 사석리 679-2번지, 성암초 교무실",
-      "support_office": ""
+      "support_office": "충청북도진천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607161382199",
@@ -6010,7 +6024,8 @@
       "first_imported_at": "2026-07-21 10:27",
       "import_count": 1,
       "business_place": "충청남도 홍성군 구항면 거북로 20 대정초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607201384909",
@@ -7111,7 +7126,8 @@
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 2,
       "business_place": "충남 금산군 남일면 봉황로 83 남일초등학교 5학년 교실",
-      "support_office": ""
+      "support_office": "충청남도금산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607151377745",
@@ -7172,15 +7188,15 @@
           "school_name": "전남공업고등학교",
           "region": "광주",
           "district": "광산구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 광산구 왕버들로322번길 26",
           "school_code": "7140358"
         }
       ],
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 2,
-      "support_office": "전남광주통합특별시교육청"
+      "support_office": "전라남도교육청"
     },
     {
       "id": "202607141373044",
@@ -8179,7 +8195,8 @@
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 2,
       "business_place": "경남 창녕군 부곡면 원동길 16 부곡초등학교",
-      "support_office": ""
+      "support_office": "창녕교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202607141373048",
@@ -8351,7 +8368,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "경남 양산시 웅상대로 1362 서창초등학교",
-      "support_office": ""
+      "support_office": "양산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607141373566",
@@ -8445,7 +8463,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경북 봉화군 봉화읍 예봉로 1231 상운초등학교",
-      "support_office": ""
+      "support_office": "경상북도봉화교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607141374665",
@@ -8470,7 +8489,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경북 봉화군 봉화읍 예봉로 1231 상운초등학교",
-      "support_office": ""
+      "support_office": "경상북도봉화교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607141373226",
@@ -9243,7 +9263,8 @@
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 2,
       "business_place": "서울 광진구 천호대로 664 선화예술중학교, 2층 행정실",
-      "support_office": ""
+      "support_office": "서울특별시성동광진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607101368416",
@@ -9361,7 +9382,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
-      "support_office": ""
+      "support_office": "전북특별자치도순창교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202607101368059",
@@ -9541,7 +9563,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 1,
       "business_place": "충남 당진시 대덕1로 80 대덕초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607101366235",
@@ -9585,7 +9608,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 1,
       "business_place": "충남 당진시 대덕1로 80 대덕초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606241329451",
@@ -10661,7 +10685,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 1,
       "business_place": "충남 당진시 대덕1로 80 대덕초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361536",
@@ -11156,7 +11181,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 5,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361482",
@@ -11184,7 +11210,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 5,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361480",
@@ -11212,7 +11239,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 5,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607091364403",
@@ -11306,7 +11334,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607091364074",
@@ -11433,7 +11462,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 서부로2198번길 22 영생고등학교",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607061353278",
@@ -12222,7 +12252,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 5,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607071356074",
@@ -12291,7 +12322,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361522",
@@ -12316,7 +12348,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361521",
@@ -12341,7 +12374,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361520",
@@ -12366,7 +12400,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361518",
@@ -12391,7 +12426,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361517",
@@ -12416,7 +12452,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081361516",
@@ -12441,7 +12478,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "강원 삼척시 도계읍 장원길 25 장원초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도삼척교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607081358040",
@@ -13366,7 +13404,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 1,
       "business_place": "강원 정선군 신동읍 조동6길 17-12 함백초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도정선교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607031349320",
@@ -13528,7 +13567,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 2,
       "business_place": "경기 부천시 상이로 22 상동고등학교 3층 교육연구부",
-      "support_office": ""
+      "support_office": "경기도부천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607061352138",
@@ -13744,7 +13784,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경상남도 거창군 거창읍 거열로4길 235 거창유치원 2층 원무실",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607061352101",
@@ -14269,7 +14310,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607031349237",
@@ -14362,7 +14404,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "전남 신안군 지도읍 서촌길 52-1 (읍내리,지도초등학교)",
-      "support_office": ""
+      "support_office": "전라남도신안교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202606181316542",
@@ -15249,7 +15292,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충남 예산군 예산읍 역전로134번길 40",
-      "support_office": ""
+      "support_office": "충청남도예산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607011343206",
@@ -15342,7 +15386,8 @@
       "first_imported_at": "2026-08-05 08:56",
       "import_count": 1,
       "business_place": "경기도 의왕시 내손순환로 136 백운고등학교 미래교육부",
-      "support_office": ""
+      "support_office": "경기도군포의왕교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607021345440",
@@ -15435,7 +15480,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 1,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607021347142",
@@ -15669,7 +15715,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "경북 봉화군 봉화읍 예봉로 1231 상운초등학교 교무실",
-      "support_office": ""
+      "support_office": "경상북도봉화교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202607011343036",
@@ -15796,7 +15843,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202606261336079",
@@ -15820,7 +15868,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202607011343461",
@@ -15913,7 +15962,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "경남 김해시 삼계중앙로5번길 24 (삼계동,화정초등학교)",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606301341319",
@@ -16213,7 +16263,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "부산 수영구 남천서로 14 남천유치원",
-      "support_office": ""
+      "support_office": "부산광역시해운대교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606301340212",
@@ -16547,7 +16598,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "충남 보령시 대천로 59 (대천동)",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606301339825",
@@ -18129,7 +18181,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 함안군 가야읍 함안대로 746 (산서리,중앙초등학교)",
-      "support_office": ""
+      "support_office": "함안교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606251332915",
@@ -18256,7 +18309,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 경주시 충현로 98 문화고등학교",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606251331758",
@@ -18281,7 +18335,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경남 거제시 장평1로 116 장평초등학교",
-      "support_office": ""
+      "support_office": "거제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606251332445",
@@ -18897,7 +18952,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "경상남도 양산시 물금읍 목화9길 8 오봉초등학교(행정실)",
-      "support_office": ""
+      "support_office": "양산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606241330018",
@@ -19058,7 +19114,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경기 고양시 일산동구 숲속마을로 51 풍산초등학교 3층 영어전담실",
-      "support_office": ""
+      "support_office": "경기도고양교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606231325743",
@@ -19765,7 +19822,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117  화원초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202606241329216",
@@ -19824,7 +19882,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 연수실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202606231327545",
@@ -20277,7 +20336,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606231325371",
@@ -20508,7 +20568,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 2,
       "business_place": "전남 해남군 화원면 청용길 117  교무실",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202606171315126",
@@ -21153,7 +21214,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "제주 제주시 우도면 우도로 156-11, 우도초중학교",
-      "support_office": ""
+      "support_office": "제주시교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606221323342",
@@ -21279,7 +21341,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "부산해운대교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202606151308865",
@@ -21809,7 +21872,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충청남도 천안시 동남구 목천읍 신계5길 27 택배보관함",
-      "support_office": ""
+      "support_office": "충청남도천안교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606171314056",
@@ -21834,7 +21898,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충청북도 충주시 대소원면 첨단산업4로 48 교무실",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606191320096",
@@ -21859,7 +21924,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경기 파주시 광탄면 심궁로 13 신산초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181319009",
@@ -22054,7 +22120,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경기 안산시 단원구 초지동 603번지",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606191320444",
@@ -22113,7 +22180,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "경남 남해군 삼동면 동부대로1858번길 4  [지족초등학교] 교무실",
-      "support_office": ""
+      "support_office": "남해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181317960",
@@ -22499,7 +22567,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 2,
       "business_place": "충청남도 청양군 비봉면 충절로 1962-7 가남초등학교",
-      "support_office": ""
+      "support_office": "충청남도청양교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181316714",
@@ -22594,7 +22663,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 2,
       "business_place": "경기도 화성시 향남읍 발안서로 21 1층 택배보관함",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181316470",
@@ -22620,7 +22690,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 2,
       "business_place": "경기도 화성시 향남읍 발안서로 21 1층 택배보관함",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181317759",
@@ -22896,7 +22967,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "충청남도 천안시 동남구 목천읍 신계5길 27 택배보관함",
-      "support_office": ""
+      "support_office": "충청남도천안교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606181316956",
@@ -23685,7 +23757,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "충남 홍성군 장곡면 도산1길 2 장곡초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606151310026",
@@ -23777,7 +23850,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울시동부교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202606161312457",
@@ -23958,7 +24032,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 계룡시 금암동 191번지",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161310762",
@@ -24259,7 +24334,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312531",
@@ -24284,7 +24360,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312530",
@@ -24309,7 +24386,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312528",
@@ -24334,7 +24412,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312527",
@@ -24359,7 +24438,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 새천년대로474번길 13 (대잠동세명고등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312754",
@@ -24924,7 +25004,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "충청남도 청양군 비봉면 충절로 1962-7 가남초등학교",
-      "support_office": ""
+      "support_office": "충청남도청양교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161312090",
@@ -25012,7 +25093,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 2,
       "business_place": "경남 거창군 고제면 궁항리 1826번지",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606151309235",
@@ -25105,7 +25187,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "충청남도 청양군 비봉면 충절로 1962-7 가남초등학교",
-      "support_office": ""
+      "support_office": "충청남도청양교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606161310839",
@@ -26030,7 +26113,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "충북 음성군 원남면 하초로 35-4(하당리 433)",
-      "support_office": ""
+      "support_office": "충청북도음성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606151308083",
@@ -26294,7 +26378,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "부산 강서구 과학산단2로20번길 55)(지사동)녹산유치원",
-      "support_office": ""
+      "support_office": "부산광역시북부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606111302806",
@@ -26397,7 +26482,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081291433",
@@ -26866,7 +26952,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 함안군 가야읍 함안대로 746 (산서리,중앙초등학교)",
-      "support_office": ""
+      "support_office": "함안교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606101298050",
@@ -27003,7 +27090,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606111301873",
@@ -27028,7 +27116,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606111301872",
@@ -27053,7 +27142,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606111301870",
@@ -27078,7 +27168,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606111301716",
@@ -27208,7 +27299,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "경기도 남양주시 진접읍 장현천로 37 장현초등학교",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606101300958",
@@ -27387,7 +27479,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도무안교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202606111302266",
@@ -27652,7 +27745,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 함안군 가야읍 함안대로 746 (산서리,중앙초등학교)",
-      "support_office": ""
+      "support_office": "함안교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606101300029",
@@ -29327,7 +29421,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경기 파주시 광탄면 심궁로 13 신산초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606101298440",
@@ -30323,7 +30418,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081291901",
@@ -31289,7 +31385,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 안동시 경동로 205-33 (송현동,경안중학교)",
-      "support_office": ""
+      "support_office": "경상북도안동교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081290635",
@@ -31314,7 +31411,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 안동시 경동로 205-33 (송현동,경안중학교)",
-      "support_office": ""
+      "support_office": "경상북도안동교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081292660",
@@ -32320,7 +32418,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "경북 영주시 구성로150번길 45 대영고등학교 행정실",
-      "support_office": ""
+      "support_office": "경상북도영주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081292702",
@@ -32382,7 +32481,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 4,
       "business_place": "경남 거제시 탑곡로4길 24 아주초등학교",
-      "support_office": ""
+      "support_office": "거제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081290835",
@@ -32410,7 +32510,8 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 4,
       "business_place": "경남 거제시 탑곡로4길 24 아주초등학교",
-      "support_office": ""
+      "support_office": "거제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081291950",
@@ -33320,7 +33421,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "경북 영천시 안야사길 13 영동중학교",
-      "support_office": ""
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081292820",
@@ -33485,7 +33587,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 서부로2198번길 22 영생고등학교",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606081292286",
@@ -33952,7 +34055,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교 교무실",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606051286887",
@@ -33977,7 +34081,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교 교무실",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606051288199",
@@ -35460,7 +35565,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606041285120",
@@ -35649,7 +35755,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 1,
       "business_place": "충남 논산시 연무읍 연무로160번길 26-2",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606011276832",
@@ -36425,7 +36532,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "충청북도 충주시 대소원면 첨단산업4로 48 교무실",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606021283027",
@@ -37322,7 +37430,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충청북도 충주시 대소원면 첨단산업4로 48 교무실",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605291274975",
@@ -38524,8 +38633,8 @@
           "school_name": "보성초등학교",
           "region": "광주",
           "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시보성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도보성교육지원청",
           "address": "전남광주통합특별시 보성군 보성읍 송재로 161-8",
           "school_code": "8602014"
         },
@@ -38542,7 +38651,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "전남 보성군 보성읍 송재로 161-8",
-      "support_office": ""
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202606011278435",
@@ -38932,7 +39042,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "충청북도 충주시 대소원면 첨단산업4로 48 교무실",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606011278764",
@@ -39568,8 +39679,8 @@
           "school_name": "한천초등학교",
           "region": "광주",
           "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도화순교육지원청",
           "address": "전남광주통합특별시 화순군 한천면 청계길 26",
           "school_code": "8612024"
         },
@@ -39586,7 +39697,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 3,
       "business_place": "전남 화순군 한천면 청계길 26 한천초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202606011275559",
@@ -39995,7 +40107,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 1,
       "business_place": "충청북도 충주시 대소원면 첨단산업4로 48 교무실",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606011278927",
@@ -40090,7 +40203,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "충남 서천군 종천면 종천리 209번지",
-      "support_office": ""
+      "support_office": "충청남도서천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202606011275597",
@@ -41015,8 +41129,8 @@
           "school_name": "한천초등학교",
           "region": "광주",
           "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도화순교육지원청",
           "address": "전남광주통합특별시 화순군 한천면 청계길 26",
           "school_code": "8612024"
         },
@@ -41033,7 +41147,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 2,
       "business_place": "전남 화순군 한천면 청계길 26 한천초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202606011276473",
@@ -42499,7 +42614,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경남 거제시 탑곡로4길 24 아주초등학교",
-      "support_office": ""
+      "support_office": "거제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605281270963",
@@ -45831,7 +45947,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "경기 안산시 단원구 초지동 603번지",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605271265168",
@@ -45856,7 +45973,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "경기 안산시 단원구 초지동 603번지",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605271266801",
@@ -46627,7 +46745,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605261262419",
@@ -46956,7 +47075,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 2,
       "business_place": "경남 거창군 신원면 신차로 3053 신원초등학교 교무실",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605261262416",
@@ -47185,7 +47305,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "경남 거창군 신원면 신차로 3053 신원초등학교 교무실",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605261263374",
@@ -47210,7 +47331,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "경남 거창군 신원면 신차로 3053 신원초등학교 교무실",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231187628",
@@ -47303,7 +47425,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "경기도 안성시 서운면 서운초교길 24 서운초등학교 행정실",
-      "support_office": ""
+      "support_office": "경기도안성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605221260732",
@@ -47382,8 +47505,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -47391,7 +47514,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605261263399",
@@ -47469,7 +47593,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "경남 거창군 신원면 신차로 3053 신원초등학교 교무실",
-      "support_office": ""
+      "support_office": "거창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605261261081",
@@ -48302,7 +48427,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211257128",
@@ -48327,7 +48453,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605191248770",
@@ -48499,7 +48626,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경기 화성시 병점동 824번지",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605201253778",
@@ -48992,7 +49120,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "충남 홍성군 서부면 서부로 505 서부초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605221259820",
@@ -49070,7 +49199,8 @@
       "first_imported_at": "2026-07-24 15:12",
       "import_count": 1,
       "business_place": "충남 서천군 기산면 기산길 107 기산초등학교",
-      "support_office": ""
+      "support_office": "충청남도서천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211256124",
@@ -49198,7 +49328,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 2,
       "business_place": "충청남도 당진시 신평면 원머리로 7 신평초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211255430",
@@ -49602,7 +49733,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211257131",
@@ -49627,7 +49759,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211257130",
@@ -49652,7 +49785,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605211256413",
@@ -51579,7 +51713,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "제주특별자치도 서귀포시 토평로 43 서귀포시교육지원청 교수학습지원과 (토평동)",
-      "support_office": ""
+      "support_office": "서귀포시교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605201250926",
@@ -52004,7 +52139,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "충남 금산군 남일면 봉황로 83 남일초등학교",
-      "support_office": ""
+      "support_office": "충청남도금산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605191248771",
@@ -52863,8 +52999,8 @@
           "school_name": "장흥초등학교",
           "region": "광주",
           "district": "장흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장흥교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장흥교육지원청",
           "address": "전남광주통합특별시 장흥군 장흥읍 의향길 23",
           "school_code": "8622011"
         }
@@ -52872,7 +53008,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "전남 장흥군 장흥읍 의향길 23",
-      "support_office": ""
+      "support_office": "전라남도장흥교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605191249576",
@@ -54673,7 +54810,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202605151240596",
@@ -54922,8 +55060,8 @@
           "school_name": "장흥초등학교",
           "region": "광주",
           "district": "장흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장흥교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장흥교육지원청",
           "address": "전남광주통합특별시 장흥군 장흥읍 의향길 23",
           "school_code": "8622011"
         }
@@ -54931,7 +55069,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "전남 장흥군 장흥읍 의향길 23",
-      "support_office": ""
+      "support_office": "전라남도장흥교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605191248487",
@@ -54956,7 +55095,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "business_place": "전남 영암군 신북면 간은정로 67",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605191247169",
@@ -55871,7 +56011,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "충북 음성군 원남면 하초로 35-4(하당리 433)",
-      "support_office": ""
+      "support_office": "충청북도음성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605151239969",
@@ -56305,8 +56446,8 @@
           "school_name": "외서초등학교",
           "region": "광주",
           "district": "순천시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시순천교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도순천교육지원청",
           "address": "전남광주통합특별시 순천시 외서면 반월로 6",
           "school_code": "8522053"
         },
@@ -56323,7 +56464,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "전남 순천시 외서면 반월로 6 외서초등학교",
-      "support_office": ""
+      "support_office": "전라남도순천교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605181242332",
@@ -56833,7 +56975,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605151240240",
@@ -56857,7 +57000,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605151239073",
@@ -58281,7 +58425,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경기 김포시 월곶면 애기봉로11번길 86 분진중학교",
-      "support_office": ""
+      "support_office": "경기도김포교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216501",
@@ -60673,7 +60818,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 구미시 왕산로 90 (금오중학교) 교무실 서혜진",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605131230879",
@@ -60863,7 +61009,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "전라북도 정읍시 학산로 69 한솔초등학교 (상동) 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도정읍교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121229812",
@@ -61557,7 +61704,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117 교무실",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202605121230361",
@@ -61582,7 +61730,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117  교무실",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202605121230317",
@@ -61644,7 +61793,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전라북도 정읍시 학산로 69 한솔초등학교 (상동) 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도정읍교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121229901",
@@ -61706,7 +61856,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전라북도 정읍시 학산로 69 한솔초등학교 (상동) 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도정읍교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605131231310",
@@ -61852,7 +62003,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "충남 당진시 대덕1로 80 대덕초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605111225935",
@@ -62162,7 +62314,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울시북부교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605121228789",
@@ -62187,7 +62340,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 1층 택배보관함",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121229343",
@@ -62212,7 +62366,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "충남 당진시 송산면 상거길  19-1, 송산초등학교(김종훈 선생님)",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121227043",
@@ -62237,7 +62392,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경북 성주군 용암면 운용로 1340-9 대동초등학교",
-      "support_office": ""
+      "support_office": "경상북도성주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121226770",
@@ -62531,7 +62687,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
-      "support_office": ""
+      "support_office": "강원특별자치도횡성교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605121230367",
@@ -62661,7 +62818,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "전남 영암군 군서면 왕인로 509 구림초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605111223816",
@@ -62783,8 +62941,8 @@
           "school_name": "장흥중학교",
           "region": "광주",
           "district": "장흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장흥교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장흥교육지원청",
           "address": "전남광주통합특별시 장흥군 장흥읍 장흥로 49-1",
           "school_code": "8622003"
         },
@@ -62801,7 +62959,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "전남 장흥군 장흥읍 장흥로 49-1 (건산리) 장흥중학교 1층 교무실",
-      "support_office": ""
+      "support_office": "전라남도장흥교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605121226562",
@@ -63258,7 +63417,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경남 통영시 도산면 도산일주로 25 (법송리,도산초등학교)",
-      "support_office": ""
+      "support_office": "통영교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221427",
@@ -64063,7 +64223,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 1층 행정실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605121227583",
@@ -64620,7 +64781,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경기 용인시 수지구 상현로42번길 26-8 서원중학교",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605111222807",
@@ -64645,7 +64807,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경기 용인시 수지구 상현로42번길 26-8 서원중학교",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605041209301",
@@ -64807,7 +64970,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "강원 홍천군 서석면 구룡령로 5931 원당초등학교 교육행정실",
-      "support_office": ""
+      "support_office": "강원특별자치도홍천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605111224174",
@@ -64903,7 +65067,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 3,
       "business_place": "강원 춘천시 남산면 방곡리 한치로59",
-      "support_office": ""
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605111224183",
@@ -65747,7 +65912,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 2,
       "business_place": "전북 군산시 회현면 오봉길 55 오봉초등학교",
-      "support_office": ""
+      "support_office": "전북특별자치도군산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605111222161",
@@ -66801,7 +66967,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221277",
@@ -66826,7 +66993,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221246",
@@ -66851,7 +67019,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221134",
@@ -66876,7 +67045,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221133",
@@ -66901,7 +67071,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221132",
@@ -66926,7 +67097,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081221131",
@@ -66951,7 +67123,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "경북 경주시 용담로104번길 43-4 (황성동 539-1) 유림초등학교 6학년 영어실",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271195061",
@@ -67127,7 +67300,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경기도 군포시 고산로 470 신흥초등학교 (산본동)",
-      "support_office": ""
+      "support_office": "경기도군포의왕교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071218134",
@@ -68027,7 +68201,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "충남 홍성군 서부면 서부로 505 서부초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081219729",
@@ -68052,7 +68227,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "충남 홍성군 서부면 서부로 505 서부초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081218720",
@@ -68096,8 +68272,8 @@
           "school_name": "기산초등학교",
           "region": "광주",
           "district": "함평군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시함평교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도함평교육지원청",
           "address": "전남광주통합특별시 함평군 함평읍 기산길 63",
           "school_code": "8672010"
         }
@@ -68105,7 +68281,8 @@
       "first_imported_at": "2026-07-26 18:32",
       "import_count": 1,
       "business_place": "전남 함평군 함평읍 기각리 737번지 기산초 교무실(김건우)",
-      "support_office": ""
+      "support_office": "전라남도함평교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605081221548",
@@ -68232,7 +68409,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "충남 홍성군 서부면 서부로 505 서부초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605081219585",
@@ -68395,7 +68573,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 송정로21번길 42 (송죽동)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216924",
@@ -68420,7 +68599,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 송정로21번길 42 (송죽동)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216923",
@@ -68445,7 +68625,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 송정로21번길 42 (송죽동)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071217082",
@@ -68762,8 +68943,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -68771,7 +68952,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605061210801",
@@ -68832,7 +69014,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
       "business_place": "경남 남해군 삼동면 동부대로1858번길 4  [지족초등학교]",
-      "support_office": ""
+      "support_office": "남해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216888",
@@ -68858,7 +69041,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경기도 남양주시 진접읍 장현천로 37 장현초등학교",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216039",
@@ -69745,7 +69929,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라북도남원교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605071216624",
@@ -70045,7 +70230,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 서부로2198번길 22 영생고등학교 교무실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605071216020",
@@ -70080,8 +70266,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -70089,7 +70275,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605071217323",
@@ -70124,8 +70311,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -70133,7 +70320,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605071216061",
@@ -70168,8 +70356,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -70177,7 +70365,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605071217422",
@@ -70270,7 +70459,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 창원시 마산합포구 성호동 성호동 4길 21",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061211326",
@@ -70339,8 +70529,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -70348,7 +70538,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605071215977",
@@ -70383,8 +70574,8 @@
           "school_name": "삼호중학교",
           "region": "광주",
           "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도영암교육지원청",
           "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
           "school_code": "8652011"
         }
@@ -70392,7 +70583,8 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "business_place": "전남 영암군 삼호읍 용앙리 262",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605071215828",
@@ -70616,7 +70808,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 2층 미래형과학실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061211299",
@@ -70641,7 +70834,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 2층 미래형과학실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061211298",
@@ -70666,7 +70860,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 2층 미래형과학실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061211297",
@@ -70691,7 +70886,8 @@
       "first_imported_at": "2026-08-07 12:34",
       "import_count": 1,
       "business_place": "경기도 수원시 영통구 광교호수공원로 100 2층 미래형과학실",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061212136",
@@ -71613,7 +71809,8 @@
       "first_imported_at": "2026-07-24 14:24",
       "import_count": 3,
       "business_place": "경상남도 남해군 남면 남서대로748번길 7 남명초등학교",
-      "support_office": ""
+      "support_office": "남해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061211498",
@@ -72430,7 +72627,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 창원시 마산합포구 성호동 성호동 4길 21",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061210950",
@@ -72455,7 +72653,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 창원시 마산합포구 성호동 성호동 4길 21",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061210949",
@@ -72480,7 +72679,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경남 창원시 마산합포구 성호동 성호동 4길 21",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605061212831",
@@ -72524,8 +72724,8 @@
           "school_name": "기산초등학교",
           "region": "광주",
           "district": "함평군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시함평교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도함평교육지원청",
           "address": "전남광주통합특별시 함평군 함평읍 기산길 63",
           "school_code": "8672010"
         }
@@ -72533,7 +72733,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "전남 함평군 함평읍 기각리 737번지 기산초 교무실(김건우)",
-      "support_office": ""
+      "support_office": "전라남도함평교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202605061212205",
@@ -72558,7 +72759,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
       "business_place": "경북 칠곡군 북삼읍 북삼로8길 10 인평초등학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604301206811",
@@ -72616,7 +72818,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202605061211775",
@@ -73004,7 +73207,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202605041209254",
@@ -73337,7 +73541,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경상북도 포항시 북구 우창로 43 유성여자고등학교 (우현동)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291205402",
@@ -74069,7 +74274,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상북도김천교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604271194343",
@@ -74161,7 +74367,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경기도광주하남교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604291205176",
@@ -77671,7 +77878,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경기 평택시 팽성읍 계성새싹길 85 , 계성초등학교",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291203096",
@@ -77697,7 +77905,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "충남 당진시 송산면 당산2로 185 당산초등학교",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291203357",
@@ -77824,7 +78033,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원 춘천시 남산면 방곡리 한치로59",
-      "support_office": ""
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291204604",
@@ -78102,7 +78312,8 @@
       "first_imported_at": "2026-07-31 15:26",
       "import_count": 2,
       "business_place": "경기 평택시 팽성읍 계성새싹길 85 , 계성초등학교 과학실",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291201695",
@@ -78127,7 +78338,8 @@
       "first_imported_at": "2026-07-31 15:26",
       "import_count": 2,
       "business_place": "경기 평택시 팽성읍 계성새싹길 85 , 계성초등학교 과학실",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291201694",
@@ -78152,7 +78364,8 @@
       "first_imported_at": "2026-07-31 15:26",
       "import_count": 2,
       "business_place": "경기 평택시 팽성읍 계성새싹길 85 , 계성초등학교 과학실",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291204015",
@@ -78470,7 +78683,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "충북 청주시 상당구 용암로 6 교동초등학교",
-      "support_office": ""
+      "support_office": "충청북도청주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291203907",
@@ -78495,7 +78709,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604291205045",
@@ -78657,7 +78872,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경북 구미시 송정대로6길 72-6 송정초등학교 본관동 1층 택배보관함",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291202495",
@@ -78818,7 +79034,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 안산시 단원구 와동 846번지",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291204873",
@@ -78843,7 +79060,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "강원도 원주시 남산로 181 중앙초등학교 (학성동)",
-      "support_office": ""
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604291202724",
@@ -79506,7 +79724,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교 3학년 교실",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604281198087",
@@ -81157,7 +81376,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271196664",
@@ -81182,7 +81402,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604281200941",
@@ -81547,7 +81768,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경기 안산시 상록구 일동 601번지",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604281199561",
@@ -82225,7 +82447,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 남양주시 화도읍 비룡로379번길 3,  가곡초등학교",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604281198698",
@@ -82522,7 +82745,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "경남 창원시 마산합포구 성호동 성호동 4길 21",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604281199904",
@@ -82908,7 +83132,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기도 안양시 동안구 경수대로707번길 27 호계초등학교 (호계동)",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271196063",
@@ -83174,7 +83399,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 4,
       "business_place": "경기 파주시 광탄면 혜음로1128번길 16 광탄중학교 교무실",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271195911",
@@ -83453,8 +83679,8 @@
           "school_name": "도곡초등학교",
           "region": "광주",
           "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도화순교육지원청",
           "address": "전남광주통합특별시 화순군 도곡면 천암1길 71",
           "school_code": "8612018"
         }
@@ -83462,7 +83688,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전남 화순군 도곡면 천암1길 71 도곡초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604271196030",
@@ -83763,7 +83990,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울특별시강남서초교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604271194292",
@@ -84389,7 +84617,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경기 가평군 조종면 조종새싹로 13-9 .",
-      "support_office": ""
+      "support_office": "경기도가평교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604241192608",
@@ -84903,7 +85132,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271196666",
@@ -84928,7 +85158,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604271196665",
@@ -84953,7 +85184,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 포항시 남구 효성로30번길 5 (효자동,효자초등학교)",
-      "support_office": ""
+      "support_office": "경상북도포항교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231186811",
@@ -85561,8 +85793,8 @@
           "school_name": "옥곡초등학교",
           "region": "광주",
           "district": "광양시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시광양교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도광양교육지원청",
           "address": "전남광주통합특별시 광양시 옥곡면 옥진로 623",
           "school_code": "8552025"
         },
@@ -85579,7 +85811,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "전남 광양시 옥곡면 옥진로 623 옥곡초등학교 병설유치원",
-      "support_office": ""
+      "support_office": "전라남도광양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604271194082",
@@ -87012,8 +87245,8 @@
           "school_name": "기산초등학교",
           "region": "광주",
           "district": "함평군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시함평교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도함평교육지원청",
           "address": "전남광주통합특별시 함평군 함평읍 기산길 63",
           "school_code": "8672010"
         }
@@ -87021,7 +87254,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전남 함평군 함평읍 기각리 737번지 기산초 교무실(김건우)",
-      "support_office": ""
+      "support_office": "전라남도함평교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604241189262",
@@ -88931,7 +89165,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 2,
       "business_place": "경상남도 남해군 남면 남서대로748번길 7 남명초등학교",
-      "support_office": ""
+      "support_office": "남해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604241190960",
@@ -89771,8 +90006,8 @@
           "school_name": "예당고등학교",
           "region": "광주",
           "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 보성군 득량면 예당길 155-12",
           "school_code": "7140231"
         }
@@ -89780,7 +90015,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전남 보성군 득량면 예당길 155-12 (예당리)",
-      "support_office": ""
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604231186266",
@@ -90012,7 +90248,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 4,
       "business_place": "강원도 원주시 남산로 181 중앙초등학교 (학성동)",
-      "support_office": ""
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231186782",
@@ -90252,7 +90489,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 송정로21번길 42 (송죽동)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231185544",
@@ -90648,7 +90886,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경기 안산시 상록구 석호로 81 성안중학교 본관1층 택배보관실(최동희)",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231188841",
@@ -90672,7 +90911,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도담양교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604231186895",
@@ -91056,7 +91296,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "충남 금산군 남일면 봉황로 83 남일초등학교",
-      "support_office": ""
+      "support_office": "충청남도금산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604221183134",
@@ -91110,7 +91351,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "충남 논산시 성동면 성동로240번길 30 (삼산리,성동초등학교) 행정실",
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231186025",
@@ -91170,7 +91412,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경남 진주시 의병로 265 본관 1층 교무실",
-      "support_office": ""
+      "support_office": "진주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231185824",
@@ -91309,7 +91552,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "부산 수영구 남천서로 14 남천유치원",
-      "support_office": ""
+      "support_office": "부산광역시해운대교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171169538",
@@ -91470,7 +91714,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경남 진주시 의병로 265 본관 1층 교무실",
-      "support_office": ""
+      "support_office": "진주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604231187896",
@@ -92924,7 +93169,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604221183950",
@@ -93017,7 +93263,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 안산시 상록구 석호로 81 성안중학교 이삭",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604221182731",
@@ -94398,8 +94645,8 @@
           "school_name": "문덕초등학교",
           "region": "광주",
           "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시보성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도보성교육지원청",
           "address": "전남광주통합특별시 보성군 문덕면 동소산길 129-10",
           "school_code": "8602025"
         },
@@ -94416,7 +94663,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
       "business_place": "전남 보성군 문덕면 동소산길 129-10",
-      "support_office": ""
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604211179553",
@@ -94442,7 +94690,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "강원 홍천군 서석면 구룡령로 5931 원당초등학교 교육행정실",
-      "support_office": ""
+      "support_office": "강원특별자치도홍천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604221180793",
@@ -94469,7 +94718,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 3,
       "business_place": "전남 광양시 태인동 1437번지",
-      "support_office": ""
+      "support_office": "전라남도광양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604211180429",
@@ -94682,7 +94932,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "강원도 원주시 남산로 181 중앙초등학교 (학성동)",
-      "support_office": ""
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211178757",
@@ -95110,7 +95361,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원도 원주시 남산로 181 중앙초등학교 (학성동)",
-      "support_office": ""
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604221184256",
@@ -95327,8 +95579,8 @@
           "school_name": "보성초등학교",
           "region": "광주",
           "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시보성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도보성교육지원청",
           "address": "전남광주통합특별시 보성군 보성읍 송재로 161-8",
           "school_code": "8602014"
         },
@@ -95345,7 +95597,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 보성군 보성읍 송재로 161-8",
-      "support_office": ""
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604221182491",
@@ -95982,7 +96235,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "경남 하동군 고전면 범아리 318번지",
-      "support_office": ""
+      "support_office": "하동교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211179230",
@@ -97291,7 +97545,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "강원 화천군 하남면 용암리 용화산로 1325",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211175758",
@@ -97989,7 +98244,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경기 의정부시 장곡로226번길 132 동암중학교 행정실",
-      "support_office": ""
+      "support_office": "경기도의정부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211177900",
@@ -98184,7 +98440,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "충청남도 보령시 주교면 토정로 796-52",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211175717",
@@ -99137,7 +99394,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "경북 칠곡군 북삼읍 북삼로8길 10 인평초등학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201173701",
@@ -99163,7 +99421,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "충청남도 보령시 주교면 토정로 796-52",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211179768",
@@ -99257,7 +99516,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 칠곡군 북삼읍 북삼로8길 10 인평초등학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201171963",
@@ -99903,7 +100163,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "충청남도 보령시 주교면 토정로 796-52",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211175795",
@@ -99928,7 +100189,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "충청남도 보령시 주교면 토정로 796-52  송학초등학교",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604211175959",
@@ -100321,7 +100583,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "충북 충주시 신대2길 12",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201175218",
@@ -101924,7 +102187,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "충청남도 홍성군 홍북읍 신대로 63 홍주초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604141157183",
@@ -102398,7 +102662,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "충북 진천군 진천읍 사석리 679-2번지, 성암초등학교",
-      "support_office": ""
+      "support_office": "충청북도진천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201171820",
@@ -102424,7 +102689,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경북 칠곡군 북삼읍 북삼로8길 10 인평초등학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201174152",
@@ -103147,7 +103413,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "충남 당진시 신평면 솔안말길 61-40 신평중학교 행정실",
-      "support_office": ""
+      "support_office": "충청남도당진교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171167192",
@@ -103275,7 +103542,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경기 김포시 통진읍 마송리 마송초등학교(이은찬)",
-      "support_office": ""
+      "support_office": "경기도김포교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171168593",
@@ -103378,8 +103646,8 @@
           "school_name": "금성중학교",
           "region": "광주",
           "district": "나주시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시나주교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도나주교육지원청",
           "address": "전남광주통합특별시 나주시 건재로 41",
           "school_code": "8532015"
         },
@@ -103396,7 +103664,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "전남 나주시 건재로 41 금성중학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도나주교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604201172574",
@@ -103706,7 +103975,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경기도 남양주시 진접읍 금강로1576번길 12 1층 행정실",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201172474",
@@ -103731,7 +104001,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "충북 진천군 진천읍 사석리 679-2번지, 성암초",
-      "support_office": ""
+      "support_office": "충청북도진천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201171795",
@@ -104286,7 +104557,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "충북 진천군 진천읍 사석리 679-2번지, 성암초등학교",
-      "support_office": ""
+      "support_office": "충청북도진천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201175084",
@@ -104311,7 +104583,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "충청남도 홍성군 구항면 거북로 20 대정초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201173625",
@@ -104438,7 +104711,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "경북 칠곡군 북삼읍 북삼로8길 10 인평초등학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201172483",
@@ -104594,7 +104868,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "전북특별자치도 김제시 금산면 모악로 47 금산고등학교 행정실",
-      "support_office": ""
+      "support_office": "전북특별자치도김제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201172733",
@@ -104619,7 +104894,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "전북특별자치도 김제시 금산면 모악로 47 금산고등학교 행정실",
-      "support_office": ""
+      "support_office": "전북특별자치도김제교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604201174498",
@@ -104644,7 +104920,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기도 남양주시 진접읍 금강로1576번길 12 1층 행정실",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171168762",
@@ -105401,7 +105678,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도구례교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604171168791",
@@ -107600,7 +107878,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "충북 음성군 삼성면 덕호로 39 삼성중학교",
-      "support_office": ""
+      "support_office": "충청북도음성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171167315",
@@ -107659,7 +107938,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "충북 충주시 신대2길 12",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604171168094",
@@ -109180,7 +109460,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161163302",
@@ -109956,7 +110237,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "전북 군산시 옥산면 여로2길 40 옥산초등학교",
-      "support_office": ""
+      "support_office": "전북특별자치도군산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101146136",
@@ -110071,8 +110353,8 @@
           "school_name": "광남고등학교",
           "region": "광주",
           "district": "나주시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 나주시 남평읍 남평향교길 19",
           "school_code": "7140225"
         }
@@ -110080,7 +110362,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "전남 나주시 남평읍 교원리 216-2(남평향교길 19)",
-      "support_office": ""
+      "support_office": "전라남도나주교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604151161336",
@@ -110730,7 +111013,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "충남 홍성군 홍성읍 문화로 78 (오관리,홍주고등학교 행정실)",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604161164289",
@@ -110980,7 +111264,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 2,
       "business_place": "경기 용인시 기흥구 흥덕1로62번길 26 (영덕동,흥덕초등학교)",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151161748",
@@ -111177,7 +111462,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161165797",
@@ -111202,7 +111488,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161165911",
@@ -111227,7 +111514,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161164793",
@@ -111286,7 +111574,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604101147509",
@@ -111617,7 +111906,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161165589",
@@ -112220,7 +112510,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "전남 해남군 화원면 청용길 117",
-      "support_office": ""
+      "support_office": "전라남도해남교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604161162728",
@@ -112245,7 +112536,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "충북 충주시 신대2길 12",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604161162726",
@@ -112270,7 +112562,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "충북 충주시 신대2길 12",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604161165739",
@@ -112534,7 +112827,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전북 전주시 덕진구 여산로 119(여의동) 전주늘품유치원 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도전주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151158303",
@@ -112559,7 +112853,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전북 전주시 덕진구 여산로 119(여의동) 전주늘품유치원 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도전주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151158307",
@@ -112584,7 +112879,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전북 전주시 덕진구 여산로 119(여의동) 전주늘품유치원 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도전주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604141157625",
@@ -113197,7 +113493,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경남 창녕군 부곡면 원동길 16 부곡초등학교",
-      "support_office": ""
+      "support_office": "창녕교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202604151161587",
@@ -113222,7 +113519,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "경기 양평군 강하면 왕창리 왕창부로길 74-3",
-      "support_office": ""
+      "support_office": "경기도양평교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151160736",
@@ -114265,7 +114563,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "서울 성북구 성북로14가길 23",
-      "support_office": ""
+      "support_office": "서울특별시성북강북교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151159362",
@@ -114546,7 +114845,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울특별시동작관악교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604151158691",
@@ -115115,7 +115415,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기도 안성시 대덕면 내리1길 25 행정실",
-      "support_office": ""
+      "support_office": "경기도안성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604151160928",
@@ -115159,8 +115460,8 @@
           "school_name": "보성초등학교",
           "region": "광주",
           "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시보성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도보성교육지원청",
           "address": "전남광주통합특별시 보성군 보성읍 송재로 161-8",
           "school_code": "8602014"
         },
@@ -115177,7 +115478,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "전남 보성군 보성읍 송재로 161-8",
-      "support_office": ""
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604101146931",
@@ -115639,7 +115941,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 안산시 단원구 한양대학로 183 송호초등학교",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604141157535",
@@ -116628,7 +116931,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "경북 영주시 광복로 17 (영주동,영광중학교)",
-      "support_office": ""
+      "support_office": "경상북도영주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604141156365",
@@ -117516,7 +117820,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 아리 화천새싹길 57  화천유치원(교수학습)",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604141155371",
@@ -117840,7 +118145,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경기 수원시 영통구 원천동 595번지 매원초등학교",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131151080",
@@ -118469,7 +118775,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "경북 영주시 풍기읍 기주로 110 풍기초등학교",
-      "support_office": ""
+      "support_office": "경상북도영주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131153348",
@@ -118547,7 +118854,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "경기 의정부시 장곡로 206(장암동 37-52) 동암초등학교",
-      "support_office": ""
+      "support_office": "경기도의정부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101147198",
@@ -119229,7 +119537,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "제주특별자치도 제주시 동화로1길 44 2층 행정실 (화북일동)",
-      "support_office": ""
+      "support_office": "제주시교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131149982",
@@ -120997,7 +121306,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경기 파주시 광탄면 심궁로 13 신산초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131152929",
@@ -121065,7 +121375,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상북도성주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604101148761",
@@ -121659,7 +121970,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 영천시 안야사길 13 영동중학교",
-      "support_office": ""
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131152790",
@@ -121684,7 +121996,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 영천시 안야사길 13 영동중학교",
-      "support_office": ""
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131152789",
@@ -121709,7 +122022,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 영천시 안야사길 13 영동중학교",
-      "support_office": ""
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131152788",
@@ -121734,7 +122048,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 영천시 안야사길 13 영동중학교",
-      "support_office": ""
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604131150137",
@@ -121792,7 +122107,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청북도보은교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604131150243",
@@ -123427,7 +123743,8 @@
       "first_imported_at": "2026-07-23 18:27",
       "import_count": 4,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101146879",
@@ -123486,7 +123803,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "충청남도 홍성군 홍북읍 신대로 63 홍주초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101148103",
@@ -123511,7 +123829,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "충청남도 홍성군 홍북읍 신대로 63 홍주초등학교",
-      "support_office": ""
+      "support_office": "충청남도홍성교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101148169",
@@ -123682,7 +124001,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 영주시 광복로 17 (영주동,영광중학교)",
-      "support_office": ""
+      "support_office": "경상북도영주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081136963",
@@ -124734,7 +125054,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101145646",
@@ -124759,7 +125080,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101145645",
@@ -124784,7 +125106,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604101145362",
@@ -125126,7 +125449,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경북 구미시 산책길 19 금오초등학교 택배보관함",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091144186",
@@ -125369,7 +125693,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "강원 정선군 남면 무릉리 민둥산로 12 (무릉3리 412-5) 증산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도정선교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091142704",
@@ -125566,7 +125891,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경북 구미시 왕산로 90 (금오중학교)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091142797",
@@ -125659,7 +125985,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "강원 화천군 하남면 용암리 용화산로 1325",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081139990",
@@ -127378,7 +127705,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091144369",
@@ -127586,7 +127914,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 김천시 지좌동 601번지",
-      "support_office": ""
+      "support_office": "경상북도김천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081140005",
@@ -128035,7 +128364,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원 평창군 방림면 방림1길 9 (방림리,방림초등학교)",
-      "support_office": ""
+      "support_office": "강원특별자치도평창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091143770",
@@ -128060,7 +128390,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원 평창군 방림면 방림1길 9 (방림리,방림초등학교)",
-      "support_office": ""
+      "support_office": "강원특별자치도평창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091144568",
@@ -128224,7 +128555,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "강원 평창군 방림면 방림1길 9 (방림리,방림초등학교)",
-      "support_office": ""
+      "support_office": "강원특별자치도평창교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081140554",
@@ -128927,7 +129259,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "강원 춘천시 후평동 서부대성로 239번길 70번",
-      "support_office": ""
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091141567",
@@ -129710,7 +130043,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604091141490",
@@ -129964,7 +130298,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 안산시 상록구 석호로 81 성안중학교 이삭",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081138307",
@@ -130547,7 +130882,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도함평교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604081138666",
@@ -130744,7 +131080,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "경기 성남시 중원구 사기막골로31번길 46, 교육행정실 (상대원동,중원초등학교)",
-      "support_office": ""
+      "support_office": "경기도성남교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081138522",
@@ -131912,7 +132249,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "충청남도 보령시 주산면 충서로 416 주산초등학교",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081140743",
@@ -132319,7 +132657,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "경기 남양주시 진건읍 사릉로372번길 2 사능초등학교",
-      "support_office": ""
+      "support_office": "경기도구리남양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081140250",
@@ -132953,7 +133292,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604081139365",
@@ -132978,7 +133318,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 화성시 서신면 매화3길 17 (매화리)",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604071133410",
@@ -134731,7 +135072,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "강원 정선군 신동읍 조동6길 17-12 함백초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도정선교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604071132816",
@@ -136133,7 +136475,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 경산시 남산면 산양리 하남로 316",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604071135254",
@@ -136192,7 +136535,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전북 전주시 완산구 천잠로 313 전주사대부고, 교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도전주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604071135113",
@@ -136465,7 +136809,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 평택시 지산3로10번길 5 송탄중학교",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604071131900",
@@ -137315,7 +137660,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061131163",
@@ -137340,7 +137686,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061131393",
@@ -137365,7 +137712,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061131500",
@@ -137390,7 +137738,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 포천시 가산면 가산로309번길 25 가산초등학교",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061127962",
@@ -137823,7 +138172,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 파주시 문산읍 선유울3길 85 문산동초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061128200",
@@ -138051,7 +138401,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도구례교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604061129305",
@@ -138077,7 +138428,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 2,
       "business_place": "서울 구로구 연동로 320 성공회대학교",
-      "support_office": ""
+      "support_office": "서울특별시남부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061130136",
@@ -138930,7 +139282,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "강원 정선군 신동읍 조동6길 17-12 함백초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도정선교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604061129972",
@@ -139355,7 +139708,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "강원도고성교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604061128300",
@@ -140517,7 +140871,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 파주시 문산읍 선유울3길 85 문산동초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604031127104",
@@ -140635,7 +140990,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "경기 파주시 문산읍 선유울3길 85 문산동초등학교",
-      "support_office": ""
+      "support_office": "경기도파주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604031126784",
@@ -141248,7 +141604,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 2,
       "business_place": "충남 공주시 봉황로 75 공주사대부설중학교",
-      "support_office": ""
+      "support_office": "충청남도공주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301110725",
@@ -141539,7 +141896,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011117874",
@@ -142662,7 +143020,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "강원 정선군 신동읍 조동6길 17-12 함백초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도정선교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604031125701",
@@ -142722,15 +143081,15 @@
           "school_name": "전남미래자동차고등학교",
           "region": "광주",
           "district": "장흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 장흥군 장흥읍 행원강변길",
           "school_code": "7140312"
         }
       ],
       "first_imported_at": "2026-07-22 17:03",
       "import_count": 1,
-      "support_office": "전남광주통합특별시교육청"
+      "support_office": "전라남도교육청"
     },
     {
       "id": "202603311114677",
@@ -143671,7 +144030,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021121226",
@@ -143696,7 +144056,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021121225",
@@ -143721,7 +144082,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021121224",
@@ -143746,7 +144108,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021121223",
@@ -143771,7 +144134,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021121222",
@@ -143796,7 +144160,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "경북 칠곡군 석적읍 남중리8길 13 장곡중학교",
-      "support_office": ""
+      "support_office": "경상북도칠곡교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021120440",
@@ -145304,7 +145669,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 구미시 흥안로3길 30 (옥계동)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011117665",
@@ -145373,8 +145739,8 @@
           "school_name": "한천초등학교",
           "region": "광주",
           "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도화순교육지원청",
           "address": "전남광주통합특별시 화순군 한천면 청계길 26",
           "school_code": "8612024"
         },
@@ -145391,7 +145757,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "전남 화순군 한천면 청계길 26 한천초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604021121056",
@@ -145557,8 +145924,8 @@
           "school_name": "사창초등학교",
           "region": "광주",
           "district": "장성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장성교육지원청",
           "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
           "school_code": "8692016"
         }
@@ -145566,7 +145933,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "전남 장성군 삼계면 사창리 사창로 64-17",
-      "support_office": ""
+      "support_office": "전라남도장성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603301110320",
@@ -145747,8 +146115,8 @@
           "school_name": "사창초등학교",
           "region": "광주",
           "district": "장성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장성교육지원청",
           "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
           "school_code": "8692016"
         }
@@ -145756,7 +146124,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "전남 장성군 삼계면 사창리 사창로 64-17",
-      "support_office": ""
+      "support_office": "전라남도장성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604021120270",
@@ -145815,7 +146184,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604021120403",
@@ -145976,7 +146346,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전남 순천시 비봉길 90-1 순천비봉유치원",
-      "support_office": ""
+      "support_office": "전라남도순천교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603311113464",
@@ -146003,15 +146374,15 @@
           "school_name": "전남예술고등학교",
           "region": "광주",
           "district": "무안군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 무안군 삼향읍 삼향중앙로 31",
           "school_code": "7140235"
         }
       ],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 2,
-      "support_office": "전남광주통합특별시교육청"
+      "support_office": "전라남도교육청"
     },
     {
       "id": "202603311114933",
@@ -146655,8 +147026,8 @@
           "school_name": "한천초등학교",
           "region": "광주",
           "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도화순교육지원청",
           "address": "전남광주통합특별시 화순군 한천면 청계길 26",
           "school_code": "8612024"
         },
@@ -146673,7 +147044,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "전남 화순군 한천면 청계길 26 한천초등학교 교무실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604011116123",
@@ -146699,7 +147071,8 @@
       "first_imported_at": "2026-07-31 15:26",
       "import_count": 3,
       "business_place": "경기 포천시 소흘읍 봉솔로 23 대경중학교 교무실",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011117603",
@@ -146860,7 +147233,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011118705",
@@ -146885,7 +147259,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "경상북도 경주시 승삼2길 9 용강초등학교 본관 (용강동)",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603311113338",
@@ -146910,7 +147285,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 후관동 과학실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202604011117831",
@@ -147323,7 +147699,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 2,
       "business_place": "경상북도 경주시 승삼2길 9 용강초등학교 본관 (용강동)",
-      "support_office": ""
+      "support_office": "경상북도경주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603311115474",
@@ -148199,7 +148576,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "경북 구미시 흥안로3길 30 (옥계동)",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011118849",
@@ -148291,7 +148669,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울시서부교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202604011116611",
@@ -148934,7 +149313,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011116010",
@@ -148959,7 +149339,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011116008",
@@ -148984,7 +149365,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011116007",
@@ -149009,7 +149391,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011116006",
@@ -149034,7 +149417,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011116005",
@@ -149059,7 +149443,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "강원 화천군 화천읍 평화로 1284 풍산초등학교",
-      "support_office": ""
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202604011118106",
@@ -149743,7 +150128,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 3,
-      "support_office": ""
+      "support_office": "전북특별자치도무주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603311114055",
@@ -150190,7 +150576,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경북 영덕군 창수면 영양창수로 3184 창수초등학교 행정실",
-      "support_office": ""
+      "support_office": "경상북도영덕교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603311113904",
@@ -150385,7 +150772,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 후관동 과학실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603311113337",
@@ -150410,7 +150798,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 후관동 과학실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603311113336",
@@ -150435,7 +150824,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 후관동 과학실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603311113335",
@@ -150460,7 +150850,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "전남 화순군 백아면 학천길 22-2 아산초등학교 후관동 과학실",
-      "support_office": ""
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603311115223",
@@ -151011,7 +151402,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 안산시 상록구 석호로 113 (사1동 1193)석호초등학교",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603311111386",
@@ -152784,7 +153176,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 1,
       "business_place": "경북 경산시 남천면 남천로 481 남천초등학교 교무실",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603311112864",
@@ -153059,7 +153452,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 화성시 동탄공원로 21-38 푸른초등학교",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301107754",
@@ -153130,7 +153524,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 화성시 동탄공원로 21-38 푸른초등학교",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301108250",
@@ -153267,7 +153662,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기도 포천시 이동면 늠바위1길 13 이동중학교 교무실",
-      "support_office": ""
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301109434",
@@ -153689,7 +154085,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기도 안양시 만안구 경수대로 1240 삼성초등학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301111028",
@@ -153918,7 +154315,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301108374",
@@ -154295,15 +154693,15 @@
           "school_name": "전남예술고등학교",
           "region": "광주",
           "district": "무안군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 무안군 삼향읍 삼향중앙로 31",
           "school_code": "7140235"
         }
       ],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
-      "support_office": "전남광주통합특별시교육청"
+      "support_office": "전라남도교육청"
     },
     {
       "id": "202603301108355",
@@ -155429,7 +155827,8 @@
       "first_imported_at": "2026-07-20 12:44",
       "import_count": 2,
       "business_place": "경북 구미시 비산로 24 비산초등학교",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603301108275",
@@ -156061,7 +156460,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 3,
       "business_place": "충남 보령시 청라면 나원리 916번지",
-      "support_office": ""
+      "support_office": "충청남도보령교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261102679",
@@ -156256,7 +156656,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "경기 용인시 수지구 상현로42번길 26-8 서원중학교",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603271104573",
@@ -156844,7 +157245,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 4,
       "business_place": "경북 상주시 중동면 오상2길 17-4 (오상리)",
-      "support_office": ""
+      "support_office": "경상북도상주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261102201",
@@ -157233,7 +157635,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "경북 경산시 남산면 산양리 하남로 316",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261101829",
@@ -157428,7 +157831,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "경북 구미시 송정대로6길 72-6 송정초등학교 본관동 1층 택배보관함",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603271104173",
@@ -157583,7 +157987,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "경북 상주시 중동면 오상2길 17-4 (오상리)",
-      "support_office": ""
+      "support_office": "경상북도상주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603271103537",
@@ -158292,7 +158697,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "서울 마포구 성미산로 51 홍익대학교사범대학부속여자고등학교 행정실",
-      "support_office": ""
+      "support_office": "서울특별시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261100857",
@@ -158946,7 +159352,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "충남 아산시 배방면 북수리 711-4 배방유치원",
-      "support_office": ""
+      "support_office": "충청남도아산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261101703",
@@ -159132,7 +159539,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 안양시 동안구 경수대로665번길 74-23 호계중학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603261100440",
@@ -159788,7 +160196,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251098665",
@@ -159813,7 +160222,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251098679",
@@ -159838,7 +160248,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603241092931",
@@ -160725,7 +161136,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 안양시 동안구 경수대로665번길 74-23 호계중학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251097629",
@@ -160750,7 +161162,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 안양시 동안구 경수대로665번길 74-23 호계중학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251097628",
@@ -160775,7 +161188,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 안양시 동안구 경수대로665번길 74-23 호계중학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251097627",
@@ -160800,7 +161214,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경기 안양시 동안구 경수대로665번길 74-23 호계중학교",
-      "support_office": ""
+      "support_office": "경기도안양과천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603251096924",
@@ -161022,8 +161437,8 @@
           "school_name": "영광고등학교",
           "region": "광주",
           "district": "영광군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 영광군 영광읍 옥당로 13-22",
           "school_code": "7140186"
         },
@@ -161040,7 +161455,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 2,
       "business_place": "전라남도 영광군 영광읍 옥당로 13-22 영광고등학교 행정실",
-      "support_office": ""
+      "support_office": "전라남도영광교육지원청",
+      "support_office_source": "business_place_district_rule"
     },
     {
       "id": "202603241091354",
@@ -161430,7 +161846,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도고성교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603231088243",
@@ -161650,7 +162067,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "경북 안동시 예안면 정산길 23 월곡초등학교",
-      "support_office": ""
+      "support_office": "경상북도안동교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603241091381",
@@ -162165,7 +162583,8 @@
       "first_imported_at": "2026-07-20 17:51",
       "import_count": 3,
       "business_place": "강원 강릉시 포남2동 424번지(보래미하길 79번길 21) 동명중학교",
-      "support_office": ""
+      "support_office": "강원특별자치도강릉교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603241093460",
@@ -162381,7 +162800,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 3,
       "business_place": "경기 평택시 지산3로10번길 5 송탄중학교",
-      "support_office": ""
+      "support_office": "경기도평택교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603241092214",
@@ -162476,7 +162896,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 화성시 병점동 824번지",
-      "support_office": ""
+      "support_office": "경기도화성오산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603241092781",
@@ -163182,7 +163603,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "서울 마포구 성미산로 51 홍대부여중 205호",
-      "support_office": ""
+      "support_office": "서울특별시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603231086667",
@@ -163311,7 +163733,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603231086680",
@@ -164133,7 +164556,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 용인시 처인구 마평동 675-4번지 용마초등학교 1층 개별학습실 1반",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603201085077",
@@ -164192,7 +164616,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "강원 동해시 송정동 동해역길 25",
-      "support_office": ""
+      "support_office": "강원특별자치도동해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603231088240",
@@ -164551,7 +164976,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 3,
       "business_place": "전남 영암군 신북면 간은정로 67",
-      "support_office": ""
+      "support_office": "전라남도영암교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603231089191",
@@ -165304,7 +165730,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "경기 수원시 장안구 대평로51번길 65 (정자동,송림초등학교)",
-      "support_office": ""
+      "support_office": "경기도수원교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603201085149",
@@ -165568,7 +165995,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경기도 용인시 수지구 수풍로 102 수지중학교 (풍덕천동)",
-      "support_office": ""
+      "support_office": "경기도용인교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603191082190",
@@ -166483,7 +166911,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603191082375",
@@ -166507,7 +166936,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청남도논산계룡교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603191081240",
@@ -168284,8 +168714,8 @@
           "school_name": "사창초등학교",
           "region": "광주",
           "district": "장성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장성교육지원청",
           "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
           "school_code": "8692016"
         }
@@ -168293,7 +168723,8 @@
       "first_imported_at": "2026-07-20 17:09",
       "import_count": 2,
       "business_place": "전남 장성군 삼계면 사창리 사창로 64-17",
-      "support_office": ""
+      "support_office": "전라남도장성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603181077595",
@@ -168498,8 +168929,8 @@
           "school_name": "사창초등학교",
           "region": "광주",
           "district": "장성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장성교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도장성교육지원청",
           "address": "전남광주통합특별시 장성군 삼계면 사창로 64-17",
           "school_code": "8692016"
         }
@@ -168507,7 +168938,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "전남 장성군 삼계면 사창리 사창로 64-17",
-      "support_office": ""
+      "support_office": "전라남도장성교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603181075302",
@@ -169548,7 +169980,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "경기 양평군 옥천면 옥천리 549-1번지 옥천초등학교 영어실",
-      "support_office": ""
+      "support_office": "경기도양평교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603171072646",
@@ -169835,8 +170268,8 @@
           "school_name": "무정초등학교",
           "region": "광주",
           "district": "담양군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시담양교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도담양교육지원청",
           "address": "전남광주통합특별시 담양군 무정면 수문동길 26-11",
           "school_code": "8562016"
         }
@@ -169844,7 +170277,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "전라남도 담양군 무정면 수문동길 26-11 무정초등학교",
-      "support_office": ""
+      "support_office": "전라남도담양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603161067930",
@@ -169869,7 +170303,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 연천군 백학면 백학로40번길 23 (두일리,백학초등학교)",
-      "support_office": ""
+      "support_office": "경기도연천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603171071086",
@@ -170226,8 +170661,8 @@
           "school_name": "무정초등학교",
           "region": "광주",
           "district": "담양군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시담양교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도담양교육지원청",
           "address": "전남광주통합특별시 담양군 무정면 수문동길 26-11",
           "school_code": "8562016"
         }
@@ -170235,7 +170670,8 @@
       "first_imported_at": "2026-07-20 17:09",
       "import_count": 1,
       "business_place": "전남 담양군 무정면 봉안리 68번지",
-      "support_office": ""
+      "support_office": "전라남도담양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603171071185",
@@ -170532,7 +170968,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-20 17:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603171069555",
@@ -170625,7 +171062,8 @@
       "first_imported_at": "2026-07-20 12:10",
       "import_count": 1,
       "business_place": "경기 가평군 청평면 경춘로 75 대성초등학교",
-      "support_office": ""
+      "support_office": "경기도가평교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603171069525",
@@ -170881,7 +171319,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전라남도함평교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603161068955",
@@ -171475,7 +171914,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 연천군 백학면 백학로40번길 23 (두일리,백학초등학교)",
-      "support_office": ""
+      "support_office": "경기도연천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603131064337",
@@ -171715,8 +172155,8 @@
           "school_name": "무정초등학교",
           "region": "광주",
           "district": "담양군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시담양교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도담양교육지원청",
           "address": "전남광주통합특별시 담양군 무정면 수문동길 26-11",
           "school_code": "8562016"
         }
@@ -171724,7 +172164,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "전남 담양군 무정면 봉안리 68번지",
-      "support_office": ""
+      "support_office": "전라남도담양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603161065894",
@@ -172149,8 +172590,8 @@
           "school_name": "동강중학교",
           "region": "광주",
           "district": "고흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시고흥교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도고흥교육지원청",
           "address": "전남광주통합특별시 고흥군 동강면 계매길 11-2",
           "school_code": "8592016"
         }
@@ -172158,7 +172599,8 @@
       "first_imported_at": "2026-07-20 12:28",
       "import_count": 1,
       "business_place": "전남 고흥군 동강면 계매길 11-2",
-      "support_office": ""
+      "support_office": "전라남도고흥교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603131063220",
@@ -172867,8 +173309,8 @@
           "school_name": "동강중학교",
           "region": "광주",
           "district": "고흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시고흥교육지원청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도고흥교육지원청",
           "address": "전남광주통합특별시 고흥군 동강면 계매길 11-2",
           "school_code": "8592016"
         }
@@ -172876,7 +173318,8 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "business_place": "전남 고흥군 동강면 계매길 11-2",
-      "support_office": ""
+      "support_office": "전라남도고흥교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202603131062864",
@@ -173972,7 +174415,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "경북 김천시 지좌동 601번지",
-      "support_office": ""
+      "support_office": "경상북도김천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603121058229",
@@ -174142,7 +174586,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
-      "support_office": ""
+      "support_office": "전라남도구례교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603111053656",
@@ -174168,7 +174613,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 3,
       "business_place": "경기 양주시 고암길 77 (고암동,회천중학교)",
-      "support_office": ""
+      "support_office": "경기도동두천양주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603111054927",
@@ -174706,7 +175152,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-20 15:32",
       "import_count": 2,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603111053568",
@@ -175025,7 +175472,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "부산 강서구 과학산단2로20번길 55)(지사동)녹산유치원",
-      "support_office": ""
+      "support_office": "부산광역시북부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603111056032",
@@ -176107,7 +176555,8 @@
       "region_candidates": [],
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경상남도진주교육지원청",
+      "support_office_source": "institution_support_office_name"
     },
     {
       "id": "202603061038187",
@@ -177379,7 +177828,8 @@
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 1,
       "business_place": "부산 영도구 꿈나무길 41 영일유치원",
-      "support_office": ""
+      "support_office": "부산광역시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603101048230",
@@ -177404,7 +177854,8 @@
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 1,
       "business_place": "부산 영도구 꿈나무길 41 영일유치원",
-      "support_office": ""
+      "support_office": "부산광역시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603101046463",
@@ -178322,7 +178773,8 @@
       "first_imported_at": "2026-07-26 18:54",
       "import_count": 1,
       "business_place": "경기 시흥시 정왕천로427번길 30 군서초등학교",
-      "support_office": ""
+      "support_office": "경기도시흥교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603091044926",
@@ -178450,7 +178902,8 @@
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 2,
       "business_place": "경기도 안산시 단원구 적금로 182 고잔초등학교 (고잔동)",
-      "support_office": ""
+      "support_office": "경기도안산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603091042583",
@@ -181838,7 +182291,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "서울 마포구 성미산로7길 24 성서초등학교병설유치원",
-      "support_office": ""
+      "support_office": "서울특별시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202603041031800",
@@ -184798,7 +185252,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 1,
       "business_place": "부산 강서구 명지국제7로 178 신명유치원",
-      "support_office": ""
+      "support_office": "부산광역시북부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602261022891",
@@ -185382,7 +185837,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 2,
       "business_place": "경남 김해시 인제로284번길 47 영운초등학교",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602251017489",
@@ -185408,7 +185864,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 2,
       "business_place": "경남 김해시 인제로284번길 47 영운초등학교",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602261021069",
@@ -185706,7 +186163,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 1,
       "business_place": "부산 영도구 꿈나무길 41 영일유치원",
-      "support_office": ""
+      "support_office": "부산광역시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602261019956",
@@ -186062,7 +186520,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 2,
       "business_place": "경남 김해시 인제로284번길 47 영운초등학교",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602251017491",
@@ -186088,7 +186547,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 2,
       "business_place": "경남 김해시 인제로284번길 47 영운초등학교",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602251017488",
@@ -186114,7 +186574,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 2,
       "business_place": "경남 김해시 인제로284번길 47 영운초등학교",
-      "support_office": ""
+      "support_office": "김해교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602241009252",
@@ -186450,7 +186911,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "부산 강서구 과학산단2로20번길 55)(지사동)녹산유치원",
-      "support_office": ""
+      "support_office": "부산광역시북부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602241009615",
@@ -188261,7 +188723,8 @@
       "first_imported_at": "2026-07-20 14:55",
       "import_count": 1,
       "business_place": "부산 영도구 꿈나무길 41 영일유치원",
-      "support_office": ""
+      "support_office": "부산광역시서부교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602110961535",
@@ -188380,7 +188843,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "경북 김천시 남면 옥산길 128 율빛유치원",
-      "support_office": ""
+      "support_office": "경상북도김천교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602110962022",
@@ -188683,8 +189147,8 @@
           "school_name": "광양고등학교",
           "region": "광주",
           "district": "광양시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 광양시 봉강면 매천로 667",
           "school_code": "7140168"
         }
@@ -188692,7 +189156,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "전남 광양시 봉강면 매천로 667, 행정실 (석사리,광양고등학교)",
-      "support_office": ""
+      "support_office": "전라남도광양교육지원청",
+      "support_office_source": "business_place_district_map_relaxed"
     },
     {
       "id": "202602090952680",
@@ -188785,7 +189250,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602050943011",
@@ -188810,7 +189276,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602060946021",
@@ -189098,7 +189565,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602060945687",
@@ -189123,7 +189591,8 @@
       "first_imported_at": "2026-07-20 14:18",
       "import_count": 1,
       "business_place": "울산 북구 화산3길 2 고헌유치원",
-      "support_office": ""
+      "support_office": "울산광역시강북교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602060945901",
@@ -189446,15 +189915,15 @@
           "school_name": "전남과학고등학교",
           "region": "광주",
           "district": "나주시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
+          "education_office": "전라남도교육청",
+          "support_office": "전라남도교육청",
           "address": "전남광주통합특별시 나주시 금천면 오강길 33",
           "school_code": "7140163"
         }
       ],
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 3,
-      "support_office": "전남광주통합특별시교육청"
+      "support_office": "전라남도교육청"
     },
     {
       "id": "202602040936999",
@@ -189513,7 +189982,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602050943009",
@@ -189538,7 +190008,8 @@
       "first_imported_at": "2026-07-26 15:55",
       "import_count": 1,
       "business_place": "경북 경산시 백양로33길 32 (사동,사동초등학교)",
-      "support_office": ""
+      "support_office": "경상북도경산교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202602040937575",
@@ -190210,7 +190681,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "충청북도 충주시 천변로 135 탄금유치원 (교현동)",
-      "support_office": ""
+      "support_office": "충청북도충주교육지원청",
+      "support_office_source": "business_place_district_map"
     },
     {
       "id": "202601300926361",
