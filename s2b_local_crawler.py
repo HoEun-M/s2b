@@ -82,6 +82,53 @@ DISTRICT_SUPPORT_OFFICE_OVERRIDES = {
     ("충남", "계룡시"): "충청남도논산계룡교육지원청",
     ("충북", "괴산군"): "충청북도괴산증평교육지원청",
     ("충북", "증평군"): "충청북도괴산증평교육지원청",
+    ("서울", "강남구"): "서울특별시강남서초교육지원청",
+    ("서울", "서초구"): "서울특별시강남서초교육지원청",
+    ("서울", "강동구"): "서울특별시강동송파교육지원청",
+    ("서울", "송파구"): "서울특별시강동송파교육지원청",
+    ("서울", "강서구"): "서울특별시강서양천교육지원청",
+    ("서울", "양천구"): "서울특별시강서양천교육지원청",
+    ("서울", "동작구"): "서울특별시동작관악교육지원청",
+    ("서울", "관악구"): "서울특별시동작관악교육지원청",
+    ("서울", "성동구"): "서울특별시성동광진교육지원청",
+    ("서울", "광진구"): "서울특별시성동광진교육지원청",
+    ("서울", "성북구"): "서울특별시성북강북교육지원청",
+    ("서울", "강북구"): "서울특별시성북강북교육지원청",
+    ("서울", "구로구"): "서울특별시남부교육지원청",
+    ("서울", "금천구"): "서울특별시남부교육지원청",
+    ("서울", "영등포구"): "서울특별시남부교육지원청",
+    ("서울", "노원구"): "서울특별시북부교육지원청",
+    ("서울", "도봉구"): "서울특별시북부교육지원청",
+    ("서울", "동대문구"): "서울특별시동부교육지원청",
+    ("서울", "중랑구"): "서울특별시동부교육지원청",
+    ("서울", "마포구"): "서울특별시서부교육지원청",
+    ("서울", "서대문구"): "서울특별시서부교육지원청",
+    ("서울", "은평구"): "서울특별시서부교육지원청",
+    ("서울", "용산구"): "서울특별시중부교육지원청",
+    ("서울", "종로구"): "서울특별시중부교육지원청",
+    ("서울", "중구"): "서울특별시중부교육지원청",
+    ("대구", "수성구"): "대구광역시동부교육지원청",
+    ("대구", "동구"): "대구광역시동부교육지원청",
+    ("대구", "중구"): "대구광역시동부교육지원청",
+    ("대구", "남구"): "대구광역시남부교육지원청",
+    ("대구", "달서구"): "대구광역시남부교육지원청",
+    ("대구", "북구"): "대구광역시서부교육지원청",
+    ("대구", "서구"): "대구광역시서부교육지원청",
+    ("대구", "달성군"): "대구광역시달성교육지원청",
+    ("대구", "군위군"): "대구광역시군위교육지원청",
+    ("인천", "연수구"): "인천광역시동부교육지원청",
+    ("인천", "남동구"): "인천광역시동부교육지원청",
+    ("인천", "부평구"): "인천광역시북부교육지원청",
+    ("인천", "계양구"): "인천광역시북부교육지원청",
+    ("인천", "미추홀구"): "인천광역시남부교육지원청",
+    ("인천", "옹진군"): "인천광역시남부교육지원청",
+    ("인천", "서구"): "인천광역시서부교육지원청",
+    ("인천", "강화군"): "인천광역시강화교육지원청",
+    ("광주", "동구"): "광주광역시동부교육지원청",
+    ("광주", "북구"): "광주광역시동부교육지원청",
+    ("광주", "서구"): "광주광역시서부교육지원청",
+    ("광주", "남구"): "광주광역시서부교육지원청",
+    ("광주", "광산구"): "광주광역시서부교육지원청",
 }
 NEIS_SCHOOL_INFO_URL = "https://open.neis.go.kr/hub/schoolInfo"
 _school_region_cache = {}
@@ -636,7 +683,7 @@ def infer_support_office(region, institution, candidates, business_place=""):
     for candidate in candidates or []:
         if region and candidate.get("region", "") != region:
             continue
-        district_support_office = DISTRICT_SUPPORT_OFFICE_OVERRIDES.get((candidate.get("region", ""), candidate.get("district", "")))
+        district_support_office = support_office_from_region_district(candidate.get("region", ""), candidate.get("district", ""))
         if district_support_office:
             district_matched.append(district_support_office)
         if name and normalize_school_name(candidate.get("school_name", "")) != name:
@@ -881,6 +928,18 @@ def build_cumulative_html(data):
         record_id = esc(row.get("id") or row.get("tender_no") or str(index))
         region = row.get("region", "")
         candidates = row.get("region_candidates", []) or []
+        support_by_region = {}
+        for candidate in candidates:
+            candidate_region = candidate.get("region", "")
+            candidate_support = candidate.get("support_office", "")
+            if candidate_region and candidate_support:
+                support_by_region.setdefault(candidate_region, set()).add(candidate_support)
+        support_by_region = {
+            candidate_region: sorted(values)[0]
+            for candidate_region, values in support_by_region.items()
+            if len(values) == 1
+        }
+        support_json = json.dumps(support_by_region, ensure_ascii=False)
         if region:
             region_html = '<span class="region-text fixed-region" data-region-id="' + record_id + '">' + esc(region) + '</span>'
         else:
@@ -924,7 +983,7 @@ def build_cumulative_html(data):
             '<td class="tc row-no">' + display_number + '</td>'
             '<td>' + name_html + '</td>'
             '<td class="tc region-cell">' + region_html + '</td>'
-            '<td>' + esc(row.get("support_office", "")) + '</td>'
+            '<td class="support-cell" data-original-support="' + esc(row.get("support_office", "")) + '" data-support-by-region="' + esc(support_json) + '">' + esc(row.get("support_office", "")) + '</td>'
             '<td>' + esc(row.get("institution", "")) + '</td>'
             '<td>' + esc(row.get("counterpart", "")) + '</td>'
             '<td class="tr">' + esc(row.get("amount", "")) + '</td>'
@@ -986,7 +1045,8 @@ function rowMatchesDate(row){var date=row.getAttribute('data-contract-date')||''
 function normalizeSearchText(value){return (value||'').toLowerCase().replace(/\\s+/g,'');}
 function setContractSearch(value){contractSearchText=normalizeSearchText(value);filterCurrent();}
 function clearContractSearch(){contractSearchText='';var el=document.getElementById('contract-search');if(el){el.value='';}filterCurrent();}
-function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);var row=span.closest('tr');if(row){row.setAttribute('data-has-region','1');}}
+function updateSupportOffice(row,region){if(!row){return;}var cell=row.querySelector('.support-cell');if(!cell){return;}var map={};try{map=JSON.parse(cell.getAttribute('data-support-by-region')||'{}');}catch(e){map={};}var original=cell.getAttribute('data-original-support')||'';cell.textContent=(region&&map[region])?map[region]:original;}
+function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);var row=span.closest('tr');if(row){row.setAttribute('data-has-region','1');updateSupportOffice(row,value);}}
 function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(value){renderSavedRegion(editor,value);}});}
 function applyDeleted(deleted){var deletedSet=new Set(deleted||[]);document.querySelectorAll('#tbody tr').forEach(function(row){row.setAttribute('data-deleted',deletedSet.has(row.getAttribute('data-record-id'))?'1':'0');});filterCurrent();}
 async function loadRemoteState(){try{var localRegions=getRegionOverrides();var localDeleted=getDeletedRecords();var regionRemote=await loadSupabaseRegions();var deletedRemote=await loadSupabaseDeleted();var mergedRegions=Object.assign({},regionRemote,localRegions);var mergedDeleted=Array.from(new Set((deletedRemote||[]).concat(localDeleted||[]))).sort();setRegionOverrides(mergedRegions);setDeletedRecords(mergedDeleted);applyRegions(mergedRegions);applyDeleted(mergedDeleted);setStatus('Supabase data loaded.','ok');}catch(error){applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());setStatus('Supabase 연결 실패. 로컬 저장 모드로 동작합니다.','error');}}
