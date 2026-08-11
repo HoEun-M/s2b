@@ -513,6 +513,26 @@ def resolve_region(institution):
     return {"region": "", "region_status": "unknown", "region_source": "neis_school_info", "region_candidates": []}
 
 
+def infer_support_office(region, institution, candidates):
+    region = region or ""
+    name = normalize_school_name(institution)
+    matched = []
+    for candidate in candidates or []:
+        if region and candidate.get("region", "") != region:
+            continue
+        if name and normalize_school_name(candidate.get("school_name", "")) != name:
+            continue
+        support_office = candidate.get("support_office", "")
+        if support_office:
+            matched.append(support_office)
+    unique = sorted(set(matched))
+    if len(unique) == 1:
+        return unique[0]
+    if not unique and len(candidates or []) == 1:
+        return (candidates or [{}])[0].get("support_office", "")
+    return ""
+
+
 def load_cumulative_json():
     if not os.path.exists(CUMULATIVE_JSON_FILE):
         return {"exported_at": "", "meta": {}, "records": []}
@@ -547,6 +567,7 @@ def to_cumulative_record(result, date_from, date_to, imported_at):
         "school_level": school_level(institution),
     }
     record.update(resolve_region(institution))
+    record["support_office"] = infer_support_office(record.get("region", ""), institution, record.get("region_candidates", []))
     return record
 
 
@@ -572,6 +593,7 @@ def update_cumulative_json(results, date_from, date_to):
         old.setdefault("region_status", "")
         old.setdefault("region_source", "")
         old.setdefault("region_candidates", [])
+        old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", [])))
         by_id[record_id] = old
 
     added = 0
@@ -754,8 +776,8 @@ def build_cumulative_html(data):
             '<td class="tc select-cell"><input type="checkbox" class="row-check" aria-label="삭제할 공고 선택"></td>'
             '<td class="tc row-no">' + display_number + '</td>'
             '<td>' + name_html + '</td>'
-            '<td><div class="tags">' + tag_html + '</div></td>'
             '<td class="tc region-cell">' + region_html + '</td>'
+            '<td>' + esc(row.get("support_office", "")) + '</td>'
             '<td>' + esc(row.get("institution", "")) + '</td>'
             '<td>' + esc(row.get("counterpart", "")) + '</td>'
             '<td class="tr">' + esc(row.get("amount", "")) + '</td>'
@@ -857,8 +879,8 @@ document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filter
         "<span id='filter-state' class='filter-state'>&#51648;&#50669; &#54596;&#53552; &#44732;&#51664;</span>"
         "<span class='toolbar-spacer'></span><span id='sync-status' class='sync-status'>Supabase sync pending.</span></div>"
         "<div class='pagination pagination-top'></div><div class='table-wrap'><table><thead><tr>"
-        "<th><input type='checkbox' aria-label='전체 선택' onclick='toggleAll(this)'></th><th>No</th><th style='text-align:left'>계약명</th><th>검색키워드</th><th>지역</th><th>계약기관</th><th>계약대상자</th>"
-        "<th>금액</th><th>계약체결일</th>"
+        "<th><input type='checkbox' aria-label='&#51204;&#52404; &#49440;&#53469;' onclick='toggleAll(this)'></th><th>No</th><th style='text-align:left'>&#44228;&#50557;&#47749;</th><th>&#51648;&#50669;</th><th>&#44368;&#50977;&#51648;&#50896;&#52397;</th><th>&#44228;&#50557;&#44592;&#44288;</th><th>&#44228;&#50557;&#45824;&#49345;&#51088;</th>"
+        "<th>&#44552;&#50529;</th><th>&#44228;&#50557;&#52404;&#44208;&#51068;</th>"
         "</tr></thead><tbody id='tbody'>" + rows_html + "</tbody></table>"
         "<div class='no-result' id='no-result'>표시할 계약내역이 없습니다.</div></div>"
         "<div class='pagination pagination-bottom'></div>"
