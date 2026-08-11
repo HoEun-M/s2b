@@ -62,9 +62,26 @@ REGION_ALIASES = [
     ("경남", "경남"), ("제주", "제주"),
 ]
 SCHOOL_SUFFIXES = ("초등학교", "중학교", "고등학교", "특수학교", "각종학교")
+ADDRESS_DISTRICT_PATTERN = re.compile(r"([가-힣]+(?:시|군|구))")
 DISTRICT_SUPPORT_OFFICE_OVERRIDES = {
     ("강원", "속초시"): "강원특별자치도속초양양교육지원청",
     ("강원", "양양군"): "강원특별자치도속초양양교육지원청",
+    ("경기", "구리시"): "경기도구리남양주교육지원청",
+    ("경기", "남양주시"): "경기도구리남양주교육지원청",
+    ("경기", "동두천시"): "경기도동두천양주교육지원청",
+    ("경기", "양주시"): "경기도동두천양주교육지원청",
+    ("경기", "안양시"): "경기도안양과천교육지원청",
+    ("경기", "과천시"): "경기도안양과천교육지원청",
+    ("경기", "군포시"): "경기도군포의왕교육지원청",
+    ("경기", "의왕시"): "경기도군포의왕교육지원청",
+    ("경기", "광주시"): "경기도광주하남교육지원청",
+    ("경기", "하남시"): "경기도광주하남교육지원청",
+    ("경기", "화성시"): "경기도화성오산교육지원청",
+    ("경기", "오산시"): "경기도화성오산교육지원청",
+    ("충남", "논산시"): "충청남도논산계룡교육지원청",
+    ("충남", "계룡시"): "충청남도논산계룡교육지원청",
+    ("충북", "괴산군"): "충청북도괴산증평교육지원청",
+    ("충북", "증평군"): "충청북도괴산증평교육지원청",
 }
 NEIS_SCHOOL_INFO_URL = "https://open.neis.go.kr/hub/schoolInfo"
 _school_region_cache = {}
@@ -462,6 +479,56 @@ def strip_region_prefix_from_school_name(institution, region=""):
     return ""
 
 
+def district_prefix_from_text(value):
+    text = value or ""
+    match = ADDRESS_DISTRICT_PATTERN.search(text)
+    if not match:
+        return ""
+    district = match.group(1)
+    if len(district) <= 1:
+        return ""
+    return district[:-1]
+
+
+def support_office_from_region_district(region, district):
+    if not region or not district:
+        return ""
+    override = DISTRICT_SUPPORT_OFFICE_OVERRIDES.get((region, district))
+    if override:
+        return override
+    base = district[:-1]
+    if region == "전남":
+        return "전라남도" + base + "교육지원청"
+    if region == "전북":
+        return "전북특별자치도" + base + "교육지원청"
+    if region == "경북":
+        return "경상북도" + base + "교육지원청"
+    if region == "경남":
+        return base + "교육지원청"
+    if region == "충남":
+        return "충청남도" + base + "교육지원청"
+    if region == "충북":
+        return "충청북도" + base + "교육지원청"
+    if region == "강원":
+        return "강원특별자치도" + base + "교육지원청"
+    if region == "제주":
+        return "서귀포시교육지원청" if district == "서귀포시" else "제주시교육지원청"
+    return ""
+
+
+def strip_district_prefix_from_school_name(institution, district_prefix):
+    text = normalize_school_name(institution)
+    prefix = normalize_school_name(district_prefix)
+    if not text or not prefix or not any(suffix in text for suffix in SCHOOL_SUFFIXES):
+        return ""
+    if not text.startswith(prefix):
+        return ""
+    stripped = text[len(prefix):]
+    if stripped and stripped != text and any(suffix in stripped for suffix in SCHOOL_SUFFIXES):
+        return stripped
+    return ""
+
+
 def school_candidate(row):
     address = row.get("ORG_RDNMA") or ""
     region = short_region(row.get("LCTN_SC_NM") or address)
@@ -517,6 +584,13 @@ def fetch_region_stripped_school_candidates(institution, region):
     return fetch_school_candidates(stripped)
 
 
+def fetch_district_stripped_school_candidates(institution, district_prefix):
+    stripped = strip_district_prefix_from_school_name(institution, district_prefix)
+    if not stripped:
+        return []
+    return fetch_school_candidates(stripped)
+
+
 def resolve_region(institution):
     direct = region_from_institution_name(institution)
     if direct:
@@ -546,9 +620,17 @@ def resolve_region(institution):
     return {"region": "", "region_status": "unknown", "region_source": "neis_school_info", "region_candidates": []}
 
 
-def infer_support_office(region, institution, candidates):
+def infer_support_office(region, institution, candidates, business_place=""):
     region = region or ""
     name = normalize_school_name(institution)
+    district = ""
+    district_match = ADDRESS_DISTRICT_PATTERN.search(business_place or "")
+    if district_match:
+        district = district_match.group(1)
+    district_prefix = district[:-1] if district else ""
+    district_rule_support_office = support_office_from_region_district(region, district)
+    if district_rule_support_office:
+        return district_rule_support_office
     district_matched = []
     matched = []
     for candidate in candidates or []:
@@ -582,6 +664,18 @@ def infer_support_office(region, institution, candidates):
         stripped_unique = sorted(set(stripped_matched))
         if len(stripped_unique) == 1:
             return stripped_unique[0]
+    if district_prefix:
+        district_candidates = fetch_district_stripped_school_candidates(institution, district_prefix)
+        district_matched = []
+        for candidate in district_candidates:
+            if region and candidate.get("region", "") != region:
+                continue
+            support_office = candidate.get("support_office", "")
+            if support_office:
+                district_matched.append(support_office)
+        district_unique = sorted(set(district_matched))
+        if len(district_unique) == 1:
+            return district_unique[0]
     return ""
 
 
@@ -619,7 +713,7 @@ def to_cumulative_record(result, date_from, date_to, imported_at):
         "school_level": school_level(institution),
     }
     record.update(resolve_region(institution))
-    record["support_office"] = infer_support_office(record.get("region", ""), institution, record.get("region_candidates", []))
+    record["support_office"] = infer_support_office(record.get("region", ""), institution, record.get("region_candidates", []), record.get("business_place", ""))
     return record
 
 
@@ -645,7 +739,7 @@ def update_cumulative_json(results, date_from, date_to):
         old.setdefault("region_status", "")
         old.setdefault("region_source", "")
         old.setdefault("region_candidates", [])
-        old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", [])))
+        old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", "")))
         by_id[record_id] = old
 
     added = 0
