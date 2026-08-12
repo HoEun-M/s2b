@@ -264,10 +264,11 @@ def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
     return page, True
 
 
-def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, backfill_terms=None):
+def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, match_keyword=None, backfill_terms=None):
     results = []
+    match_keyword = match_keyword or search_term
     backfill_terms = backfill_terms or []
-    max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
+    max_pages = MAX_PAGES_BY_KEYWORD.get(match_keyword, MAX_PAGES_PER_KEYWORD)
 
     page_no = 1
     saw_data_page = False
@@ -277,7 +278,7 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
 
         try:
             if page_no == 1:
-                submit_search(page, keyword, date_from, date_to, page_no, timeout_ms)
+                submit_search(page, search_term, date_from, date_to, page_no, timeout_ms)
             else:
                 go_result_page(page, page_no, timeout_ms, PlaywrightTimeoutError)
             wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
@@ -289,7 +290,7 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
             raise
 
         try:
-            page, captcha_was_solved = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
+            page, captcha_was_solved = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError)
             if captcha_was_solved:
                 records, has_data = parse_page(page_content_bytes(page))
                 if has_data:
@@ -297,7 +298,7 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
                 else:
                     try:
                         print("    [captcha] no result table after CAPTCHA. retrying the search in the same browser session...")
-                        submit_search(page, keyword, date_from, date_to, page_no, timeout_ms)
+                        submit_search(page, search_term, date_from, date_to, page_no, timeout_ms)
                         wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
                     except Exception as exc:
                         print("    browser error after CAPTCHA: " + str(exc))
@@ -309,7 +310,7 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
                     page, captcha_again = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
                     if captcha_again:
                         print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
-                        save_debug_page(page, keyword, page_no, "captcha_repeated")
+                        save_debug_page(page, search_term, page_no, "captcha_repeated")
                         break
                     records, has_data = parse_page(page_content_bytes(page))
             else:
@@ -326,11 +327,11 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
                 print("    page " + str(page_no) + ": no more results")
                 break
             print("    no parsable result table. url: " + page.url)
-            save_debug_page(page, keyword, page_no, "no_table")
+            save_debug_page(page, search_term, page_no, "no_table")
             break
 
         saw_data_page = True
-        keyword_matched = [record for record in records if keyword in record["계약명"]]
+        keyword_matched = [record for record in records if match_keyword in record["계약명"]]
         if backfill_terms:
             filtered = [
                 record for record in keyword_matched
@@ -358,9 +359,33 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
     return results, page
 
 
+def browser_search_jobs(keywords, args):
+    jobs = []
+    if args.search_prefixes:
+        for keyword in keywords:
+            for prefix in args.search_prefixes:
+                jobs.append({
+                    "search_term": prefix + " " + keyword,
+                    "match_keyword": keyword,
+                    "backfill_terms": [prefix],
+                })
+        return jobs
+    for keyword in keywords:
+        jobs.append({
+            "search_term": keyword,
+            "match_keyword": keyword,
+            "backfill_terms": args.backfill_terms,
+        })
+    return jobs
+
+
 def fetch_all_browser(date_from, date_to, keywords, args):
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
     print("[keywords] " + ", ".join(keywords))
+    jobs = browser_search_jobs(keywords, args)
+    if args.search_prefixes:
+        print("[search prefixes] " + ", ".join(args.search_prefixes))
+        print("[search jobs] " + str(len(jobs)))
     if args.backfill_terms:
         print("[backfill excluded terms] " + ", ".join(args.backfill_terms))
     print("")
@@ -375,7 +400,10 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     with sync_playwright() as playwright:
         context, page = create_context_page(playwright, args, session_profile_dir)
         try:
-            for keyword in keywords:
+            for job_index, job in enumerate(jobs, 1):
+                search_term = job["search_term"]
+                match_keyword = job["match_keyword"]
+                backfill_terms = job["backfill_terms"]
                 if page.is_closed():
                     print("[browser] page was closed. opening a new page.")
                     try:
@@ -385,20 +413,21 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                         close_context(context, cleanup_profile=False)
                         context, page = create_context_page(playwright, args, session_profile_dir)
 
-                print("[" + keyword + "] searching in browser...")
+                print("[" + search_term + "] searching in browser... (" + str(job_index) + "/" + str(len(jobs)) + ", keyword=" + match_keyword + ")")
                 items = []
                 fatal_error = False
                 for attempt in range(3):
                     try:
                         items, page = fetch_by_keyword_browser(
                             page,
-                            keyword,
+                            search_term,
                             date_from,
                             date_to,
                             args.page_delay_range,
                             args.timeout * 1000,
                             PlaywrightTimeoutError,
-                            args.backfill_terms,
+                            match_keyword,
+                            backfill_terms,
                         )
                         break
                     except Exception as exc:
@@ -433,11 +462,11 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                     if contract_no not in seen_nos:
                         seen_nos.add(contract_no)
                         all_results.append(item)
-                        keyword_map[contract_no] = [keyword]
-                    elif contract_no in keyword_map and keyword not in keyword_map[contract_no]:
-                        keyword_map[contract_no].append(keyword)
+                        keyword_map[contract_no] = [match_keyword]
+                    elif contract_no in keyword_map and match_keyword not in keyword_map[contract_no]:
+                        keyword_map[contract_no].append(match_keyword)
 
-                if keyword != keywords[-1]:
+                if job_index != len(jobs):
                     sleep_random(args.keyword_delay_range, "keyword delay")
         finally:
             close_context(context, cleanup_profile=False)
@@ -479,6 +508,8 @@ def parse_args():
     parser.add_argument("--slow-mo", type=int, default=0, help="Playwright slow motion delay in milliseconds.")
     parser.add_argument("--headless", action="store_true", help="Run without showing the browser window. CAPTCHA handling requires visible mode.")
     parser.add_argument("--browser", choices=("auto", "chrome", "edge", "playwright"), default="auto", help="Browser executable to use.")
+    parser.add_argument("--high-school-backfill", action="store_true", help="고등학교를 각 키워드 앞에 붙여 누락 가능성이 있는 계약을 브라우저로 다시 수집합니다.")
+    parser.add_argument("--search-prefix", help="쉼표로 지정한 단어를 각 키워드 앞에 붙여 S2B 검색어를 좁힙니다. 예: 고등학교")
     parser.add_argument("--backfill-excluded", help="쉼표로 지정한 단어 때문에 과거에 제외됐을 가능성이 있는 계약명만 다시 수집합니다. 예: 고등학교,체육")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=True, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
@@ -493,6 +524,9 @@ def main():
     try:
         args.page_delay_range = validate_delay_range(args.page_delay_min, args.page_delay_max, "--page-delay")
         args.keyword_delay_range = validate_delay_range(args.keyword_delay_min, args.keyword_delay_max, "--keyword-delay")
+        args.search_prefixes = parse_backfill_terms(args.search_prefix)
+        if args.high_school_backfill and "고등학교" not in args.search_prefixes:
+            args.search_prefixes.insert(0, "고등학교")
         args.backfill_terms = parse_backfill_terms(args.backfill_excluded)
         date_from, date_to = get_date_range_from_user(args)
         keywords = get_keywords_from_user(args)
@@ -501,7 +535,7 @@ def main():
         return
 
     results = fetch_all_browser(date_from, date_to, keywords, args)
-    if args.backfill_terms and not results:
+    if (args.backfill_terms or args.search_prefixes) and not results:
         print("[backfill] no matching records found; cumulative files were not changed.")
         print("done.")
         if getattr(sys, "frozen", False):
