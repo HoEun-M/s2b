@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-08-13 08:02",
+  "exported_at": "2026-08-13 08:29",
   "meta": {
-    "lastImportedAt": "2026-08-13 08:02",
+    "lastImportedAt": "2026-08-13 08:29",
     "lastSearchPeriod": "20260201~20260430",
-    "total": 6189
+    "total": 6190
   },
   "records": [
     {
@@ -156303,6 +156303,40 @@
       "first_imported_at": "2026-07-22 16:13",
       "import_count": 1,
       "support_office": ""
+    },
+    {
+      "id": "202604021121053",
+      "tender_no": "202604021121053",
+      "contract_name": "한성여자고등학교 클래스팅 AI러닝 학습 플랫폼 및 소프트웨어 구입",
+      "institution": "한성여자고등학교",
+      "counterpart": "주식회사 씨티",
+      "amount": "14,400,000",
+      "contract_date": "2026-04-08",
+      "keywords": [
+        "클래스팅"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604021121053&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:29",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한성여자고등학교",
+          "region": "서울",
+          "district": "성북구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 성북구 삼선교로16길 117",
+          "school_code": "7010255"
+        }
+      ],
+      "support_office": "서울특별시성북강북교육지원청",
+      "first_imported_at": "2026-08-13 08:29",
+      "import_count": 1
     },
     {
       "id": "202604071133313",
