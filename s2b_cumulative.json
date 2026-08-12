@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-08-13 08:29",
+  "exported_at": "2026-08-13 08:45",
   "meta": {
-    "lastImportedAt": "2026-08-13 08:29",
+    "lastImportedAt": "2026-08-13 08:45",
     "lastSearchPeriod": "20260201~20260430",
-    "total": 6190
+    "total": 6199
   },
   "records": [
     {
@@ -98812,6 +98812,40 @@
       "support_office": ""
     },
     {
+      "id": "202604301206408",
+      "tender_no": "202604301206408",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "주식회사 플랭",
+      "amount": "1,000,000",
+      "contract_date": "2026-04-30",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301206408&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
       "id": "202604201175485",
       "tender_no": "202604201175485",
       "contract_name": "대동고등학교 수학동아리 물품 구입",
@@ -122562,6 +122596,40 @@
       "support_office": "충청남도홍성교육지원청"
     },
     {
+      "id": "202604211177795",
+      "tender_no": "202604211177795",
+      "contract_name": "단양고등학교 에듀테크_마이클(MyClass) 연간이용권 구매",
+      "institution": "단양고등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "2,392,000",
+      "contract_date": "2026-04-21",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604211177795&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "단양고등학교",
+          "region": "충북",
+          "district": "단양군",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 단양군 단양읍 수변로 2",
+          "school_code": "8000040"
+        }
+      ],
+      "support_office": "충청북도단양교육지원청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
       "id": "202604161163652",
       "tender_no": "202604161163652",
       "contract_name": "자유고등학교 수학여행 제주 차량임차 견적요청",
@@ -130955,6 +131023,74 @@
       "first_imported_at": "2026-07-23 18:27",
       "import_count": 1,
       "support_office": "울산광역시강북교육지원청"
+    },
+    {
+      "id": "202604161163884",
+      "tender_no": "202604161163884",
+      "contract_name": "효자고등학교 에듀테크 도구 구입",
+      "institution": "효자고등학교",
+      "counterpart": "위드현 에듀테크",
+      "amount": "9,754,200",
+      "contract_date": "2026-04-17",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604161163884&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "효자고등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 의정부시 부용로 165",
+          "school_code": "7530773"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
+      "id": "202604171169180",
+      "tender_no": "202604171169180",
+      "contract_name": "평택여자고등학교 에듀테크(리딩스타) 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "리딩스타(주)",
+      "amount": "1,870,000",
+      "contract_date": "2026-04-17",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604171169180&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
     },
     {
       "id": "202604171167819",
@@ -148285,6 +148421,40 @@
       "import_count": 1,
       "business_place": "부산 금정구 장전동 소정로 31",
       "support_office": "부산광역시동래교육지원청"
+    },
+    {
+      "id": "202604101145523",
+      "tender_no": "202604101145523",
+      "contract_name": "신남고등학교 에듀테크 켄바 외 5종 구독 및 라이센스 구입 견적 요청",
+      "institution": "신남고등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "6,367,800",
+      "contract_date": "2026-04-10",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604101145523&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "신남고등학교",
+          "region": "강원",
+          "district": "인제군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 인제군 남면 신남로 47-35(구:신난리 404)",
+          "school_code": "7801154"
+        }
+      ],
+      "support_office": "강원특별자치도인제교육지원청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
     },
     {
       "id": "202604091142625",
@@ -185341,6 +185511,74 @@
       "support_office": "세종특별자치시교육청"
     },
     {
+      "id": "202603261099377",
+      "tender_no": "202603261099377",
+      "contract_name": "평택여자고등학교 에듀테크(다했니) 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "에듀지원주식회사",
+      "amount": "99,000",
+      "contract_date": "2026-03-26",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603261099377&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
+      "id": "202603261100216",
+      "tender_no": "202603261100216",
+      "contract_name": "2026학년도 이의고등학교 에듀테크 AI 교직원 지원 프로그램 구입",
+      "institution": "이의고등학교",
+      "counterpart": "(주)화이트소프트",
+      "amount": "10,764,000",
+      "contract_date": "2026-03-26",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202603261100216&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "이의고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 영통구 법조로 145",
+          "school_code": "7531166"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
       "id": "202603261101252",
       "tender_no": "202603261101252",
       "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월 외 4종",
@@ -202089,6 +202327,76 @@
       "support_office": "경기도동두천양주교육지원청"
     },
     {
+      "id": "202603111052788",
+      "tender_no": "202603111052788",
+      "contract_name": "대구고등학교 천재교과서 AI 디지털 교육자료 구매 계약",
+      "institution": "대구고등학교",
+      "counterpart": "(주) 천재교과서",
+      "amount": "12,025,000",
+      "contract_date": "2026-03-11",
+      "keywords": [
+        "천재교과서"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603111052788&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "가락고등학교",
+          "region": "서울",
+          "district": "송파구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 송파구 송이로 42",
+          "school_code": "7010057"
+        },
+        {
+          "school_name": "가재울고등학교",
+          "region": "서울",
+          "district": "서대문구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 서대문구 수색로 100-35",
+          "school_code": "7011169"
+        },
+        {
+          "school_name": "강동고등학교",
+          "region": "서울",
+          "district": "강동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강동구 구천면로 572",
+          "school_code": "7010117"
+        },
+        {
+          "school_name": "강서고등학교",
+          "region": "서울",
+          "district": "양천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 양천구 목동중앙남로 27",
+          "school_code": "7010118"
+        },
+        {
+          "school_name": "강일고등학교",
+          "region": "서울",
+          "district": "강동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강동구 아리수로98길 40",
+          "school_code": "7010958"
+        }
+      ],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
+    },
+    {
       "id": "202603091045835",
       "tender_no": "202603091045835",
       "contract_name": "해연여자고등학교 영어 단어장 및 5분 생활영어 기록장 제작 견적 요청",
@@ -210875,6 +211183,40 @@
       "first_imported_at": "2026-07-26 18:24",
       "import_count": 1,
       "support_office": "대구광역시남부교육지원청"
+    },
+    {
+      "id": "202602271023753",
+      "tender_no": "202602271023753",
+      "contract_name": "2026학년도 휘봉고등학교 에듀테크매니저 도급계약",
+      "institution": "휘봉고등학교",
+      "counterpart": "주식회사 스태프링크",
+      "amount": "16,602,900",
+      "contract_date": "2026-02-27",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602271023753&excelSection=N",
+      "search_period_from": "2026.02.01",
+      "search_period_to": "2026.04.30",
+      "last_imported_at": "2026-08-13 08:45",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "휘봉고등학교",
+          "region": "서울",
+          "district": "동대문구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 동대문구 한천로 290",
+          "school_code": "7011113"
+        }
+      ],
+      "support_office": "서울특별시동부교육지원청",
+      "first_imported_at": "2026-08-13 08:45",
+      "import_count": 1
     },
     {
       "id": "202602271025952",
