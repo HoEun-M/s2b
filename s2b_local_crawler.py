@@ -293,8 +293,9 @@ def parse_page(html_bytes):
     return records, len(records) > 0
 
 
-def fetch_by_keyword(session, keyword, date_from, date_to):
+def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None):
     results = []
+    backfill_terms = backfill_terms or []
     keyword_euckr = quote(keyword.encode("euc-kr"))
     area_euckr = quote("전국".encode("euc-kr"))
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
@@ -343,11 +344,18 @@ def fetch_by_keyword(session, keyword, date_from, date_to):
         if not has_data:
             break
 
-        filtered = [
-            record for record in records
-            if keyword in record["계약명"]
-            and not is_excluded_contract_name(record["계약명"])
-        ]
+        if backfill_terms:
+            filtered = [
+                record for record in records
+                if keyword in record["계약명"]
+                and any(term in record["계약명"] for term in backfill_terms)
+            ]
+        else:
+            filtered = [
+                record for record in records
+                if keyword in record["계약명"]
+                and not is_excluded_contract_name(record["계약명"])
+            ]
         results.extend(filtered)
         print("    page " + str(page) + ": " + str(len(records)) + " recv, " + str(len(filtered)) + " matched")
 
@@ -401,6 +409,10 @@ def parse_keyword_selection(raw_keywords):
     return unique_selected
 
 
+def parse_backfill_terms(raw_terms):
+    return [term.strip() for term in (raw_terms or "").split(",") if term.strip()]
+
+
 def select_keywords(args):
     selected = KEYWORDS[:]
     if args.keywords:
@@ -420,10 +432,14 @@ def select_keywords(args):
     return selected
 
 
-def fetch_all(date_from, date_to, keywords):
+def fetch_all(date_from, date_to, keywords, backfill_terms=None):
+    backfill_terms = backfill_terms or []
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
     print("[keywords] " + ", ".join(keywords))
-    print("[exclude]  " + ", ".join(EXCLUDE_WORDS) + "\n")
+    if backfill_terms:
+        print("[backfill excluded terms] " + ", ".join(backfill_terms) + "\n")
+    else:
+        print("[exclude]  " + ", ".join(EXCLUDE_WORDS) + "\n")
 
     session = new_session()
     seen_nos = set()
@@ -437,7 +453,7 @@ def fetch_all(date_from, date_to, keywords):
             time.sleep(cooldown)
 
         print("[" + keyword + "] searching...")
-        items = fetch_by_keyword(session, keyword, date_from, date_to)
+        items = fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms)
         print("  -> " + str(len(items)) + " found\n")
 
         for item in items:
@@ -1234,6 +1250,7 @@ def parse_args():
     parser.add_argument("--page-delay-max", type=float, default=PAGE_DELAY_RANGE[1], help="Maximum delay between page requests in seconds.")
     parser.add_argument("--keyword-delay-min", type=float, default=KEYWORD_DELAY_RANGE[0], help="Minimum delay between keyword searches in seconds.")
     parser.add_argument("--keyword-delay-max", type=float, default=KEYWORD_DELAY_RANGE[1], help="Maximum delay between keyword searches in seconds.")
+    parser.add_argument("--backfill-excluded", help="쉼표로 지정한 단어 때문에 과거에 제외됐을 가능성이 있는 계약명만 다시 수집합니다. 예: 고등학교,체육")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=AUTO_GITHUB_UPLOAD, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
@@ -1250,10 +1267,15 @@ def main():
         KEYWORD_DELAY_RANGE = validate_delay_range(args.keyword_delay_min, args.keyword_delay_max, "--keyword-delay")
         date_from, date_to = get_date_range_from_user(args)
         keywords = select_keywords(args)
+        backfill_terms = parse_backfill_terms(args.backfill_excluded)
     except ValueError as exc:
         print("[error] " + str(exc))
         return
-    results = fetch_all(date_from, date_to, keywords)
+    results = fetch_all(date_from, date_to, keywords, backfill_terms)
+    if backfill_terms and not results:
+        print("[backfill] no matching records found; cumulative files were not changed.")
+        print("done.")
+        return
     data = update_cumulative_json(results, date_from, date_to)
     save_cumulative_html(data)
     publish_to_github(date_from, date_to, args.github_upload)
