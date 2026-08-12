@@ -307,7 +307,7 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
                             return results, page
                         raise
 
-                    page, captcha_again = wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError)
+                    page, captcha_again = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError)
                     if captcha_again:
                         print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
                         save_debug_page(page, search_term, page_no, "captcha_repeated")
