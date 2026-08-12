@@ -22,6 +22,7 @@ from s2b_local_crawler import (
     is_captcha,
     is_excluded_contract_name,
     parse_page,
+    parse_backfill_terms,
     publish_to_github,
     save_cumulative_html,
     select_keywords,
@@ -263,8 +264,9 @@ def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
     return page, True
 
 
-def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError):
+def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, backfill_terms=None):
     results = []
+    backfill_terms = backfill_terms or []
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
 
     page_no = 1
@@ -329,10 +331,16 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
 
         saw_data_page = True
         keyword_matched = [record for record in records if keyword in record["계약명"]]
-        filtered = [
-            record for record in keyword_matched
-            if not is_excluded_contract_name(record["계약명"])
-        ]
+        if backfill_terms:
+            filtered = [
+                record for record in keyword_matched
+                if any(term in record["계약명"] for term in backfill_terms)
+            ]
+        else:
+            filtered = [
+                record for record in keyword_matched
+                if not is_excluded_contract_name(record["계약명"])
+            ]
         excluded_count = len(keyword_matched) - len(filtered)
         keyword_miss_count = len(records) - len(keyword_matched)
         results.extend(filtered)
@@ -352,7 +360,10 @@ def fetch_by_keyword_browser(page, keyword, date_from, date_to, page_delay_range
 
 def fetch_all_browser(date_from, date_to, keywords, args):
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
-    print("[keywords] " + ", ".join(keywords) + "\n")
+    print("[keywords] " + ", ".join(keywords))
+    if args.backfill_terms:
+        print("[backfill excluded terms] " + ", ".join(args.backfill_terms))
+    print("")
 
     sync_playwright, PlaywrightTimeoutError = import_playwright()
     seen_nos = set()
@@ -387,6 +398,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                             args.page_delay_range,
                             args.timeout * 1000,
                             PlaywrightTimeoutError,
+                            args.backfill_terms,
                         )
                         break
                     except Exception as exc:
@@ -467,6 +479,7 @@ def parse_args():
     parser.add_argument("--slow-mo", type=int, default=0, help="Playwright slow motion delay in milliseconds.")
     parser.add_argument("--headless", action="store_true", help="Run without showing the browser window. CAPTCHA handling requires visible mode.")
     parser.add_argument("--browser", choices=("auto", "chrome", "edge", "playwright"), default="auto", help="Browser executable to use.")
+    parser.add_argument("--backfill-excluded", help="쉼표로 지정한 단어 때문에 과거에 제외됐을 가능성이 있는 계약명만 다시 수집합니다. 예: 고등학교,체육")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=True, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
@@ -480,6 +493,7 @@ def main():
     try:
         args.page_delay_range = validate_delay_range(args.page_delay_min, args.page_delay_max, "--page-delay")
         args.keyword_delay_range = validate_delay_range(args.keyword_delay_min, args.keyword_delay_max, "--keyword-delay")
+        args.backfill_terms = parse_backfill_terms(args.backfill_excluded)
         date_from, date_to = get_date_range_from_user(args)
         keywords = get_keywords_from_user(args)
     except ValueError as exc:
@@ -487,6 +501,12 @@ def main():
         return
 
     results = fetch_all_browser(date_from, date_to, keywords, args)
+    if args.backfill_terms and not results:
+        print("[backfill] no matching records found; cumulative files were not changed.")
+        print("done.")
+        if getattr(sys, "frozen", False):
+            input("Press Enter to exit...")
+        return
     data = update_cumulative_json(results, date_from, date_to)
     save_cumulative_html(data)
     try:
