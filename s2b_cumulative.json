@@ -1772,11 +1772,11 @@
       "school_level": "기타",
       "region": "충북",
       "region_status": "direct",
-      "region_source": "institution_name",
+      "region_source": "institution_name_support_office",
       "region_candidates": [],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "충청북도제천교육지원청"
     },
     {
       "id": "202607281401572",
@@ -4330,11 +4330,21 @@
       "school_level": "초",
       "region": "광주",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "광주방림초등학교",
+          "region": "광주",
+          "district": "남구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 남구 큰방림길 20",
+          "school_code": "7402176"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시광주서부교육지원청"
     },
     {
       "id": "202607231395666",
@@ -4354,11 +4364,21 @@
       "school_level": "초",
       "region": "광주",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "광주방림초등학교",
+          "region": "광주",
+          "district": "남구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주서부교육지원청",
+          "address": "전남광주통합특별시 남구 큰방림길 20",
+          "school_code": "7402176"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시광주서부교육지원청"
     },
     {
       "id": "202607221394022",
@@ -6205,12 +6225,22 @@
       "last_imported_at": "2026-08-13 07:23",
       "school_level": "기타",
       "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_status": "matched",
+      "region_source": "neis_school_info_exact_region_kept",
+      "region_candidates": [
+        {
+          "school_name": "전남온라인학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 목포시 청호로 34",
+          "school_code": "7140314"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시교육청"
     },
     {
       "id": "202607211388480",
@@ -6230,11 +6260,21 @@
       "school_level": "고",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구남산고등학교",
+          "region": "대구",
+          "district": "수성구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 수성구 신천동로 364",
+          "school_code": "7240213"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202607211390729",
@@ -11168,11 +11208,21 @@
       "school_level": "고",
       "region": "강원",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "강원과학고등학교",
+          "region": "강원",
+          "district": "원주시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 원주시 치악로 2242",
+          "school_code": "7801101"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "강원특별자치도교육청"
     },
     {
       "id": "202607131369872",
@@ -12593,13 +12643,23 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-13 07:23",
       "school_level": "고",
-      "region": "경북",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info_exact",
+      "region_candidates": [
+        {
+          "school_name": "경북공업고등학교",
+          "region": "대구",
+          "district": "중구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 중구 남산로 20",
+          "school_code": "7240123"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202607131372275",
@@ -20103,11 +20163,21 @@
       "school_level": "기타",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구예아람학교",
+          "region": "대구",
+          "district": "달성군",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 달성군 옥포읍 비슬로 1934",
+          "school_code": "7240451"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202607031347894",
@@ -21090,11 +21160,21 @@
       "school_level": "기타",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구예아람학교",
+          "region": "대구",
+          "district": "달성군",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 달성군 옥포읍 비슬로 1934",
+          "school_code": "7240451"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202607021345772",
@@ -21967,52 +22047,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "광신방송예술고등학교",
-          "region": "서울",
-          "district": "관악구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 관악구 광신길 141",
-          "school_code": "7011488"
-        },
-        {
-          "school_name": "국립전통예술고등학교",
-          "region": "서울",
-          "district": "금천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "교육부",
-          "address": "서울특별시 금천구 시흥대로38길 62",
-          "school_code": "1371663"
-        },
-        {
-          "school_name": "덕원예술고등학교",
-          "region": "서울",
-          "district": "강서구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강서구 강서로45길 91-44",
-          "school_code": "7010150"
-        },
-        {
-          "school_name": "서울공연예술고등학교",
-          "region": "서울",
-          "district": "구로구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 구로구 오리로22나길 16-26",
-          "school_code": "7010906"
-        },
-        {
-          "school_name": "서울예술고등학교",
-          "region": "서울",
-          "district": "종로구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 종로구 평창문화로 70",
-          "school_code": "7010187"
+          "school_name": "경기예술고등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 부천시 원미구 석천로209번길 37",
+          "school_code": "7530569"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도교육청",
       "first_imported_at": "2026-08-13 09:27",
       "import_count": 1
     },
@@ -22077,11 +22121,21 @@
       "school_level": "고",
       "region": "인천",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "인천디자인고등학교",
+          "region": "인천",
+          "district": "서해구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 서해구 대평로56번길 10",
+          "school_code": "7310191"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "인천광역시교육청"
     },
     {
       "id": "202607011344298",
@@ -25422,12 +25476,22 @@
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "고",
       "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_status": "matched",
+      "region_source": "neis_school_info_exact_region_kept",
+      "region_candidates": [
+        {
+          "school_name": "전남과학고등학교",
+          "region": "광주",
+          "district": "나주시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 나주시 금천면 오강길 33",
+          "school_code": "7140163"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시교육청"
     },
     {
       "id": "202606261334358",
@@ -28516,12 +28580,22 @@
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "고",
       "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_status": "matched",
+      "region_source": "neis_school_info_exact_region_kept",
+      "region_candidates": [
+        {
+          "school_name": "전남과학고등학교",
+          "region": "광주",
+          "district": "나주시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 나주시 금천면 오강길 33",
+          "school_code": "7140163"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시교육청"
     },
     {
       "id": "202606231327030",
@@ -31507,11 +31581,21 @@
       "school_level": "고",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구공업고등학교",
+          "region": "대구",
+          "district": "동구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 동구 대현로 135",
+          "school_code": "7240111"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202606181317714",
@@ -34120,11 +34204,21 @@
       "school_level": "기타",
       "region": "인천",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "인천과학예술영재학교",
+          "region": "인천",
+          "district": "연수구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 연수구 아카데미로 192",
+          "school_code": "7310449"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "인천광역시교육청"
     },
     {
       "id": "202606161310434",
@@ -49033,11 +49127,21 @@
       "school_level": "고",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구관광고등학교",
+          "region": "대구",
+          "district": "동구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 동구 동북로71길 37",
+          "school_code": "7240219"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시교육청"
     },
     {
       "id": "202606041284082",
@@ -55080,11 +55184,21 @@
       "school_level": "초",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구유천초등학교",
+          "region": "대구",
+          "district": "달서구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시남부교육지원청",
+          "address": "대구광역시 달서구 달서대로 39",
+          "school_code": "7271105"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시남부교육지원청"
     },
     {
       "id": "202606011278613",
@@ -55104,11 +55218,21 @@
       "school_level": "초",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구유천초등학교",
+          "region": "대구",
+          "district": "달서구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시남부교육지원청",
+          "address": "대구광역시 달서구 달서대로 39",
+          "school_code": "7271105"
+        }
+      ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시남부교육지원청"
     },
     {
       "id": "202606011278878",
@@ -58106,11 +58230,21 @@
       "school_level": "초",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구유천초등학교",
+          "region": "대구",
+          "district": "달서구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시남부교육지원청",
+          "address": "대구광역시 달서구 달서대로 39",
+          "school_code": "7271105"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시남부교육지원청"
     },
     {
       "id": "202605291273402",
@@ -58130,11 +58264,21 @@
       "school_level": "초",
       "region": "대구",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "대구유천초등학교",
+          "region": "대구",
+          "district": "달서구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시남부교육지원청",
+          "address": "대구광역시 달서구 달서대로 39",
+          "school_code": "7271105"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "대구광역시남부교육지원청"
     },
     {
       "id": "202605291272688",
@@ -60852,11 +60996,21 @@
       "school_level": "기타",
       "region": "경기",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "경기이음온학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 팔달구 수성로244번길 37-52",
+          "school_code": "7531531"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "경기도교육청"
     },
     {
       "id": "202605261261559",
@@ -68386,11 +68540,21 @@
       "school_level": "고",
       "region": "울산",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "울산중앙고등학교",
+          "region": "울산",
+          "district": "중구",
+          "education_office": "울산광역시교육청",
+          "support_office": "울산광역시교육청",
+          "address": "울산광역시 중구 난곡로 33",
+          "school_code": "7480027"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "울산광역시교육청"
     },
     {
       "id": "202605211255168",
@@ -80687,52 +80851,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 09:07",
       "import_count": 1
     },
@@ -82347,12 +82475,12 @@
       "school_level": "기타",
       "region": "",
       "region_status": "unknown",
-      "region_source": "",
+      "region_source": "support_office",
       "region_candidates": [],
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "성남교육지원청",
-      "support_office": ""
+      "support_office": "성남교육지원청"
     },
     {
       "id": "202605131234447",
@@ -89469,11 +89597,21 @@
       "school_level": "초",
       "region": "인천",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "인천동암초등학교",
+          "region": "인천",
+          "district": "부평구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시북부교육지원청",
+          "address": "인천광역시 부평구 동암남로35번길 4",
+          "school_code": "7331019"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "인천광역시북부교육지원청"
     },
     {
       "id": "202605111223651",
@@ -92382,13 +92520,23 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-13 06:50",
       "school_level": "중",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
-      "region_candidates": [],
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info_exact",
+      "region_candidates": [
+        {
+          "school_name": "조선대학교부속중학교",
+          "region": "광주",
+          "district": "동구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "전남광주통합특별시광주동부교육지원청",
+          "address": "전남광주통합특별시 동구 조선대길 13",
+          "school_code": "7392187"
+        }
+      ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "전남광주통합특별시광주동부교육지원청"
     },
     {
       "id": "202605071214746",
@@ -105083,11 +105231,21 @@
       "school_level": "초",
       "region": "서울",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "서울신현초등학교",
+          "region": "서울",
+          "district": "중랑구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시동부교육지원청",
+          "address": "서울특별시 중랑구 봉화산로 188",
+          "school_code": "7021101"
+        }
+      ],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울특별시동부교육지원청"
     },
     {
       "id": "202604281201120",
@@ -108159,12 +108317,12 @@
       "school_level": "기타",
       "region": "",
       "region_status": "unknown",
-      "region_source": "",
+      "region_source": "support_office",
       "region_candidates": [],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "과업지시서 참고",
-      "support_office": ""
+      "support_office": "김제교육지원청"
     },
     {
       "id": "202604281200471",
@@ -122405,11 +122563,21 @@
       "school_level": "초",
       "region": "서울",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "서울신기초등학교",
+          "region": "서울",
+          "district": "양천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강서양천교육지원청",
+          "address": "서울특별시 양천구 신정로 292",
+          "school_code": "7081451"
+        }
+      ],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울특별시강서양천교육지원청"
     },
     {
       "id": "202604211177129",
@@ -122429,11 +122597,21 @@
       "school_level": "초",
       "region": "서울",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "서울면목초등학교",
+          "region": "서울",
+          "district": "중랑구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시동부교육지원청",
+          "address": "서울특별시 중랑구 면목로 434",
+          "school_code": "7021089"
+        }
+      ],
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
-      "support_office": ""
+      "support_office": "서울특별시동부교육지원청"
     },
     {
       "id": "202604211180018",
@@ -153480,52 +153658,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "경성전자고등학교",
-          "region": "부산",
-          "district": "서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시교육청",
-          "address": "부산광역시 서구 꽃마을로 25",
-          "school_code": "7150429"
-        },
-        {
-          "school_name": "제천디지털전자고등학교",
-          "region": "충북",
-          "district": "제천시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도교육청",
-          "address": "충청북도 제천시 봉양읍 팔송로 84",
-          "school_code": "8000207"
-        },
-        {
-          "school_name": "부여전자고등학교",
-          "region": "충남",
-          "district": "부여군",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도교육청",
-          "address": "충청남도 부여군 임천면 충절로 1027",
-          "school_code": "8140192"
-        },
-        {
-          "school_name": "영광전자고등학교",
-          "region": "광주",
-          "district": "영광군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시교육청",
-          "address": "전남광주통합특별시 영광군 염산면 칠산로 98-27",
-          "school_code": "7140273"
-        },
-        {
-          "school_name": "영천전자고등학교",
-          "region": "경북",
-          "district": "영천시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 영천시 화남면 천문로 1709",
-          "school_code": "8750476"
+          "school_name": "경남전자고등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 창원시 마산합포구 노산북6길 63",
+          "school_code": "9010194"
         }
       ],
-      "support_office": "",
+      "support_office": "경상남도교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -165912,52 +166054,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -168858,52 +168964,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -168928,52 +168998,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -168998,52 +169032,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -169068,52 +169066,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -182188,52 +182150,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "광신방송예술고등학교",
-          "region": "서울",
-          "district": "관악구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 관악구 광신길 141",
-          "school_code": "7011488"
-        },
-        {
-          "school_name": "국립전통예술고등학교",
-          "region": "서울",
-          "district": "금천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "교육부",
-          "address": "서울특별시 금천구 시흥대로38길 62",
-          "school_code": "1371663"
-        },
-        {
-          "school_name": "덕원예술고등학교",
-          "region": "서울",
-          "district": "강서구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강서구 강서로45길 91-44",
-          "school_code": "7010150"
-        },
-        {
-          "school_name": "서울공연예술고등학교",
-          "region": "서울",
-          "district": "구로구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 구로구 오리로22나길 16-26",
-          "school_code": "7010906"
-        },
-        {
-          "school_name": "서울예술고등학교",
-          "region": "서울",
-          "district": "종로구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 종로구 평창문화로 70",
-          "school_code": "7010187"
+          "school_name": "경기예술고등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 부천시 원미구 석천로209번길 37",
+          "school_code": "7530569"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -182255,9 +182181,19 @@
       "school_level": "기타",
       "region": "부산",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "부산배화학교",
+          "region": "부산",
+          "district": "수영구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 수영구 연수로310번길 73",
+          "school_code": "7150277"
+        }
+      ],
+      "support_office": "부산광역시교육청",
       "first_imported_at": "2026-08-13 08:02",
       "import_count": 1
     },
@@ -204427,52 +204363,16 @@
       "region_source": "institution_name_neis_stripped",
       "region_candidates": [
         {
-          "school_name": "가락고등학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 송파구 송이로 42",
-          "school_code": "7010057"
-        },
-        {
-          "school_name": "가재울고등학교",
-          "region": "서울",
-          "district": "서대문구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 서대문구 수색로 100-35",
-          "school_code": "7011169"
-        },
-        {
-          "school_name": "강동고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 구천면로 572",
-          "school_code": "7010117"
-        },
-        {
-          "school_name": "강서고등학교",
-          "region": "서울",
-          "district": "양천구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 양천구 목동중앙남로 27",
-          "school_code": "7010118"
-        },
-        {
-          "school_name": "강일고등학교",
-          "region": "서울",
-          "district": "강동구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 강동구 아리수로98길 40",
-          "school_code": "7010958"
+          "school_name": "대구고등학교",
+          "region": "대구",
+          "district": "남구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 남구 중앙대로 171",
+          "school_code": "7240059"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시교육청",
       "first_imported_at": "2026-08-13 08:45",
       "import_count": 1
     },
@@ -215054,11 +214954,21 @@
       "school_level": "초",
       "region": "서울",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "서울언주초등학교",
+          "region": "서울",
+          "district": "강남구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시강남서초교육지원청",
+          "address": "서울특별시 강남구 남부순환로363길 19",
+          "school_code": "7091406"
+        }
+      ],
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
-      "support_office": ""
+      "support_office": "서울특별시강남서초교육지원청"
     },
     {
       "id": "202602241007394",
@@ -216783,11 +216693,21 @@
       "school_level": "초",
       "region": "서울",
       "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
+      "region_source": "institution_name_neis_verified",
+      "region_candidates": [
+        {
+          "school_name": "서울은천초등학교",
+          "region": "서울",
+          "district": "관악구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시동작관악교육지원청",
+          "address": "서울특별시 관악구 은천로 69",
+          "school_code": "7132116"
+        }
+      ],
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
-      "support_office": ""
+      "support_office": "서울특별시동작관악교육지원청"
     },
     {
       "id": "202602120971687",

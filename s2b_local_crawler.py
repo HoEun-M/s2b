@@ -546,13 +546,22 @@ def school_lookup_names(value):
     raw = (value or "").strip()
     if not raw:
         return []
+    seeds = [
+        raw,
+        re.sub(r"\([^)]*\)", "", raw).strip(),
+        re.sub(r"\[[^\]]*\]", "", raw).strip(),
+    ]
     names = []
-    for candidate in (raw, re.sub(r"\([^)]*\)", "", raw).strip(), re.sub(r"\[[^\]]*\]", "", raw).strip()):
-        normalized = normalize_school_name(candidate)
-        alias = SCHOOL_LOOKUP_ALIASES.get(normalized)
-        for item in (candidate, alias):
-            if item and item not in names:
-                names.append(item)
+    for seed in seeds:
+        for candidate in (seed, seed.replace(" ", "")):
+            for suffix in ("\ubcd1\uc124\uc720\uce58\uc6d0",):
+                if candidate.endswith(suffix):
+                    candidate = candidate[:-len(suffix)].strip()
+            normalized = normalize_school_name(candidate)
+            alias = SCHOOL_LOOKUP_ALIASES.get(normalized)
+            for item in (candidate, alias):
+                if item and item not in names:
+                    names.append(item)
     return names
 
 def short_region(value):
@@ -651,6 +660,17 @@ def support_office_from_region_district(region, district):
     if region == "제주":
         return "서귀포시교육지원청" if district == "서귀포시" else "제주시교육지원청"
     return ""
+
+
+def support_office_from_institution(institution):
+    text = institution or ""
+    marker = "\uad50\uc721\uc9c0\uc6d0\uccad"
+    marker_index = text.find(marker)
+    if marker_index < 0:
+        return ""
+    before = text[:marker_index + len(marker)]
+    start = max(before.rfind(" ") + 1, before.rfind("(") + 1, before.rfind(")") + 1)
+    return before[start:].strip()
 
 
 def strip_district_prefix_from_school_name(institution, district_prefix):
@@ -772,6 +792,9 @@ def resolve_region(institution):
 
 def infer_support_office(region, institution, candidates, business_place=""):
     region = region or ""
+    institution_support_office = support_office_from_institution(institution)
+    if institution_support_office:
+        return institution_support_office
     name = normalize_school_name(institution)
     district = ""
     district_match = ADDRESS_DISTRICT_PATTERN.search(business_place or "")
