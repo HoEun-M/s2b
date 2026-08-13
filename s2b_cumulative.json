@@ -23860,9 +23860,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "아라초등학교",
@@ -25084,9 +25084,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "백암고등학교",
@@ -29758,9 +29758,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신곡중학교",
@@ -33164,9 +33164,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -40672,9 +40672,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -40717,9 +40717,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -40762,9 +40762,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -40807,9 +40807,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -51062,9 +51062,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남산초등학교",
@@ -51117,9 +51117,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남산초등학교",
@@ -51172,9 +51172,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "오동초등학교",
@@ -55213,9 +55213,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성신여자중학교",
@@ -66342,9 +66342,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-13 06:50",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영동초등학교",
@@ -73841,9 +73841,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-13 06:50",
       "school_level": "초",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 2,
@@ -86468,9 +86468,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-13 06:50",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "월천초등학교",
