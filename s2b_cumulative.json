@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-08-13 09:07",
+  "exported_at": "2026-08-13 09:27",
   "meta": {
-    "lastImportedAt": "2026-08-13 09:07",
-    "lastSearchPeriod": "20260501~20260630",
-    "total": 6250
+    "lastImportedAt": "2026-08-13 09:27",
+    "lastSearchPeriod": "20260701~20260803",
+    "total": 6256
   },
   "records": [
     {
@@ -373,6 +373,74 @@
       "import_count": 1,
       "support_office": "경상남도진주교육지원청",
       "support_office_source": "institution_support_office_name"
+    },
+    {
+      "id": "202607311407339",
+      "tender_no": "202607311407339",
+      "contract_name": "2026학년도 한국조리명장고등학교 수학여행 현지 버스 임차",
+      "institution": "한국조리명장고등학교",
+      "counterpart": "(주)환상제주투어버스",
+      "amount": "4,800,000",
+      "contract_date": "2026-07-31",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607311407339&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한국조리명장고등학교",
+          "region": "경북",
+          "district": "고령군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 고령군 대가야읍 우륵로 63",
+          "school_code": "8750830"
+        }
+      ],
+      "support_office": "경상북도고령교육지원청",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
+    },
+    {
+      "id": "202607311407374",
+      "tender_no": "202607311407374",
+      "contract_name": "2026학년도 한국조리명장고등학교 수학여행 야간 안전관리용역",
+      "institution": "한국조리명장고등학교",
+      "counterpart": "주식회사 리드클럽",
+      "amount": "500,000",
+      "contract_date": "2026-07-31",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607311407374&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한국조리명장고등학교",
+          "region": "경북",
+          "district": "고령군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 고령군 대가야읍 우륵로 63",
+          "school_code": "8750830"
+        }
+      ],
+      "support_office": "경상북도고령교육지원청",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
     },
     {
       "id": "202607211387954",
@@ -4993,6 +5061,40 @@
       "support_office": "서울특별시북부교육지원청"
     },
     {
+      "id": "202607221393415",
+      "tender_no": "202607221393415",
+      "contract_name": "의정부여자고등학교 에듀테크 활용 수업 운영 물품(클로드 프로) 구입",
+      "institution": "의정부여자고등학교",
+      "counterpart": "원자",
+      "amount": "756,000",
+      "contract_date": "2026-07-22",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221393415&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "의정부여자고등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 의정부시 신흥로365번길 10",
+          "school_code": "7530110"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
+    },
+    {
       "id": "202607221392202",
       "tender_no": "202607221392202",
       "contract_name": "한율초등학교 에듀테크 수노(SUNO) AI 작곡 프로그램 구입",
@@ -8618,6 +8720,40 @@
       "business_place": "충청남도 홍성군 구항면 거북로 20 대정초등학교",
       "support_office": "충청남도홍성교육지원청",
       "support_office_source": "business_place_district_map"
+    },
+    {
+      "id": "202607161380438",
+      "tender_no": "202607161380438",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "400,000",
+      "contract_date": "2026-07-16",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607161380438&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
     },
     {
       "id": "202607161381807",
@@ -15027,6 +15163,40 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 2,
       "support_office": "강원특별자치도원주교육지원청"
+    },
+    {
+      "id": "202607091361778",
+      "tender_no": "202607091361778",
+      "contract_name": "의정부여자고등학교 에듀테크 활용 수업 영상편집 프로그램 구입",
+      "institution": "의정부여자고등학교",
+      "counterpart": "원자",
+      "amount": "145,000",
+      "contract_date": "2026-07-09",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607091361778&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "의정부여자고등학교",
+          "region": "경기",
+          "district": "의정부시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 의정부시 신흥로365번길 10",
+          "school_code": "7530110"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
     },
     {
       "id": "202607091362962",
@@ -21775,6 +21945,76 @@
       "import_count": 1,
       "business_place": "전북 정읍시 입암면 천원리 6번지",
       "support_office": "전북특별자치도정읍교육지원청"
+    },
+    {
+      "id": "202607011344093",
+      "tender_no": "202607011344093",
+      "contract_name": "경기예술고등학교 수학과왓퀴즈 PRO 구독권 구입",
+      "institution": "경기예술고등학교",
+      "counterpart": "플랙티컬 주식회사",
+      "amount": "220,000",
+      "contract_date": "2026-07-01",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607011344093&excelSection=N",
+      "search_period_from": "2026.07.01",
+      "search_period_to": "2026.08.03",
+      "last_imported_at": "2026-08-13 09:27",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "광신방송예술고등학교",
+          "region": "서울",
+          "district": "관악구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 관악구 광신길 141",
+          "school_code": "7011488"
+        },
+        {
+          "school_name": "국립전통예술고등학교",
+          "region": "서울",
+          "district": "금천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "교육부",
+          "address": "서울특별시 금천구 시흥대로38길 62",
+          "school_code": "1371663"
+        },
+        {
+          "school_name": "덕원예술고등학교",
+          "region": "서울",
+          "district": "강서구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강서구 강서로45길 91-44",
+          "school_code": "7010150"
+        },
+        {
+          "school_name": "서울공연예술고등학교",
+          "region": "서울",
+          "district": "구로구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 구로구 오리로22나길 16-26",
+          "school_code": "7010906"
+        },
+        {
+          "school_name": "서울예술고등학교",
+          "region": "서울",
+          "district": "종로구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 종로구 평창문화로 70",
+          "school_code": "7010187"
+        }
+      ],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:27",
+      "import_count": 1
     },
     {
       "id": "202607011343883",
