@@ -130,6 +130,17 @@ DISTRICT_SUPPORT_OFFICE_OVERRIDES = {
     ("광주", "남구"): "광주광역시서부교육지원청",
     ("광주", "광산구"): "광주광역시서부교육지원청",
 }
+REGION_DISTRICT_PREFIXES = {
+    "경기": {"수원": "수원시", "성남": "성남시", "의정부": "의정부시", "안양": "안양시", "부천": "부천시", "광명": "광명시", "평택": "평택시", "동두천": "동두천시", "안산": "안산시", "고양": "고양시", "과천": "과천시", "구리": "구리시", "남양주": "남양주시", "오산": "오산시", "시흥": "시흥시", "군포": "군포시", "의왕": "의왕시", "하남": "하남시", "용인": "용인시", "파주": "파주시", "이천": "이천시", "안성": "안성시", "김포": "김포시", "화성": "화성시", "광주": "광주시", "양주": "양주시", "포천": "포천시", "여주": "여주시", "연천": "연천군", "가평": "가평군", "양평": "양평군"},
+    "강원": {"춘천": "춘천시", "원주": "원주시", "강릉": "강릉시", "동해": "동해시", "태백": "태백시", "속초": "속초시", "삼척": "삼척시", "홍천": "홍천군", "횡성": "횡성군", "영월": "영월군", "평창": "평창군", "정선": "정선군", "철원": "철원군", "화천": "화천군", "양구": "양구군", "인제": "인제군", "고성": "고성군", "양양": "양양군"},
+    "충북": {"청주": "청주시", "충주": "충주시", "제천": "제천시", "보은": "보은군", "옥천": "옥천군", "영동": "영동군", "증평": "증평군", "진천": "진천군", "괴산": "괴산군", "음성": "음성군", "단양": "단양군"},
+    "충남": {"천안": "천안시", "공주": "공주시", "보령": "보령시", "아산": "아산시", "서산": "서산시", "논산": "논산시", "계룡": "계룡시", "당진": "당진시", "금산": "금산군", "부여": "부여군", "서천": "서천군", "청양": "청양군", "홍성": "홍성군", "예산": "예산군", "태안": "태안군"},
+    "전북": {"전주": "전주시", "군산": "군산시", "익산": "익산시", "정읍": "정읍시", "남원": "남원시", "김제": "김제시", "완주": "완주군", "진안": "진안군", "무주": "무주군", "장수": "장수군", "임실": "임실군", "순창": "순창군", "고창": "고창군", "부안": "부안군"},
+    "전남": {"목포": "목포시", "여수": "여수시", "순천": "순천시", "나주": "나주시", "광양": "광양시", "담양": "담양군", "곡성": "곡성군", "구례": "구례군", "고흥": "고흥군", "보성": "보성군", "화순": "화순군", "장흥": "장흥군", "강진": "강진군", "해남": "해남군", "영암": "영암군", "무안": "무안군", "함평": "함평군", "영광": "영광군", "장성": "장성군", "완도": "완도군", "진도": "진도군", "신안": "신안군"},
+    "경북": {"포항": "포항시", "경주": "경주시", "김천": "김천시", "안동": "안동시", "구미": "구미시", "영주": "영주시", "영천": "영천시", "상주": "상주시", "문경": "문경시", "경산": "경산시", "의성": "의성군", "청송": "청송군", "영양": "영양군", "영덕": "영덕군", "청도": "청도군", "고령": "고령군", "성주": "성주군", "칠곡": "칠곡군", "예천": "예천군", "봉화": "봉화군", "울진": "울진군", "울릉": "울릉군"},
+    "경남": {"창원": "창원시", "진주": "진주시", "통영": "통영시", "사천": "사천시", "김해": "김해시", "밀양": "밀양시", "거제": "거제시", "양산": "양산시", "의령": "의령군", "함안": "함안군", "창녕": "창녕군", "고성": "고성군", "남해": "남해군", "하동": "하동군", "산청": "산청군", "함양": "함양군", "거창": "거창군", "합천": "합천군"},
+    "제주": {"제주": "제주시", "서귀포": "서귀포시"},
+}
 NEIS_SCHOOL_INFO_URL = "https://open.neis.go.kr/hub/schoolInfo"
 _school_region_cache = {}
 
@@ -542,6 +553,23 @@ def region_from_institution_name(institution):
     return None
 
 
+def district_from_school_name(region, institution):
+    name = normalize_school_name(institution)
+    if not name or not any(suffix in name for suffix in SCHOOL_SUFFIXES):
+        return "", ""
+    region_items = [(region, REGION_DISTRICT_PREFIXES.get(region, {}))] if region else REGION_DISTRICT_PREFIXES.items()
+    for region_name, district_map in region_items:
+        for prefix, district in sorted(district_map.items(), key=lambda item: len(item[0]), reverse=True):
+            if name.startswith(prefix):
+                if not region:
+                    suffix_index = min((name.find(suffix) for suffix in SCHOOL_SUFFIXES if suffix in name), default=-1)
+                    middle = name[len(prefix):suffix_index] if suffix_index > len(prefix) else ""
+                    if len(middle) < 2:
+                        continue
+                return region_name, district
+    return "", ""
+
+
 def strip_region_prefix_from_school_name(institution, region=""):
     text = normalize_school_name(institution)
     if not text or not any(suffix in text for suffix in SCHOOL_SUFFIXES):
@@ -577,6 +605,8 @@ def support_office_from_region_district(region, district):
     if override:
         return override
     base = district[:-1]
+    if region == "경기":
+        return "경기도" + base + "교육지원청"
     if region == "전남":
         return "전라남도" + base + "교육지원청"
     if region == "전북":
@@ -697,6 +727,14 @@ def resolve_region(institution):
             "region_source": "neis_school_info",
             "region_candidates": candidates,
         }
+    district_region, district = district_from_school_name("", institution)
+    if district_region and district:
+        return {
+            "region": district_region,
+            "region_status": "matched",
+            "region_source": "institution_district_prefix",
+            "region_candidates": [],
+        }
     return {"region": "", "region_status": "unknown", "region_source": "neis_school_info", "region_candidates": []}
 
 
@@ -711,6 +749,10 @@ def infer_support_office(region, institution, candidates, business_place=""):
     district_rule_support_office = support_office_from_region_district(region, district)
     if district_rule_support_office:
         return district_rule_support_office
+    school_region, school_district = district_from_school_name(region, institution)
+    school_rule_support_office = support_office_from_region_district(school_region or region, school_district)
+    if school_rule_support_office:
+        return school_rule_support_office
     district_matched = []
     matched = []
     for candidate in candidates or []:
