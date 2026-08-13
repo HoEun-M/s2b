@@ -1038,16 +1038,14 @@ def build_cumulative_html(data):
             all_keywords.append(keyword)
 
     rows_html = ""
-    default_visible_count = 0
+    default_visible_count = len(records)
     for index, row in enumerate(records, 1):
         keywords = row.get("keywords", [])
         keywords_joined = ",".join(keywords)
         contract_date = row.get("contract_date", "")
-        in_default_range = bool(contract_date) and default_date_from <= contract_date <= default_date_to
-        if in_default_range:
-            default_visible_count += 1
-        display_number = str(default_visible_count) if in_default_range else ""
-        row_display_attr = "" if in_default_range else ' style="display:none"'
+        on_first_page = index <= 20
+        display_number = str(index) if on_first_page else ""
+        row_display_attr = "" if on_first_page else ' style="display:none"'
         tag_html = "".join('<span class="tag">' + esc(keyword) + "</span>" for keyword in keywords)
         contract_name_raw = row.get("contract_name", "")
         contract_name = esc(contract_name_raw)
@@ -1166,7 +1164,7 @@ def build_cumulative_html(data):
 var activeKeyword='all';
 var contractSearchText='';
 var unsavedOnly=false;
-var dateMode='previous';
+var dateMode='all';
 var selectedDateFrom='';
 var selectedDateTo='';
 var defaultDateFrom='__DEFAULT_DATE_FROM__';
@@ -1240,12 +1238,11 @@ function resetPage(){currentPage=1;}
 function filterCurrent(keepPage){if(!keepPage){resetPage();}updateUnsavedUi();updateDashboardFilterNote();var rows=document.querySelectorAll('#tbody tr');var matches=[];rows.forEach(function(row){var keywords=row.getAttribute('data-keywords')||'';var keywordMatch=activeKeyword==='all'||(','+keywords+',').indexOf(','+activeKeyword+',')!==-1;var contractText=normalizeSearchText(row.getAttribute('data-search-text')||row.getAttribute('data-contract-name')||'');var contractMatch=!contractSearchText||contractText.indexOf(contractSearchText)!==-1;var deleted=row.getAttribute('data-deleted')==='1';var unsavedMatch=!unsavedOnly||!rowHasRegion(row);var dashboardMatch=rowMatchesDashboardFilter(row);var matched=keywordMatch&&contractMatch&&!deleted&&unsavedMatch&&rowMatchesDate(row)&&dashboardMatch;row.setAttribute('data-filter-match',matched?'1':'0');if(matched){matches.push(row);}});var total=matches.length;var pages=Math.max(1,Math.ceil(total/pageSize));if(currentPage>pages){currentPage=pages;}var start=(currentPage-1)*pageSize;var end=start+pageSize;rows.forEach(function(row){row.style.display='none';var cb=row.querySelector('.row-check');if(cb){cb.checked=false;}var no=row.querySelector('.row-no');if(no){no.textContent='';}});matches.slice(start,end).forEach(function(row,index){row.style.display='';var no=row.querySelector('.row-no');if(no){no.textContent=start+index+1;}});document.getElementById('visible-count').textContent=total;document.getElementById('no-result').style.display=total===0?'block':'none';renderPagination(total);var master=document.querySelector('thead input[type="checkbox"]');if(master){master.checked=false;}}
 function filterTable(btn,kind,value){activeKeyword=value;document.querySelectorAll('[data-kind="keyword"]').forEach(function(item){item.classList.remove('active');});btn.classList.add('active');filterCurrent();}
 function toggleUnsavedOnly(){unsavedOnly=!unsavedOnly;filterCurrent();}
-function syncDateToggles(){var previous=document.getElementById('previous-view');var all=document.getElementById('all-view');if(previous){previous.checked=dateMode==='previous';}if(all){all.checked=dateMode==='all';}}
+function syncDateToggles(){var all=document.getElementById('all-view');if(all){all.checked=dateMode==='all';}}
 function clearDateInputs(){var from=document.getElementById('date-from-filter');var to=document.getElementById('date-to-filter');if(from){from.value='';}if(to){to.value='';}}
-function setPreviousView(checked){dateMode=checked?'previous':'all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
-function setAllView(checked){dateMode=checked?'all':'previous';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
+function setAllView(checked){dateMode='all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
 function applyDateSearch(){var from=document.getElementById('date-from-filter');var to=document.getElementById('date-to-filter');selectedDateFrom=from?from.value:'';selectedDateTo=to?to.value:'';if(!selectedDateFrom&&!selectedDateTo){setStatus('Select a date range.','error');return;}if(!selectedDateFrom){selectedDateFrom=selectedDateTo;}if(!selectedDateTo){selectedDateTo=selectedDateFrom;}if(selectedDateFrom>selectedDateTo){var tmp=selectedDateFrom;selectedDateFrom=selectedDateTo;selectedDateTo=tmp;}if(from){from.value=selectedDateFrom;}if(to){to.value=selectedDateTo;}dateMode='search';syncDateToggles();filterCurrent();setStatus('Showing selected date range.','ok');}
-function clearDateSearch(){dateMode='previous';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
+function clearDateSearch(){dateMode='all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
 document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filterCurrent();renderDashboard();var start=function(){loadRemoteState();};if('requestIdleCallback' in window){requestIdleCallback(start,{timeout:1200});}else{setTimeout(start,250);}});
 """.strip()
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
@@ -1264,7 +1261,7 @@ document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filter
         "<section class='view detail-view' data-view='details'><div id='dashboard-filter-note' class='dashboard-filter-note'><span>대시보드 필터 적용 중: <strong id='dashboard-filter-text'></strong></span><button type='button' class='action-btn secondary' onclick='clearDashboardFilter()'>필터 해제</button></div><div class='panel'><h2>&#44160;&#49353;&#50612;&#47196; &#54596;&#53552;&#47553;</h2><div class='filters'>" + keyword_buttons + "</div></div>"
         "<div class='summary'><span>&#52509; <strong id='visible-count'>" + str(default_visible_count) + "</strong>&#44148; &#54364;&#49884; &#51473;</span>"
         "<a href='" + esc(ref_url) + "' target='_blank' rel='noopener' class='s2b-link'>S2B &#49688;&#51032;&#44228;&#50557; &#45236;&#50669; &#48148;&#47196;&#44032;&#44592; &#8599;</a></div>"
-        "<div class='toolbar date-tools'><label class='date-toggle'><input type='checkbox' id='previous-view' checked onchange='setPreviousView(this.checked)'>&#51060;&#51204;&#51068; &#48372;&#44592;</label><label class='date-toggle'><input type='checkbox' id='all-view' onchange='setAllView(this.checked)'>&#51204;&#52404; &#48372;&#44592;</label><span class='range-note'>&#44592;&#48376; &#48276;&#50948;: " + esc(default_range_label) + "</span><input type='search' id='contract-search' class='search-input' placeholder='&#44228;&#50557;&#47749;&#183;&#44228;&#50557;&#44592;&#44288;&#183;&#44228;&#50557;&#45824;&#49345;&#51088; &#44160;&#49353;' aria-label='&#44228;&#50557;&#47749;&#183;&#44228;&#50557;&#44592;&#44288;&#183;&#44228;&#50557;&#45824;&#49345;&#51088; &#44160;&#49353;' oninput='setContractSearch(this.value)'><button type='button' class='action-btn secondary' onclick='clearContractSearch()'>&#44160;&#49353; &#52488;&#44592;&#54868;</button><input type='date' id='date-from-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#49884;&#51089;&#51068;'><span class='range-note'>~</span><input type='date' id='date-to-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#51333;&#47308;&#51068;'><button type='button' class='action-btn secondary' onclick='applyDateSearch()'>&#45216;&#51676; &#44160;&#49353;</button><button type='button' class='action-btn secondary' onclick='clearDateSearch()'>&#52488;&#44592;&#54868;</button></div>"
+        "<div class='toolbar date-tools'><label class='date-toggle'><input type='checkbox' id='all-view' checked onchange='setAllView(this.checked)'>&#51204;&#52404; &#48372;&#44592;</label><input type='search' id='contract-search' class='search-input' placeholder='&#44228;&#50557;&#47749;&#183;&#44228;&#50557;&#44592;&#44288;&#183;&#44228;&#50557;&#45824;&#49345;&#51088; &#44160;&#49353;' aria-label='&#44228;&#50557;&#47749;&#183;&#44228;&#50557;&#44592;&#44288;&#183;&#44228;&#50557;&#45824;&#49345;&#51088; &#44160;&#49353;' oninput='setContractSearch(this.value)'><button type='button' class='action-btn secondary' onclick='clearContractSearch()'>&#44160;&#49353; &#52488;&#44592;&#54868;</button><input type='date' id='date-from-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#49884;&#51089;&#51068;'><span class='range-note'>~</span><input type='date' id='date-to-filter' class='date-input' aria-label='&#44228;&#50557;&#52404;&#44208;&#51068; &#51333;&#47308;&#51068;'><button type='button' class='action-btn secondary' onclick='applyDateSearch()'>&#45216;&#51676; &#44160;&#49353;</button><button type='button' class='action-btn secondary' onclick='clearDateSearch()'>&#52488;&#44592;&#54868;</button></div>"
         "<div class='toolbar'><button type='button' id='delete-selected' class='action-btn danger' onclick='deleteSelected()'>&#49440;&#53469; &#49325;&#51228;</button>"
         "<button type='button' id='unsaved-only-btn' class='action-btn filter-toggle' aria-pressed='false' onclick='toggleUnsavedOnly()'>&#51648;&#50669; &#48120;&#51200;&#51109;&#47564; &#48372;&#44592;</button>"
         "<button type='button' id='sync-local' class='action-btn secondary' onclick='syncLocalToSupabase(this)'>&#47196;&#52972; &#51200;&#51109; &#46041;&#44592;&#54868;</button>"
