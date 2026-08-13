@@ -141,6 +141,16 @@ REGION_DISTRICT_PREFIXES = {
     "경남": {"창원": "창원시", "진주": "진주시", "통영": "통영시", "사천": "사천시", "김해": "김해시", "밀양": "밀양시", "거제": "거제시", "양산": "양산시", "의령": "의령군", "함안": "함안군", "창녕": "창녕군", "고성": "고성군", "남해": "남해군", "하동": "하동군", "산청": "산청군", "함양": "함양군", "거창": "거창군", "합천": "합천군"},
     "제주": {"제주": "제주시", "서귀포": "서귀포시"},
 }
+SCHOOL_LOOKUP_ALIASES = {
+    "서울교대부설초등학교": "서울교육대학교부설초등학교",
+    "서울교대부설초등학교서무과": "서울교육대학교부설초등학교",
+}
+SCHOOL_DISTRICT_OVERRIDES = {
+    "서울성수초등학교": ("서울", "성동구"),
+    "서울신가초등학교": ("서울", "송파구"),
+    "서울교대부설초등학교": ("서울", "서초구"),
+    "서울교육대학교부설초등학교": ("서울", "서초구"),
+}
 NEIS_SCHOOL_INFO_URL = "https://open.neis.go.kr/hub/schoolInfo"
 _school_region_cache = {}
 
@@ -532,6 +542,19 @@ def normalize_school_name(value):
     return re.sub(r"\s+", "", value or "")
 
 
+def school_lookup_names(value):
+    raw = (value or "").strip()
+    if not raw:
+        return []
+    names = []
+    for candidate in (raw, re.sub(r"\([^)]*\)", "", raw).strip(), re.sub(r"\[[^\]]*\]", "", raw).strip()):
+        normalized = normalize_school_name(candidate)
+        alias = SCHOOL_LOOKUP_ALIASES.get(normalized)
+        for item in (candidate, alias):
+            if item and item not in names:
+                names.append(item)
+    return names
+
 def short_region(value):
     text = value or ""
     for alias, region in REGION_ALIASES:
@@ -555,6 +578,10 @@ def region_from_institution_name(institution):
 
 def district_from_school_name(region, institution):
     name = normalize_school_name(institution)
+    for lookup_name in school_lookup_names(institution):
+        override = SCHOOL_DISTRICT_OVERRIDES.get(normalize_school_name(lookup_name))
+        if override and (not region or override[0] == region):
+            return override
     if not name or not any(suffix in name for suffix in SCHOOL_SUFFIXES):
         return "", ""
     region_items = [(region, REGION_DISTRICT_PREFIXES.get(region, {}))] if region else REGION_DISTRICT_PREFIXES.items()
@@ -658,32 +685,37 @@ def school_candidate(row):
 
 
 def fetch_school_candidates(institution):
-    name = normalize_school_name(institution)
-    if not name:
+    lookup_names = school_lookup_names(institution)
+    cache_key = normalize_school_name(lookup_names[0]) if lookup_names else ""
+    if not cache_key:
         return []
-    if name in _school_region_cache:
-        return _school_region_cache[name]
-    params = {
-        "Type": "json",
-        "pIndex": "1",
-        "pSize": "100",
-        "SCHUL_NM": institution,
-    }
-    try:
-        url = NEIS_SCHOOL_INFO_URL + "?" + urlencode(params)
-        response = requests.get(url, timeout=4)
-        response.raise_for_status()
-        data = response.json()
-        rows = []
-        for section in data.get("schoolInfo", []):
-            if isinstance(section, dict) and isinstance(section.get("row"), list):
-                rows.extend(section["row"])
-        exact = [row for row in rows if normalize_school_name(row.get("SCHUL_NM", "")) == name]
-        candidates = [school_candidate(row) for row in (exact or rows)]
-    except Exception as exc:
-        print("[region] school lookup failed for " + institution + ": " + str(exc))
-        candidates = []
-    _school_region_cache[name] = candidates
+    if cache_key in _school_region_cache:
+        return _school_region_cache[cache_key]
+    candidates = []
+    for lookup_name in lookup_names:
+        name = normalize_school_name(lookup_name)
+        params = {
+            "Type": "json",
+            "pIndex": "1",
+            "pSize": "100",
+            "SCHUL_NM": lookup_name,
+        }
+        try:
+            url = NEIS_SCHOOL_INFO_URL + "?" + urlencode(params)
+            response = requests.get(url, timeout=4)
+            response.raise_for_status()
+            data = response.json()
+            rows = []
+            for section in data.get("schoolInfo", []):
+                if isinstance(section, dict) and isinstance(section.get("row"), list):
+                    rows.extend(section["row"])
+            exact = [row for row in rows if normalize_school_name(row.get("SCHUL_NM", "")) == name]
+            candidates = [school_candidate(row) for row in (exact or rows)]
+            if candidates:
+                break
+        except Exception as exc:
+            print("[region] school lookup failed for " + lookup_name + ": " + str(exc))
+    _school_region_cache[cache_key] = candidates
     return candidates
 
 
@@ -1353,3 +1385,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
