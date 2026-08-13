@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-08-13 08:45",
+  "exported_at": "2026-08-13 09:07",
   "meta": {
-    "lastImportedAt": "2026-08-13 08:45",
-    "lastSearchPeriod": "20260201~20260430",
-    "total": 6199
+    "lastImportedAt": "2026-08-13 09:07",
+    "lastSearchPeriod": "20260501~20260630",
+    "total": 6250
   },
   "records": [
     {
@@ -22359,6 +22359,74 @@
       "support_office_source": "business_place_district_map"
     },
     {
+      "id": "202606261334514",
+      "tender_no": "202606261334514",
+      "contract_name": "경성전자고등학교 영어교과운영 도서 구입",
+      "institution": "경성전자고등학교",
+      "counterpart": "소년소녀책방",
+      "amount": "89,658",
+      "contract_date": "2026-06-30",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606261334514&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "경성전자고등학교",
+          "region": "부산",
+          "district": "서구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 서구 꽃마을로 25",
+          "school_code": "7150429"
+        }
+      ],
+      "support_office": "부산광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202606251333828",
+      "tender_no": "202606251333828",
+      "contract_name": "2026.고창북고등학교 수학중점학교 관련 수학캠프 버스대여 견적 요청",
+      "institution": "고창북고등학교",
+      "counterpart": "(유)고창고속관광여행사",
+      "amount": "770,000",
+      "contract_date": "2026-06-30",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606251333828&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고창북고등학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 고창군 흥덕면 선운대로 3714-32",
+          "school_code": "8321200"
+        }
+      ],
+      "support_office": "전북특별자치도고창교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202606301340679",
       "tender_no": "202606301340679",
       "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월 외 2종",
@@ -24726,6 +24794,40 @@
       "support_office": "충청남도논산계룡교육지원청"
     },
     {
+      "id": "202606171314107",
+      "tender_no": "202606171314107",
+      "contract_name": "2026학년도 사천고등학교 수학여행 숙박 및 식사 위탁 용역",
+      "institution": "사천고등학교",
+      "counterpart": "(주)참진주관광",
+      "amount": "37,860,300",
+      "contract_date": "2026-06-26",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606171314107&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사천고등학교",
+          "region": "경남",
+          "district": "사천시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 사천시 사천읍 동문로 95",
+          "school_code": "9010097"
+        }
+      ],
+      "support_office": "사천교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202606261335774",
       "tender_no": "202606261335774",
       "contract_name": "학교자율사업운영제 영어 교육 에듀테크 도구 구입",
@@ -25557,6 +25659,40 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 1,
       "support_office": "대구광역시달성교육지원청"
+    },
+    {
+      "id": "202606251331549",
+      "tender_no": "202606251331549",
+      "contract_name": "2026. 제천상업고등학교 에듀테크 프로그램 구입",
+      "institution": "제천상업고등학교",
+      "counterpart": "위드플러스",
+      "amount": "3,150,000",
+      "contract_date": "2026-06-25",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606251331549&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "제천상업고등학교",
+          "region": "충북",
+          "district": "제천시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도교육청",
+          "address": "충청북도 제천시 의병대로 243",
+          "school_code": "8000121"
+        }
+      ],
+      "support_office": "충청북도제천교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202606221323077",
@@ -27956,6 +28092,49 @@
       "support_office": "전남광주통합특별시고흥교육지원청"
     },
     {
+      "id": "202606181318223",
+      "tender_no": "202606181318223",
+      "contract_name": "대동고등학교 수학의발견 동아리 실험물품 구입",
+      "institution": "대동고등학교",
+      "counterpart": "대일전산",
+      "amount": "122,500",
+      "contract_date": "2026-06-23",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606181318223&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대동고등학교",
+          "region": "부산",
+          "district": "사하구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 사하구 을숙도대로709번길 27",
+          "school_code": "7150127"
+        },
+        {
+          "school_name": "대동고등학교",
+          "region": "경북",
+          "district": "포항시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 포항시 북구 우창서길 34",
+          "school_code": "8750160"
+        }
+      ],
+      "support_office": "경상북도포항교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202606231325653",
       "tender_no": "202606231325653",
       "contract_name": "줌 Zoom 원격 수업 에듀테크",
@@ -30014,6 +30193,74 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "support_office": "충청남도천안교육지원청"
+    },
+    {
+      "id": "202606181318138",
+      "tender_no": "202606181318138",
+      "contract_name": "환일고등학교 에듀테크 구입",
+      "institution": "환일고등학교",
+      "counterpart": "리프레쉬업",
+      "amount": "1,512,000",
+      "contract_date": "2026-06-19",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606181318138&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "환일고등학교",
+          "region": "서울",
+          "district": "중구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 중구 환일길 47",
+          "school_code": "7010266"
+        }
+      ],
+      "support_office": "서울특별시중부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202606161313031",
+      "tender_no": "202606161313031",
+      "contract_name": "야로고등학교 두드림 캠프 프로그램 운영",
+      "institution": "야로고등학교",
+      "counterpart": "두드림(DoDream)",
+      "amount": "3,190,000",
+      "contract_date": "2026-06-19",
+      "keywords": [
+        "두드림"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606161313031&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "야로고등학교",
+          "region": "경남",
+          "district": "합천군",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 합천군 야로면 역산길 13",
+          "school_code": "9010057"
+        }
+      ],
+      "support_office": "합천교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202606181317715",
@@ -37771,6 +38018,49 @@
       "support_office": "충청남도청양교육지원청"
     },
     {
+      "id": "202606101298472",
+      "tender_no": "202606101298472",
+      "contract_name": "영신여자고등학교 수학과 물품 구매 견적요청",
+      "institution": "서울영신여자고등학교",
+      "counterpart": "(주)꼬마와소나무",
+      "amount": "471,860",
+      "contract_date": "2026-06-11",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606101298472&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "서울",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "영신여자고등학교",
+          "region": "서울",
+          "district": "노원구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 노원구 중계로16나길 13",
+          "school_code": "7010215"
+        },
+        {
+          "school_name": "영신여자고등학교",
+          "region": "경기",
+          "district": "수원시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 수원시 권선구 삼천병마로1566번길 30",
+          "school_code": "7530197"
+        }
+      ],
+      "support_office": "서울특별시북부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202606111303731",
       "tender_no": "202606111303731",
       "contract_name": "챗지피티5 챗GPT 플러스 라이선스 에듀테크 안심구독 1개월에서 12개월 외 1종",
@@ -39280,6 +39570,74 @@
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 1,
       "support_office": "전남광주통합특별시영암교육지원청"
+    },
+    {
+      "id": "202606101299340",
+      "tender_no": "202606101299340",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "올아이피정보통신 주식회사",
+      "amount": "811,400",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101299340&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202606081290821",
+      "tender_no": "202606081290821",
+      "contract_name": "대전도안고등학교 에듀테크 구입 계약 견적요청",
+      "institution": "대전도안고등학교",
+      "counterpart": "올아이피정보통신 주식회사",
+      "amount": "16,591,400",
+      "contract_date": "2026-06-10",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606081290821&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "대전도안고등학교",
+          "region": "대전",
+          "district": "유성구",
+          "education_office": "대전광역시교육청",
+          "support_office": "대전광역시교육청",
+          "address": "대전광역시 유성구 원신흥남로 51",
+          "school_code": "7430290"
+        }
+      ],
+      "support_office": "대전광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202606101300512",
@@ -43652,6 +44010,40 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 1,
       "support_office": "충청남도당진교육지원청"
+    },
+    {
+      "id": "202606041286018",
+      "tender_no": "202606041286018",
+      "contract_name": "2026학년도 원광고등학교 에듀테크 구입",
+      "institution": "원광고등학교",
+      "counterpart": "테크빌교육(주)",
+      "amount": "1,094,000",
+      "contract_date": "2026-06-08",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606041286018&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "원광고등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 익산시 무왕로31길 139",
+          "school_code": "8321127"
+        }
+      ],
+      "support_office": "전북특별자치도익산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202606081290997",
@@ -50055,6 +50447,83 @@
       "support_office": "부산광역시남부교육지원청"
     },
     {
+      "id": "202604301206933",
+      "tender_no": "202604301206933",
+      "contract_name": "2026학년도 해리고등학교 수학여행 위탁 용역",
+      "institution": "해리고등학교",
+      "counterpart": "유한회사 함께하는여행",
+      "amount": "25,144,480",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604301206933&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해리고등학교",
+          "region": "전북",
+          "district": "고창군",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 고창군 해리면 해리중앙로 146",
+          "school_code": "8321198"
+        }
+      ],
+      "support_office": "전북특별자치도고창교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202606021282454",
+      "tender_no": "202606021282454",
+      "contract_name": "2026년 성일고등학교 수학여행 안전요원 용역",
+      "institution": "성일고등학교",
+      "counterpart": "더하기주식회사",
+      "amount": "1,320,000",
+      "contract_date": "2026-06-02",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606021282454&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성일고등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 성남시 중원구 시민로77번길 10",
+          "school_code": "7530167"
+        },
+        {
+          "school_name": "성일고등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 익산시 황등면 화강암로 229",
+          "school_code": "8321126"
+        }
+      ],
+      "support_office": "전북특별자치도익산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605221258810",
       "tender_no": "202605221258810",
       "contract_name": "특수교육대상자 디지털 교육지원 사업 운영을 위한 에듀테크 도구 구입",
@@ -53692,6 +54161,40 @@
       "support_office": "경상북도성주교육지원청"
     },
     {
+      "id": "202605291273589",
+      "tender_no": "202605291273589",
+      "contract_name": "전인고등학교 영어 토론 캠프 차량 임차",
+      "institution": "전인고등학교",
+      "counterpart": "(주)광명관광",
+      "amount": "990,000",
+      "contract_date": "2026-06-01",
+      "keywords": [
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605291273589&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전인고등학교",
+          "region": "강원",
+          "district": "춘천시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 춘천시 동산면 새술막길 630",
+          "school_code": "7801209"
+        }
+      ],
+      "support_office": "강원특별자치도춘천교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202606011276266",
       "tender_no": "202606011276266",
       "contract_name": "카훗 Kahoot 에듀테크 구독 라이선스 (1년)",
@@ -56581,6 +57084,74 @@
       "support_office": "부산광역시북부교육지원청"
     },
     {
+      "id": "202605291273434",
+      "tender_no": "202605291273434",
+      "contract_name": "사상고등학교 수학과 교수학습자료(수학연습장) 구입",
+      "institution": "사상고등학교",
+      "counterpart": "한국문구도매센타",
+      "amount": "148,500",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605291273434&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사상고등학교",
+          "region": "부산",
+          "district": "사상구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 사상구 강선로 24",
+          "school_code": "7150425"
+        }
+      ],
+      "support_office": "부산광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605291273714",
+      "tender_no": "202605291273714",
+      "contract_name": "고등학교 수학여행에 따른 차량 임차",
+      "institution": "군산명화학교",
+      "counterpart": "유)평화관광",
+      "amount": "1,550,000",
+      "contract_date": "2026-05-29",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605291273714&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "기타",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군산명화학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 군산시 상나운1길 37",
+          "school_code": "8321226"
+        }
+      ],
+      "support_office": "전북특별자치도군산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605291274544",
       "tender_no": "202605291274544",
       "contract_name": "학생 SW-AI 인재 양성 프로젝트 활용 에듀테크 구입",
@@ -59291,6 +59862,176 @@
       "support_office": "전북특별자치도전주교육지원청"
     },
     {
+      "id": "202605281269635",
+      "tender_no": "202605281269635",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "에듀테크나인",
+      "amount": "147,200",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281269635&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605281269393",
+      "tender_no": "202605281269393",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "디스픽트",
+      "amount": "70,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281269393&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605281269392",
+      "tender_no": "202605281269392",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "위드현 에듀테크",
+      "amount": "38,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281269392&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605281269391",
+      "tender_no": "202605281269391",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "주안테크",
+      "amount": "19,000",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281269391&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605281271964",
+      "tender_no": "202605281271964",
+      "contract_name": "사상고등학교 수학과 교수학습자료(스티커) 구입",
+      "institution": "사상고등학교",
+      "counterpart": "주식회사 크리에이티브크루",
+      "amount": "9,800",
+      "contract_date": "2026-05-28",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605281271964&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "사상고등학교",
+          "region": "부산",
+          "district": "사상구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 사상구 강선로 24",
+          "school_code": "7150425"
+        }
+      ],
+      "support_office": "부산광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605281270059",
       "tender_no": "202605281270059",
       "contract_name": "클로드 Claude AI 에듀테크",
@@ -61266,6 +62007,49 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 1,
       "support_office": "울산광역시강북교육지원청"
+    },
+    {
+      "id": "202605201250361",
+      "tender_no": "202605201250361",
+      "contract_name": "2026학년도 성일고등학교 수학여행 숙박 견적요청",
+      "institution": "성일고등학교",
+      "counterpart": "주식회사 위너스",
+      "amount": "10,206,000",
+      "contract_date": "2026-05-27",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605201250361&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성일고등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 성남시 중원구 시민로77번길 10",
+          "school_code": "7530167"
+        },
+        {
+          "school_name": "성일고등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 익산시 황등면 화강암로 229",
+          "school_code": "8321126"
+        }
+      ],
+      "support_office": "전북특별자치도익산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605271267625",
@@ -65029,6 +65813,49 @@
       "support_office": ""
     },
     {
+      "id": "202605221257911",
+      "tender_no": "202605221257911",
+      "contract_name": "2026학년도 성일고등학교 수학여행 전세 버스 임차 용약",
+      "institution": "성일고등학교",
+      "counterpart": "(유)코끼리관광여행사",
+      "amount": "2,400,000",
+      "contract_date": "2026-05-22",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605221257911&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성일고등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 성남시 중원구 시민로77번길 10",
+          "school_code": "7530167"
+        },
+        {
+          "school_name": "성일고등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 익산시 황등면 화강암로 229",
+          "school_code": "8321126"
+        }
+      ],
+      "support_office": "전북특별자치도익산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605121228039",
       "tender_no": "202605121228039",
       "contract_name": "행신초 에듀테크 수업관리 솔루션 소프트웨어 견적요청",
@@ -66994,6 +67821,40 @@
       "business_place": "충남 서천군 기산면 기산길 107 기산초등학교",
       "support_office": "충청남도서천교육지원청",
       "support_office_source": "business_place_district_map"
+    },
+    {
+      "id": "202605191246243",
+      "tender_no": "202605191246243",
+      "contract_name": "2026학년도 내면고등학교 수학여행 위탁용역",
+      "institution": "내면고등학교",
+      "counterpart": "(주)하나투어비즈니스",
+      "amount": "16,403,000",
+      "contract_date": "2026-05-21",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605191246243&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "내면고등학교",
+          "region": "강원",
+          "district": "홍천군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도교육청",
+          "address": "강원특별자치도 홍천군 내면 구룡령로 5174",
+          "school_code": "7801116"
+        }
+      ],
+      "support_office": "강원특별자치도홍천교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605211257302",
@@ -69234,6 +70095,101 @@
       "import_count": 1,
       "business_place": "경기도 김포시 청송로 5 황성주 (장기동)",
       "support_office": "경기도김포교육지원청"
+    },
+    {
+      "id": "202605201250305",
+      "tender_no": "202605201250305",
+      "contract_name": "2026학년도 성일고등학교 수학여행 차량임대",
+      "institution": "성일고등학교",
+      "counterpart": "(주)비너스고속관광",
+      "amount": "7,040,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605201250305&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성일고등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 성남시 중원구 시민로77번길 10",
+          "school_code": "7530167"
+        },
+        {
+          "school_name": "성일고등학교",
+          "region": "전북",
+          "district": "익산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 익산시 황등면 화강암로 229",
+          "school_code": "8321126"
+        }
+      ],
+      "support_office": "전북특별자치도익산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605121227660",
+      "tender_no": "202605121227660",
+      "contract_name": "2026학년도 광남고등학교 수학여행 숙박용역",
+      "institution": "광남고등학교",
+      "counterpart": "더케이호텔앤리조트(주)",
+      "amount": "11,592,000",
+      "contract_date": "2026-05-20",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121227660&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광남고등학교",
+          "region": "서울",
+          "district": "광진구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 광진구 아차산로70길 17-16",
+          "school_code": "7010066"
+        },
+        {
+          "school_name": "광남고등학교",
+          "region": "경기",
+          "district": "광주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 광주시 회안대로 350-32",
+          "school_code": "7530885"
+        },
+        {
+          "school_name": "광남고등학교",
+          "region": "광주",
+          "district": "나주시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 나주시 남평읍 남평향교길 19",
+          "school_code": "7140225"
+        }
+      ],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605191249619",
@@ -71983,6 +72939,40 @@
       "first_imported_at": "2026-07-22 17:03",
       "import_count": 1,
       "support_office": "전북특별자치도익산교육지원청"
+    },
+    {
+      "id": "202605191246878",
+      "tender_no": "202605191246878",
+      "contract_name": "2026년 인천해송고등학교 에듀테크 소프트웨어 클로드외 1종 연간사용권 구매 견적 요청",
+      "institution": "해송고등학교",
+      "counterpart": "주식회사 레드포인트",
+      "amount": "6,356,000",
+      "contract_date": "2026-05-19",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605191246878&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "인천해송고등학교",
+          "region": "인천",
+          "district": "연수구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 연수구 해송로 20",
+          "school_code": "7310349"
+        }
+      ],
+      "support_office": "인천광역시동부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605191247642",
@@ -77229,6 +78219,92 @@
       "support_office": "전남광주통합특별시보성교육지원청"
     },
     {
+      "id": "202605131232092",
+      "tender_no": "202605131232092",
+      "contract_name": "마산여자고등학교 에듀테크 구독",
+      "institution": "마산여자고등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "5,320,000",
+      "contract_date": "2026-05-15",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605131232092&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "마산여자고등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 창원시 마산합포구 고운로 157",
+          "school_code": "9010049"
+        }
+      ],
+      "support_office": "창원교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605121226882",
+      "tender_no": "202605121226882",
+      "contract_name": "2026학년도 광남고등학교 수학여행 차량임차용역",
+      "institution": "광남고등학교",
+      "counterpart": "(주)광남고속관광",
+      "amount": "12,000,000",
+      "contract_date": "2026-05-15",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121226882&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "광남고등학교",
+          "region": "서울",
+          "district": "광진구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 광진구 아차산로70길 17-16",
+          "school_code": "7010066"
+        },
+        {
+          "school_name": "광남고등학교",
+          "region": "경기",
+          "district": "광주시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 광주시 회안대로 350-32",
+          "school_code": "7530885"
+        },
+        {
+          "school_name": "광남고등학교",
+          "region": "광주",
+          "district": "나주시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 나주시 남평읍 남평향교길 19",
+          "school_code": "7140225"
+        }
+      ],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605151241955",
       "tender_no": "202605151241955",
       "contract_name": "카훗 Kahoot 에듀테크 구독 라이선스 (1년)",
@@ -79351,6 +80427,178 @@
       "support_office": "전북특별자치도전주교육지원청"
     },
     {
+      "id": "202605141236114",
+      "tender_no": "202605141236114",
+      "contract_name": "대구고등학교 수학엔진동아리 물품 구입",
+      "institution": "대구고등학교",
+      "counterpart": "아이캔에듀",
+      "amount": "30,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141236114&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "가락고등학교",
+          "region": "서울",
+          "district": "송파구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 송파구 송이로 42",
+          "school_code": "7010057"
+        },
+        {
+          "school_name": "가재울고등학교",
+          "region": "서울",
+          "district": "서대문구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 서대문구 수색로 100-35",
+          "school_code": "7011169"
+        },
+        {
+          "school_name": "강동고등학교",
+          "region": "서울",
+          "district": "강동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강동구 구천면로 572",
+          "school_code": "7010117"
+        },
+        {
+          "school_name": "강서고등학교",
+          "region": "서울",
+          "district": "양천구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 양천구 목동중앙남로 27",
+          "school_code": "7010118"
+        },
+        {
+          "school_name": "강일고등학교",
+          "region": "서울",
+          "district": "강동구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 강동구 아리수로98길 40",
+          "school_code": "7010958"
+        }
+      ],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111222276",
+      "tender_no": "202605111222276",
+      "contract_name": "고금고등학교 수학여행 숙식계약",
+      "institution": "고금고등학교",
+      "counterpart": "주식회사 골든씨티",
+      "amount": "7,980,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111222276&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고금고등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 완도군 고금면 고금로684번길 15",
+          "school_code": "7140201"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111222548",
+      "tender_no": "202605111222548",
+      "contract_name": "2026학년도 목포여자고등학교 수학여행 버스 임차 계약",
+      "institution": "목포여자고등학교",
+      "counterpart": "(유)나나고속관광여행사",
+      "amount": "18,150,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111222548&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포여자고등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 목포시 청호로 34",
+          "school_code": "7140159"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605141236788",
+      "tender_no": "202605141236788",
+      "contract_name": "2026학년도 금정고등학교 수학과 교수 학습지원 프로그램 이용 견적 요청",
+      "institution": "금정고등학교",
+      "counterpart": "(주)프리윌린",
+      "amount": "1,000,000",
+      "contract_date": "2026-05-14",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605141236788&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "금정고등학교",
+          "region": "부산",
+          "district": "동래구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 동래구 명장로63번길 60-14",
+          "school_code": "7150090"
+        }
+      ],
+      "support_office": "부산광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605141234869",
       "tender_no": "202605141234869",
       "contract_name": "장충고 고교학점제 운영 소규모 교원학습공동체(효세특) 에듀테크 구입 건",
@@ -81449,6 +82697,234 @@
       "business_place": "행정실",
       "support_office": "",
       "support_office_source": "cleared_until_region_selected"
+    },
+    {
+      "id": "202605131232135",
+      "tender_no": "202605131232135",
+      "contract_name": "평택여자고등학교 에듀테크(이음ai) 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "(주)화이트소프트",
+      "amount": "620,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131232135&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605131232066",
+      "tender_no": "202605131232066",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "올아이피정보통신 주식회사",
+      "amount": "4,066,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131232066&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605131231146",
+      "tender_no": "202605131231146",
+      "contract_name": "전주해성고등학교 국어과 문학기행 차량임대 용역",
+      "institution": "해성고등학교",
+      "counterpart": "(유)스타관광",
+      "amount": "600,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605131231146&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "해성고등학교",
+          "region": "경남",
+          "district": "거제시",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 거제시 두모길 4",
+          "school_code": "9010121"
+        }
+      ],
+      "support_office": "거제교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605131231198",
+      "tender_no": "202605131231198",
+      "contract_name": "[대구탐구학교] 성광고등학교 에듀테크 수업 활용 인공지능 라이선스 구입",
+      "institution": "성광고등학교",
+      "counterpart": "위드스쿨(주)",
+      "amount": "450,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131231198&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성광고등학교",
+          "region": "대구",
+          "district": "북구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 북구 검단로 150",
+          "school_code": "7240090"
+        }
+      ],
+      "support_office": "대구광역시서부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605131231197",
+      "tender_no": "202605131231197",
+      "contract_name": "[대구탐구학교] 성광고등학교 에듀테크 수업 활용 인공지능 라이선스 구입",
+      "institution": "성광고등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "1,196,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131231197&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "성광고등학교",
+          "region": "대구",
+          "district": "북구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시교육청",
+          "address": "대구광역시 북구 검단로 150",
+          "school_code": "7240090"
+        }
+      ],
+      "support_office": "대구광역시서부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111222971",
+      "tender_no": "202605111222971",
+      "contract_name": "2026년 영암고등학교 수학여행 임차버스 계약",
+      "institution": "영암고등학교",
+      "counterpart": "(유)한빛고속관광",
+      "amount": "16,200,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111222971&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "영암고등학교",
+          "region": "광주",
+          "district": "영암군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 영암군 영암읍 영암초중고길 40",
+          "school_code": "7140184"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605121226842",
+      "tender_no": "202605121226842",
+      "contract_name": "2026. 충무고등학교 수학여행 숙박시설 운영 계약",
+      "institution": "통영충무고등학교",
+      "counterpart": "팔팔호텔",
+      "amount": "19,920,000",
+      "contract_date": "2026-05-13",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605121226842&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605131231243",
@@ -84320,6 +85796,74 @@
       "support_office_source": "cleared_until_region_selected"
     },
     {
+      "id": "202605111222777",
+      "tender_no": "202605111222777",
+      "contract_name": "고금고등학교 수학여행 차량계약",
+      "institution": "고금고등학교",
+      "counterpart": "(유)임해관광",
+      "amount": "4,800,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111222777&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "고금고등학교",
+          "region": "광주",
+          "district": "완도군",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 완도군 고금면 고금로684번길 15",
+          "school_code": "7140201"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111223523",
+      "tender_no": "202605111223523",
+      "contract_name": "2026학년도 목포여자고등학교 수학여행 숙박 및 조식 이용 계약",
+      "institution": "목포여자고등학교",
+      "counterpart": "주식회사 더트리니호텔",
+      "amount": "17,460,000",
+      "contract_date": "2026-05-12",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111223523&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포여자고등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 목포시 청호로 34",
+          "school_code": "7140159"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
       "id": "202605111225668",
       "tender_no": "202605111225668",
       "contract_name": "카훗 Kahoot 브론즈 에듀테크 라이선스 안심 구독 서비스 (1년)",
@@ -86899,6 +88443,108 @@
       "first_imported_at": "2026-07-23 18:31",
       "import_count": 1,
       "support_office": "전남광주통합특별시완도교육지원청"
+    },
+    {
+      "id": "202605111223402",
+      "tender_no": "202605111223402",
+      "contract_name": "평택여자고등학교 에듀테크(패들렛) 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "주식회사 스쿨온담",
+      "amount": "2,295,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605111223402&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111223775",
+      "tender_no": "202605111223775",
+      "contract_name": "2026학년도 진량고등학교 수학여행 버스임차 용역",
+      "institution": "진량고등학교",
+      "counterpart": "(주)제주교통",
+      "amount": "20,000,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111223775&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "진량고등학교",
+          "region": "경북",
+          "district": "경산시",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도교육청",
+          "address": "경상북도 경산시 진량읍 대학로 1051",
+          "school_code": "8750205"
+        }
+      ],
+      "support_office": "경상북도경산교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605111222680",
+      "tender_no": "202605111222680",
+      "contract_name": "2026학년도 목포여자고등학교 수학여행 주간안전요원 용역 계약",
+      "institution": "목포여자고등학교",
+      "counterpart": "따뜨테라",
+      "amount": "4,258,000",
+      "contract_date": "2026-05-11",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605111222680&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "목포여자고등학교",
+          "region": "광주",
+          "district": "목포시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전남광주통합특별시교육청",
+          "address": "전남광주통합특별시 목포시 청호로 34",
+          "school_code": "7140159"
+        }
+      ],
+      "support_office": "전남광주통합특별시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605111225507",
@@ -89713,6 +91359,64 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "support_office": ""
+    },
+    {
+      "id": "202604301207133",
+      "tender_no": "202604301207133",
+      "contract_name": "대연고등학교 국어 교제 제작",
+      "institution": "대연고등학교",
+      "counterpart": "거북인쇄공사",
+      "amount": "1,128,600",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "국어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604301207133&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "대연고등학교",
+          "region": "부산",
+          "district": "남구",
+          "education_office": "부산광역시교육청",
+          "support_office": "부산광역시교육청",
+          "address": "부산광역시 남구 조각공원로 20",
+          "school_code": "7150129"
+        }
+      ],
+      "support_office": "부산광역시교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605071218010",
+      "tender_no": "202605071218010",
+      "contract_name": "2026. 충무고등학교 수학여행 서울대 캠퍼스투어 체험 운영",
+      "institution": "통영충무고등학교",
+      "counterpart": "창의진로연구원",
+      "amount": "2,772,000",
+      "contract_date": "2026-05-08",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605071218010&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "",
+      "region_status": "unknown",
+      "region_source": "neis_school_info",
+      "region_candidates": [],
+      "support_office": "",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605081219294",
@@ -92634,6 +94338,108 @@
       "business_place": "교무실",
       "support_office": "",
       "support_office_source": "cleared_until_region_selected"
+    },
+    {
+      "id": "202605071215195",
+      "tender_no": "202605071215195",
+      "contract_name": "2026학년도 의령고등학교 수학여행 차량 임차 용역 견적요청",
+      "institution": "의령고등학교",
+      "counterpart": "금화고속관광",
+      "amount": "5,400,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605071215195&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "의령고등학교",
+          "region": "경남",
+          "district": "의령군",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 의령군 의령읍 백산로3길 4",
+          "school_code": "9010222"
+        }
+      ],
+      "support_office": "의령교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202605061212413",
+      "tender_no": "202605061212413",
+      "contract_name": "2026학년도 안의고등학교 수학여행 위탁용역",
+      "institution": "안의고등학교",
+      "counterpart": "힘찬관광(주)",
+      "amount": "26,909,800",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "수학"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605061212413&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "안의고등학교",
+          "region": "경남",
+          "district": "함양군",
+          "education_office": "경상남도교육청",
+          "support_office": "경상남도교육청",
+          "address": "경상남도 함양군 안의면 안의배움길 30",
+          "school_code": "9010233"
+        }
+      ],
+      "support_office": "함양교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
+    },
+    {
+      "id": "202604241191673",
+      "tender_no": "202604241191673",
+      "contract_name": "2026년 인천해송고등학교 에듀테크 소프트웨어 패들렛 플래티넘  연간사용권 구매 안내 공고",
+      "institution": "해송고등학교",
+      "counterpart": "153솔루션",
+      "amount": "470,000",
+      "contract_date": "2026-05-07",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604241191673&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "인천해송고등학교",
+          "region": "인천",
+          "district": "연수구",
+          "education_office": "인천광역시교육청",
+          "support_office": "인천광역시교육청",
+          "address": "인천광역시 연수구 해송로 20",
+          "school_code": "7310349"
+        }
+      ],
+      "support_office": "인천광역시동부교육지원청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202605061213706",
@@ -98341,6 +100147,40 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "support_office": "전북특별자치도남원교육지원청"
+    },
+    {
+      "id": "202604301206477",
+      "tender_no": "202604301206477",
+      "contract_name": "평택여자고등학교 에듀테크 구입",
+      "institution": "평택여자고등학교",
+      "counterpart": "주식회사 바이브온코퍼레이션",
+      "amount": "5,000,000",
+      "contract_date": "2026-05-04",
+      "keywords": [
+        "에듀테크"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604301206477&excelSection=N",
+      "search_period_from": "2026.05.01",
+      "search_period_to": "2026.06.30",
+      "last_imported_at": "2026-08-13 09:07",
+      "school_level": "고",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "평택여자고등학교",
+          "region": "경기",
+          "district": "평택시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도교육청",
+          "address": "경기도 평택시 영신로 220",
+          "school_code": "7530578"
+        }
+      ],
+      "support_office": "경기도교육청",
+      "first_imported_at": "2026-08-13 09:07",
+      "import_count": 1
     },
     {
       "id": "202604301205739",
