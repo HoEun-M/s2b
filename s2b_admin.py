@@ -27,11 +27,6 @@ SUPABASE_KEY = os.environ.get("S2B_SUPABASE_KEY", "sb_publishable_bFJbCmjIbzCEra
 REGIONS = ["", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
 SCHOOL_LEVELS = ["", "유", "초", "중", "고", "기타"]
 EDITABLE_FIELDS = {
-    "contract_name",
-    "institution",
-    "counterpart",
-    "amount",
-    "contract_date",
     "school_level",
     "region",
     "region_status",
@@ -136,6 +131,27 @@ def compact_record(record, deleted):
         "support_mismatch": support_mismatch(record),
         "support_unknown_region": support_unknown_region(record),
     }
+
+
+def support_offices_for_region(region, records=None, current=""):
+    offices = set()
+    if region:
+        for district in local.REGION_DISTRICT_PREFIXES.get(region, {}).values():
+            office = local.support_office_from_region_district(region, district)
+            if office:
+                offices.add(office)
+    for row in records or []:
+        support = row.get("support_office") or ""
+        if support and local.support_office_matches_region(region, support):
+            offices.add(support)
+        for candidate in row.get("region_candidates", []) or []:
+            candidate_region = candidate.get("region") or ""
+            candidate_support = candidate.get("support_office") or ""
+            if (not region or candidate_region == region) and candidate_support:
+                offices.add(candidate_support)
+    if current:
+        offices.add(current)
+    return [""] + sorted(offices)
 
 
 def calc_stats(records, deleted):
@@ -309,7 +325,7 @@ HTML = r"""<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>S2B 로컬 관리 페이지</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#263442;font:13px 'Malgun Gothic',Arial,sans-serif}.wrap{max-width:1440px;margin:0 auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.top h1{margin:0;font-size:20px}.sub{color:#69727d;font-size:12px}.grid{display:grid;grid-template-columns:1.45fr .8fr;gap:14px}.panel{background:#fff;border:1px solid #dce4ec;border-radius:8px;padding:14px}.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:14px}.stat{background:#fff;border:1px solid #dce4ec;border-radius:8px;padding:10px}.stat span{display:block;color:#69727d;font-size:11px}.stat strong{display:block;margin-top:4px;font-size:18px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.input,.select{height:32px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;padding:0 9px;font:inherit}.input{min-width:260px}.btn{height:32px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;padding:0 11px;font:inherit;cursor:pointer}.btn.secondary{background:#fff;color:#245a92}.btn.danger{background:#b33a3a;border-color:#b33a3a}.btn:disabled{opacity:.55;cursor:wait}.table-wrap{height:calc(100vh - 270px);min-height:460px;overflow:auto;border:1px solid #e2e6ea;border-radius:8px}table{width:100%;border-collapse:collapse;min-width:920px}th{position:sticky;top:0;background:#245a92;color:#fff;padding:9px;text-align:left;z-index:2}td{border-bottom:1px solid #edf0f2;padding:8px;vertical-align:top}tr:hover td{background:#f8fbff}tr.active td{background:#e8f1fa}.num{text-align:right;white-space:nowrap;font-weight:600}.muted{color:#69727d}.pill{display:inline-block;border-radius:10px;background:#e8f1fa;color:#245a92;padding:1px 7px;margin:1px;font-size:11px}.issue{color:#b33a3a;font-weight:700}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#69727d}.field input,.field textarea,.field select{width:100%;border:1px solid #b9c7d6;border-radius:6px;padding:8px;font:inherit}.field textarea{min-height:74px;resize:vertical}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.status{margin-top:10px;color:#1d7a38;white-space:pre-wrap}.status.error{color:#b33a3a}.check{display:flex;align-items:center;gap:6px;margin-top:22px}.small{font-size:12px;color:#69727d;line-height:1.5}.pager{display:flex;align-items:center;justify-content:space-between;margin-top:10px}.kbd{font-family:Consolas,monospace;background:#f0f4f8;border-radius:4px;padding:1px 4px}@media(max-width:980px){.grid,.stats{grid-template-columns:1fr}.table-wrap{height:420px}.form{grid-template-columns:1fr}}
+*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#263442;font:13px 'Malgun Gothic',Arial,sans-serif}.wrap{max-width:1440px;margin:0 auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.top h1{margin:0;font-size:20px}.sub{color:#69727d;font-size:12px}.grid{display:grid;grid-template-columns:1.45fr .8fr;gap:14px}.panel{background:#fff;border:1px solid #dce4ec;border-radius:8px;padding:14px}.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:14px}.stat{background:#fff;border:1px solid #dce4ec;border-radius:8px;padding:10px}.stat span{display:block;color:#69727d;font-size:11px}.stat strong{display:block;margin-top:4px;font-size:18px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.input,.select{height:32px;border:1px solid #b9c7d6;border-radius:6px;background:#fff;padding:0 9px;font:inherit}.input{min-width:260px}.btn{height:32px;border:1px solid #245a92;border-radius:6px;background:#245a92;color:#fff;padding:0 11px;font:inherit;cursor:pointer}.btn.secondary{background:#fff;color:#245a92}.btn.danger{background:#b33a3a;border-color:#b33a3a}.btn:disabled{opacity:.55;cursor:wait}.table-wrap{height:calc(100vh - 270px);min-height:460px;overflow:auto;border:1px solid #e2e6ea;border-radius:8px}table{width:100%;border-collapse:collapse;min-width:920px}th{position:sticky;top:0;background:#245a92;color:#fff;padding:9px;text-align:left;z-index:2}td{border-bottom:1px solid #edf0f2;padding:8px;vertical-align:top}tr:hover td{background:#f8fbff}tr.active td{background:#e8f1fa}.num{text-align:right;white-space:nowrap;font-weight:600}.muted{color:#69727d}.pill{display:inline-block;border-radius:10px;background:#e8f1fa;color:#245a92;padding:1px 7px;margin:1px;font-size:11px}.issue{color:#b33a3a;font-weight:700}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#69727d}.field input,.field textarea,.field select{width:100%;border:1px solid #b9c7d6;border-radius:6px;padding:8px;font:inherit}.field input[readonly],.field textarea[readonly]{background:#f4f6f8;color:#5c6670}.field textarea{min-height:74px;resize:vertical}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.status{margin-top:10px;color:#1d7a38;white-space:pre-wrap}.status.error{color:#b33a3a}.check{display:flex;align-items:center;gap:6px;margin-top:22px}.small{font-size:12px;color:#69727d;line-height:1.5}.pager{display:flex;align-items:center;justify-content:space-between;margin-top:10px}.kbd{font-family:Consolas,monospace;background:#f0f4f8;border-radius:4px;padding:1px 4px}@media(max-width:980px){.grid,.stats{grid-template-columns:1fr}.table-wrap{height:420px}.form{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -348,16 +364,16 @@ HTML = r"""<!doctype html>
     </div>
     <div class="panel">
       <h2 style="margin:0 0 10px;font-size:15px">선택 행 수정</h2>
-      <div class="small">수정하면 <span class="kbd">s2b_cumulative.json</span>이 저장됩니다. 지역 변경은 <span class="kbd">region_overrides.json</span>에도 반영되어 Supabase 동기화 대상이 됩니다.</div>
+      <div class="small">S2B 원본 계약 정보는 읽기 전용입니다. 지역, 세부지역/교육지원청, 학교급, 키워드처럼 후처리로 추가한 값만 수정할 수 있습니다.</div>
       <form id="editForm" class="form" onsubmit="event.preventDefault(); saveRecord();">
         <div class="field full"><label>ID</label><input id="f_id" disabled></div>
-        <div class="field full"><label>계약명</label><textarea id="f_contract_name"></textarea></div>
-        <div class="field"><label>계약기관</label><input id="f_institution"></div>
-        <div class="field"><label>계약대상자</label><input id="f_counterpart"></div>
-        <div class="field"><label>금액</label><input id="f_amount"></div>
-        <div class="field"><label>계약체결일</label><input id="f_contract_date"></div>
-        <div class="field"><label>지역</label><select id="f_region"></select></div>
-        <div class="field"><label>교육지원청</label><input id="f_support_office"></div>
+        <div class="field full"><label>계약명</label><textarea id="f_contract_name" readonly></textarea></div>
+        <div class="field"><label>계약기관</label><input id="f_institution" readonly></div>
+        <div class="field"><label>계약대상자</label><input id="f_counterpart" readonly></div>
+        <div class="field"><label>금액</label><input id="f_amount" readonly></div>
+        <div class="field"><label>계약체결일</label><input id="f_contract_date" readonly></div>
+        <div class="field"><label>지역</label><select id="f_region" onchange="populateSupportOffices(this.value,'')"></select></div>
+        <div class="field"><label>세부지역/교육지원청</label><select id="f_support_office"></select></div>
         <div class="field"><label>학교급</label><select id="f_school_level"></select></div>
         <div class="field"><label>지역 상태</label><input id="f_region_status"></div>
         <div class="field"><label>지역 출처</label><input id="f_region_source"></div>
@@ -384,12 +400,13 @@ function fillSelect(node,values,allLabel){node.innerHTML='';values.forEach(v=>{c
 function won(v){return Number(v||0).toLocaleString('ko-KR')+'원'}
 function keywords(v){return (v||[]).map(k=>`<span class="pill">${escapeHtml(k)}</span>`).join('')}
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function populateSupportOffices(region,current){const data=await api('/api/support-offices?region='+encodeURIComponent(region||'')+'&current='+encodeURIComponent(current||''));const node=el('f_support_office');node.innerHTML='';data.offices.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v||'미지정';node.appendChild(o)});node.value=current||''}
 async function loadStats(){const data=await api('/api/stats');el('stats').innerHTML=[
 ['전체',data.total.toLocaleString('ko-KR')+'건'],['삭제',data.deleted.toLocaleString('ko-KR')+'건'],['지역 없음',data.empty_region.toLocaleString('ko-KR')+'건'],['지원청 없음',data.empty_support_with_region.toLocaleString('ko-KR')+'건'],['시도-지원청 불일치',data.support_mismatch.toLocaleString('ko-KR')+'건']
 ].map(x=>`<div class="stat"><span>${x[0]}</span><strong>${x[1]}</strong></div>`).join('')}
 async function loadRecords(nextOffset){offset=Math.max(0,nextOffset||0);const p=new URLSearchParams({q:el('q').value,region:el('region').value,issue:el('issue').value,offset,limit});const data=await api('/api/records?'+p);total=data.total;el('pageInfo').textContent=`${total.toLocaleString('ko-KR')}건 중 ${total?offset+1:0}-${Math.min(offset+limit,total)}`;el('rows').innerHTML=data.records.map(r=>`<tr onclick="selectRecord('${r.id}')" class="${selected&&selected.id===r.id?'active':''}"><td><b>${escapeHtml(r.contract_name)}</b><div class="muted">${r.id} · ${escapeHtml(r.contract_date)} ${r.deleted?' · 삭제':''}</div><div>${keywords(r.keywords)}</div></td><td>${escapeHtml(r.region||'미지정')}<br><span class="${r.support_mismatch?'issue':'muted'}">${escapeHtml(r.support_office||'미지정')}</span></td><td>${escapeHtml(r.institution)}</td><td>${escapeHtml(r.counterpart)}</td><td class="num">${won(r.amount_number)}</td></tr>`).join('')}
-async function selectRecord(id){selected=(await api('/api/records/'+encodeURIComponent(id))).record;for(const k of ['id','contract_name','institution','counterpart','amount','contract_date','region','support_office','school_level','region_status','region_source']){el('f_'+k).value=Array.isArray(selected[k])?selected[k].join(', '):(selected[k]||'')}el('f_keywords').value=(selected.keywords||[]).join(', ');el('f_deleted').checked=!!selected.deleted;loadRecords(offset)}
-function collect(){return {contract_name:el('f_contract_name').value,institution:el('f_institution').value,counterpart:el('f_counterpart').value,amount:el('f_amount').value,contract_date:el('f_contract_date').value,region:el('f_region').value,support_office:el('f_support_office').value,school_level:el('f_school_level').value,region_status:el('f_region_status').value,region_source:el('f_region_source').value,keywords:el('f_keywords').value.split(',').map(x=>x.trim()).filter(Boolean),deleted:el('f_deleted').checked}}
+async function selectRecord(id){selected=(await api('/api/records/'+encodeURIComponent(id))).record;for(const k of ['id','contract_name','institution','counterpart','amount','contract_date','region','school_level','region_status','region_source']){el('f_'+k).value=Array.isArray(selected[k])?selected[k].join(', '):(selected[k]||'')}await populateSupportOffices(selected.region||'',selected.support_office||'');el('f_keywords').value=(selected.keywords||[]).join(', ');el('f_deleted').checked=!!selected.deleted;loadRecords(offset)}
+function collect(){return {region:el('f_region').value,support_office:el('f_support_office').value,school_level:el('f_school_level').value,region_status:el('f_region_status').value,region_source:el('f_region_source').value,keywords:el('f_keywords').value.split(',').map(x=>x.trim()).filter(Boolean),deleted:el('f_deleted').checked}}
 async function saveRecord(){if(!selected){status('먼저 행을 선택하세요.',true);return}try{const data=await api('/api/records/'+encodeURIComponent(selected.id),{method:'PUT',body:JSON.stringify(collect())});selected=data.record;status('저장했습니다. HTML 반영은 상단의 HTML 재생성을 눌러주세요.');await loadStats();await loadRecords(offset)}catch(e){status(e.message,true)}}
 async function toggleDeletedOnly(){if(!selected)return;el('f_deleted').checked=!el('f_deleted').checked;await saveRecord()}
 function clearSupport(){el('f_support_office').value=''}
@@ -441,6 +458,11 @@ class AdminHandler(BaseHTTPRequestHandler):
                 records = data.get("records", [])
                 if parsed.path == "/api/stats":
                     self.send_json(calc_stats(records, deleted))
+                    return
+                if parsed.path == "/api/support-offices":
+                    region = params.get("region", [""])[0] or ""
+                    current = params.get("current", [""])[0] or ""
+                    self.send_json({"offices": support_offices_for_region(region, records, current)})
                     return
                 if parsed.path == "/api/records":
                     rows = filter_records(records, deleted, params)
