@@ -676,8 +676,32 @@ def normalize_support_office_name(region, support_office):
     return text
 
 
+def region_from_support_office(support_office):
+    text = support_office or ""
+    if not text:
+        return ""
+    mixed_prefix = "전남광주통합특별시"
+    if text.startswith(mixed_prefix):
+        tail = text[len(mixed_prefix):]
+        district_base = tail.replace("교육지원청", "")
+        jeonnam_bases = {district[:-1] for district in REGION_DISTRICT_PREFIXES.get("전남", {}).values()}
+        return "전남" if district_base in jeonnam_bases else "광주"
+    for alias, region in sorted(REGION_ALIASES, key=lambda item: len(item[0]), reverse=True):
+        if alias in text:
+            return region
+    for region, district_map in REGION_DISTRICT_PREFIXES.items():
+        for district in district_map.values():
+            base = district[:-1]
+            if text.startswith(base + "교육지원청") or text.startswith(base + "시교육지원청") or text.startswith(base + "군교육지원청") or text.startswith(base + "구교육지원청"):
+                return region
+    for (region, _district), office in DISTRICT_SUPPORT_OFFICE_OVERRIDES.items():
+        if text == office:
+            return region
+    return ""
+
+
 def normalize_record_region_support(region, support_office):
-    normalized_region = region or ""
+    normalized_region = region or region_from_support_office(support_office)
     text = support_office or ""
     mixed_prefix = "전남광주통합특별시"
     if text.startswith(mixed_prefix):
@@ -958,6 +982,7 @@ def update_cumulative_json(results, date_from, date_to):
         old.setdefault("region_source", "")
         old.setdefault("region_candidates", [])
         old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", "")))
+        old["region"], old["support_office"] = normalize_record_region_support(old.get("region", ""), old.get("support_office", ""))
         by_id[record_id] = old
 
     added = 0
