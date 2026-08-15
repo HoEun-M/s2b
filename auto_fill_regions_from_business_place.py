@@ -33,6 +33,37 @@ REGION_ALIASES = [
     ("제주특별자치도", "제주"), ("제주도", "제주"), ("제주", "제주"),
 ]
 
+METRO_SUPPORT_OFFICE_BY_DISTRICT = {
+    ("부산", "중구"): "부산광역시서부교육지원청",
+    ("부산", "서구"): "부산광역시서부교육지원청",
+    ("부산", "영도구"): "부산광역시서부교육지원청",
+    ("부산", "사하구"): "부산광역시서부교육지원청",
+    ("부산", "남구"): "부산광역시남부교육지원청",
+    ("부산", "동구"): "부산광역시남부교육지원청",
+    ("부산", "부산진구"): "부산광역시남부교육지원청",
+    ("부산", "북구"): "부산광역시북부교육지원청",
+    ("부산", "사상구"): "부산광역시북부교육지원청",
+    ("부산", "강서구"): "부산광역시북부교육지원청",
+    ("부산", "동래구"): "부산광역시동래교육지원청",
+    ("부산", "금정구"): "부산광역시동래교육지원청",
+    ("부산", "연제구"): "부산광역시동래교육지원청",
+    ("부산", "해운대구"): "부산광역시해운대교육지원청",
+    ("부산", "수영구"): "부산광역시해운대교육지원청",
+    ("부산", "기장군"): "부산광역시해운대교육지원청",
+    ("대전", "동구"): "대전광역시동부교육지원청",
+    ("대전", "중구"): "대전광역시동부교육지원청",
+    ("대전", "대덕구"): "대전광역시동부교육지원청",
+    ("대전", "서구"): "대전광역시서부교육지원청",
+    ("대전", "유성구"): "대전광역시서부교육지원청",
+    ("울산", "중구"): "울산광역시강북교육지원청",
+    ("울산", "동구"): "울산광역시강북교육지원청",
+    ("울산", "북구"): "울산광역시강북교육지원청",
+    ("울산", "남구"): "울산광역시강남교육지원청",
+    ("울산", "울주군"): "울산광역시강남교육지원청",
+    ("제주", "제주시"): "제주특별자치도제주시교육지원청",
+    ("제주", "서귀포시"): "제주특별자치도서귀포시교육지원청",
+}
+
 
 def decode_html(content):
     return content.decode("euc-kr", errors="replace")
@@ -56,10 +87,55 @@ def extract_business_place(html):
 
 def region_from_address(address):
     text = " ".join((address or "").split())
-    for alias, region in REGION_ALIASES:
-        if text.startswith(alias + " ") or text == alias or alias in text[:12]:
+    for alias, region in sorted(REGION_ALIASES, key=lambda item: len(item[0]), reverse=True):
+        if text.startswith(alias):
             return region
     return ""
+
+
+def district_from_address(region, address):
+    text = " ".join((address or "").split())
+    for alias, alias_region in sorted(REGION_ALIASES, key=lambda item: len(item[0]), reverse=True):
+        if alias_region == region and text.startswith(alias):
+            text = text[len(alias):].strip()
+            break
+    district_match = local.ADDRESS_DISTRICT_PATTERN.search(text)
+    return district_match.group(1) if district_match else ""
+
+
+def support_office_from_address(region, address, row):
+    if not region or not address:
+        return ""
+    district = district_from_address(region, address)
+    if region == "세종":
+        return "세종특별자치시교육청"
+    support = METRO_SUPPORT_OFFICE_BY_DISTRICT.get((region, district))
+    if support:
+        return support
+    support = local.support_office_from_region_district(region, district)
+    if support:
+        return support
+    support = local.infer_support_office(
+        region,
+        row.get("institution", ""),
+        row.get("region_candidates", []),
+        address,
+    )
+    if not district and support and not local.support_office_matches_region(region, support):
+        return ""
+    return support
+
+
+def is_missing_region(row):
+    region = (row.get("region") or "").strip()
+    return not region or region == "미지정"
+
+
+def load_region_overrides(path):
+    if not path.exists():
+        return {}
+    value = json.loads(path.read_text(encoding="utf-8-sig"))
+    return value if isinstance(value, dict) else {}
 
 
 def supabase_headers():
@@ -90,11 +166,17 @@ def main():
     parser.add_argument("--delay-max", type=float, default=1.8)
     parser.add_argument("--save-every", type=int, default=25)
     parser.add_argument("--no-supabase", action="store_true")
+    parser.add_argument("--recheck-business-place", action="store_true")
     args = parser.parse_args()
 
     json_path = Path(local.CUMULATIVE_JSON_FILE)
+    overrides_path = json_path.with_name("region_overrides.json")
     data = json.loads(json_path.read_text(encoding="utf-8"))
-    candidates = [row for row in data.get("records", []) if not (row.get("region") or "").strip() and row.get("link")]
+    region_overrides = load_region_overrides(overrides_path)
+    if args.recheck_business_place:
+        candidates = [row for row in data.get("records", []) if row.get("business_place")]
+    else:
+        candidates = [row for row in data.get("records", []) if is_missing_region(row) and row.get("link")]
     if args.limit:
         candidates = candidates[: args.limit]
 
@@ -111,24 +193,31 @@ def main():
         checked += 1
         record_id = row.get("id") or row.get("tender_no")
         try:
-            response = session.get(row["link"], timeout=20)
-            response.raise_for_status()
-            content = response.content
-            if local.is_captcha(content):
-                captcha += 1
-                print(f"[captcha] stopped at {record_id}")
-                break
-
-            address = extract_business_place(decode_html(content))
+            if args.recheck_business_place and row.get("business_place"):
+                address = row.get("business_place", "")
+            else:
+                response = session.get(row["link"], timeout=20)
+                response.raise_for_status()
+                content = response.content
+                if local.is_captcha(content):
+                    captcha += 1
+                    print(f"[captcha] stopped at {record_id}")
+                    break
+                address = extract_business_place(decode_html(content))
             region = region_from_address(address)
             if region:
+                support_office = support_office_from_address(region, address, row)
                 row["region"] = region
                 row["region_status"] = "matched"
                 row["region_source"] = "business_place"
                 row["business_place"] = address
+                if support_office:
+                    row["support_office"] = support_office
+                    row["support_office_source"] = "business_place"
+                region_overrides[record_id] = region
                 pending_upserts.append({"record_id": record_id, "region": region})
                 filled += 1
-                print(f"[fill] {record_id} -> {region} | {address[:60]}")
+                print(f"[fill] {record_id} -> {region} / {support_office or '-'} | {address[:60]}")
             else:
                 if address:
                     row["business_place"] = address
@@ -140,6 +229,7 @@ def main():
                     upsert_supabase_regions(pending_upserts)
                 pending_upserts = []
                 save_data(json_path, data)
+                save_data(overrides_path, region_overrides)
                 print(f"[checkpoint] checked={checked}, filled={filled}, skipped={skipped}, errors={errors}")
 
             time.sleep(random.uniform(args.delay_min, args.delay_max))
@@ -150,6 +240,7 @@ def main():
     if pending_upserts and not args.no_supabase:
         upsert_supabase_regions(pending_upserts)
     save_data(json_path, data)
+    save_data(overrides_path, region_overrides)
     local.save_cumulative_html(data)
     print(f"[done] checked={checked}, filled={filled}, skipped={skipped}, captcha={captcha}, errors={errors}")
 
