@@ -324,9 +324,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "고",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [],
       "support_office": "",
       "first_imported_at": "2026-08-16 07:54",
@@ -4103,9 +4103,9 @@
       "search_period_to": "2026.07.30",
       "last_imported_at": "2026-07-31 13:06",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "오동초등학교",
@@ -4138,8 +4138,8 @@
       "first_imported_at": "2026-07-31 13:06",
       "import_count": 1,
       "business_place": "오동초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607291403796",
@@ -4996,9 +4996,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "태봉초등학교",
@@ -5037,10 +5037,11 @@
           "school_code": "8392060"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도포천교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
-      "business_place": "태봉초등학교"
+      "business_place": "태봉초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607281402343",
@@ -5092,9 +5093,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -5115,10 +5116,11 @@
           "school_code": "8452049"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607281402130",
@@ -6248,9 +6250,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "설악중학교",
@@ -6271,10 +6273,11 @@
           "school_code": "7863055"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도속초양양교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
-      "business_place": "2층 정보화실"
+      "business_place": "2층 정보화실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607241398740",
@@ -6963,14 +6966,15 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-13 07:23",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 1,
-      "support_office": "",
-      "business_place": "교무실"
+      "support_office": "전북특별자치도전주교육지원청",
+      "business_place": "교무실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607271399660",
@@ -8994,9 +8998,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -9017,10 +9021,11 @@
           "school_code": "8452049"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607241398390",
@@ -18254,9 +18259,9 @@
       "search_period_to": "2026.08.03",
       "last_imported_at": "2026-08-16 07:54",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "용봉초등학교",
@@ -18277,10 +18282,11 @@
           "school_code": "8392046"
         }
       ],
-      "support_office": "",
+      "support_office": "충청남도홍성교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
-      "business_place": "용봉초등학교"
+      "business_place": "용봉초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607161383006",
@@ -20423,9 +20429,9 @@
       "search_period_to": "2026.07.31",
       "last_imported_at": "2026-08-06 18:14",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -20449,8 +20455,8 @@
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도고창교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607201386033",
@@ -25810,14 +25816,15 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-07 10:37",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "원주교육문화관 문헌정보과",
-      "support_office": ""
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607091364118",
@@ -27431,9 +27438,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-16 06:54",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "설악중학교",
@@ -27454,10 +27461,11 @@
           "school_code": "7863055"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도속초양양교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
-      "business_place": "교사1동 2층 정보화실"
+      "business_place": "교사1동 2층 정보화실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607101367460",
@@ -31057,9 +31065,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-16 06:54",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화정초등학교",
@@ -31080,10 +31088,11 @@
           "school_code": "7491145"
         }
       ],
-      "support_office": "",
+      "support_office": "부산광역시북부교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
-      "business_place": "화정초등학교"
+      "business_place": "화정초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607131372206",
@@ -43309,9 +43318,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-16 06:54",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "금곡고등학교",
@@ -43332,10 +43341,11 @@
           "school_code": "7530629"
         }
       ],
-      "support_office": "경기도구리남양주교육지원청",
+      "support_office": "부산광역시북부교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
-      "business_place": "금곡고등학교"
+      "business_place": "금곡고등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202607031348183",
@@ -47480,9 +47490,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-16 06:54",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "영광고등학교",
@@ -47503,10 +47513,11 @@
           "school_code": "8750188"
         }
       ],
-      "support_office": "경상북도영주교육지원청",
+      "support_office": "전라남도영광교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
-      "business_place": "영광고"
+      "business_place": "영광고",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202607031348291",
@@ -57690,9 +57701,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "명덕초등학교",
@@ -57725,7 +57736,8 @@
       "support_office": "경기도안성교육지원청",
       "first_imported_at": "2026-08-15 16:22",
       "import_count": 1,
-      "business_place": "명덕초등학교"
+      "business_place": "명덕초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606291337017",
@@ -67242,9 +67254,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "용인고등학교",
@@ -67268,7 +67280,8 @@
       "support_office": "경기도용인교육지원청",
       "first_imported_at": "2026-08-15 16:22",
       "import_count": 1,
-      "business_place": "용인고등학교"
+      "business_place": "용인고등학교",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202606251332661",
@@ -69200,9 +69213,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "금곡고등학교",
@@ -69223,10 +69236,11 @@
           "school_code": "7530629"
         }
       ],
-      "support_office": "경기도구리남양주교육지원청",
+      "support_office": "부산광역시북부교육지원청",
       "first_imported_at": "2026-08-15 16:22",
       "import_count": 1,
-      "business_place": "행정실"
+      "business_place": "행정실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606241330077",
@@ -73244,9 +73258,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "영광고등학교",
@@ -73270,8 +73284,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 2,
       "business_place": "정보부 협의",
-      "support_office": "경상북도영주교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도영광교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202606231325835",
@@ -73992,9 +74006,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대청초등학교",
@@ -74026,8 +74040,9 @@
       ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 2,
-      "support_office": "",
-      "business_place": "대청초등학교 담당 교사실"
+      "support_office": "부산광역시해운대교육지원청",
+      "business_place": "대청초등학교 담당 교사실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606181318391",
@@ -82896,9 +82911,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "양덕중학교",
@@ -82928,10 +82943,11 @@
           "school_code": "9022154"
         }
       ],
-      "support_office": "",
+      "support_office": "경상북도포항교육지원청",
       "first_imported_at": "2026-08-15 16:22",
       "import_count": 1,
-      "business_place": "양덕중학교(포항)"
+      "business_place": "양덕중학교(포항)",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606181316667",
@@ -85145,14 +85161,15 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-15 16:22",
       "school_level": "초",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 2,
-      "support_office": "",
-      "business_place": "웅천초등학교"
+      "support_office": "창원교육지원청",
+      "business_place": "웅천초등학교",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202606171315311",
@@ -96746,9 +96763,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "고창초등학교",
@@ -96769,10 +96786,11 @@
           "school_code": "8452028"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
-      "business_place": "고창초등학교"
+      "business_place": "고창초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606091297246",
@@ -118243,9 +118261,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "성수고등학교",
@@ -118266,10 +118284,11 @@
           "school_code": "7801150"
         }
       ],
-      "support_office": "",
+      "support_office": "서울특별시성동광진교육지원청",
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
-      "business_place": "성수고등학교"
+      "business_place": "성수고등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606041286557",
@@ -119486,14 +119505,15 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-07-26 18:00",
       "import_count": 3,
       "business_place": "교무실",
-      "support_office": ""
+      "support_office": "창원교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202606041284943",
@@ -123164,9 +123184,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "신정초등학교",
@@ -123189,8 +123209,9 @@
       ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 2,
-      "support_office": "",
-      "business_place": "담당자가 지정하는 장소"
+      "support_office": "울산광역시강남교육지원청",
+      "business_place": "담당자가 지정하는 장소",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606021283045",
@@ -123642,9 +123663,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동광초등학교",
@@ -123677,8 +123698,8 @@
       "first_imported_at": "2026-08-06 19:22",
       "import_count": 2,
       "business_place": "동광초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도보은교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011277560",
@@ -123697,9 +123718,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동광초등학교",
@@ -123732,8 +123753,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "동광초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도보은교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011277716",
@@ -123753,9 +123774,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동광초등학교",
@@ -123788,8 +123809,8 @@
       "first_imported_at": "2026-07-26 16:03",
       "import_count": 3,
       "business_place": "동광초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도보은교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011278435",
@@ -126158,9 +126179,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "가야초등학교",
@@ -126184,7 +126205,8 @@
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 2,
       "support_office": "함안교육지원청",
-      "business_place": "가야초등학교"
+      "business_place": "가야초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605281271341",
@@ -126203,9 +126225,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "가야초등학교",
@@ -126230,7 +126252,7 @@
       "import_count": 2,
       "business_place": "가야초등학교",
       "support_office": "함안교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606021280154",
@@ -126318,9 +126340,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "이동초등학교",
@@ -126350,10 +126372,11 @@
           "school_code": "9171015"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도포천교육지원청",
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
-      "business_place": "택배보관장소"
+      "business_place": "택배보관장소",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606021282921",
@@ -126965,9 +126988,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 07:09",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동화초등학교",
@@ -127008,8 +127031,9 @@
       ],
       "first_imported_at": "2026-08-13 07:09",
       "import_count": 1,
-      "support_office": "",
-      "business_place": "동화초등학교"
+      "support_office": "제주특별자치도제주시교육지원청",
+      "business_place": "동화초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606021280545",
@@ -127368,9 +127392,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-07 10:37",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "구운초등학교",
@@ -127394,8 +127418,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "구운초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606021281422",
@@ -127937,9 +127961,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-06 19:22",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동광초등학교",
@@ -127972,8 +127996,8 @@
       "first_imported_at": "2026-07-26 19:13",
       "import_count": 2,
       "business_place": "동광초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도보은교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605291273445",
@@ -131265,9 +131289,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "신정초등학교",
@@ -131291,8 +131315,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "담당자가 지정하는 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강남교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011277561",
@@ -131312,9 +131336,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "신정초등학교",
@@ -131338,8 +131362,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 3,
       "business_place": "담당자가 지정하는 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강남교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011277648",
@@ -131358,9 +131382,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "신정초등학교",
@@ -131384,8 +131408,8 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "담당자가 지정하는 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강남교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202606011278824",
@@ -146777,9 +146801,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-07-22 17:03",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "남원중학교",
@@ -146803,8 +146827,8 @@
       "first_imported_at": "2026-07-22 17:03",
       "import_count": 1,
       "business_place": "남원중학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도남원교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202605271265452",
@@ -151163,9 +151187,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-07 10:37",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "삼계초등학교",
@@ -151198,8 +151222,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 1,
       "business_place": "삼계초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도임실교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605261261441",
@@ -153969,9 +153993,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-15 14:18",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "온천초등학교",
@@ -153994,8 +154018,9 @@
       ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 2,
-      "support_office": "창원교육지원청",
-      "business_place": "온천초등학교 담당 교사실"
+      "support_office": "부산광역시동래교육지원청",
+      "business_place": "온천초등학교 담당 교사실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605221258046",
@@ -154413,9 +154438,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-15 14:18",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "청운중학교",
@@ -154445,10 +154470,11 @@
           "school_code": "8011113"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도양평교육지원청",
       "first_imported_at": "2026-08-15 14:18",
       "import_count": 1,
-      "business_place": "행정실"
+      "business_place": "행정실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605221258322",
@@ -159907,9 +159933,9 @@
       "search_period_to": "2026.05.20",
       "last_imported_at": "2026-08-15 10:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화천초등학교",
@@ -159930,10 +159956,11 @@
           "school_code": "8771147"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도화천교육지원청",
       "first_imported_at": "2026-08-15 10:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605201250652",
@@ -163722,9 +163749,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 09:07",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "광남고등학교",
@@ -163754,10 +163781,11 @@
           "school_code": "7140225"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도나주교육지원청",
       "first_imported_at": "2026-08-13 09:07",
       "import_count": 1,
-      "business_place": "학교-경주 일원"
+      "business_place": "학교-경주 일원",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605191249619",
@@ -164511,9 +164539,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-05 11:17",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -164555,8 +164583,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202605201253970",
@@ -175613,9 +175641,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-13 06:50",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대흥초등학교",
@@ -175647,8 +175675,9 @@
       ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 1,
-      "support_office": "",
-      "business_place": "유정남 01033991225"
+      "support_office": "전북특별자치도정읍교육지원청",
+      "business_place": "유정남 01033991225",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605181243555",
@@ -180464,9 +180493,9 @@
       "search_period_to": "2026.06.30",
       "last_imported_at": "2026-08-13 09:07",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "광남고등학교",
@@ -180496,10 +180525,11 @@
           "school_code": "7140225"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도나주교육지원청",
       "first_imported_at": "2026-08-13 09:07",
       "import_count": 1,
-      "business_place": "학교-경주 일원"
+      "business_place": "학교-경주 일원",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605151241955",
@@ -182847,14 +182877,15 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "성남교육지원청",
-      "support_office": "성남교육지원청"
+      "support_office": "경기도성남교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202605131231424",
@@ -184499,9 +184530,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "세화고등학교",
@@ -184531,10 +184562,11 @@
           "school_code": "9290064"
         }
       ],
-      "support_office": "",
+      "support_office": "서울특별시강남서초교육지원청",
       "first_imported_at": "2026-08-15 10:05",
       "import_count": 1,
-      "business_place": "행정실"
+      "business_place": "행정실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605141235901",
@@ -187261,9 +187293,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동백중학교",
@@ -187288,7 +187320,7 @@
       "import_count": 2,
       "business_place": "홍수연/010-7270-9676",
       "support_office": "경기도용인교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605131232885",
@@ -192887,9 +192919,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-07-22 17:03",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "신동초등학교",
@@ -192922,8 +192954,8 @@
       "first_imported_at": "2026-07-22 17:03",
       "import_count": 1,
       "business_place": "신동초등학교(교실 외 지정장소)",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605071217685",
@@ -196148,9 +196180,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -196175,7 +196207,7 @@
       "import_count": 2,
       "business_place": "교무실",
       "support_office": "경기도연천교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605121227205",
@@ -201282,9 +201314,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -201305,10 +201337,11 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
+      "support_office": "제주특별자치도서귀포시교육지원청",
       "first_imported_at": "2026-08-15 10:05",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605071216770",
@@ -201432,9 +201465,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "연서초등학교",
@@ -201467,7 +201500,8 @@
       "support_office": "경기도광명교육지원청",
       "first_imported_at": "2026-08-15 10:05",
       "import_count": 1,
-      "business_place": "연서초 담당교사(051-790-5464)"
+      "business_place": "연서초 담당교사(051-790-5464)",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605111222161",
@@ -204995,9 +205029,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "성화중학교",
@@ -205021,8 +205055,8 @@
       "first_imported_at": "2026-08-07 10:37",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "대구광역시서부교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605081220723",
@@ -207680,9 +207714,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "옥계초등학교",
@@ -207714,8 +207748,9 @@
       ],
       "first_imported_at": "2026-08-13 06:50",
       "import_count": 2,
-      "support_office": "",
-      "business_place": "학교에서 지정하는 곳"
+      "support_office": "경상북도구미교육지원청",
+      "business_place": "학교에서 지정하는 곳",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604291203571",
@@ -219156,9 +219191,9 @@
       "search_period_to": "2026.05.15",
       "last_imported_at": "2026-08-15 10:05",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서상초등학교",
@@ -219182,8 +219217,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도춘천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202605061211212",
@@ -222115,9 +222150,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화천초등학교",
@@ -222138,10 +222173,11 @@
           "school_code": "8771147"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도화천교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604301207184",
@@ -226302,9 +226338,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-05 11:17",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "청운중학교",
@@ -226337,8 +226373,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경기도양평교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604301205793",
@@ -226743,9 +226779,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-07-31 13:57",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "청운중학교",
@@ -226778,8 +226814,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경기도양평교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604281200283",
@@ -229000,9 +229036,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서현초등학교",
@@ -229026,8 +229062,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 3,
       "business_place": "서현초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도청주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604281201413",
@@ -229463,9 +229499,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "병영초등학교",
@@ -229486,10 +229522,11 @@
           "school_code": "8632018"
         }
       ],
-      "support_office": "",
+      "support_office": "울산광역시강북교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "병영초등학교"
+      "business_place": "병영초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604291205149",
@@ -231440,9 +231477,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "온정초등학교",
@@ -231463,10 +231500,11 @@
           "school_code": "8971032"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도속초양양교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604291202572",
@@ -235602,9 +235640,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서현초등학교",
@@ -235628,8 +235666,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
       "business_place": "서현초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도청주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604271194213",
@@ -238377,9 +238415,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-10 10:42",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서현초등학교",
@@ -238403,8 +238441,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "서현초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청북도청주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604281201189",
@@ -241610,9 +241648,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "금빛초등학교",
@@ -241642,10 +241680,11 @@
           "school_code": "9051165"
         }
       ],
-      "support_office": "",
+      "support_office": "부산광역시동래교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604271193691",
@@ -242671,9 +242710,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "성남여자중학교",
@@ -242697,8 +242736,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 3,
       "business_place": "행정실",
-      "support_office": "경기도성남교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경상북도영천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604241191370",
@@ -242913,9 +242952,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서상초등학교",
@@ -242936,10 +242975,11 @@
           "school_code": "9201009"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도춘천교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604211177947",
@@ -249762,9 +249802,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "장산초등학교",
@@ -249803,10 +249843,11 @@
           "school_code": "8851078"
         }
       ],
-      "support_office": "",
+      "support_office": "광주광역시서부교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "장산초등학교"
+      "business_place": "장산초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604231185068",
@@ -249860,9 +249901,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "용인고등학교",
@@ -249887,7 +249928,7 @@
       "import_count": 3,
       "business_place": "교무실",
       "support_office": "경기도용인교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604231185241",
@@ -249905,9 +249946,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "용인고등학교",
@@ -249931,7 +249972,8 @@
       "support_office": "경기도용인교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604241191959",
@@ -249994,9 +250036,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "아산중학교",
@@ -250017,10 +250059,11 @@
           "school_code": "8452056"
         }
       ],
-      "support_office": "",
+      "support_office": "충청남도아산교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "아산중학교"
+      "business_place": "아산중학교",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604241189266",
@@ -250073,14 +250116,15 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
-      "support_office": "",
+      "support_office": "전북특별자치도김제교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "금산분관"
+      "business_place": "금산분관",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604221181274",
@@ -253922,9 +253966,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "청산중학교",
@@ -253954,10 +253998,11 @@
           "school_code": "8702007"
         }
       ],
-      "support_office": "",
+      "support_office": "충청북도옥천교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604221184000",
@@ -254699,9 +254744,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "명덕초등학교",
@@ -254734,7 +254779,8 @@
       "support_office": "경기도안성교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "명덕초등학교"
+      "business_place": "명덕초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604221181934",
@@ -255545,9 +255591,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-10 10:42",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서부초등학교",
@@ -255580,8 +255626,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "서부초등학교 지정장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강북교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604221180755",
@@ -260746,9 +260792,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "금산중학교",
@@ -260772,7 +260818,8 @@
       "support_office": "충청남도금산교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "행정실"
+      "business_place": "행정실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604221182265",
@@ -265744,9 +265791,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "부림초등학교",
@@ -265779,8 +265826,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "부림초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "의령교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604211179659",
@@ -267767,9 +267814,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "연천초등학교",
@@ -267793,7 +267840,8 @@
       "support_office": "경기도연천교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604211177783",
@@ -269304,9 +269352,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-10 10:42",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "무릉초등학교",
@@ -269330,8 +269378,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "무릉초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도영월교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604211178454",
@@ -270288,14 +270336,15 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-08-05 11:17",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 1,
       "business_place": "지정장소",
-      "support_office": ""
+      "support_office": "충청남도천안교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604201171539",
@@ -270773,9 +270822,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-07-26 17:47",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -270817,8 +270866,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "각 학급 교실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604211177480",
@@ -270930,9 +270979,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-07-24 15:06",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -270974,8 +271023,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "각 학급 교실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도보성교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202604211178524",
@@ -273015,9 +273064,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서원초등학교",
@@ -273047,10 +273096,11 @@
           "school_code": "8011186"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도횡성교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604171169737",
@@ -278497,9 +278547,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-07-24 15:06",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "내촌초등학교",
@@ -278523,8 +278573,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경기도포천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604201175391",
@@ -278781,9 +278831,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "풍산중학교",
@@ -278807,8 +278857,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경상북도안동교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604151161440",
@@ -288391,9 +288441,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-15 08:46",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "동부초등학교",
@@ -288426,8 +288476,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "동부초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강북교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604161165856",
@@ -291998,9 +292048,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화천초등학교",
@@ -292024,8 +292074,8 @@
       "first_imported_at": "2026-08-05 11:17",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604151159277",
@@ -293546,9 +293596,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "설악중학교",
@@ -293572,8 +293622,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "프로그램 사용",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도속초양양교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604141157085",
@@ -298849,9 +298899,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "칠보초등학교",
@@ -298875,8 +298925,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도정읍교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604131153195",
@@ -301359,14 +301409,15 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [],
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "행정실",
-      "support_office": ""
+      "support_office": "서울특별시성북강북교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604131150990",
@@ -302020,9 +302071,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대청중학교",
@@ -302064,8 +302115,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "대청중학교가 지정하는 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "부산광역시해운대교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604141155503",
@@ -304564,9 +304615,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-07-24 15:06",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화천초등학교",
@@ -304590,8 +304641,8 @@
       "first_imported_at": "2026-07-24 15:06",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도화천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604101147106",
@@ -307972,9 +308023,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대청중학교",
@@ -308016,8 +308067,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "대청중학교가 지정하는 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "부산광역시해운대교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604031125615",
@@ -308177,9 +308228,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "부평초등학교",
@@ -308200,10 +308251,11 @@
           "school_code": "7962017"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도인제교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "부평초등학교"
+      "business_place": "부평초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604131150137",
@@ -311032,9 +311084,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "솔빛초등학교",
@@ -311058,7 +311110,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "경기도화성오산교육지원청"
+      "support_office": "세종특별자치시교육청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604101148409",
@@ -313191,9 +313244,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "산현초등학교",
@@ -313217,8 +313270,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604101148772",
@@ -313851,14 +313904,15 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-10 10:42",
       "school_level": "중",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [],
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 1,
       "business_place": "행정실",
-      "support_office": ""
+      "support_office": "서울특별시성북강북교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604081137899",
@@ -314698,9 +314752,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "홍천초등학교",
@@ -314724,8 +314778,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도홍천교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604091143754",
@@ -317521,9 +317575,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서부초등학교",
@@ -317553,10 +317607,11 @@
           "school_code": "7872026"
         }
       ],
-      "support_office": "",
+      "support_office": "울산광역시강북교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "서부초등학교 지정장소"
+      "business_place": "서부초등학교 지정장소",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604081139479",
@@ -323212,9 +323267,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "용강중학교",
@@ -323235,10 +323290,11 @@
           "school_code": "8231016"
         }
       ],
-      "support_office": "",
+      "support_office": "서울특별시중부교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604081140719",
@@ -326421,9 +326477,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대성고등학교",
@@ -326444,10 +326500,11 @@
           "school_code": "7801117"
         }
       ],
-      "support_office": "",
+      "support_office": "강원특별자치도원주교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "인터넷 AI코스웨어프로그램 사용"
+      "business_place": "인터넷 AI코스웨어프로그램 사용",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071135730",
@@ -331751,14 +331808,15 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [],
-      "support_office": "",
+      "support_office": "세종특별자치시교육청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071135376",
@@ -332087,9 +332145,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "인천",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "선화여자중학교",
@@ -332114,7 +332172,7 @@
       "import_count": 2,
       "business_place": "교무실",
       "support_office": "인천광역시남부교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071134229",
@@ -332985,9 +333043,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "성남초등학교",
@@ -333008,10 +333066,11 @@
           "school_code": "7551072"
         }
       ],
-      "support_office": "경기도성남교육지원청",
+      "support_office": "부산광역시남부교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "성남초등학교"
+      "business_place": "성남초등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071134140",
@@ -334187,9 +334246,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 09:15",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "남평초등학교",
@@ -334222,8 +334281,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "남평초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도나주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071135503",
@@ -334954,9 +335013,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-07-26 17:47",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "대청중학교",
@@ -334998,8 +335057,8 @@
       "first_imported_at": "2026-07-26 17:47",
       "import_count": 1,
       "business_place": "대청중학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "부산광역시해운대교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604071132844",
@@ -339388,9 +339447,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 09:15",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "저동초등학교",
@@ -339414,8 +339473,8 @@
       "first_imported_at": "2026-08-07 09:15",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경상북도울릉교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604061130886",
@@ -342543,9 +342602,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "동해중학교",
@@ -342578,8 +342637,8 @@
       "first_imported_at": "2026-08-10 10:42",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도동해교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603311111788",
@@ -344658,9 +344717,9 @@
       "search_period_to": "2026.05.31",
       "last_imported_at": "2026-07-31 13:57",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "양포초등학교",
@@ -344684,7 +344743,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 1,
       "business_place": "담당 선생님께 구독권 납품",
-      "support_office": ""
+      "support_office": "경상북도구미교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604021121176",
@@ -348170,9 +348230,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "한천초등학교",
@@ -348202,10 +348262,11 @@
           "school_code": "9296046"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도화순교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "한천초"
+      "business_place": "한천초",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604021121056",
@@ -348224,9 +348285,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "한천초등학교",
@@ -348259,8 +348320,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "한천초",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도화순교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603311115357",
@@ -348278,9 +348339,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "여천초등학교",
@@ -348301,10 +348362,11 @@
           "school_code": "8512048"
         }
       ],
-      "support_office": "",
+      "support_office": "울산광역시강남교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
-      "business_place": "행정실"
+      "business_place": "행정실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604021123595",
@@ -353871,9 +353933,9 @@
       "search_period_to": "2026.04.15",
       "last_imported_at": "2026-08-15 07:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "삼남중학교",
@@ -353897,8 +353959,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "행정실",
-      "support_office": "전북특별자치도부안교육지원청",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "울산광역시강남교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603271104978",
@@ -354260,9 +354322,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-10 10:42",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "우산초등학교",
@@ -354286,8 +354348,8 @@
       "first_imported_at": "2026-07-31 13:57",
       "import_count": 2,
       "business_place": "정보부",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도원주교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202604011118609",
@@ -357823,9 +357885,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "unique_neis_candidate",
       "region_candidates": [
         {
           "school_name": "대구부계초등학교",
@@ -357876,7 +357938,8 @@
       "support_office": "대구광역시군위교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "unique_neis_candidate"
     },
     {
       "id": "202603311114557",
@@ -359024,9 +359087,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -359047,10 +359110,11 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
+      "support_office": "제주특별자치도서귀포시교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603311114434",
@@ -361328,9 +361392,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 09:15",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "군서초등학교",
@@ -361363,8 +361427,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "수요기관 희망 장소",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전라남도영광교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603311111996",
@@ -361841,14 +361905,15 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-07-20 17:51",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 12:44",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도군산교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603311115007",
@@ -363197,9 +363262,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "unique_neis_candidate",
       "region_candidates": [
         {
           "school_name": "대구부계초등학교",
@@ -363250,7 +363315,8 @@
       "support_office": "대구광역시군위교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "unique_neis_candidate"
     },
     {
       "id": "202603261102907",
@@ -364581,9 +364647,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "동해중학교",
@@ -364616,8 +364682,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 2,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도동해교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603301110592",
@@ -364998,9 +365064,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "화정초등학교",
@@ -365021,10 +365087,11 @@
           "school_code": "7491145"
         }
       ],
-      "support_office": "",
+      "support_office": "부산광역시북부교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "교무실"
+      "business_place": "교무실",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603271106478",
@@ -365341,9 +365408,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "금천고등학교",
@@ -365373,10 +365440,11 @@
           "school_code": "8750090"
         }
       ],
-      "support_office": "",
+      "support_office": "충청북도청주교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "금천고등학교"
+      "business_place": "금천고등학교",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603301109645",
@@ -366392,9 +366460,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 11:42",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "서신초등학교",
@@ -366418,8 +366486,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "정읍 서신초",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도정읍교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603271106087",
@@ -371226,9 +371294,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 11:42",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "아산중학교",
@@ -371252,8 +371320,8 @@
       "first_imported_at": "2026-08-07 11:42",
       "import_count": 1,
       "business_place": "아산중학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "충청남도아산교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603271103287",
@@ -377580,14 +377648,15 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "support_office_name",
       "region_candidates": [],
-      "support_office": "동래교육지원청",
+      "support_office": "부산광역시동래교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "교육균형발전대상학교(7교)"
+      "business_place": "교육균형발전대상학교(7교)",
+      "support_office_source": "support_office_name"
     },
     {
       "id": "202603241094318",
@@ -378133,9 +378202,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 09:15",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "동해중학교",
@@ -378168,8 +378237,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "동해중학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도동해교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603241091826",
@@ -378749,14 +378818,15 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-07-20 17:51",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 17:51",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도군산교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603251098281",
@@ -381056,9 +381126,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -381079,10 +381149,11 @@
           "school_code": "8452049"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "고창중학교"
+      "business_place": "고창중학교",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603241093409",
@@ -384982,9 +385053,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "상일초등학교",
@@ -385005,10 +385076,11 @@
           "school_code": "9022055"
         }
       ],
-      "support_office": "",
+      "support_office": "창원교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "학교에서 지정하는 장소"
+      "business_place": "학교에서 지정하는 장소",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603231087736",
@@ -386578,9 +386650,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "춘양초등학교",
@@ -386604,7 +386676,8 @@
       "support_office": "경상북도봉화교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "춘양초"
+      "business_place": "춘양초",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603201084091",
@@ -393445,9 +393518,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-10 10:08",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "성남고등학교",
@@ -393471,8 +393544,8 @@
       "first_imported_at": "2026-08-10 10:08",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "경기도성남교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603181077904",
@@ -395097,9 +395170,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-08-14 17:13",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "북평중학교",
@@ -395123,7 +395196,8 @@
       "support_office": "강원특별자치도동해교육지원청",
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
-      "business_place": "계정 ID 문서 및 사용권 문서 제출"
+      "business_place": "계정 ID 문서 및 사용권 문서 제출",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603171072042",
@@ -403240,14 +403314,15 @@
       "search_period_to": "2026.03.15",
       "last_imported_at": "2026-08-14 16:10",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
-      "support_office": "",
+      "support_office": "전북특별자치도김제교육지원청",
       "first_imported_at": "2026-08-14 16:10",
       "import_count": 1,
-      "business_place": "금산분관"
+      "business_place": "금산분관",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202603111053568",
@@ -403855,9 +403930,9 @@
       "search_period_to": "2026.04.30",
       "last_imported_at": "2026-08-07 09:15",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "도창초등학교",
@@ -403881,8 +403956,8 @@
       "first_imported_at": "2026-07-21 09:15",
       "import_count": 2,
       "business_place": "도창초",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "강원특별자치도철원교육지원청",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603111054152",
@@ -411096,9 +411171,9 @@
       "search_period_to": "2026.03.15",
       "last_imported_at": "2026-08-14 16:10",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "same_institution",
       "region_candidates": [
         {
           "school_name": "상서중학교",
@@ -411128,10 +411203,11 @@
           "school_code": "8462052"
         }
       ],
-      "support_office": "",
+      "support_office": "대구광역시남부교육지원청",
       "first_imported_at": "2026-08-14 16:10",
       "import_count": 1,
-      "business_place": "담당교사 지정장소"
+      "business_place": "담당교사 지정장소",
+      "support_office_source": "same_institution"
     },
     {
       "id": "202603091043497",
@@ -426452,9 +426528,9 @@
       "search_period_to": "2026.03.31",
       "last_imported_at": "2026-07-22 16:53",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [
         {
           "school_name": "남원초등학교",
@@ -426478,8 +426554,8 @@
       "first_imported_at": "2026-07-22 16:53",
       "import_count": 1,
       "business_place": "남원초등학교",
-      "support_office": "",
-      "support_office_source": "cleared_until_region_selected"
+      "support_office": "전북특별자치도남원교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202602251018667",
@@ -443287,14 +443363,15 @@
       "search_period_to": "2026.02.07",
       "last_imported_at": "2026-07-20 14:18",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
       "region_candidates": [],
       "first_imported_at": "2026-07-20 14:18",
       "import_count": 1,
       "business_place": "교무실",
-      "support_office": ""
+      "support_office": "전북특별자치도군산교육지원청",
+      "support_office_source": "institution_district_prefix"
     },
     {
       "id": "202602020931061",
