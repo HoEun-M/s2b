@@ -725,6 +725,115 @@ def normalize_record_region_support(region, support_office):
     return normalized_region, normalized_support
 
 
+def support_office_unit_label(region, support_office):
+    text = normalize_support_office_name(region, support_office or "").strip()
+    if not text or "교육지원청" not in text:
+        return ""
+    tail = text.replace("교육지원청", "").strip()
+    prefixes = [
+        "서울특별시", "부산광역시", "대구광역시", "인천광역시", "광주광역시", "대전광역시", "울산광역시",
+        "세종특별자치시", "경기도", "강원특별자치도", "강원도", "충청북도", "충청남도",
+        "전북특별자치도", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별자치도",
+    ]
+    for prefix in prefixes:
+        if tail.startswith(prefix):
+            tail = tail[len(prefix):]
+            break
+    if tail.startswith("전남광주통합특별시"):
+        tail = tail[len("전남광주통합특별시"):]
+    for alias, alias_region in sorted(REGION_ALIASES, key=lambda item: len(item[0]), reverse=True):
+        if alias_region == region and tail.startswith(alias):
+            tail = tail[len(alias):]
+            break
+    tail = tail.strip()
+    compound_labels = {
+        "강남서초": "강남,서초",
+        "강동송파": "강동,송파",
+        "강서양천": "강서,양천",
+        "동작관악": "동작,관악",
+        "성동광진": "성동,광진",
+        "성북강북": "성북,강북",
+        "구리남양주": "구리,남양주",
+        "동두천양주": "동두천,양주",
+        "안양과천": "안양,과천",
+        "군포의왕": "군포,의왕",
+        "광주하남": "광주,하남",
+        "화성오산": "화성,오산",
+        "논산계룡": "논산,계룡",
+        "괴산증평": "괴산,증평",
+        "속초양양": "속초,양양",
+    }
+    if tail in compound_labels:
+        return compound_labels[tail]
+    if tail.endswith(("시", "군", "구")) and len(tail) > 1:
+        tail = tail[:-1]
+    return tail
+
+
+def subregion_support_candidates(region, institution, candidates, business_place=""):
+    found = []
+    district_match = ADDRESS_DISTRICT_PATTERN.search(business_place or "")
+    if district_match:
+        support = support_office_from_region_district(region, district_match.group(1))
+        if support:
+            found.append(support)
+    school_region, school_district = district_from_school_name(region, institution)
+    support = support_office_from_region_district(school_region or region, school_district)
+    if support:
+        found.append(support)
+    for candidate in candidates or []:
+        normalized = normalize_region_candidate(candidate)
+        if region and normalized.get("region", "") != region:
+            continue
+        support = support_office_from_region_district(normalized.get("region", ""), normalized.get("district", ""))
+        if support:
+            found.append(support)
+        support = normalized.get("support_office", "")
+        if support and support_office_matches_region(region, support):
+            found.append(support)
+    return found
+
+
+def infer_subregion(region, support_office, institution="", candidates=None, business_place=""):
+    region, support_office = normalize_record_region_support(region, support_office)
+    found = subregion_support_candidates(region, institution, candidates or [], business_place)
+    labels = []
+    for support in found:
+        label = support_office_unit_label(region, support)
+        if label:
+            labels.append(label)
+    unique_labels = sorted(set(labels))
+    if len(unique_labels) == 1:
+        return unique_labels[0]
+    label = support_office_unit_label(region, support_office)
+    if label:
+        return label
+    if len(unique_labels) > 1:
+        return " / ".join(unique_labels)
+    return ""
+
+
+def backfill_record_subregions(records):
+    by_school_region = {}
+    for row in records or []:
+        institution = normalize_school_name(row.get("institution", ""))
+        region = row.get("region", "")
+        subregion = row.get("subregion", "")
+        if institution and region and subregion:
+            by_school_region.setdefault((institution, region), set()).add(subregion)
+    changed = 0
+    for row in records or []:
+        if row.get("subregion", ""):
+            continue
+        institution = normalize_school_name(row.get("institution", ""))
+        region = row.get("region", "")
+        candidates = by_school_region.get((institution, region), set())
+        if len(candidates) == 1:
+            row["subregion"] = next(iter(candidates))
+            changed += 1
+    return changed
+
+
 def normalize_region_candidate(candidate):
     normalized = dict(candidate or {})
     region = normalized.get("region", "")
@@ -968,6 +1077,7 @@ def to_cumulative_record(result, date_from, date_to, imported_at):
     record.update(resolve_region(institution))
     record["support_office"] = infer_support_office(record.get("region", ""), institution, record.get("region_candidates", []), record.get("business_place", ""))
     record["region"], record["support_office"] = normalize_record_region_support(record.get("region", ""), record.get("support_office", ""))
+    record["subregion"] = infer_subregion(record.get("region", ""), record.get("support_office", ""), institution, record.get("region_candidates", []), record.get("business_place", ""))
     return record
 
 
@@ -995,6 +1105,7 @@ def update_cumulative_json(results, date_from, date_to):
         old.setdefault("region_candidates", [])
         old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", "")))
         old["region"], old["support_office"] = normalize_record_region_support(old.get("region", ""), old.get("support_office", ""))
+        old["subregion"] = infer_subregion(old.get("region", ""), old.get("support_office", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", ""))
         by_id[record_id] = old
 
     added = 0
@@ -1023,6 +1134,7 @@ def update_cumulative_json(results, date_from, date_to):
         key=lambda row: (row.get("contract_date", ""), row.get("last_imported_at", ""), row.get("contract_name", "")),
         reverse=True,
     )
+    backfill_record_subregions(records)
     payload = {
         "exported_at": imported_at,
         "meta": {
@@ -1099,6 +1211,7 @@ def esc(value):
 
 def build_cumulative_html(data):
     records = data.get("records", [])
+    backfill_record_subregions(records)
     exported_at = data.get("exported_at") or datetime.now().strftime("%Y-%m-%d %H:%M")
     ref_url = LIST_URL + "?forwardName=list03"
     regions = ["서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
@@ -1146,17 +1259,28 @@ def build_cumulative_html(data):
         region, support_office = normalize_record_region_support(row.get("region", ""), row.get("support_office", ""))
         candidates = [normalize_region_candidate(candidate) for candidate in (row.get("region_candidates", []) or [])]
         support_by_region = {}
+        subregion_by_region = {}
         for candidate in candidates:
             candidate_region = candidate.get("region", "")
             candidate_support = candidate.get("support_office", "")
             if candidate_region and candidate_support:
                 support_by_region.setdefault(candidate_region, set()).add(candidate_support)
+                label = infer_subregion(candidate_region, candidate_support, row.get("institution", ""), [candidate], row.get("business_place", ""))
+                if label:
+                    subregion_by_region.setdefault(candidate_region, set()).add(label)
         support_by_region = {
             candidate_region: sorted(values)[0]
             for candidate_region, values in support_by_region.items()
             if len(values) == 1
         }
+        subregion_by_region = {
+            candidate_region: sorted(values)[0]
+            for candidate_region, values in subregion_by_region.items()
+            if len(values) == 1
+        }
         support_json = json.dumps(support_by_region, ensure_ascii=False)
+        subregion_json = json.dumps(subregion_by_region, ensure_ascii=False)
+        subregion = row.get("subregion", "") or infer_subregion(region, support_office, row.get("institution", ""), candidates, row.get("business_place", ""))
         if region:
             region_html = '<span class="region-text fixed-region" data-region-id="' + record_id + '">' + esc(region) + '</span>'
         else:
@@ -1195,11 +1319,12 @@ def build_cumulative_html(data):
             )
 
         rows_html += (
-            '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-contract-name="' + esc(contract_name_raw) + '" data-search-text="' + esc(search_text) + '" data-level="' + esc(row.get("school_level", "")) + '" data-contract-date="' + esc(contract_date) + '" data-counterpart="' + esc(row.get("counterpart", "") or "미지정") + '" data-school-category="' + esc(school_category(row.get("institution", ""))) + '"' + row_display_attr + '>'
+            '<tr data-record-id="' + record_id + '" data-keywords="' + esc(keywords_joined) + '" data-contract-name="' + esc(contract_name_raw) + '" data-search-text="' + esc(search_text) + '" data-level="' + esc(row.get("school_level", "")) + '" data-contract-date="' + esc(contract_date) + '" data-counterpart="' + esc(row.get("counterpart", "") or "미지정") + '" data-school-category="' + esc(school_category(row.get("institution", ""))) + '" data-subregion="' + esc(subregion or "미지정") + '"' + row_display_attr + '>'
             '<td class="tc select-cell"><input type="checkbox" class="row-check" aria-label="삭제할 공고 선택"></td>'
             '<td class="tc row-no">' + display_number + '</td>'
             '<td>' + name_html + '</td>'
             '<td class="tc region-cell">' + region_html + '</td>'
+            '<td class="subregion-cell" data-original-subregion="' + esc(subregion or "미지정") + '" data-subregion-by-region="' + esc(subregion_json) + '">' + esc(subregion or "미지정") + '</td>'
             '<td class="support-cell" data-original-support="' + esc(support_office) + '" data-support-by-region="' + esc(support_json) + '">' + esc(support_office) + '</td>'
             '<td>' + esc(row.get("institution", "")) + '</td>'
             '<td>' + esc(row.get("counterpart", "")) + '</td>'
@@ -1222,14 +1347,20 @@ def build_cumulative_html(data):
     dashboard_records = []
     for row in records:
         support_by_region = {}
+        subregion_by_region = {}
         for candidate in [normalize_region_candidate(candidate) for candidate in (row.get("region_candidates", []) or [])]:
             candidate_region = candidate.get("region", "")
             candidate_support = candidate.get("support_office", "")
             if candidate_region and candidate_support:
                 support_by_region.setdefault(candidate_region, set()).add(candidate_support)
+                label = infer_subregion(candidate_region, candidate_support, row.get("institution", ""), [candidate], row.get("business_place", ""))
+                if label:
+                    subregion_by_region.setdefault(candidate_region, set()).add(label)
         support_by_region = {candidate_region: sorted(values)[0] for candidate_region, values in support_by_region.items() if len(values) == 1}
+        subregion_by_region = {candidate_region: sorted(values)[0] for candidate_region, values in subregion_by_region.items() if len(values) == 1}
         record_region, record_support = normalize_record_region_support(row.get("region", ""), row.get("support_office", ""))
-        dashboard_records.append({"id": row.get("id") or row.get("tender_no", ""), "counterpart": row.get("counterpart", "") or "미지정", "amount": amount_number(row.get("amount", "")), "contractDate": row.get("contract_date", ""), "region": record_region or "미지정", "supportOffice": record_support or "미지정", "supportByRegion": support_by_region, "schoolCategory": school_category(row.get("institution", ""))})
+        subregion = row.get("subregion", "") or infer_subregion(record_region, record_support, row.get("institution", ""), row.get("region_candidates", []), row.get("business_place", ""))
+        dashboard_records.append({"id": row.get("id") or row.get("tender_no", ""), "counterpart": row.get("counterpart", "") or "미지정", "amount": amount_number(row.get("amount", "")), "contractDate": row.get("contract_date", ""), "region": record_region or "미지정", "subregion": subregion or "미지정", "supportOffice": record_support or "미지정", "supportByRegion": support_by_region, "subregionByRegion": subregion_by_region, "schoolCategory": school_category(row.get("institution", ""))})
     dashboard_json = json.dumps(dashboard_records, ensure_ascii=False, separators=(",", ":"))
 
     css = """
@@ -1240,6 +1371,9 @@ def build_cumulative_html(data):
 """.strip()
     css += """
 .purchase-panel{background:#fff;border:1px solid #dce4ec;border-radius:8px;margin-bottom:14px;padding:14px 16px}.purchase-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.purchase-head h2{font-size:13px;color:#263442;margin:0}.purchase-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.purchase-scope{height:28px;border:1px solid #bfd0df;border-radius:14px;background:#fff;color:#263442;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.purchase-scope.active{border-color:#245a92;background:#245a92;color:#fff}.purchase-table-wrap{overflow:auto}.purchase-table{width:100%;min-width:760px;border-collapse:collapse}.purchase-table th{position:static;background:#f0f4f8;color:#263442}.purchase-table td,.purchase-table th{padding:8px 9px;border-bottom:1px solid #edf0f2;font-size:12px}.purchase-type-row{cursor:pointer}.purchase-type-row:hover td{background:#f8fbff}.purchase-type-row.active td{background:#e8f1fa;color:#245a92;font-weight:600}.purchase-note{font-size:12px;color:#69727d;margin:8px 0 0}.purchase-subgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.purchase-subpanel{border:1px solid #edf0f2;border-radius:8px;overflow:hidden}.purchase-subpanel h3{font-size:12px;margin:0;padding:9px 10px;background:#f7fbff;color:#263442}.purchase-subpanel .purchase-table{min-width:520px}.purchase-csv{height:28px;border:1px solid #245a92;border-radius:6px;background:#fff;color:#245a92;font-family:inherit;font-size:12px;padding:0 9px;cursor:pointer}@media(max-width:900px){.purchase-head{align-items:flex-start;flex-direction:column}.purchase-subgrid{grid-template-columns:1fr}.purchase-table{min-width:680px}}
+""".strip()
+    css += """
+.subregion-cell{min-width:90px;white-space:nowrap;color:#263442}tbody td:nth-child(8){font-weight:400;white-space:normal}tbody td:nth-child(9){font-weight:600;white-space:nowrap}tbody td:nth-child(10){font-size:12px;color:#5c6670;white-space:nowrap}.purchase-clear{height:28px;border:1px solid #245a92;border-radius:14px;background:#fff;color:#245a92;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.purchase-clear.active{background:#245a92;color:#fff}
 """.strip()
 
     js = """
@@ -1303,7 +1437,9 @@ function normalizeSearchText(value){return (value||'').toLowerCase().replace(/\\
 function setContractSearch(value){contractSearchText=normalizeSearchText(value);filterCurrent();}
 function clearContractSearch(){contractSearchText='';var el=document.getElementById('contract-search');if(el){el.value='';}filterCurrent();}
 function updateSupportOffice(row,region){if(!row){return;}var cell=row.querySelector('.support-cell');if(!cell){return;}var map={};try{map=JSON.parse(cell.getAttribute('data-support-by-region')||'{}');}catch(e){map={};}var original=cell.getAttribute('data-original-support')||'';cell.textContent=(region&&map[region])?map[region]:original;}
-function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);var row=span.closest('tr');if(row){row.setAttribute('data-has-region','1');updateSupportOffice(row,value);}}
+function updateSubregion(row,region){if(!row){return;}var cell=row.querySelector('.subregion-cell');if(!cell){return;}var map={};try{map=JSON.parse(cell.getAttribute('data-subregion-by-region')||'{}');}catch(e){map={};}var original=cell.getAttribute('data-original-subregion')||'미지정';var value=(region&&map[region])?map[region]:original;cell.textContent=value;row.setAttribute('data-subregion',value||'미지정');}
+function updateRegionalFields(row,region){updateSupportOffice(row,region);updateSubregion(row,region);}
+function renderSavedRegion(editor,value){var span=document.createElement('span');span.className='region-text saved-region';span.setAttribute('data-region-id',editor.getAttribute('data-region-id')||'');span.textContent=value;editor.replaceWith(span);var row=span.closest('tr');if(row){row.setAttribute('data-has-region','1');updateRegionalFields(row,value);}}
 function applyRegions(regions){document.querySelectorAll('.region-editor').forEach(function(editor){var id=editor.getAttribute('data-region-id');var value=id?regions[id]:'';if(value){renderSavedRegion(editor,value);}});}
 function updateKeywordCounts(){var rows=Array.from(document.querySelectorAll('#tbody tr')).filter(function(row){return row.getAttribute('data-deleted')!=='1';});document.querySelectorAll('[data-kind="keyword"]').forEach(function(btn){var value=btn.getAttribute('data-filter-value')||'all';var count=value==='all'?rows.length:rows.filter(function(row){var keywords=row.getAttribute('data-keywords')||'';return (','+keywords+',').indexOf(','+value+',')!==-1;}).length;var cnt=btn.querySelector('.cnt');if(cnt){cnt.textContent=count.toLocaleString('ko-KR');}});}
 function applyDeleted(deleted){var deletedSet=new Set(deleted||[]);document.querySelectorAll('#tbody tr').forEach(function(row){row.setAttribute('data-deleted',deletedSet.has(row.getAttribute('data-record-id'))?'1':'0');});updateKeywordCounts();filterCurrent();renderDashboard();}
@@ -1328,11 +1464,12 @@ function createPurchaseStats(){var byType={};PURCHASE_TYPES.forEach(function(typ
 function addPurchaseStats(stats,row,type,amount){var item=stats.byType[type.key]||stats.byType.uncategorized;var level=row.getAttribute('data-level')||'기타';var month=(row.getAttribute('data-contract-date')||'').slice(0,7)||'미지정';var complex=isComplexContract(row.getAttribute('data-contract-name')||'');item.count+=1;item.amount+=amount;item.levels[level]=(item.levels[level]||0)+amount;item.months[month]=(item.months[month]||0)+amount;stats.totalCount+=1;stats.totalAmount+=amount;if(complex){item.complex+=1;stats.complexCount+=1;}}
 function purchaseStatsItems(stats){return PURCHASE_TYPES.map(function(type){return stats.byType[type.key];}).filter(function(item){return item.count>0||item.key==='uncategorized';}).sort(function(a,b){if(a.key==='total'){return 1;}return b.amount-a.amount||b.count-a.count||a.label.localeCompare(b.label,'ko-KR');});}
 function setPurchaseTypeFilter(key){activePurchaseType=activePurchaseType===key?'':key;if(activePurchaseType){showView('details');}else{filterCurrent();}}
+function clearPurchaseTypeFilter(){activePurchaseType='';filterCurrent();}
 function setPurchaseVendorScope(scope){purchaseVendorScope=scope||'all';filterCurrent();}
 function renderPurchaseTypeBars(stats){var el=document.getElementById('purchase-type-chart');if(!el){return;}var rows=purchaseStatsItems(stats).filter(function(item){return item.count>0;});if(!rows.length){el.innerHTML='<div class="empty-chart">표시할 매출액이 없습니다.</div>';return;}var max=Math.max.apply(null,rows.map(function(item){return item.amount;}))||1;el.innerHTML=rows.map(function(item){var pct=Math.max(2,Math.round(item.amount/max*100));var label=escapeHtml(item.label);var active=activePurchaseType===item.key?' active':'';return '<button type="button" class="bar-row bar-row-button'+active+'" onclick="setPurchaseTypeFilter(\\''+item.key+'\\')"><div class="bar-label" title="'+label+'">'+label+'</div><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%"></div></div><div class="bar-value">'+formatWon(item.amount)+'</div></button>';}).join('');}
 function renderPurchaseStats(stats){lastPurchaseStats=stats;var body=document.getElementById('purchase-type-body');var foot=document.getElementById('purchase-type-foot');var note=document.getElementById('purchase-complex-note');renderPurchaseTypeBars(stats);if(!body||!foot){return;}var rows=purchaseStatsItems(stats);body.innerHTML=rows.map(function(item){var pct=stats.totalAmount?((item.amount/stats.totalAmount)*100).toFixed(1):'0.0';var avg=item.count?Math.round(item.amount/item.count):0;var active=activePurchaseType===item.key?' active':'';return '<tr class="purchase-type-row'+active+'" onclick="setPurchaseTypeFilter(\\''+item.key+'\\')"><td>'+escapeHtml(item.label)+'</td><td class="tr">'+item.count.toLocaleString('ko-KR')+'</td><td class="tr">'+formatWonDetail(item.amount)+'</td><td class="tr">'+pct+'%</td><td class="tr">'+formatWonDetail(avg)+'</td></tr>';}).join('');var avgTotal=stats.totalCount?Math.round(stats.totalAmount/stats.totalCount):0;foot.innerHTML='<tr><th>합계</th><th class="tr">'+stats.totalCount.toLocaleString('ko-KR')+'</th><th class="tr">'+formatWonDetail(stats.totalAmount)+'</th><th class="tr">100.0%</th><th class="tr">'+formatWonDetail(avgTotal)+'</th></tr>';if(note){note.textContent='복합계약 '+stats.complexCount.toLocaleString('ko-KR')+'건 포함 (단일 제품 기준 아님)';}renderPurchaseCrossTables(stats);updatePurchaseScopeButtons();}
 function renderPurchaseCrossTables(stats){var levelEl=document.getElementById('purchase-level-body');var monthEl=document.getElementById('purchase-month-body');if(levelEl){var levels=['초','중','고','기타'];levelEl.innerHTML=purchaseStatsItems(stats).filter(function(item){return item.count>0;}).map(function(item){return '<tr><td>'+escapeHtml(item.label)+'</td>'+levels.map(function(level){return '<td class="tr">'+formatWonDetail(item.levels[level]||0)+'</td>';}).join('')+'</tr>';}).join('');}if(monthEl){var months={};PURCHASE_TYPES.forEach(function(type){var item=stats.byType[type.key];Object.keys(item.months).forEach(function(month){months[month]=true;});});var monthList=Object.keys(months).sort();monthEl.innerHTML=monthList.map(function(month){var cells=purchaseStatsItems(stats).filter(function(item){return item.count>0;}).slice(0,6).map(function(item){return '<td class="tr">'+formatWonDetail(item.months[month]||0)+'</td>';}).join('');return '<tr><td>'+escapeHtml(month)+'</td>'+cells+'</tr>';}).join('');var head=document.getElementById('purchase-month-head');if(head){head.innerHTML='<tr><th>월</th>'+purchaseStatsItems(stats).filter(function(item){return item.count>0;}).slice(0,6).map(function(item){return '<th>'+escapeHtml(item.label)+'</th>';}).join('')+'</tr>';}}}
-function updatePurchaseScopeButtons(){document.querySelectorAll('[data-purchase-scope]').forEach(function(btn){btn.classList.toggle('active',(btn.getAttribute('data-purchase-scope')||'all')===purchaseVendorScope);});}
+function updatePurchaseScopeButtons(){document.querySelectorAll('[data-purchase-scope]').forEach(function(btn){btn.classList.toggle('active',(btn.getAttribute('data-purchase-scope')||'all')===purchaseVendorScope);});document.querySelectorAll('[data-purchase-clear]').forEach(function(btn){btn.classList.toggle('active',!activePurchaseType);});}
 function downloadPurchaseCsv(){if(!lastPurchaseStats){return;}var lines=['유형,건수,계약금액,비중(%),건당 평균,복합계약'];purchaseStatsItems(lastPurchaseStats).forEach(function(item){var pct=lastPurchaseStats.totalAmount?((item.amount/lastPurchaseStats.totalAmount)*100).toFixed(1):'0.0';var avg=item.count?Math.round(item.amount/item.count):0;lines.push([item.label,item.count,item.amount,pct,avg,item.complex].map(function(value){return '"'+String(value).replace(/"/g,'""')+'"';}).join(','));});var blob=new Blob(['\ufeff'+lines.join('\\n')],{type:'text/csv;charset=utf-8;'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='s2b_purchase_type_summary.csv';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);}
 function renderBars(id,items,limit,filterType){var el=document.getElementById(id);if(!el){return;}var shown=(items||[]).slice(0,limit||12);if(!shown.length){el.innerHTML='<div class="empty-chart">\uD45C\uC2DC\uD560 \uB9E4\uCD9C\uC561\uC774 \uC5C6\uC2B5\uB2C8\uB2E4.</div>';return;}var max=Math.max.apply(null,shown.map(function(item){return item.value;}))||1;el.innerHTML=shown.map(function(item){var pct=Math.max(2,Math.round(item.value/max*100));var label=escapeHtml(item.name);var click=filterType?' onclick="applyDashboardFilter('+escapeHtml(JSON.stringify(filterType))+','+escapeHtml(JSON.stringify(item.name))+','+escapeHtml(JSON.stringify(item.region||''))+')"':'';return '<button type="button" class="bar-row '+(filterType?'bar-row-button':'')+'"'+click+'><div class="bar-label" title="'+label+'">'+label+'</div><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%"></div></div><div class="bar-value">'+formatWon(item.value)+'</div></button>';}).join('');}
 function dashboardRows(){var regions=getRegionOverrides();var deleted=new Set(getDeletedRecords()||[]);return dashboardRecords.filter(function(row){return !deleted.has(row.id);}).map(function(row){var hasOverride=Object.prototype.hasOwnProperty.call(regions,row.id);var region=hasOverride?regions[row.id]:(row.region||'\uBBF8\uC9C0\uC815');var original=row.supportOffice||'';var mapped=(region&&row.supportByRegion&&row.supportByRegion[region])?row.supportByRegion[region]:'';var support=(hasOverride&&mapped)?mapped:((original&&original!=='\uBBF8\uC9C0\uC815')?original:(mapped||'\uBBF8\uC9C0\uC815'));if(!supportMatchesRegion(region,support)){support=mapped||'\uBBF8\uC9C0\uC815';}return Object.assign({},row,{region:region,supportOffice:support});});}
@@ -1375,7 +1512,7 @@ document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filter
         "<div class='header'><h1>S2B &#49688;&#51032;&#44228;&#50557; &#45572;&#51201; &#45236;&#50669;</h1>"
         "<div class='meta'>&#45572;&#51201; &#49373;&#49457;: " + esc(exported_at) + "</div></div>"
         "<div class='nav-tabs'><button type='button' class='tab-btn active' data-target='dashboard' onclick=\"showView('dashboard')\">&#45824;&#49884;&#48372;&#46300;</button><button type='button' class='tab-btn' data-target='details' onclick=\"showView('details')\">&#49464;&#48512; &#45236;&#50669;</button></div>"
-        "<section class='view active' data-view='dashboard'><div class='metric-row'><div class='metric'><div class='metric-label'>&#52509;&#47588;&#52636;&#50529;</div><div class='metric-value' id='dash-total'>0&#50896;</div></div><div class='metric'><div class='metric-label'>&#44228;&#50557; &#44148;&#49688;</div><div class='metric-value' id='dash-count'>0&#44148;</div></div><div class='metric'><div class='metric-label'>&#52572;&#44256; &#47588;&#52636; &#50629;&#52404;</div><div class='metric-value' id='dash-top-vendor'>-</div></div></div><div class='dashboard-grid'><div class='dash-panel'><h2>&#50629;&#52404;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='vendor-chart'></div></div><div class='dash-panel'><h2>&#50900;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='month-chart'></div></div><div class='dash-panel'><h2>&#49884;&#46020;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='region-chart'></div></div><div class='dash-panel'><div class='dash-head'><h2 id='support-title'>&#49884;&#46020; &#44368;&#50977;&#51648;&#50896;&#52397;&#48324; &#47588;&#52636;&#50529;</h2><select id='dashboard-region' class='dash-select' onchange='setDashboardRegion(this.value)'></select></div><div class='bar-list' id='support-chart'></div></div><div class='dash-panel'><h2>학교급별 매출액</h2><div class='bar-list' id='school-chart'></div></div><div class='dash-panel'><h2>구매 유형별 계약금액</h2><div class='bar-list' id='purchase-type-chart'></div></div></div><div class='purchase-panel'><div class='purchase-head'><h2>구매 유형별 계약금액</h2><div class='purchase-tools'><button type='button' class='purchase-scope active' data-purchase-scope='all' onclick=\"setPurchaseVendorScope('all')\">전체</button><button type='button' class='purchase-scope' data-purchase-scope='mirae' onclick=\"setPurchaseVendorScope('mirae')\">미래엔</button><button type='button' class='purchase-scope' data-purchase-scope='other' onclick=\"setPurchaseVendorScope('other')\">그 외</button><button type='button' class='purchase-csv' onclick='downloadPurchaseCsv()'>CSV 다운로드</button></div></div><div class='purchase-table-wrap'><table class='purchase-table'><thead><tr><th>유형</th><th class='tr'>건수</th><th class='tr'>계약금액 합</th><th class='tr'>비중</th><th class='tr'>건당 평균</th></tr></thead><tbody id='purchase-type-body'></tbody><tfoot id='purchase-type-foot'></tfoot></table></div><div id='purchase-complex-note' class='purchase-note'>복합계약 0건 포함 (단일 제품 기준 아님)</div><div class='purchase-subgrid'><div class='purchase-subpanel'><h3>유형 × 학교급</h3><div class='purchase-table-wrap'><table class='purchase-table'><thead><tr><th>유형</th><th class='tr'>초</th><th class='tr'>중</th><th class='tr'>고</th><th class='tr'>기타</th></tr></thead><tbody id='purchase-level-body'></tbody></table></div></div><div class='purchase-subpanel'><h3>유형 × 월별 추이</h3><div class='purchase-table-wrap'><table class='purchase-table'><thead id='purchase-month-head'></thead><tbody id='purchase-month-body'></tbody></table></div></div></div></div></section>"
+        "<section class='view active' data-view='dashboard'><div class='metric-row'><div class='metric'><div class='metric-label'>&#52509;&#47588;&#52636;&#50529;</div><div class='metric-value' id='dash-total'>0&#50896;</div></div><div class='metric'><div class='metric-label'>&#44228;&#50557; &#44148;&#49688;</div><div class='metric-value' id='dash-count'>0&#44148;</div></div><div class='metric'><div class='metric-label'>&#52572;&#44256; &#47588;&#52636; &#50629;&#52404;</div><div class='metric-value' id='dash-top-vendor'>-</div></div></div><div class='dashboard-grid'><div class='dash-panel'><h2>&#50629;&#52404;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='vendor-chart'></div></div><div class='dash-panel'><h2>&#50900;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='month-chart'></div></div><div class='dash-panel'><h2>&#49884;&#46020;&#48324; &#47588;&#52636;&#50529;</h2><div class='bar-list' id='region-chart'></div></div><div class='dash-panel'><div class='dash-head'><h2 id='support-title'>&#49884;&#46020; &#44368;&#50977;&#51648;&#50896;&#52397;&#48324; &#47588;&#52636;&#50529;</h2><select id='dashboard-region' class='dash-select' onchange='setDashboardRegion(this.value)'></select></div><div class='bar-list' id='support-chart'></div></div><div class='dash-panel'><h2>학교급별 매출액</h2><div class='bar-list' id='school-chart'></div></div><div class='dash-panel'><div class='dash-head'><h2>구매 유형별 계약금액</h2><button type='button' class='purchase-clear' data-purchase-clear='1' onclick='clearPurchaseTypeFilter()'>전체로 보기</button></div><div class='bar-list' id='purchase-type-chart'></div></div></div><div class='purchase-panel'><div class='purchase-head'><h2>구매 유형별 계약금액</h2><div class='purchase-tools'><button type='button' class='purchase-clear' data-purchase-clear='1' onclick='clearPurchaseTypeFilter()'>전체로 보기</button><button type='button' class='purchase-scope active' data-purchase-scope='all' onclick=\"setPurchaseVendorScope('all')\">전체</button><button type='button' class='purchase-scope' data-purchase-scope='mirae' onclick=\"setPurchaseVendorScope('mirae')\">미래엔</button><button type='button' class='purchase-scope' data-purchase-scope='other' onclick=\"setPurchaseVendorScope('other')\">그 외</button><button type='button' class='purchase-csv' onclick='downloadPurchaseCsv()'>CSV 다운로드</button></div></div><div class='purchase-table-wrap'><table class='purchase-table'><thead><tr><th>유형</th><th class='tr'>건수</th><th class='tr'>계약금액 합</th><th class='tr'>비중</th><th class='tr'>건당 평균</th></tr></thead><tbody id='purchase-type-body'></tbody><tfoot id='purchase-type-foot'></tfoot></table></div><div id='purchase-complex-note' class='purchase-note'>복합계약 0건 포함 (단일 제품 기준 아님)</div><div class='purchase-subgrid'><div class='purchase-subpanel'><h3>유형 × 학교급</h3><div class='purchase-table-wrap'><table class='purchase-table'><thead><tr><th>유형</th><th class='tr'>초</th><th class='tr'>중</th><th class='tr'>고</th><th class='tr'>기타</th></tr></thead><tbody id='purchase-level-body'></tbody></table></div></div><div class='purchase-subpanel'><h3>유형 × 월별 추이</h3><div class='purchase-table-wrap'><table class='purchase-table'><thead id='purchase-month-head'></thead><tbody id='purchase-month-body'></tbody></table></div></div></div></div></section>"
         "<section class='view detail-view' data-view='details'><div id='dashboard-filter-note' class='dashboard-filter-note'><span>대시보드 필터 적용 중: <strong id='dashboard-filter-text'></strong></span><button type='button' class='action-btn secondary' onclick='clearDashboardFilter()'>필터 해제</button></div><div class='panel'><h2>&#44160;&#49353;&#50612;&#47196; &#54596;&#53552;&#47553;</h2><div class='filters'>" + keyword_buttons + "</div></div>"
         "<div class='summary'><span>&#52509; <strong id='visible-count'>" + str(default_visible_count) + "</strong>&#44148; &#54364;&#49884; &#51473;</span>"
         "<a href='" + esc(ref_url) + "' target='_blank' rel='noopener' class='s2b-link'>S2B &#49688;&#51032;&#44228;&#50557; &#45236;&#50669; &#48148;&#47196;&#44032;&#44592; &#8599;</a></div>"
@@ -1386,7 +1523,7 @@ document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filter
         "<span id='filter-state' class='filter-state'>&#51648;&#50669; &#54596;&#53552; &#44732;&#51664;</span>"
         "<span class='toolbar-spacer'></span><span id='sync-status' class='sync-status'>Supabase sync pending.</span></div>"
         "<div class='pagination pagination-top'></div><div class='table-wrap'><table><thead><tr>"
-        "<th><input type='checkbox' aria-label='&#51204;&#52404; &#49440;&#53469;' onclick='toggleAll(this)'></th><th>No</th><th style='text-align:left'>&#44228;&#50557;&#47749;</th><th>&#51648;&#50669;</th><th>&#44368;&#50977;&#51648;&#50896;&#52397;</th><th>&#44228;&#50557;&#44592;&#44288;</th><th>&#44228;&#50557;&#45824;&#49345;&#51088;</th>"
+        "<th><input type='checkbox' aria-label='&#51204;&#52404; &#49440;&#53469;' onclick='toggleAll(this)'></th><th>No</th><th style='text-align:left'>&#44228;&#50557;&#47749;</th><th>&#51648;&#50669;</th><th>&#49464;&#48512;&#51648;&#50669;</th><th>&#44368;&#50977;&#51648;&#50896;&#52397;</th><th>&#44228;&#50557;&#44592;&#44288;</th><th>&#44228;&#50557;&#45824;&#49345;&#51088;</th>"
         "<th>&#44552;&#50529;</th><th>&#44228;&#50557;&#52404;&#44208;&#51068;</th>"
         "</tr></thead><tbody id='tbody'>" + rows_html + "</tbody></table>"
         "<div class='no-result' id='no-result'>표시할 계약내역이 없습니다.</div></div>"
