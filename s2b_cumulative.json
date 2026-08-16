@@ -27865,9 +27865,9 @@
       "search_period_to": "2026.07.15",
       "last_imported_at": "2026-08-16 06:54",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -27888,12 +27888,12 @@
           "school_code": "9300029"
         }
       ],
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202607141373005",
@@ -122074,9 +122074,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -122100,7 +122100,7 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "정보부",
-      "support_office": "",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "cleared_until_region_selected",
       "subregion": "동래"
     },
@@ -122121,9 +122121,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -122147,7 +122147,7 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "정보부",
-      "support_office": "",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "cleared_until_region_selected",
       "subregion": "동래"
     },
@@ -122168,9 +122168,9 @@
       "search_period_to": "2026.06.15",
       "last_imported_at": "2026-08-15 15:20",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -122194,7 +122194,7 @@
       "first_imported_at": "2026-07-31 14:22",
       "import_count": 2,
       "business_place": "정보부",
-      "support_office": "",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "cleared_until_region_selected",
       "subregion": "동래"
     },
@@ -407750,9 +407750,9 @@
       "search_period_to": "2026.03.14",
       "last_imported_at": "2026-07-20 16:49",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -407776,9 +407776,9 @@
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603131062514",
@@ -418735,9 +418735,9 @@
       "search_period_to": "2026.03.14",
       "last_imported_at": "2026-07-20 16:49",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -418761,9 +418761,9 @@
       "first_imported_at": "2026-07-20 16:49",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603091043749",
@@ -420961,9 +420961,9 @@
       "search_period_to": "2026.03.07",
       "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -420987,9 +420987,9 @@
       "first_imported_at": "2026-07-20 15:26",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603061037374",
@@ -421007,9 +421007,9 @@
       "search_period_to": "2026.03.07",
       "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -421033,9 +421033,9 @@
       "first_imported_at": "2026-07-20 15:26",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603061037373",
@@ -421053,9 +421053,9 @@
       "search_period_to": "2026.03.07",
       "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -421079,9 +421079,9 @@
       "first_imported_at": "2026-07-20 15:26",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603061037371",
@@ -421099,9 +421099,9 @@
       "search_period_to": "2026.03.07",
       "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -421125,9 +421125,9 @@
       "first_imported_at": "2026-07-20 15:26",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603061037370",
@@ -421145,9 +421145,9 @@
       "search_period_to": "2026.03.07",
       "last_imported_at": "2026-07-20 15:26",
       "school_level": "초",
-      "region": "세종",
+      "region": "부산",
       "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
@@ -421171,9 +421171,9 @@
       "first_imported_at": "2026-07-20 15:26",
       "import_count": 1,
       "business_place": "세종특별자치시 연동면 청연로 606-36 연동초등학교",
-      "support_office": "세종특별자치시교육청",
+      "support_office": "부산광역시동래교육지원청",
       "support_office_source": "business_place",
-      "subregion": "세종"
+      "subregion": "동래"
     },
     {
       "id": "202603061040412",
@@ -425376,7 +425376,7 @@
       "school_level": "초",
       "region": "부산",
       "region_status": "matched",
-      "region_source": "business_place",
+      "region_source": "manual_school_district_override",
       "region_candidates": [
         {
           "school_name": "연동초등학교",
