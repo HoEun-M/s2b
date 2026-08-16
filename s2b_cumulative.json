@@ -3,7 +3,7 @@
   "meta": {
     "lastImportedAt": "2026-08-16 07:54",
     "lastSearchPeriod": "20260716~20260803",
-    "total": 12228
+    "total": 12099
   },
   "records": [
     {
@@ -2374,31 +2374,6 @@
       "subregion": "동두천,양주"
     },
     {
-      "id": "202607271399862",
-      "tender_no": "202607271399862",
-      "contract_name": "봉래초등학교 AI 디디털 교육을 위한 패드 키보드 구입 견적 요청",
-      "institution": "진주봉래초등학교",
-      "counterpart": "(주)블루포트",
-      "amount": "4,950,000",
-      "contract_date": "2026-07-30",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607271399862&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "진주교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "subregion": "진주"
-    },
-    {
       "id": "202607301405494",
       "tender_no": "202607301405494",
       "contract_name": "맥세비스 AI 스마트 바둑판 멀티게임보드",
@@ -3807,41 +3782,6 @@
       "import_count": 3,
       "support_office": "부산광역시교육청",
       "subregion": "북부"
-    },
-    {
-      "id": "202607231396241",
-      "tender_no": "202607231396241",
-      "contract_name": "AI 디지털 활용 선도학교 크롬북 대여 견적요청",
-      "institution": "단구초등학교",
-      "counterpart": "주식회사 아이코어이앤씨",
-      "amount": "12,730,000",
-      "contract_date": "2026-07-29",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202607231396241&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "단구초등학교",
-          "region": "강원",
-          "district": "원주시",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도원주교육지원청",
-          "address": "강원특별자치도 원주시 단구초교길 5",
-          "school_code": "7822089"
-        }
-      ],
-      "support_office": "강원특별자치도원주교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "subregion": "원주"
     },
     {
       "id": "202607281402002",
@@ -8638,111 +8578,6 @@
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 1,
       "subregion": "구리,남양주"
-    },
-    {
-      "id": "202607221391094",
-      "tender_no": "202607221391094",
-      "contract_name": "삼탠바이미 43인치 삼성 AI 무빙스타일 4K 스마트 모니터세트 설치포함",
-      "institution": "성호중학교",
-      "counterpart": "클라스온 주식회사",
-      "amount": "790,000",
-      "contract_date": "2026-07-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391094&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "중",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "성호중학교",
-          "region": "경기",
-          "district": "오산시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도화성오산교육지원청",
-          "address": "경기도 오산시 동부대로436번길 34",
-          "school_code": "7679114"
-        }
-      ],
-      "support_office": "경기도화성오산교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "subregion": "화성,오산"
-    },
-    {
-      "id": "202607231395367",
-      "tender_no": "202607231395367",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M7 4K UHD 무빙스타일(라이트)",
-      "institution": "방교중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "1,196,200",
-      "contract_date": "2026-07-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607231395367&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "중",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "방교중학교",
-          "region": "경기",
-          "district": "화성시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도화성오산교육지원청",
-          "address": "경기도 화성시 동탄산척로1길 23",
-          "school_code": "7679365"
-        }
-      ],
-      "support_office": "경기도화성오산교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "subregion": "화성,오산"
-    },
-    {
-      "id": "202607241398686",
-      "tender_no": "202607241398686",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스",
-      "institution": "광주농성초등학교",
-      "counterpart": "위드스쿨(주)",
-      "amount": "815,000",
-      "contract_date": "2026-07-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607241398686&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "광주농성초등학교",
-          "region": "광주",
-          "district": "남구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "전남광주통합특별시광주서부교육지원청",
-          "address": "전남광주통합특별시 남구 금화로481번길 7",
-          "school_code": "7402180"
-        }
-      ],
-      "support_office": "광주광역시서부교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "subregion": "서부"
     },
     {
       "id": "202607241397024",
@@ -16063,98 +15898,6 @@
       "subregion": "괴산,증평"
     },
     {
-      "id": "202607211388596",
-      "tender_no": "202607211388596",
-      "contract_name": "삼성 AI슬림키보드북커버케이스 정품 EF갤럭시탭 태블릿S10FE S펜수납 외 1종",
-      "institution": "천마초등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "4,727,000",
-      "contract_date": "2026-07-21",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388596&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "천마초등학교",
-          "region": "부산",
-          "district": "서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 서구 천해로7번길 38",
-          "school_code": "7171082"
-        },
-        {
-          "school_name": "천마초등학교",
-          "region": "경기",
-          "district": "남양주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도구리남양주교육지원청",
-          "address": "경기도 남양주시 화도읍 경춘로 1707",
-          "school_code": "7652127"
-        }
-      ],
-      "support_office": "부산광역시서부교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "business_place": "부산 서구 암남동 81-11 천마초등학교 1층 교무실",
-      "support_office_source": "business_place",
-      "subregion": "서부"
-    },
-    {
-      "id": "202607211388595",
-      "tender_no": "202607211388595",
-      "contract_name": "삼성 AI슬림키보드북커버케이스 정품 EF갤럭시탭 태블릿S10FE S펜수납 외 1종",
-      "institution": "천마초등학교",
-      "counterpart": "주식회사 에듀아이(EDU-i)",
-      "amount": "217,500",
-      "contract_date": "2026-07-21",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607211388595&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "천마초등학교",
-          "region": "부산",
-          "district": "서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 서구 천해로7번길 38",
-          "school_code": "7171082"
-        },
-        {
-          "school_name": "천마초등학교",
-          "region": "경기",
-          "district": "남양주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도구리남양주교육지원청",
-          "address": "경기도 남양주시 화도읍 경춘로 1707",
-          "school_code": "7652127"
-        }
-      ],
-      "support_office": "부산광역시서부교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "business_place": "부산 서구 암남동 81-11 천마초등학교 1층 교무실",
-      "support_office_source": "business_place",
-      "subregion": "서부"
-    },
-    {
       "id": "202607211387793",
       "tender_no": "202607211387793",
       "contract_name": "삼성 07평형 벽걸이 냉난방기 AI 무풍콤보 1등급 사계절에어컨 설치포함",
@@ -18697,52 +18440,6 @@
       "business_place": "충남 홍성군 홍북읍 도청대로 29-19 조양유치원",
       "support_office_source": "business_place",
       "subregion": "홍성"
-    },
-    {
-      "id": "202607201385205",
-      "tender_no": "202607201385205",
-      "contract_name": "삼성 SM갤럭시탭 EF 정품 AI 터치패드 DX725 키보드북커버 케이스",
-      "institution": "장흥초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "3,660,000",
-      "contract_date": "2026-07-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607201385205&excelSection=N",
-      "search_period_from": "2026.07.16",
-      "search_period_to": "2026.08.03",
-      "last_imported_at": "2026-08-16 07:54",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "장흥초등학교",
-          "region": "강원",
-          "district": "철원군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도철원교육지원청",
-          "address": "강원특별자치도 철원군 동송읍 태봉로 2017",
-          "school_code": "7932026"
-        },
-        {
-          "school_name": "장흥초등학교",
-          "region": "광주",
-          "district": "장흥군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시장흥교육지원청",
-          "address": "전남광주통합특별시 장흥군 장흥읍 의향길 23",
-          "school_code": "8622011"
-        }
-      ],
-      "support_office": "전라남도장흥교육지원청",
-      "first_imported_at": "2026-08-16 07:54",
-      "import_count": 1,
-      "business_place": "전남 장흥군 장흥읍 의향길 23",
-      "support_office_source": "business_place",
-      "subregion": "장흥"
     },
     {
       "id": "202607201384875",
@@ -25107,56 +24804,6 @@
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
       "subregion": "의정부"
-    },
-    {
-      "id": "202607151379211",
-      "tender_no": "202607151379211",
-      "contract_name": "AI 디지털활용 연구학교 학생 교육 물품(키보드) 구입",
-      "institution": "양산석산초등학교",
-      "counterpart": "더훈컴퍼니",
-      "amount": "279,000",
-      "contract_date": "2026-07-15",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607151379211&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "양산교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "양산"
-    },
-    {
-      "id": "202607151379173",
-      "tender_no": "202607151379173",
-      "contract_name": "AI 디지털활용 연구학교 학생 교육 물품(마우스패드) 구입",
-      "institution": "양산석산초등학교",
-      "counterpart": "한국안심기프트사회적협동조합",
-      "amount": "594,000",
-      "contract_date": "2026-07-15",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607151379173&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "양산교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "양산"
     },
     {
       "id": "202607151377411",
@@ -33870,31 +33517,6 @@
       "subregion": "남부"
     },
     {
-      "id": "202607101365583",
-      "tender_no": "202607101365583",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 슬림키보드북커버",
-      "institution": "성주용암중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "420,000",
-      "contract_date": "2026-07-10",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607101365583&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "중",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "경상북도성주교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "성주"
-    },
-    {
       "id": "202607101366289",
       "tender_no": "202607101366289",
       "contract_name": "브루 Vrew 요금제 AI 영상편집 라이선스 (안심구독) 외 1종",
@@ -36966,41 +36588,6 @@
       "first_imported_at": "2026-08-06 18:14",
       "import_count": 3,
       "support_office": "부산광역시교육청",
-      "subregion": "남부"
-    },
-    {
-      "id": "202607091363305",
-      "tender_no": "202607091363305",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 키보드북커버케이스",
-      "institution": "서울우신초등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "234,800",
-      "contract_date": "2026-07-09",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607091363305&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "서울",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "서울우신초등학교",
-          "region": "서울",
-          "district": "영등포구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시남부교육지원청",
-          "address": "서울특별시 영등포구 신길로 190",
-          "school_code": "7041158"
-        }
-      ],
-      "support_office": "서울특별시남부교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
       "subregion": "남부"
     },
     {
@@ -43257,41 +42844,6 @@
       "subregion": "포항"
     },
     {
-      "id": "202607061354086",
-      "tender_no": "202607061354086",
-      "contract_name": "앱코 ABKO x SOAI 콜라보 3모드 블루투스 기계식 키보드",
-      "institution": "전주북일초등학교",
-      "counterpart": "스쿨메이트",
-      "amount": "93,900",
-      "contract_date": "2026-07-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061354086&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "전주북일초등학교",
-          "region": "전북",
-          "district": "전주시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도전주교육지원청",
-          "address": "전북특별자치도 전주시 덕진구 견훤로 336",
-          "school_code": "8332132"
-        }
-      ],
-      "support_office": "전북특별자치도전주교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "전주"
-    },
-    {
       "id": "202607071355374",
       "tender_no": "202607071355374",
       "contract_name": "아이글(AiGLE), 손글씨로 작성하는 서논술AI평가지원 서비스",
@@ -43611,41 +43163,6 @@
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
       "subregion": "논산,계룡"
-    },
-    {
-      "id": "202607071356575",
-      "tender_no": "202607071356575",
-      "contract_name": "삼성정품 AI 슬림 키보드 북커버 구입",
-      "institution": "원주청원학교",
-      "counterpart": "패션마스터",
-      "amount": "3,384,000",
-      "contract_date": "2026-07-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607071356575&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "기타",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "원주청원학교",
-          "region": "강원",
-          "district": "원주시",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도교육청",
-          "address": "강원특별자치도 원주시 원문로137번길 34",
-          "school_code": "7801215"
-        }
-      ],
-      "support_office": "강원특별자치도원주교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "원주"
     },
     {
       "id": "202607071356331",
@@ -44297,41 +43814,6 @@
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
       "subregion": "진주"
-    },
-    {
-      "id": "202607061353932",
-      "tender_no": "202607061353932",
-      "contract_name": "PTZ AI 원격수업용 HDMI 12배율 RS 웹캠 디지털 화상카메라",
-      "institution": "서울오현초등학교",
-      "counterpart": "다온닷컴",
-      "amount": "1,298,000",
-      "contract_date": "2026-07-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061353932&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "서울",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "오현초등학교",
-          "region": "경기",
-          "district": "수원시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도수원교육지원청",
-          "address": "경기도 수원시 권선구 서수원로 220",
-          "school_code": "7541146"
-        }
-      ],
-      "support_office": "",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "subregion": "성북,강북"
     },
     {
       "id": "202607031349425",
@@ -48922,41 +48404,6 @@
       "subregion": "동부"
     },
     {
-      "id": "202607061352875",
-      "tender_no": "202607061352875",
-      "contract_name": "가북초등학교 아이스크림 홈런(태블릿) 무관리형 구매 계약",
-      "institution": "가북초등학교",
-      "counterpart": "제이로이",
-      "amount": "10,764,000",
-      "contract_date": "2026-07-06",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607061352875&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-07-24 15:12",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "가북초등학교",
-          "region": "경남",
-          "district": "거창군",
-          "education_office": "경상남도교육청",
-          "support_office": "거창교육지원청",
-          "address": "경상남도 거창군 가북면 가북로 628",
-          "school_code": "9211004"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:12",
-      "import_count": 1,
-      "support_office": "거창교육지원청",
-      "subregion": "거창"
-    },
-    {
       "id": "202607031350176",
       "tender_no": "202607031350176",
       "contract_name": "인터넷 수강 지원 미래엔 초코클래스( 6개월 이상 1과목) 구독",
@@ -52363,52 +51810,6 @@
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 1,
       "subregion": "인제"
-    },
-    {
-      "id": "202607021347402",
-      "tender_no": "202607021347402",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "양서초등학교",
-      "counterpart": "위드플러스",
-      "amount": "2,700,000",
-      "contract_date": "2026-07-02",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607021347402&excelSection=N",
-      "search_period_from": "2026.07.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-08-16 06:54",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "양서초등학교",
-          "region": "경기",
-          "district": "양평군",
-          "education_office": "경기도교육청",
-          "support_office": "경기도양평교육지원청",
-          "address": "경기도 양평군 양서면 양서도곡길 8",
-          "school_code": "7731027"
-        },
-        {
-          "school_name": "양서초등학교",
-          "region": "경북",
-          "district": "포항시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도포항교육지원청",
-          "address": "경상북도 포항시 북구 천마로 89",
-          "school_code": "8761258"
-        }
-      ],
-      "support_office": "경상북도포항교육지원청",
-      "first_imported_at": "2026-08-16 06:54",
-      "import_count": 1,
-      "business_place": "경북 포항시 북구 천마로 89 18-10 양서초등학교 늘봄지원실",
-      "support_office_source": "business_place",
-      "subregion": "포항"
     },
     {
       "id": "202607011344032",
@@ -69320,70 +68721,6 @@
       "subregion": "강남"
     },
     {
-      "id": "202606241330489",
-      "tender_no": "202606241330489",
-      "contract_name": "카미봇 파이 AI Plus 웹캠",
-      "institution": "신광초등학교",
-      "counterpart": "아이티존(주)",
-      "amount": "876,000",
-      "contract_date": "2026-06-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606241330489&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "초",
-      "region": "제주",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "신광초등학교",
-          "region": "서울",
-          "district": "용산구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시중부교육지원청",
-          "address": "서울특별시 용산구 청파로 263",
-          "school_code": "7061092"
-        },
-        {
-          "school_name": "신광초등학교",
-          "region": "충남",
-          "district": "아산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도아산교육지원청",
-          "address": "충청남도 아산시 서부북로 933-10",
-          "school_code": "8181033"
-        },
-        {
-          "school_name": "신광초등학교",
-          "region": "광주",
-          "district": "함평군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시함평교육지원청",
-          "address": "전남광주통합특별시 함평군 신광면 신광중앙길 118",
-          "school_code": "8672013"
-        },
-        {
-          "school_name": "신광초등학교",
-          "region": "경북",
-          "district": "포항시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도포항교육지원청",
-          "address": "경상북도 포항시 북구 신광면 토성길 31",
-          "school_code": "8761132"
-        }
-      ],
-      "support_office": "제주특별자치도제주시교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "business_place": "제주 제주시 성신로 25 (신광초등학교)",
-      "support_office_source": "business_place",
-      "subregion": "시"
-    },
-    {
       "id": "202606241329281",
       "tender_no": "202606241329281",
       "contract_name": "천체망원경 시스타 S30프로 AI 4K 스마트 삼각대 세트 (신형)",
@@ -69922,41 +69259,6 @@
       "first_imported_at": "2026-08-15 16:22",
       "import_count": 1,
       "subregion": "신안"
-    },
-    {
-      "id": "202606241329407",
-      "tender_no": "202606241329407",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "율촌초등학교",
-      "counterpart": "에스지컴",
-      "amount": "1,500,000",
-      "contract_date": "2026-06-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606241329407&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "율촌초등학교",
-          "region": "광주",
-          "district": "여수시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시여수교육지원청",
-          "address": "전남광주통합특별시 여수시 율촌면 율촌초교길 7",
-          "school_code": "8512054"
-        }
-      ],
-      "support_office": "전라남도여수교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "subregion": "여수"
     },
     {
       "id": "202606241330914",
@@ -73277,33 +72579,6 @@
       "subregion": "동부"
     },
     {
-      "id": "202606231326019",
-      "tender_no": "202606231326019",
-      "contract_name": "옵스봇 AI PTZR 4K 라이브 프로덕션 카메라 외 4종",
-      "institution": "사단법인인순이와좋은사람들",
-      "counterpart": "에이아이파트너스(AI Partners)",
-      "amount": "18,400,000",
-      "contract_date": "2026-06-23",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231326019&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "기타",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [],
-      "support_office": "강원특별자치도홍천교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "business_place": "강원 홍천군 남면 남노일로 720-8 해밀학교생활관",
-      "support_office_source": "business_place",
-      "subregion": "홍천"
-    },
-    {
       "id": "202606221324050",
       "tender_no": "202606221324050",
       "contract_name": "연구학교 AI코스웨어(아이스크림홈런) 구입(3차)",
@@ -75458,76 +74733,6 @@
       "subregion": "부안"
     },
     {
-      "id": "202606231326255",
-      "tender_no": "202606231326255",
-      "contract_name": "2026년 에듀테크 활용 수업 물품 버티컬 무선 마우스 구입 지급",
-      "institution": "격포초등학교",
-      "counterpart": "스쿨몬(주)",
-      "amount": "450,000",
-      "contract_date": "2026-06-23",
-      "keywords": [
-        "에듀테크"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231326255&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-13 07:09",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "격포초등학교",
-          "region": "전북",
-          "district": "부안군",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도부안교육지원청",
-          "address": "전북특별자치도 부안군 변산면 격포윗길 11",
-          "school_code": "8462036"
-        }
-      ],
-      "first_imported_at": "2026-08-13 07:09",
-      "import_count": 1,
-      "support_office": "전북특별자치도부안교육지원청",
-      "subregion": "부안"
-    },
-    {
-      "id": "202606231327049",
-      "tender_no": "202606231327049",
-      "contract_name": "2026년 에듀테크 활용 수업 물품 마우스 손목 받침대 구입 지급",
-      "institution": "격포초등학교",
-      "counterpart": "신영",
-      "amount": "132,000",
-      "contract_date": "2026-06-23",
-      "keywords": [
-        "에듀테크"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231327049&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-13 07:09",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "격포초등학교",
-          "region": "전북",
-          "district": "부안군",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도부안교육지원청",
-          "address": "전북특별자치도 부안군 변산면 격포윗길 11",
-          "school_code": "8462036"
-        }
-      ],
-      "first_imported_at": "2026-08-13 07:09",
-      "import_count": 1,
-      "support_office": "전북특별자치도부안교육지원청",
-      "subregion": "부안"
-    },
-    {
       "id": "202606231327383",
       "tender_no": "202606231327383",
       "contract_name": "2026 에듀테크 온라인수업 프로그램 수업 도구 구입",
@@ -77544,41 +76749,6 @@
       "subregion": "홍성"
     },
     {
-      "id": "202606221323997",
-      "tender_no": "202606221323997",
-      "contract_name": "AI디지털 선도학교 태블릿PC(갤럭시탭 S11 울트라) 구입",
-      "institution": "홍성여자중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "3,030,000",
-      "contract_date": "2026-06-22",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606221323997&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "중",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "홍성여자중학교",
-          "region": "충남",
-          "district": "홍성군",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도홍성교육지원청",
-          "address": "충청남도 홍성군 홍성읍 도청대로 29-21",
-          "school_code": "8261011"
-        }
-      ],
-      "support_office": "충청남도홍성교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "subregion": "홍성"
-    },
-    {
       "id": "202606191320970",
       "tender_no": "202606191320970",
       "contract_name": "AI기반 교우관계 분석 서비스",
@@ -77708,41 +76878,6 @@
       "import_count": 2,
       "support_office": "양산교육지원청",
       "subregion": "양산"
-    },
-    {
-      "id": "202606221323174",
-      "tender_no": "202606221323174",
-      "contract_name": "AI 디지털 활용 선도학교용 pc 모니터 구입",
-      "institution": "해밀학교",
-      "counterpart": "주식회사 다온씨에스",
-      "amount": "190,000",
-      "contract_date": "2026-06-22",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606221323174&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "기타",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "해밀학교",
-          "region": "강원",
-          "district": "홍천군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도홍천교육지원청",
-          "address": "강원특별자치도 홍천군 남면 남노일로 720-8",
-          "school_code": "7882066"
-        }
-      ],
-      "support_office": "강원특별자치도홍천교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "subregion": "홍천"
     },
     {
       "id": "202606221323267",
@@ -82243,41 +81378,6 @@
       "subregion": "아산"
     },
     {
-      "id": "202606181316645",
-      "tender_no": "202606181316645",
-      "contract_name": "실물화상기 클래스캠 AI 학생용 수업 카메라 800만화소 폴딩 웹캠",
-      "institution": "옥과초등학교",
-      "counterpart": "스쿨잼",
-      "amount": "363,000",
-      "contract_date": "2026-06-18",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606181316645&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "옥과초등학교",
-          "region": "광주",
-          "district": "곡성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시곡성교육지원청",
-          "address": "전남광주통합특별시 곡성군 옥과면 대학로 213",
-          "school_code": "8572011"
-        }
-      ],
-      "support_office": "전라남도곡성교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "subregion": "곡성"
-    },
-    {
       "id": "202606181317334",
       "tender_no": "202606181317334",
       "contract_name": "스쿨플랫 수학 AI 코스웨어(구, 매쓰플랫) 구입",
@@ -86259,116 +85359,6 @@
       "subregion": "강남,서초 / 남부 / 북부 / 서부"
     },
     {
-      "id": "202606171313881",
-      "tender_no": "202606171313881",
-      "contract_name": "삼성전자 갤럭시탭S11 AI 태블릿PC 외 1종",
-      "institution": "마산초등학교",
-      "counterpart": "에스제이트랜드",
-      "amount": "1,056,000",
-      "contract_date": "2026-06-17",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606171313881&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "마산초등학교",
-          "region": "경기",
-          "district": "화성시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도화성오산교육지원청",
-          "address": "경기도 화성시 송산면 송산포도로 582",
-          "school_code": "7679025"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "충남",
-          "district": "서천군",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도서천교육지원청",
-          "address": "충청남도 서천군 마산면 삼일로 327",
-          "school_code": "8241016"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "광주",
-          "district": "해남군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시해남교육지원청",
-          "address": "전남광주통합특별시 해남군 마산면 은적사길 13",
-          "school_code": "8642027"
-        }
-      ],
-      "support_office": "충청남도서천교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "business_place": "충남 서천군 마산면 삼일로 327",
-      "support_office_source": "business_place",
-      "subregion": "서천"
-    },
-    {
-      "id": "202606171313880",
-      "tender_no": "202606171313880",
-      "contract_name": "삼성전자 갤럭시탭S11 AI 태블릿PC 외 1종",
-      "institution": "마산초등학교",
-      "counterpart": "에이알컴퍼니",
-      "amount": "160,000",
-      "contract_date": "2026-06-17",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606171313880&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "마산초등학교",
-          "region": "경기",
-          "district": "화성시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도화성오산교육지원청",
-          "address": "경기도 화성시 송산면 송산포도로 582",
-          "school_code": "7679025"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "충남",
-          "district": "서천군",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도서천교육지원청",
-          "address": "충청남도 서천군 마산면 삼일로 327",
-          "school_code": "8241016"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "광주",
-          "district": "해남군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시해남교육지원청",
-          "address": "전남광주통합특별시 해남군 마산면 은적사길 13",
-          "school_code": "8642027"
-        }
-      ],
-      "support_office": "충청남도서천교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "business_place": "충남 서천군 마산면 삼일로 327",
-      "support_office_source": "business_place",
-      "subregion": "서천"
-    },
-    {
       "id": "202606161313062",
       "tender_no": "202606161313062",
       "contract_name": "삼성 비스포크 AI 제트 Lite 무선청소기 물걸레 패키지 청정스테이션 외 1종",
@@ -90169,41 +89159,6 @@
       "subregion": "시"
     },
     {
-      "id": "202606161311515",
-      "tender_no": "202606161311515",
-      "contract_name": "AI디지털 활용 선도학교용 모니터 구입",
-      "institution": "해밀학교",
-      "counterpart": "해도커머스",
-      "amount": "148,800",
-      "contract_date": "2026-06-16",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606161311515&excelSection=N",
-      "search_period_from": "2026.06.16",
-      "search_period_to": "2026.06.30",
-      "last_imported_at": "2026-08-15 16:22",
-      "school_level": "기타",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "해밀학교",
-          "region": "강원",
-          "district": "홍천군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도홍천교육지원청",
-          "address": "강원특별자치도 홍천군 남면 남노일로 720-8",
-          "school_code": "7882066"
-        }
-      ],
-      "support_office": "강원특별자치도홍천교육지원청",
-      "first_imported_at": "2026-08-15 16:22",
-      "import_count": 1,
-      "subregion": "홍천"
-    },
-    {
       "id": "202606161312648",
       "tender_no": "202606161312648",
       "contract_name": "AI교원학습공동체 운용비(클로드 Claude 구독료)",
@@ -92206,41 +91161,6 @@
       "subregion": "김제"
     },
     {
-      "id": "202606151308013",
-      "tender_no": "202606151308013",
-      "contract_name": "아이스크림 홈런(태블릿) 관리형",
-      "institution": "안의초등학교",
-      "counterpart": "아이티존(주)",
-      "amount": "5,056,000",
-      "contract_date": "2026-06-16",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151308013&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-07-24 15:12",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "안의초등학교",
-          "region": "경남",
-          "district": "함양군",
-          "education_office": "경상남도교육청",
-          "support_office": "함양교육지원청",
-          "address": "경상남도 함양군 안의면 안의초등길 8",
-          "school_code": "9201012"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:12",
-      "import_count": 1,
-      "support_office": "함양교육지원청",
-      "subregion": "함양"
-    },
-    {
       "id": "202606151306977",
       "tender_no": "202606151306977",
       "contract_name": "2026학년도 두드림학교 학습동기강화 및 학습코칭 프로그램 견적 요청",
@@ -94071,41 +92991,6 @@
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
       "subregion": "신안"
-    },
-    {
-      "id": "202606151308314",
-      "tender_no": "202606151308314",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M7 4K UHD 무빙스타일(스탠다드)",
-      "institution": "위례해솔초등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "6,000,000",
-      "contract_date": "2026-06-15",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606151308314&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "위례해솔초등학교",
-          "region": "경기",
-          "district": "성남시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도성남교육지원청",
-          "address": "경기도 성남시 수정구 남위례로 131",
-          "school_code": "7551331"
-        }
-      ],
-      "support_office": "경기도성남교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "성남"
     },
     {
       "id": "202606121306081",
@@ -95981,52 +94866,6 @@
       "subregion": "군산"
     },
     {
-      "id": "202606121305525",
-      "tender_no": "202606121305525",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "동북초등학교",
-      "counterpart": "전주재연상사",
-      "amount": "587,600",
-      "contract_date": "2026-06-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606121305525&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "동북초등학교",
-          "region": "서울",
-          "district": "도봉구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시북부교육지원청",
-          "address": "서울특별시 도봉구 시루봉로 53",
-          "school_code": "7051109"
-        },
-        {
-          "school_name": "동북초등학교",
-          "region": "전북",
-          "district": "부안군",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도부안교육지원청",
-          "address": "전북특별자치도 부안군 동진면 제전길 63",
-          "school_code": "8462032"
-        }
-      ],
-      "support_office": "전북특별자치도부안교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "business_place": "전라북도 부안군 동진면 제전길 63 동북초등학교",
-      "support_office_source": "business_place",
-      "subregion": "부안"
-    },
-    {
       "id": "202606121306410",
       "tender_no": "202606121306410",
       "contract_name": "AI실 운영 물품 구매",
@@ -97020,76 +95859,6 @@
       "business_place": "울산 울주군 청량읍 청송길 8 문수초등학교 2층 교무실",
       "support_office_source": "business_place",
       "subregion": "강남"
-    },
-    {
-      "id": "202606111301991",
-      "tender_no": "202606111301991",
-      "contract_name": "삼성 갤럭시탭 S11 울트라 AI 태블릿PC 256GB WIFI S펜포함",
-      "institution": "횡성고등학교",
-      "counterpart": "주식회사 교육의정석",
-      "amount": "3,200,000",
-      "contract_date": "2026-06-12",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606111301991&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "고",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "횡성고등학교",
-          "region": "강원",
-          "district": "횡성군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도교육청",
-          "address": "강원특별자치도 횡성군 횡성읍 교항로 33",
-          "school_code": "7801207"
-        }
-      ],
-      "support_office": "강원특별자치도횡성교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "횡성"
-    },
-    {
-      "id": "202606121306684",
-      "tender_no": "202606121306684",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "상품초등학교",
-      "counterpart": "에스지컴",
-      "amount": "1,500,000",
-      "contract_date": "2026-06-12",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606121306684&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "상품초등학교",
-          "region": "경기",
-          "district": "여주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도여주교육지원청",
-          "address": "경기도 여주시 산북면 금품1로 15",
-          "school_code": "7661026"
-        }
-      ],
-      "support_office": "경기도여주교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "여주"
     },
     {
       "id": "202606121306176",
@@ -103794,41 +102563,6 @@
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
       "subregion": "화성,오산"
-    },
-    {
-      "id": "202606101299827",
-      "tender_no": "202606101299827",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M1 4K UHD 무빙스타일(라이트)",
-      "institution": "청량초등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "2,004,000",
-      "contract_date": "2026-06-10",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606101299827&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "울산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "청량초등학교",
-          "region": "울산",
-          "district": "울주군",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시강남교육지원청",
-          "address": "울산광역시 울주군 청량읍 덕정5길 14",
-          "school_code": "7501100"
-        }
-      ],
-      "support_office": "울산광역시강남교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "강남"
     },
     {
       "id": "202606101299258",
@@ -117001,146 +115735,6 @@
       "subregion": "동작,관악"
     },
     {
-      "id": "202606051286767",
-      "tender_no": "202606051286767",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 3종",
-      "institution": "배다리초등학교",
-      "counterpart": "에스지컴",
-      "amount": "52,000",
-      "contract_date": "2026-06-05",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606051286767&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "배다리초등학교",
-          "region": "경기",
-          "district": "평택시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도평택교육지원청",
-          "address": "경기도 평택시 죽백4로 65",
-          "school_code": "7631263"
-        }
-      ],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
-      "id": "202606051286766",
-      "tender_no": "202606051286766",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 3종",
-      "institution": "배다리초등학교",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "210,000",
-      "contract_date": "2026-06-05",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606051286766&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "배다리초등학교",
-          "region": "경기",
-          "district": "평택시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도평택교육지원청",
-          "address": "경기도 평택시 죽백4로 65",
-          "school_code": "7631263"
-        }
-      ],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
-      "id": "202606051286765",
-      "tender_no": "202606051286765",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 3종",
-      "institution": "배다리초등학교",
-      "counterpart": "모든교육 주식회사",
-      "amount": "677,000",
-      "contract_date": "2026-06-05",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606051286765&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "배다리초등학교",
-          "region": "경기",
-          "district": "평택시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도평택교육지원청",
-          "address": "경기도 평택시 죽백4로 65",
-          "school_code": "7631263"
-        }
-      ],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
-      "id": "202606051286764",
-      "tender_no": "202606051286764",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 3종",
-      "institution": "배다리초등학교",
-      "counterpart": "주식회사 스쿨온담",
-      "amount": "870,000",
-      "contract_date": "2026-06-05",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606051286764&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "배다리초등학교",
-          "region": "경기",
-          "district": "평택시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도평택교육지원청",
-          "address": "경기도 평택시 죽백4로 65",
-          "school_code": "7631263"
-        }
-      ],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
       "id": "202606051289768",
       "tender_no": "202606051289768",
       "contract_name": "미드저니 AI 이미지 생성 에듀테크 프로 pro 12개월권",
@@ -121549,50 +120143,6 @@
       "subregion": "서부"
     },
     {
-      "id": "202606041286677",
-      "tender_no": "202606041286677",
-      "contract_name": "AI중점학교 운영물품 구입(엑토 블루투스 키보드)",
-      "institution": "경남사남초등학교",
-      "counterpart": "에스엘 컴퍼니",
-      "amount": "900,000",
-      "contract_date": "2026-06-04",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286677&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "사남초등학교",
-          "region": "부산",
-          "district": "사하구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 사하구 장평로 390",
-          "school_code": "7171063"
-        },
-        {
-          "school_name": "사남초등학교",
-          "region": "경남",
-          "district": "사천시",
-          "education_office": "경상남도교육청",
-          "support_office": "사천교육지원청",
-          "address": "경상남도 사천시 사남면 조동길 49-28",
-          "school_code": "9081016"
-        }
-      ],
-      "support_office": "사천교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "사천"
-    },
-    {
       "id": "202606041286602",
       "tender_no": "202606041286602",
       "contract_name": "AI·게이미피케이션 팀빌딩 학습 플랫폼 라포라포 외 2종",
@@ -121661,41 +120211,6 @@
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
       "subregion": "충주"
-    },
-    {
-      "id": "202606041286501",
-      "tender_no": "202606041286501",
-      "contract_name": "AI 활용 진로진학 상담 활성화를 위한 물품 구입(모니터 보호필름)",
-      "institution": "제주제일고등학교",
-      "counterpart": "(주)청정민국",
-      "amount": "828,000",
-      "contract_date": "2026-06-04",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286501&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "고",
-      "region": "제주",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "제일고등학교",
-          "region": "인천",
-          "district": "부평구",
-          "education_office": "인천광역시교육청",
-          "support_office": "인천광역시교육청",
-          "address": "인천광역시 부평구 경인로759번길 28",
-          "school_code": "7310246"
-        }
-      ],
-      "support_office": "제주시교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "시"
     },
     {
       "id": "202606041285726",
@@ -121786,50 +120301,6 @@
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
       "subregion": "사천"
-    },
-    {
-      "id": "202606041286666",
-      "tender_no": "202606041286666",
-      "contract_name": "AI 비전 카메라 오즈아이 팩 외 1종",
-      "institution": "서울청원고등학교",
-      "counterpart": "주식회사 퓨너스",
-      "amount": "800,000",
-      "contract_date": "2026-06-04",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606041286666&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "고",
-      "region": "서울",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "청원고등학교",
-          "region": "서울",
-          "district": "노원구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 노원구 한글비석로 506",
-          "school_code": "7010247"
-        },
-        {
-          "school_name": "청원고등학교",
-          "region": "충북",
-          "district": "청주시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도교육청",
-          "address": "충청북도 청주시 청원구 오창읍 구룡5길 9",
-          "school_code": "8000214"
-        }
-      ],
-      "support_office": "서울특별시북부교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "subregion": "북부"
     },
     {
       "id": "202606021282311",
@@ -127775,61 +126246,6 @@
       "first_imported_at": "2026-08-15 15:20",
       "import_count": 1,
       "subregion": "장흥"
-    },
-    {
-      "id": "202606011278157",
-      "tender_no": "202606011278157",
-      "contract_name": "2026 이동초 AI 중점학교 태블릿 보관함 견적요청",
-      "institution": "이동초등학교",
-      "counterpart": "우리학교",
-      "amount": "1,890,000",
-      "contract_date": "2026-06-02",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202606011278157&excelSection=N",
-      "search_period_from": "2026.06.01",
-      "search_period_to": "2026.06.15",
-      "last_imported_at": "2026-08-15 15:20",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "same_institution",
-      "region_candidates": [
-        {
-          "school_name": "이동초등학교",
-          "region": "경기",
-          "district": "포천시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도포천교육지원청",
-          "address": "경기도 포천시 이동면 화동로 2034",
-          "school_code": "7711035"
-        },
-        {
-          "school_name": "이동초등학교",
-          "region": "경북",
-          "district": "포항시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도포항교육지원청",
-          "address": "경상북도 포항시 남구 포스코대로 147-10",
-          "school_code": "8761142"
-        },
-        {
-          "school_name": "이동초등학교",
-          "region": "경남",
-          "district": "남해군",
-          "education_office": "경상남도교육청",
-          "support_office": "남해교육지원청",
-          "address": "경상남도 남해군 이동면 무림로 29",
-          "school_code": "9171015"
-        }
-      ],
-      "support_office": "경기도포천교육지원청",
-      "first_imported_at": "2026-08-15 15:20",
-      "import_count": 1,
-      "business_place": "택배보관장소",
-      "support_office_source": "same_institution",
-      "subregion": "포천"
     },
     {
       "id": "202606021282921",
@@ -142810,41 +141226,6 @@
       "subregion": "강북"
     },
     {
-      "id": "202605271265834",
-      "tender_no": "202605271265834",
-      "contract_name": "2026학년도 AI중점학교 운영을 위한 태블릿 구입",
-      "institution": "평택여자고등학교",
-      "counterpart": "에스지컴",
-      "amount": "6,710,000",
-      "contract_date": "2026-05-28",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202605271265834&excelSection=N",
-      "search_period_from": "2026.05.21",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-15 14:18",
-      "school_level": "고",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "평택여자고등학교",
-          "region": "경기",
-          "district": "평택시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도교육청",
-          "address": "경기도 평택시 영신로 220",
-          "school_code": "7530578"
-        }
-      ],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 14:18",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
       "id": "202605281271409",
       "tender_no": "202605281271409",
       "contract_name": "2026학년도 AI중점학교 AI디지털 기반 선도학교 소프트웨어 구입",
@@ -145908,41 +144289,6 @@
       "first_imported_at": "2026-08-15 14:18",
       "import_count": 1,
       "subregion": "거제"
-    },
-    {
-      "id": "202605271266143",
-      "tender_no": "202605271266143",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "명문초등학교",
-      "counterpart": "에스지컴",
-      "amount": "1,050,000",
-      "contract_date": "2026-05-27",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605271266143&excelSection=N",
-      "search_period_from": "2026.05.21",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-15 14:18",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "명문초등학교",
-          "region": "부산",
-          "district": "강서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시북부교육지원청",
-          "address": "부산광역시 강서구 명지국제8로 195",
-          "school_code": "7201263"
-        }
-      ],
-      "support_office": "부산광역시북부교육지원청",
-      "first_imported_at": "2026-08-15 14:18",
-      "import_count": 1,
-      "subregion": "북부"
     },
     {
       "id": "202605271265759",
@@ -154503,52 +152849,6 @@
       "import_count": 4,
       "support_office": "대구광역시서부교육지원청",
       "subregion": "서부"
-    },
-    {
-      "id": "202605221259112",
-      "tender_no": "202605221259112",
-      "contract_name": "무선 블루투스 듀얼모드 마우스 구입(AI중점학교)",
-      "institution": "상일초등학교",
-      "counterpart": "에듀케어",
-      "amount": "845,000",
-      "contract_date": "2026-05-22",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605221259112&excelSection=N",
-      "search_period_from": "2026.05.21",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-15 14:18",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "상일초등학교",
-          "region": "경기",
-          "district": "부천시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도부천교육지원청",
-          "address": "경기도 부천시 조마루로 57",
-          "school_code": "7581079"
-        },
-        {
-          "school_name": "상일초등학교",
-          "region": "경남",
-          "district": "창원시",
-          "education_office": "경상남도교육청",
-          "support_office": "창원교육지원청",
-          "address": "경상남도 창원시 마산회원구 내서읍 광려천서로 21",
-          "school_code": "9022055"
-        }
-      ],
-      "support_office": "창원교육지원청",
-      "first_imported_at": "2026-08-15 14:18",
-      "import_count": 1,
-      "business_place": "경남 창원시 마산회원구 내서읍 광려천서로 21 (중리,상일초등학교)",
-      "support_office_source": "business_place",
-      "subregion": "창원"
     },
     {
       "id": "202605211257396",
@@ -164248,41 +162548,6 @@
       "first_imported_at": "2026-08-15 10:46",
       "import_count": 1,
       "subregion": "동두천,양주"
-    },
-    {
-      "id": "202605201250169",
-      "tender_no": "202605201250169",
-      "contract_name": "RAINBOW 키보드 의자,  피아노의자 벤치",
-      "institution": "부천혜림학교",
-      "counterpart": "경인악기",
-      "amount": "32,200",
-      "contract_date": "2026-05-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605201250169&excelSection=N",
-      "search_period_from": "2026.05.16",
-      "search_period_to": "2026.05.20",
-      "last_imported_at": "2026-08-15 10:46",
-      "school_level": "기타",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "부천혜림학교",
-          "region": "경기",
-          "district": "부천시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도교육청",
-          "address": "경기도 부천시 경인로304번길 26",
-          "school_code": "7530428"
-        }
-      ],
-      "support_office": "경기도부천교육지원청",
-      "first_imported_at": "2026-08-15 10:46",
-      "import_count": 1,
-      "subregion": "부천"
     },
     {
       "id": "202605201252653",
@@ -175956,31 +174221,6 @@
       "subregion": "옥천"
     },
     {
-      "id": "202604301208473",
-      "tender_no": "202604301208473",
-      "contract_name": "삼성 갤럭시탭 S10 FE 태블릿 정품 AI 슬림 키보드 북커버 케이스",
-      "institution": "평택계성초등학교",
-      "counterpart": "다품",
-      "amount": "1,040,000",
-      "contract_date": "2026-05-18",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301208473&excelSection=N",
-      "search_period_from": "2026.05.16",
-      "search_period_to": "2026.05.20",
-      "last_imported_at": "2026-08-15 10:46",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "경기도평택교육지원청",
-      "first_imported_at": "2026-08-15 10:46",
-      "import_count": 1,
-      "subregion": "평택"
-    },
-    {
       "id": "202605181243340",
       "tender_no": "202605181243340",
       "contract_name": "삼성 07평형 벽걸이 냉난방기 AI 무풍콤보 1등급 사계절에어컨 설치포함",
@@ -178915,41 +177155,6 @@
       "first_imported_at": "2026-08-15 10:46",
       "import_count": 1,
       "subregion": "서부"
-    },
-    {
-      "id": "202605151241240",
-      "tender_no": "202605151241240",
-      "contract_name": "AI디지털활용 선도학교 운영 물품(태블릿PC 무선 블루투스 키보드)",
-      "institution": "나주초등학교",
-      "counterpart": "아이OK",
-      "amount": "800,000",
-      "contract_date": "2026-05-16",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605151241240&excelSection=N",
-      "search_period_from": "2026.05.16",
-      "search_period_to": "2026.05.20",
-      "last_imported_at": "2026-08-15 10:46",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "나주초등학교",
-          "region": "광주",
-          "district": "나주시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시나주교육지원청",
-          "address": "전남광주통합특별시 나주시 남외1길 16",
-          "school_code": "8532018"
-        }
-      ],
-      "support_office": "전라남도나주교육지원청",
-      "first_imported_at": "2026-08-15 10:46",
-      "import_count": 1,
-      "subregion": "나주"
     },
     {
       "id": "202605121227460",
@@ -184935,31 +183140,6 @@
       "subregion": "부천"
     },
     {
-      "id": "202605141235351",
-      "tender_no": "202605141235351",
-      "contract_name": "옵스봇 타이니 프로페셔널 AI 추적 웹캠 카메라 삼각대 패키지 외 1종",
-      "institution": "경기도가평교육지원청",
-      "counterpart": "주식회사 에스앤엠",
-      "amount": "134,500",
-      "contract_date": "2026-05-14",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141235351&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "기타",
-      "region": "경기",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "경기도가평교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": "가평"
-    },
-    {
       "id": "202605131232873",
       "tender_no": "202605131232873",
       "contract_name": "실시간 AI 번역 및 자막 서비스 TkitaCaption",
@@ -188829,41 +187009,6 @@
       "subregion": "음성"
     },
     {
-      "id": "202605141238455",
-      "tender_no": "202605141238455",
-      "contract_name": "아이스크림 홈런(태블릿) 무관리형 구매",
-      "institution": "경산동부초등학교",
-      "counterpart": "엘위드",
-      "amount": "483,000",
-      "contract_date": "2026-05-14",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605141238455&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.07.15",
-      "last_imported_at": "2026-07-24 15:12",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "경산동부초등학교",
-          "region": "경북",
-          "district": "경산시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도경산교육지원청",
-          "address": "경상북도 경산시 원효로28길 60-6",
-          "school_code": "8851057"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:12",
-      "import_count": 1,
-      "support_office": "경상북도경산교육지원청",
-      "subregion": "경산"
-    },
-    {
       "id": "202605111225467",
       "tender_no": "202605111225467",
       "contract_name": "대동중학교 두드림학교 학습지원대상  학생 심리검사지 구입",
@@ -190069,41 +188214,6 @@
       "subregion": "서귀포"
     },
     {
-      "id": "202605131234178",
-      "tender_no": "202605131234178",
-      "contract_name": "옵스봇 타이니2 OBSBOT 웹캠 인터넷 방송 AI 4K PTZ 카메라",
-      "institution": "대구도원고등학교",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "516,000",
-      "contract_date": "2026-05-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131234178&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "고",
-      "region": "대구",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "도원고등학교",
-          "region": "대구",
-          "district": "달서구",
-          "education_office": "대구광역시교육청",
-          "support_office": "대구광역시교육청",
-          "address": "대구광역시 달서구 미리샘길 52",
-          "school_code": "7240203"
-        }
-      ],
-      "support_office": "대구광역시남부교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": "남부"
-    },
-    {
       "id": "202605131233627",
       "tender_no": "202605131233627",
       "contract_name": "옥서초 학습지원 AI코스웨어 구입",
@@ -190558,123 +188668,6 @@
       "first_imported_at": "2026-08-15 10:05",
       "import_count": 1,
       "subregion": "김포"
-    },
-    {
-      "id": "202605131232816",
-      "tender_no": "202605131232816",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "신성초등학교",
-      "counterpart": "위드플러스",
-      "amount": "2,025,000",
-      "contract_date": "2026-05-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131232816&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "신성초등학교",
-          "region": "경기",
-          "district": "수원시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도수원교육지원청",
-          "address": "경기도 수원시 영통구 청명북로 42",
-          "school_code": "7541094"
-        },
-        {
-          "school_name": "신성초등학교",
-          "region": "경북",
-          "district": "안동시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도안동교육지원청",
-          "address": "경상북도 안동시 풍천면 신성장골길 1",
-          "school_code": "8791057"
-        }
-      ],
-      "support_office": "경상북도안동교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "business_place": "경북 안동시 풍천면 신성장골길 1 신성초등학교",
-      "support_office_source": "business_place",
-      "subregion": "안동"
-    },
-    {
-      "id": "202605131234090",
-      "tender_no": "202605131234090",
-      "contract_name": "삼성 32인치 4K AI 스마트 M7 리모컨 모니터",
-      "institution": "강원생명과학고등학교",
-      "counterpart": "스쿨플러스",
-      "amount": "498,000",
-      "contract_date": "2026-05-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131234090&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "고",
-      "region": "강원",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "유성생명과학고등학교",
-          "region": "대전",
-          "district": "유성구",
-          "education_office": "대전광역시교육청",
-          "support_office": "대전광역시교육청",
-          "address": "대전광역시 유성구 월드컵대로 270",
-          "school_code": "7430135"
-        },
-        {
-          "school_name": "수원농생명과학고등학교",
-          "region": "경기",
-          "district": "수원시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도교육청",
-          "address": "경기도 수원시 장안구 광교산로 13",
-          "school_code": "7530265"
-        },
-        {
-          "school_name": "강원생명과학고등학교",
-          "region": "강원",
-          "district": "춘천시",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도교육청",
-          "address": "강원특별자치도 춘천시 영서로 2872",
-          "school_code": "7801102"
-        },
-        {
-          "school_name": "공주생명과학고등학교",
-          "region": "충남",
-          "district": "공주시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도교육청",
-          "address": "충청남도 공주시 금벽로 317",
-          "school_code": "8140238"
-        },
-        {
-          "school_name": "전주생명과학고등학교",
-          "region": "전북",
-          "district": "전주시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도교육청",
-          "address": "전북특별자치도 전주시 덕진구 안덕원로 195",
-          "school_code": "8321085"
-        }
-      ],
-      "support_office": "강원특별자치도춘천교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": "춘천"
     },
     {
       "id": "202605121229348",
@@ -192044,52 +190037,6 @@
       "business_place": "충북 음성군 맹동면 학예로 32 (본성리,동성중학교)",
       "support_office_source": "business_place",
       "subregion": "음성"
-    },
-    {
-      "id": "202605131233801",
-      "tender_no": "202605131233801",
-      "contract_name": "교육정보부 AI 모델 학습용 이동형 모니터 구입",
-      "institution": "서원고등학교",
-      "counterpart": "앤에스티(NST)",
-      "amount": "1,195,000",
-      "contract_date": "2026-05-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605131233801&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "고",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "서원고등학교",
-          "region": "경기",
-          "district": "용인시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도교육청",
-          "address": "경기도 용인시 수지구 상현로42번길 26-7",
-          "school_code": "7530574"
-        },
-        {
-          "school_name": "서원고등학교",
-          "region": "충북",
-          "district": "청주시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도교육청",
-          "address": "충청북도 청주시 흥덕구 가경로 49",
-          "school_code": "8000199"
-        }
-      ],
-      "support_office": "경기도용인교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "business_place": "경기 용인시 수지구 상현로42번길 26-7 서원고등학교 2층 교육정보부",
-      "support_office_source": "business_place",
-      "subregion": "용인"
     },
     {
       "id": "202605121227442",
@@ -214308,52 +212255,6 @@
       "subregion": "예산"
     },
     {
-      "id": "202605061211759",
-      "tender_no": "202605061211759",
-      "contract_name": "삼성 갤럭시탭 S10 플러스 AI 키보드 북커버 케이스",
-      "institution": "진남초등학교",
-      "counterpart": "스쿨네이처",
-      "amount": "5,225,000",
-      "contract_date": "2026-05-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061211759&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "초",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "진남초등학교",
-          "region": "광주",
-          "district": "남구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "전남광주통합특별시광주서부교육지원청",
-          "address": "전남광주통합특별시 남구 효우로60번길 12",
-          "school_code": "7402249"
-        },
-        {
-          "school_name": "진남초등학교",
-          "region": "경남",
-          "district": "통영시",
-          "education_office": "경상남도교육청",
-          "support_office": "통영교육지원청",
-          "address": "경상남도 통영시 도남로 38",
-          "school_code": "9071029"
-        }
-      ],
-      "support_office": "통영교육지원청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "business_place": "경남 통영시 도남로 38 (미수동,진남초등학교)",
-      "support_office_source": "business_place",
-      "subregion": "통영"
-    },
-    {
       "id": "202605071215589",
       "tender_no": "202605071215589",
       "contract_name": "삼성 VS2비스포크 AI 제트 Lite 청정스테이션 일체형 무선청소기",
@@ -214466,41 +212367,6 @@
       "first_imported_at": "2026-08-15 10:05",
       "import_count": 1,
       "subregion": "서부"
-    },
-    {
-      "id": "202604301205546",
-      "tender_no": "202604301205546",
-      "contract_name": "배구부 훈련 향상을 위한 AI 카메라 시스템",
-      "institution": "목포여자상업고등학교",
-      "counterpart": "주식회사 호각",
-      "amount": "12,100,000",
-      "contract_date": "2026-05-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301205546&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "고",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "목포여자상업고등학교",
-          "region": "전남",
-          "district": "목포시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전라남도교육청",
-          "address": "전남광주통합특별시 목포시 영산로 413-3",
-          "school_code": "7140242"
-        }
-      ],
-      "support_office": "전라남도교육청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": "목포"
     },
     {
       "id": "202604291203826",
@@ -220267,58 +218133,6 @@
       "subregion": "포천"
     },
     {
-      "id": "202605061213447",
-      "tender_no": "202605061213447",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "울산광역시교육청 미래교육과",
-      "counterpart": "(주)에듀에이드",
-      "amount": "2,638,000",
-      "contract_date": "2026-05-06",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061213447&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "기타",
-      "region": "울산",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": ""
-    },
-    {
-      "id": "202605061210967",
-      "tender_no": "202605061210967",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "집현유치원",
-      "counterpart": "(주)에듀에이드",
-      "amount": "131,900",
-      "contract_date": "2026-05-06",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202605061210967&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "기타",
-      "region": "세종",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [],
-      "support_office": "세종특별자치시교육청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "business_place": "세종특별자치시 집현서로 25 집현유치원 (집현동)",
-      "support_office_source": "business_place",
-      "subregion": "세종"
-    },
-    {
       "id": "202604301207736",
       "tender_no": "202604301207736",
       "contract_name": "삼성 VS 비스포크 AI 제트 Lite 청정스테이션 고온세척 무선청소기",
@@ -224727,41 +222541,6 @@
       "subregion": "전주"
     },
     {
-      "id": "202604301208542",
-      "tender_no": "202604301208542",
-      "contract_name": "AI 중점학교 운영을 위한 스마트모니터 구입",
-      "institution": "대전만년고등학교",
-      "counterpart": "(주)원앤원솔루션",
-      "amount": "2,700,000",
-      "contract_date": "2026-05-04",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604301208542&excelSection=N",
-      "search_period_from": "2026.05.01",
-      "search_period_to": "2026.05.15",
-      "last_imported_at": "2026-08-15 10:05",
-      "school_level": "고",
-      "region": "대전",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "대전만년고등학교",
-          "region": "대전",
-          "district": "서구",
-          "education_office": "대전광역시교육청",
-          "support_office": "대전광역시교육청",
-          "address": "대전광역시 서구 만년로 6",
-          "school_code": "7430035"
-        }
-      ],
-      "support_office": "대전광역시교육청",
-      "first_imported_at": "2026-08-15 10:05",
-      "import_count": 1,
-      "subregion": "서부"
-    },
-    {
       "id": "202604301208721",
       "tender_no": "202604301208721",
       "contract_name": "AI 중점학교 운영에 따른 에듀테크 프로그램 라이센스 구입(잽 키즈 외)",
@@ -226487,85 +224266,6 @@
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
       "subregion": "포항"
-    },
-    {
-      "id": "202604301206470",
-      "tender_no": "202604301206470",
-      "contract_name": "삼성 EF 갤럭시 탭 S11 전용 정품 AI 슬림 키보드 북커버 케이스",
-      "institution": "전주은화학교",
-      "counterpart": "위드세인",
-      "amount": "1,699,000",
-      "contract_date": "2026-04-30",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301206470&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "기타",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "전주은화학교",
-          "region": "전북",
-          "district": "전주시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도교육청",
-          "address": "전북특별자치도 전주시 완산구 효자로 28-20",
-          "school_code": "8321223"
-        }
-      ],
-      "support_office": "전북특별자치도전주교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "전주"
-    },
-    {
-      "id": "202604301205953",
-      "tender_no": "202604301205953",
-      "contract_name": "삼성 AI슬림키보드북커버케이스 정품 EF갤럭시탭 태블릿S10FE S펜수납 외 1종",
-      "institution": "광주수창초등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "2,358,400",
-      "contract_date": "2026-04-30",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604301205953&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "대구수창초등학교",
-          "region": "대구",
-          "district": "중구",
-          "education_office": "대구광역시교육청",
-          "support_office": "대구광역시동부교육지원청",
-          "address": "대구광역시 중구 달성로22길 30",
-          "school_code": "7251048"
-        },
-        {
-          "school_name": "광주수창초등학교",
-          "region": "광주",
-          "district": "북구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "전남광주통합특별시광주동부교육지원청",
-          "address": "전남광주통합특별시 북구 금남로 99",
-          "school_code": "7392110"
-        }
-      ],
-      "support_office": "광주광역시동부교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "동부"
     },
     {
       "id": "202604301207135",
@@ -232577,41 +230277,6 @@
       "subregion": "진도"
     },
     {
-      "id": "202604291202317",
-      "tender_no": "202604291202317",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "도둔초등학교",
-      "counterpart": "에스지컴",
-      "amount": "1,650,000",
-      "contract_date": "2026-04-29",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604291202317&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "도둔초등학교",
-          "region": "경기",
-          "district": "양주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도동두천양주교육지원청",
-          "address": "경기도 양주시 덕계로3길 51",
-          "school_code": "7602023"
-        }
-      ],
-      "support_office": "경기도동두천양주교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "동두천,양주"
-    },
-    {
       "id": "202604291201846",
       "tender_no": "202604291201846",
       "contract_name": "삼성 AI 무풍콤보 AR60F 벽걸이 냉난방기 사계절 에어컨 기본설치포함",
@@ -235274,51 +232939,6 @@
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
       "subregion": "서부"
-    },
-    {
-      "id": "202604281200064",
-      "tender_no": "202604281200064",
-      "contract_name": "2026년 AI·디지털 활용 선도학교 운영 물품 태블릿PC 케이스 구입",
-      "institution": "삼호중학교",
-      "counterpart": "서해정보시스템",
-      "amount": "4,800,000",
-      "contract_date": "2026-04-29",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604281200064&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "삼호중학교",
-          "region": "울산",
-          "district": "남구",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시강남교육지원청",
-          "address": "울산광역시 남구 삼호로38번길 6",
-          "school_code": "7501013"
-        },
-        {
-          "school_name": "삼호중학교",
-          "region": "광주",
-          "district": "영암군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시영암교육지원청",
-          "address": "전남광주통합특별시 영암군 삼호읍 방아제로 102",
-          "school_code": "8652011"
-        }
-      ],
-      "support_office": "",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "business_place": "삼호중 본관 2층 미래교실",
-      "subregion": "강남 / 영암"
     },
     {
       "id": "202604281201431",
@@ -239440,41 +237060,6 @@
       "business_place": "경북 안동시 풍산읍 안교리 320번지",
       "support_office_source": "business_place",
       "subregion": "안동"
-    },
-    {
-      "id": "202604281200106",
-      "tender_no": "202604281200106",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "순천왕지초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "3,033,700",
-      "contract_date": "2026-04-28",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604281200106&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "순천왕지초등학교",
-          "region": "광주",
-          "district": "순천시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시순천교육지원청",
-          "address": "전남광주통합특별시 순천시 연동남3길 8",
-          "school_code": "8522041"
-        }
-      ],
-      "support_office": "전라남도순천교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "순천"
     },
     {
       "id": "202604221181969",
@@ -244474,41 +242059,6 @@
       "subregion": "익산"
     },
     {
-      "id": "202604251192827",
-      "tender_no": "202604251192827",
-      "contract_name": "앱코 ABKO x SOAI 콜라보 3모드 블루투스 기계식 키보드",
-      "institution": "다시초등학교",
-      "counterpart": "스쿨메이트",
-      "amount": "939,000",
-      "contract_date": "2026-04-27",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604251192827&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "다시초등학교",
-          "region": "광주",
-          "district": "나주시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시나주교육지원청",
-          "address": "전남광주통합특별시 나주시 다시면 다시로 203",
-          "school_code": "8532029"
-        }
-      ],
-      "support_office": "전라남도나주교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "나주"
-    },
-    {
       "id": "202604271193895",
       "tender_no": "202604271193895",
       "contract_name": "수노 Suno 음악 작곡 생성 AI 인공지능 에듀테크",
@@ -244767,41 +242317,6 @@
       "business_place": "충남 태안군 안면읍 율포길 31 안중초등학교",
       "support_office_source": "business_place",
       "subregion": "태안"
-    },
-    {
-      "id": "202604271194130",
-      "tender_no": "202604271194130",
-      "contract_name": "삼성 갤럭시탭 S11 WIFI 128GB AI 태블릿 PC S펜포함 외 1종",
-      "institution": "영천여자중학교",
-      "counterpart": "에듀랩(주)",
-      "amount": "2,486,000",
-      "contract_date": "2026-04-27",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604271194130&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "중",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "영천여자중학교",
-          "region": "경북",
-          "district": "영천시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도영천교육지원청",
-          "address": "경상북도 영천시 상아탑길 28",
-          "school_code": "8821060"
-        }
-      ],
-      "support_office": "경상북도영천교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "영천"
     },
     {
       "id": "202604271192979",
@@ -254854,41 +252369,6 @@
       "subregion": "강북"
     },
     {
-      "id": "202604231186512",
-      "tender_no": "202604231186512",
-      "contract_name": "데이터리터러시 수학 프로젝트 태블릿컴퓨터 구입",
-      "institution": "형곡고등학교",
-      "counterpart": "엔씨시스템",
-      "amount": "1,390,000",
-      "contract_date": "2026-04-24",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604231186512&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-05 11:17",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "형곡고등학교",
-          "region": "경북",
-          "district": "구미시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 구미시 형곡동로2길 12-13",
-          "school_code": "8750566"
-        }
-      ],
-      "first_imported_at": "2026-08-05 11:17",
-      "import_count": 1,
-      "support_office": "경상북도구미교육지원청",
-      "subregion": "구미"
-    },
-    {
       "id": "202604211179758",
       "tender_no": "202604211179758",
       "contract_name": "대동중학교 푸른꿈배움터 2학년 수학디딤반 물품 구입",
@@ -255189,52 +252669,6 @@
       "import_count": 1,
       "support_office": "전북특별자치도익산교육지원청",
       "subregion": "익산"
-    },
-    {
-      "id": "202604231187917",
-      "tender_no": "202604231187917",
-      "contract_name": "아이스크림 홈런(태블릿) 무관리형",
-      "institution": "온정초등학교",
-      "counterpart": "엘위드",
-      "amount": "8,832,000",
-      "contract_date": "2026-04-24",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604231187917&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-24 15:06",
-      "school_level": "초",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "온정초등학교",
-          "region": "강원",
-          "district": "속초시",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도속초양양교육지원청",
-          "address": "강원특별자치도 속초시 온천로 107",
-          "school_code": "7863039"
-        },
-        {
-          "school_name": "온정초등학교",
-          "region": "경북",
-          "district": "울진군",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도울진교육지원청",
-          "address": "경상북도 울진군 온정면 온정학교길 49",
-          "school_code": "8971032"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:06",
-      "import_count": 1,
-      "business_place": "강원 속초시 노학동 온천로 107 온정초등학교",
-      "support_office": "강원특별자치도속초양양교육지원청",
-      "support_office_source": "business_place",
-      "subregion": "속초,양양"
     },
     {
       "id": "202604241191521",
@@ -259788,41 +257222,6 @@
       "subregion": "춘천"
     },
     {
-      "id": "202604221183299",
-      "tender_no": "202604221183299",
-      "contract_name": "영어온책읽기사업 운영 물품 구입(실물화상기)",
-      "institution": "대구칠성초등학교",
-      "counterpart": "주식회사 아이비즈",
-      "amount": "307,000",
-      "contract_date": "2026-04-23",
-      "keywords": [
-        "영어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221183299&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-07 09:15",
-      "school_level": "초",
-      "region": "대구",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [
-        {
-          "school_name": "대구칠성초등학교",
-          "region": "대구",
-          "district": "북구",
-          "education_office": "대구광역시교육청",
-          "support_office": "대구광역시서부교육지원청",
-          "address": "대구광역시 북구 침산남로32길 17",
-          "school_code": "7261042"
-        }
-      ],
-      "first_imported_at": "2026-08-07 09:15",
-      "import_count": 1,
-      "support_office": "대구광역시서부교육지원청",
-      "subregion": "서부"
-    },
-    {
       "id": "202604231188456",
       "tender_no": "202604231188456",
       "contract_name": "영어독후활동프로그램",
@@ -260873,41 +258272,6 @@
       "support_office": "경기도화성오산교육지원청",
       "support_office_source": "business_place",
       "subregion": "화성,오산"
-    },
-    {
-      "id": "202604221183150",
-      "tender_no": "202604221183150",
-      "contract_name": "화순만연초 AI중점학교 삼성갤럭시탭 A11 플러스 구입",
-      "institution": "화순만연초등학교",
-      "counterpart": "바이비즈(BY BIZ)",
-      "amount": "7,600,000",
-      "contract_date": "2026-04-22",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221183150&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "화순만연초등학교",
-          "region": "광주",
-          "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
-          "address": "전남광주통합특별시 화순군 화순읍 알메로 72",
-          "school_code": "8612014"
-        }
-      ],
-      "support_office": "전라남도화순교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "화순"
     },
     {
       "id": "202604221183234",
@@ -267565,43 +264929,6 @@
       "subregion": "포항"
     },
     {
-      "id": "202604221184256",
-      "tender_no": "202604221184256",
-      "contract_name": "2026학년도 수학교과 심화교육용 코스웨어이스크림-홈런(태블릿) 무관리형",
-      "institution": "구미혜당학교",
-      "counterpart": "엘위드",
-      "amount": "1,104,000",
-      "contract_date": "2026-04-22",
-      "keywords": [
-        "수학",
-        "코스웨어",
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604221184256&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-05 11:17",
-      "school_level": "기타",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "구미혜당학교",
-          "region": "경북",
-          "district": "구미시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 구미시 선산대로 129-1",
-          "school_code": "8750362"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:06",
-      "import_count": 3,
-      "support_office": "경상북도구미교육지원청",
-      "subregion": "구미"
-    },
-    {
       "id": "202604211177462",
       "tender_no": "202604211177462",
       "contract_name": "2026년 연제초 교수학습자료 견적 요청",
@@ -268141,41 +265468,6 @@
       "import_count": 1,
       "support_office": "부산광역시동래교육지원청",
       "subregion": "동래"
-    },
-    {
-      "id": "202604211177874",
-      "tender_no": "202604211177874",
-      "contract_name": "햄스터S AI 카메라 햄스터봇 wifi 동글세트 외 1종",
-      "institution": "전주온고을중학교",
-      "counterpart": "조이스쿨",
-      "amount": "880,000",
-      "contract_date": "2026-04-21",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604211177874&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "중",
-      "region": "전북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "전주온고을중학교",
-          "region": "전북",
-          "district": "전주시",
-          "education_office": "전북특별자치도교육청",
-          "support_office": "전북특별자치도전주교육지원청",
-          "address": "전북특별자치도 전주시 덕진구 무삼지로 26",
-          "school_code": "8332204"
-        }
-      ],
-      "support_office": "전북특별자치도전주교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "전주"
     },
     {
       "id": "202604211175831",
@@ -270991,41 +268283,6 @@
       "subregion": "청주"
     },
     {
-      "id": "202604211178028",
-      "tender_no": "202604211178028",
-      "contract_name": "AI중점학교 운영용 디지털카메라 구입",
-      "institution": "대전만년고등학교",
-      "counterpart": "뉴스타",
-      "amount": "1,760,000",
-      "contract_date": "2026-04-21",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604211178028&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "고",
-      "region": "대전",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "대전만년고등학교",
-          "region": "대전",
-          "district": "서구",
-          "education_office": "대전광역시교육청",
-          "support_office": "대전광역시교육청",
-          "address": "대전광역시 서구 만년로 6",
-          "school_code": "7430035"
-        }
-      ],
-      "support_office": "대전광역시교육청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "서부"
-    },
-    {
       "id": "202604141154229",
       "tender_no": "202604141154229",
       "contract_name": "AI중점학교 교과별 전문적학습공동체 생성형AI 소프트웨어 구입",
@@ -271581,51 +268838,6 @@
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
       "subregion": "구리,남양주"
-    },
-    {
-      "id": "202604211176806",
-      "tender_no": "202604211176806",
-      "contract_name": "AI 중점학교 학생용 태블릿pc 구입",
-      "institution": "도곡초등학교",
-      "counterpart": "(주)블루포트",
-      "amount": "2,303,400",
-      "contract_date": "2026-04-21",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604211176806&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "도곡초등학교",
-          "region": "경기",
-          "district": "광주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도광주하남교육지원청",
-          "address": "경기도 광주시 초월읍 경충대로 1033-13",
-          "school_code": "7692014"
-        },
-        {
-          "school_name": "도곡초등학교",
-          "region": "광주",
-          "district": "화순군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시화순교육지원청",
-          "address": "전남광주통합특별시 화순군 도곡면 천암1길 71",
-          "school_code": "8612018"
-        }
-      ],
-      "support_office": "경기도광주하남교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "business_place": "교무실",
-      "subregion": "광주,하남"
     },
     {
       "id": "202604211178684",
@@ -276963,41 +274175,6 @@
       "subregion": "가평"
     },
     {
-      "id": "202604201172381",
-      "tender_no": "202604201172381",
-      "contract_name": "옥서초 AI중점학교 운영물품(키보드케이스) 구입",
-      "institution": "옥서초등학교",
-      "counterpart": "바이비즈(BY BIZ)",
-      "amount": "360,000",
-      "contract_date": "2026-04-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201172381&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "울산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "옥서초등학교",
-          "region": "울산",
-          "district": "남구",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시강남교육지원청",
-          "address": "울산광역시 남구 법대로14번길 19",
-          "school_code": "7501058"
-        }
-      ],
-      "support_office": "울산광역시강남교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "강남"
-    },
-    {
       "id": "202604171169739",
       "tender_no": "202604171169739",
       "contract_name": "오션중 AI 디지털 활용 선도학교 홍보 물품 구입",
@@ -279007,41 +276184,6 @@
       "business_place": "부산 기장군 정관읍 월평1길 21 월평초등학교",
       "support_office_source": "business_place",
       "subregion": "해운대"
-    },
-    {
-      "id": "202604201171974",
-      "tender_no": "202604201171974",
-      "contract_name": "AI·디지털 기반 수업환경 개선을 위한 교원용 무선 키보드 세트 구입",
-      "institution": "포항펜타초등학교",
-      "counterpart": "유니텍",
-      "amount": "2,780,000",
-      "contract_date": "2026-04-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604201171974&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "포항펜타초등학교",
-          "region": "경북",
-          "district": "포항시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도포항교육지원청",
-          "address": "경상북도 포항시 북구 흥해읍 펜타시티단지로 47",
-          "school_code": "8761273"
-        }
-      ],
-      "support_office": "경상북도포항교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "포항"
     },
     {
       "id": "202604171169359",
@@ -285077,31 +282219,6 @@
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 1,
       "subregion": "서부"
-    },
-    {
-      "id": "202604171168243",
-      "tender_no": "202604171168243",
-      "contract_name": "삼가초등학교 2026학년도 AI.디지털 선도학교 운영 물품 구매(키보드)",
-      "institution": "용인삼가초등학교",
-      "counterpart": "주식회사 스쿨비즈",
-      "amount": "1,320,000",
-      "contract_date": "2026-04-17",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604171168243&excelSection=N",
-      "search_period_from": "2026.04.16",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-15 08:46",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "경기도용인교육지원청",
-      "first_imported_at": "2026-08-15 08:46",
-      "import_count": 1,
-      "subregion": "용인"
     },
     {
       "id": "202604171167599",
@@ -298388,41 +295505,6 @@
       "subregion": ""
     },
     {
-      "id": "202604151160895",
-      "tender_no": "202604151160895",
-      "contract_name": "삼성 갤럭시탭 S10 S9 플러스 FE AI 슬림 키보드 북커버 케이스",
-      "institution": "여수진남초등학교",
-      "counterpart": "에이알컴퍼니",
-      "amount": "6,000,000",
-      "contract_date": "2026-04-15",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604151160895&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "여수진남초등학교",
-          "region": "광주",
-          "district": "여수시",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시여수교육지원청",
-          "address": "전남광주통합특별시 여수시 좌수영로 131",
-          "school_code": "8512032"
-        }
-      ],
-      "support_office": "전라남도여수교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "여수"
-    },
-    {
       "id": "202604151159334",
       "tender_no": "202604151159334",
       "contract_name": "삼성 BESPOKE AI 제트 Lite 고온 세척 브러시 패키지",
@@ -304801,94 +301883,6 @@
       "subregion": "천안"
     },
     {
-      "id": "202604141156300",
-      "tender_no": "202604141156300",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 1종",
-      "institution": "부산대신초등학교",
-      "counterpart": "주식회사 에듀아이(EDU-i)",
-      "amount": "225,000",
-      "contract_date": "2026-04-14",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604141156300&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "대신초등학교",
-          "region": "부산",
-          "district": "서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 서구 대신로 63",
-          "school_code": "7171056"
-        },
-        {
-          "school_name": "대신초등학교",
-          "region": "경기",
-          "district": "여주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도여주교육지원청",
-          "address": "경기도 여주시 대신면 여양로 1440",
-          "school_code": "7661022"
-        }
-      ],
-      "support_office": "부산광역시서부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "서부"
-    },
-    {
-      "id": "202604141156299",
-      "tender_no": "202604141156299",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스 외 1종",
-      "institution": "부산대신초등학교",
-      "counterpart": "위드플러스",
-      "amount": "163,000",
-      "contract_date": "2026-04-14",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604141156299&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "대신초등학교",
-          "region": "부산",
-          "district": "서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 서구 대신로 63",
-          "school_code": "7171056"
-        },
-        {
-          "school_name": "대신초등학교",
-          "region": "경기",
-          "district": "여주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도여주교육지원청",
-          "address": "경기도 여주시 대신면 여양로 1440",
-          "school_code": "7661022"
-        }
-      ],
-      "support_office": "부산광역시서부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "서부"
-    },
-    {
       "id": "202604141154210",
       "tender_no": "202604141154210",
       "contract_name": "삼성 7평형 AI 무풍콤보 벽걸이형 에어컨 냉난방기",
@@ -307044,41 +304038,6 @@
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
       "business_place": "지정장소",
-      "subregion": "포항"
-    },
-    {
-      "id": "202604141156014",
-      "tender_no": "202604141156014",
-      "contract_name": "2026학년도 AI중점학교 물품(카메라드론 조종기세트) 구입",
-      "institution": "포항제철초등학교",
-      "counterpart": "가성에스엠",
-      "amount": "1,568,000",
-      "contract_date": "2026-04-14",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604141156014&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "포항제철초등학교",
-          "region": "경북",
-          "district": "포항시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도포항교육지원청",
-          "address": "경상북도 포항시 남구 지곡로 60",
-          "school_code": "8761256"
-        }
-      ],
-      "support_office": "경상북도포항교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
       "subregion": "포항"
     },
     {
@@ -309562,41 +306521,6 @@
       "support_office": "강원특별자치도화천교육지원청",
       "support_office_source": "same_institution",
       "subregion": "화천"
-    },
-    {
-      "id": "202604101147106",
-      "tender_no": "202604101147106",
-      "contract_name": "아이스크림 홈런(태블릿) 무관리형",
-      "institution": "동로초등학교",
-      "counterpart": "엘위드",
-      "amount": "1,449,000",
-      "contract_date": "2026-04-14",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604101147106&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-24 15:06",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "동로초등학교",
-          "region": "경북",
-          "district": "문경시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도문경교육지원청",
-          "address": "경상북도 문경시 동로면 노은2길 4",
-          "school_code": "8841036"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:06",
-      "import_count": 1,
-      "support_office": "경상북도문경교육지원청",
-      "subregion": "문경"
     },
     {
       "id": "202604141153921",
@@ -312101,41 +309025,6 @@
       "subregion": "청주"
     },
     {
-      "id": "202604131151540",
-      "tender_no": "202604131151540",
-      "contract_name": "AI중정학교 운영물품 구입(교육용 크롬북)",
-      "institution": "광주효동초등학교",
-      "counterpart": "다품",
-      "amount": "3,948,000",
-      "contract_date": "2026-04-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604131151540&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "광주효동초등학교",
-          "region": "광주",
-          "district": "북구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "광주광역시동부교육지원청",
-          "address": "전남광주통합특별시 북구 서양로 99",
-          "school_code": "7392114"
-        }
-      ],
-      "support_office": "광주광역시동부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "동부"
-    },
-    {
       "id": "202604131151149",
       "tender_no": "202604131151149",
       "contract_name": "AI서논술평가 GEMINI 구독 계약",
@@ -313181,52 +310070,6 @@
       "support_office": "경상북도영천교육지원청",
       "support_office_source": "business_place",
       "subregion": "영천"
-    },
-    {
-      "id": "202604131151407",
-      "tender_no": "202604131151407",
-      "contract_name": "2026년 부평초 AI 디지털 활용 선도학교 태블릿 대여",
-      "institution": "부평초등학교",
-      "counterpart": "에스지컴",
-      "amount": "17,750,000",
-      "contract_date": "2026-04-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202604131151407&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "same_institution",
-      "region_candidates": [
-        {
-          "school_name": "부평초등학교",
-          "region": "경기",
-          "district": "남양주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도구리남양주교육지원청",
-          "address": "경기도 남양주시 진접읍 부평로48번길 27",
-          "school_code": "7652237"
-        },
-        {
-          "school_name": "부평초등학교",
-          "region": "강원",
-          "district": "인제군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도인제교육지원청",
-          "address": "강원특별자치도 인제군 남면 신남로94번길 7",
-          "school_code": "7962017"
-        }
-      ],
-      "support_office": "강원특별자치도인제교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "business_place": "부평초등학교",
-      "support_office_source": "same_institution",
-      "subregion": "인제"
     },
     {
       "id": "202604131150137",
@@ -329020,76 +325863,6 @@
       "subregion": "나주"
     },
     {
-      "id": "202604081139734",
-      "tender_no": "202604081139734",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 슬림키보드북커버 외 1종",
-      "institution": "노성중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "140,000",
-      "contract_date": "2026-04-08",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604081139734&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "노성중학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 노성면 노성로 602-5",
-          "school_code": "8222007"
-        }
-      ],
-      "support_office": "충청남도논산계룡교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "논산,계룡"
-    },
-    {
-      "id": "202604081139733",
-      "tender_no": "202604081139733",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 슬림키보드북커버 외 1종",
-      "institution": "노성중학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "617,700",
-      "contract_date": "2026-04-08",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604081139733&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "노성중학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 노성면 노성로 602-5",
-          "school_code": "8222007"
-        }
-      ],
-      "support_office": "충청남도논산계룡교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "논산,계룡"
-    },
-    {
       "id": "202604081139732",
       "tender_no": "202604081139732",
       "contract_name": "비상교육 AIDT 교육자료 (중학교)",
@@ -331621,41 +328394,6 @@
       "import_count": 2,
       "support_office": "전라남도교육청",
       "subregion": "영암"
-    },
-    {
-      "id": "202604081136701",
-      "tender_no": "202604081136701",
-      "contract_name": "2026학년도 AI·SW 교육용 태블릿 구입",
-      "institution": "서귀포고등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "3,100,000",
-      "contract_date": "2026-04-08",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604081136701&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "고",
-      "region": "제주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "서귀포고등학교",
-          "region": "제주",
-          "district": "서귀포시",
-          "education_office": "제주특별자치도교육청",
-          "support_office": "제주특별자치도교육청",
-          "address": "제주특별자치도 서귀포시 중앙로 140",
-          "school_code": "9290059"
-        }
-      ],
-      "support_office": "서귀포시교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "서귀포"
     },
     {
       "id": "202604081136678",
@@ -336518,41 +333256,6 @@
       "subregion": "북부"
     },
     {
-      "id": "202604071131892",
-      "tender_no": "202604071131892",
-      "contract_name": "삼성 M8 32인치 4K UHD AI스마트 모니터PC 패키지",
-      "institution": "북일여자고등학교",
-      "counterpart": "삼성커머스",
-      "amount": "789,000",
-      "contract_date": "2026-04-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604071131892&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "고",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "북일여자고등학교",
-          "region": "충남",
-          "district": "천안시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도교육청",
-          "address": "충청남도 천안시 동남구 단대로 71",
-          "school_code": "8140271"
-        }
-      ],
-      "support_office": "충청남도천안교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "천안"
-    },
-    {
       "id": "202604071133638",
       "tender_no": "202604071133638",
       "contract_name": "비상교육 AIDT 교육자료 (중학교)",
@@ -337956,41 +334659,6 @@
       "import_count": 3,
       "support_office": "",
       "subregion": "남부"
-    },
-    {
-      "id": "202604071134156",
-      "tender_no": "202604071134156",
-      "contract_name": "AI 중점학교 정보 교육 관련 물품 구입(모니터 분배기)",
-      "institution": "신명여자중학교",
-      "counterpart": "케이마켓",
-      "amount": "340,000",
-      "contract_date": "2026-04-07",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604071134156&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "대구",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "신명여자중학교",
-          "region": "대구",
-          "district": "수성구",
-          "education_office": "대구광역시교육청",
-          "support_office": "대구광역시동부교육지원청",
-          "address": "대구광역시 수성구 신천동로 364",
-          "school_code": "7251044"
-        }
-      ],
-      "support_office": "대구광역시동부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "동부"
     },
     {
       "id": "202604071133555",
@@ -340983,42 +337651,6 @@
       "subregion": "고흥"
     },
     {
-      "id": "202604061128200",
-      "tender_no": "202604061128200",
-      "contract_name": "햄스터 햄스터S AI 카메라 WiFi동글 세트 인공지능 코딩교육",
-      "institution": "사송중학교",
-      "counterpart": "위드스쿨(주)",
-      "amount": "1,155,000",
-      "contract_date": "2026-04-06",
-      "keywords": [
-        "AI",
-        "코딩"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604061128200&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "사송중학교",
-          "region": "경남",
-          "district": "양산시",
-          "education_office": "경상남도교육청",
-          "support_office": "양산교육지원청",
-          "address": "경상남도 양산시 동면 내송큰들1길 8",
-          "school_code": "9151159"
-        }
-      ],
-      "first_imported_at": "2026-08-07 11:42",
-      "import_count": 2,
-      "support_office": "양산교육지원청",
-      "subregion": "양산"
-    },
-    {
       "id": "202604061128402",
       "tender_no": "202604061128402",
       "contract_name": "학생부 AI분석 서비스 바이브온 이용권 구입 견적요청",
@@ -342446,41 +339078,6 @@
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
       "subregion": "거제"
-    },
-    {
-      "id": "202604061128207",
-      "tender_no": "202604061128207",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M1 4K UHD 무빙스타일(라이트)",
-      "institution": "부산중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "668,000",
-      "contract_date": "2026-04-06",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604061128207&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "부산중학교",
-          "region": "부산",
-          "district": "동구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시남부교육지원청",
-          "address": "부산광역시 동구 초량로40번길 29",
-          "school_code": "7181088"
-        }
-      ],
-      "support_office": "부산광역시남부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "남부"
     },
     {
       "id": "202604061128448",
@@ -345920,42 +342517,6 @@
       "import_count": 1,
       "support_office": "전북특별자치도익산교육지원청",
       "subregion": "익산"
-    },
-    {
-      "id": "202604031126784",
-      "tender_no": "202604031126784",
-      "contract_name": "햄스터 햄스터S AI 카메라 WiFi동글 세트 인공지능 코딩교육",
-      "institution": "사송중학교",
-      "counterpart": "위드스쿨(주)",
-      "amount": "110,000",
-      "contract_date": "2026-04-03",
-      "keywords": [
-        "AI",
-        "코딩"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604031126784&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "사송중학교",
-          "region": "경남",
-          "district": "양산시",
-          "education_office": "경상남도교육청",
-          "support_office": "양산교육지원청",
-          "address": "경상남도 양산시 동면 내송큰들1길 8",
-          "school_code": "9151159"
-        }
-      ],
-      "first_imported_at": "2026-08-07 11:42",
-      "import_count": 2,
-      "support_office": "양산교육지원청",
-      "subregion": "양산"
     },
     {
       "id": "202604031126683",
@@ -351854,61 +348415,6 @@
       "subregion": "양평"
     },
     {
-      "id": "202604021123002",
-      "tender_no": "202604021123002",
-      "contract_name": "삼성전자 갤럭시탭S11 AI 태블릿PC",
-      "institution": "마산초등학교",
-      "counterpart": "에스제이트랜드",
-      "amount": "2,820,000",
-      "contract_date": "2026-04-02",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604021123002&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "마산초등학교",
-          "region": "경기",
-          "district": "화성시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도화성오산교육지원청",
-          "address": "경기도 화성시 송산면 송산포도로 582",
-          "school_code": "7679025"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "충남",
-          "district": "서천군",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도서천교육지원청",
-          "address": "충청남도 서천군 마산면 삼일로 327",
-          "school_code": "8241016"
-        },
-        {
-          "school_name": "마산초등학교",
-          "region": "광주",
-          "district": "해남군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시해남교육지원청",
-          "address": "전남광주통합특별시 해남군 마산면 은적사길 13",
-          "school_code": "8642027"
-        }
-      ],
-      "support_office": "충청남도서천교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "business_place": "충남 서천군 마산면 삼일로 327",
-      "support_office_source": "business_place",
-      "subregion": "서천"
-    },
-    {
       "id": "202604021122075",
       "tender_no": "202604021122075",
       "contract_name": "삼성전자 AI 무풍콤보 벽걸이형 냉난방기 인버터 에어컨",
@@ -352047,41 +348553,6 @@
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
       "subregion": "홍천"
-    },
-    {
-      "id": "202604021122099",
-      "tender_no": "202604021122099",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 슬림키보드북커버",
-      "institution": "여주제일중학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "700,000",
-      "contract_date": "2026-04-02",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604021122099&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "중",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "여주제일중학교",
-          "region": "경기",
-          "district": "여주시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도여주교육지원청",
-          "address": "경기도 여주시 가남읍 여주남로 1155-15",
-          "school_code": "7661004"
-        }
-      ],
-      "support_office": "경기도여주교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "여주"
     },
     {
       "id": "202604011117102",
@@ -356428,41 +352899,6 @@
       "subregion": "군산"
     },
     {
-      "id": "202604011118038",
-      "tender_no": "202604011118038",
-      "contract_name": "아이스크림 홈런(태블릿) 무관리형",
-      "institution": "동로초등학교",
-      "counterpart": "엘위드",
-      "amount": "6,624,000",
-      "contract_date": "2026-04-02",
-      "keywords": [
-        "홈런"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011118038&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-07-24 15:06",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "동로초등학교",
-          "region": "경북",
-          "district": "문경시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도문경교육지원청",
-          "address": "경상북도 문경시 동로면 노은2길 4",
-          "school_code": "8841036"
-        }
-      ],
-      "first_imported_at": "2026-07-24 15:06",
-      "import_count": 1,
-      "support_office": "경상북도문경교육지원청",
-      "subregion": "문경"
-    },
-    {
       "id": "202604011116559",
       "tender_no": "202604011116559",
       "contract_name": "퓨너스 레고에듀케이션 스파이크 프라임 인공지능 AI PRO PLUS패키지 외 3종",
@@ -358768,41 +355204,6 @@
       "subregion": "강남"
     },
     {
-      "id": "202604011118100",
-      "tender_no": "202604011118100",
-      "contract_name": "AI중정학교 운영물품 구입(태블릿용 유선 미니키보드)",
-      "institution": "광주효동초등학교",
-      "counterpart": "에듀랩(주)",
-      "amount": "560,000",
-      "contract_date": "2026-04-01",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011118100&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "광주",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "광주효동초등학교",
-          "region": "광주",
-          "district": "북구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "광주광역시동부교육지원청",
-          "address": "전남광주통합특별시 북구 서양로 99",
-          "school_code": "7392114"
-        }
-      ],
-      "support_office": "광주광역시동부교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "동부"
-    },
-    {
       "id": "202604011117434",
       "tender_no": "202604011117434",
       "contract_name": "AI디지털 지원학교 운영을 위한 물품 구입",
@@ -358836,41 +355237,6 @@
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 1,
       "subregion": "해운대"
-    },
-    {
-      "id": "202604011117438",
-      "tender_no": "202604011117438",
-      "contract_name": "AI·디지털 활용 선도학교 교육 물품(키보드 마우스 세트) 구입",
-      "institution": "동홍초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "2,389,500",
-      "contract_date": "2026-04-01",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011117438&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.04.15",
-      "last_imported_at": "2026-08-15 07:13",
-      "school_level": "초",
-      "region": "제주",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "동홍초등학교",
-          "region": "제주",
-          "district": "서귀포시",
-          "education_office": "제주특별자치도교육청",
-          "support_office": "서귀포시교육지원청",
-          "address": "제주특별자치도 서귀포시 동홍북로 17",
-          "school_code": "9299039"
-        }
-      ],
-      "support_office": "서귀포시교육지원청",
-      "first_imported_at": "2026-08-15 07:13",
-      "import_count": 1,
-      "subregion": "서귀포"
     },
     {
       "id": "202604011117418",
@@ -361331,76 +357697,6 @@
       "subregion": "서귀포"
     },
     {
-      "id": "202604011119625",
-      "tender_no": "202604011119625",
-      "contract_name": "구미산동고 인공지능수학 물품(로지텍 무선 블루투스 키보드 외 1종) 구",
-      "institution": "구미산동고등학교",
-      "counterpart": "그린스토어",
-      "amount": "174,000",
-      "contract_date": "2026-04-01",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011119625&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-05 11:17",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "구미산동고등학교",
-          "region": "경북",
-          "district": "구미시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 구미시 산동읍 신당인덕2로 11",
-          "school_code": "8750754"
-        }
-      ],
-      "first_imported_at": "2026-08-05 11:17",
-      "import_count": 1,
-      "support_office": "경상북도구미교육지원청",
-      "subregion": "구미"
-    },
-    {
-      "id": "202604011119624",
-      "tender_no": "202604011119624",
-      "contract_name": "구미산동고 인공지능수학 물품(로지텍 무선 블루투스 키보드 외 1종) 구",
-      "institution": "구미산동고등학교",
-      "counterpart": "스쿨플러스",
-      "amount": "26,000",
-      "contract_date": "2026-04-01",
-      "keywords": [
-        "수학"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202604011119624&excelSection=N",
-      "search_period_from": "2026.04.01",
-      "search_period_to": "2026.05.31",
-      "last_imported_at": "2026-08-05 11:17",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "구미산동고등학교",
-          "region": "경북",
-          "district": "구미시",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 구미시 산동읍 신당인덕2로 11",
-          "school_code": "8750754"
-        }
-      ],
-      "first_imported_at": "2026-08-05 11:17",
-      "import_count": 1,
-      "support_office": "경상북도구미교육지원청",
-      "subregion": "구미"
-    },
-    {
       "id": "202604011116083",
       "tender_no": "202604011116083",
       "contract_name": "[수학과]마이커프로 무선 핸드 마이크",
@@ -363121,56 +359417,6 @@
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
       "subregion": "무안"
-    },
-    {
-      "id": "202603311113132",
-      "tender_no": "202603311113132",
-      "contract_name": "삼성 EF 갤럭시 탭 S11 전용 정품 AI 슬림 키보드 북커버 케이스 외 1종",
-      "institution": "세종특별자치시교육청 총무과",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "164,000",
-      "contract_date": "2026-03-31",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603311113132&excelSection=N",
-      "search_period_from": "2026.03.16",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-08-14 17:13",
-      "school_level": "기타",
-      "region": "세종",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "first_imported_at": "2026-08-14 17:13",
-      "import_count": 1,
-      "subregion": ""
-    },
-    {
-      "id": "202603311113131",
-      "tender_no": "202603311113131",
-      "contract_name": "삼성 EF 갤럭시 탭 S11 전용 정품 AI 슬림 키보드 북커버 케이스 외 1종",
-      "institution": "세종특별자치시교육청 총무과",
-      "counterpart": "도담OA",
-      "amount": "1,307,900",
-      "contract_date": "2026-03-31",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603311113131&excelSection=N",
-      "search_period_from": "2026.03.16",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-08-14 17:13",
-      "school_level": "기타",
-      "region": "세종",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "first_imported_at": "2026-08-14 17:13",
-      "import_count": 1,
-      "subregion": ""
     },
     {
       "id": "202603311111573",
@@ -390049,41 +386295,6 @@
       "subregion": "용인"
     },
     {
-      "id": "202603231087690",
-      "tender_no": "202603231087690",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스",
-      "institution": "충북여자고등학교",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "210,000",
-      "contract_date": "2026-03-23",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603231087690&excelSection=N",
-      "search_period_from": "2026.03.16",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-08-14 17:13",
-      "school_level": "고",
-      "region": "충북",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "충북여자고등학교",
-          "region": "충북",
-          "district": "청주시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도교육청",
-          "address": "충청북도 청주시 서원구 무심서로 377-2",
-          "school_code": "8000099"
-        }
-      ],
-      "support_office": "충청북도교육청",
-      "first_imported_at": "2026-08-14 17:13",
-      "import_count": 1,
-      "subregion": "청주"
-    },
-    {
       "id": "202603231086767",
       "tender_no": "202603231086767",
       "contract_name": "비상교육 AIDT 교육자료 (중학교)",
@@ -392154,31 +388365,6 @@
       "subregion": "남부"
     },
     {
-      "id": "202603231087727",
-      "tender_no": "202603231087727",
-      "contract_name": "영어전담실 액정모니터 구입",
-      "institution": "인천화전초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "320,000",
-      "contract_date": "2026-03-23",
-      "keywords": [
-        "영어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603231087727&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-07 09:15",
-      "school_level": "초",
-      "region": "인천",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "first_imported_at": "2026-07-21 09:15",
-      "import_count": 2,
-      "support_office": "인천광역시북부교육지원청",
-      "subregion": "북부"
-    },
-    {
       "id": "202603231088687",
       "tender_no": "202603231088687",
       "contract_name": "영어독후활동프로그램",
@@ -393429,33 +389615,6 @@
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
       "subregion": "용인"
-    },
-    {
-      "id": "202603201084528",
-      "tender_no": "202603201084528",
-      "contract_name": "삼성 갤럭시탭 S11 WIFI 128GB AI 태블릿 PC S펜포함",
-      "institution": "영일유치원",
-      "counterpart": "에듀랩(주)",
-      "amount": "970,000",
-      "contract_date": "2026-03-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603201084528&excelSection=N",
-      "search_period_from": "2026.03.16",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-08-14 17:13",
-      "school_level": "기타",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [],
-      "support_office": "부산광역시서부교육지원청",
-      "first_imported_at": "2026-08-14 17:13",
-      "import_count": 1,
-      "business_place": "부산 영도구 꿈나무길 41 영일유치원",
-      "support_office_source": "business_place",
-      "subregion": "서부"
     },
     {
       "id": "202603201085123",
@@ -403632,41 +399791,6 @@
       "first_imported_at": "2026-08-14 17:13",
       "import_count": 1,
       "subregion": "평택"
-    },
-    {
-      "id": "202603161068829",
-      "tender_no": "202603161068829",
-      "contract_name": "SW-AI 동아리 운영 물품 구입(키보드 커버 케이스)",
-      "institution": "춘산초등학교",
-      "counterpart": "위드플러스",
-      "amount": "945,000",
-      "contract_date": "2026-03-16",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603161068829&excelSection=N",
-      "search_period_from": "2026.03.16",
-      "search_period_to": "2026.03.31",
-      "last_imported_at": "2026-08-14 17:13",
-      "school_level": "초",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "춘산초등학교",
-          "region": "경북",
-          "district": "의성군",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도의성교육지원청",
-          "address": "경상북도 의성군 춘산면 금성현서로 1487",
-          "school_code": "8871044"
-        }
-      ],
-      "support_office": "경상북도의성교육지원청",
-      "first_imported_at": "2026-08-14 17:13",
-      "import_count": 1,
-      "subregion": "의성"
     },
     {
       "id": "202603161068267",
@@ -415607,41 +411731,6 @@
       "subregion": "동부"
     },
     {
-      "id": "202603101047094",
-      "tender_no": "202603101047094",
-      "contract_name": "클래스랩 클래스캠 온라인 원격 수업 화상 회의용 실물화상기 카메라-영어실",
-      "institution": "무룡초등학교",
-      "counterpart": "제이엠",
-      "amount": "459,500",
-      "contract_date": "2026-03-10",
-      "keywords": [
-        "영어"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603101047094&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-07 09:15",
-      "school_level": "초",
-      "region": "울산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "무룡초등학교",
-          "region": "울산",
-          "district": "중구",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시강북교육지원청",
-          "address": "울산광역시 중구 약사로 50",
-          "school_code": "7491109"
-        }
-      ],
-      "first_imported_at": "2026-07-21 09:15",
-      "import_count": 2,
-      "support_office": "울산광역시강북교육지원청",
-      "subregion": "강북"
-    },
-    {
       "id": "202603101048842",
       "tender_no": "202603101048842",
       "contract_name": "영어독후활동프로그램",
@@ -416507,31 +412596,6 @@
       "first_imported_at": "2026-08-14 16:10",
       "import_count": 1,
       "subregion": ""
-    },
-    {
-      "id": "202603091042472",
-      "tender_no": "202603091042472",
-      "contract_name": "오맥스 멀티미디어 모니터 AI 영상 생물현미경",
-      "institution": "창원반송중학교",
-      "counterpart": "우주스쿨 주식회사",
-      "amount": "3,120,000",
-      "contract_date": "2026-03-09",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202603091042472&excelSection=N",
-      "search_period_from": "2026.03.01",
-      "search_period_to": "2026.03.15",
-      "last_imported_at": "2026-08-14 16:10",
-      "school_level": "중",
-      "region": "경남",
-      "region_status": "matched",
-      "region_source": "institution_district_prefix",
-      "region_candidates": [],
-      "support_office": "창원교육지원청",
-      "first_imported_at": "2026-08-14 16:10",
-      "import_count": 1,
-      "subregion": "창원"
     },
     {
       "id": "202603091044240",
@@ -433073,41 +429137,6 @@
       "subregion": "남부"
     },
     {
-      "id": "202602251015348",
-      "tender_no": "202602251015348",
-      "contract_name": "원격수업용 HDMI USB 고화질 웹캠 AI 디지털 PTZ 화상카메라",
-      "institution": "서울방일초등학교",
-      "counterpart": "하이파이브",
-      "amount": "648,000",
-      "contract_date": "2026-02-25",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602251015348&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "초",
-      "region": "서울",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "서울방일초등학교",
-          "region": "서울",
-          "district": "서초구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시강남서초교육지원청",
-          "address": "서울특별시 서초구 방배로18길 52",
-          "school_code": "7091388"
-        }
-      ],
-      "support_office": "서울특별시강남서초교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "강남,서초"
-    },
-    {
       "id": "202602251015794",
       "tender_no": "202602251015794",
       "contract_name": "엘지 LG 퓨리케어 AI 360도 공기청정기 플러스  납품장소도",
@@ -435362,146 +431391,6 @@
       "subregion": "안양,과천"
     },
     {
-      "id": "202602241011817",
-      "tender_no": "202602241011817",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M7 4K UHD 무빙스타일(스탠다드) 외 2종",
-      "institution": "이서고등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "798,860",
-      "contract_date": "2026-02-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241011817&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "이서고등학교",
-          "region": "경북",
-          "district": "청도군",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 청도군 이서면 학산1길 22",
-          "school_code": "8750203"
-        }
-      ],
-      "support_office": "경상북도청도교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "청도"
-    },
-    {
-      "id": "202602241011816",
-      "tender_no": "202602241011816",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M7 4K UHD 무빙스타일(스탠다드) 외 2종",
-      "institution": "이서고등학교",
-      "counterpart": "행운몰2호점",
-      "amount": "160,800",
-      "contract_date": "2026-02-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241011816&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "이서고등학교",
-          "region": "경북",
-          "district": "청도군",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 청도군 이서면 학산1길 22",
-          "school_code": "8750203"
-        }
-      ],
-      "support_office": "경상북도청도교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "청도"
-    },
-    {
-      "id": "202602241011815",
-      "tender_no": "202602241011815",
-      "contract_name": "삼성 LS스마트모니터 AI 43인치M7 4K UHD 무빙스타일(스탠다드) 외 2종",
-      "institution": "이서고등학교",
-      "counterpart": "샵라임",
-      "amount": "22,200",
-      "contract_date": "2026-02-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241011815&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "고",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "이서고등학교",
-          "region": "경북",
-          "district": "청도군",
-          "education_office": "경상북도교육청",
-          "support_office": "경상북도교육청",
-          "address": "경상북도 청도군 이서면 학산1길 22",
-          "school_code": "8750203"
-        }
-      ],
-      "support_office": "경상북도청도교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "청도"
-    },
-    {
-      "id": "202602241008597",
-      "tender_no": "202602241008597",
-      "contract_name": "삼성 LS스마트 모니터 AI 43인치 M7 4K UHD 납품장소도",
-      "institution": "반곡고등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "475,000",
-      "contract_date": "2026-02-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602241008597&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "고",
-      "region": "세종",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "반곡고등학교",
-          "region": "세종",
-          "district": "시청대로",
-          "education_office": "세종특별자치시교육청",
-          "support_office": "세종특별자치시교육청",
-          "address": "세종특별자치시  시청대로 566",
-          "school_code": "9300265"
-        }
-      ],
-      "support_office": "세종특별자치시교육청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "세종"
-    },
-    {
       "id": "202602241006205",
       "tender_no": "202602241006205",
       "contract_name": "삼성 AI 21kg 드럼 세탁기 21kg 건조기 세트 (상단설치 포함) 외 1종",
@@ -436727,41 +432616,6 @@
       "subregion": "나주"
     },
     {
-      "id": "202602231004389",
-      "tender_no": "202602231004389",
-      "contract_name": "삼탠바이미 43인치 삼성 AI 무빙스타일 4K 스마트 모니터세트 현장설치",
-      "institution": "울산여자상업고등학교",
-      "counterpart": "이코시스템",
-      "amount": "790,000",
-      "contract_date": "2026-02-23",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602231004389&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "고",
-      "region": "울산",
-      "region_status": "matched",
-      "region_source": "neis_school_info_subregion_backfill",
-      "region_candidates": [
-        {
-          "school_name": "울산여자상업고등학교",
-          "region": "울산",
-          "district": "남구",
-          "education_office": "울산광역시교육청",
-          "support_office": "울산광역시교육청",
-          "address": "울산광역시 남구 두왕로 304",
-          "school_code": "7480048"
-        }
-      ],
-      "support_office": "울산광역시교육청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "강남"
-    },
-    {
       "id": "202602231003584",
       "tender_no": "202602231003584",
       "contract_name": "삼성 비스포크 제트AI 일체형 물걸레 무선청소기 패키지",
@@ -437908,41 +433762,6 @@
       "subregion": "통영"
     },
     {
-      "id": "202602220997292",
-      "tender_no": "202602220997292",
-      "contract_name": "삼성 갤럭시탭 S10FE 태블릿 정품 AI 슬림키보드 북커버 케이스",
-      "institution": "부천일신초등학교",
-      "counterpart": "에스지컴",
-      "amount": "7,414,200",
-      "contract_date": "2026-02-22",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602220997292&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "부천일신초등학교",
-          "region": "경기",
-          "district": "부천시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도부천교육지원청",
-          "address": "경기도 부천시 범안로96번길 26",
-          "school_code": "7581074"
-        }
-      ],
-      "support_office": "경기도부천교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "부천"
-    },
-    {
       "id": "202602190984973",
       "tender_no": "202602190984973",
       "contract_name": "캡컷 프로 CapCut Pro 영상편집 AI툴 12개월 구독 라이선스",
@@ -438727,59 +434546,6 @@
       "business_place": "경상남도 고성군 회화면 배둔서길 42-5 고성고등학교",
       "support_office_source": "business_place",
       "subregion": "고성"
-    },
-    {
-      "id": "202602200991818",
-      "tender_no": "202602200991818",
-      "contract_name": "삼성 갤럭시탭 S10FE 플러스 태블릿PC 정품 슬림키보드AI 북커버세트 외 1종",
-      "institution": "서울송정초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "4,510,000",
-      "contract_date": "2026-02-20",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602200991818&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "초",
-      "region": "서울",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "송정초등학교",
-          "region": "부산",
-          "district": "해운대구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시해운대교육지원청",
-          "address": "부산광역시 해운대구 해운대로 1164-9",
-          "school_code": "7211058"
-        },
-        {
-          "school_name": "송정초등학교",
-          "region": "부산",
-          "district": "강서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시북부교육지원청",
-          "address": "부산광역시 강서구 신호산단4로 10",
-          "school_code": "7201235"
-        },
-        {
-          "school_name": "송정초등학교",
-          "region": "광주",
-          "district": "광산구",
-          "education_office": "전남광주통합특별시교육청(광주)",
-          "support_office": "전남광주통합특별시광주서부교육지원청",
-          "address": "전남광주통합특별시 광산구 송도로208번길 25",
-          "school_code": "7402199"
-        }
-      ],
-      "support_office": "",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "강서,양천"
     },
     {
       "id": "202602200994594",
@@ -440598,87 +436364,6 @@
       "subregion": "진안"
     },
     {
-      "id": "202602190987230",
-      "tender_no": "202602190987230",
-      "contract_name": "삼성 LS 4K UHD 무빙스타일 AI 스마트 모니터 43인치",
-      "institution": "가원중학교",
-      "counterpart": "삼성토탈오에이시스템 주식회사",
-      "amount": "598,600",
-      "contract_date": "2026-02-19",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602190987230&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "중",
-      "region": "서울",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "가원중학교",
-          "region": "서울",
-          "district": "송파구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시강동송파교육지원청",
-          "address": "서울특별시 송파구 중대로10길 40-18",
-          "school_code": "7130166"
-        }
-      ],
-      "support_office": "서울특별시강동송파교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "강동,송파"
-    },
-    {
-      "id": "202602190986764",
-      "tender_no": "202602190986764",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE플러스 AI 슬림키보드 북커버케이스보호필름",
-      "institution": "연무초등학교",
-      "counterpart": "주식회사 비바솔루션",
-      "amount": "4,800,000",
-      "contract_date": "2026-02-19",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602190986764&excelSection=N",
-      "search_period_from": "2026.02.16",
-      "search_period_to": "2026.02.28",
-      "last_imported_at": "2026-08-14 14:38",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "연무초등학교",
-          "region": "경기",
-          "district": "수원시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도수원교육지원청",
-          "address": "경기도 수원시 팔달구 창룡대로103번길 60",
-          "school_code": "7541098"
-        },
-        {
-          "school_name": "연무초등학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 연무읍 득안대로 527",
-          "school_code": "8222048"
-        }
-      ],
-      "support_office": "경기도수원교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "business_place": "경기도 수원시 팔달구 창룡대로103번길 60 연무초등학교 (매향동)",
-      "support_office_source": "business_place",
-      "subregion": "수원"
-    },
-    {
       "id": "202602190984302",
       "tender_no": "202602190984302",
       "contract_name": "삼성 DV 비스포크 AI 그랑데 20kg 의류건조기 올인원컨트롤 설치포함",
@@ -441605,41 +437290,6 @@
       "subregion": "구미"
     },
     {
-      "id": "202602110967565",
-      "tender_no": "202602110967565",
-      "contract_name": "지능형 화재감지 AI 카메라 외 1종",
-      "institution": "천안가람중학교",
-      "counterpart": "주식회사 에스솔루션",
-      "amount": "7,425,000",
-      "contract_date": "2026-02-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602110967565&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "중",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "천안가람중학교",
-          "region": "충남",
-          "district": "천안시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도천안교육지원청",
-          "address": "충청남도 천안시 서북구 성성6로 40",
-          "school_code": "8151282"
-        }
-      ],
-      "support_office": "충청남도천안교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "천안"
-    },
-    {
       "id": "202602120973951",
       "tender_no": "202602120973951",
       "contract_name": "제미나이 어드밴스드 프로 Gemini Pro 구글 GoogleAI 제미니",
@@ -442070,122 +437720,6 @@
       "first_imported_at": "2026-08-14 10:45",
       "import_count": 2,
       "subregion": "평창"
-    },
-    {
-      "id": "202602130977988",
-      "tender_no": "202602130977988",
-      "contract_name": "삼성 갤럭시탭EF S10플러스S9플러스 FE 정품 AI 슬림키보드북커버",
-      "institution": "상우고등학교",
-      "counterpart": "주식회사 유니셀",
-      "amount": "1,638,000",
-      "contract_date": "2026-02-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602130977988&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "고",
-      "region": "경기",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "상우고등학교",
-          "region": "경기",
-          "district": "의정부시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도교육청",
-          "address": "경기도 의정부시 범골로 79",
-          "school_code": "7530571"
-        }
-      ],
-      "support_office": "경기도의정부교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "의정부"
-    },
-    {
-      "id": "202602120973930",
-      "tender_no": "202602120973930",
-      "contract_name": "삼성 갤럭시탭 S9 S9FE S10FE 정품 AI 슬림키보드 북커버케이스",
-      "institution": "명문초등학교",
-      "counterpart": "(주)에듀에이드",
-      "amount": "5,539,800",
-      "contract_date": "2026-02-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602120973930&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "명문초등학교",
-          "region": "부산",
-          "district": "강서구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시북부교육지원청",
-          "address": "부산광역시 강서구 명지국제8로 195",
-          "school_code": "7201263"
-        }
-      ],
-      "support_office": "부산광역시북부교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "북부"
-    },
-    {
-      "id": "202602130979220",
-      "tender_no": "202602130979220",
-      "contract_name": "삼성 EF 갤럭시탭 S10 FE 플러스 정품 AI 슬림키보드 북커버케이스",
-      "institution": "도창초등학교",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "326,000",
-      "contract_date": "2026-02-13",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602130979220&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "초",
-      "region": "강원",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "도창초등학교",
-          "region": "경기",
-          "district": "시흥시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도시흥교육지원청",
-          "address": "경기도 시흥시 수인로2793번길 6",
-          "school_code": "7781016"
-        },
-        {
-          "school_name": "도창초등학교",
-          "region": "강원",
-          "district": "철원군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도철원교육지원청",
-          "address": "강원도 철원군 김화읍 도창2길 7-2",
-          "school_code": "7932017"
-        }
-      ],
-      "support_office": "강원특별자치도철원교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "business_place": "강원 철원군 김화읍 도창2길 7-2 도창초등학교",
-      "support_office_source": "business_place",
-      "subregion": "철원"
     },
     {
       "id": "202602130975018",
@@ -442984,41 +438518,6 @@
       "business_place": "인천 부평구 주부토로 166  갈산중학교 급식실",
       "support_office_source": "business_place",
       "subregion": "북부"
-    },
-    {
-      "id": "202602110961665",
-      "tender_no": "202602110961665",
-      "contract_name": "대전중앙고등학교 AI 및 에듀테크 수업 활용 태블릿 터치패드 키보드 케이스 구입",
-      "institution": "대전중앙고등학교",
-      "counterpart": "주식회사 디앤티",
-      "amount": "17,264,400",
-      "contract_date": "2026-02-12",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602110961665&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "고",
-      "region": "대전",
-      "region_status": "direct",
-      "region_source": "institution_name_neis_stripped",
-      "region_candidates": [
-        {
-          "school_name": "중앙고등학교",
-          "region": "서울",
-          "district": "종로구",
-          "education_office": "서울특별시교육청",
-          "support_office": "서울특별시교육청",
-          "address": "서울특별시 종로구 창덕궁길 164",
-          "school_code": "7010240"
-        }
-      ],
-      "support_office": "",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "동부"
     },
     {
       "id": "202602120967786",
@@ -444612,33 +440111,6 @@
       "import_count": 3,
       "support_office": "대전광역시동부교육지원청",
       "subregion": "동부"
-    },
-    {
-      "id": "202602110964713",
-      "tender_no": "202602110964713",
-      "contract_name": "마우스로 클릭 뽀로로 LCD 코딩 컴퓨터 스마트패드",
-      "institution": "율빛유치원",
-      "counterpart": "올댓스쿨 주식회사",
-      "amount": "550,000",
-      "contract_date": "2026-02-11",
-      "keywords": [
-        "코딩"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602110964713&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-07 11:42",
-      "school_level": "기타",
-      "region": "경북",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [],
-      "first_imported_at": "2026-08-07 11:42",
-      "import_count": 1,
-      "business_place": "경북 김천시 남면 옥산길 128 율빛유치원",
-      "support_office": "경상북도김천교육지원청",
-      "support_office_source": "business_place",
-      "subregion": "김천"
     },
     {
       "id": "202602110962022",
@@ -446773,50 +442245,6 @@
       "subregion": "칠곡"
     },
     {
-      "id": "202602040937825",
-      "tender_no": "202602040937825",
-      "contract_name": "햄스터S AI 카메라 동글 포함 풀세트 (블랙 SET)",
-      "institution": "광일초등학교",
-      "counterpart": "아이티치 (I Teach)",
-      "amount": "161,000",
-      "contract_date": "2026-02-06",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602040937825&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "초",
-      "region": "경기",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "광일초등학교",
-          "region": "부산",
-          "district": "중구",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시서부교육지원청",
-          "address": "부산광역시 중구 중구로 74",
-          "school_code": "7171093"
-        },
-        {
-          "school_name": "광일초등학교",
-          "region": "경기",
-          "district": "광명시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도광명교육지원청",
-          "address": "경기도 광명시 목감로 34-6",
-          "school_code": "7591023"
-        }
-      ],
-      "support_office": "경기도광명교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "광명"
-    },
-    {
       "id": "202602060946138",
       "tender_no": "202602060946138",
       "contract_name": "젠스파크 Genspark 생성형 AI 플러스, 프로 라이선스 (안심구독)",
@@ -448375,41 +443803,6 @@
       "subregion": "성남"
     },
     {
-      "id": "202602050944111",
-      "tender_no": "202602050944111",
-      "contract_name": "미미월드 뽀로로 코딩 컴퓨터 마우스로 클릭",
-      "institution": "노성초등학교",
-      "counterpart": "다산교육산업",
-      "amount": "575,000",
-      "contract_date": "2026-02-05",
-      "keywords": [
-        "코딩"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602050944111&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.04.30",
-      "last_imported_at": "2026-08-07 11:42",
-      "school_level": "초",
-      "region": "충남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "노성초등학교",
-          "region": "충남",
-          "district": "논산시",
-          "education_office": "충청남도교육청",
-          "support_office": "충청남도논산계룡교육지원청",
-          "address": "충청남도 논산시 노성면 노성로507번길 11",
-          "school_code": "8222028"
-        }
-      ],
-      "first_imported_at": "2026-08-07 11:42",
-      "import_count": 1,
-      "support_office": "충청남도논산계룡교육지원청",
-      "subregion": "논산,계룡"
-    },
-    {
       "id": "202602040936999",
       "tender_no": "202602040936999",
       "contract_name": "신월초병유 방과후과정 영어 견적요청",
@@ -449345,96 +444738,6 @@
       "subregion": "청주"
     },
     {
-      "id": "202602020930901",
-      "tender_no": "202602020930901",
-      "contract_name": "용정중학교 2030 AI교실 이동형 모니터 구입",
-      "institution": "용정중학교",
-      "counterpart": "감성테크",
-      "amount": "6,916,000",
-      "contract_date": "2026-02-03",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202602020930901&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "중",
-      "region": "전남",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "용정중학교",
-          "region": "광주",
-          "district": "보성군",
-          "education_office": "전남광주통합특별시교육청(전남)",
-          "support_office": "전남광주통합특별시보성교육지원청",
-          "address": "전남광주통합특별시 보성군 미력면 보성강로 279",
-          "school_code": "8602013"
-        }
-      ],
-      "support_office": "전라남도보성교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "보성"
-    },
-    {
-      "id": "202602030935141",
-      "tender_no": "202602030935141",
-      "contract_name": "오맥스 OMAX 모니터 AI 생물현미경",
-      "institution": "서원중학교",
-      "counterpart": "유진",
-      "amount": "1,340,000",
-      "contract_date": "2026-02-03",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602030935141&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "중",
-      "region": "충북",
-      "region_status": "matched",
-      "region_source": "business_place",
-      "region_candidates": [
-        {
-          "school_name": "서원중학교",
-          "region": "경기",
-          "district": "용인시",
-          "education_office": "경기도교육청",
-          "support_office": "경기도용인교육지원청",
-          "address": "경기도 용인시 수지구 상현로42번길 26-8",
-          "school_code": "7751030"
-        },
-        {
-          "school_name": "서원중학교",
-          "region": "강원",
-          "district": "횡성군",
-          "education_office": "강원특별자치도교육청",
-          "support_office": "강원특별자치도횡성교육지원청",
-          "address": "강원특별자치도 횡성군 서원면 서원로 131",
-          "school_code": "7892038"
-        },
-        {
-          "school_name": "서원중학교",
-          "region": "충북",
-          "district": "청주시",
-          "education_office": "충청북도교육청",
-          "support_office": "충청북도청주교육지원청",
-          "address": "충청북도 청주시 흥덕구 가경로189번길 61",
-          "school_code": "8011017"
-        }
-      ],
-      "support_office": "충청북도청주교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "business_place": "충북 청주시 흥덕구 가경로189번길 61 서원중학교 행정실",
-      "support_office_source": "business_place",
-      "subregion": "청주"
-    },
-    {
       "id": "202602030933597",
       "tender_no": "202602030933597",
       "contract_name": "엘지 LG 무선청소기 코드제로 AI 오브제컬렉션 A9 흡입 스팀 물걸레",
@@ -449709,41 +445012,6 @@
       "business_place": "서울특별시 성동구 서울숲길 18 성수고등학교 신관 2층 위클래스 (성수동1가)",
       "support_office_source": "business_place",
       "subregion": "성동,광진"
-    },
-    {
-      "id": "202602030934193",
-      "tender_no": "202602030934193",
-      "contract_name": "삼성 EF 갤럭시 탭 S11 전용 정품 AI 슬림 키보드 북커버 케이스",
-      "institution": "월내초등학교",
-      "counterpart": "주식회사 케이에스리테일",
-      "amount": "4,035,360",
-      "contract_date": "2026-02-03",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202602030934193&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "초",
-      "region": "부산",
-      "region_status": "matched",
-      "region_source": "neis_school_info",
-      "region_candidates": [
-        {
-          "school_name": "월내초등학교",
-          "region": "부산",
-          "district": "기장군",
-          "education_office": "부산광역시교육청",
-          "support_office": "부산광역시해운대교육지원청",
-          "address": "부산광역시 기장군 장안읍 길천2길 25",
-          "school_code": "7211067"
-        }
-      ],
-      "support_office": "부산광역시해운대교육지원청",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": "해운대"
     },
     {
       "id": "202602030932505",
@@ -450634,31 +445902,6 @@
       "business_place": "부산광역시 부산진구 동성로 26 동성초등학교 행정실 (전포동)",
       "support_office_source": "business_place",
       "subregion": "남부"
-    },
-    {
-      "id": "202601290922532",
-      "tender_no": "202601290922532",
-      "contract_name": "늘봄전용학교 겨울방학 AI 활용 프로그램 태블릿PC 및 보관함 대여",
-      "institution": "부산광역시교육청 초등교육과",
-      "counterpart": "잉크와오피스부산",
-      "amount": "19,250,000",
-      "contract_date": "2026-02-02",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202601290922532&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.02.15",
-      "last_imported_at": "2026-08-14 12:49",
-      "school_level": "기타",
-      "region": "부산",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "first_imported_at": "2026-08-14 10:45",
-      "import_count": 2,
-      "subregion": ""
     },
     {
       "id": "202601270916888",
