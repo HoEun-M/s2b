@@ -1562,7 +1562,7 @@ function clearDateInputs(){var from=document.getElementById('date-from-filter');
 function setAllView(checked){dateMode='all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
 function applyDateSearch(){var from=document.getElementById('date-from-filter');var to=document.getElementById('date-to-filter');selectedDateFrom=from?from.value:'';selectedDateTo=to?to.value:'';if(!selectedDateFrom&&!selectedDateTo){setStatus('Select a date range.','error');return;}if(!selectedDateFrom){selectedDateFrom=selectedDateTo;}if(!selectedDateTo){selectedDateTo=selectedDateFrom;}if(selectedDateFrom>selectedDateTo){var tmp=selectedDateFrom;selectedDateFrom=selectedDateTo;selectedDateTo=tmp;}if(from){from.value=selectedDateFrom;}if(to){to.value=selectedDateTo;}dateMode='search';syncDateToggles();filterCurrent();setStatus('Showing selected date range.','ok');}
 function clearDateSearch(){dateMode='all';selectedDateFrom='';selectedDateTo='';clearDateInputs();syncDateToggles();filterCurrent();}
-document.addEventListener('DOMContentLoaded',function(){syncDateToggles();filterCurrent();renderDashboard();var start=function(){loadRemoteState();};if('requestIdleCallback' in window){requestIdleCallback(start,{timeout:1200});}else{setTimeout(start,250);}});
+document.addEventListener('DOMContentLoaded',function(){syncDateToggles();applyRegions(getRegionOverrides());applyDeleted(getDeletedRecords());loadRemoteState();});
 """.strip()
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
     js = js.replace("__DASHBOARD_RECORDS__", dashboard_json.replace("</", "<\\/"))
