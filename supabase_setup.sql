@@ -9,13 +9,25 @@ create table if not exists public.deleted_records (
   deleted_at timestamptz not null default now()
 );
 
+create table if not exists public.school_type_overrides (
+  record_id text primary key,
+  school_type text not null check (school_type in ('선도', '연구', '중점')),
+  updated_at timestamptz not null default now()
+);
+
 alter table public.region_overrides enable row level security;
 alter table public.deleted_records enable row level security;
+alter table public.school_type_overrides enable row level security;
 
 drop policy if exists "public read region overrides" on public.region_overrides;
 drop policy if exists "public write region overrides" on public.region_overrides;
+drop policy if exists "public update region overrides" on public.region_overrides;
 drop policy if exists "public read deleted records" on public.deleted_records;
 drop policy if exists "public write deleted records" on public.deleted_records;
+drop policy if exists "public update deleted records" on public.deleted_records;
+drop policy if exists "public read school type overrides" on public.school_type_overrides;
+drop policy if exists "public write school type overrides" on public.school_type_overrides;
+drop policy if exists "public update school type overrides" on public.school_type_overrides;
 
 create policy "public read region overrides"
 on public.region_overrides
@@ -50,6 +62,25 @@ with check (true);
 
 create policy "public update deleted records"
 on public.deleted_records
+for update
+to anon
+using (true)
+with check (true);
+
+create policy "public read school type overrides"
+on public.school_type_overrides
+for select
+to anon
+using (true);
+
+create policy "public write school type overrides"
+on public.school_type_overrides
+for insert
+to anon
+with check (true);
+
+create policy "public update school type overrides"
+on public.school_type_overrides
 for update
 to anon
 using (true)
