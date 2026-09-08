@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# PyInstaller build artifacts
+build/
+dist/
+*.manifest
+
+# Crawler debug captures (CAPTCHA / no-table dumps)
+debug/
+
+# Corrupted cumulative JSON backups
+s2b_cumulative.json.broken_*
+
+# Node
+node_modules/
+
+# Large local exports / working data
+outputs/admin_backups/
+outputs/s2b_export/
+outputs/s2b_custom_tabs_deleted_excluded/
+outputs/s2b_region_group_export_*/
+outputs/s2b_subregion_export_final/
+outputs/delete_review_candidates.csv
+outputs/supabase_*_current.json
+outputs/school_type_mapping_current.json
+
+# Local secrets
+.env
