@@ -4,6 +4,7 @@ from types import SimpleNamespace
 
 from s2b_browser_crawler import fetch_all_browser
 from s2b_local_crawler import (
+    CAPTCHA_WAIT_SECONDS,
     DEFAULT_CHUNK_DAYS,
     KEYWORDS,
     PAGE_DELAY_RANGE,
@@ -38,6 +39,7 @@ def make_args():
         timeout=60,
         github_upload=True,
         chunk_days=DEFAULT_CHUNK_DAYS,
+        captcha_wait=CAPTCHA_WAIT_SECONDS,
         recrawl=False,
         search_prefixes=[],
         backfill_terms=[],

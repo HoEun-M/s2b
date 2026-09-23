@@ -49,8 +49,15 @@ LIST_URL = BASE_URL + "/S2BNCustomer/tcmo001.do"
 
 PAGE_DELAY_RANGE = (18.0, 35.0)
 KEYWORD_DELAY_RANGE = (20.0, 45.0)
-CAPTCHA_RETRY_COUNT = 3
+# requests 모드: CAPTCHA가 뜨면 한 번만 쉬었다 재시도하고, 그래도 막히면 실행을 접는다.
+# (IP 단위 차단이라 여러 번 재시도해도 소용없고, 체크포인트 덕에 다음 실행이 이어받는다.)
+CAPTCHA_RETRY_COUNT = 1
 CAPTCHA_DELAY_RANGE = (600.0, 1800.0)
+# 브라우저 모드: CAPTCHA를 사람이 풀 때까지 기다리는 최대 시간(초). 0이면 무제한. S2B_CAPTCHA_WAIT 환경변수로 덮어쓴다.
+CAPTCHA_WAIT_SECONDS = float(os.environ.get("S2B_CAPTCHA_WAIT", "900"))
+CAPTCHA_POLL_SECONDS = 5.0
+# 알림: Windows 토스트 + 비프음은 기본, S2B_NOTIFY_WEBHOOK(슬랙/디스코드 등 incoming webhook URL)이 있으면 거기로도 보낸다.
+NOTIFY_WEBHOOK_URL = os.environ.get("S2B_NOTIFY_WEBHOOK", "").strip()
 MAX_PAGES_PER_KEYWORD = None
 MAX_PAGES_BY_KEYWORD = {}
 HEAVY_KEYWORD_COOLDOWN = {}
@@ -306,6 +313,50 @@ def sleep_random(delay_range, label="wait"):
     seconds = random.uniform(*delay_range)
     print("    " + label + ": " + str(round(seconds, 1)) + "s")
     time.sleep(seconds)
+
+
+TOAST_SCRIPT = r"""
+param([string]$Title, [string]$Message)
+try {
+  [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null
+  $xml = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02)
+  $nodes = $xml.GetElementsByTagName('text')
+  $nodes.Item(0).AppendChild($xml.CreateTextNode($Title)) | Out-Null
+  $nodes.Item(1).AppendChild($xml.CreateTextNode($Message)) | Out-Null
+  $appId = '{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\WindowsPowerShell\v1.0\powershell.exe'
+  [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier($appId).Show([Windows.UI.Notifications.ToastNotification]::new($xml))
+} catch { }
+"""
+
+
+def notify(title, message):
+    # 사람이 자리에 없을 수 있으니 콘솔 + Windows 토스트 + 비프음 + (설정 시) 웹훅으로 알린다. 전부 실패해도 수집은 계속.
+    print("    [notify] " + title + " - " + message)
+    if sys.platform == "win32":
+        try:
+            import tempfile
+            script = tempfile.NamedTemporaryFile("w", suffix=".ps1", delete=False, encoding="utf-8-sig")
+            script.write(TOAST_SCRIPT)
+            script.close()
+            subprocess.Popen(
+                ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", script.name, "-Title", title, "-Message", message],
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+            )
+        except Exception as exc:
+            print("    [notify] toast failed: " + str(exc))
+        try:
+            import winsound
+            for _ in range(3):
+                winsound.Beep(1200, 250)
+                time.sleep(0.15)
+        except Exception:
+            pass
+    if NOTIFY_WEBHOOK_URL:
+        try:
+            requests.post(NOTIFY_WEBHOOK_URL, json={"text": "[S2B 크롤러] " + title + "\n" + message, "content": "[S2B 크롤러] " + title + "\n" + message}, timeout=10)
+        except Exception as exc:
+            print("    [notify] webhook failed: " + str(exc))
 
 
 def validate_delay_range(min_seconds, max_seconds, option_name):
@@ -806,7 +857,7 @@ def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, 
                 except Exception:
                     continue
             if not captcha_ok:
-                print("    [!] CAPTCHA 해결 실패. 이 구간은 체크포인트에 남기고 다음으로 넘어갑니다.")
+                print("    [!] CAPTCHA가 계속 뜹니다. 이 구간은 체크포인트에 남깁니다.")
                 status = STATUS_CAPTCHA
                 break
 
@@ -939,17 +990,28 @@ def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFA
         collected.append(items)
         print("  -> " + str(len(items)) + " found, " + status + "\n")
 
+        if status == STATUS_CAPTCHA:
+            # 같은 IP로 계속 두드려 봐야 나머지 작업도 CAPTCHA다. 지금까지 결과를 저장하고 실행을 접는다.
+            remaining = len(jobs) - job_index
+            notify("CAPTCHA로 수집 중단", term + " " + chunk_label + "에서 막힘. 남은 작업 " + str(remaining) + "개는 다음 실행에서 이어집니다.")
+            print("[captcha] 남은 작업 " + str(remaining) + "개를 건너뛰고 지금까지 수집한 결과를 저장합니다.")
+            break
+
         if job_index != len(jobs):
             sleep_random(KEYWORD_DELAY_RANGE, "keyword delay")
 
     all_results = merge_job_results(collected)
+    print_run_summary(all_results, summary)
+    return all_results
+
+
+def print_run_summary(all_results, summary):
     print("=" * 55)
     print("이번 검색 결과: " + str(len(all_results)) + "건 (중복 제거)")
     print("구간 결과: 완료 " + str(summary[STATUS_COMPLETE]) + ", 부분 " + str(summary[STATUS_PARTIAL])
           + ", CAPTCHA " + str(summary[STATUS_CAPTCHA]) + ", 오류 " + str(summary[STATUS_ERROR]))
     if summary[STATUS_CAPTCHA] or summary[STATUS_ERROR] or summary[STATUS_PARTIAL]:
         print("미완료 구간은 같은 명령을 다시 실행하면 마지막 페이지부터 이어서 수집합니다.")
-    return all_results
 
 
 def stable_id(record):

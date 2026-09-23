@@ -103,9 +103,14 @@ pip install requests beautifulsoup4 lxml
 pip install playwright && python -m playwright install chromium   # 브라우저 모드용
 ```
 
+### CAPTCHA 처리
+
+- **브라우저 모드**: CAPTCHA가 뜨면 Windows 토스트 + 비프음으로 알리고, 브라우저 창에서 사람이 풀면 **자동으로 감지해 계속**합니다(Enter 입력 불필요). 기본 15분(`--captcha-wait`, 환경변수 `S2B_CAPTCHA_WAIT`, 0이면 무제한) 안에 안 풀리면 체크포인트를 남기고 실행을 접습니다. 다음 실행이 그 페이지부터 이어받습니다.
+- **requests 모드**: 10~30분 한 번 쉬었다 재시도하고, 그래도 막히면 남은 작업을 건너뛰고 지금까지 결과를 저장합니다. 같은 IP로 계속 두드려 봐야 나머지도 CAPTCHA라서요.
+- 환경변수 `S2B_NOTIFY_WEBHOOK`에 Slack/Discord incoming webhook URL을 넣으면 토스트와 함께 그쪽으로도 알림이 갑니다. 자리에 없을 때 유용합니다.
+
 ## 주의
 
 - 차단 방지를 위해 페이지당 18~35초, 키워드당 20~45초 대기합니다. 딜레이를 줄이면 CAPTCHA가 뜹니다.
-- CAPTCHA 감지 시 10~30분 대기 후 세션을 새로 만들어 3회까지 재시도하고, 실패하면 해당 키워드를 건너뜁니다.
 - 공휴일 API 키와 Supabase 키가 소스에 하드코딩되어 있습니다. `s2b_admin.py`는 `S2B_SUPABASE_URL` / `S2B_SUPABASE_KEY` 환경변수로 덮어쓸 수 있고, 대시보드 HTML은 브라우저 localStorage 값으로 덮어씁니다.
 - 수집이 끝나면 기본적으로 GitHub에 자동 push 합니다. 원치 않으면 `--no-github-upload`를 붙이세요.

@@ -11,6 +11,8 @@ from datetime import datetime
 
 from s2b_local_crawler import (
     BASE_URL,
+    CAPTCHA_POLL_SECONDS,
+    CAPTCHA_WAIT_SECONDS,
     DEFAULT_CHUNK_DAYS,
     KEYWORD_DELAY_RANGE,
     KEYWORDS,
@@ -31,11 +33,13 @@ from s2b_local_crawler import (
     job_kind,
     load_checkpoint,
     merge_job_results,
+    notify,
     parse_page,
     parse_backfill_terms,
     pending_checkpoint_results,
     print_coverage,
     print_job_plan,
+    print_run_summary,
     record_ledger,
     save_checkpoint,
     select_keywords,
@@ -257,28 +261,55 @@ def is_page_closed_error(exc):
     return "Target page, context or browser has been closed" in str(exc)
 
 
-def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
+class CaptchaTimeout(Exception):
+    """CAPTCHA가 제한 시간 안에 풀리지 않음. 체크포인트는 이미 저장돼 있으므로 실행을 접고 다음 실행이 이어받는다."""
+
+
+def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError, wait_seconds=CAPTCHA_WAIT_SECONDS):
+    # 브라우저 창에서 사람이 CAPTCHA를 풀면 페이지가 바뀌는 것을 폴링으로 감지한다 (Enter 입력 불필요).
+    # wait_seconds 안에 안 풀리면 CaptchaTimeout. 0 이하면 무제한 대기.
     if not is_captcha(page_content_bytes(page)):
         return page, False
 
-    print("    [!] CAPTCHA detected. Solve it in the browser window.")
-    input("    After CAPTCHA is accepted, press Enter here...")
-    page = current_active_page(page)
+    limit_label = "무제한" if wait_seconds <= 0 else str(int(wait_seconds // 60)) + "분"
+    print("    [!] CAPTCHA 감지. 브라우저 창에서 풀어 주세요. 풀리면 자동으로 계속됩니다. (최대 " + limit_label + " 대기)")
+    notify("CAPTCHA 확인 필요", keyword + " " + str(page_no) + "페이지. 브라우저 창에서 CAPTCHA를 풀어 주세요. " + limit_label + " 안에 안 풀리면 저장 후 종료합니다.")
+
+    started = time.time()
+    last_report = started
+    while True:
+        time.sleep(CAPTCHA_POLL_SECONDS)
+        page = current_active_page(page)
+        if page.is_closed():
+            raise RuntimeError("Target page, context or browser has been closed")
+        try:
+            if not is_captcha(page_content_bytes(page)):
+                break
+        except Exception as exc:
+            if is_page_closed_error(exc):
+                raise
+            # 페이지 전환 중이면 content()가 잠깐 실패할 수 있다.
+        elapsed = time.time() - started
+        if wait_seconds > 0 and elapsed >= wait_seconds:
+            print("    [captcha] " + limit_label + " 동안 풀리지 않았습니다. 지금까지 결과를 저장하고 종료합니다.")
+            save_debug_page(page, keyword, page_no, "captcha_timeout")
+            raise CaptchaTimeout(keyword + " " + str(page_no) + "페이지")
+        if time.time() - last_report >= 60:
+            last_report = time.time()
+            print("    [captcha] 대기 중... " + str(int(elapsed // 60)) + "분 경과")
+
     try:
         page.wait_for_load_state("domcontentloaded", timeout=3000)
     except PlaywrightTimeoutError:
         pass
-    print("    [captcha] continuing with url: " + page.url)
-
-    if is_captcha(page_content_bytes(page)):
-        print("    [captcha] this page still looks like CAPTCHA. Saving debug and continuing once.")
-        save_debug_page(page, keyword, page_no, "captcha_after_enter")
+    print("    [captcha] 풀렸습니다. 계속합니다: " + page.url)
     return page, True
 
 
-def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, covers=None, backfill_terms=None, checkpoint=None, kind="normal"):
+def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, covers=None, backfill_terms=None, checkpoint=None, kind="normal", captcha_wait=CAPTCHA_WAIT_SECONDS):
     # covers: 이 검색어가 담당하는 키워드들. 반환: (results, page, status).
     # 페이지마다 체크포인트를 남기므로 중간에 끊겨도 이어서 수집한다.
+    # CAPTCHA가 captcha_wait 초 안에 안 풀리면 체크포인트를 captcha 상태로 남기고 CaptchaTimeout을 올린다.
     if isinstance(covers, str):
         covers = [covers]
     covers = list(covers) if covers else [search_term]
@@ -318,7 +349,7 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
             raise
 
         try:
-            page, captcha_was_solved = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError)
+            page, captcha_was_solved = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError, captcha_wait)
             if captcha_was_solved:
                 records, has_data = parse_page(page_content_bytes(page))
                 if has_data:
@@ -336,15 +367,19 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
                             return results, page, STATUS_PARTIAL
                         raise
 
-                    page, captcha_again = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError)
+                    page, captcha_again = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError, captcha_wait)
                     if captcha_again:
-                        print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
+                        # 풀었는데도 또 뜨면 세션이 막힌 것. 이 구간은 captcha로 남기고 실행을 접는다.
+                        print("    [captcha] 재시도 후에도 CAPTCHA가 다시 떴습니다. 지금까지 결과를 저장합니다.")
                         save_debug_page(page, search_term, page_no, "captcha_repeated")
-                        status = STATUS_CAPTCHA
-                        break
+                        save_progress(page_no, STATUS_CAPTCHA)
+                        raise CaptchaTimeout(search_term + " " + str(page_no) + "페이지 (재시도 후 재발)")
                     records, has_data = parse_page(page_content_bytes(page))
             else:
                 records, has_data = parse_page(page_content_bytes(page))
+        except CaptchaTimeout:
+            save_progress(page_no, STATUS_CAPTCHA)
+            raise
         except Exception as exc:
             print("    browser error while reading page: " + str(exc))
             if is_page_closed_error(exc) and results:
@@ -438,6 +473,9 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     session_profile_dir = get_user_data_dir()
     print("[browser] session profile: " + session_profile_dir)
     consecutive_failures = 0
+    captcha_abort = False
+    captcha_wait = float(getattr(args, "captcha_wait", CAPTCHA_WAIT_SECONDS))
+    print("[captcha] 최대 대기 " + ("무제한" if captcha_wait <= 0 else str(int(captcha_wait // 60)) + "분") + " (--captcha-wait 또는 S2B_CAPTCHA_WAIT)")
 
     with sync_playwright() as playwright:
         context, page = create_context_page(playwright, args, session_profile_dir)
@@ -477,7 +515,15 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                             backfill_terms,
                             checkpoint,
                             kind,
+                            captcha_wait,
                         )
+                        break
+                    except CaptchaTimeout as exc:
+                        status = STATUS_CAPTCHA
+                        note = "captcha timeout: " + str(exc)
+                        captcha_abort = True
+                        latest = load_checkpoint(search_term, chunk_from, chunk_to, kind)
+                        items = list(latest.get("records", [])) if latest else items
                         break
                     except Exception as exc:
                         note = str(exc)[:200]
@@ -510,6 +556,12 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                 collected.append(items)
                 print("  -> " + str(len(items)) + " found, " + status + "\n")
 
+                if captcha_abort:
+                    remaining = len(jobs) - job_index
+                    notify("CAPTCHA로 수집 중단", search_term + " " + chunk_label + "에서 막힘. 지금까지 결과를 저장했고 남은 작업 " + str(remaining) + "개는 다음 실행에서 이어집니다.")
+                    print("[captcha] 남은 작업 " + str(remaining) + "개를 건너뛰고 지금까지 수집한 결과를 저장합니다.")
+                    break
+
                 consecutive_failures = consecutive_failures + 1 if status == STATUS_ERROR else 0
                 if consecutive_failures >= MAX_CONSECUTIVE_JOB_FAILURES:
                     print("[browser] " + str(MAX_CONSECUTIVE_JOB_FAILURES) + "\uac1c \uc791\uc5c5\uc774 \uc5f0\uc18d\uc73c\ub85c \uc2e4\ud328\ud574 \uc911\ub2e8\ud569\ub2c8\ub2e4. \uc9c0\uae08\uae4c\uc9c0 \uc218\uc9d1\ud55c \uacb0\uacfc\ub294 \uc800\uc7a5\ud569\ub2c8\ub2e4.")
@@ -531,12 +583,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
             cleanup_user_data_dir(session_profile_dir)
 
     all_results = merge_job_results(collected)
-    print("=" * 55)
-    print("\uc774\ubc88 \uac80\uc0c9 \uacb0\uacfc: " + str(len(all_results)) + "\uac74 (\uc911\ubcf5 \uc81c\uac70)")
-    print("\uad6c\uac04 \uacb0\uacfc: \uc644\ub8cc " + str(summary[STATUS_COMPLETE]) + ", \ubd80\ubd84 " + str(summary[STATUS_PARTIAL])
-          + ", CAPTCHA " + str(summary[STATUS_CAPTCHA]) + ", \uc624\ub958 " + str(summary[STATUS_ERROR]))
-    if summary[STATUS_CAPTCHA] or summary[STATUS_ERROR] or summary[STATUS_PARTIAL]:
-        print("\ubbf8\uc644\ub8cc \uad6c\uac04\uc740 \uac19\uc740 \uba85\ub839\uc744 \ub2e4\uc2dc \uc2e4\ud589\ud558\uba74 \ub9c8\uc9c0\ub9c9 \ud398\uc774\uc9c0\ubd80\ud130 \uc774\uc5b4\uc11c \uc218\uc9d1\ud569\ub2c8\ub2e4.")
+    print_run_summary(all_results, summary)
     return all_results
 
 def get_keywords_from_user(args):
@@ -574,6 +621,7 @@ def parse_args():
     parser.add_argument("--chunk-days", type=int, default=DEFAULT_CHUNK_DAYS, help="긴 기간을 며칠 단위로 잘라 수집할지 지정합니다. 0이면 자르지 않습니다. 기본 " + str(DEFAULT_CHUNK_DAYS))
     parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 건너뛰지 않고 다시 수집합니다. 체크포인트도 무시합니다.")
     parser.add_argument("--coverage", action="store_true", help="키워드별 수집 완료 기간을 출력하고 종료합니다.")
+    parser.add_argument("--captcha-wait", type=float, default=CAPTCHA_WAIT_SECONDS, help="CAPTCHA를 사람이 풀 때까지 기다리는 최대 초. 0이면 무제한. 기본 " + str(int(CAPTCHA_WAIT_SECONDS)) + " (환경변수 S2B_CAPTCHA_WAIT)")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=True, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
