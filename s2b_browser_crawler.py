@@ -14,6 +14,15 @@ from s2b_local_crawler import (
     CAPTCHA_POLL_SECONDS,
     CAPTCHA_WAIT_SECONDS,
     DEFAULT_CHUNK_DAYS,
+    DEFAULT_FETCH_MODE,
+    EXCEL_UNAVAILABLE,
+    FETCH_MODE_EXCEL,
+    FETCH_MODE_PAGES,
+    LINK_KIND_FILTER,
+    build_search_body,
+    detail_url,
+    is_excel_export,
+    parse_excel_export,
     KEYWORD_DELAY_RANGE,
     KEYWORDS,
     LIST_URL,
@@ -418,6 +427,75 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
     return results, page, status
 
 
+def fetch_by_keyword_browser_excel(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, covers, backfill_terms, kind, captcha_wait):
+    # 브라우저 세션(쿠키)으로 엑셀 내보내기를 2번 요청해 한 번에 받는다. 반환: (results, page, status, note)
+    # note가 EXCEL_UNAVAILABLE이면 호출자가 페이지 방식으로 대신 수집한다.
+    covers = list(covers) if covers else [search_term]
+    backfill_terms = backfill_terms or []
+
+    def request_excel(estimate_kind, label):
+        nonlocal page
+        body = build_search_body(search_term, date_from, date_to, excel=True, estimate_kind=estimate_kind)
+        headers = {"Content-Type": "application/x-www-form-urlencoded", "Referer": LIST_URL + "?forwardName=list03"}
+        for attempt in range(2):
+            response = page.context.request.post(LIST_URL, data=body, headers=headers, timeout=timeout_ms)
+            content = response.body()
+            if is_captcha(content):
+                if attempt == 1:
+                    raise CaptchaTimeout(search_term + " 엑셀 요청 (재시도 후 재발)")
+                # 엑셀 요청은 화면이 없으니 목록 페이지를 띄워 사람이 풀게 한 뒤 다시 요청한다.
+                page.goto(LIST_URL + "?forwardName=list03", wait_until="domcontentloaded", timeout=timeout_ms)
+                page, _ = wait_for_manual_captcha(page, search_term, 0, PlaywrightTimeoutError, captcha_wait)
+                continue
+            content_type = ""
+            try:
+                content_type = response.headers.get("content-type", "")
+            except Exception:
+                pass
+            if not is_excel_export(content, content_type):
+                return None
+            return content
+        return None
+
+    content = request_excel("", "excel all")
+    if content is None:
+        return [], page, STATUS_ERROR, EXCEL_UNAVAILABLE
+    all_records = parse_excel_export(content)
+    print("    excel: " + str(len(all_records)) + " rows")
+
+    sleep_random(page_delay_range, "request delay")
+    content = request_excel(LINK_KIND_FILTER, "excel kind=" + LINK_KIND_FILTER)
+    if content is None:
+        return [], page, STATUS_ERROR, EXCEL_UNAVAILABLE
+    kind3 = {record["계약번호"] for record in parse_excel_export(content)}
+    for record in all_records:
+        record["링크"] = detail_url(record["계약번호"], LINK_KIND_FILTER if record["계약번호"] in kind3 else "1")
+
+    filtered = filter_records(all_records, covers, backfill_terms)
+    print("    excel: " + str(len(filtered)) + " matched (" + str(len(kind3)) + " with kind=" + LINK_KIND_FILTER + ")")
+    save_checkpoint(search_term, covers, date_from, date_to, kind, filtered, 2, STATUS_COMPLETE)
+    return filtered, page, STATUS_COMPLETE, ""
+
+
+def fetch_job_browser(page, job, args, PlaywrightTimeoutError, checkpoint, captcha_wait, mode):
+    # 엑셀 모드면 먼저 엑셀로 시도하고, 엑셀 응답이 아니면 페이지 방식으로 떨어진다. 반환: (items, page, status, used_mode)
+    search_term, covers, backfill_terms = job["search_term"], job["covers"], job["backfill_terms"]
+    chunk_from, chunk_to, kind = job["from"], job["to"], job["kind"]
+    if mode == FETCH_MODE_EXCEL:
+        items, page, status, note = fetch_by_keyword_browser_excel(
+            page, search_term, chunk_from, chunk_to, args.page_delay_range, args.timeout * 1000,
+            PlaywrightTimeoutError, covers, backfill_terms, kind, captcha_wait,
+        )
+        if note != EXCEL_UNAVAILABLE:
+            return items, page, status, FETCH_MODE_EXCEL
+        print("    [excel] 엑셀 응답이 아닙니다. 이 구간은 페이지 방식으로 수집합니다.")
+    items, page, status = fetch_by_keyword_browser(
+        page, search_term, chunk_from, chunk_to, args.page_delay_range, args.timeout * 1000,
+        PlaywrightTimeoutError, covers, backfill_terms, checkpoint, kind, captcha_wait,
+    )
+    return items, page, status, FETCH_MODE_PAGES
+
+
 MAX_CONSECUTIVE_JOB_FAILURES = 3
 
 
@@ -475,6 +553,8 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     consecutive_failures = 0
     captcha_abort = False
     captcha_wait = float(getattr(args, "captcha_wait", CAPTCHA_WAIT_SECONDS))
+    mode = (getattr(args, "mode", None) or DEFAULT_FETCH_MODE).lower()
+    print("[mode] " + mode + (" (엑셀 내보내기, 검색어·조각당 요청 2건; 안 되면 pages로 자동 전환)" if mode == FETCH_MODE_EXCEL else " (20건씩 페이지 넘김)"))
     print("[captcha] 최대 대기 " + ("무제한" if captcha_wait <= 0 else str(int(captcha_wait // 60)) + "분") + " (--captcha-wait 또는 S2B_CAPTCHA_WAIT)")
 
     with sync_playwright() as playwright:
@@ -501,22 +581,10 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                 items = list(checkpoint.get("records", [])) if checkpoint else []
                 status = STATUS_ERROR
                 note = ""
+                used_mode = mode
                 for attempt in range(3):
                     try:
-                        items, page, status = fetch_by_keyword_browser(
-                            page,
-                            search_term,
-                            chunk_from,
-                            chunk_to,
-                            args.page_delay_range,
-                            args.timeout * 1000,
-                            PlaywrightTimeoutError,
-                            covers,
-                            backfill_terms,
-                            checkpoint,
-                            kind,
-                            captcha_wait,
-                        )
+                        items, page, status, used_mode = fetch_job_browser(page, job, args, PlaywrightTimeoutError, checkpoint, captcha_wait, mode)
                         break
                     except CaptchaTimeout as exc:
                         status = STATUS_CAPTCHA
@@ -551,7 +619,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                 pages_done = max(0, int(latest.get("next_page", 1)) - 1) if latest else 0
                 for keyword in covers:
                     ledger_note = note or ("via " + search_term if keyword != search_term else "")
-                    record_ledger(keyword, chunk_from, chunk_to, status, pages_done, len(items), kind, "browser", ledger_note)
+                    record_ledger(keyword, chunk_from, chunk_to, status, pages_done, len(items), kind, "browser-" + used_mode, ledger_note)
                 summary[status] = summary.get(status, 0) + 1
                 collected.append(items)
                 print("  -> " + str(len(items)) + " found, " + status + "\n")
@@ -622,6 +690,7 @@ def parse_args():
     parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 건너뛰지 않고 다시 수집합니다. 체크포인트도 무시합니다.")
     parser.add_argument("--coverage", action="store_true", help="키워드별 수집 완료 기간을 출력하고 종료합니다.")
     parser.add_argument("--captcha-wait", type=float, default=CAPTCHA_WAIT_SECONDS, help="CAPTCHA를 사람이 풀 때까지 기다리는 최대 초. 0이면 무제한. 기본 " + str(int(CAPTCHA_WAIT_SECONDS)) + " (환경변수 S2B_CAPTCHA_WAIT)")
+    parser.add_argument("--mode", choices=(FETCH_MODE_EXCEL, FETCH_MODE_PAGES), default=DEFAULT_FETCH_MODE, help="excel: 엑셀 내보내기로 검색어·조각당 요청 2건 (기본). pages: 20건씩 페이지 넘김. (환경변수 S2B_FETCH_MODE)")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=True, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()

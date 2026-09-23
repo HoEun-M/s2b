@@ -6,6 +6,7 @@ from s2b_browser_crawler import fetch_all_browser
 from s2b_local_crawler import (
     CAPTCHA_WAIT_SECONDS,
     DEFAULT_CHUNK_DAYS,
+    DEFAULT_FETCH_MODE,
     KEYWORDS,
     PAGE_DELAY_RANGE,
     display_date,
@@ -40,6 +41,7 @@ def make_args():
         github_upload=True,
         chunk_days=DEFAULT_CHUNK_DAYS,
         captcha_wait=CAPTCHA_WAIT_SECONDS,
+        mode=DEFAULT_FETCH_MODE,
         recrawl=False,
         search_prefixes=[],
         backfill_terms=[],

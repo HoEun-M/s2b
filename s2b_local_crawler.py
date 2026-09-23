@@ -238,6 +238,16 @@ STATUS_COMPLETE = "complete"
 STATUS_PARTIAL = "partial"
 STATUS_CAPTCHA = "captcha"
 STATUS_ERROR = "error"
+# 수집 방식. excel: 목록 화면에서는 숨겨졌지만 살아 있는 엑셀 내보내기(list03Excel)를 써서
+# 검색어·조각당 요청 2건(전체 + estimate_kind=3)으로 전부 받는다. pages: 예전처럼 20건씩 페이지를 넘긴다.
+# 엑셀 응답이 안 오면 자동으로 pages로 떨어진다. S2B_FETCH_MODE 환경변수로 exe에도 적용.
+FETCH_MODE_EXCEL = "excel"
+FETCH_MODE_PAGES = "pages"
+DEFAULT_FETCH_MODE = os.environ.get("S2B_FETCH_MODE", FETCH_MODE_EXCEL).strip().lower() or FETCH_MODE_EXCEL
+EXCEL_UNAVAILABLE = "excel_unavailable"
+# 상세 링크의 forwardName은 estimate_kind가 3이면 view03_2, 아니면 view03_1 (목록 페이지 f_detail 로직).
+# 엑셀에는 이 값이 없어서 estimate_kind=3 필터로 한 번 더 받아 두 집합을 나눈다.
+LINK_KIND_FILTER = "3"
 
 
 def normalize_date(value):
@@ -273,12 +283,28 @@ def get_date_range_from_user(args):
     return date_from, date_to
 
 
+def detail_url(tender_num, estimate_kind):
+    forward = "view03_2" if str(estimate_kind) == LINK_KIND_FILTER else "view03_1"
+    return LIST_URL + "?forwardName=" + forward + "&tender_num=" + tender_num + "&excelSection=N"
+
+
 def make_detail_url(href_raw):
     match = re.search(r"f_detail\('([^']+)',\s*'([^']+)'\)", href_raw)
     if match:
-        forward = "view03_2" if match.group(2) == "3" else "view03_1"
-        return LIST_URL + "?forwardName=" + forward + "&tender_num=" + match.group(1) + "&excelSection=N"
+        return detail_url(match.group(1), match.group(2))
     return ""
+
+
+def build_search_body(keyword, date_from, date_to, page=1, excel=False, estimate_kind=""):
+    # S2B 목록/엑셀 검색 폼. 서버가 EUC-KR이라 한글은 EUC-KR로 퍼센트 인코딩한다.
+    return (
+        "forwardName=" + ("list03Excel" if excel else "list03") + "&pageNo=" + str(page) +
+        "&tender_num=&tender_step_code=&page_flag="
+        "&excelSection=" + ("Y" if excel else "N") + "&process_yn=Y&search_yn=Y&tender_sep1=1"
+        "&tender_name=" + quote(keyword.encode("euc-kr")) + "&company_name_s=&tender_sep2=2"
+        "&tender_date_start=" + date_from + "&tender_date_end=" + date_to +
+        "&tender_item=&estimate_kind=" + str(estimate_kind) + "&areaKind=" + quote("전국".encode("euc-kr"))
+    ).encode("ascii")
 
 
 def new_session():
@@ -793,13 +819,115 @@ def merge_job_results(collected):
     return ordered
 
 
+def is_excel_export(content, content_type=""):
+    if "ms-excel" in (content_type or "").lower() or "spreadsheet" in (content_type or "").lower():
+        return True
+    head = content[:4000].lower()
+    return b"<table" in head and "계약번호".encode("euc-kr") in content[:6000] and b"td_dark_line" not in head
+
+
+def parse_excel_export(content):
+    # list03Excel 응답: HTML 테이블을 .xls로 위장한 형식. 헤더:
+    # NO, 계약구분, 거래구분, 계약번호, 계약명, 기관명, 견적요청/공고일, 계약일, 금액, 계약대상자
+    soup = BeautifulSoup(decode_response(content), "lxml")
+    records = []
+    for row in soup.find_all("tr"):
+        cells = [cell.get_text(" ", strip=True) for cell in row.find_all("td")]
+        if len(cells) < 10 or not cells[0].isdigit():
+            continue
+        records.append({
+            "계약명": cells[4],
+            "계약번호": cells[3],
+            "계약기관": cells[5],
+            "계약대상자": cells[9],
+            "금액": cells[8],
+            "계약체결일": cells[7],
+            "링크": "",
+            "계약구분": cells[1],
+            "거래구분": cells[2],
+            "공고일": cells[6],
+        })
+    return records
+
+
+def post_with_retry(session, body, label):
+    # 반환: (response, session). 네트워크 오류는 REQUEST_RETRY_DELAYS 간격으로 재시도, 끝내 실패하면 (None, session).
+    for attempt, retry_delay in enumerate((0.0,) + REQUEST_RETRY_DELAYS):
+        if retry_delay:
+            print("    [retry] " + str(int(retry_delay)) + "초 후 재시도 (" + str(attempt) + "/" + str(len(REQUEST_RETRY_DELAYS)) + ")")
+            time.sleep(retry_delay)
+            session = new_session()
+        try:
+            response = session.post(LIST_URL, data=body, timeout=120)
+            response.raise_for_status()
+            return response, session
+        except requests.RequestException as exc:
+            print("    error (" + label + "): " + str(exc))
+    return None, session
+
+
+def captcha_retry(session, body):
+    # CAPTCHA가 뜨면 CAPTCHA_RETRY_COUNT번 쉬었다가 새 세션으로 재시도. 반환: (response or None, session)
+    for retry in range(CAPTCHA_RETRY_COUNT):
+        wait = random.uniform(*CAPTCHA_DELAY_RANGE)
+        print("    [!] CAPTCHA 감지. " + str(round(wait, 1)) + "초 대기 후 재시도 "
+              "(" + str(retry + 1) + "/" + str(CAPTCHA_RETRY_COUNT) + ")")
+        time.sleep(wait)
+        session = new_session()
+        try:
+            response = session.post(LIST_URL, data=body, timeout=120)
+            response.raise_for_status()
+            if not is_captcha(response.content):
+                return response, session
+        except Exception:
+            continue
+    return None, session
+
+
+def fetch_by_keyword_excel(session, keyword, date_from, date_to, backfill_terms=None, kind="normal", covers=None):
+    # 엑셀 내보내기로 한 번에 받는다. 반환: (results, status, note, session)
+    # note가 EXCEL_UNAVAILABLE이면 호출자가 페이지 방식으로 대신 수집한다.
+    backfill_terms = backfill_terms or []
+    covers = list(covers) if covers else [keyword]
+
+    def fetch(estimate_kind, label):
+        nonlocal session
+        body = build_search_body(keyword, date_from, date_to, excel=True, estimate_kind=estimate_kind)
+        response, session = post_with_retry(session, body, label)
+        if response is None:
+            return None, STATUS_ERROR, "request_failed"
+        if is_captcha(response.content):
+            response, session = captcha_retry(session, body)
+            if response is None:
+                return None, STATUS_CAPTCHA, "captcha"
+        if not is_excel_export(response.content, response.headers.get("Content-Type", "")):
+            return None, STATUS_ERROR, EXCEL_UNAVAILABLE
+        return response.content, STATUS_COMPLETE, ""
+
+    content, status, note = fetch("", "excel all")
+    if content is None:
+        return [], status, note, session
+    all_records = parse_excel_export(content)
+    print("    excel: " + str(len(all_records)) + " rows")
+
+    sleep_random(PAGE_DELAY_RANGE, "request delay")
+    content, status, note = fetch(LINK_KIND_FILTER, "excel kind=" + LINK_KIND_FILTER)
+    if content is None:
+        return [], status, note, session
+    kind3 = {record["계약번호"] for record in parse_excel_export(content)}
+    for record in all_records:
+        record["링크"] = detail_url(record["계약번호"], LINK_KIND_FILTER if record["계약번호"] in kind3 else "1")
+
+    filtered = filter_records(all_records, covers, backfill_terms)
+    print("    excel: " + str(len(filtered)) + " matched (" + str(len(kind3)) + " with kind=" + LINK_KIND_FILTER + ")")
+    return filtered, STATUS_COMPLETE, "", session
+
+
 def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, checkpoint=None, kind="normal", covers=None):
     # keyword: S2B에 보낼 검색어, covers: 이 검색어가 담당하는 키워드들 (기본: 검색어 자신)
     # 반환: (results, status, last_page, session)
     backfill_terms = backfill_terms or []
     covers = list(covers) if covers else [keyword]
-    keyword_euckr = quote(keyword.encode("euc-kr"))
-    area_euckr = quote("전국".encode("euc-kr"))
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
 
     results = list(checkpoint.get("records", [])) if checkpoint else []
@@ -813,50 +941,16 @@ def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, 
         if page > 1:
             sleep_random(PAGE_DELAY_RANGE, "request delay")
 
-        body = (
-            "forwardName=list03&pageNo=" + str(page) +
-            "&tender_num=&tender_step_code=&page_flag="
-            "&excelSection=N&process_yn=Y&search_yn=Y&tender_sep1=1"
-            "&tender_name=" + keyword_euckr + "&company_name_s=&tender_sep2=2"
-            "&tender_date_start=" + date_from + "&tender_date_end=" + date_to +
-            "&tender_item=&estimate_kind=&areaKind=" + area_euckr
-        )
-
-        response = None
-        for attempt, retry_delay in enumerate((0.0,) + REQUEST_RETRY_DELAYS):
-            if retry_delay:
-                print("    [retry] " + str(int(retry_delay)) + "초 후 재시도 (" + str(attempt) + "/" + str(len(REQUEST_RETRY_DELAYS)) + ")")
-                time.sleep(retry_delay)
-                session = new_session()
-            try:
-                response = session.post(LIST_URL, data=body.encode("ascii"), timeout=30)
-                response.raise_for_status()
-                break
-            except requests.RequestException as exc:
-                print("    error: " + str(exc))
-                response = None
+        body = build_search_body(keyword, date_from, date_to, page=page)
+        response, session = post_with_retry(session, body, "page " + str(page))
         if response is None:
             print("    [!] 요청이 계속 실패합니다. 이 구간은 체크포인트에 남기고 다음으로 넘어갑니다.")
             status = STATUS_ERROR
             break
 
         if is_captcha(response.content):
-            captcha_ok = False
-            for retry in range(CAPTCHA_RETRY_COUNT):
-                wait = random.uniform(*CAPTCHA_DELAY_RANGE)
-                print("    [!] CAPTCHA 감지. " + str(round(wait, 1)) + "초 대기 후 재시도 "
-                      "(" + str(retry + 1) + "/" + str(CAPTCHA_RETRY_COUNT) + ")")
-                time.sleep(wait)
-                session = new_session()
-                try:
-                    response = session.post(LIST_URL, data=body.encode("ascii"), timeout=30)
-                    response.raise_for_status()
-                    if not is_captcha(response.content):
-                        captcha_ok = True
-                        break
-                except Exception:
-                    continue
-            if not captcha_ok:
+            response, session = captcha_retry(session, body)
+            if response is None:
                 print("    [!] CAPTCHA가 계속 뜹니다. 이 구간은 체크포인트에 남깁니다.")
                 status = STATUS_CAPTCHA
                 break
@@ -944,11 +1038,13 @@ def select_keywords(args):
     return selected
 
 
-def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFAULT_CHUNK_DAYS, recrawl=False):
+def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFAULT_CHUNK_DAYS, recrawl=False, mode=None):
     backfill_terms = backfill_terms or []
     kind = job_kind(backfill_terms)
+    mode = (mode or DEFAULT_FETCH_MODE).lower()
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
     print("[keywords] " + ", ".join(keywords))
+    print("[mode] " + mode + (" (엑셀 내보내기, 검색어·조각당 요청 2건; 안 되면 pages로 자동 전환)" if mode == FETCH_MODE_EXCEL else " (20건씩 페이지 넘김)"))
     if backfill_terms:
         print("[backfill excluded terms] " + ", ".join(backfill_terms))
     else:
@@ -980,12 +1076,20 @@ def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFA
         covers_label = "" if covers == [term] else " (" + "+".join(covers) + ")"
         print("[" + term + "]" + covers_label + " " + chunk_label + " searching... (" + str(job_index) + "/" + str(len(jobs)) + ")")
         checkpoint = None if recrawl else load_checkpoint(term, chunk_from, chunk_to, kind)
-        items, status, last_page, session = fetch_by_keyword(
-            session, term, chunk_from, chunk_to, backfill_terms, checkpoint, kind, covers
-        )
+        used_mode = mode
+        if mode == FETCH_MODE_EXCEL:
+            items, status, note, session = fetch_by_keyword_excel(session, term, chunk_from, chunk_to, backfill_terms, kind, covers)
+            last_page = 1 if status == STATUS_COMPLETE else 0
+            if note == EXCEL_UNAVAILABLE:
+                print("    [excel] 엑셀 응답이 아닙니다. 이 구간은 페이지 방식으로 수집합니다.")
+                used_mode = FETCH_MODE_PAGES
+        if used_mode == FETCH_MODE_PAGES:
+            items, status, last_page, session = fetch_by_keyword(
+                session, term, chunk_from, chunk_to, backfill_terms, checkpoint, kind, covers
+            )
         save_checkpoint(term, covers, chunk_from, chunk_to, kind, items, last_page + 1, status)
         for keyword in covers:
-            record_ledger(keyword, chunk_from, chunk_to, status, last_page, len(items), kind, "requests", "via " + term if keyword != term else "")
+            record_ledger(keyword, chunk_from, chunk_to, status, last_page, len(items), kind, "requests-" + used_mode, "via " + term if keyword != term else "")
         summary[status] = summary.get(status, 0) + 1
         collected.append(items)
         print("  -> " + str(len(items)) + " found, " + status + "\n")
@@ -2209,6 +2313,7 @@ def parse_args():
     parser.add_argument("--chunk-days", type=int, default=DEFAULT_CHUNK_DAYS, help="긴 기간을 며칠 단위로 잘라 수집할지 지정합니다. 0이면 자르지 않습니다. 기본 " + str(DEFAULT_CHUNK_DAYS))
     parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 건너뛰지 않고 다시 수집합니다. 체크포인트도 무시합니다.")
     parser.add_argument("--coverage", action="store_true", help="키워드별 수집 완료 기간을 출력하고 종료합니다.")
+    parser.add_argument("--mode", choices=(FETCH_MODE_EXCEL, FETCH_MODE_PAGES), default=DEFAULT_FETCH_MODE, help="excel: 엑셀 내보내기로 검색어·조각당 요청 2건 (기본). pages: 20건씩 페이지 넘김. (환경변수 S2B_FETCH_MODE)")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=AUTO_GITHUB_UPLOAD, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
@@ -2252,7 +2357,7 @@ def main():
     except ValueError as exc:
         print("[error] " + str(exc))
         return
-    results = fetch_all(date_from, date_to, keywords, backfill_terms, args.chunk_days, args.recrawl)
+    results = fetch_all(date_from, date_to, keywords, backfill_terms, args.chunk_days, args.recrawl, args.mode)
     if backfill_terms and not results:
         print("[backfill] no matching records found; cumulative files were not changed.")
         print("done.")
