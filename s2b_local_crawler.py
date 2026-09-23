@@ -23,6 +23,10 @@ KEYWORDS = [
     "지니아튜터", "천재교육", "천재교과서", "1HOUR", "토도수학", "토도한글", "토도영어",
     "에듀테크", "AI",
 ]
+# S2B 검색은 계약명 부분 문자열 검색이라 상위어 한 번이면 하위어 결과가 전부 포함된다
+# (누적 데이터 검증: 토도수학 176/177, 토도영어 27/27건이 수학/영어 검색으로도 수집됨).
+# 아래는 키워드는 아니지만 여러 키워드를 한 번에 덮는 좁은 검색어. 매칭은 로컬에서 KEYWORDS로 판정한다.
+EXTRA_SEARCH_TERMS = ["천재", "토도"]
 EXCLUDE_WORDS = [
     "거치대", "건설", "경연대회", "공사", "공연", "공책",
     "교구", "교재", "급식", "기기", "기자재", "기숙사",
@@ -375,17 +379,58 @@ def parse_page(html_bytes):
     return records, len(records) > 0
 
 
-def filter_records(records, match_keyword, backfill_terms=None):
-    keyword_matched = [record for record in records if match_keyword in record["계약명"]]
-    if backfill_terms:
-        return [
-            record for record in keyword_matched
-            if any(term in record["계약명"] for term in backfill_terms)
-        ]
-    return [
-        record for record in keyword_matched
-        if not is_excluded_contract_name(record["계약명"])
-    ]
+def plan_search_terms(keywords):
+    # 요청 키워드를 최소 검색어 집합으로 묶는다 (greedy set cover).
+    # 반환: [(search_term, [covered keywords...]), ...] — 키워드 순서를 최대한 유지.
+    keywords = list(keywords)
+    candidates = list(keywords) + [term for term in EXTRA_SEARCH_TERMS if term not in keywords]
+    covers = {term: [keyword for keyword in keywords if term in keyword] for term in candidates}
+    covers = {term: found for term, found in covers.items() if found}
+    remaining = set(keywords)
+    plan = []
+    while remaining:
+        best = None
+        for term in candidates:
+            if term not in covers:
+                continue
+            gain = [keyword for keyword in covers[term] if keyword in remaining]
+            if not gain:
+                continue
+            # 더 많이 덮는 검색어 우선, 같으면 키워드 자체 > 추가 검색어, 그다음 등록 순서
+            score = (len(gain), term in keywords)
+            if best is None or score > best[0]:
+                best = (score, term, gain)
+        _, term, gain = best
+        plan.append((term, [keyword for keyword in keywords if keyword in covers[term]]))
+        remaining -= set(gain)
+    order = {keyword: index for index, keyword in enumerate(keywords)}
+    plan.sort(key=lambda item: min(order[keyword] for keyword in item[1]))
+    return plan
+
+
+def tag_keywords(contract_name):
+    return [keyword for keyword in KEYWORDS if keyword in contract_name]
+
+
+def filter_records(records, covers, backfill_terms=None):
+    # covers: 이 검색어가 담당하는 키워드들. 그중 하나라도 계약명에 있어야 채택하고,
+    # 매칭키워드 태그는 계약명에 들어 있는 모든 KEYWORDS로 붙인다.
+    if isinstance(covers, str):
+        covers = [covers]
+    kept = []
+    for record in records:
+        name = record["계약명"]
+        if not any(keyword in name for keyword in covers):
+            continue
+        if backfill_terms:
+            if not any(term in name for term in backfill_terms):
+                continue
+        elif is_excluded_contract_name(name):
+            continue
+        tagged = dict(record)
+        tagged["매칭키워드"] = tag_keywords(name) or list(covers)
+        kept.append(tagged)
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -536,12 +581,12 @@ def load_checkpoint(search_term, date_from, date_to, kind="normal"):
     return checkpoint
 
 
-def save_checkpoint(search_term, match_keyword, date_from, date_to, kind, records, next_page, status):
+def save_checkpoint(search_term, covers, date_from, date_to, kind, records, next_page, status):
     os.makedirs(CHECKPOINT_DIR, exist_ok=True)
     path = checkpoint_path(search_term, date_from, date_to, kind)
     payload = {
         "search_term": search_term,
-        "match_keyword": match_keyword,
+        "covers": [covers] if isinstance(covers, str) else list(covers),
         "kind": kind,
         "from": date_from,
         "to": date_to,
@@ -573,8 +618,20 @@ def pending_checkpoint_results():
             continue
         if checkpoint.get("status") != STATUS_COMPLETE:
             continue
-        collected.append((checkpoint.get("match_keyword") or checkpoint.get("search_term", ""), checkpoint.get("records", [])))
+        collected.append(checkpoint_records(checkpoint))
     return collected
+
+
+def checkpoint_records(checkpoint):
+    # 체크포인트 레코드에 매칭키워드가 없으면(구버전 파일) 계약명으로 다시 판정한다.
+    fallback = checkpoint.get("covers") or [checkpoint.get("match_keyword") or checkpoint.get("search_term", "")]
+    records = []
+    for record in checkpoint.get("records", []):
+        if not record.get("매칭키워드"):
+            record = dict(record)
+            record["매칭키워드"] = tag_keywords(record.get("계약명", "")) or list(fallback)
+        records.append(record)
+    return records
 
 
 def clear_completed_checkpoints():
@@ -614,38 +671,52 @@ def list_partial_checkpoints():
 
 
 def build_jobs(keywords, date_from, date_to, chunk_days=DEFAULT_CHUNK_DAYS, recrawl=False, kind="normal", search_prefix=""):
+    # (기간 조각 x 검색어) 작업 목록. 검색어 하나가 여러 키워드를 덮으며,
+    # 덮는 키워드가 전부 원장에 완료로 기록된 조각만 건너뛴다.
     ledger = load_ledger()
     chunks = split_period(date_from, date_to, chunk_days)
+    plan = plan_search_terms(keywords)
     jobs = []
     skipped = []
     for chunk_from, chunk_to in chunks:
-        for keyword in keywords:
-            search_term = (search_prefix + " " + keyword) if search_prefix else keyword
+        for term, covers in plan:
+            search_term = (search_prefix + " " + term) if search_prefix else term
             job = {
                 "search_term": search_term,
-                "match_keyword": keyword,
+                "covers": covers,
                 "from": chunk_from,
                 "to": chunk_to,
                 "kind": kind,
             }
-            if not recrawl and is_covered(ledger, search_term, chunk_from, chunk_to, kind):
+            if not recrawl and all(is_covered(ledger, keyword, chunk_from, chunk_to, kind) for keyword in covers):
                 skipped.append(job)
             else:
                 jobs.append(job)
     return jobs, skipped, chunks
 
 
+def describe_plan(plan):
+    parts = []
+    for term, covers in plan:
+        if covers == [term]:
+            parts.append(term)
+        else:
+            parts.append(term + "→" + "+".join(covers))
+    return parts
+
+
 def print_job_plan(jobs, skipped, chunks, keywords):
+    plan = plan_search_terms(keywords)
+    print("[search terms] " + str(len(plan)) + "개 검색어로 " + str(len(keywords)) + "개 키워드 수집: " + ", ".join(describe_plan(plan)))
     print("[period chunks] " + str(len(chunks)) + "개: " + ", ".join(
         display_date(a) + ("~" + display_date(b) if a != b else "") for a, b in chunks))
     print("[jobs] " + str(len(jobs)) + "개 실행, " + str(len(skipped)) + "개는 원장에 완료 기록이 있어 건너뜀")
     if skipped:
-        by_keyword = {}
+        by_term = {}
         for job in skipped:
-            by_keyword.setdefault(job["match_keyword"], []).append(job)
-        for keyword in keywords:
-            if keyword in by_keyword:
-                print("  skip " + keyword + ": " + str(len(by_keyword[keyword])) + "개 구간 (다시 수집하려면 --recrawl)")
+            by_term.setdefault(job["search_term"], []).append(job)
+        for term, rows in by_term.items():
+            print("  skip " + term + ": " + str(len(rows)) + "개 구간 (다시 수집하려면 --recrawl)")
     partial = list_partial_checkpoints()
     if partial:
         print("[checkpoint] 이어서 수집할 미완료 체크포인트 " + str(len(partial)) + "개")
@@ -653,25 +724,29 @@ def print_job_plan(jobs, skipped, chunks, keywords):
 
 
 def merge_job_results(collected):
-    # collected: [(match_keyword, records), ...] -> 계약번호 기준 중복 제거 + 매칭키워드 합침
+    # collected: [records, records, ...] (각 레코드에 매칭키워드 포함) -> 계약번호 기준 중복 제거 + 태그 합침
     seen = {}
     ordered = []
-    for keyword, records in collected:
+    for records in collected:
         for item in records:
             contract_no = item["계약번호"]
+            tags = item.get("매칭키워드") or tag_keywords(item.get("계약명", ""))
             if contract_no not in seen:
                 copied = dict(item)
-                copied["매칭키워드"] = [keyword] if keyword else []
+                copied["매칭키워드"] = list(tags)
                 seen[contract_no] = copied
                 ordered.append(copied)
-            elif keyword and keyword not in seen[contract_no]["매칭키워드"]:
-                seen[contract_no]["매칭키워드"].append(keyword)
+            else:
+                existing = seen[contract_no]["매칭키워드"]
+                existing.extend(tag for tag in tags if tag not in existing)
     return ordered
 
 
-def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, checkpoint=None, kind="normal"):
+def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, checkpoint=None, kind="normal", covers=None):
+    # keyword: S2B에 보낼 검색어, covers: 이 검색어가 담당하는 키워드들 (기본: 검색어 자신)
     # 반환: (results, status, last_page, session)
     backfill_terms = backfill_terms or []
+    covers = list(covers) if covers else [keyword]
     keyword_euckr = quote(keyword.encode("euc-kr"))
     area_euckr = quote("전국".encode("euc-kr"))
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
@@ -739,11 +814,11 @@ def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, 
         if not has_data:
             break
 
-        filtered = filter_records(records, keyword, backfill_terms)
+        filtered = filter_records(records, covers, backfill_terms)
         results.extend(filtered)
         last_page = page
         print("    page " + str(page) + ": " + str(len(records)) + " recv, " + str(len(filtered)) + " matched")
-        save_checkpoint(keyword, keyword, date_from, date_to, kind, results, page + 1, STATUS_PARTIAL)
+        save_checkpoint(keyword, covers, date_from, date_to, kind, results, page + 1, STATUS_PARTIAL)
 
         if len(records) == 0:
             break
@@ -837,28 +912,31 @@ def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFA
     # 이전 실행이 죽어서 누적 파일에 합쳐지지 못한 완료 체크포인트를 먼저 챙긴다.
     recovered = pending_checkpoint_results()
     if recovered:
-        recovered_count = sum(len(records) for _, records in recovered)
+        recovered_count = sum(len(records) for records in recovered)
         print("[checkpoint] 이전 실행의 완료 체크포인트 " + str(len(recovered)) + "개(" + str(recovered_count) + "건)를 함께 반영합니다.")
         collected.extend(recovered)
 
     for job_index, job in enumerate(jobs, 1):
-        keyword = job["match_keyword"]
+        term = job["search_term"]
+        covers = job["covers"]
         chunk_from, chunk_to = job["from"], job["to"]
-        cooldown = HEAVY_KEYWORD_COOLDOWN.get(keyword, 0)
+        cooldown = HEAVY_KEYWORD_COOLDOWN.get(term, 0)
         if cooldown:
-            print("[" + keyword + "] cooldown " + str(cooldown) + "s before searching...")
+            print("[" + term + "] cooldown " + str(cooldown) + "s before searching...")
             time.sleep(cooldown)
 
         chunk_label = display_date(chunk_from) + ("~" + display_date(chunk_to) if chunk_from != chunk_to else "")
-        print("[" + keyword + "] " + chunk_label + " searching... (" + str(job_index) + "/" + str(len(jobs)) + ")")
-        checkpoint = None if recrawl else load_checkpoint(keyword, chunk_from, chunk_to, kind)
+        covers_label = "" if covers == [term] else " (" + "+".join(covers) + ")"
+        print("[" + term + "]" + covers_label + " " + chunk_label + " searching... (" + str(job_index) + "/" + str(len(jobs)) + ")")
+        checkpoint = None if recrawl else load_checkpoint(term, chunk_from, chunk_to, kind)
         items, status, last_page, session = fetch_by_keyword(
-            session, keyword, chunk_from, chunk_to, backfill_terms, checkpoint, kind
+            session, term, chunk_from, chunk_to, backfill_terms, checkpoint, kind, covers
         )
-        save_checkpoint(keyword, keyword, chunk_from, chunk_to, kind, items, last_page + 1, status)
-        record_ledger(keyword, chunk_from, chunk_to, status, last_page, len(items), kind, "requests")
+        save_checkpoint(term, covers, chunk_from, chunk_to, kind, items, last_page + 1, status)
+        for keyword in covers:
+            record_ledger(keyword, chunk_from, chunk_to, status, last_page, len(items), kind, "requests", "via " + term if keyword != term else "")
         summary[status] = summary.get(status, 0) + 1
-        collected.append((keyword, items))
+        collected.append(items)
         print("  -> " + str(len(items)) + " found, " + status + "\n")
 
         if job_index != len(jobs):

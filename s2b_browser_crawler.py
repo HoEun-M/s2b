@@ -276,11 +276,14 @@ def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
     return page, True
 
 
-def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, match_keyword=None, backfill_terms=None, checkpoint=None, kind="normal"):
-    # 반환: (results, page, status). 페이지마다 체크포인트를 남기므로 중간에 끊겨도 이어서 수집한다.
-    match_keyword = match_keyword or search_term
+def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, covers=None, backfill_terms=None, checkpoint=None, kind="normal"):
+    # covers: 이 검색어가 담당하는 키워드들. 반환: (results, page, status).
+    # 페이지마다 체크포인트를 남기므로 중간에 끊겨도 이어서 수집한다.
+    if isinstance(covers, str):
+        covers = [covers]
+    covers = list(covers) if covers else [search_term]
     backfill_terms = backfill_terms or []
-    max_pages = MAX_PAGES_BY_KEYWORD.get(match_keyword, MAX_PAGES_PER_KEYWORD)
+    max_pages = MAX_PAGES_BY_KEYWORD.get(search_term, MAX_PAGES_PER_KEYWORD)
 
     results = list(checkpoint.get("records", [])) if checkpoint else []
     page_no = int(checkpoint.get("next_page", 1)) if checkpoint else 1
@@ -290,7 +293,7 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
     status = STATUS_COMPLETE
 
     def save_progress(next_page, state):
-        save_checkpoint(search_term, match_keyword, date_from, date_to, kind, results, next_page, state)
+        save_checkpoint(search_term, covers, date_from, date_to, kind, results, next_page, state)
 
     first_request = True
     while max_pages is None or page_no <= max_pages:
@@ -359,8 +362,8 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
             break
 
         saw_data_page = True
-        keyword_matched = [record for record in records if match_keyword in record["계약명"]]
-        filtered = filter_records(records, match_keyword, backfill_terms)
+        keyword_matched = [record for record in records if any(keyword in record["계약명"] for keyword in covers)]
+        filtered = filter_records(records, covers, backfill_terms)
         excluded_count = len(keyword_matched) - len(filtered)
         keyword_miss_count = len(records) - len(keyword_matched)
         results.extend(filtered)
@@ -423,7 +426,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
     summary = {STATUS_COMPLETE: 0, STATUS_PARTIAL: 0, STATUS_CAPTCHA: 0, STATUS_ERROR: 0}
     recovered = pending_checkpoint_results()
     if recovered:
-        recovered_count = sum(len(records) for _, records in recovered)
+        recovered_count = sum(len(records) for records in recovered)
         print("[checkpoint] \uc774\uc804 \uc2e4\ud589\uc758 \uc644\ub8cc \uccb4\ud06c\ud3ec\uc778\ud2b8 " + str(len(recovered)) + "\uac1c(" + str(recovered_count) + "\uac74)\ub97c \ud568\uaed8 \ubc18\uc601\ud569\ub2c8\ub2e4.")
         collected.extend(recovered)
 
@@ -441,7 +444,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
         try:
             for job_index, job in enumerate(jobs, 1):
                 search_term = job["search_term"]
-                match_keyword = job["match_keyword"]
+                covers = job["covers"]
                 backfill_terms = job["backfill_terms"]
                 chunk_from, chunk_to = job["from"], job["to"]
                 kind = job["kind"]
@@ -455,7 +458,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                         context, page = create_context_page(playwright, args, session_profile_dir)
 
                 chunk_label = display_date(chunk_from) + ("~" + display_date(chunk_to) if chunk_from != chunk_to else "")
-                print("[" + search_term + "] " + chunk_label + " searching in browser... (" + str(job_index) + "/" + str(len(jobs)) + ", keyword=" + match_keyword + ")")
+                print("[" + search_term + "] " + chunk_label + " searching in browser... (" + str(job_index) + "/" + str(len(jobs)) + ", keywords=" + "+".join(covers) + ")")
                 checkpoint = None if recrawl else load_checkpoint(search_term, chunk_from, chunk_to, kind)
                 items = list(checkpoint.get("records", [])) if checkpoint else []
                 status = STATUS_ERROR
@@ -470,7 +473,7 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                             args.page_delay_range,
                             args.timeout * 1000,
                             PlaywrightTimeoutError,
-                            match_keyword,
+                            covers,
                             backfill_terms,
                             checkpoint,
                             kind,
@@ -497,12 +500,14 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                     latest = load_checkpoint(search_term, chunk_from, chunk_to, kind)
                     items = list(latest.get("records", [])) if latest else items
                     next_page = int(latest.get("next_page", 1)) if latest else 1
-                    save_checkpoint(search_term, match_keyword, chunk_from, chunk_to, kind, items, next_page, STATUS_ERROR)
+                    save_checkpoint(search_term, covers, chunk_from, chunk_to, kind, items, next_page, STATUS_ERROR)
                 latest = load_checkpoint(search_term, chunk_from, chunk_to, kind)
                 pages_done = max(0, int(latest.get("next_page", 1)) - 1) if latest else 0
-                record_ledger(search_term, chunk_from, chunk_to, status, pages_done, len(items), kind, "browser", note)
+                for keyword in covers:
+                    ledger_note = note or ("via " + search_term if keyword != search_term else "")
+                    record_ledger(keyword, chunk_from, chunk_to, status, pages_done, len(items), kind, "browser", ledger_note)
                 summary[status] = summary.get(status, 0) + 1
-                collected.append((match_keyword, items))
+                collected.append(items)
                 print("  -> " + str(len(items)) + " found, " + status + "\n")
 
                 consecutive_failures = consecutive_failures + 1 if status == STATUS_ERROR else 0
