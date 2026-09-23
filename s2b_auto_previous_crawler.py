@@ -4,14 +4,13 @@ from types import SimpleNamespace
 
 from s2b_browser_crawler import fetch_all_browser
 from s2b_local_crawler import (
+    DEFAULT_CHUNK_DAYS,
     KEYWORDS,
     PAGE_DELAY_RANGE,
     display_date,
+    finalize_run,
     normalize_date,
     previous_workday_range,
-    publish_to_github,
-    save_cumulative_html,
-    update_cumulative_json,
     validate_delay_range,
 )
 
@@ -38,6 +37,10 @@ def make_args():
         slow_mo=0,
         timeout=60,
         github_upload=True,
+        chunk_days=DEFAULT_CHUNK_DAYS,
+        recrawl=False,
+        search_prefixes=[],
+        backfill_terms=[],
         page_delay_min=PAGE_DELAY_RANGE[0],
         page_delay_max=PAGE_DELAY_RANGE[1],
         keyword_delay_min=KEYWORD_DELAY_AROUND_3_MINUTES[0],
@@ -73,12 +76,7 @@ def run_group(group_no):
     print("")
 
     results = fetch_all_browser(date_from, date_to, keywords, args)
-    data = update_cumulative_json(results, date_from, date_to)
-    save_cumulative_html(data)
-    try:
-        publish_to_github(date_from, date_to, args.github_upload)
-    except Exception as exc:
-        print("[github] upload failed, but local files were saved: " + str(exc))
+    finalize_run(results, date_from, date_to, args.github_upload)
     print("done.")
     if getattr(sys, "frozen", False):
         input("Press Enter to exit...")

@@ -51,11 +51,31 @@ python s2b_admin.py
 
 주요 옵션은 `--keywords`, `--batch-size`/`--batch-index`(키워드 분할 실행), `--page-delay-min/max`, `--keyword-delay-min/max`, `--backfill-excluded`(제외어 때문에 빠졌던 계약 재수집), `--no-github-upload` 입니다.
 
+### 기간 분할 · 이어서 수집 · 수집 원장
+
+긴 기간은 자동으로 7일 조각(`--chunk-days`, 0이면 분할 없음)으로 나눠 **조각 × 키워드** 단위로 수집합니다. 페이지를 받을 때마다 `outputs/checkpoints/`에 체크포인트를 남기고, 조각이 끝날 때마다 `crawl_ledger.json`(수집 원장)에 완료/부분/CAPTCHA/오류 상태를 기록합니다.
+
+- 중간에 멈추면(CAPTCHA, 네트워크 오류, 강제 종료) **같은 명령을 다시 실행**하세요. 완료된 조각은 건너뛰고, 미완료 조각은 마지막 페이지부터 이어서 수집합니다.
+- 완료됐지만 누적 파일에 반영되기 전에 프로그램이 죽은 조각은 다음 실행에서 자동으로 합쳐집니다.
+- 요청 오류는 30초 → 2분 → 5분 간격으로 3회 재시도한 뒤 `error`로 기록하고 다음 조각으로 넘어갑니다.
+
+```bash
+# 키워드별로 어느 기간까지 수집이 끝났는지 확인
+python s2b_local_crawler.py --coverage
+
+# 원장에 완료 기록이 있어도 무시하고 다시 수집
+python s2b_local_crawler.py --from 20260901 --to 20260930 --recrawl
+```
+
+브라우저 크롤러와 자동전일 exe도 같은 원장·체크포인트를 사용합니다.
+
 ## 데이터 파일
 
 | 파일 | 설명 |
 | --- | --- |
 | `s2b_cumulative.json` | 누적 레코드 원본. id 기준 upsert, `first_imported_at`/`import_count` 유지. |
+| `crawl_ledger.json` | 수집 원장. 키워드 × 기간 조각별 상태(`complete`/`partial`/`captcha`/`error`), 페이지 수, 건수, 완료 시각. `--coverage`가 읽는 파일입니다. |
+| `outputs/checkpoints/*.json` | 조각별 페이지 단위 체크포인트. 누적 파일에 반영되면 자동 삭제되고, 미완료분만 남습니다. |
 | `index.html`, `s2b_cumulative.html` | 생성된 대시보드(업체별·월별·시도별·학교급별·구매유형별) + 상세 내역. 내용은 동일합니다. |
 | `school_type_mapping.json` | 선도/연구/중점 학교 매핑. |
 | `region_overrides.json`, `deleted_records.json` | 수동 보정 이력의 로컬 사본. 정본은 Supabase입니다. |

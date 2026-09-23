@@ -17,6 +17,7 @@ s2b_cumulative.json.broken_*
 node_modules/
 
 # Large local exports / working data
+outputs/checkpoints/
 outputs/admin_backups/
 outputs/s2b_export/
 outputs/s2b_custom_tabs_deleted_excluded/

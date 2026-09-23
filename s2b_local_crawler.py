@@ -214,8 +214,19 @@ CUMULATIVE_HTML_FILE = os.path.join(APP_DIR, "s2b_cumulative.html")
 INDEX_HTML_FILE = os.path.join(APP_DIR, "index.html")
 SCHOOL_TYPE_MAPPING_FILE = os.path.join(APP_DIR, "school_type_mapping.json")
 AUTO_GITHUB_UPLOAD = os.environ.get("S2B_AUTO_GITHUB", "1").lower() not in ("0", "false", "no", "off")
-GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql")
+GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql", "crawl_ledger.json")
 HOLIDAY_API_KEY = "0ff126d5fe6324dc2b8b3b8ee7dc0ccdd9e7d2203962e065703c3c7b78ff4809"
+
+# 수집 원장(키워드 x 기간별 완료 기록)과 페이지 단위 체크포인트.
+# 긴 기간은 DEFAULT_CHUNK_DAYS 일 단위로 잘라 실행하고, 조각마다 원장에 기록한다.
+LEDGER_FILE = os.path.join(APP_DIR, "crawl_ledger.json")
+CHECKPOINT_DIR = os.path.join(APP_DIR, "outputs", "checkpoints")
+DEFAULT_CHUNK_DAYS = 7
+REQUEST_RETRY_DELAYS = (30.0, 120.0, 300.0)
+STATUS_COMPLETE = "complete"
+STATUS_PARTIAL = "partial"
+STATUS_CAPTCHA = "captcha"
+STATUS_ERROR = "error"
 
 
 def normalize_date(value):
@@ -364,14 +375,314 @@ def parse_page(html_bytes):
     return records, len(records) > 0
 
 
-def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None):
-    results = []
+def filter_records(records, match_keyword, backfill_terms=None):
+    keyword_matched = [record for record in records if match_keyword in record["계약명"]]
+    if backfill_terms:
+        return [
+            record for record in keyword_matched
+            if any(term in record["계약명"] for term in backfill_terms)
+        ]
+    return [
+        record for record in keyword_matched
+        if not is_excluded_contract_name(record["계약명"])
+    ]
+
+
+# ---------------------------------------------------------------------------
+# 기간 분할 / 수집 원장 / 체크포인트
+# ---------------------------------------------------------------------------
+
+def period_days(date_from, date_to):
+    start = datetime.strptime(date_from, "%Y%m%d")
+    end = datetime.strptime(date_to, "%Y%m%d")
+    days = []
+    while start <= end:
+        days.append(start.strftime("%Y%m%d"))
+        start += timedelta(days=1)
+    return days
+
+
+def split_period(date_from, date_to, chunk_days=DEFAULT_CHUNK_DAYS):
+    if not chunk_days or chunk_days < 1:
+        return [(date_from, date_to)]
+    start = datetime.strptime(date_from, "%Y%m%d")
+    end = datetime.strptime(date_to, "%Y%m%d")
+    chunks = []
+    while start <= end:
+        stop = min(start + timedelta(days=chunk_days - 1), end)
+        chunks.append((start.strftime("%Y%m%d"), stop.strftime("%Y%m%d")))
+        start = stop + timedelta(days=1)
+    return chunks
+
+
+def job_kind(backfill_terms=None, search_prefix=None):
+    # 일반 수집만 커버리지로 인정한다. 백필/접두어 검색은 필터가 달라 별도 종류로 기록.
+    if search_prefix:
+        return "prefix:" + search_prefix
+    if backfill_terms:
+        return "backfill:" + ",".join(backfill_terms)
+    return "normal"
+
+
+def load_ledger():
+    if not os.path.exists(LEDGER_FILE):
+        return {"entries": []}
+    try:
+        with open(LEDGER_FILE, "r", encoding="utf-8-sig") as file:
+            ledger = json.load(file)
+        ledger.setdefault("entries", [])
+        return ledger
+    except Exception as exc:
+        print("[ledger] 원장 파일을 읽지 못했습니다. 새로 시작합니다: " + str(exc))
+        return {"entries": []}
+
+
+def save_ledger(ledger):
+    ledger["updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+    ledger["entries"].sort(key=lambda row: (row.get("search_term", ""), row.get("from", ""), row.get("to", "")))
+    with open(LEDGER_FILE, "w", encoding="utf-8") as file:
+        json.dump(ledger, file, ensure_ascii=False, indent=2)
+
+
+def record_ledger(search_term, date_from, date_to, status, pages, records, kind="normal", mode="requests", note=""):
+    ledger = load_ledger()
+    entry = {
+        "search_term": search_term,
+        "kind": kind,
+        "from": date_from,
+        "to": date_to,
+        "status": status,
+        "pages": pages,
+        "records": records,
+        "mode": mode,
+        "note": note,
+        "finished_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+    }
+    ledger["entries"] = [
+        row for row in ledger["entries"]
+        if not (row.get("search_term") == search_term and row.get("kind") == kind
+                and row.get("from") == date_from and row.get("to") == date_to)
+    ]
+    ledger["entries"].append(entry)
+    save_ledger(ledger)
+    return entry
+
+
+def covered_days(ledger, search_term, kind="normal"):
+    days = set()
+    for row in ledger.get("entries", []):
+        if row.get("search_term") != search_term or row.get("kind", "normal") != kind:
+            continue
+        if row.get("status") != STATUS_COMPLETE:
+            continue
+        days.update(period_days(row["from"], row["to"]))
+    return days
+
+
+def is_covered(ledger, search_term, date_from, date_to, kind="normal"):
+    return set(period_days(date_from, date_to)) <= covered_days(ledger, search_term, kind)
+
+
+def merge_day_ranges(days):
+    ordered = sorted(days)
+    ranges = []
+    for day in ordered:
+        if ranges and (datetime.strptime(day, "%Y%m%d") - datetime.strptime(ranges[-1][1], "%Y%m%d")).days == 1:
+            ranges[-1][1] = day
+        else:
+            ranges.append([day, day])
+    return ranges
+
+
+def print_coverage(keywords=None, kind="normal"):
+    ledger = load_ledger()
+    keywords = keywords or KEYWORDS
+    width = max(len(keyword) for keyword in keywords)
+    print("[coverage] 키워드별 수집 완료 기간 (" + kind + ")")
+    if ledger.get("updated_at"):
+        print("[coverage] 원장 갱신: " + ledger["updated_at"])
+    for keyword in keywords:
+        complete = merge_day_ranges(covered_days(ledger, keyword, kind))
+        pending = [
+            row for row in ledger.get("entries", [])
+            if row.get("search_term") == keyword and row.get("kind", "normal") == kind
+            and row.get("status") != STATUS_COMPLETE
+        ]
+        parts = ["완료 " + display_date(a) + ("~" + display_date(b) if a != b else "") for a, b in complete]
+        for row in pending:
+            label = display_date(row["from"]) + ("~" + display_date(row["to"]) if row["from"] != row["to"] else "")
+            parts.append("미완 " + label + " (" + row.get("status", "?") + ", " + str(row.get("pages", 0)) + "p)")
+        print("  " + keyword.ljust(width) + "  " + ("  ".join(parts) if parts else "-"))
+
+
+def checkpoint_path(search_term, date_from, date_to, kind="normal"):
+    safe_term = re.sub(r"[^0-9A-Za-z가-힣_-]+", "_", search_term).strip("_") or "keyword"
+    safe_kind = re.sub(r"[^0-9A-Za-z가-힣_-]+", "_", kind).strip("_")
+    return os.path.join(CHECKPOINT_DIR, safe_term + "_" + safe_kind + "_" + date_from + "_" + date_to + ".json")
+
+
+def load_checkpoint(search_term, date_from, date_to, kind="normal"):
+    path = checkpoint_path(search_term, date_from, date_to, kind)
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as file:
+            checkpoint = json.load(file)
+    except Exception as exc:
+        print("    [checkpoint] 읽기 실패, 처음부터 다시 수집합니다: " + str(exc))
+        return None
+    checkpoint.setdefault("records", [])
+    checkpoint.setdefault("next_page", 1)
+    return checkpoint
+
+
+def save_checkpoint(search_term, match_keyword, date_from, date_to, kind, records, next_page, status):
+    os.makedirs(CHECKPOINT_DIR, exist_ok=True)
+    path = checkpoint_path(search_term, date_from, date_to, kind)
+    payload = {
+        "search_term": search_term,
+        "match_keyword": match_keyword,
+        "kind": kind,
+        "from": date_from,
+        "to": date_to,
+        "next_page": next_page,
+        "status": status,
+        "records": records,
+        "saved_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    }
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as file:
+        json.dump(payload, file, ensure_ascii=False)
+    os.replace(tmp_path, path)
+    return path
+
+
+def pending_checkpoint_results():
+    # 이전 실행이 중간에 죽어 누적 파일에 합쳐지지 못한 완료 체크포인트를 되살린다.
+    collected = []
+    if not os.path.isdir(CHECKPOINT_DIR):
+        return collected
+    for name in sorted(os.listdir(CHECKPOINT_DIR)):
+        if not name.endswith(".json"):
+            continue
+        path = os.path.join(CHECKPOINT_DIR, name)
+        try:
+            with open(path, "r", encoding="utf-8") as file:
+                checkpoint = json.load(file)
+        except Exception:
+            continue
+        if checkpoint.get("status") != STATUS_COMPLETE:
+            continue
+        collected.append((checkpoint.get("match_keyword") or checkpoint.get("search_term", ""), checkpoint.get("records", [])))
+    return collected
+
+
+def clear_completed_checkpoints():
+    removed = 0
+    if not os.path.isdir(CHECKPOINT_DIR):
+        return removed
+    for name in os.listdir(CHECKPOINT_DIR):
+        if not name.endswith(".json"):
+            continue
+        path = os.path.join(CHECKPOINT_DIR, name)
+        try:
+            with open(path, "r", encoding="utf-8") as file:
+                checkpoint = json.load(file)
+        except Exception:
+            continue
+        if checkpoint.get("status") == STATUS_COMPLETE:
+            os.remove(path)
+            removed += 1
+    return removed
+
+
+def list_partial_checkpoints():
+    rows = []
+    if not os.path.isdir(CHECKPOINT_DIR):
+        return rows
+    for name in sorted(os.listdir(CHECKPOINT_DIR)):
+        if not name.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(CHECKPOINT_DIR, name), "r", encoding="utf-8") as file:
+                checkpoint = json.load(file)
+        except Exception:
+            continue
+        if checkpoint.get("status") != STATUS_COMPLETE:
+            rows.append(checkpoint)
+    return rows
+
+
+def build_jobs(keywords, date_from, date_to, chunk_days=DEFAULT_CHUNK_DAYS, recrawl=False, kind="normal", search_prefix=""):
+    ledger = load_ledger()
+    chunks = split_period(date_from, date_to, chunk_days)
+    jobs = []
+    skipped = []
+    for chunk_from, chunk_to in chunks:
+        for keyword in keywords:
+            search_term = (search_prefix + " " + keyword) if search_prefix else keyword
+            job = {
+                "search_term": search_term,
+                "match_keyword": keyword,
+                "from": chunk_from,
+                "to": chunk_to,
+                "kind": kind,
+            }
+            if not recrawl and is_covered(ledger, search_term, chunk_from, chunk_to, kind):
+                skipped.append(job)
+            else:
+                jobs.append(job)
+    return jobs, skipped, chunks
+
+
+def print_job_plan(jobs, skipped, chunks, keywords):
+    print("[period chunks] " + str(len(chunks)) + "개: " + ", ".join(
+        display_date(a) + ("~" + display_date(b) if a != b else "") for a, b in chunks))
+    print("[jobs] " + str(len(jobs)) + "개 실행, " + str(len(skipped)) + "개는 원장에 완료 기록이 있어 건너뜀")
+    if skipped:
+        by_keyword = {}
+        for job in skipped:
+            by_keyword.setdefault(job["match_keyword"], []).append(job)
+        for keyword in keywords:
+            if keyword in by_keyword:
+                print("  skip " + keyword + ": " + str(len(by_keyword[keyword])) + "개 구간 (다시 수집하려면 --recrawl)")
+    partial = list_partial_checkpoints()
+    if partial:
+        print("[checkpoint] 이어서 수집할 미완료 체크포인트 " + str(len(partial)) + "개")
+    print("")
+
+
+def merge_job_results(collected):
+    # collected: [(match_keyword, records), ...] -> 계약번호 기준 중복 제거 + 매칭키워드 합침
+    seen = {}
+    ordered = []
+    for keyword, records in collected:
+        for item in records:
+            contract_no = item["계약번호"]
+            if contract_no not in seen:
+                copied = dict(item)
+                copied["매칭키워드"] = [keyword] if keyword else []
+                seen[contract_no] = copied
+                ordered.append(copied)
+            elif keyword and keyword not in seen[contract_no]["매칭키워드"]:
+                seen[contract_no]["매칭키워드"].append(keyword)
+    return ordered
+
+
+def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None, checkpoint=None, kind="normal"):
+    # 반환: (results, status, last_page, session)
     backfill_terms = backfill_terms or []
     keyword_euckr = quote(keyword.encode("euc-kr"))
     area_euckr = quote("전국".encode("euc-kr"))
     max_pages = MAX_PAGES_BY_KEYWORD.get(keyword, MAX_PAGES_PER_KEYWORD)
 
-    page = 1
+    results = list(checkpoint.get("records", [])) if checkpoint else []
+    page = int(checkpoint.get("next_page", 1)) if checkpoint else 1
+    if checkpoint:
+        print("    [checkpoint] " + str(page) + "페이지부터 이어서 수집 (저장된 " + str(len(results)) + "건)")
+    status = STATUS_COMPLETE
+    last_page = page - 1
+
     while max_pages is None or page <= max_pages:
         if page > 1:
             sleep_random(PAGE_DELAY_RANGE, "request delay")
@@ -384,11 +695,23 @@ def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None):
             "&tender_date_start=" + date_from + "&tender_date_end=" + date_to +
             "&tender_item=&estimate_kind=&areaKind=" + area_euckr
         )
-        try:
-            response = session.post(LIST_URL, data=body.encode("ascii"), timeout=30)
-            response.raise_for_status()
-        except requests.RequestException as exc:
-            print("    error: " + str(exc))
+
+        response = None
+        for attempt, retry_delay in enumerate((0.0,) + REQUEST_RETRY_DELAYS):
+            if retry_delay:
+                print("    [retry] " + str(int(retry_delay)) + "초 후 재시도 (" + str(attempt) + "/" + str(len(REQUEST_RETRY_DELAYS)) + ")")
+                time.sleep(retry_delay)
+                session = new_session()
+            try:
+                response = session.post(LIST_URL, data=body.encode("ascii"), timeout=30)
+                response.raise_for_status()
+                break
+            except requests.RequestException as exc:
+                print("    error: " + str(exc))
+                response = None
+        if response is None:
+            print("    [!] 요청이 계속 실패합니다. 이 구간은 체크포인트에 남기고 다음으로 넘어갑니다.")
+            status = STATUS_ERROR
             break
 
         if is_captcha(response.content):
@@ -408,33 +731,25 @@ def fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms=None):
                 except Exception:
                     continue
             if not captcha_ok:
-                print("    [!] CAPTCHA 해결 실패. 이 키워드는 건너뜁니다.")
+                print("    [!] CAPTCHA 해결 실패. 이 구간은 체크포인트에 남기고 다음으로 넘어갑니다.")
+                status = STATUS_CAPTCHA
                 break
 
         records, has_data = parse_page(response.content)
         if not has_data:
             break
 
-        if backfill_terms:
-            filtered = [
-                record for record in records
-                if keyword in record["계약명"]
-                and any(term in record["계약명"] for term in backfill_terms)
-            ]
-        else:
-            filtered = [
-                record for record in records
-                if keyword in record["계약명"]
-                and not is_excluded_contract_name(record["계약명"])
-            ]
+        filtered = filter_records(records, keyword, backfill_terms)
         results.extend(filtered)
+        last_page = page
         print("    page " + str(page) + ": " + str(len(records)) + " recv, " + str(len(filtered)) + " matched")
+        save_checkpoint(keyword, keyword, date_from, date_to, kind, results, page + 1, STATUS_PARTIAL)
 
         if len(records) == 0:
             break
         page += 1
 
-    return results
+    return results, status, last_page, session
 
 
 
@@ -503,46 +818,59 @@ def select_keywords(args):
     return selected
 
 
-def fetch_all(date_from, date_to, keywords, backfill_terms=None):
+def fetch_all(date_from, date_to, keywords, backfill_terms=None, chunk_days=DEFAULT_CHUNK_DAYS, recrawl=False):
     backfill_terms = backfill_terms or []
+    kind = job_kind(backfill_terms)
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
     print("[keywords] " + ", ".join(keywords))
     if backfill_terms:
-        print("[backfill excluded terms] " + ", ".join(backfill_terms) + "\n")
+        print("[backfill excluded terms] " + ", ".join(backfill_terms))
     else:
-        print("[exclude]  " + ", ".join(EXCLUDE_WORDS) + "\n")
+        print("[exclude]  " + ", ".join(EXCLUDE_WORDS))
+    jobs, skipped, chunks = build_jobs(keywords, date_from, date_to, chunk_days, recrawl, kind)
+    print_job_plan(jobs, skipped, chunks, keywords)
 
     session = new_session()
-    seen_nos = set()
-    all_results = []
-    keyword_map = {}
+    collected = []
+    summary = {STATUS_COMPLETE: 0, STATUS_PARTIAL: 0, STATUS_CAPTCHA: 0, STATUS_ERROR: 0}
 
-    for keyword in keywords:
+    # 이전 실행이 죽어서 누적 파일에 합쳐지지 못한 완료 체크포인트를 먼저 챙긴다.
+    recovered = pending_checkpoint_results()
+    if recovered:
+        recovered_count = sum(len(records) for _, records in recovered)
+        print("[checkpoint] 이전 실행의 완료 체크포인트 " + str(len(recovered)) + "개(" + str(recovered_count) + "건)를 함께 반영합니다.")
+        collected.extend(recovered)
+
+    for job_index, job in enumerate(jobs, 1):
+        keyword = job["match_keyword"]
+        chunk_from, chunk_to = job["from"], job["to"]
         cooldown = HEAVY_KEYWORD_COOLDOWN.get(keyword, 0)
         if cooldown:
             print("[" + keyword + "] cooldown " + str(cooldown) + "s before searching...")
             time.sleep(cooldown)
 
-        print("[" + keyword + "] searching...")
-        items = fetch_by_keyword(session, keyword, date_from, date_to, backfill_terms)
-        print("  -> " + str(len(items)) + " found\n")
+        chunk_label = display_date(chunk_from) + ("~" + display_date(chunk_to) if chunk_from != chunk_to else "")
+        print("[" + keyword + "] " + chunk_label + " searching... (" + str(job_index) + "/" + str(len(jobs)) + ")")
+        checkpoint = None if recrawl else load_checkpoint(keyword, chunk_from, chunk_to, kind)
+        items, status, last_page, session = fetch_by_keyword(
+            session, keyword, chunk_from, chunk_to, backfill_terms, checkpoint, kind
+        )
+        save_checkpoint(keyword, keyword, chunk_from, chunk_to, kind, items, last_page + 1, status)
+        record_ledger(keyword, chunk_from, chunk_to, status, last_page, len(items), kind, "requests")
+        summary[status] = summary.get(status, 0) + 1
+        collected.append((keyword, items))
+        print("  -> " + str(len(items)) + " found, " + status + "\n")
 
-        for item in items:
-            contract_no = item["계약번호"]
-            if contract_no not in seen_nos:
-                seen_nos.add(contract_no)
-                all_results.append(item)
-                keyword_map[contract_no] = [keyword]
-            elif contract_no in keyword_map and keyword not in keyword_map[contract_no]:
-                keyword_map[contract_no].append(keyword)
+        if job_index != len(jobs):
+            sleep_random(KEYWORD_DELAY_RANGE, "keyword delay")
 
-        sleep_random(KEYWORD_DELAY_RANGE, "keyword delay")
-
-    for item in all_results:
-        item["매칭키워드"] = keyword_map.get(item["계약번호"], [])
-
+    all_results = merge_job_results(collected)
     print("=" * 55)
     print("이번 검색 결과: " + str(len(all_results)) + "건 (중복 제거)")
+    print("구간 결과: 완료 " + str(summary[STATUS_COMPLETE]) + ", 부분 " + str(summary[STATUS_PARTIAL])
+          + ", CAPTCHA " + str(summary[STATUS_CAPTCHA]) + ", 오류 " + str(summary[STATUS_ERROR]))
+    if summary[STATUS_CAPTCHA] or summary[STATUS_ERROR] or summary[STATUS_PARTIAL]:
+        print("미완료 구간은 같은 명령을 다시 실행하면 마지막 페이지부터 이어서 수집합니다.")
     return all_results
 
 
@@ -1738,9 +2066,29 @@ def parse_args():
     parser.add_argument("--keyword-delay-min", type=float, default=KEYWORD_DELAY_RANGE[0], help="Minimum delay between keyword searches in seconds.")
     parser.add_argument("--keyword-delay-max", type=float, default=KEYWORD_DELAY_RANGE[1], help="Maximum delay between keyword searches in seconds.")
     parser.add_argument("--backfill-excluded", help="쉼표로 지정한 단어 때문에 과거에 제외됐을 가능성이 있는 계약명만 다시 수집합니다. 예: 고등학교,체육")
+    parser.add_argument("--chunk-days", type=int, default=DEFAULT_CHUNK_DAYS, help="긴 기간을 며칠 단위로 잘라 수집할지 지정합니다. 0이면 자르지 않습니다. 기본 " + str(DEFAULT_CHUNK_DAYS))
+    parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 건너뛰지 않고 다시 수집합니다. 체크포인트도 무시합니다.")
+    parser.add_argument("--coverage", action="store_true", help="키워드별 수집 완료 기간을 출력하고 종료합니다.")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=AUTO_GITHUB_UPLOAD, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
+
+
+def finalize_run(results, date_from, date_to, github_upload):
+    # 누적 파일 반영 -> 완료 체크포인트 삭제 -> GitHub 업로드. 브라우저/자동 크롤러도 이 순서를 공유한다.
+    data = update_cumulative_json(results, date_from, date_to)
+    removed = clear_completed_checkpoints()
+    if removed:
+        print("[checkpoint] 누적 파일에 반영된 체크포인트 " + str(removed) + "개를 정리했습니다.")
+    partial = list_partial_checkpoints()
+    if partial:
+        print("[checkpoint] 미완료 구간 " + str(len(partial)) + "개가 남아 있습니다. 같은 기간으로 다시 실행하면 이어서 수집합니다.")
+    save_cumulative_html(data)
+    try:
+        publish_to_github(date_from, date_to, github_upload)
+    except Exception as exc:
+        print("[github] upload failed, but local files were saved: " + str(exc))
+    return data
 
 
 def main():
@@ -1748,6 +2096,12 @@ def main():
     print("  S2B local cumulative crawler")
     print("=" * 55)
     args = parse_args()
+    if args.coverage:
+        try:
+            print_coverage(select_keywords(args))
+        except ValueError as exc:
+            print("[error] " + str(exc))
+        return
     try:
         global PAGE_DELAY_RANGE, KEYWORD_DELAY_RANGE
         PAGE_DELAY_RANGE = validate_delay_range(args.page_delay_min, args.page_delay_max, "--page-delay")
@@ -1758,14 +2112,12 @@ def main():
     except ValueError as exc:
         print("[error] " + str(exc))
         return
-    results = fetch_all(date_from, date_to, keywords, backfill_terms)
+    results = fetch_all(date_from, date_to, keywords, backfill_terms, args.chunk_days, args.recrawl)
     if backfill_terms and not results:
         print("[backfill] no matching records found; cumulative files were not changed.")
         print("done.")
         return
-    data = update_cumulative_json(results, date_from, date_to)
-    save_cumulative_html(data)
-    publish_to_github(date_from, date_to, args.github_upload)
+    finalize_run(results, date_from, date_to, args.github_upload)
     print("done.")
 
 

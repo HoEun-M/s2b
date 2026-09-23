@@ -11,22 +11,34 @@ from datetime import datetime
 
 from s2b_local_crawler import (
     BASE_URL,
+    DEFAULT_CHUNK_DAYS,
     KEYWORD_DELAY_RANGE,
     KEYWORDS,
     LIST_URL,
     MAX_PAGES_BY_KEYWORD,
     MAX_PAGES_PER_KEYWORD,
     PAGE_DELAY_RANGE,
+    STATUS_CAPTCHA,
+    STATUS_COMPLETE,
+    STATUS_ERROR,
+    STATUS_PARTIAL,
+    build_jobs,
     display_date,
+    filter_records,
+    finalize_run,
     get_date_range_from_user,
     is_captcha,
-    is_excluded_contract_name,
+    job_kind,
+    load_checkpoint,
+    merge_job_results,
     parse_page,
     parse_backfill_terms,
-    publish_to_github,
-    save_cumulative_html,
+    pending_checkpoint_results,
+    print_coverage,
+    print_job_plan,
+    record_ledger,
+    save_checkpoint,
     select_keywords,
-    update_cumulative_json,
     validate_delay_range,
 )
 
@@ -264,29 +276,42 @@ def wait_for_manual_captcha(page, keyword, page_no, PlaywrightTimeoutError):
     return page, True
 
 
-def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, match_keyword=None, backfill_terms=None):
-    results = []
+def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_range, timeout_ms, PlaywrightTimeoutError, match_keyword=None, backfill_terms=None, checkpoint=None, kind="normal"):
+    # 반환: (results, page, status). 페이지마다 체크포인트를 남기므로 중간에 끊겨도 이어서 수집한다.
     match_keyword = match_keyword or search_term
     backfill_terms = backfill_terms or []
     max_pages = MAX_PAGES_BY_KEYWORD.get(match_keyword, MAX_PAGES_PER_KEYWORD)
 
-    page_no = 1
-    saw_data_page = False
+    results = list(checkpoint.get("records", [])) if checkpoint else []
+    page_no = int(checkpoint.get("next_page", 1)) if checkpoint else 1
+    saw_data_page = page_no > 1
+    if checkpoint:
+        print("    [checkpoint] " + str(page_no) + "페이지부터 이어서 수집 (저장된 " + str(len(results)) + "건)")
+    status = STATUS_COMPLETE
+
+    def save_progress(next_page, state):
+        save_checkpoint(search_term, match_keyword, date_from, date_to, kind, results, next_page, state)
+
+    first_request = True
     while max_pages is None or page_no <= max_pages:
-        if page_no > 1:
+        if not first_request:
             sleep_random(page_delay_range, "request delay")
 
         try:
-            if page_no == 1:
+            # 첫 요청(또는 이어서 수집하는 첫 페이지)은 검색 폼을 pageNo와 함께 새로 제출하고,
+            # 그 뒤로는 결과 화면의 goList()로 넘어간다.
+            if first_request:
                 submit_search(page, search_term, date_from, date_to, page_no, timeout_ms)
             else:
                 go_result_page(page, page_no, timeout_ms, PlaywrightTimeoutError)
+            first_request = False
             wait_after_navigation(page, timeout_ms, PlaywrightTimeoutError)
         except Exception as exc:
             print("    browser error: " + str(exc))
             if is_page_closed_error(exc) and results:
                 print("    page closed after partial results. keeping this keyword's collected records.")
-                return results, page
+                save_progress(page_no, STATUS_PARTIAL)
+                return results, page, STATUS_PARTIAL
             raise
 
         try:
@@ -304,13 +329,15 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
                         print("    browser error after CAPTCHA: " + str(exc))
                         if is_page_closed_error(exc) and results:
                             print("    page closed after CAPTCHA. keeping this keyword's collected records.")
-                            return results, page
+                            save_progress(page_no, STATUS_PARTIAL)
+                            return results, page, STATUS_PARTIAL
                         raise
 
                     page, captcha_again = wait_for_manual_captcha(page, search_term, page_no, PlaywrightTimeoutError)
                     if captcha_again:
                         print("    [captcha] CAPTCHA appeared again after retry. Keeping collected records and stopping this keyword.")
                         save_debug_page(page, search_term, page_no, "captcha_repeated")
+                        status = STATUS_CAPTCHA
                         break
                     records, has_data = parse_page(page_content_bytes(page))
             else:
@@ -319,7 +346,8 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
             print("    browser error while reading page: " + str(exc))
             if is_page_closed_error(exc) and results:
                 print("    page closed after partial results. keeping this keyword's collected records.")
-                return results, page
+                save_progress(page_no, STATUS_PARTIAL)
+                return results, page, STATUS_PARTIAL
             raise
 
         if not has_data:
@@ -332,16 +360,7 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
 
         saw_data_page = True
         keyword_matched = [record for record in records if match_keyword in record["계약명"]]
-        if backfill_terms:
-            filtered = [
-                record for record in keyword_matched
-                if any(term in record["계약명"] for term in backfill_terms)
-            ]
-        else:
-            filtered = [
-                record for record in keyword_matched
-                if not is_excluded_contract_name(record["계약명"])
-            ]
+        filtered = filter_records(records, match_keyword, backfill_terms)
         excluded_count = len(keyword_matched) - len(filtered)
         keyword_miss_count = len(records) - len(keyword_matched)
         results.extend(filtered)
@@ -351,51 +370,71 @@ def fetch_by_keyword_browser(page, search_term, date_from, date_to, page_delay_r
             + ", " + str(excluded_count) + " excluded"
             + ", " + str(keyword_miss_count) + " keyword-miss"
         )
+        save_progress(page_no + 1, STATUS_PARTIAL)
 
         if len(records) == 0:
             break
         page_no += 1
 
-    return results, page
+    save_progress(page_no, status)
+    return results, page, status
 
 
-def browser_search_jobs(keywords, args):
-    jobs = []
-    if args.search_prefixes:
-        for keyword in keywords:
-            for prefix in args.search_prefixes:
-                jobs.append({
-                    "search_term": prefix + " " + keyword,
-                    "match_keyword": keyword,
-                    "backfill_terms": [prefix],
-                })
-        return jobs
-    for keyword in keywords:
-        jobs.append({
-            "search_term": keyword,
-            "match_keyword": keyword,
-            "backfill_terms": args.backfill_terms,
-        })
-    return jobs
+MAX_CONSECUTIVE_JOB_FAILURES = 3
+
+
+def browser_search_jobs(keywords, date_from, date_to, args):
+    # (\uae30\uac04 \uc870\uac01 x \ud0a4\uc6cc\ub4dc x \uc811\ub450\uc5b4) \uc791\uc5c5 \ubaa9\ub85d. \uc6d0\uc7a5\uc5d0 \uc644\ub8cc \uae30\ub85d\uc774 \uc788\ub294 \uc870\uac01\uc740 \uac74\ub108\ub6f4\ub2e4.
+    chunk_days = getattr(args, "chunk_days", DEFAULT_CHUNK_DAYS)
+    recrawl = getattr(args, "recrawl", False)
+    search_prefixes = getattr(args, "search_prefixes", None) or []
+    backfill_terms = getattr(args, "backfill_terms", None) or []
+
+    if search_prefixes:
+        jobs, skipped, chunks = [], [], []
+        for prefix in search_prefixes:
+            prefix_jobs, prefix_skipped, chunks = build_jobs(
+                keywords, date_from, date_to, chunk_days, recrawl, job_kind(search_prefix=prefix), prefix
+            )
+            for job in prefix_jobs:
+                job["backfill_terms"] = [prefix]
+            jobs.extend(prefix_jobs)
+            skipped.extend(prefix_skipped)
+        return jobs, skipped, chunks
+
+    jobs, skipped, chunks = build_jobs(keywords, date_from, date_to, chunk_days, recrawl, job_kind(backfill_terms))
+    for job in jobs:
+        job["backfill_terms"] = backfill_terms
+    return jobs, skipped, chunks
 
 
 def fetch_all_browser(date_from, date_to, keywords, args):
     print("[period] " + display_date(date_from) + " ~ " + display_date(date_to))
     print("[keywords] " + ", ".join(keywords))
-    jobs = browser_search_jobs(keywords, args)
-    if args.search_prefixes:
+    if getattr(args, "search_prefixes", None):
         print("[search prefixes] " + ", ".join(args.search_prefixes))
-        print("[search jobs] " + str(len(jobs)))
-    if args.backfill_terms:
+    if getattr(args, "backfill_terms", None):
         print("[backfill excluded terms] " + ", ".join(args.backfill_terms))
-    print("")
+    jobs, skipped, chunks = browser_search_jobs(keywords, date_from, date_to, args)
+    print_job_plan(jobs, skipped, chunks, keywords)
+    recrawl = getattr(args, "recrawl", False)
+
+    collected = []
+    summary = {STATUS_COMPLETE: 0, STATUS_PARTIAL: 0, STATUS_CAPTCHA: 0, STATUS_ERROR: 0}
+    recovered = pending_checkpoint_results()
+    if recovered:
+        recovered_count = sum(len(records) for _, records in recovered)
+        print("[checkpoint] \uc774\uc804 \uc2e4\ud589\uc758 \uc644\ub8cc \uccb4\ud06c\ud3ec\uc778\ud2b8 " + str(len(recovered)) + "\uac1c(" + str(recovered_count) + "\uac74)\ub97c \ud568\uaed8 \ubc18\uc601\ud569\ub2c8\ub2e4.")
+        collected.extend(recovered)
+
+    if not jobs:
+        print("[jobs] \uc2e4\ud589\ud560 \uc791\uc5c5\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.")
+        return merge_job_results(collected)
 
     sync_playwright, PlaywrightTimeoutError = import_playwright()
-    seen_nos = set()
-    all_results = []
-    keyword_map = {}
     session_profile_dir = get_user_data_dir()
     print("[browser] session profile: " + session_profile_dir)
+    consecutive_failures = 0
 
     with sync_playwright() as playwright:
         context, page = create_context_page(playwright, args, session_profile_dir)
@@ -404,6 +443,8 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                 search_term = job["search_term"]
                 match_keyword = job["match_keyword"]
                 backfill_terms = job["backfill_terms"]
+                chunk_from, chunk_to = job["from"], job["to"]
+                kind = job["kind"]
                 if page.is_closed():
                     print("[browser] page was closed. opening a new page.")
                     try:
@@ -413,58 +454,70 @@ def fetch_all_browser(date_from, date_to, keywords, args):
                         close_context(context, cleanup_profile=False)
                         context, page = create_context_page(playwright, args, session_profile_dir)
 
-                print("[" + search_term + "] searching in browser... (" + str(job_index) + "/" + str(len(jobs)) + ", keyword=" + match_keyword + ")")
-                items = []
-                fatal_error = False
+                chunk_label = display_date(chunk_from) + ("~" + display_date(chunk_to) if chunk_from != chunk_to else "")
+                print("[" + search_term + "] " + chunk_label + " searching in browser... (" + str(job_index) + "/" + str(len(jobs)) + ", keyword=" + match_keyword + ")")
+                checkpoint = None if recrawl else load_checkpoint(search_term, chunk_from, chunk_to, kind)
+                items = list(checkpoint.get("records", [])) if checkpoint else []
+                status = STATUS_ERROR
+                note = ""
                 for attempt in range(3):
                     try:
-                        items, page = fetch_by_keyword_browser(
+                        items, page, status = fetch_by_keyword_browser(
                             page,
                             search_term,
-                            date_from,
-                            date_to,
+                            chunk_from,
+                            chunk_to,
                             args.page_delay_range,
                             args.timeout * 1000,
                             PlaywrightTimeoutError,
                             match_keyword,
                             backfill_terms,
+                            checkpoint,
+                            kind,
                         )
                         break
                     except Exception as exc:
-                        page_was_closed = is_page_closed_error(exc)
-                        if not page_was_closed:
-                            print("[browser] stopped: " + str(exc))
-                            fatal_error = True
+                        note = str(exc)[:200]
+                        if not is_page_closed_error(exc):
+                            # \uc774 \uad6c\uac04\ub9cc \uc624\ub958\ub85c \uae30\ub85d\ud558\uace0 \ub2e4\uc74c \uc791\uc5c5\uc73c\ub85c \ub118\uc5b4\uac04\ub2e4. \uc5f0\uc18d \uc2e4\ud328\uac00 \uc313\uc774\uba74 \uc911\ub2e8.
+                            print("[browser] error on this job: " + str(exc))
                             break
                         if attempt == 2:
-                            print("[browser] closed repeatedly. skipping this keyword and continuing.")
+                            print("[browser] closed repeatedly. skipping this job and continuing.")
                             close_context(context, cleanup_profile=False)
                             context, page = create_context_page(playwright, args, session_profile_dir)
                             break
-                        print("[browser] closed unexpectedly. reopening with the same session profile and retrying this keyword.")
+                        print("[browser] closed unexpectedly. reopening with the same session profile and retrying this job.")
                         close_context(context, cleanup_profile=False)
                         context, page = create_context_page(playwright, args, session_profile_dir)
+                        checkpoint = load_checkpoint(search_term, chunk_from, chunk_to, kind)
 
-                if fatal_error:
+                if status == STATUS_ERROR:
+                    # 예외 직전까지 페이지 단위로 저장된 최신 체크포인트를 유지하고 상태만 error로 바꾼다.
+                    latest = load_checkpoint(search_term, chunk_from, chunk_to, kind)
+                    items = list(latest.get("records", [])) if latest else items
+                    next_page = int(latest.get("next_page", 1)) if latest else 1
+                    save_checkpoint(search_term, match_keyword, chunk_from, chunk_to, kind, items, next_page, STATUS_ERROR)
+                latest = load_checkpoint(search_term, chunk_from, chunk_to, kind)
+                pages_done = max(0, int(latest.get("next_page", 1)) - 1) if latest else 0
+                record_ledger(search_term, chunk_from, chunk_to, status, pages_done, len(items), kind, "browser", note)
+                summary[status] = summary.get(status, 0) + 1
+                collected.append((match_keyword, items))
+                print("  -> " + str(len(items)) + " found, " + status + "\n")
+
+                consecutive_failures = consecutive_failures + 1 if status == STATUS_ERROR else 0
+                if consecutive_failures >= MAX_CONSECUTIVE_JOB_FAILURES:
+                    print("[browser] " + str(MAX_CONSECUTIVE_JOB_FAILURES) + "\uac1c \uc791\uc5c5\uc774 \uc5f0\uc18d\uc73c\ub85c \uc2e4\ud328\ud574 \uc911\ub2e8\ud569\ub2c8\ub2e4. \uc9c0\uae08\uae4c\uc9c0 \uc218\uc9d1\ud55c \uacb0\uacfc\ub294 \uc800\uc7a5\ud569\ub2c8\ub2e4.")
                     break
+
                 if page.is_closed():
-                    print("[browser] page is closed. opening a new page for the next keyword.")
+                    print("[browser] page is closed. opening a new page for the next job.")
                     try:
                         page = context.new_page()
                         page.goto(BASE_URL, wait_until="domcontentloaded", timeout=args.timeout * 1000)
                     except Exception:
                         close_context(context, cleanup_profile=False)
                         context, page = create_context_page(playwright, args, session_profile_dir)
-                print("  -> " + str(len(items)) + " found\n")
-
-                for item in items:
-                    contract_no = item["\uacc4\uc57d\ubc88\ud638"]
-                    if contract_no not in seen_nos:
-                        seen_nos.add(contract_no)
-                        all_results.append(item)
-                        keyword_map[contract_no] = [match_keyword]
-                    elif contract_no in keyword_map and match_keyword not in keyword_map[contract_no]:
-                        keyword_map[contract_no].append(match_keyword)
 
                 if job_index != len(jobs):
                     sleep_random(args.keyword_delay_range, "keyword delay")
@@ -472,11 +525,13 @@ def fetch_all_browser(date_from, date_to, keywords, args):
             close_context(context, cleanup_profile=False)
             cleanup_user_data_dir(session_profile_dir)
 
-    for item in all_results:
-        item["\ub9e4\uce6d\ud0a4\uc6cc\ub4dc"] = keyword_map.get(item["\uacc4\uc57d\ubc88\ud638"], [])
-
+    all_results = merge_job_results(collected)
     print("=" * 55)
-    print("\uc774\ubc88 \uac80\uc0c9 \uacb0\uacfc: " + str(len(all_results)) + "\uac74(\uc911\ubcf5 \uc81c\uac70)")
+    print("\uc774\ubc88 \uac80\uc0c9 \uacb0\uacfc: " + str(len(all_results)) + "\uac74 (\uc911\ubcf5 \uc81c\uac70)")
+    print("\uad6c\uac04 \uacb0\uacfc: \uc644\ub8cc " + str(summary[STATUS_COMPLETE]) + ", \ubd80\ubd84 " + str(summary[STATUS_PARTIAL])
+          + ", CAPTCHA " + str(summary[STATUS_CAPTCHA]) + ", \uc624\ub958 " + str(summary[STATUS_ERROR]))
+    if summary[STATUS_CAPTCHA] or summary[STATUS_ERROR] or summary[STATUS_PARTIAL]:
+        print("\ubbf8\uc644\ub8cc \uad6c\uac04\uc740 \uac19\uc740 \uba85\ub839\uc744 \ub2e4\uc2dc \uc2e4\ud589\ud558\uba74 \ub9c8\uc9c0\ub9c9 \ud398\uc774\uc9c0\ubd80\ud130 \uc774\uc5b4\uc11c \uc218\uc9d1\ud569\ub2c8\ub2e4.")
     return all_results
 
 def get_keywords_from_user(args):
@@ -511,6 +566,9 @@ def parse_args():
     parser.add_argument("--high-school-backfill", action="store_true", help="고등학교를 각 키워드 앞에 붙여 누락 가능성이 있는 계약을 브라우저로 다시 수집합니다.")
     parser.add_argument("--search-prefix", help="쉼표로 지정한 단어를 각 키워드 앞에 붙여 S2B 검색어를 좁힙니다. 예: 고등학교")
     parser.add_argument("--backfill-excluded", help="쉼표로 지정한 단어 때문에 과거에 제외됐을 가능성이 있는 계약명만 다시 수집합니다. 예: 고등학교,체육")
+    parser.add_argument("--chunk-days", type=int, default=DEFAULT_CHUNK_DAYS, help="긴 기간을 며칠 단위로 잘라 수집할지 지정합니다. 0이면 자르지 않습니다. 기본 " + str(DEFAULT_CHUNK_DAYS))
+    parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 건너뛰지 않고 다시 수집합니다. 체크포인트도 무시합니다.")
+    parser.add_argument("--coverage", action="store_true", help="키워드별 수집 완료 기간을 출력하고 종료합니다.")
     parser.add_argument("--no-github-upload", action="store_false", dest="github_upload", default=True, help="Disable automatic GitHub upload after saving cumulative files.")
     parser.add_argument("--github-upload", action="store_true", dest="github_upload", help="Enable automatic GitHub upload after saving cumulative files.")
     return parser.parse_args()
@@ -521,6 +579,12 @@ def main():
     print("  S2B browser cumulative crawler")
     print("=" * 55)
     args = parse_args()
+    if args.coverage:
+        try:
+            print_coverage(select_keywords(args))
+        except ValueError as exc:
+            print("[error] " + str(exc))
+        return
     try:
         args.page_delay_range = validate_delay_range(args.page_delay_min, args.page_delay_max, "--page-delay")
         args.keyword_delay_range = validate_delay_range(args.keyword_delay_min, args.keyword_delay_max, "--keyword-delay")
@@ -541,12 +605,7 @@ def main():
         if getattr(sys, "frozen", False):
             input("Press Enter to exit...")
         return
-    data = update_cumulative_json(results, date_from, date_to)
-    save_cumulative_html(data)
-    try:
-        publish_to_github(date_from, date_to, args.github_upload)
-    except Exception as exc:
-        print("[github] upload failed, but local files were saved: " + str(exc))
+    finalize_run(results, date_from, date_to, args.github_upload)
     print("done.")
     if getattr(sys, "frozen", False):
         input("Press Enter to exit...")
