@@ -224,12 +224,25 @@ def is_edu_institution(*names):
     return any(marker in text for marker in EDU_MARKERS)
 
 
+def contract_key_from_link(link):
+    # 상세 URL의 ctrtNo(계약번호)+ctrtChgOrd(변경차수). 같은 계약이 통합계약번호만 다르게 재등록되는 경우가 있어
+    # 통합계약번호 대신 계약번호로 식별하고, 변경계약(차수 01, 02…)은 원계약과 같은 레코드로 합쳐 최신 등록분을 남긴다.
+    match = re.search(r"ctrtNo=([A-Za-z0-9]+)", str(link or ""))
+    return match.group(1) if match else ""
+
+
 def normalize_contract(item):
     demand = parse_caret_list(item.get("dminsttList"))
     corps = parse_caret_list(item.get("corpList"))
     institution = first_or(demand, 2, item.get("cntrctInsttNm", ""))
+    link = (item.get("cntrctDtlInfoUrl") or "").strip()
+    contract_no = contract_key_from_link(link)
+    change_order = re.search(r"ctrtChgOrd=(\d+)", link)
     return {
-        "id": "contract:" + str(item.get("untyCntrctNo") or item.get("cntrctRefNo") or ""),
+        "id": "contract:" + (contract_no or str(item.get("untyCntrctNo") or item.get("cntrctRefNo") or "")),
+        "contract_no": contract_no,
+        "change_order": change_order.group(1) if change_order else "",
+        "unty_contract_no": str(item.get("untyCntrctNo") or ""),
         "source": "contract",
         "name": (item.get("cntrctNm") or "").strip(),
         "institution": institution,
@@ -323,10 +336,18 @@ def enrich(record, category):
     return record
 
 
-def select_records(raw_items, source, category, all_edu=False):
-    # 교육기관 필터(계약은 로컬, 공고/낙찰은 서버 필터 + 로컬 재확인) -> 정규화 -> 키워드 필터
+# 등록일 기준으로 받기 때문에 작년에 체결된 계약의 변경·재등록 건이 섞여 들어온다.
+# 계약일이 조회일보다 이만큼 이전이면 이미 지난 매출로 보고 뺀다.
+CONTRACT_MAX_BACKDATE_DAYS = 90
+
+
+def select_records(raw_items, source, category, all_edu=False, day=None):
+    # 교육기관 필터(계약은 로컬, 공고/낙찰은 서버 필터 + 로컬 재확인) -> 정규화 -> (계약) 오래된 계약일 제외 -> 키워드 필터
     normalizer = NORMALIZERS[source]
     edu_records = []
+    cutoff = ""
+    if source == "contract" and day:
+        cutoff = (datetime.strptime(day, "%Y%m%d") - timedelta(days=CONTRACT_MAX_BACKDATE_DAYS)).strftime("%Y-%m-%d")
     for item in raw_items:
         if source == "contract":
             demand_names = " ".join(entry[2] for entry in parse_caret_list(item.get("dminsttList")) if len(entry) > 2)
@@ -337,6 +358,8 @@ def select_records(raw_items, source, category, all_edu=False):
                 continue
         record = enrich(normalizer(item), category)
         if not record["id"].split(":", 1)[1]:
+            continue
+        if cutoff and record.get("date") and record["date"] < cutoff:
             continue
         edu_records.append(record)
     if all_edu:
@@ -358,12 +381,27 @@ def load_cumulative():
     return data
 
 
+def canonical_id(record):
+    # 이전 버전이 통합계약번호로 만든 id를 계약번호 기준으로 바꾼다 (같은 계약의 재등록 중복 제거).
+    if record.get("source") == "contract":
+        contract_no = record.get("contract_no") or contract_key_from_link(record.get("link"))
+        if contract_no:
+            record["contract_no"] = contract_no
+            return "contract:" + contract_no
+    return record.get("id", "")
+
+
 def merge_cumulative(records, date_from, date_to):
     imported_at = datetime.now().strftime("%Y-%m-%d %H:%M")
     data = load_cumulative()
-    by_id = {row["id"]: row for row in data["records"] if row.get("id")}
+    by_id = {}
+    for row in sorted(data["records"], key=lambda r: r.get("registered_at", "")):
+        row["id"] = canonical_id(row)
+        if row["id"]:
+            by_id[row["id"]] = row  # 같은 계약이면 등록일이 늦은 쪽이 남는다
     added = updated = 0
-    for incoming in records:
+    for incoming in sorted(records, key=lambda r: r.get("registered_at", "")):
+        incoming["id"] = canonical_id(incoming)
         existing = by_id.get(incoming["id"])
         incoming["last_imported_at"] = imported_at
         if not existing:
@@ -409,7 +447,7 @@ G2B_CSS = """
 .metric-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px}.metric{background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 14px}.metric-label{font-size:12px;color:#69727d;margin-bottom:4px}.metric-value{font-size:20px;font-weight:700;color:#263442}
 .table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto;max-height:calc(100vh - 300px);min-height:240px}table{width:100%;border-collapse:collapse;min-width:1100px}thead tr{background:#245a92;color:#fff}th{position:sticky;top:0;background:#245a92;padding:10px 8px;font-size:12px;font-weight:600;white-space:nowrap;text-align:left}td{padding:9px 8px;border-bottom:1px solid #edf0f2;vertical-align:top}tbody tr:hover td{background:#f8fbff}.tr{text-align:right;white-space:nowrap}.nowrap{white-space:nowrap}
 .tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.pill{display:inline-block;border-radius:10px;padding:1px 7px;font-size:11px;background:#eef2f5;color:#4b5561}.pill.nego{background:#fdecec;color:#b33a3a}
-a.lnk{color:#1769aa;text-decoration:none}a.lnk:hover{text-decoration:underline}.no-result{text-align:center;padding:48px 20px;color:#8a94a0}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}
+a.lnk{color:#1769aa;text-decoration:none}a.lnk:hover{text-decoration:underline}.no-result{text-align:center;padding:48px 20px;color:#8a94a0}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}.embed .header{display:none}.embed .wrap{padding:8px 10px}.embed .table-wrap{max-height:calc(100vh - 300px)}
 @media(max-width:900px){.metric-row{grid-template-columns:1fr 1fr}.wrap{padding:12px 8px}}
 """
 
@@ -458,7 +496,7 @@ function resetFilters(){['q','region','category','from','to'].forEach(function(i
 function downloadCsv(){var list=rows();var cols=['source','category','name','institution','contract_institution','region','school_level','method','counterpart','amount','date','close_at','open_at','bid_rate','participants','basis','link','keywords'];
   var lines=[cols.join(',')].concat(list.map(function(r){return cols.map(function(c){var v=c==='keywords'?(r.keywords||[]).join('|'):(r[c]==null?'':r[c]);return '"'+String(v).replace(/"/g,'""')+'"';}).join(',');}));
   var blob=new Blob(['﻿'+lines.join('\n')],{type:'text/csv;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='g2b_'+state.source+'_'+new Date().toISOString().slice(0,10)+'.csv';a.click();}
-document.addEventListener('DOMContentLoaded',function(){var regions={};RECORDS.forEach(function(r){if(r.region)regions[r.region]=1;});var sel=document.getElementById('region');Object.keys(regions).sort().forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k;sel.appendChild(o);});
+document.addEventListener('DOMContentLoaded',function(){var params=new URLSearchParams(location.search);if(params.get('embed')==='1'){document.body.classList.add('embed');}var initial=params.get('source');if(initial&&SOURCES[initial]){state.source=initial;}var regions={};RECORDS.forEach(function(r){if(r.region)regions[r.region]=1;});var sel=document.getElementById('region');Object.keys(regions).sort().forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k;sel.appendChild(o);});
   document.querySelectorAll('.tab-btn').forEach(function(b){var n=RECORDS.filter(function(r){return r.source===b.dataset.source;}).length;b.innerHTML=esc(SOURCES[b.dataset.source])+'<span class="cnt">'+n.toLocaleString('ko-KR')+'</span>';});render();});
 """
 
@@ -506,12 +544,18 @@ def ledger_kind(source):
     return "g2b:" + source
 
 
-def plan_jobs(sources, categories, date_from, date_to, recrawl=False):
+# 계약은 물품·용역만 받는다. 공사 계약은 교육기관 건이 많지만(하루 수백 건) 에듀테크 키워드에 걸린 적이 없고,
+# 서비스별 일일 호출 예산의 1/3을 잡아먹는다. 필요하면 --contract-categories 로 바꾼다.
+DEFAULT_CONTRACT_CATEGORIES = ("물품", "용역")
+
+
+def plan_jobs(sources, categories, date_from, date_to, recrawl=False, contract_categories=None):
     ledger = local.load_ledger()
     jobs, skipped = [], []
     for day in local.period_days(date_from, date_to):
         for source in sources:
-            for category in categories:
+            source_categories = list(contract_categories) if (source == "contract" and contract_categories) else categories
+            for category in source_categories:
                 job = {"source": source, "category": category, "day": day}
                 if not recrawl and local.is_covered(ledger, category, day, day, ledger_kind(source)):
                     skipped.append(job)
@@ -520,9 +564,11 @@ def plan_jobs(sources, categories, date_from, date_to, recrawl=False):
     return jobs, skipped
 
 
-def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, github_upload=True, dry_run=False, http_get=None):
-    jobs, skipped = plan_jobs(sources, categories, date_from, date_to, recrawl)
-    print("[g2b] " + local.display_date(date_from) + " ~ " + local.display_date(date_to) + " | sources " + ",".join(sources) + " | categories " + ",".join(categories))
+def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, github_upload=True, dry_run=False, http_get=None, contract_categories=None):
+    if contract_categories is None:
+        contract_categories = [c for c in DEFAULT_CONTRACT_CATEGORIES if c in categories] or list(categories)
+    jobs, skipped = plan_jobs(sources, categories, date_from, date_to, recrawl, contract_categories)
+    print("[g2b] " + local.display_date(date_from) + " ~ " + local.display_date(date_to) + " | sources " + ",".join(sources) + " | categories " + ",".join(categories) + (" | contract: " + ",".join(contract_categories) if "contract" in sources else ""))
     print("[g2b] jobs " + str(len(jobs)) + " (skip " + str(len(skipped)) + " already complete)" + (" | all-edu" if all_edu else " | keyword filter") + (" | DRY RUN" if dry_run else ""))
     for source in sources:
         print("[g2b] " + source + " calls today so far: " + str(calls_today(source)) + "/" + str(DAILY_CALL_BUDGET))
@@ -530,16 +576,35 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
     collected = []
     summary = {"complete": 0, "error": 0}
     stopped = None
+    # 하루치가 끝날 때마다 누적 파일에 반영하고 그 뒤에 원장을 쓴다. 중간에 죽어도 진행 중이던 하루만 다시 받으면 된다.
+    pending_records = []
+    pending_ledger = []
+    current_day = None
+
+    def flush():
+        nonlocal pending_records, pending_ledger
+        if dry_run or (not pending_records and not pending_ledger):
+            pending_records, pending_ledger = [], []
+            return
+        if pending_records:
+            merge_cumulative(pending_records, current_day, current_day)
+        for entry in pending_ledger:
+            local.record_ledger(*entry)
+        pending_records, pending_ledger = [], []
+
     for index, job in enumerate(jobs, 1):
         source, category, day = job["source"], job["category"], job["day"]
+        if day != current_day:
+            flush()
+            current_day = day
         label = "[" + SOURCES[source]["label"] + "/" + category + "] " + local.display_date(day)
         try:
             raw, total, pages = fetch_source_day(source, category, day, http_get)
-            records, edu_count = select_records(raw, source, category, all_edu)
+            records, edu_count = select_records(raw, source, category, all_edu, day)
             print(label + " raw " + str(total) + " -> edu " + str(edu_count) + " -> kept " + str(len(records)) + " (" + str(pages) + " calls) (" + str(index) + "/" + str(len(jobs)) + ")")
             collected.extend(records)
-            if not dry_run:
-                local.record_ledger(category, day, day, local.STATUS_COMPLETE, pages, len(records), ledger_kind(source), "api", "raw " + str(total) + " edu " + str(edu_count))
+            pending_records.extend(records)
+            pending_ledger.append((category, day, day, local.STATUS_COMPLETE, pages, len(records), ledger_kind(source), "api", "raw " + str(total) + " edu " + str(edu_count)))
             summary["complete"] += 1
         except BudgetExceeded as exc:
             print(label + " 중단: " + str(exc))
@@ -547,12 +612,12 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
             break
         except G2BError as exc:
             print(label + " 오류: " + str(exc))
-            if not dry_run:
-                local.record_ledger(category, day, day, local.STATUS_ERROR, 0, 0, ledger_kind(source), "api", str(exc)[:200])
+            pending_ledger.append((category, day, day, local.STATUS_ERROR, 0, 0, ledger_kind(source), "api", str(exc)[:200]))
             summary["error"] += 1
             if "활용신청" in str(exc):
                 stopped = str(exc)
                 break
+    flush()
 
     print("=" * 55)
     print("[g2b] 수집 " + str(len(collected)) + "건 | 완료 " + str(summary["complete"]) + ", 오류 " + str(summary["error"]) + (" | 중단: " + stopped if stopped else ""))
@@ -560,7 +625,7 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
         local.notify("나라장터 수집 중단", stopped)
     if dry_run:
         return collected
-    data = merge_cumulative(collected, date_from, date_to)
+    data = merge_cumulative([], date_from, date_to)
     save_html(data)
     # 통합 대시보드(index.html)는 학교장터 누적 + 나라장터 누적을 함께 싣는다. 여기서도 다시 만들어 둔다.
     try:
@@ -579,7 +644,8 @@ def parse_args(argv=None):
     parser.add_argument("--from", dest="date_from", help="시작일 YYYYMMDD (기본: 전 영업일)")
     parser.add_argument("--to", dest="date_to", help="종료일 YYYYMMDD (기본: 시작일과 같음)")
     parser.add_argument("--sources", default=",".join(SOURCE_ORDER), help="contract,bid,award 중 선택 (기본 전부)")
-    parser.add_argument("--categories", default=",".join(CATEGORIES), help="물품,용역,공사 중 선택 (기본 전부)")
+    parser.add_argument("--categories", default=",".join(CATEGORIES), help="물품,용역,공사 중 선택 (기본 전부; 입찰공고·낙찰에 적용)")
+    parser.add_argument("--contract-categories", default=",".join(DEFAULT_CONTRACT_CATEGORIES), help="계약 소스에만 적용할 구분. 기본 물품,용역 (공사 제외)")
     parser.add_argument("--all-edu", action="store_true", help="키워드 필터 없이 교육기관 건 전체를 저장합니다.")
     parser.add_argument("--recrawl", action="store_true", help="원장에 완료 기록이 있어도 다시 받습니다.")
     parser.add_argument("--coverage", action="store_true", help="소스별 수집 완료 기간을 출력하고 종료합니다.")
@@ -608,7 +674,8 @@ def main(argv=None):
     args = parse_args(argv)
     sources = [item.strip() for item in args.sources.split(",") if item.strip()]
     categories = [item.strip() for item in args.categories.split(",") if item.strip()]
-    unknown = [item for item in sources if item not in SOURCES] + [item for item in categories if item not in CATEGORIES]
+    contract_categories = [item.strip() for item in args.contract_categories.split(",") if item.strip()]
+    unknown = [item for item in sources if item not in SOURCES] + [item for item in categories + contract_categories if item not in CATEGORIES]
     if unknown:
         print("[error] unknown source/category: " + ", ".join(unknown))
         return 2
@@ -621,7 +688,7 @@ def main(argv=None):
     except ValueError as exc:
         print("[error] " + str(exc))
         return 2
-    run(date_from, date_to, sources, categories, args.all_edu, args.recrawl, args.github_upload, args.dry_run)
+    run(date_from, date_to, sources, categories, args.all_edu, args.recrawl, args.github_upload, args.dry_run, None, contract_categories)
     print("done.")
     return 0
 
