@@ -49,6 +49,42 @@
       "finished_at": "2026-09-23 14:51"
     },
     {
+      "search_term": "공사",
+      "kind": "g2b:contract",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 5,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 4511 edu 644",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:bid",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 54 edu 54",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:award",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 10",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
       "search_term": "교과보충",
       "kind": "normal",
       "from": "20260701",
@@ -215,6 +251,42 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-09-23 14:40"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:contract",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 3,
+      "records": 5,
+      "mode": "api",
+      "note": "raw 2732 edu 841",
+      "finished_at": "2026-09-24 09:58"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 115 edu 115",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 94 edu 94",
+      "finished_at": "2026-09-24 09:59"
     },
     {
       "search_term": "미래엔",
@@ -407,6 +479,42 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-09-23 14:26"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:contract",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 6,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 5453 edu 1350",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 40 edu 40",
+      "finished_at": "2026-09-24 09:59"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 14 edu 14",
+      "finished_at": "2026-09-24 09:59"
     },
     {
       "search_term": "자작자작",
@@ -733,5 +841,5 @@
       "finished_at": "2026-09-23 14:36"
     }
   ],
-  "updated_at": "2026-09-23 14:51"
+  "updated_at": "2026-09-24 09:59"
 }

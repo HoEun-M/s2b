@@ -94,6 +94,31 @@ S2B 검색은 계약명 부분 문자열 검색이라 `수학` 한 번이면 `�
 | `region_overrides.json`, `deleted_records.json` | 수동 보정 이력의 로컬 사본. 정본은 Supabase입니다. |
 | `supabase_setup.sql` | Supabase 테이블(`region_overrides`, `deleted_records`, `school_type_overrides`) 및 RLS 정책. |
 
+## 나라장터(G2B) 수집기 — `g2b_api_crawler.py`
+
+공공데이터포털의 조달청 오픈API로 **교육기관의 입찰공고 · 낙찰 · 계약**을 받습니다. 학교장터가 2천만 원 이하 소액 수의계약 위주라면, 나라장터에는 그보다 큰 건과 경쟁입찰이 있습니다. 인증키는 공휴일 API와 같은 data.go.kr 키(`S2B_DATA_GO_KR_KEY` 환경변수로 덮어쓰기)이고, 입찰공고정보·계약정보·낙찰정보 3개 서비스에 활용신청이 되어 있어야 합니다(개발계정 서비스당 1,000회/일).
+
+| 소스 | 오퍼레이션 (실제 응답으로 확정) | 기준일 | 필터 |
+| --- | --- | --- | --- |
+| 계약 | `ao/CntrctInfoService/getCntrctInfoList{Thng,Servc,Cnstwk}` | 등록일시(`inqryDiv=1`) | 서버 필터 없음 → 전체(하루 물품 약 2,700·용역 5,400·공사 4,500건)를 999건씩 받아 로컬에서 교육기관(`cntrctInsttJrsdctnDivNm=교육기관` 또는 기관명) 선별 |
+| 입찰공고 | `ad/BidPublicInfoService/getBidPblancListInfo{…}PPSSrch` | 공고게시일시(`inqryDiv=1`) | `dminsttNm=교육청` 서버 필터 (하루 약 200건) |
+| 낙찰 | `as/ScsbidInfoService/getScsbidListSttus{…}PPSSrch` | 개찰일시(`inqryDiv=2`) | `dminsttNm=교육청` 서버 필터 (하루 약 120건) |
+
+- 하루치 전체가 요청 약 20건. 원장에는 `kind=g2b:<source>`, `search_term=<업무구분>`으로 기록되며 완료된 날은 건너뜁니다(`--recrawl`로 무시).
+- 교육기관 건 중 학교장터와 같은 키워드/제외어에 걸리는 것만 저장합니다. 하루 3,500건 중 10~20건 수준으로 적은데, 에듀테크 소액 건은 대부분 학교장터로 가기 때문입니다. `--all-edu`를 주면 교육기관 건 전체를 저장합니다.
+- 계약 레코드의 계약방법(`cntrctCnclsMthdNm`)으로 수의계약 여부를 판정합니다. 나라장터에는 수의계약 전용 서비스가 없습니다.
+- 결과는 `g2b_cumulative.json`에 쌓이고, **통합 대시보드 `index.html`** 에 학교장터 레코드와 함께 실립니다. 탭 아래 **출처 선택(통합 / 학교장터 / 나라장터)** 이 대시보드와 세부 내역 양쪽에 적용되고, 나라장터일 때는 계약 / 입찰공고 / 낙찰 구분 칩이 나타납니다. 대시보드 금액은 계약 건만 집계하며(입찰공고·낙찰 제외), 나라장터 행은 이름 앞에 `나라장터 · 계약 · 수의계약` 배지가 붙습니다. 선택한 출처는 브라우저에 기억됩니다. 입찰공고의 마감·개찰일, 낙찰의 투찰률·참가수 같은 나라장터 고유 컬럼은 별도 페이지 `g2b.html`에서 봅니다.
+- 학교장터 크롤러와 나라장터 수집기 어느 쪽을 실행해도 `index.html`이 두 누적 파일을 읽어 다시 만들어지므로 항상 최신 통합본이 올라갑니다.
+- 호출 수는 `outputs/g2b_call_log.json`에 서비스별·일별로 기록되고 800회를 넘기면 그날 수집을 멈춥니다. 속도 제한(오류 22/23)은 60초 후 재시도합니다.
+
+```bash
+python g2b_api_crawler.py                                # 전 영업일, 세 소스 전부
+python g2b_api_crawler.py --from 20260901 --to 20260930  # 기간 지정 (하루 약 20회 × 일수)
+python g2b_api_crawler.py --sources contract --categories 물품,용역 --all-edu
+python g2b_api_crawler.py --coverage
+python g2b_auto_previous.py                              # 스케줄러/exe용 진입점
+```
+
 ## 지역 보정 스크립트
 
 지역이 비어 있는 레코드를 단계적으로 채우는 일회성 도구들입니다. 위쪽일수록 가볍고 먼저 돌립니다.

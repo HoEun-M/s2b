@@ -18,6 +18,7 @@ node_modules/
 
 # Large local exports / working data
 outputs/checkpoints/
+outputs/g2b_call_log.json
 outputs/admin_backups/
 outputs/s2b_export/
 outputs/s2b_custom_tabs_deleted_excluded/
