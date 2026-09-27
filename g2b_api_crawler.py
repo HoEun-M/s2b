@@ -328,7 +328,8 @@ def enrich(record, category):
     record["keywords"] = local.tag_keywords(record.get("name", ""))
     record["excluded"] = local.is_excluded_contract_name(record.get("name", ""))
     region = local.region_from_institution_name(institution) or {}
-    record["region"] = region.get("region", "") or local.short_region(institution)
+    resolved_region = region.get("region", "") or local.short_region(institution)
+    record["region"] = "전남" if resolved_region == "광주" else resolved_region
     record["school_name"] = school
     record["school_level"] = local.school_level(school)
     record["school_category"] = local.school_category(school)
@@ -436,18 +437,79 @@ def merge_cumulative(records, date_from, date_to):
 # ---------------------------------------------------------------------------
 
 G2B_CSS = """
-@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-*{box-sizing:border-box}body{margin:0;font-family:'Nanum Gothic','Malgun Gothic',Arial,sans-serif;font-size:13px;color:#2f343b;background:#f4f6f8}
-.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#245a92;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+*{box-sizing:border-box}body{margin:0;font-family:'Pretendard','Malgun Gothic',Arial,sans-serif;font-size:13px;color:#3d453e;background:#f6f8f6}
+.wrap{max-width:1280px;margin:0 auto;padding:24px 16px}.header{background:#54805f;color:#fff;padding:20px 24px;border-radius:8px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
 .header h1{font-size:19px;margin:0 0 7px}.meta{font-size:12px;opacity:.88}.header a{color:#fff;font-size:12px}
-.nav-tabs{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}.tab-btn{height:34px;border:1px solid #bfd0df;border-radius:6px;background:#fff;color:#263442;font-family:inherit;font-size:13px;padding:0 14px;cursor:pointer}.tab-btn.active{border-color:#245a92;background:#245a92;color:#fff}.cnt{opacity:.75;margin-left:4px}
-.toolbar{background:#fff;border:1px solid #dce4ec;border-radius:8px;margin-bottom:14px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.toolbar input,.toolbar select{height:30px;border:1px solid #b9c7d6;border-radius:6px;padding:0 8px;font-family:inherit;font-size:12px}.toolbar input[type=text]{min-width:220px}
-.btn{height:30px;border:1px solid #245a92;border-radius:6px;background:#fff;color:#245a92;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.btn.active{background:#245a92;color:#fff}
-.metric-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px}.metric{background:#fff;border:1px solid #e2e6ea;border-radius:8px;padding:12px 14px}.metric-label{font-size:12px;color:#69727d;margin-bottom:4px}.metric-value{font-size:20px;font-weight:700;color:#263442}
-.table-wrap{background:#fff;border:1px solid #e2e6ea;border-radius:8px;overflow:auto;max-height:calc(100vh - 300px);min-height:240px}table{width:100%;border-collapse:collapse;min-width:1100px}thead tr{background:#245a92;color:#fff}th{position:sticky;top:0;background:#245a92;padding:10px 8px;font-size:12px;font-weight:600;white-space:nowrap;text-align:left}td{padding:9px 8px;border-bottom:1px solid #edf0f2;vertical-align:top}tbody tr:hover td{background:#f8fbff}.tr{text-align:right;white-space:nowrap}.nowrap{white-space:nowrap}
-.tag{display:inline-block;background:#e8f1fa;color:#245a92;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.pill{display:inline-block;border-radius:10px;padding:1px 7px;font-size:11px;background:#eef2f5;color:#4b5561}.pill.nego{background:#fdecec;color:#b33a3a}
-a.lnk{color:#1769aa;text-decoration:none}a.lnk:hover{text-decoration:underline}.no-result{text-align:center;padding:48px 20px;color:#8a94a0}.footer{text-align:center;color:#9aa3ad;font-size:11px;margin-top:18px}.embed .header{display:none}.embed .wrap{padding:8px 10px}.embed .table-wrap{max-height:calc(100vh - 300px)}
+.nav-tabs{display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}.tab-btn{height:34px;border:1px solid #c5d6cb;border-radius:6px;background:#fff;color:#3d453e;font-family:inherit;font-size:13px;padding:0 14px;cursor:pointer}.tab-btn.active{border-color:#54805f;background:#54805f;color:#fff}.cnt{opacity:.75;margin-left:4px}
+.toolbar{background:#fff;border:1px solid #dfe8e1;border-radius:8px;margin-bottom:14px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.toolbar input,.toolbar select{height:30px;border:1px solid #c2d4c8;border-radius:6px;padding:0 8px;font-family:inherit;font-size:12px}.toolbar input[type=text]{min-width:220px}
+.btn{height:30px;border:1px solid #54805f;border-radius:6px;background:#fff;color:#54805f;font-family:inherit;font-size:12px;padding:0 10px;cursor:pointer}.btn.active{background:#54805f;color:#fff}
+.metric-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px}.metric{background:#fff;border:1px solid #e3ebe5;border-radius:8px;padding:12px 14px}.metric-label{font-size:12px;color:#70807a;margin-bottom:4px}.metric-value{font-size:20px;font-weight:700;color:#3d453e}
+.table-wrap{background:#fff;border:1px solid #e3ebe5;border-radius:8px;overflow:auto;max-height:calc(100vh - 300px);min-height:240px}table{width:100%;border-collapse:collapse;min-width:1100px}thead tr{background:#54805f;color:#fff}th{position:sticky;top:0;background:#54805f;padding:10px 8px;font-size:12px;font-weight:600;white-space:nowrap;text-align:left}td{padding:9px 8px;border-bottom:1px solid #eaf1ec;vertical-align:top}tbody tr:hover td{background:#f6f9f7}.tr{text-align:right;white-space:nowrap}.nowrap{white-space:nowrap}
+.tag{display:inline-block;background:#eef4f0;color:#54805f;border-radius:10px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}.pill{display:inline-block;border-radius:10px;padding:1px 7px;font-size:11px;background:#f2f5f2;color:#5a685f}.pill.nego{background:#f7ede8;color:#c98f80}
+a.lnk{color:#4f8068;text-decoration:none}a.lnk:hover{text-decoration:underline}.no-result{text-align:center;padding:48px 20px;color:#8fa096}.footer{text-align:center;color:#99a89e;font-size:11px;margin-top:18px}.embed .header{display:none}.embed .wrap{padding:8px 10px}.embed .table-wrap{max-height:calc(100vh - 300px)}
 @media(max-width:900px){.metric-row{grid-template-columns:1fr 1fr}.wrap{padding:12px 8px}}
 """
 
@@ -523,7 +585,7 @@ def build_html(data):
         "<select id='region' onchange='applyFilters()'><option value=''>지역 전체</option></select>"
         "<select id='category' onchange='applyFilters()'><option value=''>구분 전체</option>" + categories + "</select>"
         "<input type='date' id='from' onchange='applyFilters()'> ~ <input type='date' id='to' onchange='applyFilters()'>"
-        "<button type='button' class='btn' onclick='resetFilters()'>초기화</button><button type='button' class='btn' onclick='downloadCsv()'>CSV 다운로드</button><span id='trunc' class='meta' style='color:#69727d'></span></div>"
+        "<button type='button' class='btn' onclick='resetFilters()'>초기화</button><button type='button' class='btn' onclick='downloadCsv()'>CSV 다운로드</button><span id='trunc' class='meta' style='color:#70807a'></span></div>"
         "<div class='table-wrap'><table><thead id='thead'></thead><tbody id='tbody'></tbody></table><div id='no-result' class='no-result'>조건에 맞는 건이 없습니다.</div></div>"
         "<div class='footer'>출처: 공공데이터포털 조달청 나라장터 입찰공고정보·낙찰정보·계약정보서비스</div></div>"
         "<script>var RECORDS=" + records_json + ";</script><script>" + G2B_JS + "</script></body></html>"

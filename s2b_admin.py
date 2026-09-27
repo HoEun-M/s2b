@@ -24,7 +24,7 @@ BACKUP_DIR = os.path.join(APP_DIR, "outputs", "admin_backups")
 SUPABASE_URL = os.environ.get("S2B_SUPABASE_URL", "https://fozuzbszeujgskjasvzq.supabase.co").rstrip("/")
 SUPABASE_KEY = os.environ.get("S2B_SUPABASE_KEY", "sb_publishable_bFJbCmjIbzCEracNlI-lhA_9hYn1rdc")
 
-REGIONS = ["", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
+REGIONS = ["", "서울", "부산", "대구", "인천", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주"]
 SCHOOL_LEVELS = ["", "유", "초", "중", "고", "기타"]
 EDITABLE_FIELDS = {
     "school_level",
@@ -390,7 +390,7 @@ HTML = r"""<!doctype html>
   </div>
 </div>
 <script>
-const REGIONS=["","서울","부산","대구","인천","광주","대전","울산","세종","경기","강원","충북","충남","전북","전남","경북","경남","제주"];
+const REGIONS=["","서울","부산","대구","인천","대전","울산","세종","경기","강원","충북","충남","전북","전남","경북","경남","제주"];
 const LEVELS=["","유","초","중","고","기타"];
 let offset=0, limit=80, total=0, selected=null;
 function el(id){return document.getElementById(id)}
