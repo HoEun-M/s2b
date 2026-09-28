@@ -2250,7 +2250,7 @@ const PURCHASE_TYPES=[
 {key:'coding',label:'코딩',keywords:['코딩','Coding','퓨너스']},
 {key:'material',label:'교구·실물자료',keywords:['레고','LEGO','스파이크','포디랜드','4D프레임','고피쉬','카드게임','보드게임','키트','모형','드론','로봇','메이커','3D펜','VR','AR']},
 {key:'book',label:'교재·도서',keywords:['만점왕','EBS','워크북','문제집','받아쓰기','일일수학','기능중심수학','한걸음 수학','학습지','교과서 외','권세트','4권세트','느린학습자용 교재 세트','초등 쓰기 워크북']},
-{key:'aiep',label:'AIEP(AI데이터 교육플랫폼)',keywords:['디지털플랫폼','AI-데이터 중심']},
+{key:'aiep',label:'AIEP(AI데이터 교육플랫폼)',keywords:['디지털플랫폼 운영 및 유지관리','AI-데이터 중심']},
 {key:'service',label:'연수·컨설팅·용역',keywords:['연수','강사','컨설팅','직무연수','교원연수','운영용역']},
 {key:'uncategorized',label:'미분류',keywords:[]}
 ];
@@ -2266,7 +2266,10 @@ const PURCHASE_TYPE_OVERRIDES={
 '202605221258266':'tool',
 '202604301207798':'tool',
 '202604271195124':'tool',
-'202604271195767':'tool'
+'202604271195767':'tool',
+'contract:R26TA02260184':'aiep',
+'contract:R26TA01931534':'aiep',
+'contract:R26TA01573010':'aiep'
 };
 var REGION_SUPPORT_TOKENS={서울:['서울','서울특별시'],부산:['부산','부산광역시'],대구:['대구','대구광역시'],인천:['인천','인천광역시'],광주:['광주','광주광역시'],대전:['대전','대전광역시'],울산:['울산','울산광역시'],세종:['세종','세종특별자치시'],경기:['경기','경기도'],강원:['강원','강원특별자치도'],충북:['충북','충청북도'],충남:['충남','충청남도'],전북:['전북','전라북도','전북특별자치도'],전남:['전남','전라남도'],경북:['경북','경상북도'],경남:['경남','경상남도'],제주:['제주','제주특별자치도']};
 function supportMatchesRegion(region,support){if(!region||!support||support==='\uBBF8\uC9C0\uC815'){return true;}var tokens=REGION_SUPPORT_TOKENS[region]||[region];return tokens.some(function(token){return support.indexOf(token)!==-1;});}
