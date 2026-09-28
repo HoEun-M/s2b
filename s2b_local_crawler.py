@@ -2250,6 +2250,7 @@ const PURCHASE_TYPES=[
 {key:'coding',label:'코딩',keywords:['코딩','Coding','퓨너스']},
 {key:'material',label:'교구·실물자료',keywords:['레고','LEGO','스파이크','포디랜드','4D프레임','고피쉬','카드게임','보드게임','키트','모형','드론','로봇','메이커','3D펜','VR','AR']},
 {key:'book',label:'교재·도서',keywords:['만점왕','EBS','워크북','문제집','받아쓰기','일일수학','기능중심수학','한걸음 수학','학습지','교과서 외','권세트','4권세트','느린학습자용 교재 세트','초등 쓰기 워크북']},
+{key:'aiep',label:'AIEP(AI데이터 교육플랫폼)',keywords:['디지털플랫폼','AI-데이터 중심']},
 {key:'service',label:'연수·컨설팅·용역',keywords:['연수','강사','컨설팅','직무연수','교원연수','운영용역']},
 {key:'uncategorized',label:'미분류',keywords:[]}
 ];
