@@ -99,6 +99,138 @@
     {
       "search_term": "AI",
       "kind": "normal",
+      "from": "20260201",
+      "to": "20260207",
+      "status": "complete",
+      "pages": 1,
+      "records": 81,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:32"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260208",
+      "to": "20260214",
+      "status": "complete",
+      "pages": 1,
+      "records": 113,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:33"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260215",
+      "to": "20260221",
+      "status": "complete",
+      "pages": 1,
+      "records": 75,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:35"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260222",
+      "to": "20260228",
+      "status": "complete",
+      "pages": 1,
+      "records": 230,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:36"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260301",
+      "to": "20260307",
+      "status": "complete",
+      "pages": 1,
+      "records": 156,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:37"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260308",
+      "to": "20260314",
+      "status": "complete",
+      "pages": 1,
+      "records": 239,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:38"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260315",
+      "to": "20260321",
+      "status": "complete",
+      "pages": 1,
+      "records": 222,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:39"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260322",
+      "to": "20260328",
+      "status": "complete",
+      "pages": 1,
+      "records": 376,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:40"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260329",
+      "to": "20260404",
+      "status": "complete",
+      "pages": 1,
+      "records": 484,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:41"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260405",
+      "to": "20260411",
+      "status": "complete",
+      "pages": 1,
+      "records": 556,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:43"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260412",
+      "to": "20260418",
+      "status": "complete",
+      "pages": 1,
+      "records": 634,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:44"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
       "from": "20260413",
       "to": "20260419",
       "status": "complete",
@@ -107,6 +239,138 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-10-07 22:00"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260419",
+      "to": "20260425",
+      "status": "complete",
+      "pages": 1,
+      "records": 616,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:45"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260426",
+      "to": "20260502",
+      "status": "complete",
+      "pages": 1,
+      "records": 431,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:46"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260503",
+      "to": "20260509",
+      "status": "complete",
+      "pages": 1,
+      "records": 344,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:47"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260510",
+      "to": "20260516",
+      "status": "complete",
+      "pages": 1,
+      "records": 546,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:48"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260517",
+      "to": "20260523",
+      "status": "complete",
+      "pages": 1,
+      "records": 498,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:49"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260524",
+      "to": "20260530",
+      "status": "complete",
+      "pages": 1,
+      "records": 338,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:51"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260531",
+      "to": "20260606",
+      "status": "complete",
+      "pages": 1,
+      "records": 368,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:52"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260607",
+      "to": "20260613",
+      "status": "complete",
+      "pages": 1,
+      "records": 367,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:52"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260614",
+      "to": "20260620",
+      "status": "complete",
+      "pages": 1,
+      "records": 362,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:53"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260621",
+      "to": "20260627",
+      "status": "complete",
+      "pages": 1,
+      "records": 337,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:55"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260628",
+      "to": "20260704",
+      "status": "complete",
+      "pages": 1,
+      "records": 284,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:56"
     },
     {
       "search_term": "AI",
@@ -123,6 +387,54 @@
     {
       "search_term": "AI",
       "kind": "normal",
+      "from": "20260705",
+      "to": "20260711",
+      "status": "complete",
+      "pages": 1,
+      "records": 319,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:57"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260712",
+      "to": "20260718",
+      "status": "complete",
+      "pages": 1,
+      "records": 233,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:58"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260719",
+      "to": "20260725",
+      "status": "complete",
+      "pages": 1,
+      "records": 275,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:59"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260726",
+      "to": "20260801",
+      "status": "complete",
+      "pages": 1,
+      "records": 130,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:00"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
       "from": "20260801",
       "to": "20260831",
       "status": "complete",
@@ -131,6 +443,66 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-09-23 14:51"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260802",
+      "to": "20260808",
+      "status": "complete",
+      "pages": 1,
+      "records": 97,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:01"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260809",
+      "to": "20260815",
+      "status": "complete",
+      "pages": 1,
+      "records": 167,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:03"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260816",
+      "to": "20260822",
+      "status": "complete",
+      "pages": 1,
+      "records": 350,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:04"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260823",
+      "to": "20260829",
+      "status": "complete",
+      "pages": 1,
+      "records": 465,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:05"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260830",
+      "to": "20260905",
+      "status": "complete",
+      "pages": 1,
+      "records": 506,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:06"
     },
     {
       "search_term": "AI",
@@ -147,6 +519,18 @@
     {
       "search_term": "AI",
       "kind": "normal",
+      "from": "20260906",
+      "to": "20260912",
+      "status": "complete",
+      "pages": 1,
+      "records": 519,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:07"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
       "from": "20260908",
       "to": "20260914",
       "status": "complete",
@@ -155,6 +539,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-09-30 08:49"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260913",
+      "to": "20260919",
+      "status": "complete",
+      "pages": 1,
+      "records": 452,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:08"
     },
     {
       "search_term": "AI",
@@ -171,6 +567,18 @@
     {
       "search_term": "AI",
       "kind": "normal",
+      "from": "20260920",
+      "to": "20260926",
+      "status": "complete",
+      "pages": 1,
+      "records": 233,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:10"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
       "from": "20260922",
       "to": "20260928",
       "status": "complete",
@@ -179,6 +587,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-09-30 09:49"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20260927",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 1,
+      "records": 300,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 23:11"
     },
     {
       "search_term": "AI",
@@ -26569,5 +26989,5 @@
       "finished_at": "2026-10-02 09:15"
     }
   ],
-  "updated_at": "2026-10-07 22:00"
+  "updated_at": "2026-10-07 23:11"
 }
