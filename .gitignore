@@ -28,5 +28,8 @@ outputs/delete_review_candidates.csv
 outputs/supabase_*_current.json
 outputs/school_type_mapping_current.json
 
+# 2025년 별도 비교 분석 (기존 누적 데이터와 미병합, 깃허브에는 올리지 않음)
+s2b_2025_side_analysis/
+
 # Local secrets
 .env
