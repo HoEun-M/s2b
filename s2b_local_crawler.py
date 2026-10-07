@@ -1578,6 +1578,7 @@ def fetch_school_candidates(institution):
     if cache_key in _school_region_cache:
         return _school_region_cache[cache_key]
     candidates = []
+    lookup_failed = False
     for lookup_name in lookup_names:
         name = normalize_school_name(lookup_name)
         params = {
@@ -1600,8 +1601,10 @@ def fetch_school_candidates(institution):
             if candidates:
                 break
         except Exception as exc:
+            lookup_failed = True
             print("[region] school lookup failed for " + lookup_name + ": " + str(exc))
-    _school_region_cache[cache_key] = candidates
+    if candidates or not lookup_failed:
+        _school_region_cache[cache_key] = candidates
     return candidates
 
 
@@ -1749,7 +1752,10 @@ def consolidate_gwangju_region(region, subregion):
     return region, subregion
 
 
-def to_cumulative_record(result, date_from, date_to, imported_at):
+GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
+
+
+def to_cumulative_record(result, date_from, date_to, imported_at, resolve_geo=True):
     institution = result.get("계약기관", "")
     record = {
         "id": stable_id(result),
@@ -1767,6 +1773,8 @@ def to_cumulative_record(result, date_from, date_to, imported_at):
         "school_level": school_level(institution),
         "school_type": school_type(institution),
     }
+    if not resolve_geo:
+        return record
     record.update(resolve_region(institution))
     record["support_office"] = infer_support_office(record.get("region", ""), institution, record.get("region_candidates", []), record.get("business_place", ""))
     record["region"], record["support_office"] = normalize_record_region_support(record.get("region", ""), record.get("support_office", ""))
@@ -1800,14 +1808,18 @@ def update_cumulative_json(results, date_from, date_to):
         old.setdefault("region_candidates", [])
         old.setdefault("support_office", infer_support_office(old.get("region", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", "")))
         old["region"], old["support_office"] = normalize_record_region_support(old.get("region", ""), old.get("support_office", ""))
-        old["subregion"] = infer_subregion(old.get("region", ""), old.get("support_office", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", ""))
+        # 새로 계산한 세부지역이 비어 있으면 기존 값을 유지한다 (전남으로 합쳐진 광주 세부지역이 재실행마다 지워지는 것 방지).
+        old["subregion"] = infer_subregion(old.get("region", ""), old.get("support_office", ""), old.get("institution", ""), old.get("region_candidates", []), old.get("business_place", "")) or old.get("subregion", "")
         old["region"], old["subregion"] = consolidate_gwangju_region(old.get("region", ""), old.get("subregion", ""))
         by_id[record_id] = old
 
     added = 0
     updated = 0
     for result in results:
-        incoming = to_cumulative_record(result, date_from, date_to, imported_at)
+        existing = by_id.get(stable_id(result))
+        # 이미 지역이 확정된 기존 레코드는 재수집해도 지역 조회(NEIS)를 다시 하지 않는다.
+        skip_geo = bool(existing and existing.get("region"))
+        incoming = to_cumulative_record(result, date_from, date_to, imported_at, resolve_geo=not skip_geo)
         existing = by_id.get(incoming["id"])
         if not existing:
             incoming["first_imported_at"] = imported_at
@@ -1819,7 +1831,11 @@ def update_cumulative_json(results, date_from, date_to):
         keywords = sorted(set(existing.get("keywords", [])) | set(incoming.get("keywords", [])))
         first_imported_at = existing.get("first_imported_at") or imported_at
         import_count = int(existing.get("import_count") or 0) + 1
+        # 지역 필드는 기존 값이 비어 있고 새로 얻은 값이 있을 때만 채운다 (조회 실패로 기존 값이 지워지는 것 방지).
+        geo = {key: incoming.pop(key) for key in GEO_FIELDS if key in incoming}
         existing.update(incoming)
+        if geo.get("region") and not existing.get("region"):
+            existing.update(geo)
         existing["keywords"] = keywords
         existing["first_imported_at"] = first_imported_at
         existing["import_count"] = import_count
