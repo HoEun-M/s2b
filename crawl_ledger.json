@@ -99,6 +99,18 @@
     {
       "search_term": "AI",
       "kind": "normal",
+      "from": "20260413",
+      "to": "20260419",
+      "status": "complete",
+      "pages": 1,
+      "records": 614,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-10-07 22:00"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
       "from": "20260701",
       "to": "20260731",
       "status": "complete",
@@ -26557,5 +26569,5 @@
       "finished_at": "2026-10-02 09:15"
     }
   ],
-  "updated_at": "2026-10-07 21:53"
+  "updated_at": "2026-10-07 22:00"
 }
