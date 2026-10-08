@@ -1752,6 +1752,8 @@ def consolidate_gwangju_region(region, subregion):
     return region, subregion
 
 
+VENDOR_COURSEWARE_AIDT_KEYWORDS = ("AIDT", "디지털 교육자료", "디지털교육자료", "AI디지털교과서", "AI 디지털 교과서", "발행사 AIDT")  # JS PURCHASE_TYPES의 aidt 키워드와 동일하게 유지
+
 GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
 
 
@@ -2139,6 +2141,12 @@ def build_cumulative_html(data):
         subregion = row.get("subregion", "") or infer_subregion(record_region, record_support, row.get("institution", ""), row.get("region_candidates", []), row.get("business_place", ""))
         dashboard_records.append({"id": row.get("id") or row.get("tender_no", ""), "name": row.get("contract_name", ""), "counterpart": row.get("counterpart", "") or "미지정", "amount": amount_number(row.get("amount", "")), "contractDate": row.get("contract_date", ""), "region": record_region or "미지정", "subregion": subregion or "미지정", "supportOffice": record_support or "미지정", "supportByRegion": support_by_region, "subregionByRegion": subregion_by_region, "schoolCategory": school_category(row.get("school_name_hint") or row.get("institution", "")), "schoolType": row.get("school_type", "") or school_type(row.get("institution", "")), "source": row.get("source", "s2b"), "kind": row.get("g2b_kind", "")})
     dashboard_json = json.dumps(dashboard_records, ensure_ascii=False, separators=(",", ":"))
+    vendor_courseware = {
+        str(rec["id"]): 1 for rec in dashboard_records
+        if rec["source"] != "g2b" and "미래엔" in re.sub(r"\s+", "", rec["counterpart"])
+        and not any(re.sub(r"\s+", "", kw).lower() in re.sub(r"\s+", "", rec["name"]).lower() for kw in VENDOR_COURSEWARE_AIDT_KEYWORDS)
+    }
+    vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
 
     css = """
 @font-face {
@@ -2285,25 +2293,9 @@ const PURCHASE_TYPE_OVERRIDES={
 '202604271195767':'tool',
 'contract:R26TA02260184':'aiep',
 'contract:R26TA01931534':'aiep',
-'contract:R26TA01573010':'aiep',
-'202609101494726':'courseware',
-'202604271193987':'courseware',
-'202605111224977':'courseware',
-'202606231325743':'courseware',
-'202604141158106':'courseware',
-'202604081138106':'courseware',
-'202605131231398':'courseware',
-'202608181426854':'courseware',
-'202606161310075':'courseware',
-'202606041283960':'courseware',
-'202604201175391':'courseware',
-'202604071135592':'courseware',
-'202605061211212':'courseware',
-'202609011465673':'courseware',
-'202605131234080':'courseware',
-'202609081487409':'courseware',
-'202608141424662':'courseware'
+'contract:R26TA01573010':'aiep'
 };
+const VENDOR_COURSEWARE_IDS=__VENDOR_COURSEWARE_IDS__;
 var REGION_SUPPORT_TOKENS={서울:['서울','서울특별시'],부산:['부산','부산광역시'],대구:['대구','대구광역시'],인천:['인천','인천광역시'],광주:['광주','광주광역시'],대전:['대전','대전광역시'],울산:['울산','울산광역시'],세종:['세종','세종특별자치시'],경기:['경기','경기도'],강원:['강원','강원특별자치도'],충북:['충북','충청북도'],충남:['충남','충청남도'],전북:['전북','전라북도','전북특별자치도'],전남:['전남','전라남도'],경북:['경북','경상북도'],경남:['경남','경상남도'],제주:['제주','제주특별자치도']};
 function supportMatchesRegion(region,support){if(!region||!support||support==='\uBBF8\uC9C0\uC815'){return true;}var tokens=REGION_SUPPORT_TOKENS[region]||[region];return tokens.some(function(token){return support.indexOf(token)!==-1;});}
 function readJsonStorage(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
@@ -2372,7 +2364,7 @@ function purchaseTypeTooltip(item){var desc={aidt:'AI 디지털 교육자료, AI
 function isComplexContract(name){return /외\\s*\\d+\\s*종/.test(name||'');}
 function amountFromRow(row){var cell=row.querySelector('td.tr');var digits=(cell?cell.textContent:'').replace(/[^0-9]/g,'');return Number(digits||0);}
 function vendorMatchesScope(row){var vendor=row.getAttribute('data-counterpart')||'';var has=normalizeSearchText(vendor).indexOf(normalizeSearchText('미래엔'))!==-1;if(purchaseVendorScope==='mirae'){return has;}if(purchaseVendorScope==='other'){return !has;}return true;}
-function classifyPurchaseType(name,recordId){if(recordId&&PURCHASE_TYPE_OVERRIDES[recordId]){return purchaseTypeByKey(PURCHASE_TYPE_OVERRIDES[recordId]);}var text=name||'';var normalized=normalizeSearchText(text);var coursewareGeneric=false;var concreteMatch=false;for(var i=0;i<PURCHASE_TYPES.length;i++){var type=PURCHASE_TYPES[i];if(type.key==='uncategorized'){continue;}for(var j=0;j<type.keywords.length;j++){var keyword=type.keywords[j];if(normalized.indexOf(normalizeSearchText(keyword))!==-1){if(type.key==='courseware'&&(keyword==='코스웨어'||keyword==='AI 코스웨어')){coursewareGeneric=true;}else{concreteMatch=true;}if(type.key!=='courseware'||keyword!=='코스웨어'){return type;}}}}if(coursewareGeneric){return purchaseTypeByKey('courseware');}return purchaseTypeByKey('uncategorized');}
+function classifyPurchaseType(name,recordId){if(recordId&&PURCHASE_TYPE_OVERRIDES[recordId]){return purchaseTypeByKey(PURCHASE_TYPE_OVERRIDES[recordId]);}if(recordId&&VENDOR_COURSEWARE_IDS[recordId]){return purchaseTypeByKey('courseware');}var text=name||'';var normalized=normalizeSearchText(text);var coursewareGeneric=false;var concreteMatch=false;for(var i=0;i<PURCHASE_TYPES.length;i++){var type=PURCHASE_TYPES[i];if(type.key==='uncategorized'){continue;}for(var j=0;j<type.keywords.length;j++){var keyword=type.keywords[j];if(normalized.indexOf(normalizeSearchText(keyword))!==-1){if(type.key==='courseware'&&(keyword==='코스웨어'||keyword==='AI 코스웨어')){coursewareGeneric=true;}else{concreteMatch=true;}if(type.key!=='courseware'||keyword!=='코스웨어'){return type;}}}}if(coursewareGeneric){return purchaseTypeByKey('courseware');}return purchaseTypeByKey('uncategorized');}
 function createPurchaseStats(){var byType={};PURCHASE_TYPES.forEach(function(type){byType[type.key]={key:type.key,label:type.label,count:0,amount:0,complex:0,levels:{},months:{}};});return {byType:byType,totalCount:0,totalAmount:0,complexCount:0};}
 function addPurchaseStats(stats,row,type,amount){var item=stats.byType[type.key]||stats.byType.uncategorized;var level=row.getAttribute('data-level')||'기타';var month=(row.getAttribute('data-contract-date')||'').slice(0,7)||'미지정';var complex=isComplexContract(row.getAttribute('data-contract-name')||'');item.count+=1;item.amount+=amount;item.levels[level]=(item.levels[level]||0)+amount;item.months[month]=(item.months[month]||0)+amount;stats.totalCount+=1;stats.totalAmount+=amount;if(complex){item.complex+=1;stats.complexCount+=1;}}
 function purchaseStatsItems(stats){return PURCHASE_TYPES.map(function(type){return stats.byType[type.key];}).filter(function(item){return item.count>0||item.key==='uncategorized';}).sort(function(a,b){if(a.key==='total'){return 1;}return b.amount-a.amount||b.count-a.count||a.label.localeCompare(b.label,'ko-KR');});}
@@ -2429,6 +2421,7 @@ document.addEventListener('DOMContentLoaded',function(){populateMonthPurchaseTyp
 """.strip()
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
     js = js.replace("__DASHBOARD_RECORDS__", dashboard_json.replace("</", "<\\/"))
+    js = js.replace("__VENDOR_COURSEWARE_IDS__", vendor_courseware_json)
 
     return (
         "<!DOCTYPE html><html lang='ko'><head>"
