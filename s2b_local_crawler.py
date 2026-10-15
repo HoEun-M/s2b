@@ -1769,6 +1769,14 @@ def consolidate_gwangju_region(region, subregion):
     return region, subregion
 
 
+def is_vendor_courseware(counterpart):
+    # 미래엔은 상호에 포함되면, 씨티(클래스팅)는 상호가 정확히 "(주)씨티"일 때만 코스웨어 업체로 본다.
+    compact = re.sub(r"\s+", "", counterpart or "")
+    if "미래엔" in compact:
+        return True
+    return compact.replace("주식회사", "").replace("(주)", "").replace("㈜", "") == "씨티"
+
+
 VENDOR_COURSEWARE_AIDT_KEYWORDS = ("AIDT", "디지털 교육자료", "디지털교육자료", "AI디지털교과서", "AI 디지털 교과서", "발행사 AIDT")  # JS PURCHASE_TYPES의 aidt 키워드와 동일하게 유지
 
 GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
@@ -2160,7 +2168,7 @@ def build_cumulative_html(data):
     dashboard_json = json.dumps(dashboard_records, ensure_ascii=False, separators=(",", ":"))
     vendor_courseware = {
         str(rec["id"]): 1 for rec in dashboard_records
-        if rec["source"] != "g2b" and "미래엔" in re.sub(r"\s+", "", rec["counterpart"])
+        if rec["source"] != "g2b" and is_vendor_courseware(rec["counterpart"])
         and not any(re.sub(r"\s+", "", kw).lower() in re.sub(r"\s+", "", rec["name"]).lower() for kw in VENDOR_COURSEWARE_AIDT_KEYWORDS)
     }
     vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
@@ -2283,8 +2291,7 @@ var purchaseVendorScope='all';
 var lastPurchaseStats=null;
 const PURCHASE_TYPES=[
 {key:'aidt',label:'AI디지털 교육자료 (AIDT)',keywords:['AIDT','디지털 교육자료','디지털교육자료','AI디지털교과서','AI 디지털 교과서','발행사 AIDT']},
-{key:'assessment',label:'평가도구',keywords:['지니아튜터','매쓰홀릭','매쓰홀릭T','스쿨플랫','매쓰플랫','수학대왕','기출탭탭','일프로연산','문제은행','진단평가','학력진단','단원평가','리드 인공지능 문해력 진단','수학 학습 프로그램','평가지원','평가']},
-{key:'courseware',label:'코스웨어',keywords:['코들','Codle','초코팝','초코클래스','달달','옥수수','홈런','아이스크림홈런','밀크티','스마트올','엘리하이','자작자작','클래스팅','클래스팅 AI','토도수학','알공 수학','똑똑수학탐험대','토도한글','러니','레서','매일국어T','리드','토도영어','알공 영어','쿠키영어','리딩앤','리딩게이트','리딩오션','원아워','영어독후활동프로그램','코드모스','엘리스스쿨','엘리스 LXP','플랭','플랭스쿨','스쿨런','두드림','AI 코스웨어','코스웨어']},
+{key:'courseware',label:'코스웨어',keywords:['코들','Codle','초코팝','초코클래스','달달','옥수수','홈런','아이스크림홈런','밀크티','스마트올','엘리하이','자작자작','클래스팅','클래스팅 AI','토도수학','알공 수학','똑똑수학탐험대','토도한글','러니','레서','매일국어T','리드','토도영어','알공 영어','쿠키영어','리딩앤','리딩게이트','리딩오션','원아워','영어독후활동프로그램','코드모스','엘리스스쿨','엘리스 LXP','플랭','플랭스쿨','스쿨런','두드림','AI 코스웨어','코스웨어','지니아튜터','매쓰홀릭','매쓰홀릭T','스쿨플랫','매쓰플랫','수학대왕','기출탭탭','일프로연산','문제은행','진단평가','학력진단','단원평가','리드 인공지능 문해력 진단','수학 학습 프로그램','평가지원','평가']},
 {key:'teacherAi',label:'교사업무지원 AI',keywords:['마이클','MyClass','My Class','이음AI','이음 AI','AI 구독','AI구독','인라인AI','인라인 AI','InlineAI','Inline AI','유튜브','YouTube','GPT','지피티','챗지피티','클로드','Claude','제미나이','Gemini','캡컷','CapCut','진로진학상담','수파베이스','Supabase','supabase','커서','Cursor','Google AI Pro','구글 AI','Grok','퍼플렉시티','Perplexity','구글원','구글 원','Google One','마누스','Manus','하마룸']},
 {key:'tool',label:'수업도구',keywords:['젠스파크','Genspark','학습지원','Zoom','줌','Vrew','vrew','브루','캔바','Canva','미리캔버스','젭','ZEP','카훗','Kahoot','북크리에이터','패들렛','Padlet','감마','Gamma','수노','Suno','뤼튼','노션','Notion','띵커벨','퀴즈앤','클래스카드','퀴즈렛','다했니','슬라이도','망고보드','투닝','스픽','Speak','일레븐랩스','ElevenLabs','런웨이','Runway','미드저니','Midjourney','교우관계','화상영어','메타버스','클링AI','클링','공학도구','심스페이스','마음일기','AI대화','감정사전','마음관리','라포라포','냅킨AI','냅킨 AI','아트봉봉','힉스필드','히그스필드','스카이워크']},
 {key:'hardware',label:'하드웨어·디바이스',keywords:['태블릿','태블릿PC','태블릿 PC','태블릿컴퓨터','태블릿 컴퓨터','테블릿','테블릿PC','테블릿 PC','노트북','전자칠판','충전함','실물화상기','실물 화상기','크롬북','아이패드','거치대','갤럭시탭','갤럭시 탭','S10FE','S11','키보드','마우스','카메라','웹캠','모니터','스마트기기','디바이스','비스포크','무선청소기','청소기','AI제트','청정스테이션','텔레비전','냉장고']},
@@ -2360,7 +2367,7 @@ var DASH_LEVELS=[{key:'elem',label:'초등',cats:['초등학교']},{key:'mid',la
 function loadDashSet(storageKey,valid){try{var arr=JSON.parse(localStorage.getItem(storageKey)||'[]');return Array.isArray(arr)?arr.filter(function(k){return valid.indexOf(k)!==-1;}):[];}catch(e){return [];}}
 function saveDashSet(storageKey,arr){try{localStorage.setItem(storageKey,JSON.stringify(arr));}catch(e){}}
 var dashLevels=loadDashSet('s2b-dash-levels-v1',['elem','mid','high','etc']);
-var dashTypes=loadDashSet('s2b-dash-types-v1',['aidt','assessment','courseware','teacherAi','tool','hardware','coding','material','book','aiep','service','uncategorized']);
+var dashTypes=loadDashSet('s2b-dash-types-v1',['aidt','courseware','teacherAi','tool','hardware','coding','material','book','aiep','service','uncategorized']);
 function dashLevelKeyOf(category){for(var i=0;i<DASH_LEVELS.length;i++){if(DASH_LEVELS[i].cats.indexOf(category||'기타기관')!==-1){return DASH_LEVELS[i].key;}}return 'etc';}
 var dashCategoryById=null;
 function rowIdMatchesLevelType(recordId,typeKey){if(!dashLevels.length&&!dashTypes.length){return true;}if(!dashCategoryById){dashCategoryById={};dashboardRecords.forEach(function(r){dashCategoryById[r.id]=r.schoolCategory;});}if(dashLevels.length&&dashLevels.indexOf(dashLevelKeyOf(dashCategoryById[recordId]))===-1){return false;}if(dashTypes.length&&dashTypes.indexOf(typeKey)===-1){return false;}return true;}
@@ -2391,7 +2398,7 @@ function sortedEntries(map,counts){return Object.keys(map).map(function(key){ret
 function escapeHtml(value){return String(value||'').replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];});}
 function normalizedIncludes(text,keyword){return normalizeSearchText(text).indexOf(normalizeSearchText(keyword))!==-1;}
 function purchaseTypeByKey(key){for(var i=0;i<PURCHASE_TYPES.length;i++){if(PURCHASE_TYPES[i].key===key){return PURCHASE_TYPES[i];}}return PURCHASE_TYPES[PURCHASE_TYPES.length-1];}
-function purchaseTypeTooltip(item){var desc={aidt:'AI 디지털 교육자료, AI 디지털 교과서, 발행사 AIDT 계약입니다. 많이 보이는 품목: AIDT, 디지털교육자료, AI디지털교과서.',assessment:'진단, 평가, 문제은행, 연산 드릴형 도구입니다. 많이 보이는 품목: 지니아튜터, 매쓰홀릭, 스쿨플랫, 매쓰플랫, 수학대왕, 진단평가.',courseware:'교과 학습형 코스웨어입니다. 많이 보이는 품목: 초코, 홈런, 밀크티, 스마트올, 토도수학, 리딩앤, 플랭, 코스웨어.',teacherAi:'교사의 업무, 콘텐츠 제작, 검색, 상담, AI 활용을 돕는 도구입니다. 많이 보이는 품목: GPT, Claude, Gemini, 유튜브, 캡컷, 커서, Supabase, 진로진학상담.',tool:'수업 진행, 활동, 발표, 협업, 생성형 AI 활용을 돕는 수업도구입니다. 많이 보이는 품목: Canva, Padlet, Kahoot, ZEP, Zoom, Vrew, 메타버스, 클링, 심스페이스.',hardware:'수업이나 학교 운영에 쓰이는 하드웨어와 디바이스입니다. 많이 보이는 품목: 태블릿, 노트북, 전자칠판, 크롬북, 청소기, TV, 냉장고.',coding:'코딩, SW, 개발 학습 관련 도구입니다. 많이 보이는 품목: 코딩, Coding, 퓨너스.',material:'실물 교구와 체험형 자료입니다. 많이 보이는 품목: 레고, 스파이크, 4D프레임, 보드게임, 키트, 드론, 로봇, VR/AR.',book:'교재, 도서, 워크북, 문제집류입니다. 많이 보이는 품목: EBS, 만점왕, 워크북, 문제집, 학습지, 교재 세트.',service:'연수, 컨설팅, 강사, 운영 용역입니다. 많이 보이는 품목: 교원연수, 직무연수, 강사, 컨설팅, 운영용역.',uncategorized:'아직 사전 규칙에 걸리지 않은 항목입니다. 목록을 확인해 반복 키워드를 새 유형 규칙에 추가하는 후보입니다.'};var key=item&&item.key?item.key:'uncategorized';return (item&&item.label?item.label:'미분류')+'\\n'+(desc[key]||desc.uncategorized);}
+function purchaseTypeTooltip(item){var desc={aidt:'AI 디지털 교육자료, AI 디지털 교과서, 발행사 AIDT 계약입니다. 많이 보이는 품목: AIDT, 디지털교육자료, AI디지털교과서.',courseware:'교과 학습형 코스웨어와 진단·평가·문제은행 도구입니다. 많이 보이는 품목: 초코, 홈런, 밀크티, 스마트올, 토도수학, 리딩앤, 플랭, 스쿨플랫, 매쓰플랫, 지니아튜터, 코스웨어.',teacherAi:'교사의 업무, 콘텐츠 제작, 검색, 상담, AI 활용을 돕는 도구입니다. 많이 보이는 품목: GPT, Claude, Gemini, 유튜브, 캡컷, 커서, Supabase, 진로진학상담.',tool:'수업 진행, 활동, 발표, 협업, 생성형 AI 활용을 돕는 수업도구입니다. 많이 보이는 품목: Canva, Padlet, Kahoot, ZEP, Zoom, Vrew, 메타버스, 클링, 심스페이스.',hardware:'수업이나 학교 운영에 쓰이는 하드웨어와 디바이스입니다. 많이 보이는 품목: 태블릿, 노트북, 전자칠판, 크롬북, 청소기, TV, 냉장고.',coding:'코딩, SW, 개발 학습 관련 도구입니다. 많이 보이는 품목: 코딩, Coding, 퓨너스.',material:'실물 교구와 체험형 자료입니다. 많이 보이는 품목: 레고, 스파이크, 4D프레임, 보드게임, 키트, 드론, 로봇, VR/AR.',book:'교재, 도서, 워크북, 문제집류입니다. 많이 보이는 품목: EBS, 만점왕, 워크북, 문제집, 학습지, 교재 세트.',service:'연수, 컨설팅, 강사, 운영 용역입니다. 많이 보이는 품목: 교원연수, 직무연수, 강사, 컨설팅, 운영용역.',uncategorized:'아직 사전 규칙에 걸리지 않은 항목입니다. 목록을 확인해 반복 키워드를 새 유형 규칙에 추가하는 후보입니다.'};var key=item&&item.key?item.key:'uncategorized';return (item&&item.label?item.label:'미분류')+'\\n'+(desc[key]||desc.uncategorized);}
 function isComplexContract(name){return /외\\s*\\d+\\s*종/.test(name||'');}
 function amountFromRow(row){var cell=row.querySelector('td.tr');var digits=(cell?cell.textContent:'').replace(/[^0-9]/g,'');return Number(digits||0);}
 function vendorMatchesScope(row){var vendor=row.getAttribute('data-counterpart')||'';var has=normalizeSearchText(vendor).indexOf(normalizeSearchText('미래엔'))!==-1;if(purchaseVendorScope==='mirae'){return has;}if(purchaseVendorScope==='other'){return !has;}return true;}
