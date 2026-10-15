@@ -33,3 +33,6 @@ s2b_2025_side_analysis/
 
 # Local secrets
 .env
+
+# 로컬 리포트(HTML/PDF) 산출물
+s2b_reports/
