@@ -50,6 +50,11 @@ KEYWORD_EXCLUDES = {
     "옥수수": ["교과서", "문제집", "수세미", "3M"],
     "비상교육 옥수수": ["교과서", "문제집", "수세미", "3M"],
     "홈런": ["홈런볼"],
+    "마타": ["오토마타", "마타스튜디오"],
+}
+# 이 단어가 계약명에 하나라도 있어야 해당 키워드로 인정한다 (옥수수차·옥수수콘 같은 식품 계약 차단).
+KEYWORD_REQUIRES = {
+    "옥수수": ["비상", "프로그램", "에듀테크", "학습", "수학", "구독", "이용", "사용"],
 }
 
 BASE_URL = "https://www.s2b.kr"
@@ -406,9 +411,14 @@ def is_excluded_contract_name(contract_name):
     if any(exclude in text for exclude in EXCLUDE_WORDS):
         return True
     matched = [keyword for keyword in KEYWORDS if keyword in text]
-    if matched and all(any(word in text for word in KEYWORD_EXCLUDES.get(keyword, ())) for keyword in matched):
-        return True
-    return False
+
+    def keyword_blocked(keyword):
+        if any(word in text for word in KEYWORD_EXCLUDES.get(keyword, ())):
+            return True
+        required = KEYWORD_REQUIRES.get(keyword)
+        return bool(required) and not any(word in text for word in required)
+
+    return bool(matched) and all(keyword_blocked(keyword) for keyword in matched)
 
 
 def parse_page(html_bytes):
