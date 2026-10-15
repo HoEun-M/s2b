@@ -1769,6 +1769,30 @@ def consolidate_gwangju_region(region, subregion):
     return region, subregion
 
 
+def vendor_name_key(name):
+    # 주식회사/(주)/㈜ 표기와 공백·괄호 차이만 다른 업체명을 같은 업체로 묶는 키
+    compact = re.sub(r"\s+", "", name or "").lower()
+    for token in ("주식회사", "(주)", "㈜", "（주）"):
+        compact = compact.replace(token, "")
+    return re.sub(r"[()\[\]·.,-]", "", compact)
+
+
+def build_vendor_canonical(counterparts):
+    # 표기가 갈라진 업체는 가장 많이 쓰인 표기(동수면 사전순)로 통일한다. {원래 표기: 대표 표기}
+    groups = {}
+    for name in counterparts:
+        key = vendor_name_key(name)
+        if key and name != "미지정":
+            bucket = groups.setdefault(key, {})
+            bucket[name] = bucket.get(name, 0) + 1
+    canonical = {}
+    for bucket in groups.values():
+        if len(bucket) > 1:
+            best = sorted(bucket.items(), key=lambda item: (-item[1], item[0]))[0][0]
+            canonical.update({raw: best for raw in bucket if raw != best})
+    return canonical
+
+
 def is_vendor_courseware(counterpart):
     # 미래엔은 상호에 포함되면, 씨티(클래스팅)는 상호가 정확히 "(주)씨티"일 때만 코스웨어 업체로 본다.
     compact = re.sub(r"\s+", "", counterpart or "")
@@ -2172,6 +2196,7 @@ def build_cumulative_html(data):
         and not any(re.sub(r"\s+", "", kw).lower() in re.sub(r"\s+", "", rec["name"]).lower() for kw in VENDOR_COURSEWARE_AIDT_KEYWORDS)
     }
     vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
+    vendor_canonical_json = json.dumps(build_vendor_canonical([rec["counterpart"] for rec in dashboard_records]), ensure_ascii=False, separators=(",", ":"))
 
     css = """
 @font-face {
@@ -2320,6 +2345,7 @@ const PURCHASE_TYPE_OVERRIDES={
 'contract:R26TA01573010':'aiep'
 };
 const VENDOR_COURSEWARE_IDS=__VENDOR_COURSEWARE_IDS__;
+const VENDOR_CANONICAL=__VENDOR_CANONICAL__;
 var REGION_SUPPORT_TOKENS={서울:['서울','서울특별시'],부산:['부산','부산광역시'],대구:['대구','대구광역시'],인천:['인천','인천광역시'],광주:['광주','광주광역시'],대전:['대전','대전광역시'],울산:['울산','울산광역시'],세종:['세종','세종특별자치시'],경기:['경기','경기도'],강원:['강원','강원특별자치도'],충북:['충북','충청북도'],충남:['충남','충청남도'],전북:['전북','전라북도','전북특별자치도'],전남:['전남','전라남도'],경북:['경북','경상북도'],경남:['경남','경상남도'],제주:['제주','제주특별자치도']};
 function supportMatchesRegion(region,support){if(!region||!support||support==='\uBBF8\uC9C0\uC815'){return true;}var tokens=REGION_SUPPORT_TOKENS[region]||[region];return tokens.some(function(token){return support.indexOf(token)!==-1;});}
 function readJsonStorage(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
@@ -2382,7 +2408,7 @@ function populateMonthPurchaseTypeOptions(){var select=document.getElementById('
 function setMonthPurchaseType(value){activeMonthPurchaseType=value||'';try{localStorage.setItem('s2b-month-type-v1',activeMonthPurchaseType);}catch(e){}renderDashboard(false);}
 
 var VENDOR_ALIAS_RULES=[{keywords:['스쿨플랫','매쓰플랫'],vendor:'(주)프리윌린',keepVendors:['위멘토피아','에누마코리아','팀플백','올댓스쿨']}];
-function vendorAlias(name,counterpart){var text=normalizeSearchText(name||'');for(var i=0;i<VENDOR_ALIAS_RULES.length;i++){var rule=VENDOR_ALIAS_RULES[i];for(var j=0;j<rule.keywords.length;j++){if(text.indexOf(rule.keywords[j])!==-1){var own=normalizeSearchText(counterpart||'');var keep=(rule.keepVendors||[]).some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;});return keep?counterpart:rule.vendor;}}}return counterpart;}
+function vendorAlias(name,counterpart){var text=normalizeSearchText(name||'');var base=counterpart;for(var i=0;i<VENDOR_ALIAS_RULES.length&&base===counterpart;i++){var rule=VENDOR_ALIAS_RULES[i];for(var j=0;j<rule.keywords.length;j++){if(text.indexOf(rule.keywords[j])!==-1){var own=normalizeSearchText(counterpart||'');var keep=(rule.keepVendors||[]).some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;});if(!keep){base=rule.vendor;}break;}}}return VENDOR_CANONICAL[base]||base;}
 function pad2(n){return (n<10?'0':'')+n;}
 function isoDate(d){return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());}
 function computeDashRange(){var today=new Date();var y=today.getFullYear();var m=today.getMonth();if(dashPeriod==='month'){return [isoDate(new Date(y,m,1)),isoDate(today)];}if(dashPeriod==='m3'){return [isoDate(new Date(y,m-2,1)),isoDate(today)];}if(dashPeriod==='year'){return [y+'-01-01',isoDate(today)];}if(dashPeriod==='custom'){return [dashFrom,dashTo];}return ['',''];}
@@ -2463,6 +2489,7 @@ document.addEventListener('DOMContentLoaded',function(){populateMonthPurchaseTyp
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
     js = js.replace("__DASHBOARD_RECORDS__", dashboard_json.replace("</", "<\\/"))
     js = js.replace("__VENDOR_COURSEWARE_IDS__", vendor_courseware_json)
+    js = js.replace("__VENDOR_CANONICAL__", vendor_canonical_json)
 
     return (
         "<!DOCTYPE html><html lang='ko'><head>"
