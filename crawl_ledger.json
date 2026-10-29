@@ -5810,6 +5810,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260901",
+      "to": "20260901",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 247 edu 36",
+      "finished_at": "2026-10-29 17:11"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260902",
       "to": "20260902",
@@ -5831,6 +5843,18 @@
       "mode": "api",
       "note": "raw 241 edu 241",
       "finished_at": "2026-09-30 12:39"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260902",
+      "to": "20260902",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 272 edu 18",
+      "finished_at": "2026-10-29 17:11"
     },
     {
       "search_term": "공사",
@@ -5858,6 +5882,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260903",
+      "to": "20260903",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 223 edu 13",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260904",
       "to": "20260904",
@@ -5882,6 +5918,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260904",
+      "to": "20260904",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 192 edu 8",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260905",
       "to": "20260905",
@@ -5903,6 +5951,18 @@
       "mode": "api",
       "note": "raw 179 edu 179",
       "finished_at": "2026-09-30 12:41"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260905",
+      "to": "20260905",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 13 edu 2",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "공사",
@@ -5930,6 +5990,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260906",
+      "to": "20260906",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 32 edu 3",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260907",
       "to": "20260907",
@@ -5951,6 +6023,18 @@
       "mode": "api",
       "note": "raw 206 edu 206",
       "finished_at": "2026-09-30 12:43"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260907",
+      "to": "20260907",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 251 edu 19",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "공사",
@@ -5978,6 +6062,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260908",
+      "to": "20260908",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 280 edu 35",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260909",
       "to": "20260909",
@@ -5999,6 +6095,18 @@
       "mode": "api",
       "note": "raw 153 edu 153",
       "finished_at": "2026-09-30 12:44"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260909",
+      "to": "20260909",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 269 edu 24",
+      "finished_at": "2026-10-29 17:13"
     },
     {
       "search_term": "공사",
@@ -6026,6 +6134,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260910",
+      "to": "20260910",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 298 edu 21",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260911",
       "to": "20260911",
@@ -6050,6 +6170,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260911",
+      "to": "20260911",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 233 edu 25",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260912",
       "to": "20260912",
@@ -6074,6 +6206,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260912",
+      "to": "20260912",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 21 edu 3",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260913",
       "to": "20260913",
@@ -6095,6 +6239,18 @@
       "mode": "api",
       "note": "raw 136 edu 136",
       "finished_at": "2026-09-30 12:47"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260913",
+      "to": "20260913",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 25 edu 2",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "공사",
@@ -6122,6 +6278,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260914",
+      "to": "20260914",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 241 edu 26",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260915",
       "to": "20260915",
@@ -6143,6 +6311,18 @@
       "mode": "api",
       "note": "raw 179 edu 179",
       "finished_at": "2026-09-30 12:50"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260915",
+      "to": "20260915",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 379 edu 29",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "공사",
@@ -6170,6 +6350,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260916",
+      "to": "20260916",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 295 edu 26",
+      "finished_at": "2026-10-29 17:15"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260917",
       "to": "20260917",
@@ -6191,6 +6383,18 @@
       "mode": "api",
       "note": "raw 166 edu 166",
       "finished_at": "2026-09-30 12:52"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260917",
+      "to": "20260917",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 284 edu 32",
+      "finished_at": "2026-10-29 17:15"
     },
     {
       "search_term": "공사",
@@ -6218,6 +6422,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260918",
+      "to": "20260918",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 208 edu 20",
+      "finished_at": "2026-10-29 17:15"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260919",
       "to": "20260919",
@@ -6239,6 +6455,18 @@
       "mode": "api",
       "note": "raw 112 edu 112",
       "finished_at": "2026-09-30 12:53"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260919",
+      "to": "20260919",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 22 edu 0",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "공사",
@@ -6266,6 +6494,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260920",
+      "to": "20260920",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 24 edu 3",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260921",
       "to": "20260921",
@@ -6290,6 +6530,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260921",
+      "to": "20260921",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 275 edu 37",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260922",
       "to": "20260922",
@@ -6311,6 +6563,18 @@
       "mode": "api",
       "note": "raw 88 edu 88",
       "finished_at": "2026-09-30 12:56"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260922",
+      "to": "20260922",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 334 edu 25",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "공사",
@@ -6350,6 +6614,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 263 edu 28",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260924",
       "to": "20260924",
@@ -6374,6 +6650,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260924",
+      "to": "20260924",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 0",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260925",
       "to": "20260925",
@@ -6395,6 +6683,18 @@
       "mode": "api",
       "note": "raw 24 edu 24",
       "finished_at": "2026-09-30 12:57"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260925",
+      "to": "20260925",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 5 edu 3",
+      "finished_at": "2026-10-29 17:17"
     },
     {
       "search_term": "공사",
@@ -6422,6 +6722,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260926",
+      "to": "20260926",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 13 edu 4",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260927",
       "to": "20260927",
@@ -6443,6 +6755,18 @@
       "mode": "api",
       "note": "raw 24 edu 24",
       "finished_at": "2026-09-30 12:58"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260927",
+      "to": "20260927",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 30 edu 0",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "공사",
@@ -6470,6 +6794,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260928",
+      "to": "20260928",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 350 edu 37",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20260929",
       "to": "20260929",
@@ -6491,6 +6827,18 @@
       "mode": "api",
       "note": "raw 12 edu 12",
       "finished_at": "2026-09-30 13:00"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260929",
+      "to": "20260929",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 348 edu 33",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "공사",
@@ -6518,6 +6866,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20260930",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 329 edu 22",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261001",
       "to": "20261001",
@@ -6539,6 +6899,18 @@
       "mode": "api",
       "note": "raw 237 edu 237",
       "finished_at": "2026-10-29 15:53"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261001",
+      "to": "20261001",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 322 edu 26",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "공사",
@@ -6566,6 +6938,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261002",
+      "to": "20261002",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 250 edu 29",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261003",
       "to": "20261003",
@@ -6587,6 +6971,18 @@
       "mode": "api",
       "note": "raw 199 edu 199",
       "finished_at": "2026-10-29 15:55"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261003",
+      "to": "20261003",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 13 edu 3",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "공사",
@@ -6614,6 +7010,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261004",
+      "to": "20261004",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 28 edu 1",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261005",
       "to": "20261005",
@@ -6635,6 +7043,18 @@
       "mode": "api",
       "note": "raw 199 edu 199",
       "finished_at": "2026-10-29 15:56"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261005",
+      "to": "20261005",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 24 edu 1",
+      "finished_at": "2026-10-29 17:20"
     },
     {
       "search_term": "공사",
@@ -6662,6 +7082,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261006",
+      "to": "20261006",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 357 edu 43",
+      "finished_at": "2026-10-29 17:20"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261007",
       "to": "20261007",
@@ -6683,6 +7115,18 @@
       "mode": "api",
       "note": "raw 256 edu 256",
       "finished_at": "2026-10-29 16:01"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261007",
+      "to": "20261007",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 340 edu 39",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "공사",
@@ -6710,6 +7154,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261008",
+      "to": "20261008",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 289 edu 28",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261009",
       "to": "20261009",
@@ -6731,6 +7187,18 @@
       "mode": "api",
       "note": "raw 186 edu 186",
       "finished_at": "2026-10-29 16:04"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261009",
+      "to": "20261009",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 26 edu 2",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "공사",
@@ -6758,6 +7226,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261010",
+      "to": "20261010",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 23 edu 6",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261011",
       "to": "20261011",
@@ -6779,6 +7259,18 @@
       "mode": "api",
       "note": "raw 188 edu 188",
       "finished_at": "2026-10-29 16:06"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261011",
+      "to": "20261011",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 14 edu 0",
+      "finished_at": "2026-10-29 17:22"
     },
     {
       "search_term": "공사",
@@ -6806,6 +7298,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261012",
+      "to": "20261012",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 362 edu 52",
+      "finished_at": "2026-10-29 17:22"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261013",
       "to": "20261013",
@@ -6827,6 +7331,18 @@
       "mode": "api",
       "note": "raw 248 edu 248",
       "finished_at": "2026-10-29 16:09"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261013",
+      "to": "20261013",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 310 edu 38",
+      "finished_at": "2026-10-29 17:22"
     },
     {
       "search_term": "공사",
@@ -6854,6 +7370,18 @@
     },
     {
       "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261014",
+      "to": "20261014",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 354 edu 56",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "공사",
       "kind": "g2b:bid",
       "from": "20261015",
       "to": "20261015",
@@ -6875,6 +7403,174 @@
       "mode": "api",
       "note": "raw 261 edu 261",
       "finished_at": "2026-10-29 16:11"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261015",
+      "to": "20261015",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 391 edu 69",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261016",
+      "to": "20261016",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 318 edu 41",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261017",
+      "to": "20261017",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 33 edu 8",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261018",
+      "to": "20261018",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 35 edu 5",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261019",
+      "to": "20261019",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 397 edu 52",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261020",
+      "to": "20261020",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 337 edu 67",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261021",
+      "to": "20261021",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 343 edu 40",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261022",
+      "to": "20261022",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 366 edu 43",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261023",
+      "to": "20261023",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 296 edu 47",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261024",
+      "to": "20261024",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 4",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261025",
+      "to": "20261025",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 26 edu 2",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261026",
+      "to": "20261026",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 370 edu 45",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261027",
+      "to": "20261027",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 342 edu 55",
+      "finished_at": "2026-10-29 17:27"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261028",
+      "to": "20261028",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 397 edu 63",
+      "finished_at": "2026-10-29 17:27"
     },
     {
       "search_term": "교과보충",
@@ -17258,6 +17954,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260901",
+      "to": "20260901",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 278 edu 93",
+      "finished_at": "2026-10-29 17:11"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260902",
       "to": "20260902",
@@ -17291,6 +17999,18 @@
       "mode": "api",
       "note": "raw 728 edu 728",
       "finished_at": "2026-09-30 12:39"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260902",
+      "to": "20260902",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 310 edu 77",
+      "finished_at": "2026-10-29 17:11"
     },
     {
       "search_term": "물품",
@@ -17330,6 +18050,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260903",
+      "to": "20260903",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 271 edu 62",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260904",
       "to": "20260904",
@@ -17363,6 +18095,18 @@
       "mode": "api",
       "note": "raw 718 edu 718",
       "finished_at": "2026-09-30 12:41"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260904",
+      "to": "20260904",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 263 edu 79",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "물품",
@@ -17402,6 +18146,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260905",
+      "to": "20260905",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 2 edu 1",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260906",
       "to": "20260906",
@@ -17435,6 +18191,18 @@
       "mode": "api",
       "note": "raw 649 edu 649",
       "finished_at": "2026-09-30 12:41"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260906",
+      "to": "20260906",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 2",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "물품",
@@ -17474,6 +18242,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260907",
+      "to": "20260907",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 310 edu 86",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260908",
       "to": "20260908",
@@ -17507,6 +18287,18 @@
       "mode": "api",
       "note": "raw 654 edu 654",
       "finished_at": "2026-09-30 12:43"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260908",
+      "to": "20260908",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 278 edu 84",
+      "finished_at": "2026-10-29 17:13"
     },
     {
       "search_term": "물품",
@@ -17546,6 +18338,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260909",
+      "to": "20260909",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 293 edu 87",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260910",
       "to": "20260910",
@@ -17579,6 +18383,18 @@
       "mode": "api",
       "note": "raw 662 edu 662",
       "finished_at": "2026-09-30 12:46"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260910",
+      "to": "20260910",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 377 edu 88",
+      "finished_at": "2026-10-29 17:13"
     },
     {
       "search_term": "물품",
@@ -17618,6 +18434,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260911",
+      "to": "20260911",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 306 edu 102",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260912",
       "to": "20260912",
@@ -17651,6 +18479,18 @@
       "mode": "api",
       "note": "raw 611 edu 611",
       "finished_at": "2026-09-30 12:47"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260912",
+      "to": "20260912",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 9 edu 5",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "물품",
@@ -17690,6 +18530,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260913",
+      "to": "20260913",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 20 edu 6",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260914",
       "to": "20260914",
@@ -17723,6 +18575,18 @@
       "mode": "api",
       "note": "raw 753 edu 753",
       "finished_at": "2026-09-30 12:49"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260914",
+      "to": "20260914",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 363 edu 155",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "물품",
@@ -17762,6 +18626,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260915",
+      "to": "20260915",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 395 edu 124",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260916",
       "to": "20260916",
@@ -17795,6 +18671,18 @@
       "mode": "api",
       "note": "raw 885 edu 885",
       "finished_at": "2026-09-30 12:51"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260916",
+      "to": "20260916",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 307 edu 119",
+      "finished_at": "2026-10-29 17:15"
     },
     {
       "search_term": "물품",
@@ -17834,6 +18722,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260917",
+      "to": "20260917",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 252 edu 59",
+      "finished_at": "2026-10-29 17:15"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260918",
       "to": "20260918",
@@ -17867,6 +18767,18 @@
       "mode": "api",
       "note": "raw 779 edu 779",
       "finished_at": "2026-09-30 12:53"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260918",
+      "to": "20260918",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 267 edu 59",
+      "finished_at": "2026-10-29 17:15"
     },
     {
       "search_term": "물품",
@@ -17906,6 +18818,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260919",
+      "to": "20260919",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 2",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260920",
       "to": "20260920",
@@ -17939,6 +18863,18 @@
       "mode": "api",
       "note": "raw 627 edu 627",
       "finished_at": "2026-09-30 12:54"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260920",
+      "to": "20260920",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 5 edu 3",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "물품",
@@ -17978,6 +18914,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260921",
+      "to": "20260921",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 289 edu 86",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260922",
       "to": "20260922",
@@ -18011,6 +18959,18 @@
       "mode": "api",
       "note": "raw 441 edu 441",
       "finished_at": "2026-09-30 12:56"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260922",
+      "to": "20260922",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 307 edu 94",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "물품",
@@ -18050,6 +19010,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 329 edu 71",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260924",
       "to": "20260924",
@@ -18083,6 +19055,18 @@
       "mode": "api",
       "note": "raw 103 edu 103",
       "finished_at": "2026-09-30 12:56"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260924",
+      "to": "20260924",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 4 edu 0",
+      "finished_at": "2026-10-29 17:17"
     },
     {
       "search_term": "물품",
@@ -18122,6 +19106,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260925",
+      "to": "20260925",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 2 edu 0",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260926",
       "to": "20260926",
@@ -18155,6 +19151,18 @@
       "mode": "api",
       "note": "raw 103 edu 103",
       "finished_at": "2026-09-30 12:57"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260926",
+      "to": "20260926",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 3 edu 1",
+      "finished_at": "2026-10-29 17:17"
     },
     {
       "search_term": "물품",
@@ -18194,6 +19202,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260927",
+      "to": "20260927",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 7 edu 0",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260928",
       "to": "20260928",
@@ -18227,6 +19247,18 @@
       "mode": "api",
       "note": "raw 103 edu 103",
       "finished_at": "2026-09-30 12:59"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260928",
+      "to": "20260928",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 281 edu 61",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "물품",
@@ -18266,6 +19298,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260929",
+      "to": "20260929",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 283 edu 49",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260930",
       "to": "20260930",
@@ -18299,6 +19343,18 @@
       "mode": "api",
       "note": "raw 77 edu 77",
       "finished_at": "2026-10-02 08:50"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20260930",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 305 edu 56",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "물품",
@@ -18338,6 +19394,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261001",
+      "to": "20261001",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 287 edu 48",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261002",
       "to": "20261002",
@@ -18371,6 +19439,18 @@
       "mode": "api",
       "note": "raw 830 edu 830",
       "finished_at": "2026-10-29 15:55"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261002",
+      "to": "20261002",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 232 edu 46",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "물품",
@@ -18410,6 +19490,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261003",
+      "to": "20261003",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 6 edu 2",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261004",
       "to": "20261004",
@@ -18443,6 +19535,18 @@
       "mode": "api",
       "note": "raw 754 edu 754",
       "finished_at": "2026-10-29 15:55"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261004",
+      "to": "20261004",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 6 edu 0",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "물품",
@@ -18482,6 +19586,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261005",
+      "to": "20261005",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 6 edu 1",
+      "finished_at": "2026-10-29 17:20"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261006",
       "to": "20261006",
@@ -18515,6 +19631,18 @@
       "mode": "api",
       "note": "raw 799 edu 799",
       "finished_at": "2026-10-29 15:57"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261006",
+      "to": "20261006",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 329 edu 64",
+      "finished_at": "2026-10-29 17:20"
     },
     {
       "search_term": "물품",
@@ -18554,6 +19682,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261007",
+      "to": "20261007",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 331 edu 82",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261008",
       "to": "20261008",
@@ -18587,6 +19727,18 @@
       "mode": "api",
       "note": "raw 745 edu 745",
       "finished_at": "2026-10-29 16:03"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261008",
+      "to": "20261008",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 307 edu 90",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "물품",
@@ -18626,6 +19778,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261009",
+      "to": "20261009",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 5 edu 2",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261010",
       "to": "20261010",
@@ -18659,6 +19823,18 @@
       "mode": "api",
       "note": "raw 683 edu 683",
       "finished_at": "2026-10-29 16:06"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261010",
+      "to": "20261010",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 8 edu 0",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "물품",
@@ -18698,6 +19874,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261011",
+      "to": "20261011",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 14 edu 0",
+      "finished_at": "2026-10-29 17:22"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261012",
       "to": "20261012",
@@ -18731,6 +19919,18 @@
       "mode": "api",
       "note": "raw 761 edu 761",
       "finished_at": "2026-10-29 16:07"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261012",
+      "to": "20261012",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 312 edu 77",
+      "finished_at": "2026-10-29 17:22"
     },
     {
       "search_term": "물품",
@@ -18770,6 +19970,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261013",
+      "to": "20261013",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 330 edu 86",
+      "finished_at": "2026-10-29 17:22"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261014",
       "to": "20261014",
@@ -18806,6 +20018,18 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261014",
+      "to": "20261014",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 359 edu 97",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261015",
       "to": "20261015",
@@ -18839,6 +20063,174 @@
       "mode": "api",
       "note": "raw 818 edu 818",
       "finished_at": "2026-10-29 16:11"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261015",
+      "to": "20261015",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 419 edu 119",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261016",
+      "to": "20261016",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 324 edu 103",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261017",
+      "to": "20261017",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 4",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261018",
+      "to": "20261018",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 19 edu 4",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261019",
+      "to": "20261019",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 393 edu 118",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261020",
+      "to": "20261020",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 376 edu 84",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261021",
+      "to": "20261021",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 336 edu 67",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261022",
+      "to": "20261022",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 327 edu 49",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261023",
+      "to": "20261023",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 249 edu 62",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261024",
+      "to": "20261024",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 0",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261025",
+      "to": "20261025",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 4",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261026",
+      "to": "20261026",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 309 edu 49",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261027",
+      "to": "20261027",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 322 edu 52",
+      "finished_at": "2026-10-29 17:27"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261028",
+      "to": "20261028",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 344 edu 57",
+      "finished_at": "2026-10-29 17:27"
     },
     {
       "search_term": "미래엔",
@@ -29774,6 +31166,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260901",
+      "to": "20260901",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 320 edu 33",
+      "finished_at": "2026-10-29 17:11"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260902",
       "to": "20260902",
@@ -29807,6 +31211,18 @@
       "mode": "api",
       "note": "raw 314 edu 314",
       "finished_at": "2026-09-30 12:39"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260902",
+      "to": "20260902",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 334 edu 34",
+      "finished_at": "2026-10-29 17:11"
     },
     {
       "search_term": "용역",
@@ -29846,6 +31262,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260903",
+      "to": "20260903",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 315 edu 27",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260904",
       "to": "20260904",
@@ -29879,6 +31307,18 @@
       "mode": "api",
       "note": "raw 287 edu 287",
       "finished_at": "2026-09-30 12:41"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260904",
+      "to": "20260904",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 281 edu 21",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "용역",
@@ -29918,6 +31358,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260905",
+      "to": "20260905",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 1",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260906",
       "to": "20260906",
@@ -29951,6 +31403,18 @@
       "mode": "api",
       "note": "raw 251 edu 251",
       "finished_at": "2026-09-30 12:41"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260906",
+      "to": "20260906",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 14 edu 1",
+      "finished_at": "2026-10-29 17:12"
     },
     {
       "search_term": "용역",
@@ -29990,6 +31454,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260907",
+      "to": "20260907",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 329 edu 34",
+      "finished_at": "2026-10-29 17:12"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260908",
       "to": "20260908",
@@ -30023,6 +31499,18 @@
       "mode": "api",
       "note": "raw 271 edu 271",
       "finished_at": "2026-09-30 12:43"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260908",
+      "to": "20260908",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 324 edu 40",
+      "finished_at": "2026-10-29 17:13"
     },
     {
       "search_term": "용역",
@@ -30062,6 +31550,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260909",
+      "to": "20260909",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 349 edu 21",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260910",
       "to": "20260910",
@@ -30095,6 +31595,18 @@
       "mode": "api",
       "note": "raw 221 edu 221",
       "finished_at": "2026-09-30 12:46"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260910",
+      "to": "20260910",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 301 edu 35",
+      "finished_at": "2026-10-29 17:13"
     },
     {
       "search_term": "용역",
@@ -30134,6 +31646,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260911",
+      "to": "20260911",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 323 edu 36",
+      "finished_at": "2026-10-29 17:13"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260912",
       "to": "20260912",
@@ -30167,6 +31691,18 @@
       "mode": "api",
       "note": "raw 169 edu 169",
       "finished_at": "2026-09-30 12:47"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260912",
+      "to": "20260912",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 11 edu 1",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "용역",
@@ -30206,6 +31742,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260913",
+      "to": "20260913",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 7 edu 1",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260914",
       "to": "20260914",
@@ -30239,6 +31787,18 @@
       "mode": "api",
       "note": "raw 214 edu 214",
       "finished_at": "2026-09-30 12:49"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260914",
+      "to": "20260914",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 415 edu 35",
+      "finished_at": "2026-10-29 17:14"
     },
     {
       "search_term": "용역",
@@ -30278,6 +31838,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260915",
+      "to": "20260915",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 383 edu 37",
+      "finished_at": "2026-10-29 17:14"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260916",
       "to": "20260916",
@@ -30311,6 +31883,18 @@
       "mode": "api",
       "note": "raw 198 edu 198",
       "finished_at": "2026-09-30 12:51"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260916",
+      "to": "20260916",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 358 edu 26",
+      "finished_at": "2026-10-29 17:15"
     },
     {
       "search_term": "용역",
@@ -30350,6 +31934,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260917",
+      "to": "20260917",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 342 edu 26",
+      "finished_at": "2026-10-29 17:15"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260918",
       "to": "20260918",
@@ -30383,6 +31979,18 @@
       "mode": "api",
       "note": "raw 171 edu 171",
       "finished_at": "2026-09-30 12:53"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260918",
+      "to": "20260918",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 266 edu 19",
+      "finished_at": "2026-10-29 17:15"
     },
     {
       "search_term": "용역",
@@ -30422,6 +32030,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260919",
+      "to": "20260919",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 16 edu 2",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260920",
       "to": "20260920",
@@ -30455,6 +32075,18 @@
       "mode": "api",
       "note": "raw 123 edu 123",
       "finished_at": "2026-09-30 12:54"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260920",
+      "to": "20260920",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 8 edu 1",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "용역",
@@ -30494,6 +32126,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260921",
+      "to": "20260921",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 332 edu 28",
+      "finished_at": "2026-10-29 17:16"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260922",
       "to": "20260922",
@@ -30527,6 +32171,18 @@
       "mode": "api",
       "note": "raw 102 edu 102",
       "finished_at": "2026-09-30 12:56"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260922",
+      "to": "20260922",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 442 edu 32",
+      "finished_at": "2026-10-29 17:16"
     },
     {
       "search_term": "용역",
@@ -30566,6 +32222,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260923",
+      "to": "20260923",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 349 edu 30",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260924",
       "to": "20260924",
@@ -30599,6 +32267,18 @@
       "mode": "api",
       "note": "raw 29 edu 29",
       "finished_at": "2026-09-30 12:56"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260924",
+      "to": "20260924",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 3 edu 1",
+      "finished_at": "2026-10-29 17:17"
     },
     {
       "search_term": "용역",
@@ -30638,6 +32318,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260925",
+      "to": "20260925",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 5 edu 1",
+      "finished_at": "2026-10-29 17:17"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260926",
       "to": "20260926",
@@ -30671,6 +32363,18 @@
       "mode": "api",
       "note": "raw 29 edu 29",
       "finished_at": "2026-09-30 12:57"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260926",
+      "to": "20260926",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 3",
+      "finished_at": "2026-10-29 17:17"
     },
     {
       "search_term": "용역",
@@ -30710,6 +32414,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260927",
+      "to": "20260927",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 1",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260928",
       "to": "20260928",
@@ -30743,6 +32459,18 @@
       "mode": "api",
       "note": "raw 34 edu 34",
       "finished_at": "2026-09-30 12:59"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260928",
+      "to": "20260928",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 443 edu 30",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "용역",
@@ -30782,6 +32510,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260929",
+      "to": "20260929",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 342 edu 21",
+      "finished_at": "2026-10-29 17:18"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260930",
       "to": "20260930",
@@ -30815,6 +32555,18 @@
       "mode": "api",
       "note": "raw 44 edu 44",
       "finished_at": "2026-10-02 08:50"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20260930",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 399 edu 27",
+      "finished_at": "2026-10-29 17:18"
     },
     {
       "search_term": "용역",
@@ -30854,6 +32606,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261001",
+      "to": "20261001",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 374 edu 21",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261002",
       "to": "20261002",
@@ -30887,6 +32651,18 @@
       "mode": "api",
       "note": "raw 233 edu 233",
       "finished_at": "2026-10-29 15:55"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261002",
+      "to": "20261002",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 324 edu 21",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "용역",
@@ -30926,6 +32702,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261003",
+      "to": "20261003",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 16 edu 3",
+      "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261004",
       "to": "20261004",
@@ -30959,6 +32747,18 @@
       "mode": "api",
       "note": "raw 205 edu 205",
       "finished_at": "2026-10-29 15:55"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261004",
+      "to": "20261004",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 10 edu 0",
+      "finished_at": "2026-10-29 17:19"
     },
     {
       "search_term": "용역",
@@ -30998,6 +32798,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261005",
+      "to": "20261005",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 23 edu 6",
+      "finished_at": "2026-10-29 17:20"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261006",
       "to": "20261006",
@@ -31031,6 +32843,18 @@
       "mode": "api",
       "note": "raw 269 edu 269",
       "finished_at": "2026-10-29 15:57"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261006",
+      "to": "20261006",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 444 edu 38",
+      "finished_at": "2026-10-29 17:20"
     },
     {
       "search_term": "용역",
@@ -31070,6 +32894,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261007",
+      "to": "20261007",
+      "status": "complete",
+      "pages": 1,
+      "records": 4,
+      "mode": "api",
+      "note": "raw 432 edu 39",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261008",
       "to": "20261008",
@@ -31103,6 +32939,18 @@
       "mode": "api",
       "note": "raw 257 edu 257",
       "finished_at": "2026-10-29 16:03"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261008",
+      "to": "20261008",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 478 edu 34",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "용역",
@@ -31142,6 +32990,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261009",
+      "to": "20261009",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 28 edu 7",
+      "finished_at": "2026-10-29 17:21"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261010",
       "to": "20261010",
@@ -31175,6 +33035,18 @@
       "mode": "api",
       "note": "raw 219 edu 219",
       "finished_at": "2026-10-29 16:06"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261010",
+      "to": "20261010",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 21 edu 1",
+      "finished_at": "2026-10-29 17:21"
     },
     {
       "search_term": "용역",
@@ -31214,6 +33086,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261011",
+      "to": "20261011",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 23 edu 2",
+      "finished_at": "2026-10-29 17:22"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261012",
       "to": "20261012",
@@ -31247,6 +33131,18 @@
       "mode": "api",
       "note": "raw 260 edu 260",
       "finished_at": "2026-10-29 16:07"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261012",
+      "to": "20261012",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 510 edu 45",
+      "finished_at": "2026-10-29 17:22"
     },
     {
       "search_term": "용역",
@@ -31286,6 +33182,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261013",
+      "to": "20261013",
+      "status": "complete",
+      "pages": 1,
+      "records": 4,
+      "mode": "api",
+      "note": "raw 406 edu 37",
+      "finished_at": "2026-10-29 17:22"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261014",
       "to": "20261014",
@@ -31322,6 +33230,18 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261014",
+      "to": "20261014",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 378 edu 26",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261015",
       "to": "20261015",
@@ -31355,6 +33275,174 @@
       "mode": "api",
       "note": "raw 209 edu 209",
       "finished_at": "2026-10-29 16:11"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261015",
+      "to": "20261015",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 424 edu 26",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261016",
+      "to": "20261016",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 386 edu 32",
+      "finished_at": "2026-10-29 17:23"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261017",
+      "to": "20261017",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 17 edu 2",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261018",
+      "to": "20261018",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 18 edu 1",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261019",
+      "to": "20261019",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 526 edu 37",
+      "finished_at": "2026-10-29 17:24"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261020",
+      "to": "20261020",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 460 edu 34",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261021",
+      "to": "20261021",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 445 edu 30",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261022",
+      "to": "20261022",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 441 edu 19",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261023",
+      "to": "20261023",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 460 edu 34",
+      "finished_at": "2026-10-29 17:25"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261024",
+      "to": "20261024",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 14 edu 2",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261025",
+      "to": "20261025",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 33 edu 2",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261026",
+      "to": "20261026",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 425 edu 45",
+      "finished_at": "2026-10-29 17:26"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261027",
+      "to": "20261027",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 445 edu 40",
+      "finished_at": "2026-10-29 17:27"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261028",
+      "to": "20261028",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 382 edu 38",
+      "finished_at": "2026-10-29 17:27"
     },
     {
       "search_term": "원아워",
@@ -35293,5 +37381,5 @@
       "finished_at": "2026-10-29 15:18"
     }
   ],
-  "updated_at": "2026-10-29 16:11"
+  "updated_at": "2026-10-29 17:27"
 }
