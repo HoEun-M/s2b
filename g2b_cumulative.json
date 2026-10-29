@@ -1,13 +1,14 @@
 {
- "exported_at": "2026-10-29 16:11",
+ "exported_at": "2026-10-29 16:53",
  "meta": {
-  "lastImportedAt": "2026-10-29 16:11",
+  "lastImportedAt": "2026-10-29 16:53",
   "lastSearchPeriod": "20261001~20261015",
   "total": 696,
   "bySource": {
    "contract": 613,
    "bid": 54,
-   "award": 29
+   "award": 29,
+   "plan": 0
   }
  },
  "records": [
@@ -1547,9 +1548,21 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-10-29 15:55",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-10-29 15:53",
-   "import_count": 2
+   "import_count": 3,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "휴안주식회사",
+     "bizno": "4098629697",
+     "amount": "20,328,000",
+     "rate": "88",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02270084",
@@ -2663,9 +2676,21 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-30 12:53",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-30 12:49",
-   "import_count": 5
+   "import_count": 6,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 내스타일",
+     "bizno": "3828101860",
+     "amount": "19,500,000",
+     "rate": "97.5",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "award:R26BK01728088-000-1",
@@ -2695,9 +2720,21 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-30 12:53",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-30 12:49",
-   "import_count": 5
+   "import_count": 6,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 내스타일",
+     "bizno": "3828101860",
+     "amount": "19,500,000",
+     "rate": "97.5",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02232340",
@@ -2797,9 +2834,351 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-30 12:51",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-30 12:44",
-   "import_count": 8
+   "import_count": 9,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 클라우드소프트",
+     "bizno": "2078802795",
+     "amount": "17,717,179",
+     "rate": "90.002",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "(주)케이에이치그룹한국역사문화원",
+     "bizno": "1058762466",
+     "amount": "17,726,052",
+     "rate": "90.047",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "3",
+     "name": "오정",
+     "bizno": "8272401230",
+     "amount": "17,741,935",
+     "rate": "90.128",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "4",
+     "name": "디자인북스",
+     "bizno": "6173714458",
+     "amount": "17,751,700",
+     "rate": "90.177",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "5",
+     "name": "서온상사",
+     "bizno": "2893001481",
+     "amount": "17,757,848",
+     "rate": "90.208",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "6",
+     "name": "비제이컴퍼니",
+     "bizno": "3210402072",
+     "amount": "17,765,480",
+     "rate": "90.247",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "7",
+     "name": "주식회사 갑천만수",
+     "bizno": "4198802063",
+     "amount": "17,773,788",
+     "rate": "90.289",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "8",
+     "name": "한일",
+     "bizno": "4052302181",
+     "amount": "17,789,757",
+     "rate": "90.37",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "9",
+     "name": "주식회사 오정",
+     "bizno": "5898103310",
+     "amount": "17,805,755",
+     "rate": "90.452",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "10",
+     "name": "주식회사 유크",
+     "bizno": "6978702327",
+     "amount": "17,813,050",
+     "rate": "90.489",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "11",
+     "name": "대원",
+     "bizno": "5431303163",
+     "amount": "17,821,782",
+     "rate": "90.533",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "12",
+     "name": "주식회사 와이에스제이",
+     "bizno": "2608603243",
+     "amount": "17,836,056",
+     "rate": "90.606",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "13",
+     "name": "삼도",
+     "bizno": "8125900833",
+     "amount": "17,837,838",
+     "rate": "90.615",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "14",
+     "name": "창성테크",
+     "bizno": "1492302146",
+     "amount": "17,853,922",
+     "rate": "90.696",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "15",
+     "name": "제이디아이(JDI)",
+     "bizno": "6671900936",
+     "amount": "17,854,446",
+     "rate": "90.699",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "16",
+     "name": "주식회사 모아텍",
+     "bizno": "4858601669",
+     "amount": "17,870,036",
+     "rate": "90.778",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "17",
+     "name": "에이치엠",
+     "bizno": "6044071787",
+     "amount": "17,883,386",
+     "rate": "90.846",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "18",
+     "name": "주식회사 혼정보통신",
+     "bizno": "8278602014",
+     "amount": "17,885,043",
+     "rate": "90.855",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "19",
+     "name": "모아상사",
+     "bizno": "3091861646",
+     "amount": "17,886,179",
+     "rate": "90.86",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "20",
+     "name": "다옴",
+     "bizno": "8042402352",
+     "amount": "17,896,480",
+     "rate": "90.913",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "21",
+     "name": "레브",
+     "bizno": "6346100764",
+     "amount": "17,902,351",
+     "rate": "90.942",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "22",
+     "name": "이룸",
+     "bizno": "8861602719",
+     "amount": "17,907,480",
+     "rate": "90.969",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "23",
+     "name": "다온코아",
+     "bizno": "8254801069",
+     "amount": "17,912,325",
+     "rate": "90.993",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "24",
+     "name": "경기모아상사",
+     "bizno": "2650101980",
+     "amount": "17,918,552",
+     "rate": "91.025",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "25",
+     "name": "서이트레이드",
+     "bizno": "2273001106",
+     "amount": "17,934,783",
+     "rate": "91.107",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "26",
+     "name": "라넬 주식회사",
+     "bizno": "7518803665",
+     "amount": "17,950,000",
+     "rate": "91.185",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "27",
+     "name": "주식회사 씨티원 충남",
+     "bizno": "7958701414",
+     "amount": "17,967,332",
+     "rate": "91.273",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "28",
+     "name": "모아테크",
+     "bizno": "7820901711",
+     "amount": "17,983,651",
+     "rate": "91.355",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "29",
+     "name": "제이에이치테크",
+     "bizno": "1861501398",
+     "amount": "19,250,000",
+     "rate": "97.788",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "30",
+     "name": "마라",
+     "bizno": "1441503067",
+     "amount": "19,580,000",
+     "rate": "99.465",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 성수테크",
+     "bizno": "1758603630",
+     "amount": "17,388,925",
+     "rate": "88.334",
+     "note": "낙찰하한선 미달",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 극동 아이.씨.엠",
+     "bizno": "1318152607",
+     "amount": "17,678,571",
+     "rate": "89.806",
+     "note": "낙찰하한선 미달",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "지노스포츠(포티스)",
+     "bizno": "7595500382",
+     "amount": "17,710,197",
+     "rate": "89.966",
+     "note": "낙찰하한선 미달",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "헤이치 인 헤이치(hand in hand)",
+     "bizno": "7527500263",
+     "amount": "19,800,000",
+     "rate": "100.582",
+     "note": "예가초과",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02164585",
@@ -3880,9 +4259,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-30 12:43",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-30 12:38",
-   "import_count": 7
+   "import_count": 8,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "자이림",
+     "bizno": "4493300125",
+     "amount": "58,154,040",
+     "rate": "88.07",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "선",
+     "bizno": "8761300993",
+     "amount": "58,022,380",
+     "rate": "87.871",
+     "note": "낙찰하한선 미달",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02201638",
@@ -4438,9 +4839,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-30 12:38",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-30 11:55",
-   "import_count": 13
+   "import_count": 14,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 드림업컨설팅",
+     "bizno": "2638600930",
+     "amount": "38,500,000",
+     "rate": "96.64",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 리핏",
+     "bizno": "2708800612",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "bid:R26BK01708034-000",
@@ -6293,9 +6716,51 @@
    "school_level": "중",
    "school_category": "중학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 10:13",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 10:07",
-   "import_count": 8
+   "import_count": 9,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "서이과학교육",
+     "bizno": "8660501030",
+     "amount": "20,705,882",
+     "rate": "97.726",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "케이엠상사",
+     "bizno": "6191360568",
+     "amount": "21,004,600",
+     "rate": "99.136",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "3",
+     "name": "주식회사 루트웰",
+     "bizno": "6768601611",
+     "amount": "21,177,000",
+     "rate": "99.949",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "비피엔",
+     "bizno": "7511001877",
+     "amount": "19,030,600",
+     "rate": "89.819",
+     "note": "낙찰하한선 미달",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02076602",
@@ -6849,9 +7314,31 @@
    "school_level": "고",
    "school_category": "고등학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 10:04",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 09:50",
-   "import_count": 15
+   "import_count": 16,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사삼진유니켐",
+     "bizno": "1328127800",
+     "amount": "218,020,000",
+     "rate": "97.219",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "씨앤디아이 주식회사",
+     "bizno": "1308605407",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02104558",
@@ -7301,9 +7788,61 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:55",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 09:21",
-   "import_count": 31
+   "import_count": 32,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 에누마코리아",
+     "bizno": "8838600976",
+     "amount": "810,790,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "90",
+     "total": "100"
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 에이아이데이타",
+     "bizno": "4998802623",
+     "amount": "1,000,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "88",
+     "total": "96.1079"
+    },
+    {
+     "rank": "3",
+     "name": "주식회사 팀모노리스",
+     "bizno": "6438602226",
+     "amount": "900,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "86",
+     "total": "95.0088"
+    },
+    {
+     "rank": "4",
+     "name": "주식회사 투비유니콘",
+     "bizno": "8708601815",
+     "amount": "989,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "82.5486",
+     "total": "90.7467"
+    },
+    {
+     "rank": "5",
+     "name": "주식회사 와이에스메타 (YSmeta Corp.)",
+     "bizno": "3058702578",
+     "amount": "930,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "78.8771",
+     "total": "87.5953"
+    }
+   ]
   },
   {
    "id": "contract:R26TA02092957",
@@ -7368,9 +7907,51 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:55",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 09:39",
-   "import_count": 17
+   "import_count": 18,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 페어엑스",
+     "bizno": "3408101866",
+     "amount": "81,176,000",
+     "rate": "80.519",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 비온디소프트",
+     "bizno": "2158773294",
+     "amount": "90,224,486",
+     "rate": "89.495",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 유탑소프트",
+     "bizno": "1248668144",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 리핏",
+     "bizno": "2708800612",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02082428",
@@ -8242,9 +8823,21 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:46",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 09:46",
-   "import_count": 1
+   "import_count": 2,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 드림정보",
+     "bizno": "1808800207",
+     "amount": "235,000,000",
+     "rate": "85.195",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA02055422",
@@ -9567,9 +10160,41 @@
    "school_level": "고",
    "school_category": "고등학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:26",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 09:16",
-   "import_count": 9
+   "import_count": 10,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "드림상사",
+     "bizno": "4553100975",
+     "amount": "33,000,000",
+     "rate": "98.186",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 새벌네트웍스",
+     "bizno": "5058147606",
+     "amount": "33,261,200",
+     "rate": "98.963",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "3",
+     "name": "주식회사 성보전력",
+     "bizno": "5058137622",
+     "amount": "33,600,000",
+     "rate": "99.971",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01990401",
@@ -10089,9 +10714,51 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:17",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:54",
-   "import_count": 21
+   "import_count": 22,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 상록에스",
+     "bizno": "2158197498",
+     "amount": "97,061,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "87.1167",
+     "total": "96.3212"
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 오피유커스",
+     "bizno": "1288657182",
+     "amount": "102,520,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "86.6167",
+     "total": "95.3311"
+    },
+    {
+     "rank": "3",
+     "name": "주식회사 폭스커넥트",
+     "bizno": "6978802547",
+     "amount": "95,957,990",
+     "rate": "",
+     "note": "정상",
+     "tech": "84.5",
+     "total": "93.8103"
+    },
+    {
+     "rank": "4",
+     "name": "바위물(bawimul)",
+     "bizno": "7083700532",
+     "amount": "89,340,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "81.4833",
+     "total": "91.4833"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01873034",
@@ -10682,9 +11349,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:08",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:57",
-   "import_count": 12
+   "import_count": 13,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "테크빌교육(주)",
+     "bizno": "2208605258",
+     "amount": "26,500,000",
+     "rate": "67.426",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 아이스크림미디어",
+     "bizno": "1208633565",
+     "amount": "30,900,000",
+     "rate": "78.622",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01942560",
@@ -10960,9 +11649,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:04",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:51",
-   "import_count": 15
+   "import_count": 16,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 티제이앤앤에스",
+     "bizno": "7698701962",
+     "amount": "517,000,000",
+     "rate": "99.9",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 에스인포",
+     "bizno": "2838102562",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01945714",
@@ -11274,9 +11985,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 09:01",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:48",
-   "import_count": 15
+   "import_count": 16,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "엔에이치엔인재아이엔씨(주)",
+     "bizno": "1198145810",
+     "amount": "6,172,410,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "90",
+     "total": "100"
+    },
+    {
+     "rank": "",
+     "name": "주식회사 미래월드",
+     "bizno": "8598101754",
+     "amount": "6,172,412,000",
+     "rate": "",
+     "note": "협상평가부적격자",
+     "tech": "80.288",
+     "total": "90.288"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01919127",
@@ -11411,9 +12144,21 @@
    "school_level": "초",
    "school_category": "초등학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 08:59",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:59",
-   "import_count": 1
+   "import_count": 2,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 지피",
+     "bizno": "1408173625",
+     "amount": "27,500,000",
+     "rate": "100",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "bid:R26BK01560141-000",
@@ -12706,9 +13451,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 08:48",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:42",
-   "import_count": 5
+   "import_count": 6,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 바움아이티",
+     "bizno": "3148640695",
+     "amount": "40,000,000",
+     "rate": "96.594",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "아라ICT",
+     "bizno": "3142446065",
+     "amount": "41,250,000",
+     "rate": "99.613",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01883034",
@@ -13232,9 +13999,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 08:40",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:29",
-   "import_count": 12
+   "import_count": 13,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "(사)한국능률협회",
+     "bizno": "1058201810",
+     "amount": "89,200,000",
+     "rate": "98.232",
+     "note": "정상",
+     "tech": "79.9667",
+     "total": "89.6304"
+    },
+    {
+     "rank": "2",
+     "name": "한국미디어교육 주식회사",
+     "bizno": "1168170154",
+     "amount": "86,200,000",
+     "rate": "94.928",
+     "note": "정상",
+     "tech": "77.1333",
+     "total": "87.1333"
+    }
+   ]
   },
   {
    "id": "award:R26BK01522824-000-1",
@@ -13264,9 +14053,21 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 08:40",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-28 08:39",
-   "import_count": 2
+   "import_count": 3,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "테크빌교육(주)",
+     "bizno": "2208605258",
+     "amount": "661,500,000",
+     "rate": "100",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01858736",
@@ -13437,9 +14238,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-28 08:39",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 16:05",
-   "import_count": 23
+   "import_count": 24,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 아이코어이앤씨",
+     "bizno": "1428128238",
+     "amount": "639,160,000",
+     "rate": "96.979",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "",
+     "name": "주식회사 소르테크",
+     "bizno": "5918100543",
+     "amount": "",
+     "rate": "",
+     "note": "규격서평가부적격",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01859960",
@@ -14810,9 +15633,41 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:14",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:55",
-   "import_count": 18
+   "import_count": 19,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 에누마코리아",
+     "bizno": "8838600976",
+     "amount": "1,015,107,390",
+     "rate": "",
+     "note": "정상",
+     "tech": "85.85",
+     "total": "95.7997"
+    },
+    {
+     "rank": "2",
+     "name": "(주)시그마와이즈",
+     "bizno": "1208178285",
+     "amount": "1,152,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "82.05",
+     "total": "90.8174"
+    },
+    {
+     "rank": "",
+     "name": "주식회사 상록에스",
+     "bizno": "2158197498",
+     "amount": "1,010,000,000",
+     "rate": "",
+     "note": "협상평가부적격자",
+     "tech": "73.95",
+     "total": "83.95"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01804906",
@@ -16180,9 +17035,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:08",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:53",
-   "import_count": 15
+   "import_count": 16,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 월드유",
+     "bizno": "4768802649",
+     "amount": "148,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "81.7",
+     "total": "91.7"
+    },
+    {
+     "rank": "2",
+     "name": "(주)월드투어비즈니스",
+     "bizno": "5628801882",
+     "amount": "149,750,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "73.6",
+     "total": "83.4831"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01792561",
@@ -16460,9 +17337,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:07",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:52",
-   "import_count": 15
+   "import_count": 16,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "(사)한국능률협회",
+     "bizno": "1058201810",
+     "amount": "190,000,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "86.4",
+     "total": "95.3684"
+    },
+    {
+     "rank": "2",
+     "name": "주식회사 유디임팩트",
+     "bizno": "6938800061",
+     "amount": "170,400,000",
+     "rate": "",
+     "note": "정상",
+     "tech": "69.3",
+     "total": "79.3"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01794147",
@@ -16598,9 +17497,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:05",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:46",
-   "import_count": 20
+   "import_count": 21,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "(주)폭스소프트",
+     "bizno": "1238600705",
+     "amount": "435,691,020",
+     "rate": "",
+     "note": "정상",
+     "tech": "90",
+     "total": "100"
+    },
+    {
+     "rank": "",
+     "name": "(주)시소아이티",
+     "bizno": "2148718508",
+     "amount": "445,123,500",
+     "rate": "",
+     "note": "협상평가부적격자",
+     "tech": "71.82",
+     "total": "81.6081"
+    }
+   ]
   },
   {
    "id": "contract:R26TA01781002",
@@ -17262,9 +18183,31 @@
    "school_level": "기타",
    "school_category": "기타기관",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:03",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:46",
-   "import_count": 18
+   "import_count": 19,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 캐럿솔루션즈",
+     "bizno": "3578702040",
+     "amount": "26,532,000",
+     "rate": "57.835",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    },
+    {
+     "rank": "2",
+     "name": "(주)미래교육",
+     "bizno": "1058700397",
+     "amount": "41,240,000",
+     "rate": "89.896",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01771074",
@@ -17330,9 +18273,21 @@
    "school_level": "초",
    "school_category": "초등학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:00",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:58",
-   "import_count": 3
+   "import_count": 4,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "(주)디엔소프트",
+     "bizno": "1088605434",
+     "amount": "27,000,000",
+     "rate": "100",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01769636",
@@ -17506,9 +18461,21 @@
    "school_level": "중",
    "school_category": "중학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 16:00",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:58",
-   "import_count": 3
+   "import_count": 4,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "마타에듀 주식회사",
+     "bizno": "1208802692",
+     "amount": "6,000,000",
+     "rate": "100",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "contract:R26TA01750582",
@@ -17854,9 +18821,21 @@
    "school_level": "초",
    "school_category": "초등학교",
    "is_negotiated": false,
-   "last_imported_at": "2026-09-27 15:58",
+   "last_imported_at": "2026-10-29 16:53",
    "first_imported_at": "2026-09-27 15:56",
-   "import_count": 2
+   "import_count": 3,
+   "bidders": [
+    {
+     "rank": "1",
+     "name": "주식회사 팀플백",
+     "bizno": "8948600807",
+     "amount": "3,332,000",
+     "rate": "100",
+     "note": "정상",
+     "tech": "",
+     "total": ""
+    }
+   ]
   },
   {
    "id": "bid:R26BK01466668-000",
