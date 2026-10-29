@@ -1,8 +1,9 @@
 # coding: utf-8
-"""나라장터(G2B) 오픈API 수집기: 교육기관의 입찰공고 / 낙찰 / 계약 정보를 공공데이터포털 API로 받아 누적한다.
+"""나라장터(G2B) 오픈API 수집기: 교육기관의 발주계획 / 입찰공고 / 낙찰(+참여업체 개찰결과) / 계약 정보를 공공데이터포털 API로 받아 누적한다.
 
 - 인증키는 공휴일 API와 같은 data.go.kr 키(S2B_DATA_GO_KR_KEY 환경변수로 덮어쓰기 가능).
-  입찰공고정보서비스 / 계약정보서비스 / 낙찰정보서비스 3개에 활용신청이 되어 있어야 한다.
+  입찰공고정보서비스 / 계약정보서비스 / 낙찰정보서비스 / 발주계획현황서비스에 활용신청이 되어 있어야 한다.
+  발주계획현황서비스만 활용신청이 안 돼 있으면 발주계획은 건너뛰고 나머지는 그대로 받는다.
 - 원장(crawl_ledger.json)은 학교장터 크롤러와 공유하되 kind="g2b:<source>", search_term=<업무구분>으로 구분한다.
 - 체크포인트 디렉터리는 쓰지 않는다(학교장터 finalize가 그 디렉터리를 통째로 병합하므로 섞이면 안 된다).
   대신 하루 조각이 끝날 때마다 바로 누적 파일에 반영한다.
@@ -38,8 +39,13 @@ SOURCES = {
     "contract": {"label": "계약", "path": "ao/CntrctInfoService/getCntrctInfoList{cat}", "inqry_div": "1", "server_filter": False},
     "bid": {"label": "입찰공고", "path": "ad/BidPublicInfoService/getBidPblancListInfo{cat}PPSSrch", "inqry_div": "1", "server_filter": True},
     "award": {"label": "낙찰", "path": "as/ScsbidInfoService/getScsbidListSttus{cat}PPSSrch", "inqry_div": "2", "server_filter": True},
+    # 발주계획: 응답 항목 이름을 실제 응답으로 확정하기 전이라 서버 필터 없이 하루치를 받아 로컬에서 교육기관을 거른다.
+    "plan": {"label": "발주계획", "path": "ao/OrderPlanSttusService/getOrderPlanSttusList{cat}", "inqry_div": "1", "server_filter": False},
 }
-SOURCE_ORDER = ("contract", "bid", "award")
+SOURCE_ORDER = ("contract", "bid", "award", "plan")
+# 낙찰 건마다 개찰결과(참여업체 전체·순위·투찰금액)를 붙인다. 같은 낙찰정보서비스라 award 호출 예산을 같이 쓴다.
+OPENING_PATH = "as/ScsbidInfoService/getOpengResultListInfoOpengCompt"
+MAX_BIDDERS = 100
 EDU_SERVER_FILTER = "교육청"
 # 초중고·교육청 계열만 남긴다. 소관구분 "교육기관"에는 대학 산학협력단, 타 부처 교육원도 섞여 있어서
 # 기관명에 교육청/학교/유치원이 있어야 하고, 대학·산학협력단은 뺀다 (교육청 산하 교육연구정보원 등은 이름 앞에 교육청이 붙어 통과).
@@ -133,6 +139,12 @@ def api_get(source, path, params, http_get=None):
         try:
             bump_call_log(source)
             response = http_get(BASE_URL + path, params=query, timeout=120)
+            if response.status_code >= 400:
+                # 활용신청 안 된 서비스 등 게이트웨이 오류는 403 본문(JSON)에 사유가 온다. 재시도하지 않고 사유대로 처리한다.
+                try:
+                    parse_api_payload(response.json())
+                except ValueError:
+                    pass
             response.raise_for_status()
             payload = response.json()
             return parse_api_payload(payload)
@@ -303,12 +315,102 @@ def normalize_award(item):
         "bid_rate": (item.get("sucsfbidRate") or "").strip(),
         "participants": (item.get("prtcptCnum") or "").strip(),
         "notice_no": (item.get("bidNtceNo") or "").strip(),
+        "notice_ord": str(item.get("bidNtceOrd") or "000").strip(),
+        "bid_clsfc_no": str(item.get("bidClsfcNo") or "").strip(),
         "link": "",
         "classification": "",
     }
 
 
-NORMALIZERS = {"contract": normalize_contract, "bid": normalize_bid, "award": normalize_award}
+def pick(item, *keys):
+    for key in keys:
+        value = item.get(key)
+        if value not in (None, ""):
+            return str(value).strip()
+    return ""
+
+
+_plan_keys_shown = False
+
+
+def normalize_plan(item):
+    # 발주계획현황 응답 항목 이름은 문서로 확정하지 못해 후보를 차례로 본다. 사업명이 비면 실제 항목 이름을 한 번 찍어 둔다.
+    global _plan_keys_shown
+    name = pick(item, "bizNm", "orderPlanNm", "prdctNm", "cntrctNm", "bsnsNm")
+    if not name and not _plan_keys_shown:
+        _plan_keys_shown = True
+        print("    [g2b plan] 사업명 항목을 못 찾았습니다. 응답 항목: " + ", ".join(sorted(item.keys())))
+    plan_no = pick(item, "orderPlanUntyNo", "orderPlanNo", "orderPlanSno", "bsnsNo")
+    institution = pick(item, "orderInsttNm", "dminsttNm", "insttNm", "ntceInsttNm")
+    year, month = pick(item, "orderYear", "orderYy"), pick(item, "orderMnth", "orderMm")
+    if not plan_no:
+        plan_no = re.sub(r"\s+", "", institution + "|" + name + "|" + year + month)
+    return {
+        "id": "plan:" + plan_no,
+        "source": "plan",
+        "name": name,
+        "institution": institution,
+        "contract_institution": pick(item, "totlmngInsttNm", "jrsdctnInsttNm"),
+        "jurisdiction": pick(item, "jrsdctnDivNm"),
+        "counterpart": "",
+        "amount": amount_text(pick(item, "sumOrderAmt", "orderAmt", "asignBdgtAmt", "bdgtAmt")),
+        "date": pick(item, "nticeDt", "rgstDt", "ntceDt", "orderPlanRgstDt")[:10],
+        "registered_at": pick(item, "rgstDt", "nticeDt", "ntceDt"),
+        "order_month": (year + "-" + month.zfill(2)) if year and month else (year or month),
+        "method": pick(item, "cntrctMthdNm", "cntrctCnclsMthdNm"),
+        "department": pick(item, "deptNm", "orderInsttDeptNm"),
+        "notice_nos": pick(item, "bidNtceNoList", "bidNtceNo"),
+        "link": "",
+        "classification": pick(item, "prdctClsfcNoNm", "dtilPrdctClsfcNoNm"),
+        "changed_at": pick(item, "chgDt"),
+    }
+
+
+NORMALIZERS = {"contract": normalize_contract, "bid": normalize_bid, "award": normalize_award, "plan": normalize_plan}
+
+
+def normalize_bidder(item):
+    return {
+        "rank": pick(item, "opengRank"),
+        "name": pick(item, "prcbdrNm"),
+        "bizno": pick(item, "prcbdrBizno"),
+        "amount": amount_text(item.get("bidprcAmt")),
+        "rate": pick(item, "bidprcrt"),
+        "note": pick(item, "rmrk"),
+        "tech": pick(item, "techEvlVal"),
+        "total": pick(item, "totalEvlAmtVal"),
+    }
+
+
+def fetch_bidders(record, http_get=None):
+    # 낙찰 1건의 개찰결과(참여업체 전체). 반환: 업체 목록(순위순, 최대 MAX_BIDDERS)
+    # 예전 레코드는 차수·분류번호 항목이 없어 id(award:공고번호-차수-분류번호)에서 꺼낸다
+    parts = (record.get("id", "").split(":", 1) + [""])[1].split("-")
+    notice_ord = record.get("notice_ord") or (parts[1] if len(parts) > 1 else "") or "000"
+    clsfc_no = record.get("bid_clsfc_no") or (parts[2] if len(parts) > 2 else "")
+    params = {"bidNtceNo": record.get("notice_no", ""), "bidNtceOrd": notice_ord, "numOfRows": "999", "pageNo": "1"}
+    if clsfc_no:
+        params["bidClsfcNo"] = clsfc_no
+    items, _total = api_get("award", OPENING_PATH, params, http_get)
+    bidders = [normalize_bidder(item) for item in items]
+    bidders.sort(key=lambda b: int(b["rank"]) if b["rank"].isdigit() else 99999)
+    return bidders[:MAX_BIDDERS]
+
+
+def attach_bidders(records, http_get=None):
+    # 낙찰 레코드에 참여업체를 붙인다. 개별 실패는 건너뛰고(다음 실행이나 --fill-bidders로 다시), 예산 소진은 위로 올린다.
+    done = 0
+    for record in records:
+        if record.get("source") != "award" or not record.get("notice_no"):
+            continue
+        try:
+            record["bidders"] = fetch_bidders(record, http_get)
+            done += 1
+        except BudgetExceeded:
+            raise
+        except G2BError as exc:
+            print("    [g2b] 참여업체 조회 실패 " + record.get("notice_no", "") + ": " + str(exc)[:120])
+    return done
 
 
 def school_name_part(institution):
@@ -321,12 +423,24 @@ def school_name_part(institution):
     return str(institution or "")
 
 
+# 학교장터 제외어를 그대로 쓰되 "용역"은 뺀다. 나라장터에서는 용역 공고·계약명 대부분에 "용역"이 붙어서
+# "AI 코스웨어 구축 용역"처럼 키워드가 맞는 건까지 전부 제외되기 때문이다.
+G2B_ALLOWED_EXCLUDE_WORDS = ("용역",)
+
+
+def is_excluded_g2b_name(name):
+    text = name or ""
+    for word in G2B_ALLOWED_EXCLUDE_WORDS:
+        text = text.replace(word, " ")
+    return local.is_excluded_contract_name(text)
+
+
 def enrich(record, category):
     institution = record.get("institution") or record.get("contract_institution") or ""
     school = school_name_part(institution)
     record["category"] = category
     record["keywords"] = local.tag_keywords(record.get("name", ""))
-    record["excluded"] = local.is_excluded_contract_name(record.get("name", ""))
+    record["excluded"] = is_excluded_g2b_name(record.get("name", ""))
     region = local.region_from_institution_name(institution) or {}
     resolved_region = region.get("region", "") or local.short_region(institution)
     record["region"] = "전남" if resolved_region == "광주" else resolved_region
@@ -353,6 +467,10 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
         if source == "contract":
             demand_names = " ".join(entry[2] for entry in parse_caret_list(item.get("dminsttList")) if len(entry) > 2)
             if not is_edu_institution(item.get("cntrctInsttNm"), demand_names):
+                continue
+        elif source == "plan":
+            plan = normalizer(item)
+            if not is_edu_institution(plan["institution"], plan["contract_institution"]):
                 continue
         else:
             if not is_edu_institution(item.get("dminsttNm"), item.get("ntceInsttNm")):
@@ -514,7 +632,7 @@ a.lnk{color:#4f8068;text-decoration:none}a.lnk:hover{text-decoration:underline}.
 """
 
 G2B_JS = r"""
-var SOURCES={contract:'계약',bid:'입찰공고',award:'낙찰'};
+var SOURCES={contract:'계약',bid:'입찰공고',award:'낙찰',plan:'발주계획'};
 var state={source:'contract',q:'',method:'all',region:'',category:'',from:'',to:''};
 function fmtWon(n){n=Number(n)||0;return n.toLocaleString('ko-KR')+'원';}
 function amountNum(v){return Number(String(v||'').replace(/[^0-9]/g,''))||0;}
@@ -538,7 +656,8 @@ function render(){var list=rows();var total=list.reduce(function(s,r){return s+a
   var top=Object.keys(inst).sort(function(a,b){return inst[b]-inst[a];})[0];document.getElementById('m-top').textContent=top||'-';
   document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.toggle('active',b.dataset.source===state.source);});
   document.querySelectorAll('[data-method]').forEach(function(b){b.classList.toggle('active',b.dataset.method===state.method);});
-  var head=state.source==='bid'?'<th>NO</th><th>공고명</th><th>수요기관</th><th>지역</th><th>구분</th><th>계약방법</th><th class="tr">예산/추정가</th><th>공고일</th><th>입찰마감</th><th>개찰</th>'
+  var head=state.source==='plan'?'<th>NO</th><th>사업명</th><th>발주기관</th><th>지역</th><th>구분</th><th>계약방법</th><th class="tr">발주금액</th><th>발주 시기</th><th>게시일</th><th>공고번호</th>'
+    :state.source==='bid'?'<th>NO</th><th>공고명</th><th>수요기관</th><th>지역</th><th>구분</th><th>계약방법</th><th class="tr">예산/추정가</th><th>공고일</th><th>입찰마감</th><th>개찰</th>'
     :state.source==='award'?'<th>NO</th><th>공고명</th><th>수요기관</th><th>지역</th><th>구분</th><th>낙찰업체</th><th class="tr">낙찰금액</th><th>투찰률</th><th>참가</th><th>개찰일</th>'
     :'<th>NO</th><th>계약명</th><th>수요기관</th><th>지역</th><th>구분</th><th>계약방법</th><th>계약업체</th><th class="tr">계약금액</th><th>계약일</th><th>근거</th>';
   document.getElementById('thead').innerHTML='<tr>'+head+'</tr>';
@@ -546,7 +665,9 @@ function render(){var list=rows();var total=list.reduce(function(s,r){return s+a
     var tags=(r.keywords||[]).map(function(k){return '<span class="tag">'+esc(k)+'</span>';}).join('');
     var meth='<span class="pill'+(r.is_negotiated?' nego':'')+'">'+esc(r.method||'-')+'</span>';
     if(state.source==='bid')return '<tr><td>'+(i+1)+'</td><td>'+name+'<div>'+tags+'</div></td><td>'+esc(r.institution)+'</td><td class="nowrap">'+esc(r.region)+'</td><td>'+esc(r.category)+'</td><td>'+meth+'</td><td class="tr">'+esc(r.amount)+'</td><td class="nowrap">'+esc(r.date)+'</td><td class="nowrap">'+esc((r.close_at||'').slice(0,16))+'</td><td class="nowrap">'+esc((r.open_at||'').slice(0,16))+'</td></tr>';
-    if(state.source==='award')return '<tr><td>'+(i+1)+'</td><td>'+name+'<div>'+tags+'</div></td><td>'+esc(r.institution)+'</td><td class="nowrap">'+esc(r.region)+'</td><td>'+esc(r.category)+'</td><td>'+esc(r.counterpart)+'</td><td class="tr">'+esc(r.amount)+'</td><td class="tr">'+esc(r.bid_rate)+'</td><td class="tr">'+esc(r.participants)+'</td><td class="nowrap">'+esc(r.date)+'</td></tr>';
+    if(state.source==='plan')return '<tr><td>'+(i+1)+'</td><td>'+name+'<div>'+tags+'</div></td><td>'+esc(r.institution)+'</td><td class="nowrap">'+esc(r.region)+'</td><td>'+esc(r.category)+'</td><td>'+meth+'</td><td class="tr">'+esc(r.amount)+'</td><td class="nowrap">'+esc(r.order_month)+'</td><td class="nowrap">'+esc(r.date)+'</td><td>'+esc(r.notice_nos)+'</td></tr>';
+    if(state.source==='award'){var bd=(r.bidders||[]).map(function(b){return esc(b.rank)+'. '+esc(b.name)+' '+esc(b.amount);}).join('&#10;');
+      return '<tr><td>'+(i+1)+'</td><td>'+name+'<div>'+tags+'</div></td><td>'+esc(r.institution)+'</td><td class="nowrap">'+esc(r.region)+'</td><td>'+esc(r.category)+'</td><td>'+esc(r.counterpart)+'</td><td class="tr">'+esc(r.amount)+'</td><td class="tr">'+esc(r.bid_rate)+'</td><td class="tr"'+(bd?' title="'+bd+'"':'')+'>'+esc(r.participants)+'</td><td class="nowrap">'+esc(r.date)+'</td></tr>';}
     return '<tr><td>'+(i+1)+'</td><td>'+name+'<div>'+tags+'</div></td><td>'+esc(r.institution)+'</td><td class="nowrap">'+esc(r.region)+'</td><td>'+esc(r.category)+'</td><td>'+meth+'</td><td>'+esc(r.counterpart)+'</td><td class="tr">'+esc(r.amount)+'</td><td class="nowrap">'+esc(r.date)+'</td><td>'+esc(r.basis)+'</td></tr>';
   }).join('');
   document.getElementById('tbody').innerHTML=body;document.getElementById('no-result').style.display=list.length?'none':'block';
@@ -587,7 +708,7 @@ def build_html(data):
         "<input type='date' id='from' onchange='applyFilters()'> ~ <input type='date' id='to' onchange='applyFilters()'>"
         "<button type='button' class='btn' onclick='resetFilters()'>초기화</button><button type='button' class='btn' onclick='downloadCsv()'>CSV 다운로드</button><span id='trunc' class='meta' style='color:#70807a'></span></div>"
         "<div class='table-wrap'><table><thead id='thead'></thead><tbody id='tbody'></tbody></table><div id='no-result' class='no-result'>조건에 맞는 건이 없습니다.</div></div>"
-        "<div class='footer'>출처: 공공데이터포털 조달청 나라장터 입찰공고정보·낙찰정보·계약정보서비스</div></div>"
+        "<div class='footer'>출처: 공공데이터포털 조달청 나라장터 발주계획현황·입찰공고정보·낙찰정보·계약정보서비스</div></div>"
         "<script>var RECORDS=" + records_json + ";</script><script>" + G2B_JS + "</script></body></html>"
     )
 
@@ -638,6 +759,7 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
     collected = []
     summary = {"complete": 0, "error": 0}
     stopped = None
+    disabled = {}   # 활용신청이 안 된 서비스: 그 소스만 건너뛰고 나머지는 계속 받는다
     # 하루치가 끝날 때마다 누적 파일에 반영하고 그 뒤에 원장을 쓴다. 중간에 죽어도 진행 중이던 하루만 다시 받으면 된다.
     pending_records = []
     pending_ledger = []
@@ -659,11 +781,14 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
         if day != current_day:
             flush()
             current_day = day
+        if source in disabled:
+            continue
         label = "[" + SOURCES[source]["label"] + "/" + category + "] " + local.display_date(day)
         try:
             raw, total, pages = fetch_source_day(source, category, day, http_get)
             records, edu_count = select_records(raw, source, category, all_edu, day)
-            print(label + " raw " + str(total) + " -> edu " + str(edu_count) + " -> kept " + str(len(records)) + " (" + str(pages) + " calls) (" + str(index) + "/" + str(len(jobs)) + ")")
+            bidder_calls = attach_bidders(records, http_get) if source == "award" and not dry_run else 0
+            print(label + " raw " + str(total) + " -> edu " + str(edu_count) + " -> kept " + str(len(records)) + " (" + str(pages + bidder_calls) + " calls" + (", 참여업체 " + str(bidder_calls) + "건" if bidder_calls else "") + ") (" + str(index) + "/" + str(len(jobs)) + ")")
             collected.extend(records)
             pending_records.extend(records)
             pending_ledger.append((category, day, day, local.STATUS_COMPLETE, pages, len(records), ledger_kind(source), "api", "raw " + str(total) + " edu " + str(edu_count)))
@@ -677,6 +802,10 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
             pending_ledger.append((category, day, day, local.STATUS_ERROR, 0, 0, ledger_kind(source), "api", str(exc)[:200]))
             summary["error"] += 1
             if "활용신청" in str(exc):
+                if source == "plan":
+                    disabled[source] = str(exc)
+                    print("[g2b] 발주계획은 건너뜁니다. data.go.kr에서 '조달청_나라장터 발주계획현황서비스' 활용신청 후 다시 받으세요.")
+                    continue
                 stopped = str(exc)
                 break
     flush()
@@ -701,11 +830,36 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
     return collected
 
 
+def fill_bidders(github_upload=True, http_get=None):
+    # 이미 받아 둔 낙찰 중 참여업체가 없는 건에 개찰결과를 채운다 (기능 추가 전 수집분 보충용).
+    data = load_cumulative()
+    targets = [row for row in data["records"] if row.get("source") == "award" and "bidders" not in row]
+    print("[g2b] 참여업체를 채울 낙찰 " + str(len(targets)) + "건 | award calls today so far: " + str(calls_today("award")) + "/" + str(DAILY_CALL_BUDGET))
+    try:
+        done = attach_bidders(targets, http_get)
+    except BudgetExceeded as exc:
+        done = sum(1 for row in targets if "bidders" in row)
+        print("[g2b] 중단: " + str(exc))
+    print("[g2b] 참여업체 " + str(done) + "건 채움")
+    if not done:
+        return 0
+    period = ((data.get("meta") or {}).get("lastSearchPeriod") or "~").split("~")
+    date_from, date_to = period[0], period[-1]
+    data = merge_cumulative([row for row in targets if "bidders" in row], date_from, date_to)
+    save_html(data)
+    try:
+        local.publish_to_github(date_from, date_to, github_upload)
+    except Exception as exc:
+        print("[github] upload failed, but local files were saved: " + str(exc))
+    return done
+
+
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="나라장터 교육기관 입찰공고/낙찰/계약 수집 (공공데이터포털 API)")
     parser.add_argument("--from", dest="date_from", help="시작일 YYYYMMDD (기본: 전 영업일)")
     parser.add_argument("--to", dest="date_to", help="종료일 YYYYMMDD (기본: 시작일과 같음)")
-    parser.add_argument("--sources", default=",".join(SOURCE_ORDER), help="contract,bid,award 중 선택 (기본 전부)")
+    parser.add_argument("--sources", default=",".join(SOURCE_ORDER), help="contract,bid,award,plan 중 선택 (기본 전부)")
+    parser.add_argument("--fill-bidders", action="store_true", help="이미 받은 낙찰 중 참여업체(개찰결과)가 없는 건만 채우고 종료합니다.")
     parser.add_argument("--categories", default=",".join(CATEGORIES), help="물품,용역,공사 중 선택 (기본 전부; 입찰공고·낙찰에 적용)")
     parser.add_argument("--contract-categories", default=",".join(DEFAULT_CONTRACT_CATEGORIES), help="계약 소스에만 적용할 구분. 기본 물품,용역 (공사 제외)")
     parser.add_argument("--all-edu", action="store_true", help="키워드 필터 없이 교육기관 건 전체를 저장합니다.")
@@ -744,6 +898,10 @@ def main(argv=None):
     if args.coverage:
         for source in sources:
             local.print_coverage(categories, ledger_kind(source))
+        return 0
+    if args.fill_bidders:
+        fill_bidders(args.github_upload)
+        print("done.")
         return 0
     try:
         date_from, date_to = resolve_period(args)

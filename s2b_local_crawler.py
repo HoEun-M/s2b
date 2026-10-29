@@ -1991,6 +1991,8 @@ def load_g2b_rows():
         institution = record.get("institution") or record.get("contract_institution") or ""
         school_hint = record.get("school_name") or institution
         kind = record.get("source", "contract")
+        if kind not in G2B_KIND_LABELS:
+            continue  # 발주계획 등은 통합 페이지에 싣지 않는다 (g2b.html과 영업관리 화면에서 본다)
         rows.append({
             "id": record.get("id", ""),
             "tender_no": record.get("id", ""),
