@@ -39,7 +39,8 @@ SOURCES = {
     "contract": {"label": "계약", "path": "ao/CntrctInfoService/getCntrctInfoList{cat}", "inqry_div": "1", "server_filter": False},
     "bid": {"label": "입찰공고", "path": "ad/BidPublicInfoService/getBidPblancListInfo{cat}PPSSrch", "inqry_div": "1", "server_filter": True},
     "award": {"label": "낙찰", "path": "as/ScsbidInfoService/getScsbidListSttus{cat}PPSSrch", "inqry_div": "2", "server_filter": True},
-    # 발주계획: 응답 항목 이름을 실제 응답으로 확정하기 전이라 서버 필터 없이 하루치를 받아 로컬에서 교육기관을 거른다.
+    # 발주계획: inqryDiv=1(게시일시) + 발주 연월 범위(orderBgnYm~orderEndYm)가 필수. PPSSrch는 같은 날도 건수가 적게 나와(2026-10-29 확인) 쓰지 않는다.
+    #   서버 필터 없이 하루치를 받아 로컬에서 교육기관을 거른다.
     "plan": {"label": "발주계획", "path": "ao/OrderPlanSttusService/getOrderPlanSttusList{cat}", "inqry_div": "1", "server_filter": False},
 }
 SOURCE_ORDER = ("contract", "bid", "award", "plan")
@@ -180,6 +181,11 @@ def fetch_source_day(source, category, day, http_get=None):
     }
     if spec["server_filter"]:
         base["dminsttNm"] = EDU_SERVER_FILTER
+    if source == "plan":
+        # 그날 게시된 계획의 발주 시기는 보통 그해~다다음해라 넉넉히 잡는다
+        year = int(day[:4])
+        base["orderBgnYm"] = str(year - 1) + "01"
+        base["orderEndYm"] = str(year + 2) + "12"
     items = []
     page = 1
     total = 0
@@ -223,7 +229,9 @@ def amount_text(value):
     return "{:,}".format(int(digits))
 
 
-SCHOOL_MARKERS = ("초등학교", "중학교", "고등학교", "유치원", "부설")
+# "부설"은 넣지 않는다: 사범대 부설 학교는 학교 이름(…부설고등학교)으로 이미 걸리고,
+# "부설"만으로는 "한국해양과학기술원 부설 선박해양플랜트연구소" 같은 연구소까지 통과한다.
+SCHOOL_MARKERS = ("초등학교", "중학교", "고등학교", "유치원")
 
 
 def is_edu_institution(*names):
@@ -334,7 +342,9 @@ _plan_keys_shown = False
 
 
 def normalize_plan(item):
-    # 발주계획현황 응답 항목 이름은 문서로 확정하지 못해 후보를 차례로 본다. 사업명이 비면 실제 항목 이름을 한 번 찍어 둔다.
+    # 실제 응답 항목(2026-10-29): bizNm, orderInsttNm, totlmngInsttNm, sumOrderAmt, orderYear, orderMnth, nticeDt,
+    # orderPlanUntyNo, cntrctMthdNm, deptNm, bidNtceNoList, orderPlanDtlUrl 등. 바뀔 때를 대비해 후보도 남겨 두고,
+    # 사업명이 비면 실제 항목 이름을 한 번 찍어 둔다. 담당자 이름·전화(ofclNm, telNo)는 저장하지 않는다.
     global _plan_keys_shown
     name = pick(item, "bizNm", "orderPlanNm", "prdctNm", "cntrctNm", "bsnsNm")
     if not name and not _plan_keys_shown:
@@ -360,7 +370,7 @@ def normalize_plan(item):
         "method": pick(item, "cntrctMthdNm", "cntrctCnclsMthdNm"),
         "department": pick(item, "deptNm", "orderInsttDeptNm"),
         "notice_nos": pick(item, "bidNtceNoList", "bidNtceNo"),
-        "link": "",
+        "link": pick(item, "orderPlanDtlUrl"),
         "classification": pick(item, "prdctClsfcNoNm", "dtilPrdctClsfcNoNm"),
         "changed_at": pick(item, "chgDt"),
     }
