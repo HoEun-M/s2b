@@ -1,8 +1,8 @@
 {
- "exported_at": "2026-11-03 09:28",
+ "exported_at": "2026-11-03 15:11",
  "meta": {
-  "lastImportedAt": "2026-11-03 09:28",
-  "lastSearchPeriod": "20260201~20261103",
+  "lastImportedAt": "2026-11-03 15:11",
+  "lastSearchPeriod": "20260601~20261103",
   "total": 163,
   "bySource": {
    "plan": 144,
@@ -34,7 +34,7 @@
    "excluded": false,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -61,7 +61,7 @@
    "excluded": false,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -88,7 +88,7 @@
    "excluded": false,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -115,7 +115,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -142,7 +142,7 @@
    "excluded": true,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -169,7 +169,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "유치원",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -196,7 +196,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "기타학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -227,7 +227,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -258,7 +258,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -289,7 +289,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -316,7 +316,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -343,7 +343,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -370,7 +370,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -397,7 +397,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -424,7 +424,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -451,7 +451,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -478,7 +478,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -505,7 +505,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "유치원",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -532,7 +532,7 @@
    "excluded": false,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -559,7 +559,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -586,7 +586,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -613,7 +613,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -640,7 +640,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -667,7 +667,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -696,7 +696,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -723,7 +723,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -750,7 +750,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -777,7 +777,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "기타기관",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -804,7 +804,7 @@
    "excluded": true,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -831,7 +831,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -858,7 +858,7 @@
    "excluded": false,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -885,7 +885,7 @@
    "excluded": false,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -912,7 +912,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -939,7 +939,7 @@
    "excluded": false,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -966,7 +966,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -993,7 +993,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1020,7 +1020,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1047,7 +1047,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1074,7 +1074,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1101,7 +1101,7 @@
    "excluded": false,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1132,7 +1132,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1163,7 +1163,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1194,7 +1194,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1225,7 +1225,7 @@
    "excluded": false,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1256,7 +1256,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1283,7 +1283,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1310,7 +1310,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1337,7 +1337,7 @@
    "excluded": false,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1364,7 +1364,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1395,7 +1395,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1424,7 +1424,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1451,7 +1451,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1482,7 +1482,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1513,7 +1513,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1540,7 +1540,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1571,7 +1571,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1602,7 +1602,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1629,7 +1629,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1656,7 +1656,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1683,7 +1683,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1710,7 +1710,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1737,7 +1737,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1764,7 +1764,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1791,7 +1791,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1818,7 +1818,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1845,7 +1845,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1872,7 +1872,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "기타학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1899,7 +1899,7 @@
    "excluded": false,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1926,7 +1926,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1953,7 +1953,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -1980,7 +1980,7 @@
    "excluded": true,
    "school_level": "기타",
    "school_category": "기타학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2007,7 +2007,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2034,7 +2034,7 @@
    "excluded": true,
    "school_level": "고",
    "school_category": "고등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2061,7 +2061,7 @@
    "excluded": false,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2090,7 +2090,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2117,7 +2117,7 @@
    "excluded": true,
    "school_level": "초",
    "school_category": "초등학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
@@ -2146,7 +2146,7 @@
    "excluded": true,
    "school_level": "중",
    "school_category": "중학교",
-   "last_imported_at": "2026-11-03 09:28",
+   "last_imported_at": "2026-11-03 15:11",
    "first_imported_at": "2026-11-03 09:28"
   },
   {
