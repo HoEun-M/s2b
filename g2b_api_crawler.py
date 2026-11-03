@@ -42,8 +42,42 @@ SOURCES = {
     # 발주계획: inqryDiv=1(게시일시) + 발주 연월 범위(orderBgnYm~orderEndYm)가 필수. PPSSrch는 같은 날도 건수가 적게 나와(2026-10-29 확인) 쓰지 않는다.
     #   서버 필터 없이 하루치를 받아 로컬에서 교육기관을 거른다.
     "plan": {"label": "발주계획", "path": "ao/OrderPlanSttusService/getOrderPlanSttusList{cat}", "inqry_div": "1", "server_filter": False},
+    # 지자체·공공기관 교육 사업 (예: "고성군 공공 학습 플랫폼 운영 용역"). 위 입찰공고·낙찰은 수요기관명 "교육청"으로만 받아서 빠진다.
+    #   공고명(bidNtceNm) 부분일치로 PUBLIC_NAME_KEYWORDS를 하나씩 찾고, 교육청·학교 건은 위에서 받으니 빼고,
+    #   초중고 학습 사업으로 보이는 이름만 남긴다(is_public_edu). 기간 검색이 한 달까지 되므로 하루가 아니라 달 단위로 받는다.
+    #   레코드는 입찰공고·낙찰과 같은 source(bid/award)로 저장하고 public_org=True를 붙인다.
+    "bid_pub": {"label": "입찰공고(지자체·공공)", "path": "ad/BidPublicInfoService/getBidPblancListInfo{cat}PPSSrch", "inqry_div": "1", "server_filter": False,
+                "name_search": True, "record_source": "bid", "budget": "bid"},
+    "award_pub": {"label": "낙찰(지자체·공공)", "path": "as/ScsbidInfoService/getScsbidListSttus{cat}PPSSrch", "inqry_div": "2", "server_filter": False,
+                  "name_search": True, "record_source": "award", "budget": "award"},
 }
-SOURCE_ORDER = ("contract", "bid", "award", "plan")
+SOURCE_ORDER = ("contract", "bid", "award", "plan")   # 저장되는 레코드 종류 (g2b.html 탭·집계)
+FETCH_ORDER = SOURCE_ORDER + ("bid_pub", "award_pub")   # 기본으로 받는 순서
+PUBLIC_NAME_KEYWORDS = ("학습", "이러닝", "에듀테크", "코스웨어", "교육콘텐츠", "기초학력")
+PUBLIC_CATEGORIES = ("물품", "용역")
+# 지자체·공공기관 공고 중 초중고 학습 사업만 남긴다. 공고명 검색 결과에는 AI 학습데이터·NCS 학습모듈·평생학습,
+# 공무원·직원 이러닝(인재개발원·연수원) 같은 성인 교육이 훨씬 많다.
+#  - 강한 표현(공공학습·학습플랫폼·기초학력·코스웨어 등)은 그것만으로 남기고,
+#  - 약한 표현(이러닝·교육콘텐츠·온라인학습 등)은 학생·초중고 같은 말이 같이 있어야 남긴다.
+PUBLIC_EDU_STRONG = re.compile(r"공공\s*학습|학습\s*플랫폼|기초\s*학력|코스웨어|에듀테크|디지털\s*교과서|교수\s*[·ㆍ.]?\s*학습|자기\s*주도\s*학습|학습\s*지원")
+PUBLIC_EDU_WEAK = re.compile(r"이러닝|e-?러닝|교육\s*콘텐츠|학습\s*콘텐츠|온라인\s*학습|원격\s*학습|인터넷\s*강의|맞춤형\s*학습|학습\s*(관리|진단|센터|프로그램)", re.I)
+PUBLIC_STUDENT_CONTEXT = re.compile(r"초등|중학|고등|초\s*[·ㆍ.,]\s*중|중\s*[·ㆍ.,]\s*고|학생|청소년|아동|자녀|교과|방과후|늘봄|학교")
+PUBLIC_NOISE_PATTERN = re.compile(r"학습\s*데이터|학습용|NCS|평생\s*학습|모델\s*학습|머신\s*러닝|딥\s*러닝|직업\s*능력|체험\s*학습|현장\s*학습|"
+                                  r"버스|박람회|축제|행사|숙식|공무원|직원|직무|법정|종사자|임직원|해외\s*연수|부스|시공|장병", re.I)
+PUBLIC_INSTITUTION_EXCLUDE = ("대학", "과학기술원", "산학협력단", "폴리텍", "평생", "인재개발원", "연수원", "공무원")
+
+
+def is_public_edu(name, *institutions):
+    text = str(name or "")
+    if any(marker in " ".join(str(i or "") for i in institutions) for marker in PUBLIC_INSTITUTION_EXCLUDE):
+        return False
+    if PUBLIC_NOISE_PATTERN.search(text):
+        return False
+    if PUBLIC_EDU_STRONG.search(text):
+        return True
+    return bool(PUBLIC_EDU_WEAK.search(text) and PUBLIC_STUDENT_CONTEXT.search(text))
+
+
 # 낙찰 건마다 개찰결과(참여업체 전체·순위·투찰금액)를 붙인다. 같은 낙찰정보서비스라 award 호출 예산을 같이 쓴다.
 OPENING_PATH = "as/ScsbidInfoService/getOpengResultListInfoOpengCompt"
 MAX_BIDDERS = 100
@@ -169,16 +203,29 @@ def api_get(source, path, params, http_get=None):
     raise G2BError("요청이 계속 실패했습니다: " + str(last_error))
 
 
-def fetch_source_day(source, category, day, http_get=None):
+def fetch_source_day(source, category, day, http_get=None, day_to=None):
     # 하루치(00:00~23:59)를 페이지 끝까지 받는다. 반환: (raw_items, total_count, pages)
+    # 공고명 검색 소스는 day~day_to(한 달 이내)를 키워드마다 받아 합친다.
     spec = SOURCES[source]
     path = spec["path"].format(cat=CATEGORIES[category])
     base = {
         "inqryDiv": spec["inqry_div"],
         "inqryBgnDt": day + "0000",
-        "inqryEndDt": day + "2359",
+        "inqryEndDt": (day_to or day) + "2359",
         "numOfRows": str(NUM_ROWS),
     }
+    if spec.get("name_search"):
+        seen, items, total, pages = set(), [], 0, 0
+        for keyword in PUBLIC_NAME_KEYWORDS:
+            found, count, used = fetch_pages(spec.get("budget", source), path, dict(base, bidNtceNm=keyword), http_get)
+            total += count
+            pages += used
+            for item in found:
+                key = (item.get("bidNtceNo"), item.get("bidNtceOrd"), item.get("bidClsfcNo"), item.get("rbidNo"))
+                if key not in seen:
+                    seen.add(key)
+                    items.append(item)
+        return items, total, pages
     if spec["server_filter"]:
         base["dminsttNm"] = EDU_SERVER_FILTER
     if source == "plan":
@@ -186,6 +233,10 @@ def fetch_source_day(source, category, day, http_get=None):
         year = int(day[:4])
         base["orderBgnYm"] = str(year - 1) + "01"
         base["orderEndYm"] = str(year + 2) + "12"
+    return fetch_pages(source, path, base, http_get)
+
+
+def fetch_pages(source, path, base, http_get=None):
     items = []
     page = 1
     total = 0
@@ -376,7 +427,8 @@ def normalize_plan(item):
     }
 
 
-NORMALIZERS = {"contract": normalize_contract, "bid": normalize_bid, "award": normalize_award, "plan": normalize_plan}
+NORMALIZERS = {"contract": normalize_contract, "bid": normalize_bid, "award": normalize_award, "plan": normalize_plan,
+               "bid_pub": normalize_bid, "award_pub": normalize_award}
 
 
 def normalize_bidder(item):
@@ -474,6 +526,7 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
     if source == "contract" and day:
         cutoff = (datetime.strptime(day, "%Y%m%d") - timedelta(days=CONTRACT_MAX_BACKDATE_DAYS)).strftime("%Y-%m-%d")
     for item in raw_items:
+        public = False
         if source == "contract":
             demand_names = " ".join(entry[2] for entry in parse_caret_list(item.get("dminsttList")) if len(entry) > 2)
             if not is_edu_institution(item.get("cntrctInsttNm"), demand_names):
@@ -481,11 +534,22 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
         elif source == "plan":
             plan = normalizer(item)
             if not is_edu_institution(plan["institution"], plan["contract_institution"]):
+                if not is_public_edu(plan["name"], plan["institution"], plan["contract_institution"]):
+                    continue
+                public = True
+        elif SOURCES[source].get("name_search"):
+            # 교육청·학교 건은 bid/award가 받는다. 여기서는 그 밖의 기관 중 학습 사업만.
+            if is_edu_institution(item.get("dminsttNm"), item.get("ntceInsttNm")):
                 continue
+            if not is_public_edu(item.get("bidNtceNm"), item.get("dminsttNm"), item.get("ntceInsttNm")):
+                continue
+            public = True
         else:
             if not is_edu_institution(item.get("dminsttNm"), item.get("ntceInsttNm")):
                 continue
         record = enrich(normalizer(item), category)
+        if public:
+            record["public_org"] = True
         if not record["id"].split(":", 1)[1]:
             continue
         if cutoff and record.get("date") and record["date"] < cutoff:
@@ -493,7 +557,8 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
         edu_records.append(record)
     if all_edu:
         return edu_records, len(edu_records)
-    kept = [record for record in edu_records if record["keywords"] and not record["excluded"]]
+    # 지자체·공공 건은 이름 패턴으로 이미 골랐으니 에듀테크 키워드가 없어도 남긴다
+    kept = [record for record in edu_records if (record["keywords"] or record.get("public_org")) and not record["excluded"]]
     return kept, len(edu_records)
 
 
@@ -745,8 +810,9 @@ DEFAULT_CONTRACT_CATEGORIES = ("물품", "용역")
 def plan_jobs(sources, categories, date_from, date_to, recrawl=False, contract_categories=None):
     ledger = local.load_ledger()
     jobs, skipped = [], []
+    day_sources = [s for s in sources if not SOURCES[s].get("name_search")]
     for day in local.period_days(date_from, date_to):
-        for source in sources:
+        for source in day_sources:
             source_categories = list(contract_categories) if (source == "contract" and contract_categories) else categories
             for category in source_categories:
                 job = {"source": source, "category": category, "day": day}
@@ -754,7 +820,26 @@ def plan_jobs(sources, categories, date_from, date_to, recrawl=False, contract_c
                     skipped.append(job)
                 else:
                     jobs.append(job)
+    # 공고명 검색 소스는 달 단위 조각으로 받는다 (API 기간 검색 한도가 한 달)
+    for source in [s for s in sources if SOURCES[s].get("name_search")]:
+        for chunk_from, chunk_to in month_chunks(date_from, date_to):
+            for category in [c for c in categories if c in PUBLIC_CATEGORIES]:
+                job = {"source": source, "category": category, "day": chunk_from, "to": chunk_to}
+                if not recrawl and local.is_covered(ledger, category, chunk_from, chunk_to, ledger_kind(source)):
+                    skipped.append(job)
+                else:
+                    jobs.append(job)
     return jobs, skipped
+
+
+def month_chunks(date_from, date_to):
+    chunks = []
+    for day in local.period_days(date_from, date_to):
+        if chunks and chunks[-1][0][:6] == day[:6]:
+            chunks[-1][1] = day
+        else:
+            chunks.append([day, day])
+    return [tuple(c) for c in chunks]
 
 
 def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, github_upload=True, dry_run=False, http_get=None, contract_categories=None):
@@ -788,20 +873,21 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
 
     for index, job in enumerate(jobs, 1):
         source, category, day = job["source"], job["category"], job["day"]
+        day_to = job.get("to", day)
         if day != current_day:
             flush()
             current_day = day
         if source in disabled:
             continue
-        label = "[" + SOURCES[source]["label"] + "/" + category + "] " + local.display_date(day)
+        label = "[" + SOURCES[source]["label"] + "/" + category + "] " + local.display_date(day) + ("~" + local.display_date(day_to) if day_to != day else "")
         try:
-            raw, total, pages = fetch_source_day(source, category, day, http_get)
+            raw, total, pages = fetch_source_day(source, category, day, http_get, day_to)
             records, edu_count = select_records(raw, source, category, all_edu, day)
-            bidder_calls = attach_bidders(records, http_get) if source == "award" and not dry_run else 0
+            bidder_calls = attach_bidders(records, http_get) if SOURCES[source].get("record_source", source) == "award" and not dry_run else 0
             print(label + " raw " + str(total) + " -> edu " + str(edu_count) + " -> kept " + str(len(records)) + " (" + str(pages + bidder_calls) + " calls" + (", 참여업체 " + str(bidder_calls) + "건" if bidder_calls else "") + ") (" + str(index) + "/" + str(len(jobs)) + ")")
             collected.extend(records)
             pending_records.extend(records)
-            pending_ledger.append((category, day, day, local.STATUS_COMPLETE, pages, len(records), ledger_kind(source), "api", "raw " + str(total) + " edu " + str(edu_count)))
+            pending_ledger.append((category, day, day_to, local.STATUS_COMPLETE, pages, len(records), ledger_kind(source), "api", "raw " + str(total) + " edu " + str(edu_count)))
             summary["complete"] += 1
         except BudgetExceeded as exc:
             print(label + " 중단: " + str(exc))
@@ -809,7 +895,7 @@ def run(date_from, date_to, sources, categories, all_edu=False, recrawl=False, g
             break
         except G2BError as exc:
             print(label + " 오류: " + str(exc))
-            pending_ledger.append((category, day, day, local.STATUS_ERROR, 0, 0, ledger_kind(source), "api", str(exc)[:200]))
+            pending_ledger.append((category, day, day_to, local.STATUS_ERROR, 0, 0, ledger_kind(source), "api", str(exc)[:200]))
             summary["error"] += 1
             if "활용신청" in str(exc):
                 if source == "plan":
@@ -868,7 +954,7 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="나라장터 교육기관 입찰공고/낙찰/계약 수집 (공공데이터포털 API)")
     parser.add_argument("--from", dest="date_from", help="시작일 YYYYMMDD (기본: 전 영업일)")
     parser.add_argument("--to", dest="date_to", help="종료일 YYYYMMDD (기본: 시작일과 같음)")
-    parser.add_argument("--sources", default=",".join(SOURCE_ORDER), help="contract,bid,award,plan 중 선택 (기본 전부)")
+    parser.add_argument("--sources", default=",".join(FETCH_ORDER), help="contract,bid,award,plan,bid_pub,award_pub 중 선택 (기본 전부)")
     parser.add_argument("--fill-bidders", action="store_true", help="이미 받은 낙찰 중 참여업체(개찰결과)가 없는 건만 채우고 종료합니다.")
     parser.add_argument("--categories", default=",".join(CATEGORIES), help="물품,용역,공사 중 선택 (기본 전부; 입찰공고·낙찰에 적용)")
     parser.add_argument("--contract-categories", default=",".join(DEFAULT_CONTRACT_CATEGORIES), help="계약 소스에만 적용할 구분. 기본 물품,용역 (공사 제외)")
