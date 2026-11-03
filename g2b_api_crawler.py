@@ -59,11 +59,11 @@ PUBLIC_CATEGORIES = ("물품", "용역")
 # 공무원·직원 이러닝(인재개발원·연수원) 같은 성인 교육이 훨씬 많다.
 #  - 강한 표현(공공학습·학습플랫폼·기초학력·코스웨어 등)은 그것만으로 남기고,
 #  - 약한 표현(이러닝·교육콘텐츠·온라인학습 등)은 학생·초중고 같은 말이 같이 있어야 남긴다.
-PUBLIC_EDU_STRONG = re.compile(r"공공\s*학습|학습\s*플랫폼|기초\s*학력|코스웨어|에듀테크|디지털\s*교과서|교수\s*[·ㆍ.]?\s*학습|자기\s*주도\s*학습|학습\s*지원")
+PUBLIC_EDU_STRONG = re.compile(r"공공\s*학습|학습\s*플랫폼|학습\s*돌봄|늘봄\s*학교|기초\s*학력|코스웨어|에듀테크|디지털\s*교과서|교수\s*[·ㆍ.]?\s*학습|자기\s*주도\s*학습|학습\s*지원")
 PUBLIC_EDU_WEAK = re.compile(r"이러닝|e-?러닝|교육\s*콘텐츠|학습\s*콘텐츠|온라인\s*학습|원격\s*학습|인터넷\s*강의|맞춤형\s*학습|학습\s*(관리|진단|센터|프로그램)", re.I)
 PUBLIC_STUDENT_CONTEXT = re.compile(r"초등|중학|고등|초\s*[·ㆍ.,]\s*중|중\s*[·ㆍ.,]\s*고|학생|청소년|아동|자녀|교과|방과후|늘봄|학교")
 PUBLIC_NOISE_PATTERN = re.compile(r"학습\s*데이터|학습용|NCS|평생\s*학습|모델\s*학습|머신\s*러닝|딥\s*러닝|직업\s*능력|체험\s*학습|현장\s*학습|"
-                                  r"버스|박람회|축제|행사|숙식|공무원|직원|직무|법정|종사자|임직원|해외\s*연수|부스|시공|장병", re.I)
+                                  r"버스|박람회|축제|행사|숙식|공무원|직원|직무|법정|종사자|임직원|해외\s*연수|부스|시공|장병|석면|주차|시설\s*관리|복합기|공원|카메라|통역|원가|인증", re.I)
 PUBLIC_INSTITUTION_EXCLUDE = ("대학", "과학기술원", "산학협력단", "폴리텍", "평생", "인재개발원", "연수원", "공무원")
 
 
@@ -530,7 +530,10 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
         if source == "contract":
             demand_names = " ".join(entry[2] for entry in parse_caret_list(item.get("dminsttList")) if len(entry) > 2)
             if not is_edu_institution(item.get("cntrctInsttNm"), demand_names):
-                continue
+                # 지자체·공공기관의 학습 사업 계약(예: 포천시 "학습돌봄 전용기기"). 매출 집계에는 넣지 않고 따로 보여 준다.
+                if not is_public_edu(item.get("cntrctNm"), item.get("cntrctInsttNm"), demand_names):
+                    continue
+                public = True
         elif source == "plan":
             plan = normalizer(item)
             if not is_edu_institution(plan["institution"], plan["contract_institution"]):
@@ -558,7 +561,8 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
     if all_edu:
         return edu_records, len(edu_records)
     # 지자체·공공 건은 이름 패턴으로 이미 골랐으니 에듀테크 키워드가 없어도 남긴다
-    kept = [record for record in edu_records if (record["keywords"] or record.get("public_org")) and not record["excluded"]]
+    # 하드웨어 등 제외어(excluded)도 지자체·공공 건에는 쓰지 않는다 (예: 포천시 "학습돌봄 전용기기 구입" — 콘텐츠와 함께 사는 기기)
+    kept = [record for record in edu_records if (record["keywords"] or record.get("public_org")) and (record.get("public_org") or not record["excluded"])]
     return kept, len(edu_records)
 
 

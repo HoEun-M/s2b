@@ -1993,6 +1993,8 @@ def load_g2b_rows():
         kind = record.get("source", "contract")
         if kind not in G2B_KIND_LABELS:
             continue  # 발주계획 등은 통합 페이지에 싣지 않는다 (g2b.html과 영업관리 화면에서 본다)
+        if record.get("public_org"):
+            continue  # 지자체·공공기관 학습 사업은 교육기관 매출 집계에서 뺀다 (영업관리 화면에서 따로 본다)
         rows.append({
             "id": record.get("id", ""),
             "tender_no": record.get("id", ""),
