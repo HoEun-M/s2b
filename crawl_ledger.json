@@ -13406,6 +13406,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260201",
+      "to": "20260228",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 35 edu 0",
+      "finished_at": "2026-11-03 16:04"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260201",
+      "to": "20260228",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 19 edu 0",
+      "finished_at": "2026-11-03 16:12"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260202",
       "to": "20260202",
@@ -14747,6 +14771,30 @@
       "mode": "api",
       "note": "raw 6 edu 1",
       "finished_at": "2026-10-30 15:48"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260301",
+      "to": "20260331",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 96 edu 0",
+      "finished_at": "2026-11-03 16:05"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260301",
+      "to": "20260331",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 90 edu 0",
+      "finished_at": "2026-11-03 16:14"
     },
     {
       "search_term": "물품",
@@ -16238,6 +16286,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260401",
+      "to": "20260430",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 46 edu 0",
+      "finished_at": "2026-11-03 16:06"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260401",
+      "to": "20260430",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 34 edu 0",
+      "finished_at": "2026-11-03 16:18"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260402",
       "to": "20260402",
@@ -17675,6 +17747,30 @@
       "mode": "api",
       "note": "raw 10 edu 1",
       "finished_at": "2026-10-30 16:10"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260501",
+      "to": "20260531",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 28 edu 0",
+      "finished_at": "2026-11-03 16:07"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260501",
+      "to": "20260531",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 12 edu 0",
+      "finished_at": "2026-11-03 16:20"
     },
     {
       "search_term": "물품",
@@ -19166,6 +19262,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260601",
+      "to": "20260630",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 65 edu 0",
+      "finished_at": "2026-11-03 16:08"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260601",
+      "to": "20260630",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 20 edu 0",
+      "finished_at": "2026-11-03 16:22"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260602",
       "to": "20260602",
@@ -20603,6 +20723,30 @@
       "mode": "api",
       "note": "raw 291 edu 29",
       "finished_at": "2026-10-30 16:32"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260701",
+      "to": "20260731",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 73 edu 1",
+      "finished_at": "2026-11-03 16:08"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260701",
+      "to": "20260731",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 49 edu 1",
+      "finished_at": "2026-11-03 16:24"
     },
     {
       "search_term": "물품",
@@ -22094,6 +22238,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260801",
+      "to": "20260831",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 67 edu 0",
+      "finished_at": "2026-11-03 16:09"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260801",
+      "to": "20260831",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 35 edu 0",
+      "finished_at": "2026-11-03 16:26"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260802",
       "to": "20260802",
@@ -23582,6 +23750,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20260901",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 64 edu 0",
+      "finished_at": "2026-11-03 16:10"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20260901",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 27 edu 0",
+      "finished_at": "2026-11-03 16:27"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20260902",
       "to": "20260902",
@@ -25019,6 +25211,30 @@
       "mode": "api",
       "note": "raw 287 edu 48",
       "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20261001",
+      "to": "20261031",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 63 edu 1",
+      "finished_at": "2026-11-03 16:10"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20261001",
+      "to": "20261031",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 22 edu 1",
+      "finished_at": "2026-11-03 16:28"
     },
     {
       "search_term": "물품",
@@ -26507,6 +26723,30 @@
       "mode": "api",
       "note": "raw 11 edu 0",
       "finished_at": "2026-11-03 15:33"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20261101",
+      "to": "20261103",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 7 edu 0",
+      "finished_at": "2026-11-03 16:11"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20261101",
+      "to": "20261103",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 1 edu 0",
+      "finished_at": "2026-11-03 16:29"
     },
     {
       "search_term": "물품",
@@ -29918,6 +30158,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260201",
+      "to": "20260228",
+      "status": "complete",
+      "pages": 6,
+      "records": 12,
+      "mode": "api",
+      "note": "raw 284 edu 12",
+      "finished_at": "2026-11-03 16:04"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260201",
+      "to": "20260228",
+      "status": "complete",
+      "pages": 6,
+      "records": 7,
+      "mode": "api",
+      "note": "raw 206 edu 8",
+      "finished_at": "2026-11-03 16:12"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260202",
       "to": "20260202",
@@ -31259,6 +31523,30 @@
       "mode": "api",
       "note": "raw 16 edu 4",
       "finished_at": "2026-10-30 15:48"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260301",
+      "to": "20260331",
+      "status": "complete",
+      "pages": 6,
+      "records": 12,
+      "mode": "api",
+      "note": "raw 450 edu 12",
+      "finished_at": "2026-11-03 16:05"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260301",
+      "to": "20260331",
+      "status": "complete",
+      "pages": 6,
+      "records": 10,
+      "mode": "api",
+      "note": "raw 308 edu 10",
+      "finished_at": "2026-11-03 16:14"
     },
     {
       "search_term": "용역",
@@ -32750,6 +33038,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260401",
+      "to": "20260430",
+      "status": "complete",
+      "pages": 6,
+      "records": 5,
+      "mode": "api",
+      "note": "raw 436 edu 5",
+      "finished_at": "2026-11-03 16:06"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260401",
+      "to": "20260430",
+      "status": "complete",
+      "pages": 6,
+      "records": 7,
+      "mode": "api",
+      "note": "raw 317 edu 7",
+      "finished_at": "2026-11-03 16:18"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260402",
       "to": "20260402",
@@ -34187,6 +34499,30 @@
       "mode": "api",
       "note": "raw 8 edu 1",
       "finished_at": "2026-10-30 16:10"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260501",
+      "to": "20260531",
+      "status": "complete",
+      "pages": 6,
+      "records": 11,
+      "mode": "api",
+      "note": "raw 364 edu 12",
+      "finished_at": "2026-11-03 16:07"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260501",
+      "to": "20260531",
+      "status": "complete",
+      "pages": 6,
+      "records": 8,
+      "mode": "api",
+      "note": "raw 263 edu 8",
+      "finished_at": "2026-11-03 16:20"
     },
     {
       "search_term": "용역",
@@ -35678,6 +36014,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260601",
+      "to": "20260630",
+      "status": "complete",
+      "pages": 6,
+      "records": 13,
+      "mode": "api",
+      "note": "raw 424 edu 17",
+      "finished_at": "2026-11-03 16:08"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260601",
+      "to": "20260630",
+      "status": "complete",
+      "pages": 6,
+      "records": 5,
+      "mode": "api",
+      "note": "raw 329 edu 6",
+      "finished_at": "2026-11-03 16:22"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260602",
       "to": "20260602",
@@ -37115,6 +37475,30 @@
       "mode": "api",
       "note": "raw 351 edu 27",
       "finished_at": "2026-10-30 16:32"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260701",
+      "to": "20260731",
+      "status": "complete",
+      "pages": 6,
+      "records": 9,
+      "mode": "api",
+      "note": "raw 370 edu 10",
+      "finished_at": "2026-11-03 16:08"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260701",
+      "to": "20260731",
+      "status": "complete",
+      "pages": 6,
+      "records": 6,
+      "mode": "api",
+      "note": "raw 280 edu 6",
+      "finished_at": "2026-11-03 16:24"
     },
     {
       "search_term": "용역",
@@ -38606,6 +38990,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260801",
+      "to": "20260831",
+      "status": "complete",
+      "pages": 6,
+      "records": 6,
+      "mode": "api",
+      "note": "raw 278 edu 8",
+      "finished_at": "2026-11-03 16:09"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260801",
+      "to": "20260831",
+      "status": "complete",
+      "pages": 6,
+      "records": 8,
+      "mode": "api",
+      "note": "raw 228 edu 9",
+      "finished_at": "2026-11-03 16:26"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260802",
       "to": "20260802",
@@ -40094,6 +40502,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20260901",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 6,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 215 edu 2",
+      "finished_at": "2026-11-03 16:10"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20260901",
+      "to": "20260930",
+      "status": "complete",
+      "pages": 6,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 173 edu 3",
+      "finished_at": "2026-11-03 16:27"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20260902",
       "to": "20260902",
@@ -41531,6 +41963,30 @@
       "mode": "api",
       "note": "raw 374 edu 21",
       "finished_at": "2026-10-29 17:19"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20261001",
+      "to": "20261031",
+      "status": "complete",
+      "pages": 6,
+      "records": 4,
+      "mode": "api",
+      "note": "raw 198 edu 6",
+      "finished_at": "2026-11-03 16:10"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20261001",
+      "to": "20261031",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 103 edu 0",
+      "finished_at": "2026-11-03 16:28"
     },
     {
       "search_term": "용역",
@@ -43019,6 +43475,30 @@
       "mode": "api",
       "note": "raw 9 edu 0",
       "finished_at": "2026-11-03 15:33"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20261101",
+      "to": "20261103",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 23 edu 0",
+      "finished_at": "2026-11-03 16:11"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20261101",
+      "to": "20261103",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 2 edu 0",
+      "finished_at": "2026-11-03 16:29"
     },
     {
       "search_term": "용역",
@@ -47053,5 +47533,5 @@
       "finished_at": "2026-10-29 15:18"
     }
   ],
-  "updated_at": "2026-11-03 15:36"
+  "updated_at": "2026-11-03 16:29"
 }
