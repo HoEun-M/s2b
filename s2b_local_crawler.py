@@ -238,7 +238,7 @@ CUMULATIVE_HTML_FILE = os.path.join(APP_DIR, "s2b_cumulative.html")
 INDEX_HTML_FILE = os.path.join(APP_DIR, "index.html")
 SCHOOL_TYPE_MAPPING_FILE = os.path.join(APP_DIR, "school_type_mapping.json")
 AUTO_GITHUB_UPLOAD = os.environ.get("S2B_AUTO_GITHUB", "1").lower() not in ("0", "false", "no", "off")
-GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql", "crawl_ledger.json", "g2b_cumulative.json", "g2b.html")
+GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql", "crawl_ledger.json", "g2b_cumulative.json", "g2b.html", "s2b_notices.json")
 HOLIDAY_API_KEY = "0ff126d5fe6324dc2b8b3b8ee7dc0ccdd9e7d2203962e065703c3c7b78ff4809"
 
 # 수집 원장(키워드 x 기간별 완료 기록)과 페이지 단위 체크포인트.
