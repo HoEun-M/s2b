@@ -485,8 +485,9 @@ def school_name_part(institution):
     return str(institution or "")
 
 
-# 학교장터 제외어를 그대로 쓰되 "용역"은 뺀다. 나라장터에서는 용역 공고·계약명 대부분에 "용역"이 붙어서
+# 입찰공고·낙찰·발주계획은 학교장터 제외어를 그대로 쓰되 "용역"은 뺀다. 나라장터에서는 용역 공고명 대부분에 "용역"이 붙어서
 # "AI 코스웨어 구축 용역"처럼 키워드가 맞는 건까지 전부 제외되기 때문이다.
+# 계약은 매출 집계로 들어가므로 "용역"도 그대로 제외한다 (버스 임차·어학연수·연수 위탁이 총액을 키운다).
 G2B_ALLOWED_EXCLUDE_WORDS = ("용역",)
 
 
@@ -502,7 +503,8 @@ def enrich(record, category):
     school = school_name_part(institution)
     record["category"] = category
     record["keywords"] = local.tag_keywords(record.get("name", ""))
-    record["excluded"] = is_excluded_g2b_name(record.get("name", ""))
+    name = record.get("name", "")
+    record["excluded"] = local.is_excluded_contract_name(name) if record.get("source") == "contract" else is_excluded_g2b_name(name)
     region = local.region_from_institution_name(institution) or {}
     resolved_region = region.get("region", "") or local.short_region(institution)
     record["region"] = "전남" if resolved_region == "광주" else resolved_region
