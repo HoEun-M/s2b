@@ -2051,7 +2051,8 @@ def build_cumulative_html(data):
         if any(keyword in row.get("keywords", []) for row in records):
             all_keywords.append(keyword)
 
-    rows_html = ""
+    # 행 HTML은 목록에 모았다가 한 번에 합친다 (문자열에 2만 건을 계속 이어 붙이면 건수가 늘수록 급격히 느려진다)
+    row_parts = []
     default_visible_count = len(records)
     for index, row in enumerate(records, 1):
         keywords = row.get("keywords", [])
@@ -2144,7 +2145,7 @@ def build_cumulative_html(data):
             )
 
         school_type_value = row.get("school_type", "") or school_type(row.get("institution", ""))
-        rows_html += (
+        row_parts.append(
             '<tr data-record-id="' + record_id + '" data-source="' + esc(row.get("source", "s2b")) + '" data-g2b-kind="' + esc(row.get("g2b_kind", "")) + '" data-keywords="' + esc(keywords_joined) + '" data-contract-name="' + esc(contract_name_raw) + '" data-search-text="' + esc(search_text) + '" data-level="' + esc(row.get("school_level", "")) + '" data-contract-date="' + esc(contract_date) + '" data-counterpart="' + esc(row.get("counterpart", "") or "미지정") + '" data-school-category="' + esc(school_category(row.get("school_name_hint") or row.get("institution", ""))) + '" data-school-type="' + esc(school_type_value) + '" data-subregion="' + esc(subregion or "미지정") + '"' + row_display_attr + '>'
             '<td class="tc select-cell"><input type="checkbox" class="row-check" aria-label="삭제할 공고 선택"></td>'
             '<td class="tc row-no">' + display_number + '</td>'
@@ -2158,6 +2159,7 @@ def build_cumulative_html(data):
             '<td class="tc">' + esc(row.get("contract_date", "")) + '</td>'
             '</tr>\n'
         )
+    rows_html = "".join(row_parts)
 
     keyword_buttons = (
         '<button class="btn active" data-kind="keyword" data-filter-value="all" onclick="filterTable(this,\'keyword\',\'all\')">'
