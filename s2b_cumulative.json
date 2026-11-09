@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-11-09 11:21",
+  "exported_at": "2026-11-09 11:42",
   "meta": {
-    "lastImportedAt": "2026-11-09 11:21",
-    "lastSearchPeriod": "20261102~20261108",
-    "total": 19022
+    "lastImportedAt": "2026-11-09 11:42",
+    "lastSearchPeriod": "20261101~20261108",
+    "total": 19041
   },
   "records": [
     {
@@ -4005,6 +4005,222 @@
       "import_count": 1
     },
     {
+      "id": "202611051640962",
+      "tender_no": "202611051640962",
+      "contract_name": "새봄초등학교 늘봄지원실 냉장고 구입",
+      "institution": "새봄초등학교",
+      "counterpart": "주식회사 케이에스리테일",
+      "amount": "699,000",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611051640962&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "새봄초등학교",
+          "region": "경기",
+          "district": "화성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도화성오산교육지원청",
+          "address": "경기도 화성시 병점노을로 19",
+          "school_code": "7679468"
+        }
+      ],
+      "support_office": "경기도화성오산교육지원청",
+      "subregion": "화성,오산",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611051639520",
+      "tender_no": "202611051639520",
+      "contract_name": "2026학년도 늘봄협의체 돌봄기관 교육활동 지원 물품 구입",
+      "institution": "전주문학초등학교",
+      "counterpart": "전라북도장애인생산품판매시설",
+      "amount": "627,500",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611051639520&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주문학초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 문학로 30",
+          "school_code": "8332162"
+        }
+      ],
+      "support_office": "전북특별자치도전주교육지원청",
+      "subregion": "전주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611051638962",
+      "tender_no": "202611051638962",
+      "contract_name": "2026학년도 늘봄전담실 운영 물품 구입",
+      "institution": "만정초등학교",
+      "counterpart": "한국문구도매센터 활문사",
+      "amount": "53,700",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611051638962&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "중점",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만정초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 공도읍 송원길 12",
+          "school_code": "7761099"
+        }
+      ],
+      "support_office": "경기도안성교육지원청",
+      "subregion": "안성",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611051638961",
+      "tender_no": "202611051638961",
+      "contract_name": "2026학년도 늘봄전담실 운영 물품 구입",
+      "institution": "만정초등학교",
+      "counterpart": "재연상사",
+      "amount": "9,880",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611051638961&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "중점",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만정초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 공도읍 송원길 12",
+          "school_code": "7761099"
+        }
+      ],
+      "support_office": "경기도안성교육지원청",
+      "subregion": "안성",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611051638960",
+      "tender_no": "202611051638960",
+      "contract_name": "2026학년도 늘봄전담실 운영 물품 구입",
+      "institution": "만정초등학교",
+      "counterpart": "엘리펀",
+      "amount": "13,000",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611051638960&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "중점",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "만정초등학교",
+          "region": "경기",
+          "district": "안성시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도안성교육지원청",
+          "address": "경기도 안성시 공도읍 송원길 12",
+          "school_code": "7761099"
+        }
+      ],
+      "support_office": "경기도안성교육지원청",
+      "subregion": "안성",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611041636568",
+      "tender_no": "202611041636568",
+      "contract_name": "2026 김제검산초 늘봄프로그램 운영 물품 견적 요청",
+      "institution": "김제검산초등학교",
+      "counterpart": "동아문구센터",
+      "amount": "2,095,400",
+      "contract_date": "2026-11-05",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611041636568&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "김제검산초등학교",
+          "region": "전북",
+          "district": "김제시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도김제교육지원청",
+          "address": "전북특별자치도 김제시 도작로 122",
+          "school_code": "8382044"
+        }
+      ],
+      "support_office": "전북특별자치도김제교육지원청",
+      "subregion": "김제",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
       "id": "202611051640963",
       "tender_no": "202611051640963",
       "contract_name": "힉스필드 Higgsfield AI (모든 플랜, 최신 버전)",
@@ -7218,6 +7434,176 @@
       "support_office": "충청남도서천교육지원청",
       "subregion": "서천",
       "first_imported_at": "2026-11-09 10:02",
+      "import_count": 1
+    },
+    {
+      "id": "202611041637481",
+      "tender_no": "202611041637481",
+      "contract_name": "임곡초 늘봄학교 LG 엘지 K8 싸이킹3 청소기 슈퍼 유선 진공청소기 구",
+      "institution": "임곡초등학교",
+      "counterpart": "나이스쿨",
+      "amount": "280,000",
+      "contract_date": "2026-11-04",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611041637481&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "임곡초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "광주광역시서부교육지원청",
+          "address": "전남광주통합특별시 광산구 하림길 26",
+          "school_code": "7402207"
+        }
+      ],
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "광주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611041636905",
+      "tender_no": "202611041636905",
+      "contract_name": "늘봄전담실 운영 물품 구입",
+      "institution": "순천왕운초등학교",
+      "counterpart": "주식회사 신용상회",
+      "amount": "144,000",
+      "contract_date": "2026-11-04",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611041636905&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "순천왕운초등학교",
+          "region": "전남",
+          "district": "순천시",
+          "education_office": "전남광주통합특별시교육청(전남)",
+          "support_office": "전라남도순천교육지원청",
+          "address": "전남광주통합특별시 순천시 왕지3길 41",
+          "school_code": "8522060"
+        }
+      ],
+      "support_office": "전라남도순천교육지원청",
+      "subregion": "순천",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611041634105",
+      "tender_no": "202611041634105",
+      "contract_name": "늘봄방과후학교 운영물품 구입(복사용지)",
+      "institution": "전주선화학교",
+      "counterpart": "전라북도장애인생산품판매시설",
+      "amount": "1,475,000",
+      "contract_date": "2026-11-04",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611041634105&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "기타",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주선화학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 전주시 완산구 효자로 39",
+          "school_code": "8321222"
+        }
+      ],
+      "support_office": "전북특별자치도전주교육지원청",
+      "subregion": "전주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611041635947",
+      "tender_no": "202611041635947",
+      "contract_name": "2026학년도 늘봄지원실 운영 물품 구입",
+      "institution": "부구초등학교",
+      "counterpart": "스쿨런",
+      "amount": "960,000",
+      "contract_date": "2026-11-04",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611041635947&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "부구초등학교",
+          "region": "경북",
+          "district": "울진군",
+          "education_office": "경상북도교육청",
+          "support_office": "경상북도울진교육지원청",
+          "address": "경상북도 울진군 북면 울진북로 2081",
+          "school_code": "8971029"
+        }
+      ],
+      "support_office": "경상북도울진교육지원청",
+      "subregion": "울진",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031629948",
+      "tender_no": "202611031629948",
+      "contract_name": "2026 지역과 함께하는 진안 늘봄박람회 운영",
+      "institution": "전북특별자치도진안교육지원청",
+      "counterpart": "대광이벤트",
+      "amount": "9,790,000",
+      "contract_date": "2026-11-04",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611031629948&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "기타",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "support_office": "전북특별자치도진안교육지원청",
+      "subregion": "진안",
+      "first_imported_at": "2026-11-09 11:42",
       "import_count": 1
     },
     {
@@ -12571,6 +12957,284 @@
       "import_count": 1
     },
     {
+      "id": "202611031630057",
+      "tender_no": "202611031630057",
+      "contract_name": "제2차 학교늘봄협의체 운영 물품 구입",
+      "institution": "한솔초등학교",
+      "counterpart": "위드(WITH)",
+      "amount": "383,500",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031630057&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "한솔초등학교",
+          "region": "세종",
+          "district": "누리로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  누리로 32",
+          "school_code": "9300087"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "경기",
+          "district": "성남시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도성남교육지원청",
+          "address": "경기도 성남시 분당구 돌마로 303",
+          "school_code": "7551101"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "강원",
+          "district": "강릉시",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도강릉교육지원청",
+          "address": "강원특별자치도 강릉시 하평2길 45",
+          "school_code": "7832078"
+        },
+        {
+          "school_name": "한솔초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 서원구 구룡산로 291",
+          "school_code": "8011208"
+        }
+      ],
+      "support_office": "",
+      "subregion": "강릉 / 성남 / 청주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031631792",
+      "tender_no": "202611031631792",
+      "contract_name": "늘봄지원실 복사기 구입",
+      "institution": "둔내초등학교",
+      "counterpart": "클로버교육",
+      "amount": "2,987,000",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031631792&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "둔내초등학교",
+          "region": "강원",
+          "district": "횡성군",
+          "education_office": "강원특별자치도교육청",
+          "support_office": "강원특별자치도횡성교육지원청",
+          "address": "강원특별자치도 횡성군 둔내면 둔내로 47",
+          "school_code": "7892020"
+        }
+      ],
+      "support_office": "강원특별자치도횡성교육지원청",
+      "subregion": "횡성",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031630462",
+      "tender_no": "202611031630462",
+      "contract_name": "늘봄전담실 환경조성 제습기 구입(인버터 이동식23L)",
+      "institution": "파주문산동초등학교",
+      "counterpart": "버니스",
+      "amount": "744,000",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031630462&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
+      "region_candidates": [],
+      "support_office": "경기도파주교육지원청",
+      "subregion": "파주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031632984",
+      "tender_no": "202611031632984",
+      "contract_name": "군산풍문초등학교 행정사무용 및 늘봄실 복사용지 구입",
+      "institution": "군산풍문초등학교",
+      "counterpart": "전라북도장애인생산품판매시설",
+      "amount": "885,000",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031632984&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군산풍문초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 풍마길 22",
+          "school_code": "8342098"
+        }
+      ],
+      "support_office": "전북특별자치도군산교육지원청",
+      "subregion": "군산",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031633770",
+      "tender_no": "202611031633770",
+      "contract_name": "2026년 상일초등학교 늘봄전담실 레이저프린터 구입",
+      "institution": "상일초등학교",
+      "counterpart": "팩토리(PACKTORY)",
+      "amount": "550,000",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031633770&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "",
+      "region_status": "ambiguous",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "상일초등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도부천교육지원청",
+          "address": "경기도 부천시 조마루로 57",
+          "school_code": "7581079"
+        },
+        {
+          "school_name": "상일초등학교",
+          "region": "경남",
+          "district": "창원시",
+          "education_office": "경상남도교육청",
+          "support_office": "창원교육지원청",
+          "address": "경상남도 창원시 마산회원구 내서읍 광려천서로 21",
+          "school_code": "9022055"
+        }
+      ],
+      "support_office": "",
+      "subregion": "부천 / 창원",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611031632993",
+      "tender_no": "202611031632993",
+      "contract_name": "2026년 늘봄지원실 환경개선 물품(사무용 의자) 구입",
+      "institution": "군산풍문초등학교",
+      "counterpart": "주식회사 교육의정석",
+      "amount": "258,000",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611031632993&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "군산풍문초등학교",
+          "region": "전북",
+          "district": "군산시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도군산교육지원청",
+          "address": "전북특별자치도 군산시 풍마길 22",
+          "school_code": "8342098"
+        }
+      ],
+      "support_office": "전북특별자치도군산교육지원청",
+      "subregion": "군산",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
+      "id": "202611021626329",
+      "tender_no": "202611021626329",
+      "contract_name": "2026. 늘봄교실 운영물품 견적요청",
+      "institution": "전주동북초등학교",
+      "counterpart": "일등교육사",
+      "amount": "1,654,350",
+      "contract_date": "2026-11-03",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611021626329&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주동북초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 덕진구 견훤왕궁로 227",
+          "school_code": "8332126"
+        }
+      ],
+      "support_office": "전북특별자치도전주교육지원청",
+      "subregion": "전주",
+      "first_imported_at": "2026-11-09 11:42",
+      "import_count": 1
+    },
+    {
       "id": "202611031629758",
       "tender_no": "202611031629758",
       "contract_name": "호암초등학교 AI중점학교 동아리 물품구입",
@@ -17912,6 +18576,42 @@
       "support_office": "충청남도논산계룡교육지원청",
       "subregion": "논산,계룡",
       "first_imported_at": "2026-11-09 10:02",
+      "import_count": 1
+    },
+    {
+      "id": "202610161581322",
+      "tender_no": "202610161581322",
+      "contract_name": "2026학년도 늘봄발표회 음향 및 조명 시스템 대여",
+      "institution": "전주여울초등학교",
+      "counterpart": "썬엔터테인먼트",
+      "amount": "2,000,000",
+      "contract_date": "2026-11-02",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202610161581322&excelSection=N",
+      "search_period_from": "2026.11.01",
+      "search_period_to": "2026.11.08",
+      "last_imported_at": "2026-11-09 11:42",
+      "school_level": "초",
+      "school_type": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주여울초등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도전주교육지원청",
+          "address": "전북특별자치도 전주시 완산구 고사평8길 11",
+          "school_code": "8332174"
+        }
+      ],
+      "support_office": "전북특별자치도전주교육지원청",
+      "subregion": "전주",
+      "first_imported_at": "2026-11-09 11:42",
       "import_count": 1
     },
     {
