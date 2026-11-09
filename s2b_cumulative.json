@@ -1,8 +1,8 @@
 {
-  "exported_at": "2026-11-09 10:02",
+  "exported_at": "2026-11-09 11:21",
   "meta": {
-    "lastImportedAt": "2026-11-09 10:02",
-    "lastSearchPeriod": "20261101~20261108",
+    "lastImportedAt": "2026-11-09 11:21",
+    "lastSearchPeriod": "20261102~20261108",
     "total": 19022
   },
   "records": [
@@ -4341,7 +4341,7 @@
           "school_code": "7402327"
         }
       ],
-      "support_office": "광주광역시서부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-09 10:02",
       "import_count": 1
@@ -6402,7 +6402,7 @@
           "school_code": "7140397"
         }
       ],
-      "support_office": "광주광역시서부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-09 10:02",
       "import_count": 1
@@ -15015,7 +15015,7 @@
           "school_code": "7402272"
         }
       ],
-      "support_office": "광주광역시서부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-09 10:02",
       "import_count": 1
@@ -15654,7 +15654,7 @@
           "school_code": "7140337"
         }
       ],
-      "support_office": "광주광역시동부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-09 10:02",
       "import_count": 1
