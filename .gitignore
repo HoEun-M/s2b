@@ -36,3 +36,6 @@ s2b_2025_side_analysis/
 
 # 로컬 리포트(HTML/PDF) 산출물
 s2b_reports/
+
+# daily_crawl.py run logs
+logs/
