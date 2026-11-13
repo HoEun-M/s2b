@@ -495,6 +495,18 @@
     {
       "search_term": "1HOUR",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:30"
+    },
+    {
+      "search_term": "1HOUR",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -1163,6 +1175,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:37"
+    },
+    {
+      "search_term": "AI",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 67,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:34"
     },
     {
       "search_term": "AI",
@@ -11449,6 +11473,42 @@
       "finished_at": "2026-11-13 02:01"
     },
     {
+      "search_term": "공사",
+      "kind": "g2b:bid",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 151 edu 151",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:award",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 13 edu 13",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "공사",
+      "kind": "g2b:plan",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 331 edu 104",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
       "search_term": "교과보충",
       "kind": "normal",
       "from": "20260201",
@@ -11939,6 +11999,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:11"
+    },
+    {
+      "search_term": "교과보충",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:09"
     },
     {
       "search_term": "교과보충",
@@ -12603,6 +12675,18 @@
     {
       "search_term": "국어",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:05"
+    },
+    {
+      "search_term": "국어",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -13103,6 +13187,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:10"
+    },
+    {
+      "search_term": "기초학력",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:08"
     },
     {
       "search_term": "기초학력",
@@ -13611,6 +13707,18 @@
     {
       "search_term": "기출탭탭",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:21"
+    },
+    {
+      "search_term": "기출탭탭",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -13679,6 +13787,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:43"
+    },
+    {
+      "search_term": "늘봄",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 12,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:40"
     },
     {
       "search_term": "늘봄",
@@ -14183,6 +14303,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:18"
+    },
+    {
+      "search_term": "달달",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:15"
     },
     {
       "search_term": "달달",
@@ -14751,6 +14883,18 @@
     {
       "search_term": "독해",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:35"
+    },
+    {
+      "search_term": "독해",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -15255,6 +15399,18 @@
     {
       "search_term": "두드림",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:10"
+    },
+    {
+      "search_term": "두드림",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -15755,6 +15911,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:26"
+    },
+    {
+      "search_term": "리딩앤",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:23"
     },
     {
       "search_term": "리딩앤",
@@ -16323,6 +16491,18 @@
     {
       "search_term": "마타",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:38"
+    },
+    {
+      "search_term": "마타",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -16883,6 +17063,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:40"
+    },
+    {
+      "search_term": "매쓰플랫",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:37"
     },
     {
       "search_term": "매쓰플랫",
@@ -30722,6 +30914,30 @@
     },
     {
       "search_term": "물품",
+      "kind": "g2b:bid_pub",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 17 edu 0",
+      "finished_at": "2026-11-14 02:02"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award_pub",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 6,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 5 edu 0",
+      "finished_at": "2026-11-14 02:02"
+    },
+    {
+      "search_term": "물품",
       "kind": "g2b:contract",
       "from": "20261108",
       "to": "20261108",
@@ -30959,6 +31175,54 @@
       "mode": "api",
       "note": "raw 379 edu 86",
       "finished_at": "2026-11-13 02:01"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:contract",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 3,
+      "records": 3,
+      "mode": "api",
+      "note": "raw 2819 edu 388",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:bid",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 151 edu 151",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:award",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 32 edu 32",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "물품",
+      "kind": "g2b:plan",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 374 edu 80",
+      "finished_at": "2026-11-14 02:01"
     },
     {
       "search_term": "미래엔",
@@ -31451,6 +31715,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:14"
+    },
+    {
+      "search_term": "미래엔",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:12"
     },
     {
       "search_term": "미래엔",
@@ -32031,6 +32307,18 @@
     {
       "search_term": "비상교육",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:17"
+    },
+    {
+      "search_term": "비상교육",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -32531,6 +32819,18 @@
       "mode": "requests-excel",
       "note": "via 옥수수",
       "finished_at": "2026-11-13 02:20"
+    },
+    {
+      "search_term": "비상교육 옥수수",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "via 옥수수",
+      "finished_at": "2026-11-14 02:18"
     },
     {
       "search_term": "비상교육 옥수수",
@@ -33207,6 +33507,18 @@
     {
       "search_term": "수학",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 22,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:06"
+    },
+    {
+      "search_term": "수학",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -33707,6 +34019,18 @@
       "mode": "requests-excel",
       "note": "via 수학",
       "finished_at": "2026-11-13 02:08"
+    },
+    {
+      "search_term": "수학대장",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 22,
+      "mode": "requests-excel",
+      "note": "via 수학",
+      "finished_at": "2026-11-14 02:06"
     },
     {
       "search_term": "수학대장",
@@ -34215,6 +34539,18 @@
     {
       "search_term": "스마트올",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:22"
+    },
+    {
+      "search_term": "스마트올",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -34715,6 +35051,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:22"
+    },
+    {
+      "search_term": "스쿨런",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:20"
     },
     {
       "search_term": "스쿨런",
@@ -35283,6 +35631,18 @@
     {
       "search_term": "스쿨플랫",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:36"
+    },
+    {
+      "search_term": "스쿨플랫",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -35783,6 +36143,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:35"
+    },
+    {
+      "search_term": "에듀테크",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 3,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:33"
     },
     {
       "search_term": "에듀테크",
@@ -36459,6 +36831,18 @@
     {
       "search_term": "영어",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 8,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:07"
+    },
+    {
+      "search_term": "영어",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -37031,6 +37415,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:20"
+    },
+    {
+      "search_term": "옥수수",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:18"
     },
     {
       "search_term": "옥수수",
@@ -50870,6 +51266,30 @@
     },
     {
       "search_term": "용역",
+      "kind": "g2b:bid_pub",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 6,
+      "records": 5,
+      "mode": "api",
+      "note": "raw 68 edu 5",
+      "finished_at": "2026-11-14 02:02"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award_pub",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 6,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 14 edu 1",
+      "finished_at": "2026-11-14 02:02"
+    },
+    {
+      "search_term": "용역",
       "kind": "g2b:contract",
       "from": "20261108",
       "to": "20261108",
@@ -51107,6 +51527,54 @@
       "mode": "api",
       "note": "raw 569 edu 64",
       "finished_at": "2026-11-13 02:01"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:contract",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 6,
+      "records": 6,
+      "mode": "api",
+      "note": "raw 5767 edu 1162",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:bid",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "api",
+      "note": "raw 72 edu 72",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:award",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "api",
+      "note": "raw 8 edu 8",
+      "finished_at": "2026-11-14 02:01"
+    },
+    {
+      "search_term": "용역",
+      "kind": "g2b:plan",
+      "from": "20261113",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "api",
+      "note": "raw 579 edu 93",
+      "finished_at": "2026-11-14 02:01"
     },
     {
       "search_term": "원아워",
@@ -51663,6 +52131,18 @@
     {
       "search_term": "원아워",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:39"
+    },
+    {
+      "search_term": "원아워",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -52163,6 +52643,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:27"
+    },
+    {
+      "search_term": "자작자작",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:24"
     },
     {
       "search_term": "자작자작",
@@ -52743,6 +53235,18 @@
     {
       "search_term": "지니아",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:28"
+    },
+    {
+      "search_term": "지니아",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -53247,6 +53751,18 @@
     {
       "search_term": "지니아튜터",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 1,
+      "mode": "requests-excel",
+      "note": "via 지니아",
+      "finished_at": "2026-11-14 02:28"
+    },
+    {
+      "search_term": "지니아튜터",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -53751,6 +54267,18 @@
     {
       "search_term": "천재교과서",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "via 천재",
+      "finished_at": "2026-11-14 02:29"
+    },
+    {
+      "search_term": "천재교과서",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -54251,6 +54779,18 @@
       "mode": "requests-excel",
       "note": "via 천재",
       "finished_at": "2026-11-13 02:31"
+    },
+    {
+      "search_term": "천재교육",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "via 천재",
+      "finished_at": "2026-11-14 02:29"
     },
     {
       "search_term": "천재교육",
@@ -54819,6 +55359,18 @@
     {
       "search_term": "초코클래스",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:14"
+    },
+    {
+      "search_term": "초코클래스",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -55319,6 +55871,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:15"
+    },
+    {
+      "search_term": "초코팝",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:13"
     },
     {
       "search_term": "초코팝",
@@ -55979,6 +56543,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:13"
+    },
+    {
+      "search_term": "코딩",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 2,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:11"
     },
     {
       "search_term": "코딩",
@@ -56655,6 +57231,18 @@
     {
       "search_term": "코스웨어",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:04"
+    },
+    {
+      "search_term": "코스웨어",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -57155,6 +57743,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:28"
+    },
+    {
+      "search_term": "클래스팅",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:25"
     },
     {
       "search_term": "클래스팅",
@@ -57663,6 +58263,18 @@
     {
       "search_term": "토도수학",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 22,
+      "mode": "requests-excel",
+      "note": "via 수학",
+      "finished_at": "2026-11-14 02:06"
+    },
+    {
+      "search_term": "토도수학",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -58163,6 +58775,18 @@
       "mode": "requests-excel",
       "note": "via 영어",
       "finished_at": "2026-11-13 02:09"
+    },
+    {
+      "search_term": "토도영어",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 8,
+      "mode": "requests-excel",
+      "note": "via 영어",
+      "finished_at": "2026-11-14 02:07"
     },
     {
       "search_term": "토도영어",
@@ -58671,6 +59295,18 @@
     {
       "search_term": "토도한글",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:31"
+    },
+    {
+      "search_term": "토도한글",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -59171,6 +59807,18 @@
       "mode": "requests-excel",
       "note": "",
       "finished_at": "2026-11-13 02:29"
+    },
+    {
+      "search_term": "플랭",
+      "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:26"
     },
     {
       "search_term": "플랭",
@@ -59679,6 +60327,18 @@
     {
       "search_term": "홈런",
       "kind": "normal",
+      "from": "20261107",
+      "to": "20261113",
+      "status": "complete",
+      "pages": 1,
+      "records": 0,
+      "mode": "requests-excel",
+      "note": "",
+      "finished_at": "2026-11-14 02:19"
+    },
+    {
+      "search_term": "홈런",
+      "kind": "normal",
       "from": "20261108",
       "to": "20261108",
       "status": "complete",
@@ -59689,5 +60349,5 @@
       "finished_at": "2026-11-09 09:43"
     }
   ],
-  "updated_at": "2026-11-13 02:43"
+  "updated_at": "2026-11-14 02:40"
 }
