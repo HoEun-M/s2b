@@ -1,8 +1,8 @@
 {
- "exported_at": "2026-11-15 02:02",
+ "exported_at": "2026-11-16 02:01",
  "meta": {
-  "lastImportedAt": "2026-11-15 02:02",
-  "lastSearchPeriod": "20261108~20261114",
+  "lastImportedAt": "2026-11-16 02:01",
+  "lastSearchPeriod": "20261109~20261115",
   "total": 1278,
   "bySource": {
    "contract": 784,
@@ -415,9 +415,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-13 02:02",
-   "import_count": 3
+   "import_count": 4
   },
   {
    "id": "bid:R26BK01827012-001",
@@ -448,9 +448,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-13 02:02",
-   "import_count": 3
+   "import_count": 4
   },
   {
    "id": "contract:R26TA02421712",
@@ -516,9 +516,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-13 02:02",
-   "import_count": 3
+   "import_count": 4
   },
   {
    "id": "plan:R26DD20927795",
@@ -923,9 +923,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-13 02:02",
-   "import_count": 3
+   "import_count": 4
   },
   {
    "id": "plan:R26DD20927048",
@@ -2234,9 +2234,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-11 02:02",
-   "import_count": 5
+   "import_count": 6
   },
   {
    "id": "bid:R26BK01815122-001",
@@ -2719,9 +2719,9 @@
      "total": ""
     }
    ],
-   "last_imported_at": "2026-11-15 02:02",
+   "last_imported_at": "2026-11-16 02:01",
    "first_imported_at": "2026-11-10 02:02",
-   "import_count": 6
+   "import_count": 7
   },
   {
    "id": "plan:R26DD20922600",
