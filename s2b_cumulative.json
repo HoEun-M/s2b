@@ -1,11 +1,462 @@
 {
-  "exported_at": "2026-11-19 02:40",
+  "exported_at": "2026-11-20 02:40",
   "meta": {
-    "lastImportedAt": "2026-11-19 02:40",
-    "lastSearchPeriod": "20261112~20261118",
-    "total": 19529
+    "lastImportedAt": "2026-11-20 02:40",
+    "lastSearchPeriod": "20261113~20261119",
+    "total": 19542
   },
   "records": [
+    {
+      "id": "202611191680258",
+      "tender_no": "202611191680258",
+      "contract_name": "클래스팅 AI 외 3종",
+      "institution": "연양초등학교",
+      "counterpart": "드림스쿨",
+      "amount": "212,500",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "클래스팅",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191680258&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "연양초등학교",
+          "region": "세종",
+          "district": "도움3로",
+          "education_office": "세종특별자치시교육청",
+          "support_office": "세종특별자치시교육청",
+          "address": "세종특별자치시  도움3로 37",
+          "school_code": "9300121"
+        }
+      ],
+      "support_office": "세종특별자치시교육청",
+      "subregion": "세종",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191680967",
+      "tender_no": "202611191680967",
+      "contract_name": "영어교과 교수학습 지원 및 운영 물품 구입(2차)",
+      "institution": "포항세명고등학교",
+      "counterpart": "스쿨스24",
+      "amount": "24,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "수학",
+        "영어"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191680967&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "고",
+      "school_type": "",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
+      "region_candidates": [],
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611181676520",
+      "tender_no": "202611181676520",
+      "contract_name": "늘봄학교 하얀손수건 물티슈 고급 캡형(대구판매시설) 외 5종 구매",
+      "institution": "대구율원초등학교",
+      "counterpart": "대구광역시장애인생산품판매시설",
+      "amount": "890,700",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "늘봄"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181676520&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "대구율원초등학교",
+          "region": "대구",
+          "district": "동구",
+          "education_office": "대구광역시교육청",
+          "support_office": "대구광역시동부교육지원청",
+          "address": "대구광역시 동구 율하동로 55",
+          "school_code": "7251114"
+        }
+      ],
+      "support_office": "대구광역시동부교육지원청",
+      "subregion": "동부",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611101654239",
+      "tender_no": "202611101654239",
+      "contract_name": "AI활용수학학습프로그램 사용권",
+      "institution": "오송솔미초등학교",
+      "counterpart": "마타에듀 주식회사",
+      "amount": "52,800",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "수학",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611101654239&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "오송솔미초등학교",
+          "region": "충북",
+          "district": "청주시",
+          "education_office": "충청북도교육청",
+          "support_office": "충청북도청주교육지원청",
+          "address": "충청북도 청주시 흥덕구 오송읍 오송생명12로 83",
+          "school_code": "8011389"
+        }
+      ],
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191679110",
+      "tender_no": "202611191679110",
+      "contract_name": "AI디지털활용 선도학교 에듀테크(멘티미터 외 4종 )",
+      "institution": "동대전초등학교",
+      "counterpart": "주식회사 미래에듀",
+      "amount": "159,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "에듀테크",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191679110&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "support_office": "",
+      "subregion": "동부",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191679109",
+      "tender_no": "202611191679109",
+      "contract_name": "AI디지털활용 선도학교 에듀테크(멘티미터 외 4종 )",
+      "institution": "동대전초등학교",
+      "counterpart": "가온인테크",
+      "amount": "1,335,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "에듀테크",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191679109&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "support_office": "",
+      "subregion": "동부",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191679108",
+      "tender_no": "202611191679108",
+      "contract_name": "AI디지털활용 선도학교 에듀테크(멘티미터 외 4종 )",
+      "institution": "동대전초등학교",
+      "counterpart": "위멘토피아",
+      "amount": "69,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "에듀테크",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191679108&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "support_office": "",
+      "subregion": "동부",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611181675105",
+      "tender_no": "202611181675105",
+      "contract_name": "AI디지털 교육용 학교 단체복 주문",
+      "institution": "부산은애학교",
+      "counterpart": "진심유통",
+      "amount": "4,600,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611181675105&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "기타",
+      "school_type": "선도",
+      "region": "부산",
+      "region_status": "direct",
+      "region_source": "institution_name",
+      "region_candidates": [],
+      "support_office": "",
+      "subregion": "동래",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191680147",
+      "tender_no": "202611191680147",
+      "contract_name": "AI·중점학교 카미봇 파이 AI 외 1종 구입",
+      "institution": "대구동곡초등학교",
+      "counterpart": "제이로이",
+      "amount": "1,740,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191680147&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "초",
+      "school_type": "선도",
+      "region": "대구",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "동곡초등학교",
+          "region": "광주",
+          "district": "광산구",
+          "education_office": "전남광주통합특별시교육청(광주)",
+          "support_office": "광주광역시서부교육지원청",
+          "address": "전남광주통합특별시 광산구 동곡로 151-17",
+          "school_code": "7402208"
+        },
+        {
+          "school_name": "동곡초등학교",
+          "region": "경기",
+          "district": "부천시",
+          "education_office": "경기도교육청",
+          "support_office": "경기도부천교육지원청",
+          "address": "경기도 부천시 안곡로 248",
+          "school_code": "7581048"
+        }
+      ],
+      "support_office": "",
+      "subregion": "달성",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611171673907",
+      "tender_no": "202611171673907",
+      "contract_name": "AI/SW 융합교육 코너스톤 프로젝트 운영 에듀테크 이용권 구입",
+      "institution": "전주기전여자고등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "1,530,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "에듀테크",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673907&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "고",
+      "school_type": "선도",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "neis_school_info",
+      "region_candidates": [
+        {
+          "school_name": "전주기전여자고등학교",
+          "region": "전북",
+          "district": "전주시",
+          "education_office": "전북특별자치도교육청",
+          "support_office": "전북특별자치도교육청",
+          "address": "전북특별자치도 전주시 완산구 유연로 133",
+          "school_code": "8321099"
+        }
+      ],
+      "support_office": "전북특별자치도전주교육지원청",
+      "subregion": "전주",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191679873",
+      "tender_no": "202611191679873",
+      "contract_name": "AI 클로드 Claude 프로 Pro 에듀테크",
+      "institution": "대전과학고등학교",
+      "counterpart": "비케이 에듀",
+      "amount": "148,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "에듀테크",
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191679873&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "고",
+      "school_type": "",
+      "region": "대전",
+      "region_status": "direct",
+      "region_source": "institution_name_neis_stripped",
+      "region_candidates": [
+        {
+          "school_name": "대경생활과학고등학교",
+          "region": "서울",
+          "district": "중구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 중구 매봉18길 111",
+          "school_code": "7011507"
+        },
+        {
+          "school_name": "미래산업과학고등학교",
+          "region": "서울",
+          "district": "노원구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 노원구 덕릉로82길 54",
+          "school_code": "7010591"
+        },
+        {
+          "school_name": "서서울생활과학고등학교",
+          "region": "서울",
+          "district": "구로구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 구로구 오리로 1355-10",
+          "school_code": "7010721"
+        },
+        {
+          "school_name": "서울과학고등학교",
+          "region": "서울",
+          "district": "종로구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 종로구 혜화로 63",
+          "school_code": "7010084"
+        },
+        {
+          "school_name": "세종과학고등학교",
+          "region": "서울",
+          "district": "구로구",
+          "education_office": "서울특별시교육청",
+          "support_office": "서울특별시교육청",
+          "address": "서울특별시 구로구 오리로21길 79",
+          "school_code": "7010816"
+        }
+      ],
+      "support_office": "",
+      "subregion": "서부",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611191678707",
+      "tender_no": "202611191678707",
+      "contract_name": "AI 줌 zoom 비즈니스",
+      "institution": "고양백석고등학교",
+      "counterpart": "아이티존(주)",
+      "amount": "42,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191678707&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "고",
+      "school_type": "선도",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
+      "region_candidates": [],
+      "support_office": "경기도고양교육지원청",
+      "subregion": "고양",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
+    {
+      "id": "202611161669776",
+      "tender_no": "202611161669776",
+      "contract_name": "AI 디지털 활용 선도학교 물품구입",
+      "institution": "청송진성중학교",
+      "counterpart": "하나정보시스템",
+      "amount": "9,980,000",
+      "contract_date": "2026-11-19",
+      "keywords": [
+        "AI"
+      ],
+      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611161669776&excelSection=N",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
+      "school_level": "중",
+      "school_type": "선도",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "institution_district_prefix",
+      "region_candidates": [],
+      "support_office": "경상북도청송교육지원청",
+      "subregion": "청송",
+      "first_imported_at": "2026-11-20 02:40",
+      "import_count": 1
+    },
     {
       "id": "202611181674863",
       "tender_no": "202611181674863",
@@ -18,9 +469,9 @@
         "코딩"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181674863&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "충남",
@@ -40,7 +491,7 @@
       "support_office": "충청남도천안교육지원청",
       "subregion": "천안",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675370",
@@ -54,9 +505,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675370&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "전남",
@@ -76,7 +527,7 @@
       "support_office": "전라남도목포교육지원청",
       "subregion": "목포",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611131665950",
@@ -90,9 +541,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611131665950&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "대구",
@@ -112,7 +563,7 @@
       "support_office": "대구광역시달성교육지원청",
       "subregion": "달성",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675642",
@@ -126,9 +577,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675642&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경남",
@@ -148,7 +599,7 @@
       "support_office": "사천교육지원청",
       "subregion": "사천",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611171674728",
@@ -159,17 +610,17 @@
       "amount": "150,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "코스웨어",
-        "수학",
-        "비상교육 옥수수",
         "AI",
         "비상교육",
-        "옥수수"
+        "비상교육 옥수수",
+        "수학",
+        "옥수수",
+        "코스웨어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171674728&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "기타",
       "school_type": "",
       "region": "경기",
@@ -179,7 +630,7 @@
       "support_office": "성남교육지원청",
       "subregion": "성남",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181677577",
@@ -193,9 +644,9 @@
         "마타"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181677577&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "중점",
       "region": "경북",
@@ -215,7 +666,7 @@
       "support_office": "경상북도안동교육지원청",
       "subregion": "안동",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181676505",
@@ -229,9 +680,9 @@
         "늘봄"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181676505&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "대구",
@@ -251,7 +702,7 @@
       "support_office": "대구광역시동부교육지원청",
       "subregion": "동부",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611121662266",
@@ -265,9 +716,9 @@
         "늘봄"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611121662266&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "대구",
@@ -287,7 +738,7 @@
       "support_office": "대구광역시동부교육지원청",
       "subregion": "동부",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181677846",
@@ -301,9 +752,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181677846&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "중점",
       "region": "경기",
@@ -323,7 +774,7 @@
       "support_office": "경기도안성교육지원청",
       "subregion": "안성",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675618",
@@ -337,9 +788,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675618&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "전북",
@@ -359,7 +810,7 @@
       "support_office": "전북특별자치도무주교육지원청",
       "subregion": "무주",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675616",
@@ -373,9 +824,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675616&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "전북",
@@ -395,7 +846,7 @@
       "support_office": "전북특별자치도무주교육지원청",
       "subregion": "무주",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675705",
@@ -406,13 +857,13 @@
       "amount": "467,900",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675705&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "중점",
       "region": "경기",
@@ -432,7 +883,7 @@
       "support_office": "경기도용인교육지원청",
       "subregion": "용인",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675704",
@@ -443,13 +894,13 @@
       "amount": "299,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675704&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "중점",
       "region": "경기",
@@ -469,7 +920,7 @@
       "support_office": "경기도용인교육지원청",
       "subregion": "용인",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181676134",
@@ -483,9 +934,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181676134&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "",
       "region": "경남",
@@ -505,7 +956,7 @@
       "support_office": "통영교육지원청",
       "subregion": "통영",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181676086",
@@ -519,9 +970,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611181676086&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "강원",
@@ -541,7 +992,7 @@
       "support_office": "강원특별자치도태백교육지원청",
       "subregion": "태백",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611161669701",
@@ -552,13 +1003,13 @@
       "amount": "3,000,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611161669701&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "강원",
@@ -578,7 +1029,7 @@
       "support_office": "강원특별자치도태백교육지원청",
       "subregion": "태백",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181677908",
@@ -592,9 +1043,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181677908&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "",
       "region": "충남",
@@ -623,7 +1074,7 @@
       "support_office": "충청남도아산교육지원청",
       "subregion": "아산",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611171673906",
@@ -634,13 +1085,13 @@
       "amount": "1,190,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673906&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "전북",
@@ -660,7 +1111,7 @@
       "support_office": "전북특별자치도전주교육지원청",
       "subregion": "전주",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181678499",
@@ -671,13 +1122,13 @@
       "amount": "148,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181678499&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "충남",
@@ -697,7 +1148,7 @@
       "support_office": "충청남도태안교육지원청",
       "subregion": "태안",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675460",
@@ -708,13 +1159,13 @@
       "amount": "148,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675460&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "경북",
@@ -734,7 +1185,7 @@
       "support_office": "경상북도구미교육지원청",
       "subregion": "구미",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675395",
@@ -745,13 +1196,13 @@
       "amount": "148,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675395&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "경북",
@@ -771,7 +1222,7 @@
       "support_office": "경상북도구미교육지원청",
       "subregion": "구미",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611131666013",
@@ -782,13 +1233,13 @@
       "amount": "7,000,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "에듀테크",
-        "AI"
+        "AI",
+        "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611131666013&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "경남",
@@ -808,7 +1259,7 @@
       "support_office": "양산교육지원청",
       "subregion": "양산",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675223",
@@ -819,13 +1270,13 @@
       "amount": "640,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "자작자작",
-        "AI"
+        "AI",
+        "자작자작"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675223&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "전남",
@@ -845,7 +1296,7 @@
       "support_office": "전라남도완도교육지원청",
       "subregion": "완도",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611181675228",
@@ -856,13 +1307,13 @@
       "amount": "736,000",
       "contract_date": "2026-11-18",
       "keywords": [
-        "국어",
-        "AI"
+        "AI",
+        "국어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611181675228&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "전남",
@@ -882,7 +1333,7 @@
       "support_office": "전라남도완도교육지원청",
       "subregion": "완도",
       "first_imported_at": "2026-11-19 02:40",
-      "import_count": 1
+      "import_count": 2
     },
     {
       "id": "202611101654227",
@@ -896,9 +1347,9 @@
         "천재교과서"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611101654227&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "충북",
@@ -918,7 +1369,7 @@
       "support_office": "충청북도청주교육지원청",
       "subregion": "청주",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611171673858",
@@ -932,9 +1383,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673858&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경기",
@@ -954,7 +1405,7 @@
       "support_office": "경기도의정부교육지원청",
       "subregion": "의정부",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611171673857",
@@ -968,9 +1419,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673857&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경기",
@@ -990,7 +1441,7 @@
       "support_office": "경기도의정부교육지원청",
       "subregion": "의정부",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611131664229",
@@ -1004,9 +1455,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131664229&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "강원",
@@ -1026,7 +1477,7 @@
       "support_office": "강원특별자치도원주교육지원청",
       "subregion": "원주",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611161667732",
@@ -1040,9 +1491,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161667732&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "대구",
@@ -1062,7 +1513,7 @@
       "support_office": "대구광역시남부교육지원청",
       "subregion": "남부",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611171673838",
@@ -1076,9 +1527,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673838&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "",
       "region": "경기",
@@ -1098,7 +1549,7 @@
       "support_office": "경기도평택교육지원청",
       "subregion": "평택",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611151666585",
@@ -1112,9 +1563,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611151666585&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경기",
@@ -1134,7 +1585,7 @@
       "support_office": "경기도가평교육지원청",
       "subregion": "가평",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611171673635",
@@ -1148,9 +1599,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673635&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "대전",
@@ -1160,7 +1611,7 @@
       "support_office": "",
       "subregion": "동부",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611131666030",
@@ -1174,9 +1625,9 @@
         "코딩"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666030&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "세종",
@@ -1196,7 +1647,7 @@
       "support_office": "세종특별자치시교육청",
       "subregion": "세종",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611111658978",
@@ -1210,9 +1661,9 @@
         "영어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611111658978&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "경기",
@@ -1232,7 +1683,7 @@
       "support_office": "경기도김포교육지원청",
       "subregion": "김포",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611161667594",
@@ -1246,9 +1697,9 @@
         "영어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161667594&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "부산",
@@ -1268,7 +1719,7 @@
       "support_office": "부산광역시해운대교육지원청",
       "subregion": "해운대",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611161667766",
@@ -1284,9 +1735,9 @@
         "코스웨어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161667766&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "기타",
       "school_type": "선도",
       "region": "충북",
@@ -1306,7 +1757,7 @@
       "support_office": "충청북도충주교육지원청",
       "subregion": "충주",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611161666767",
@@ -1322,9 +1773,9 @@
         "코스웨어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161666767&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "",
@@ -1353,7 +1804,7 @@
       "support_office": "",
       "subregion": "태안 / 화성,오산",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611101653844",
@@ -1367,9 +1818,9 @@
         "늘봄"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611101653844&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "",
@@ -1398,7 +1849,7 @@
       "support_office": "",
       "subregion": "익산 / 홍성",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611131665532",
@@ -1412,9 +1863,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131665532&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "",
@@ -1452,7 +1903,7 @@
       "support_office": "",
       "subregion": "남원 / 수원 / 화천",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611161666961",
@@ -1466,9 +1917,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161666961&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "전북",
@@ -1488,7 +1939,7 @@
       "support_office": "전북특별자치도고창교육지원청",
       "subregion": "고창",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611131666140",
@@ -1503,9 +1954,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611131666140&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "경남",
@@ -1525,7 +1976,7 @@
       "support_office": "양산교육지원청",
       "subregion": "양산",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611161668719",
@@ -1539,9 +1990,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161668719&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "울산",
@@ -1561,7 +2012,7 @@
       "support_office": "울산광역시강북교육지원청",
       "subregion": "강북",
       "first_imported_at": "2026-11-18 02:42",
-      "import_count": 2
+      "import_count": 3
     },
     {
       "id": "202611161668899",
@@ -1576,9 +2027,9 @@
         "국어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611161668899&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "인천",
@@ -1598,7 +2049,7 @@
       "support_office": "인천광역시남부교육지원청",
       "subregion": "남부",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611131664596",
@@ -1612,9 +2063,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202611131664596&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "충북",
@@ -1634,7 +2085,7 @@
       "support_office": "충청북도청주교육지원청",
       "subregion": "청주",
       "first_imported_at": "2026-11-15 02:44",
-      "import_count": 5
+      "import_count": 6
     },
     {
       "id": "202611131666250",
@@ -1648,9 +2099,9 @@
         "코딩"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666250&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "중점",
       "region": "대구",
@@ -1670,7 +2121,7 @@
       "support_office": "대구광역시동부교육지원청",
       "subregion": "동부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131663879",
@@ -1684,9 +2135,9 @@
         "영어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131663879&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "경기",
@@ -1706,7 +2157,7 @@
       "support_office": "경기도의정부교육지원청",
       "subregion": "의정부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131663983",
@@ -1720,9 +2171,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131663983&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "전북",
@@ -1742,7 +2193,7 @@
       "support_office": "전북특별자치도익산교육지원청",
       "subregion": "익산",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131664862",
@@ -1757,9 +2208,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131664862&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "",
@@ -1788,7 +2239,7 @@
       "support_office": "",
       "subregion": "서천 / 용인",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611121661895",
@@ -1802,9 +2253,9 @@
         "수학"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611121661895&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "전남",
@@ -1824,7 +2275,7 @@
       "support_office": "전라남도목포교육지원청",
       "subregion": "목포",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131665151",
@@ -1838,9 +2289,9 @@
         "늘봄"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131665151&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "대전",
@@ -1860,7 +2311,7 @@
       "support_office": "대전광역시서부교육지원청",
       "subregion": "서부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611111658295",
@@ -1874,9 +2325,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611111658295&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "",
@@ -1905,7 +2356,7 @@
       "support_office": "",
       "subregion": "동부 / 포항",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131665533",
@@ -1919,9 +2370,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131665533&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "",
@@ -1959,7 +2410,7 @@
       "support_office": "",
       "subregion": "남원 / 수원 / 화천",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131665936",
@@ -1973,9 +2424,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131665936&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "전북",
@@ -1995,7 +2446,7 @@
       "support_office": "전북특별자치도김제교육지원청",
       "subregion": "김제",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131666169",
@@ -2009,9 +2460,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666169&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "인천",
@@ -2031,7 +2482,7 @@
       "support_office": "인천광역시북부교육지원청",
       "subregion": "북부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131666168",
@@ -2045,9 +2496,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666168&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "인천",
@@ -2067,7 +2518,7 @@
       "support_office": "인천광역시북부교육지원청",
       "subregion": "북부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131666167",
@@ -2081,9 +2532,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666167&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "선도",
       "region": "인천",
@@ -2103,7 +2554,7 @@
       "support_office": "인천광역시북부교육지원청",
       "subregion": "북부",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 3
+      "import_count": 4
     },
     {
       "id": "202611131664768",
@@ -2117,9 +2568,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131664768&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "",
       "region": "서울",
@@ -2139,7 +2590,7 @@
       "support_office": "서울특별시동부교육지원청",
       "subregion": "동부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131666336",
@@ -2154,9 +2605,9 @@
         "국어"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666336&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "선도",
       "region": "서울",
@@ -2194,7 +2645,7 @@
       "support_office": "서울특별시남부교육지원청",
       "subregion": "남부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131663772",
@@ -2208,9 +2659,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131663772&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "선도",
       "region": "서울",
@@ -2230,7 +2681,7 @@
       "support_office": "서울특별시동부교육지원청",
       "subregion": "동부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131666353",
@@ -2245,9 +2696,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131666353&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경기",
@@ -2285,7 +2736,7 @@
       "support_office": "경기도평택교육지원청",
       "subregion": "평택",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131664940",
@@ -2300,9 +2751,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131664940&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "고",
       "school_type": "",
       "region": "경기",
@@ -2322,7 +2773,7 @@
       "support_office": "경기도부천교육지원청",
       "subregion": "부천",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611131663222",
@@ -2337,9 +2788,9 @@
         "에듀테크"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611131663222&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "중",
       "school_type": "",
       "region": "서울",
@@ -2359,7 +2810,7 @@
       "support_office": "서울특별시북부교육지원청",
       "subregion": "북부",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611121660584",
@@ -2373,9 +2824,9 @@
         "AI"
       ],
       "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611121660584&excelSection=N",
-      "search_period_from": "2026.11.12",
-      "search_period_to": "2026.11.18",
-      "last_imported_at": "2026-11-19 02:40",
+      "search_period_from": "2026.11.13",
+      "search_period_to": "2026.11.19",
+      "last_imported_at": "2026-11-20 02:40",
       "school_level": "초",
       "school_type": "",
       "region": "울산",
@@ -2431,7 +2882,7 @@
       "support_office": "",
       "subregion": "",
       "first_imported_at": "2026-11-14 02:40",
-      "import_count": 6
+      "import_count": 7
     },
     {
       "id": "202611111658740",
