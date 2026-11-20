@@ -229,11 +229,20 @@ def fetch_source_day(source, category, day, http_get=None, day_to=None):
     if spec["server_filter"]:
         base["dminsttNm"] = EDU_SERVER_FILTER
     if source == "plan":
-        # 그날 게시된 계획의 발주 시기는 보통 그해~다다음해라 넉넉히 잡는다
-        year = int(day[:4])
-        base["orderBgnYm"] = str(year - 1) + "01"
-        base["orderEndYm"] = str(year + 2) + "12"
+        items, total, pages = [], 0, 0
+        for order_from, order_to in plan_order_windows(int(day[:4])):
+            found, count, used = fetch_pages(source, path, dict(base, orderBgnYm=order_from, orderEndYm=order_to), http_get)
+            items.extend(found)
+            total += count
+            pages += used
+        return items, total, pages
     return fetch_pages(source, path, base, http_get)
+
+
+def plan_order_windows(year):
+    # 그날 게시된 계획의 발주 시기는 보통 그해~다다음해라 전년~다다음해(4년)를 본다.
+    # 2026-11-20부터 API가 발주 연월 범위를 12개월 넘게 주면 "07 입력범위값 초과"로 거절해서, 한 해씩 나눠 조회한다.
+    return [(str(y) + "01", str(y) + "12") for y in range(year - 1, year + 3)]
 
 
 def fetch_pages(source, path, base, http_get=None):

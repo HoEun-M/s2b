@@ -11861,12 +11861,12 @@
       "kind": "g2b:plan",
       "from": "20261119",
       "to": "20261119",
-      "status": "error",
-      "pages": 0,
-      "records": 0,
+      "status": "complete",
+      "pages": 4,
+      "records": 1,
       "mode": "api",
-      "note": "service 07 입력범위값 초과 에러",
-      "finished_at": "2026-11-20 02:01"
+      "note": "raw 430 edu 134",
+      "finished_at": "2026-11-20 09:09"
     },
     {
       "search_term": "교과보충",
@@ -32801,12 +32801,12 @@
       "kind": "g2b:plan",
       "from": "20261119",
       "to": "20261119",
-      "status": "error",
-      "pages": 0,
+      "status": "complete",
+      "pages": 4,
       "records": 0,
       "mode": "api",
-      "note": "service 07 입력범위값 초과 에러",
-      "finished_at": "2026-11-20 02:01"
+      "note": "raw 361 edu 78",
+      "finished_at": "2026-11-20 09:09"
     },
     {
       "search_term": "미래엔",
@@ -54377,12 +54377,12 @@
       "kind": "g2b:plan",
       "from": "20261119",
       "to": "20261119",
-      "status": "error",
-      "pages": 0,
-      "records": 0,
+      "status": "complete",
+      "pages": 4,
+      "records": 4,
       "mode": "api",
-      "note": "service 07 입력범위값 초과 에러",
-      "finished_at": "2026-11-20 02:01"
+      "note": "raw 558 edu 50",
+      "finished_at": "2026-11-20 09:09"
     },
     {
       "search_term": "원아워",
@@ -64309,5 +64309,5 @@
       "finished_at": "2026-11-20 02:20"
     }
   ],
-  "updated_at": "2026-11-20 02:40"
+  "updated_at": "2026-11-20 09:09"
 }
