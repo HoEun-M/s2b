@@ -311,6 +311,11 @@ def make_detail_url(href_raw):
 
 def build_search_body(keyword, date_from, date_to, page=1, excel=False, estimate_kind=""):
     # S2B 목록/엑셀 검색 폼. 서버가 EUC-KR이라 한글은 EUC-KR로 퍼센트 인코딩한다.
+    # 2026-11-12~13 무렵부터 S2B 계약명 검색이 "포함"이 아니라 "~로 시작"으로만 찾는다
+    # ('AI'로 11/3~11/9를 찾으면 648건 -> 91건, 91건 모두 계약명이 AI로 시작).
+    # 앞에 %를 붙이면 다시 계약명 중간에 들어간 것까지 찾는다 ('%AI' 674건, 2026-11-20 확인).
+    if keyword and not keyword.startswith("%"):
+        keyword = "%" + keyword
     return (
         "forwardName=" + ("list03Excel" if excel else "list03") + "&pageNo=" + str(page) +
         "&tender_num=&tender_step_code=&page_flag="
