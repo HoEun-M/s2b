@@ -1,8 +1,8 @@
 {
- "exported_at": "2026-11-22 02:01",
+ "exported_at": "2026-11-23 02:01",
  "meta": {
-  "lastImportedAt": "2026-11-22 02:01",
-  "lastSearchPeriod": "20261115~20261121",
+  "lastImportedAt": "2026-11-23 02:01",
+  "lastSearchPeriod": "20261116~20261122",
   "total": 1347,
   "bySource": {
    "contract": 805,
@@ -1695,9 +1695,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-22 02:01",
+   "last_imported_at": "2026-11-23 02:01",
    "first_imported_at": "2026-11-18 02:03",
-   "import_count": 5
+   "import_count": 6
   },
   {
    "id": "plan:R26DD20932816",
@@ -1760,9 +1760,9 @@
    "school_category": "기타기관",
    "is_negotiated": false,
    "public_org": true,
-   "last_imported_at": "2026-11-22 02:01",
+   "last_imported_at": "2026-11-23 02:01",
    "first_imported_at": "2026-11-18 02:03",
-   "import_count": 5
+   "import_count": 6
   },
   {
    "id": "bid:R26BK01834932-000",
