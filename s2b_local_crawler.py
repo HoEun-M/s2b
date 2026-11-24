@@ -1903,11 +1903,68 @@ def fallback_purchase_type_key(name):
     return ""
 
 
-def build_purchase_type_overrides(id_name_pairs):
-    # {레코드 id: 유형 key}. 페이지 스크립트의 PURCHASE_TYPE_OVERRIDES로 실린다 (분류할 때 가장 먼저 본다).
+# 시도교육청이 직접 하는 플랫폼·서비스 구축/도입 계약은 AIEP(AI데이터 교육플랫폼)로 모은다 (2026-11-24).
+#   예: "경상북도교육청 에듀테크 도입 특화 서비스 구축", "세종 인공지능 교수학습 플랫폼 특화서비스 구축",
+#       "AI 서·논술형 평가지원시스템 솔루션 도입 및 운영", "2026 인공지능 교육서비스(AI영어읽기) 라이선스 구입"
+# 조건 (모두 만족):
+#   - 발주 기관이 시도교육청 본청·소속 부서·직속기관 (교육지원청, 학교·유치원은 아님)
+#   - 계약명에 SIDO_OFFICE_PLATFORM_TERMS 가 있고 SIDO_OFFICE_PLATFORM_EXCLUDES 는 없다
+#   - 계약명에 특정 제품·도구 키워드가 없다 (토도영어·클로드처럼 제품이 분명하면 그 유형 그대로)
+SIDO_OFFICE_RE = re.compile(
+    r"(서울특별시|부산광역시|대구광역시|인천광역시|광주광역시|대전광역시|울산광역시|세종특별자치시|경기도|강원특별자치도|강원도"
+    r"|충청북도|충청남도|전북특별자치도|전라북도|전라남도|경상북도|경상남도|제주특별자치도)교육청")
+SIDO_OFFICE_PLATFORM_TERMS = ("구축", "플랫폼", "특화서비스", "교육서비스", "교육시스템", "AI서비스", "도입", "챗봇", "교육비서")
+SIDO_OFFICE_PLATFORM_EXCLUDES = ("물품", "용품", "인쇄", "홍보", "원가계산", "비상벨")
+# 코스웨어 키워드 가운데 제품 이름이 아닌 일반 표현 (제품이 분명한지 볼 때 뺀다)
+COURSEWARE_GENERIC_KEYWORDS = ("코스웨어", "AI 코스웨어", "문제은행", "진단평가", "학력진단", "단원평가", "평가지원", "평가",
+                               "수학 학습 프로그램", "영어독후활동프로그램", "두드림")
+
+
+def is_sido_office(institution):
+    compact = re.sub(r"\s+", "", institution or "")
+    if not SIDO_OFFICE_RE.search(compact) or "교육지원청" in compact:
+        return False
+    return not re.search(r"(학교|유치원)$", compact)
+
+
+def has_specific_type_keyword(name):
+    # 계약명에 특정 제품·도구·품목 키워드가 있는지 (코스웨어 일반 표현과 AIEP 키워드는 세지 않는다)
+    text = normalize_search_text(name)
+    for purchase_type in PURCHASE_TYPES:
+        if purchase_type["key"] == "aiep":
+            continue
+        for keyword in purchase_type["keywords"]:
+            if purchase_type["key"] == "courseware" and keyword in COURSEWARE_GENERIC_KEYWORDS:
+                continue
+            if normalize_search_text(keyword) in text:
+                return True
+    return False
+
+
+def is_sido_office_platform(name, institution):
+    if not is_sido_office(institution):
+        return False
+    text = normalize_search_text(name)
+    if not any(normalize_search_text(term) in text for term in SIDO_OFFICE_PLATFORM_TERMS):
+        return False
+    if any(word in text for word in SIDO_OFFICE_PLATFORM_EXCLUDES):
+        return False
+    return not has_specific_type_keyword(name)
+
+
+def build_purchase_type_overrides(records):
+    # records: (레코드 id, 계약명, 발주 기관) 목록 -> {레코드 id: 유형 key}.
+    # 페이지 스크립트의 PURCHASE_TYPE_OVERRIDES로 실린다 (분류할 때 가장 먼저 본다).
     overrides = {}
-    for record_id, name in id_name_pairs:
-        if not record_id or classify_purchase_type_key(name) != "uncategorized":
+    for record_id, name, institution in records:
+        if not record_id:
+            continue
+        keyword_type = classify_purchase_type_key(name)
+        if is_sido_office_platform(name, institution):
+            if keyword_type != "aiep":
+                overrides[str(record_id)] = "aiep"
+            continue
+        if keyword_type != "uncategorized":
             continue
         key = fallback_purchase_type_key(name)
         if key:
@@ -1925,7 +1982,7 @@ def extra_purchase_type_pairs():
                 records = json.load(file).get("records", [])
         except Exception:
             continue
-        pairs.extend((record.get("id", ""), record.get("name", "")) for record in records)
+        pairs.extend((record.get("id", ""), record.get("name", ""), record.get("institution", "")) for record in records)
     return pairs
 
 GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
@@ -2327,8 +2384,9 @@ def build_cumulative_html(data):
         and not any(re.sub(r"\s+", "", kw).lower() in re.sub(r"\s+", "", rec["name"]).lower() for kw in VENDOR_COURSEWARE_AIDT_KEYWORDS)
     }
     vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
+    institution_by_id = {str(row.get("id") or row.get("tender_no", "")): row.get("institution", "") for row in records}
     purchase_type_overrides = build_purchase_type_overrides(
-        [(rec["id"], rec["name"]) for rec in dashboard_records if str(rec["id"]) not in vendor_courseware] + extra_purchase_type_pairs()
+        [(rec["id"], rec["name"], institution_by_id.get(str(rec["id"]), "")) for rec in dashboard_records] + extra_purchase_type_pairs()
     )
     purchase_type_overrides_json = json.dumps(purchase_type_overrides, ensure_ascii=False, separators=(",", ":"))
     purchase_types_json = json.dumps(PURCHASE_TYPES, ensure_ascii=False, separators=(",", ":"))
