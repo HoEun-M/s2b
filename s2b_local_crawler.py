@@ -57,6 +57,25 @@ KEYWORD_EXCLUDES = {
     "홈런": ["홈런볼"],
     "마타": ["오토마타", "마타스튜디오"],
 }
+# 교육 시장과 무관해서 계약을 받지 않는 발주 기관 (기관명에 이 글자가 들어 있으면). 2026-11-24 목록 확인 후 추가.
+#   - 연구소·중앙부처·기타 기관: AI 서버·연구용 모델·내부 업무 시스템 계약
+#   - 예방교육·자료 제작 용역을 내는 기관
+# 계약(학교장터 계약, 나라장터 계약)에만 쓴다. 입찰공고·발주계획은 그대로 받는다.
+# 지자체(시·군·구)와 교육 관련 공공기관(교육개발원·교육학술정보원·EBS 등)은 넣지 않는다.
+EXCLUDE_INSTITUTIONS = (
+    "한국해양과학기술원", "사립학교교직원연금공단", "한국예술종합학교", "한국화학연구원", "소프트웨어정책연구소",
+    "국가보안기술연구소", "국가녹색기술연구소", "국가청렴권익교육원", "테크노파크", "농촌인적자원개발센터",
+    "인순이와좋은사람들", "국립낙동강생물자원관", "정보문화산업진흥원", "김해문화재단",
+    "성평등가족부", "한국직업능력연구원", "한국교육환경보호원", "한국생명존중희망재단", "한국보건복지인재원",
+    "경기도자원봉사센터", "한국조세재정연구원", "한국건강증진개발원", "춘천문화원",
+)
+
+
+def is_excluded_institution(institution):
+    compact = re.sub(r"\s+", "", institution or "")
+    return any(token in compact for token in EXCLUDE_INSTITUTIONS)
+
+
 # 이 단어가 계약명에 하나라도 있어야 해당 키워드로 인정한다 (옥수수차·옥수수콘 같은 식품 계약 차단).
 KEYWORD_REQUIRES = {
     "옥수수": ["비상", "프로그램", "에듀테크", "학습", "수학", "구독", "이용", "사용"],
@@ -525,6 +544,8 @@ def filter_records(records, covers, backfill_terms=None):
     for record in records:
         name = record["계약명"]
         if not any(keyword in name for keyword in covers):
+            continue
+        if is_excluded_institution(record.get("계약기관", "")):
             continue
         if backfill_terms:
             if not any(term in name for term in backfill_terms):

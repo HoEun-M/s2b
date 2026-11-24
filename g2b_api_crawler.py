@@ -578,6 +578,9 @@ def select_records(raw_items, source, category, all_edu=False, day=None):
     # 지자체·공공 건은 이름 패턴으로 이미 골랐으니 에듀테크 키워드가 없어도 남긴다
     # 하드웨어 등 제외어(excluded)도 지자체·공공 건에는 쓰지 않는다 (예: 포천시 "학습돌봄 전용기기 구입" — 콘텐츠와 함께 사는 기기)
     kept = [record for record in edu_records if (record["keywords"] or record.get("public_org")) and (record.get("public_org") or not record["excluded"])]
+    # 교육 시장과 무관한 기관(연구소·중앙부처 등)의 계약은 받지 않는다 (입찰공고·발주계획은 그대로)
+    kept = [record for record in kept if not (record.get("source") == "contract" and local.is_excluded_institution(
+        (record.get("institution") or "") + " " + (record.get("contract_institution") or "")))]
     return kept, len(edu_records)
 
 

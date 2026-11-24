@@ -3,7 +3,7 @@
   "meta": {
     "lastImportedAt": "2026-11-24 02:42",
     "lastSearchPeriod": "20261117~20261123",
-    "total": 19227
+    "total": 19222
   },
   "records": [
     {
@@ -8212,32 +8212,6 @@
       "subregion": "포천",
       "first_imported_at": "2026-11-20 10:38",
       "import_count": 5
-    },
-    {
-      "id": "202611191680401",
-      "tender_no": "202611191680401",
-      "contract_name": "퓨너스 레고에듀케이션 컴퓨터 사이언스 AI PRO 11 플러스 패키지",
-      "institution": "(재)전라남도정보문화산업진흥원",
-      "counterpart": "주식회사 퓨너스",
-      "amount": "6,800,000",
-      "contract_date": "2026-11-19",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611191680401&excelSection=N",
-      "search_period_from": "2026.11.17",
-      "search_period_to": "2026.11.23",
-      "last_imported_at": "2026-11-24 02:42",
-      "school_level": "기타",
-      "school_type": "",
-      "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
-      "first_imported_at": "2026-11-24 02:42",
-      "import_count": 1
     },
     {
       "id": "202611191679350",
@@ -16961,32 +16935,6 @@
       "region_candidates": [],
       "support_office": "",
       "subregion": "",
-      "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
-    },
-    {
-      "id": "202611171673185",
-      "tender_no": "202611171673185",
-      "contract_name": "카미봇 파이 AI 자원전쟁용 부착형 지게차 모형 세트",
-      "institution": "재단법인 광주정보문화산업진흥원",
-      "counterpart": "위드플러스",
-      "amount": "990,000",
-      "contract_date": "2026-11-17",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202611171673185&excelSection=N",
-      "search_period_from": "2026.11.17",
-      "search_period_to": "2026.11.23",
-      "last_imported_at": "2026-11-24 02:42",
-      "school_level": "기타",
-      "school_type": "",
-      "region": "전남",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "subregion": "광주",
       "first_imported_at": "2026-11-20 10:38",
       "import_count": 5
     },
@@ -269612,32 +269560,6 @@
       "school_type": "선도"
     },
     {
-      "id": "202608051412771",
-      "tender_no": "202608051412771",
-      "contract_name": "GAMFF AI 영상 공모전 온라인 투표 시스템 운영",
-      "institution": "(재)경북테크노파크",
-      "counterpart": "(주)올림플래닛",
-      "amount": "22,000,000",
-      "contract_date": "2026-08-24",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_1&tender_num=202608051412771&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.09.30",
-      "last_imported_at": "2026-10-07 23:11",
-      "school_level": "기타",
-      "school_type": "",
-      "region": "경북",
-      "region_status": "direct",
-      "region_source": "institution_name",
-      "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
-      "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
-    },
-    {
       "id": "202608241441478",
       "tender_no": "202608241441478",
       "contract_name": "AI활용 맞춤형 평가시스템 구축 업무추진팀 운영용품 구입",
@@ -310456,35 +310378,6 @@
       "support_office_source": "business_place",
       "subregion": "장성 / 화성,오산",
       "school_type": "선도"
-    },
-    {
-      "id": "202607221391442",
-      "tender_no": "202607221391442",
-      "contract_name": "AI 클로드 Claude 프로 Pro 에듀테크",
-      "institution": "(재)김해문화재단 김해문화의전당",
-      "counterpart": "비케이 에듀",
-      "amount": "222,000",
-      "contract_date": "2026-07-22",
-      "keywords": [
-        "AI",
-        "에듀테크"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202607221391442&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.09.30",
-      "last_imported_at": "2026-10-07 23:11",
-      "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
-      "region_candidates": [],
-      "first_imported_at": "2026-08-13 07:23",
-      "import_count": 4,
-      "support_office": "",
-      "business_place": "경남 김해시 김해대로 2060 김해문화의전당 2층 경영총괄팀",
-      "support_office_source": "business_place",
-      "subregion": "",
-      "school_type": ""
     },
     {
       "id": "202607211387696",
@@ -368427,32 +368320,6 @@
       "import_count": 2,
       "subregion": "동부",
       "school_type": ""
-    },
-    {
-      "id": "202606231326019",
-      "tender_no": "202606231326019",
-      "contract_name": "옵스봇 AI PTZR 4K 라이브 프로덕션 카메라 외 4종",
-      "institution": "사단법인인순이와좋은사람들",
-      "counterpart": "에이아이파트너스(AI Partners)",
-      "amount": "18,400,000",
-      "contract_date": "2026-06-23",
-      "keywords": [
-        "AI"
-      ],
-      "link": "https://www.s2b.kr/S2BNCustomer/tcmo001.do?forwardName=view03_2&tender_num=202606231326019&excelSection=N",
-      "search_period_from": "2026.02.01",
-      "search_period_to": "2026.09.30",
-      "last_imported_at": "2026-10-07 23:11",
-      "school_level": "기타",
-      "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
-      "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
-      "first_imported_at": "2026-10-07 23:11",
-      "import_count": 1
     },
     {
       "id": "202606231325362",
