@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-24 02:42",
+  "exported_at": "2026-11-24 13:34",
   "meta": {
-    "lastImportedAt": "2026-11-24 02:42",
+    "lastImportedAt": "2026-11-24 13:34",
     "lastSearchPeriod": "20261117~20261123",
     "total": 19222
   },
@@ -199,7 +199,7 @@
           "school_code": "7402261"
         }
       ],
-      "support_office": "광주광역시서부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-24 02:42",
       "import_count": 1
@@ -3920,7 +3920,7 @@
           "school_code": "7392199"
         }
       ],
-      "support_office": "광주광역시동부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-24 02:42",
       "import_count": 1
@@ -3956,7 +3956,7 @@
           "school_code": "7392199"
         }
       ],
-      "support_office": "광주광역시동부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-24 02:42",
       "import_count": 1
@@ -3992,7 +3992,7 @@
           "school_code": "7392199"
         }
       ],
-      "support_office": "광주광역시동부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-24 02:42",
       "import_count": 1
@@ -4028,7 +4028,7 @@
           "school_code": "7392199"
         }
       ],
-      "support_office": "광주광역시동부교육지원청",
+      "support_office": "",
       "subregion": "광주",
       "first_imported_at": "2026-11-24 02:42",
       "import_count": 1
@@ -105248,7 +105248,7 @@
           "school_code": "9010160"
         }
       ],
-      "support_office": "고성교육지원청",
+      "support_office": "",
       "subregion": "고성",
       "first_imported_at": "2026-11-04 13:45",
       "import_count": 1,
@@ -176179,7 +176179,7 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -176212,7 +176212,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-30 10:19",
       "import_count": 2,
       "business_place": "광주 서구 금부로95번길 26-11 금호초등학교",
@@ -237962,7 +237962,7 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -237995,7 +237995,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-30 10:19",
       "import_count": 2,
       "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
@@ -239982,7 +239982,7 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -240006,7 +240006,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-30 10:19",
       "import_count": 3,
       "business_place": "광주 광산구 소촌로 122 어룡초등학교",
@@ -243201,7 +243201,7 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -243234,7 +243234,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-30 10:19",
       "import_count": 2,
       "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
@@ -243258,7 +243258,7 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -243291,7 +243291,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-30 10:19",
       "import_count": 2,
       "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
@@ -248220,7 +248220,7 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -248253,7 +248253,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-23 14:51",
       "import_count": 2,
       "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
@@ -248277,7 +248277,7 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -248310,7 +248310,7 @@
         }
       ],
       "support_office": "광주광역시서부교육지원청",
-      "subregion": "서부",
+      "subregion": "광주",
       "first_imported_at": "2026-09-23 14:51",
       "import_count": 2,
       "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
@@ -578938,7 +578938,7 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -578966,7 +578966,7 @@
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서부",
+      "subregion": "광주",
       "school_type": "선도"
     },
     {
@@ -578985,7 +578985,7 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -579013,7 +579013,7 @@
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서부",
+      "subregion": "광주",
       "school_type": "선도"
     },
     {
@@ -579032,7 +579032,7 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "광주",
+      "region": "전남",
       "region_status": "matched",
       "region_source": "business_place",
       "region_candidates": [
@@ -579060,7 +579060,7 @@
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서부",
+      "subregion": "광주",
       "school_type": "선도"
     },
     {
