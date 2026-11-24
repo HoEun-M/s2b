@@ -2386,7 +2386,9 @@ def build_cumulative_html(data):
     vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
     institution_by_id = {str(row.get("id") or row.get("tender_no", "")): row.get("institution", "") for row in records}
     purchase_type_overrides = build_purchase_type_overrides(
-        [(rec["id"], rec["name"], institution_by_id.get(str(rec["id"]), "")) for rec in dashboard_records] + extra_purchase_type_pairs()
+        # 업체로 코스웨어가 정해진 계약(미래엔·씨티, VENDOR_COURSEWARE_IDS)은 여기서 다른 유형으로 바꾸지 않는다
+        [(rec["id"], rec["name"], institution_by_id.get(str(rec["id"]), "")) for rec in dashboard_records if str(rec["id"]) not in vendor_courseware]
+        + extra_purchase_type_pairs()
     )
     purchase_type_overrides_json = json.dumps(purchase_type_overrides, ensure_ascii=False, separators=(",", ":"))
     purchase_types_json = json.dumps(PURCHASE_TYPES, ensure_ascii=False, separators=(",", ":"))
