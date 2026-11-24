@@ -262,7 +262,7 @@ CUMULATIVE_HTML_FILE = os.path.join(APP_DIR, "s2b_cumulative.html")
 INDEX_HTML_FILE = os.path.join(APP_DIR, "index.html")
 SCHOOL_TYPE_MAPPING_FILE = os.path.join(APP_DIR, "school_type_mapping.json")
 AUTO_GITHUB_UPLOAD = os.environ.get("S2B_AUTO_GITHUB", "1").lower() not in ("0", "false", "no", "off")
-GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql", "crawl_ledger.json", "g2b_cumulative.json", "g2b.html", "s2b_notices.json")
+GITHUB_UPLOAD_FILES = ("s2b_cumulative.json", "s2b_cumulative.html", "index.html", "school_type_mapping.json", "supabase_setup.sql", "crawl_ledger.json", "g2b_cumulative.json", "g2b.html", "s2b_notices.json", "courseware_purchases.json", "courseware_purchases.csv")
 HOLIDAY_API_KEY = "0ff126d5fe6324dc2b8b3b8ee7dc0ccdd9e7d2203962e065703c3c7b78ff4809"
 
 # 수집 원장(키워드 x 기간별 완료 기록)과 페이지 단위 체크포인트.
@@ -1828,7 +1828,7 @@ def build_vendor_canonical(counterparts):
             canonical.update({raw: best for raw in bucket if raw != best})
     for token, target in VENDOR_FAMILY_MERGES:
         target_name = canonical.get(target, target)
-        for name in set(counterparts):
+        for name in sorted(set(counterparts)):   # 정렬: 만들 때마다 순서가 달라지지 않게
             if name and token in re.sub(r"\s+", "", name) and canonical.get(name, name) != target_name:
                 canonical[name] = target_name
     return canonical
@@ -2030,6 +2030,88 @@ def extra_purchase_type_pairs():
             continue
         pairs.extend((record.get("id", ""), record.get("name", ""), record.get("institution", "")) for record in records)
     return pairs
+
+# ---------------------------------------------------------------------------
+# 업체 정리 규칙 (대시보드 업체 통계의 정본). 페이지 스크립트의 같은 이름 변수로 그대로 실린다.
+# ---------------------------------------------------------------------------
+# 계약명에 이 제품이 있으면 계약대상자가 누구든 그 업체 매출로 본다 (keepVendors는 예외)
+VENDOR_ALIAS_RULES = [{"keywords": ["스쿨플랫", "매쓰플랫"], "vendor": "(주)프리윌린", "keepVendors": ["위멘토피아", "에누마코리아", "팀플백"]}]
+# 확실한 유통사: 이 업체가 계약대상자이면 계약명의 제품을 만든 제조사 매출로 집계한다
+# (제품이 없거나 제조사가 둘 이상이거나 '외 N종/건'처럼 여러 상품이 묶인 계약명이면 유통사 그대로).
+DISTRIBUTOR_VENDORS = ["나이스쿨", "교육의정석", "올댓스쿨", "아이티존", "엘위드"]
+# 코스웨어 유형 계약만 제품 제조사로 귀속하는 유통사 (그 밖의 유형은 해당 업체 매출 그대로)
+TYPED_DISTRIBUTORS = [{"vendor": "테크빌교육", "type": "courseware"}]
+# 제품 키워드 -> 제조사
+PRODUCT_MAKERS = [
+    {"keywords": ["초코클래스", "초코팝", "달달"], "maker": "(주)미래엔"},
+    {"keywords": ["토도"], "maker": "주식회사 에누마코리아"},
+    {"keywords": ["아이스크림홈런", "홈런", "스쿨런"], "maker": "(주)아이스크림에듀"},
+    {"keywords": ["기출탭탭", "비상교육"], "maker": "(주)비상교육"},
+    {"keywords": ["스마트올"], "maker": "(주)웅진씽크빅"},
+    {"keywords": ["리딩앤"], "maker": "(주)아이포트폴리오"},
+    {"keywords": ["자작자작"], "maker": "(주)팀플백"},
+    {"keywords": ["클래스팅"], "maker": "주식회사 씨티"},
+    {"keywords": ["플랭"], "maker": "주식회사 플랭"},
+    {"keywords": ["지니아", "천재교과서", "밀크T"], "maker": "(주) 천재교과서"},
+    {"keywords": ["천재교육"], "maker": "(주)천재교육"},
+    {"keywords": ["스쿨플랫", "매쓰플랫"], "maker": "(주)프리윌린"},
+    {"keywords": ["마타수학"], "maker": "마타에듀 주식회사"},
+    {"keywords": ["원아워"], "maker": "주식회사 제로엑스플로우"},
+    {"keywords": ["코들", "Codle"], "maker": "주식회사 팀모노리스"},
+    {"keywords": ["알공"], "maker": "주식회사 디엔소프트"},
+    {"keywords": ["매쓰홀릭", "홀링"], "maker": "주식회사 매쓰홀릭"},
+    {"keywords": ["아이글", "AiGLE"], "maker": "주식회사 네오랩컨버전스"},
+]
+
+
+def distributor_maker(normalized_name):
+    # 페이지 스크립트의 distributorMaker와 같다: 계약명에서 제조사가 하나로 정해질 때만 그 제조사
+    if re.search(r"외[0-9]+(종|건)", normalized_name):
+        return ""
+    found = []
+    for rule in PRODUCT_MAKERS:
+        if any(normalize_search_text(keyword) in normalized_name for keyword in rule["keywords"]) and rule["maker"] not in found:
+            found.append(rule["maker"])
+    return found[0] if len(found) == 1 else ""
+
+
+def vendor_alias(name, counterpart, type_key, vendor_canonical):
+    # 페이지 스크립트의 vendorAlias와 같다: 통계에서 쓰는 업체명 (유통사 -> 제조사, 표기 통일).
+    # type_key는 그 계약의 최종 구매 유형, vendor_canonical은 build_vendor_canonical()의 결과.
+    text = normalize_search_text(name)
+    own = normalize_search_text(counterpart)
+    base = counterpart
+    is_distributor = any(normalize_search_text(vendor) in own for vendor in DISTRIBUTOR_VENDORS) or any(
+        normalize_search_text(rule["vendor"]) in own and type_key == rule["type"] for rule in TYPED_DISTRIBUTORS)
+    if is_distributor:
+        base = distributor_maker(text) or counterpart
+    else:
+        for rule in VENDOR_ALIAS_RULES:
+            if base != counterpart:
+                break
+            for keyword in rule["keywords"]:
+                if keyword in text:
+                    if not any(normalize_search_text(vendor) in own for vendor in rule.get("keepVendors", [])):
+                        base = rule["vendor"]
+                    break
+    return vendor_canonical.get(base, base)
+
+
+def final_purchase_type_key(record_id, name, institution, counterpart, source="s2b"):
+    # 대시보드(페이지 스크립트의 classifyPurchaseType)가 최종으로 정하는 구매 유형과 같은 값.
+    # 순서: 손으로 정한 유형 -> 업체로 정한 코스웨어(미래엔·씨티) -> 시도교육청 플랫폼(AIEP) -> 키워드 -> 보조 규칙
+    record_id = str(record_id or "")
+    if record_id in PURCHASE_TYPE_MANUAL_OVERRIDES:
+        return PURCHASE_TYPE_MANUAL_OVERRIDES[record_id]
+    if source != "g2b" and is_vendor_courseware(counterpart) and not any(
+            normalize_search_text(keyword) in normalize_search_text(name) for keyword in VENDOR_COURSEWARE_AIDT_KEYWORDS):
+        return "courseware"
+    if is_sido_office_platform(name, institution):
+        return "aiep"
+    key = classify_purchase_type_key(name)
+    if key != "uncategorized":
+        return key
+    return fallback_purchase_type_key(name) or "uncategorized"
 
 GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
 
@@ -2622,12 +2704,12 @@ var activeMonthPurchaseType=(function(){try{return localStorage.getItem('s2b-mon
 function populateMonthPurchaseTypeOptions(){var select=document.getElementById('month-purchase-type');if(!select){return;}var html="<option value=''>전체 유형</option>";PURCHASE_TYPES.forEach(function(type){html+='<option value="'+type.key+'">'+escapeHtml(type.label)+'</option>';});select.innerHTML=html;select.value=activeMonthPurchaseType;}
 function setMonthPurchaseType(value){activeMonthPurchaseType=value||'';try{localStorage.setItem('s2b-month-type-v1',activeMonthPurchaseType);}catch(e){}renderDashboard(false);}
 
-var VENDOR_ALIAS_RULES=[{keywords:['스쿨플랫','매쓰플랫'],vendor:'(주)프리윌린',keepVendors:['위멘토피아','에누마코리아','팀플백']}];
+var VENDOR_ALIAS_RULES=__VENDOR_ALIAS_RULES__;
 // 확실한 유통사: 이 업체가 계약대상자이면 계약명의 제품을 만든 제조사 매출로 집계한다 (제품이 없거나 제조사가 둘 이상이거나 '외 N종/건'처럼 여러 상품이 묶인 계약명이면 유통사 그대로).
-var DISTRIBUTOR_VENDORS=['나이스쿨','교육의정석','올댓스쿨','아이티존','엘위드'];
+var DISTRIBUTOR_VENDORS=__DISTRIBUTOR_VENDORS__;
 // 코스웨어 유형 계약만 제품 제조사로 귀속하는 유통사 (그 밖의 유형은 해당 업체 매출 그대로)
-var TYPED_DISTRIBUTORS=[{vendor:'테크빌교육',type:'courseware'}];
-var PRODUCT_MAKERS=[{keywords:['초코클래스','초코팝','달달'],maker:'(주)미래엔'},{keywords:['토도'],maker:'주식회사 에누마코리아'},{keywords:['아이스크림홈런','홈런','스쿨런'],maker:'(주)아이스크림에듀'},{keywords:['기출탭탭','비상교육'],maker:'(주)비상교육'},{keywords:['스마트올'],maker:'(주)웅진씽크빅'},{keywords:['리딩앤'],maker:'(주)아이포트폴리오'},{keywords:['자작자작'],maker:'(주)팀플백'},{keywords:['클래스팅'],maker:'주식회사 씨티'},{keywords:['플랭'],maker:'주식회사 플랭'},{keywords:['지니아','천재교과서','밀크T'],maker:'(주) 천재교과서'},{keywords:['천재교육'],maker:'(주)천재교육'},{keywords:['스쿨플랫','매쓰플랫'],maker:'(주)프리윌린'},{keywords:['마타수학'],maker:'마타에듀 주식회사'},{keywords:['원아워'],maker:'주식회사 제로엑스플로우'},{keywords:['코들','Codle'],maker:'주식회사 팀모노리스'},{keywords:['알공'],maker:'주식회사 디엔소프트'},{keywords:['매쓰홀릭','홀링'],maker:'주식회사 매쓰홀릭'},{keywords:['아이글','AiGLE'],maker:'주식회사 네오랩컨버전스'}];
+var TYPED_DISTRIBUTORS=__TYPED_DISTRIBUTORS__;
+var PRODUCT_MAKERS=__PRODUCT_MAKERS__;
 function distributorMaker(text){if(/외[0-9]+(종|건)/.test(text)){return '';}var makers=[];PRODUCT_MAKERS.forEach(function(rule){var hit=rule.keywords.some(function(k){return text.indexOf(normalizeSearchText(k))!==-1;});if(hit&&makers.indexOf(rule.maker)===-1){makers.push(rule.maker);}});return makers.length===1?makers[0]:'';}
 function vendorAlias(name,counterpart,recordId){var text=normalizeSearchText(name||'');var own=normalizeSearchText(counterpart||'');var base=counterpart;var isDistributor=DISTRIBUTOR_VENDORS.some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;})||TYPED_DISTRIBUTORS.some(function(d){return own.indexOf(normalizeSearchText(d.vendor))!==-1&&classifyPurchaseType(name||'',recordId).key===d.type;});if(isDistributor){base=distributorMaker(text)||counterpart;}else{for(var i=0;i<VENDOR_ALIAS_RULES.length&&base===counterpart;i++){var rule=VENDOR_ALIAS_RULES[i];for(var j=0;j<rule.keywords.length;j++){if(text.indexOf(rule.keywords[j])!==-1){var keep=(rule.keepVendors||[]).some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;});if(!keep){base=rule.vendor;}break;}}}}return VENDOR_CANONICAL[base]||base;}
 function pad2(n){return (n<10?'0':'')+n;}
@@ -2711,6 +2793,9 @@ document.addEventListener('DOMContentLoaded',function(){populateMonthPurchaseTyp
     js = js.replace("__DASHBOARD_RECORDS__", dashboard_json.replace("</", "<\\/"))
     js = js.replace("__VENDOR_COURSEWARE_IDS__", vendor_courseware_json)
     js = js.replace("__PURCHASE_TYPES__", purchase_types_json).replace("__PURCHASE_TYPE_OVERRIDES__", purchase_type_overrides_json)
+    for placeholder, value in (("__VENDOR_ALIAS_RULES__", VENDOR_ALIAS_RULES), ("__DISTRIBUTOR_VENDORS__", DISTRIBUTOR_VENDORS),
+                               ("__TYPED_DISTRIBUTORS__", TYPED_DISTRIBUTORS), ("__PRODUCT_MAKERS__", PRODUCT_MAKERS)):
+        js = js.replace(placeholder, json.dumps(value, ensure_ascii=False, separators=(",", ":")))
     js = js.replace("__VENDOR_CANONICAL__", vendor_canonical_json)
 
     return (

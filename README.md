@@ -90,6 +90,7 @@ S2B 검색은 계약명 부분 문자열 검색이라 `수학` 한 번이면 `�
 | `crawl_ledger.json` | 수집 원장. 키워드 × 기간 조각별 상태(`complete`/`partial`/`captcha`/`error`), 페이지 수, 건수, 완료 시각. `--coverage`가 읽는 파일입니다. |
 | `outputs/checkpoints/*.json` | 조각별 페이지 단위 체크포인트. 누적 파일에 반영되면 자동 삭제되고, 미완료분만 남습니다. |
 | `index.html`, `s2b_cumulative.html` | 생성된 대시보드(업체별·월별·시도별·학교급별·구매유형별) + 상세 내역. 내용은 동일합니다. |
+| `courseware_purchases.json`, `courseware_purchases.csv` | 코스웨어 유형 계약만 뽑은 읽기 전용 파일 (`export_courseware.py`가 매일 새벽 수집 끝에 다시 만듭니다). 다른 서비스는 GitHub Pages 주소로 읽기만 합니다. 유형 분류·업체 정리·삭제·지역 보정은 대시보드와 같은 기준입니다. |
 | `school_type_mapping.json` | 선도/연구/중점 학교 매핑. |
 | `region_overrides.json`, `deleted_records.json` | 수동 보정 이력의 로컬 사본. 정본은 Supabase입니다. |
 | `supabase_setup.sql` | Supabase 테이블(`region_overrides`, `deleted_records`, `school_type_overrides`) 및 RLS 정책. |

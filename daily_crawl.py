@@ -52,6 +52,17 @@ def main():
         # 한쪽이 실패해도 받은 만큼은 올린다 (원장에 완료로 남은 날만 다음에 건너뛴다)
         sys.path.insert(0, APP_DIR)
         import s2b_local_crawler as local
+        # 코스웨어 구매 내역 읽기 전용 파일(courseware_purchases.json·csv)을 다시 만든다. 실패해도 업로드는 그대로 한다.
+        say("export courseware")
+        stdout = sys.stdout
+        sys.stdout = log
+        try:
+            import export_courseware
+            export_courseware.main([])
+        except Exception as exc:
+            print("[courseware] 내보내기 실패: " + str(exc))
+        finally:
+            sys.stdout = stdout
         say("upload")
         stdout = sys.stdout
         sys.stdout = log
