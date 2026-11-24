@@ -8777,9 +8777,9 @@
       "last_imported_at": "2026-11-24 02:42",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "삼성중학교",
@@ -8827,10 +8827,12 @@
           "school_code": "8871059"
         }
       ],
-      "support_office": "",
-      "subregion": "동작,관악 / 서부 / 음성 / 의성 / 포천",
+      "support_office": "경기도포천교육지원청",
+      "subregion": "포천",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "경기 포천시 신북면 삼성당길 7 삼성중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611191680967",
@@ -9171,9 +9173,9 @@
       "last_imported_at": "2026-11-24 02:42",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "샛별중학교",
@@ -9194,10 +9196,12 @@
           "school_code": "9211030"
         }
       ],
-      "support_office": "",
-      "subregion": "거창 / 성남",
+      "support_office": "거창교육지원청",
+      "subregion": "거창",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "경남 거창군 거창읍 죽전4길 92 (중앙리,샛별중학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611181675195",
@@ -10636,7 +10640,8 @@
       "support_office": "",
       "subregion": "서부 / 안성",
       "first_imported_at": "2026-11-10 02:41",
-      "import_count": 8
+      "import_count": 8,
+      "business_place": "늘봄지원실"
     },
     {
       "id": "202611191680327",
@@ -10860,9 +10865,9 @@
       "last_imported_at": "2026-11-24 02:42",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남성초등학교",
@@ -10883,10 +10888,12 @@
           "school_code": "8011169"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 청주",
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "충북 청주시 서원구 청남로 1964 (분평동,남성초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611181677655",
@@ -12407,9 +12414,9 @@
       "last_imported_at": "2026-11-24 02:42",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신정중학교",
@@ -12430,10 +12437,12 @@
           "school_code": "7501015"
         }
       ],
-      "support_office": "",
-      "subregion": "강남 / 해운대",
+      "support_office": "울산광역시강남교육지원청",
+      "subregion": "강남",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "울산신정중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611171673961",
@@ -14331,9 +14340,9 @@
       "last_imported_at": "2026-11-24 02:42",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "강현중학교",
@@ -14354,10 +14363,12 @@
           "school_code": "7863054"
         }
       ],
-      "support_office": "",
-      "subregion": "동작,관악 / 속초,양양",
+      "support_office": "강원특별자치도속초양양교육지원청",
+      "subregion": "속초,양양",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "강원 양양군 강현면 진미로54번길 14  강현중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611171674105",
@@ -19390,7 +19401,8 @@
       "support_office": "",
       "subregion": "서천 / 수원 / 여수 / 청도",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "화양초등학교"
     },
     {
       "id": "202611171672224",
@@ -19569,7 +19581,8 @@
       "support_office": "",
       "subregion": "보성 / 화성,오산",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "교무실"
     },
     {
       "id": "202611161669152",
@@ -21353,9 +21366,9 @@
       "last_imported_at": "2026-11-23 02:55",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "월랑초등학교",
@@ -21376,10 +21389,12 @@
           "school_code": "9296064"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 제주",
+      "support_office": "충청남도아산교육지원청",
+      "subregion": "아산",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "충남 아산시 음봉면 월랑리 697번지(음봉로 515-50) 월랑초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611161669933",
@@ -21905,9 +21920,9 @@
       "last_imported_at": "2026-11-23 02:55",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "태안초등학교",
@@ -21928,10 +21943,12 @@
           "school_code": "8281030"
         }
       ],
-      "support_office": "",
-      "subregion": "태안 / 화성,오산",
+      "support_office": "충청남도태안교육지원청",
+      "subregion": "태안",
       "first_imported_at": "2026-11-17 02:41",
-      "import_count": 8
+      "import_count": 8,
+      "business_place": "충남 태안군 태안읍 백화로 49 태안초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611161669413",
@@ -25810,14 +25827,16 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
+      "support_office": "서울특별시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "서울 마포구 성미산로 51 홍익대학교사범대학부속여자고등학교 행정실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611131664109",
@@ -25836,14 +25855,16 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
+      "support_office": "서울특별시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "서울 마포구 성미산로 51 홍익대학교사범대학부속여자고등학교 행정실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611131663907",
@@ -29570,14 +29591,16 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "기타",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "화성오산교육지원청",
+      "support_office": "경기도화성오산교육지원청",
       "subregion": "화성,오산",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 오산시 북삼미로 119 화성오산교육지원청 화성교육지원센터",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611091649551",
@@ -31910,9 +31933,9 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "기성초등학교",
@@ -31942,10 +31965,12 @@
           "school_code": "9111011"
         }
       ],
-      "support_office": "",
-      "subregion": "거제 / 서부 / 울진",
+      "support_office": "경상북도울진교육지원청",
+      "subregion": "울진",
       "first_imported_at": "2026-11-13 02:43",
-      "import_count": 8
+      "import_count": 8,
+      "business_place": "경북 울진군 기성면 척산2길 24-5 기성초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611121660583",
@@ -32512,7 +32537,8 @@
       "support_office": "",
       "subregion": "김제 / 함안",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "담당교사와 상의"
     },
     {
       "id": "202611101652214",
@@ -38623,14 +38649,16 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "기타",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "화성오산교육지원청",
+      "support_office": "경기도화성오산교육지원청",
       "subregion": "화성,오산",
       "first_imported_at": "2026-11-11 02:39",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "경기 오산시 북삼미로 119 화성오산교육지원청 화성교육지원센터",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611101652703",
@@ -41572,9 +41600,9 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대신고등학교",
@@ -41595,10 +41623,12 @@
           "school_code": "7530150"
         }
       ],
-      "support_office": "",
-      "subregion": "여주 / 중부",
+      "support_office": "서울특별시중부교육지원청",
+      "subregion": "중부",
       "first_imported_at": "2026-11-11 02:39",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "서울특별시 종로구 사직로 9 대신고등학교 교육정보부(행촌동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611061644232",
@@ -41643,7 +41673,8 @@
       "support_office": "",
       "subregion": "사천 / 서부",
       "first_imported_at": "2026-11-20 10:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "사남초등학교 지정장소"
     },
     {
       "id": "202611101652907",
@@ -44023,9 +44054,9 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "춘양초등학교",
@@ -44046,10 +44077,12 @@
           "school_code": "8961038"
         }
       ],
-      "support_office": "",
-      "subregion": "봉화 / 화순",
+      "support_office": "경상북도봉화교육지원청",
+      "subregion": "봉화",
       "first_imported_at": "2026-11-11 02:39",
-      "import_count": 7
+      "import_count": 7,
+      "business_place": "경북 봉화군 춘양면 의양로 24-1 (의양리,춘양초등학교) 행정실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611061645441",
@@ -46258,7 +46291,8 @@
       "support_office": "",
       "subregion": "서부 / 안성",
       "first_imported_at": "2026-11-12 02:41",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "늘봄지원실"
     },
     {
       "id": "202611091646377",
@@ -46952,9 +46986,9 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "우산초등학교",
@@ -46975,10 +47009,12 @@
           "school_code": "9022078"
         }
       ],
-      "support_office": "",
-      "subregion": "원주 / 창원",
+      "support_office": "강원특별자치도원주교육지원청",
+      "subregion": "원주",
       "first_imported_at": "2026-11-10 02:41",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "강원 원주시 우산초교길  84(우산동,우산초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611091648184",
@@ -49514,7 +49550,8 @@
       "support_office": "",
       "subregion": "북부 / 해운대",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 5
+      "import_count": 5,
+      "business_place": "부흥중학교"
     },
     {
       "id": "202611061645423",
@@ -50541,9 +50578,9 @@
       "last_imported_at": "2026-11-20 10:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "덕성초등학교",
@@ -50573,10 +50610,12 @@
           "school_code": "8011173"
         }
       ],
-      "support_office": "",
-      "subregion": "북부 / 안산 / 청주",
+      "support_office": "경기도안산교육지원청",
+      "subregion": "안산",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 6
+      "import_count": 6,
+      "business_place": "경기도 안산시 단원구 예술대학로 119 덕성초등학교 (양혜원)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611051641273",
@@ -54072,7 +54111,8 @@
       "support_office": "",
       "subregion": "장흥 / 포항",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "1층 정보실"
     },
     {
       "id": "202611051641667",
@@ -56544,7 +56584,8 @@
       "support_office": "",
       "subregion": "양평 / 포항",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "담당교사와 협의"
     },
     {
       "id": "202611041635161",
@@ -58406,7 +58447,8 @@
       "support_office": "",
       "subregion": "강북 / 북부 / 안성",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "명덕초등학교"
     },
     {
       "id": "202611041634662",
@@ -58928,9 +58970,9 @@
       "last_imported_at": "2026-11-11 02:39",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "가야초등학교",
@@ -58951,10 +58993,12 @@
           "school_code": "9131005"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 함안",
+      "support_office": "함안교육지원청",
+      "subregion": "함안",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "경남 함안군 가야읍 충무길 54",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610301622767",
@@ -62101,7 +62145,8 @@
       "support_office": "",
       "subregion": "광명 / 서부",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강당"
     },
     {
       "id": "202611031632231",
@@ -63802,9 +63847,9 @@
       "last_imported_at": "2026-11-10 02:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -63843,10 +63888,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611031630811",
@@ -63866,9 +63913,9 @@
       "last_imported_at": "2026-11-10 02:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "월포초등학교",
@@ -63898,10 +63945,12 @@
           "school_code": "9022087"
         }
       ],
-      "support_office": "",
-      "subregion": "시흥 / 창원 / 포항",
+      "support_office": "창원교육지원청",
+      "subregion": "창원",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경남 창원시 마산합포구 월영북15길 35 월포초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611031630810",
@@ -63921,9 +63970,9 @@
       "last_imported_at": "2026-11-10 02:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "월포초등학교",
@@ -63953,10 +64002,12 @@
           "school_code": "9022087"
         }
       ],
-      "support_office": "",
-      "subregion": "시흥 / 창원 / 포항",
+      "support_office": "창원교육지원청",
+      "subregion": "창원",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경남 창원시 마산합포구 월영북15길 35 월포초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611021628989",
@@ -66420,9 +66471,9 @@
       "last_imported_at": "2026-11-09 10:02",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "경덕중학교",
@@ -66443,10 +66494,12 @@
           "school_code": "8791090"
         }
       ],
-      "support_office": "",
-      "subregion": "안동 / 청주",
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "충청북도 청주시 흥덕구 풍년로79번길 7-2 경덕중학교 (가경동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611021627293",
@@ -68544,9 +68597,9 @@
       "last_imported_at": "2026-11-09 10:02",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영덕중학교",
@@ -68567,10 +68620,12 @@
           "school_code": "8901039"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 영덕",
+      "support_office": "경기도수원교육지원청",
+      "subregion": "수원",
       "first_imported_at": "2026-11-09 10:02",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 수원시 영통구 영통동 청명로 146",
+      "support_office_source": "business_place"
     },
     {
       "id": "202611021625446",
@@ -70960,9 +71015,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "이서초등학교",
@@ -70983,10 +71038,12 @@
           "school_code": "8911033"
         }
       ],
-      "support_office": "",
-      "subregion": "완주 / 청도",
+      "support_office": "전북특별자치도완주교육지원청",
+      "subregion": "완주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북 완주군 이서면 이서로 76 이서초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610301624123",
@@ -72221,9 +72278,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신라중학교",
@@ -72244,10 +72301,12 @@
           "school_code": "8771122"
         }
       ],
-      "support_office": "",
-      "subregion": "경주 / 북부",
+      "support_office": "경상북도경주교육지원청",
+      "subregion": "경주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 경주시 황성동 1053-18(알천북로 143)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610281615979",
@@ -72499,9 +72558,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "광명고등학교",
@@ -72522,10 +72581,12 @@
           "school_code": "7530050"
         }
       ],
-      "support_office": "",
-      "subregion": "광명 / 서부",
+      "support_office": "경기도광명교육지원청",
+      "subregion": "광명",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 광명시 오리로876번길 17 (철산동,광명고등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610281617296",
@@ -73308,9 +73369,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "감곡초등학교",
@@ -73340,10 +73401,12 @@
           "school_code": "8362058"
         }
       ],
-      "support_office": "",
-      "subregion": "논산,계룡 / 음성 / 정읍",
+      "support_office": "전북특별자치도정읍교육지원청",
+      "subregion": "정읍",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북 정읍시 감곡면 감곡동서로 355 감곡초등학교 교무실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610271611153",
@@ -73730,7 +73793,8 @@
       "support_office": "",
       "subregion": "수원 / 원주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "태장초등학교"
     },
     {
       "id": "202610291618926",
@@ -74721,7 +74785,8 @@
       "support_office": "",
       "subregion": "남원 / 서귀포",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "남원중학교"
     },
     {
       "id": "202610291618973",
@@ -76116,7 +76181,8 @@
       "support_office": "",
       "subregion": "김포 / 김해 / 장수",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202610281613865",
@@ -76172,9 +76238,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -76213,10 +76279,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610291618338",
@@ -78565,9 +78633,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대흥초등학교",
@@ -78597,10 +78665,12 @@
           "school_code": "9161009"
         }
       ],
-      "support_office": "",
-      "subregion": "고성 / 예산 / 정읍",
+      "support_office": "전북특별자치도정읍교육지원청",
+      "subregion": "정읍",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북 정읍시 정읍남로 766",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610281617113",
@@ -81382,7 +81452,8 @@
       "support_office": "",
       "subregion": "논산,계룡 / 서부",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "청동초 지정장소"
     },
     {
       "id": "202610271610967",
@@ -82850,7 +82921,8 @@
       "support_office": "",
       "subregion": "서부 / 포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "가사실습실"
     },
     {
       "id": "202610271613536",
@@ -84139,9 +84211,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -84180,10 +84252,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610271609266",
@@ -84203,9 +84277,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -84244,10 +84318,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610271609264",
@@ -84267,9 +84343,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -84308,10 +84384,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610271611811",
@@ -84429,7 +84507,8 @@
       "support_office": "",
       "subregion": "서부 / 울진",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "기성중학교"
     },
     {
       "id": "202610271612419",
@@ -84548,7 +84627,8 @@
       "support_office": "",
       "subregion": "서부 / 울진",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "기성중학교"
     },
     {
       "id": "202610271611382",
@@ -87355,9 +87435,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "계남중학교",
@@ -87378,10 +87458,12 @@
           "school_code": "8422024"
         }
       ],
-      "support_office": "",
-      "subregion": "부천 / 장수",
+      "support_office": "전북특별자치도장수교육지원청",
+      "subregion": "장수",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북 장수군 계남면 계남중길 52 (화양리,계남중학교) 교무실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610211596987",
@@ -88820,9 +88902,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남강초등학교",
@@ -88843,10 +88925,12 @@
           "school_code": "9051014"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 진주",
+      "support_office": "진주교육지원청",
+      "subregion": "진주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 진주시 모덕로 99 남강초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610261605558",
@@ -88866,9 +88950,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남강초등학교",
@@ -88889,10 +88973,12 @@
           "school_code": "9051014"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 진주",
+      "support_office": "진주교육지원청",
+      "subregion": "진주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 진주시 모덕로 99 남강초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610261605557",
@@ -88912,9 +88998,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남강초등학교",
@@ -88935,10 +89021,12 @@
           "school_code": "9051014"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 진주",
+      "support_office": "진주교육지원청",
+      "subregion": "진주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 진주시 모덕로 99 남강초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610261605556",
@@ -88958,9 +89046,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남강초등학교",
@@ -88981,10 +89069,12 @@
           "school_code": "9051014"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 진주",
+      "support_office": "진주교육지원청",
+      "subregion": "진주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 진주시 모덕로 99 남강초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610261605555",
@@ -89004,9 +89094,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "남강초등학교",
@@ -89027,10 +89117,12 @@
           "school_code": "9051014"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 진주",
+      "support_office": "진주교육지원청",
+      "subregion": "진주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 진주시 모덕로 99 남강초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610261608456",
@@ -89199,7 +89291,8 @@
       "support_office": "",
       "subregion": "성동,광진 / 춘천",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "성수고등학교"
     },
     {
       "id": "202610241604710",
@@ -91810,9 +91903,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "강서초등학교",
@@ -91833,10 +91926,12 @@
           "school_code": "8011164"
         }
       ],
-      "support_office": "",
-      "subregion": "북부 / 청주",
+      "support_office": "부산광역시북부교육지원청",
+      "subregion": "북부",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "부산 강서구 에코델타2로 94",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610231602347",
@@ -92268,9 +92363,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화도초등학교",
@@ -92291,10 +92386,12 @@
           "school_code": "7652239"
         }
       ],
-      "support_office": "",
-      "subregion": "강화 / 구리,남양주",
+      "support_office": "경기도구리남양주교육지원청",
+      "subregion": "구리,남양주",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 남양주시 화도읍 비룡로116번길 24-42 (마석우리 194-3)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610231603434",
@@ -93352,9 +93449,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "예당중학교",
@@ -93375,10 +93472,12 @@
           "school_code": "8602010"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 화성,오산",
+      "support_office": "경기도화성오산교육지원청",
+      "subregion": "화성,오산",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 화성시 석우동 61-1번지",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610231601590",
@@ -97813,9 +97912,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대평초등학교",
@@ -97845,10 +97944,12 @@
           "school_code": "7541134"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 수원",
+      "support_office": "세종특별자치시교육청",
+      "subregion": "세종",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "세종 세종시 대평1길 19 대평초등학교 김다혜",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610211596936",
@@ -101305,9 +101406,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -101346,10 +101447,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610211595065",
@@ -101799,9 +101902,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영천초등학교",
@@ -101840,10 +101943,12 @@
           "school_code": "9151024"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 양산 / 영천 / 화성,오산",
+      "support_office": "경기도화성오산교육지원청",
+      "subregion": "화성,오산",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 화성시 동탄영천로 36 영천초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610201589794",
@@ -105120,9 +105225,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "고성고등학교",
@@ -105143,10 +105248,12 @@
           "school_code": "9010160"
         }
       ],
-      "support_office": "",
+      "support_office": "고성교육지원청",
       "subregion": "고성",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경상남도 고성군 회화면 배둔서길 42-5 고성고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191588599",
@@ -105245,7 +105352,8 @@
       "support_office": "",
       "subregion": "서부 / 서천 / 용인",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "서천초등학교"
     },
     {
       "id": "202610161584060",
@@ -105544,9 +105652,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -105585,10 +105693,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610201591779",
@@ -106759,9 +106869,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -106800,10 +106910,12 @@
           "school_code": "9299060"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 서귀포 / 예산 / 정읍",
+      "support_office": "전라남도보성교육지원청",
+      "subregion": "보성",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전남 보성군 보성읍 송재로 161-8",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191587596",
@@ -107238,9 +107350,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서부초등학교",
@@ -107270,10 +107382,12 @@
           "school_code": "7872026"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 광주,하남 / 삼척",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "울산 동구 봉수로 457 서부초등학교 김상혁(3학년 7반)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191584857",
@@ -107292,9 +107406,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서부초등학교",
@@ -107324,10 +107438,12 @@
           "school_code": "7872026"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 광주,하남 / 삼척",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "울산 동구 봉수로 457 서부초등학교 김상혁(3학년 7반)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191584856",
@@ -107346,9 +107462,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서부초등학교",
@@ -107378,10 +107494,12 @@
           "school_code": "7872026"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 광주,하남 / 삼척",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "울산 동구 봉수로 457 서부초등학교 김상혁(3학년 7반)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191584812",
@@ -107912,7 +108030,8 @@
       "support_office": "",
       "subregion": "강남,서초 / 김해 / 남부 / 해운대",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "대청중학교가 지정하는 장소"
     },
     {
       "id": "202610161582372",
@@ -107975,7 +108094,8 @@
       "support_office": "",
       "subregion": "강남,서초 / 김해 / 남부 / 해운대",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "대청중학교가 지정하는 장소"
     },
     {
       "id": "202610191586306",
@@ -108391,9 +108511,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대전",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대덕초등학교",
@@ -108414,10 +108534,12 @@
           "school_code": "7761022"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 안성",
+      "support_office": "대전광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "대전 유성구 대덕대로556번길 102 (도룡동,대덕초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191587552",
@@ -109835,9 +109957,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -109876,10 +109998,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191588036",
@@ -109900,9 +110024,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -109941,10 +110065,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191588035",
@@ -109965,9 +110091,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신광초등학교",
@@ -110006,10 +110132,12 @@
           "school_code": "8761132"
         }
       ],
-      "support_office": "",
-      "subregion": "아산 / 중부 / 포항 / 함평",
+      "support_office": "경상북도포항교육지원청",
+      "subregion": "포항",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 포항시 북구 신광면 토성길 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610191586092",
@@ -110139,9 +110267,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상일여자고등학교",
@@ -110162,10 +110290,12 @@
           "school_code": "7140378"
         }
       ],
-      "support_office": "",
-      "subregion": "강동,송파 / 서부",
+      "support_office": "서울특별시강동송파교육지원청",
+      "subregion": "강동,송파",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "서울특별시 강동구 천호대로219길 61 상일여자고등학교 (상일동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610141575533",
@@ -111221,9 +111351,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "수남초등학교",
@@ -111253,10 +111383,12 @@
           "school_code": "9091038"
         }
       ],
-      "support_office": "",
-      "subregion": "김포 / 김해 / 장수",
+      "support_office": "전북특별자치도장수교육지원청",
+      "subregion": "장수",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북특별자치도 장수군 장수읍 장수로 1898 수남초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610161581762",
@@ -111994,9 +112126,9 @@
       "last_imported_at": "2026-11-04 13:45",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금성중학교",
@@ -112026,10 +112158,12 @@
           "school_code": "8871048"
         }
       ],
-      "support_office": "",
-      "subregion": "김제 / 나주 / 의성",
+      "support_office": "경상북도의성교육지원청",
+      "subregion": "의성",
       "first_imported_at": "2026-11-04 13:45",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 의성군 금성면 금성현서로 41-66 금성중고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610161584439",
@@ -117675,9 +117809,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "안덕초등학교",
@@ -117698,10 +117832,12 @@
           "school_code": "9299065"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 청송",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "제주 서귀포시 안덕면 화순로56번길 32",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610121567019",
@@ -118741,9 +118877,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "안덕초등학교",
@@ -118764,10 +118900,12 @@
           "school_code": "9299065"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 청송",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "제주 서귀포시 안덕면 화순로56번길 32",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610131568533",
@@ -120579,7 +120717,8 @@
       "support_office": "",
       "subregion": "서부 / 청주",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전산실"
     },
     {
       "id": "202610141573827",
@@ -122437,9 +122576,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "오동초등학교",
@@ -122469,10 +122608,12 @@
           "school_code": "8372055"
         }
       ],
-      "support_office": "",
-      "subregion": "남원 / 의정부 / 춘천",
+      "support_office": "강원특별자치도춘천교육지원청",
+      "subregion": "춘천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원 춘천시 신북읍 장본길 74 오동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610131568854",
@@ -122491,9 +122632,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "오동초등학교",
@@ -122523,10 +122664,12 @@
           "school_code": "8372055"
         }
       ],
-      "support_office": "",
-      "subregion": "남원 / 의정부 / 춘천",
+      "support_office": "강원특별자치도춘천교육지원청",
+      "subregion": "춘천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원 춘천시 신북읍 장본길 74 오동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610131571752",
@@ -123198,9 +123341,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "모전초등학교",
@@ -123221,10 +123364,12 @@
           "school_code": "8841038"
         }
       ],
-      "support_office": "",
-      "subregion": "문경 / 해운대",
+      "support_office": "경상북도문경교육지원청",
+      "subregion": "문경",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 문경시 매봉로 75 (모전동 670번지), 모전초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610101563727",
@@ -123280,9 +123425,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "중점",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신동초등학교",
@@ -123312,10 +123457,12 @@
           "school_code": "7812075"
         }
       ],
-      "support_office": "",
-      "subregion": "삼척 / 의정부 / 춘천",
+      "support_office": "강원특별자치도춘천교육지원청",
+      "subregion": "춘천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원특별자치도 춘천시 우두로 100 신동초등학교 (우두동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610071559347",
@@ -128751,7 +128898,8 @@
       "support_office": "",
       "subregion": "강진 / 이천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202610071559250",
@@ -128796,7 +128944,8 @@
       "support_office": "",
       "subregion": "강진 / 이천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202610011545530",
@@ -133577,9 +133726,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동성고등학교",
@@ -133600,10 +133749,12 @@
           "school_code": "8000530"
         }
       ],
-      "support_office": "",
-      "subregion": "음성 / 중부",
+      "support_office": "충청북도음성교육지원청",
+      "subregion": "음성",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "충북 음성군 맹동면 대하로 315 동성고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610081561856",
@@ -133920,9 +134071,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성덕초등학교",
@@ -133961,10 +134112,12 @@
           "school_code": "8382070"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 김제 / 논산,계룡 / 서부",
+      "support_office": "충청남도논산계룡교육지원청",
+      "subregion": "논산,계룡",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "충청남도 논산시 은진면 원앙로 1174 성덕초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610071559080",
@@ -134371,9 +134524,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도촌초등학교",
@@ -134403,10 +134556,12 @@
           "school_code": "8961026"
         }
       ],
-      "support_office": "",
-      "subregion": "봉화 / 성남 / 양",
+      "support_office": "경상북도봉화교육지원청",
+      "subregion": "봉화",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 봉화군 봉화읍 봉화로  639",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610081560922",
@@ -135660,9 +135815,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도촌초등학교",
@@ -135692,10 +135847,12 @@
           "school_code": "8961026"
         }
       ],
-      "support_office": "",
-      "subregion": "봉화 / 성남 / 양",
+      "support_office": "경상북도봉화교육지원청",
+      "subregion": "봉화",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 봉화군 봉화읍 봉화로  639",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610021547289",
@@ -136540,9 +136697,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성암초등학교",
@@ -136563,10 +136720,12 @@
           "school_code": "8851071"
         }
       ],
-      "support_office": "",
-      "subregion": "경산 / 진천",
+      "support_office": "경상북도경산교육지원청",
+      "subregion": "경산",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 경산시 펜타힐즈3로 21 성암초등학교 정보과학부",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610071559304",
@@ -139012,7 +139171,8 @@
       "support_office": "",
       "subregion": "동해 / 해남",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "북평중 지정장소"
     },
     {
       "id": "202609301542167",
@@ -143959,9 +144119,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "연천중학교",
@@ -143991,10 +144151,12 @@
           "school_code": "7701007"
         }
       ],
-      "support_office": "",
-      "subregion": "동래 / 서부 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 연천읍 연천로336번길 13, 연천중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609291536008",
@@ -145899,9 +146061,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -145922,10 +146084,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610021549364",
@@ -146962,7 +147126,8 @@
       "support_office": "",
       "subregion": "동래 / 창원",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "5-5"
     },
     {
       "id": "202610021547937",
@@ -147138,9 +147303,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "연천중학교",
@@ -147170,10 +147335,12 @@
           "school_code": "7701007"
         }
       ],
-      "support_office": "",
-      "subregion": "동래 / 서부 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 연천읍 연천로336번길 13, 연천중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609161509722",
@@ -147650,7 +147817,8 @@
       "support_office": "",
       "subregion": "남부 / 청도 / 청주",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "금천고등학교"
     },
     {
       "id": "202610021549795",
@@ -147769,9 +147937,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "고창초등학교",
@@ -147792,10 +147960,12 @@
           "school_code": "8452028"
         }
       ],
-      "support_office": "",
-      "subregion": "고창 / 김포",
+      "support_office": "전북특별자치도고창교육지원청",
+      "subregion": "고창",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "전북 고창군 고창읍 교촌리 281",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610021548410",
@@ -149586,9 +149756,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "아라초등학교",
@@ -149609,10 +149779,12 @@
           "school_code": "9296053"
         }
       ],
-      "support_office": "",
-      "subregion": "제주 / 함안",
+      "support_office": "제주특별자치도제주시교육지원청",
+      "subregion": "시",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "제주 제주시 중앙로 518  아라초등학교 정보과학부",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610011547056",
@@ -149765,9 +149937,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -149788,10 +149960,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610011543454",
@@ -149810,9 +149984,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -149833,10 +150007,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610011543451",
@@ -149855,9 +150031,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -149878,10 +150054,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610011545411",
@@ -150045,9 +150223,9 @@
       "last_imported_at": "2026-10-29 15:38",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "천천초등학교",
@@ -150068,10 +150246,12 @@
           "school_code": "8422022"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 장수",
+      "support_office": "경기도수원교육지원청",
+      "subregion": "수원",
       "first_imported_at": "2026-10-29 15:38",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 수원시 장안구 정자로42번길 17 천천초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202610011545391",
@@ -151730,9 +151910,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -151771,10 +151951,12 @@
           "school_code": "9299060"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 서귀포 / 예산 / 정읍",
+      "support_office": "전북특별자치도정읍교육지원청",
+      "subregion": "정읍",
       "first_imported_at": "2026-10-02 09:30",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "전북특별자치도 정읍시 북면 연지길 38-27 보성초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609301541652",
@@ -152163,9 +152345,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "중부초등학교",
@@ -152186,10 +152368,12 @@
           "school_code": "9151031"
         }
       ],
-      "support_office": "",
-      "subregion": "성남 / 양산",
+      "support_office": "경기도성남교육지원청",
+      "subregion": "성남",
       "first_imported_at": "2026-10-02 09:30",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 성남시 중원구 자혜로 55 중부초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609301540847",
@@ -152209,9 +152393,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "중부초등학교",
@@ -152232,10 +152416,12 @@
           "school_code": "9151031"
         }
       ],
-      "support_office": "",
-      "subregion": "성남 / 양산",
+      "support_office": "경기도성남교육지원청",
+      "subregion": "성남",
       "first_imported_at": "2026-10-02 09:30",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 성남시 중원구 자혜로 55 중부초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609301539689",
@@ -153131,9 +153317,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용당초등학교",
@@ -153154,10 +153340,12 @@
           "school_code": "8652028"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 영암",
+      "support_office": "전라남도영암교육지원청",
+      "subregion": "영암",
       "first_imported_at": "2026-10-02 09:30",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 영암군 삼호읍 용당리 아산길 26-10",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609301540774",
@@ -155328,9 +155516,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -155351,10 +155539,12 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 수원",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주 서귀포시 호근남로 40 서호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609291537575",
@@ -155374,9 +155564,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -155397,10 +155587,12 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 수원",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주 서귀포시 호근남로 40 서호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281532886",
@@ -155545,7 +155737,8 @@
       "support_office": "",
       "subregion": "보성 / 서귀포 / 예산 / 정읍",
       "first_imported_at": "2026-10-08 08:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202609281534378",
@@ -157339,7 +157532,8 @@
       "support_office": "",
       "subregion": "강남 / 영월 / 진천",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202609291537365",
@@ -159765,9 +159959,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영산고등학교",
@@ -159797,10 +159991,12 @@
           "school_code": "9010060"
         }
       ],
-      "support_office": "",
-      "subregion": "나주 / 창녕 / 해운대",
+      "support_office": "부산광역시해운대교육지원청",
+      "subregion": "해운대",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "부산 해운대구 반송순환로 142-1 (반송동)영산고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281531468",
@@ -159856,9 +160052,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "덕성초등학교",
@@ -159888,10 +160084,12 @@
           "school_code": "8011173"
         }
       ],
-      "support_office": "",
-      "subregion": "북부 / 안산 / 청주",
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충북 청주시 상당구 율량동 1335",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281532261",
@@ -159911,9 +160109,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동양초등학교",
@@ -159952,10 +160150,12 @@
           "school_code": "8961027"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 봉화 / 완주 / 화성,오산",
+      "support_office": "경기도화성오산교육지원청",
+      "subregion": "화성,오산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "경기 화성시 남양읍 시청로45번길 11 (남양리,동양초등학교) 1층 무인택배함",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281534201",
@@ -161674,9 +161874,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용당초등학교",
@@ -161697,10 +161897,12 @@
           "school_code": "8652028"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 영암",
+      "support_office": "전라남도영암교육지원청",
+      "subregion": "영암",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 영암군 삼호읍 용당리 아산길 26-10",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281531634",
@@ -161720,9 +161922,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용당초등학교",
@@ -161743,10 +161945,12 @@
           "school_code": "8652028"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 영암",
+      "support_office": "전라남도영암교육지원청",
+      "subregion": "영암",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 영암군 삼호읍 용당리 아산길 26-10",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281531633",
@@ -161766,9 +161970,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용당초등학교",
@@ -161789,10 +161993,12 @@
           "school_code": "8652028"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 영암",
+      "support_office": "전라남도영암교육지원청",
+      "subregion": "영암",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 영암군 삼호읍 용당리 아산길 26-10",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281533822",
@@ -162645,9 +162851,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "성수고등학교",
@@ -162668,10 +162874,12 @@
           "school_code": "7801150"
         }
       ],
-      "support_office": "",
-      "subregion": "성동,광진 / 춘천",
+      "support_office": "강원특별자치도춘천교육지원청",
+      "subregion": "춘천",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 춘천시 중앙로68번길 21 (낙원동,성수고등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609281532795",
@@ -163149,7 +163357,8 @@
       "support_office": "",
       "subregion": "남부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202609281534370",
@@ -163738,7 +163947,8 @@
       "support_office": "",
       "subregion": "북부 / 양산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202609281532655",
@@ -163955,7 +164165,8 @@
       "support_office": "",
       "subregion": "강서,양천 / 동부 / 서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "덕원중학교"
     },
     {
       "id": "202609221525620",
@@ -164736,9 +164947,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "일산초등학교",
@@ -164768,10 +164979,12 @@
           "school_code": "7822114"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 고양 / 원주",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "울산 동구 일산동 452번지 일산초등학교 행정실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609221527664",
@@ -167970,7 +168183,8 @@
       "support_office": "",
       "subregion": "",
       "first_imported_at": "2026-10-08 08:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "엄궁누리유치원 특성화프로그램 교실"
     },
     {
       "id": "202609171514580",
@@ -168237,7 +168451,8 @@
       "support_office": "",
       "subregion": "김제 / 서부 / 진천",
       "first_imported_at": "2026-10-07 23:11",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "금구초등학교"
     },
     {
       "id": "202609221526320",
@@ -172420,9 +172635,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "비전고등학교",
@@ -172443,10 +172658,12 @@
           "school_code": "8140501"
         }
       ],
-      "support_office": "",
-      "subregion": "서천 / 평택",
+      "support_office": "충청남도서천교육지원청",
+      "subregion": "서천",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충남 서천군 서천읍 서문로 327 비전고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609181519095",
@@ -175667,7 +175884,8 @@
       "support_office": "",
       "subregion": "남부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "교무실"
     },
     {
       "id": "202609181518784",
@@ -175858,9 +176076,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대청중학교",
@@ -175899,10 +176117,12 @@
           "school_code": "9091177"
         }
       ],
-      "support_office": "",
-      "subregion": "강남,서초 / 김해 / 남부 / 해운대",
+      "support_office": "부산광역시해운대교육지원청",
+      "subregion": "해운대",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "부산 기장군 기장읍 차성서로 3 대청중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609181517858",
@@ -175959,9 +176179,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금호초등학교",
@@ -175991,10 +176211,12 @@
           "school_code": "9051013"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 영천 / 진주",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 금부로95번길 26-11 금호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609181520420",
@@ -179093,9 +179315,9 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -179134,10 +179356,12 @@
           "school_code": "9299060"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 서귀포 / 예산 / 정읍",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "제주 서귀포시 대정읍 추사로55번길 6-1 (보성리,보성초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609181519696",
@@ -184190,9 +184414,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "하남중학교",
@@ -184222,10 +184446,12 @@
           "school_code": "7692084"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 서부",
+      "support_office": "경기도광주하남교육지원청",
+      "subregion": "광주,하남",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기도 하남시 천현로 113 하남중학교 1층 행정실 (창우동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609161512039",
@@ -184245,9 +184471,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "옥곡초등학교",
@@ -184268,10 +184494,12 @@
           "school_code": "8851073"
         }
       ],
-      "support_office": "",
-      "subregion": "경산 / 광양",
+      "support_office": "경상북도경산교육지원청",
+      "subregion": "경산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "경북 경산시 옥곡동 827",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609151509504",
@@ -184462,9 +184690,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대성여자중학교",
@@ -184485,10 +184713,12 @@
           "school_code": "8011152"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 청주",
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충청북도 청주시 상당구 대성로 208 대성여자중학교 행정실 (수동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609161511280",
@@ -188781,9 +189011,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -188804,10 +189034,12 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 수원",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주 서귀포시 호근남로 40 서호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609141504855",
@@ -191075,7 +191307,8 @@
       "support_office": "",
       "subregion": "강동,송파 / 광명",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "행정실"
     },
     {
       "id": "202609151506460",
@@ -191704,9 +191937,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -191727,10 +191960,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609151507933",
@@ -191787,9 +192022,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "청운초등학교",
@@ -191819,10 +192054,12 @@
           "school_code": "8382057"
         }
       ],
-      "support_office": "",
-      "subregion": "김제 / 동해 / 양평",
+      "support_office": "전북특별자치도김제교육지원청",
+      "subregion": "김제",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전북 김제시 백구면 황토로 168-30 청운초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202607271399799",
@@ -192354,9 +192591,9 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금빛초등학교",
@@ -192386,10 +192623,12 @@
           "school_code": "9051165"
         }
       ],
-      "support_office": "",
-      "subregion": "동래 / 성남 / 진주",
+      "support_office": "부산광역시동래교육지원청",
+      "subregion": "동래",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "부산 금정구 장전동 소정로 31",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609151505423",
@@ -192408,14 +192647,16 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "기타",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
+      "support_office": "양산교육지원청",
+      "subregion": "양산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 양산시 물금읍 야리로 51 양산유치원",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609141504105",
@@ -193221,7 +193462,8 @@
       "support_office": "",
       "subregion": "보성 / 서귀포 / 예산 / 정읍",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "교무실"
     },
     {
       "id": "202609141505054",
@@ -195063,14 +195305,16 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "기타",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
+      "support_office": "전북특별자치도완주교육지원청",
+      "subregion": "완주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전북 완주군 삼례읍 삼봉중앙로 91-7 삼봉유치원",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609111500823",
@@ -195116,7 +195360,8 @@
       "support_office": "",
       "subregion": "시흥 / 해운대",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "5-2반"
     },
     {
       "id": "202609071483940",
@@ -201487,7 +201732,8 @@
       "support_office": "",
       "subregion": "여주 / 중부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "교무실"
     },
     {
       "id": "202609101497247",
@@ -201647,7 +201893,8 @@
       "support_office": "",
       "subregion": "동부 / 통영",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202609101494726",
@@ -201805,9 +202052,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "월곡중학교",
@@ -201828,10 +202075,12 @@
           "school_code": "7402286"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 성북,강북",
+      "support_office": "서울특별시성북강북교육지원청",
+      "subregion": "성북,강북",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "서울특별시 성북구 장월로 6 월곡중 (상월곡동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609101493857",
@@ -202206,9 +202455,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대평초등학교",
@@ -202238,10 +202487,12 @@
           "school_code": "7541134"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 수원",
+      "support_office": "세종특별자치시교육청",
+      "subregion": "세종",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "세종 세종시 대평1길 19 대평초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609071483623",
@@ -205902,7 +206153,8 @@
       "support_office": "",
       "subregion": "동래 / 청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "사직초등학교"
     },
     {
       "id": "202609091493210",
@@ -206817,9 +207069,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -206858,10 +207110,12 @@
           "school_code": "9299060"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 서귀포 / 예산 / 정읍",
+      "support_office": "전라남도보성교육지원청",
+      "subregion": "보성",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "전남 보성군 보성읍 송재로 161-8",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609091492298",
@@ -207204,9 +207458,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "삼화초등학교",
@@ -207227,10 +207481,12 @@
           "school_code": "9296192"
         }
       ],
-      "support_office": "",
-      "subregion": "동해 / 제주",
+      "support_office": "제주특별자치도제주시교육지원청",
+      "subregion": "시",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주특별자치도 제주시 화삼북로2길 27 삼화초등학교 행정실 (화북일동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081488007",
@@ -207251,9 +207507,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "삼화초등학교",
@@ -207274,10 +207530,12 @@
           "school_code": "9296192"
         }
       ],
-      "support_office": "",
-      "subregion": "동해 / 제주",
+      "support_office": "제주특별자치도제주시교육지원청",
+      "subregion": "시",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주특별자치도 제주시 화삼북로2길 27 삼화초등학교 행정실 (화북일동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609091490387",
@@ -207397,7 +207655,8 @@
       "support_office": "",
       "subregion": "서귀포 / 수원",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "교무실"
     },
     {
       "id": "202609081488421",
@@ -207499,7 +207758,8 @@
       "support_office": "",
       "subregion": "고성 / 서부 / 연천 / 예천",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "정보실"
     },
     {
       "id": "202609081488121",
@@ -207518,9 +207778,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대평초등학교",
@@ -207550,10 +207810,12 @@
           "school_code": "7541134"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 수원",
+      "support_office": "세종특별자치시교육청",
+      "subregion": "세종",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "세종 세종시 대평1길 19 대평초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081488120",
@@ -207572,9 +207834,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "세종",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대평초등학교",
@@ -207604,10 +207866,12 @@
           "school_code": "7541134"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 수원",
+      "support_office": "세종특별자치시교육청",
+      "subregion": "세종",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "세종 세종시 대평1길 19 대평초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609091492281",
@@ -208264,9 +208528,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "백양초등학교",
@@ -208305,10 +208569,12 @@
           "school_code": "8592029"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 고양 / 고흥 / 북부",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "울산 중구 성안동 117-1번지",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011464948",
@@ -210686,9 +210952,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "설악중학교",
@@ -210709,10 +210975,12 @@
           "school_code": "7863055"
         }
       ],
-      "support_office": "",
-      "subregion": "가평 / 속초,양양",
+      "support_office": "강원특별자치도속초양양교육지원청",
+      "subregion": "속초,양양",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 속초시 교동 미시령로 3402",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041479413",
@@ -212226,9 +212494,9 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "우정초등학교",
@@ -212249,10 +212517,12 @@
           "school_code": "7679050"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 화성,오산",
+      "support_office": "울산광역시강북교육지원청",
+      "subregion": "강북",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "울산광역시 중구 평동길 40 행정실 (우정동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011466468",
@@ -212808,9 +213078,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "모전초등학교",
@@ -212831,10 +213101,12 @@
           "school_code": "8841038"
         }
       ],
-      "support_office": "",
-      "subregion": "문경 / 해운대",
+      "support_office": "부산광역시해운대교육지원청",
+      "subregion": "해운대",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "부산 기장군 정관읍 정관1로 17 모전초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081487785",
@@ -213029,9 +213301,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "삼화초등학교",
@@ -213052,10 +213324,12 @@
           "school_code": "9296192"
         }
       ],
-      "support_office": "",
-      "subregion": "동해 / 제주",
+      "support_office": "제주특별자치도제주시교육지원청",
+      "subregion": "시",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주특별자치도 제주시 화삼북로2길 27 삼화초등학교 행정실 (화북일동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081486757",
@@ -213220,9 +213494,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -213243,10 +213517,12 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 수원",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주 서귀포시 호근남로 40 서호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081486577",
@@ -213266,9 +213542,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "제주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서호초등학교",
@@ -213289,10 +213565,12 @@
           "school_code": "9299029"
         }
       ],
-      "support_office": "",
-      "subregion": "서귀포 / 수원",
+      "support_office": "제주특별자치도서귀포시교육지원청",
+      "subregion": "서귀포",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "제주 서귀포시 호근남로 40 서호초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081488558",
@@ -213527,9 +213805,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동면초등학교",
@@ -213550,10 +213828,12 @@
           "school_code": "9151157"
         }
       ],
-      "support_office": "",
-      "subregion": "양산 / 화순",
+      "support_office": "전라남도화순교육지원청",
+      "subregion": "화순",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전라남도 화순군 동면 충의로 789 동면초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609071481953",
@@ -216128,9 +216408,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "경덕중학교",
@@ -216151,10 +216431,12 @@
           "school_code": "8791090"
         }
       ],
-      "support_office": "",
-      "subregion": "안동 / 청주",
+      "support_office": "충청북도청주교육지원청",
+      "subregion": "청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충청북도 청주시 흥덕구 풍년로79번길 7-2 경덕중학교 (가경동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609081484452",
@@ -219304,9 +219586,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "인지중학교",
@@ -219327,10 +219609,12 @@
           "school_code": "8191013"
         }
       ],
-      "support_office": "",
-      "subregion": "서산 / 해운대",
+      "support_office": "충청남도서산교육지원청",
+      "subregion": "서산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충남 서산시 인지면 무학로1654-9",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609071482512",
@@ -219609,7 +219893,8 @@
       "support_office": "",
       "subregion": "용인 / 청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "서원고등학교"
     },
     {
       "id": "202609011465363",
@@ -223794,9 +224079,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "정동초등학교",
@@ -223817,10 +224102,12 @@
           "school_code": "9081028"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 사천",
+      "support_office": "강원특별자치도강릉교육지원청",
+      "subregion": "강릉",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 강릉시 강동면 헌화로 1055 정동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041478736",
@@ -223839,9 +224126,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "정동초등학교",
@@ -223862,10 +224149,12 @@
           "school_code": "9081028"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 사천",
+      "support_office": "강원특별자치도강릉교육지원청",
+      "subregion": "강릉",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 강릉시 강동면 헌화로 1055 정동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041478735",
@@ -223884,9 +224173,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "정동초등학교",
@@ -223907,10 +224196,12 @@
           "school_code": "9081028"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 사천",
+      "support_office": "강원특별자치도강릉교육지원청",
+      "subregion": "강릉",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 강릉시 강동면 헌화로 1055 정동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041478734",
@@ -223929,9 +224220,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "정동초등학교",
@@ -223952,10 +224243,12 @@
           "school_code": "9081028"
         }
       ],
-      "support_office": "",
-      "subregion": "강릉 / 사천",
+      "support_office": "강원특별자치도강릉교육지원청",
+      "subregion": "강릉",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "강원 강릉시 강동면 헌화로 1055 정동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041477358",
@@ -224580,9 +224873,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영신중학교",
@@ -224612,10 +224905,12 @@
           "school_code": "8071011"
         }
       ],
-      "support_office": "",
-      "subregion": "동부 / 수원 / 영동",
+      "support_office": "충청북도영동교육지원청",
+      "subregion": "영동",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충북 영동군 영동읍 영동황간로 22 영신중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041476424",
@@ -228872,14 +229167,16 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "기타",
       "school_type": "",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
-      "support_office": "",
-      "subregion": "",
+      "support_office": "울산광역시강남교육지원청",
+      "subregion": "강남",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "울산 남구 옥현로 18, 옥현유치원 (무거동,옥현유치원) 교무실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609041475877",
@@ -228934,9 +229231,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "중",
       "school_type": "중점",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대진중학교",
@@ -228957,10 +229254,12 @@
           "school_code": "7972030"
         }
       ],
-      "support_office": "",
-      "subregion": "고성 / 남부",
+      "support_office": "강원특별자치도고성교육지원청",
+      "subregion": "고성",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원 고성군 현내면 초도리 화진포길 476",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609031474994",
@@ -230918,9 +231217,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상리초등학교",
@@ -230959,10 +231258,12 @@
           "school_code": "9161015"
         }
       ],
-      "support_office": "",
-      "subregion": "고성 / 서부 / 연천 / 예천",
+      "support_office": "부산광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "부산광역시 영도구 상리로 38 상리초등학교 중앙현관 택배보관함 (동삼동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609021468037",
@@ -233531,7 +233832,8 @@
       "support_office": "",
       "subregion": "서부 / 청주",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202609021468361",
@@ -234982,7 +235284,8 @@
       "support_office": "",
       "subregion": "논산,계룡 / 음성 / 정읍",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "정보부"
     },
     {
       "id": "202609021470992",
@@ -235207,9 +235510,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "옥동초등학교",
@@ -235239,10 +235542,12 @@
           "school_code": "8081018"
         }
       ],
-      "support_office": "",
-      "subregion": "강남 / 영월 / 진천",
+      "support_office": "울산광역시강남교육지원청",
+      "subregion": "강남",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "울산 남구 문수로 401 옥동초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609021467800",
@@ -237156,9 +237461,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동성고등학교",
@@ -237179,10 +237484,12 @@
           "school_code": "8000530"
         }
       ],
-      "support_office": "",
-      "subregion": "음성 / 중부",
+      "support_office": "충청북도음성교육지원청",
+      "subregion": "음성",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충북 음성군 맹동면 대하로 315 동성고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609021469753",
@@ -237201,9 +237508,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동성고등학교",
@@ -237224,10 +237531,12 @@
           "school_code": "8000530"
         }
       ],
-      "support_office": "",
-      "subregion": "음성 / 중부",
+      "support_office": "충청북도음성교육지원청",
+      "subregion": "음성",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충북 음성군 맹동면 대하로 315 동성고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609021467528",
@@ -237653,9 +237962,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "송학초등학교",
@@ -237685,10 +237994,12 @@
           "school_code": "8171035"
         }
       ],
-      "support_office": "",
-      "subregion": "보령 / 서부 / 제천",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609021468586",
@@ -239671,9 +239982,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "어룡초등학교",
@@ -239694,10 +240005,12 @@
           "school_code": "7561029"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 의정부",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "광주 광산구 소촌로 122 어룡초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608311460427",
@@ -240056,9 +240369,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "삼일중학교",
@@ -240079,10 +240392,12 @@
           "school_code": "7872046"
         }
       ],
-      "support_office": "",
-      "subregion": "삼척 / 수원",
+      "support_office": "강원특별자치도삼척교육지원청",
+      "subregion": "삼척",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "강원 삼척시 남양동 185번지 삼일중고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011462573",
@@ -240469,9 +240784,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "보성초등학교",
@@ -240510,10 +240825,12 @@
           "school_code": "9299060"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 서귀포 / 예산 / 정읍",
+      "support_office": "전라남도보성교육지원청",
+      "subregion": "보성",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 보성군 보성읍 송재로 161-8",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011465189",
@@ -242884,9 +243201,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "송학초등학교",
@@ -242916,10 +243233,12 @@
           "school_code": "8171035"
         }
       ],
-      "support_office": "",
-      "subregion": "보령 / 서부 / 제천",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011462927",
@@ -242939,9 +243258,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "송학초등학교",
@@ -242971,10 +243290,12 @@
           "school_code": "8171035"
         }
       ],
-      "support_office": "",
-      "subregion": "보령 / 서부 / 제천",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202609011463584",
@@ -243858,9 +244179,9 @@
       "last_imported_at": "2026-09-30 10:19",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "증산초등학교",
@@ -243881,10 +244202,12 @@
           "school_code": "9151124"
         }
       ],
-      "support_office": "",
-      "subregion": "양산 / 정선",
+      "support_office": "양산교육지원청",
+      "subregion": "양산",
       "first_imported_at": "2026-09-30 10:19",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 양산시 물금읍 범어리 새실1길 50 증산초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608261449551",
@@ -244014,9 +244337,9 @@
       "last_imported_at": "2026-10-08 10:40",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상리초등학교",
@@ -244055,10 +244378,12 @@
           "school_code": "9161015"
         }
       ],
-      "support_office": "",
-      "subregion": "고성 / 서부 / 연천 / 예천",
+      "support_office": "부산광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "부산광역시 영도구 상리로 38 상리초등학교 중앙현관 택배보관함 (동삼동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608311461324",
@@ -244798,7 +245123,8 @@
       "support_office": "",
       "subregion": "김제 / 서부 / 진천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "교무실"
     },
     {
       "id": "202608311459732",
@@ -247894,9 +248220,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "송학초등학교",
@@ -247926,10 +248252,12 @@
           "school_code": "8171035"
         }
       ],
-      "support_office": "",
-      "subregion": "보령 / 서부 / 제천",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608311462105",
@@ -247949,9 +248277,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "송학초등학교",
@@ -247981,10 +248309,12 @@
           "school_code": "8171035"
         }
       ],
-      "support_office": "",
-      "subregion": "보령 / 서부 / 제천",
+      "support_office": "광주광역시서부교육지원청",
+      "subregion": "서부",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "광주 서구 세하동 눌재로 408(송학초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608311460232",
@@ -248938,7 +249268,8 @@
       "support_office": "",
       "subregion": "서귀포 / 수원",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202608281457202",
@@ -249139,9 +249470,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "설악중학교",
@@ -249162,10 +249493,12 @@
           "school_code": "7863055"
         }
       ],
-      "support_office": "",
-      "subregion": "가평 / 속초,양양",
+      "support_office": "강원특별자치도속초양양교육지원청",
+      "subregion": "속초,양양",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "강원 속초시 교동 미시령로 3402",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608271454658",
@@ -252802,9 +253135,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "풍산고등학교",
@@ -252825,10 +253158,12 @@
           "school_code": "8750475"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 안동",
+      "support_office": "경상북도안동교육지원청",
+      "subregion": "안동",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경북 안동시 풍산읍 풍산중앙길 39 풍산고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608261451287",
@@ -258111,9 +258446,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "개화초등학교",
@@ -258134,10 +258469,12 @@
           "school_code": "8171020"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 보령",
+      "support_office": "충청남도보령교육지원청",
+      "subregion": "보령",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 보령시 성주면 성주산로 735 , 개화초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608261451060",
@@ -261274,9 +261611,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
       "school_type": "중점",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "안성초등학교",
@@ -261297,10 +261634,12 @@
           "school_code": "8412021"
         }
       ],
-      "support_office": "",
-      "subregion": "무주 / 안성",
+      "support_office": "경기도안성교육지원청",
+      "subregion": "안성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 안성시 혜산로 13",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608261449634",
@@ -262326,9 +262665,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "천천초등학교",
@@ -262349,10 +262688,12 @@
           "school_code": "8422022"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 장수",
+      "support_office": "경기도수원교육지원청",
+      "subregion": "수원",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 수원시 장안구 정자로42번길 17 천천초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608241440744",
@@ -265837,9 +266178,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
       "school_type": "중점",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "안성초등학교",
@@ -265860,10 +266201,12 @@
           "school_code": "8412021"
         }
       ],
-      "support_office": "",
-      "subregion": "무주 / 안성",
+      "support_office": "경기도안성교육지원청",
+      "subregion": "안성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 안성시 혜산로 13",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608251444185",
@@ -266672,9 +267015,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "중원중학교",
@@ -266704,10 +267047,12 @@
           "school_code": "8021035"
         }
       ],
-      "support_office": "",
-      "subregion": "부천 / 북부 / 충주",
+      "support_office": "서울특별시북부교육지원청",
+      "subregion": "북부",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "서울 노원구 공릉로 420 중원중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608211438800",
@@ -270223,9 +270568,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "시흥중학교",
@@ -270246,10 +270591,12 @@
           "school_code": "7781010"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 시흥",
+      "support_office": "경기도시흥교육지원청",
+      "subregion": "시흥",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 시흥시 옥구천동로374번길 39 시흥중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608241439446",
@@ -271097,9 +271444,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "청담고등학교",
@@ -271120,10 +271467,12 @@
           "school_code": "7530992"
         }
       ],
-      "support_office": "",
-      "subregion": "강남,서초 / 평택",
+      "support_office": "서울특별시강남서초교육지원청",
+      "subregion": "강남,서초",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "서울특별시 서초구 신반포로23길 66 청담고등학교 1층 행정실 (잠원동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608181426225",
@@ -271181,9 +271530,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "청담고등학교",
@@ -271204,10 +271553,12 @@
           "school_code": "7530992"
         }
       ],
-      "support_office": "",
-      "subregion": "강남,서초 / 평택",
+      "support_office": "서울특별시강남서초교육지원청",
+      "subregion": "강남,서초",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "서울특별시 서초구 신반포로23길 66 청담고등학교 1층 행정실 (잠원동)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608211437331",
@@ -271227,9 +271578,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "반곡초등학교",
@@ -271277,10 +271628,12 @@
           "school_code": "8222037"
         }
       ],
-      "support_office": "",
-      "subregion": "강남 / 논산,계룡 / 원주 / 홍천",
+      "support_office": "강원특별자치도홍천교육지원청",
+      "subregion": "홍천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "강원 홍천군 서면 팔봉산로 639 (반곡리,반곡초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608201434404",
@@ -271445,9 +271798,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상원중학교",
@@ -271468,10 +271821,12 @@
           "school_code": "7271030"
         }
       ],
-      "support_office": "",
-      "subregion": "남부 / 북부",
+      "support_office": "서울특별시북부교육지원청",
+      "subregion": "북부",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "서울 노원구 수락산로 182 상원중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608181425867",
@@ -275256,9 +275611,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "호명초등학교",
@@ -275279,10 +275634,12 @@
           "school_code": "8951041"
         }
       ],
-      "support_office": "",
-      "subregion": "예천 / 평창",
+      "support_office": "강원특별자치도평창교육지원청",
+      "subregion": "평창",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원 평창군 진부면 약수동길 11 (송정리,호명초등학교)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608181427827",
@@ -275403,9 +275760,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "중",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금호중학교",
@@ -275444,10 +275801,12 @@
           "school_code": "8821066"
         }
       ],
-      "support_office": "",
-      "subregion": "서부 / 영천 / 중부",
+      "support_office": "경상북도영천교육지원청",
+      "subregion": "영천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "경북 영천시 금호읍 교대길 8-18",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191429072",
@@ -275841,9 +276200,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "칠보초등학교",
@@ -275864,10 +276223,12 @@
           "school_code": "8362076"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 정읍",
+      "support_office": "전북특별자치도정읍교육지원청",
+      "subregion": "정읍",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "전라북도 정읍시 칠보면 칠보중앙로 130 칠보초등학교 교무실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608201434420",
@@ -276120,9 +276481,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서도초등학교",
@@ -276143,10 +276504,12 @@
           "school_code": "8241022"
         }
       ],
-      "support_office": "",
-      "subregion": "강화 / 서천",
+      "support_office": "충청남도서천교육지원청",
+      "subregion": "서천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 서천군 서면 공암남촌길31번길 33 서도초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191431442",
@@ -277035,9 +277398,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "칠보초등학교",
@@ -277058,10 +277421,12 @@
           "school_code": "8362076"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 정읍",
+      "support_office": "전북특별자치도정읍교육지원청",
+      "subregion": "정읍",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전라북도 정읍시 칠보면 칠보중앙로 130 칠보초등학교 교무실",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608201433704",
@@ -277325,7 +277690,8 @@
       "support_office": "",
       "subregion": "완주 / 홍성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "용봉초등학교"
     },
     {
       "id": "202608191430805",
@@ -277370,7 +277736,8 @@
       "support_office": "",
       "subregion": "완주 / 홍성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "용봉초등학교"
     },
     {
       "id": "202608191430766",
@@ -277415,7 +277782,8 @@
       "support_office": "",
       "subregion": "완주 / 홍성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "용봉초등학교"
     },
     {
       "id": "202608191431325",
@@ -278176,7 +278544,8 @@
       "support_office": "",
       "subregion": "동래 / 봉화 / 영월",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202608201434370",
@@ -278537,9 +278906,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "아산초등학교",
@@ -278569,10 +278938,12 @@
           "school_code": "8612028"
         }
       ],
-      "support_office": "",
-      "subregion": "고창 / 아산 / 화순",
+      "support_office": "충청남도아산교육지원청",
+      "subregion": "아산",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 아산시 남부로 266 아산초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608201433556",
@@ -278591,9 +278962,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "아산초등학교",
@@ -278623,10 +278994,12 @@
           "school_code": "8612028"
         }
       ],
-      "support_office": "",
-      "subregion": "고창 / 아산 / 화순",
+      "support_office": "충청남도아산교육지원청",
+      "subregion": "아산",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 아산시 남부로 266 아산초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191429650",
@@ -279465,9 +279838,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서도초등학교",
@@ -279488,10 +279861,12 @@
           "school_code": "8241022"
         }
       ],
-      "support_office": "",
-      "subregion": "강화 / 서천",
+      "support_office": "충청남도서천교육지원청",
+      "subregion": "서천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "충남 서천군 서면 공암남촌길31번길 33 서도초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191430797",
@@ -279967,9 +280342,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "동성고등학교",
@@ -279990,10 +280365,12 @@
           "school_code": "8000530"
         }
       ],
-      "support_office": "",
-      "subregion": "음성 / 중부",
+      "support_office": "충청북도음성교육지원청",
+      "subregion": "음성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충북 음성군 맹동면 대하로 315 동성고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191430525",
@@ -280051,9 +280428,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서도초등학교",
@@ -280074,10 +280451,12 @@
           "school_code": "8241022"
         }
       ],
-      "support_office": "",
-      "subregion": "강화 / 서천",
+      "support_office": "충청남도서천교육지원청",
+      "subregion": "서천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "충남 서천군 서면 공암남촌길31번길 33 서도초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191430109",
@@ -282480,9 +282859,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "영덕중학교",
@@ -282503,10 +282882,12 @@
           "school_code": "8901039"
         }
       ],
-      "support_office": "",
-      "subregion": "수원 / 영덕",
+      "support_office": "경기도수원교육지원청",
+      "subregion": "수원",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 수원시 영통구 영통동 청명로 146",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608181427775",
@@ -282687,9 +283068,9 @@
       "last_imported_at": "2026-10-07 21:53",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서도초등학교",
@@ -282710,10 +283091,12 @@
           "school_code": "8241022"
         }
       ],
-      "support_office": "",
-      "subregion": "강화 / 서천",
+      "support_office": "충청남도서천교육지원청",
+      "subregion": "서천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 서천군 서면 공암남촌길31번길 33 서도초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608191430377",
@@ -283344,9 +283727,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "풍산고등학교",
@@ -283367,10 +283750,12 @@
           "school_code": "8750475"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 안동",
+      "support_office": "경상북도안동교육지원청",
+      "subregion": "안동",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경북 안동시 풍산읍 풍산중앙길 39 풍산고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608141424662",
@@ -285335,9 +285720,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "예당중학교",
@@ -285358,10 +285743,12 @@
           "school_code": "8602010"
         }
       ],
-      "support_office": "",
-      "subregion": "보성 / 화성,오산",
+      "support_office": "전라남도보성교육지원청",
+      "subregion": "보성",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "전남 보성군 득량면 예당길 155-14 예당중학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608181427250",
@@ -285734,9 +286121,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "고",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용인고등학교",
@@ -285757,10 +286144,12 @@
           "school_code": "7530102"
         }
       ],
-      "support_office": "",
-      "subregion": "동래 / 용인",
+      "support_office": "부산광역시동래교육지원청",
+      "subregion": "동래",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 4
+      "import_count": 4,
+      "business_place": "부산 동래구 시실로107번길 37 용인고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608131421978",
@@ -290823,9 +291212,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "아산초등학교",
@@ -290855,10 +291244,12 @@
           "school_code": "8612028"
         }
       ],
-      "support_office": "",
-      "subregion": "고창 / 아산 / 화순",
+      "support_office": "충청남도아산교육지원청",
+      "subregion": "아산",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 아산시 남부로 266 아산초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608111418289",
@@ -292656,9 +293047,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -292679,10 +293070,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608101415980",
@@ -292702,9 +293095,9 @@
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "화진초등학교",
@@ -292725,10 +293118,12 @@
           "school_code": "7701022"
         }
       ],
-      "support_office": "",
-      "subregion": "강북 / 연천",
+      "support_office": "경기도연천교육지원청",
+      "subregion": "연천",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경기 연천군 군남면 청정로 2289 화진초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608101417199",
@@ -292983,9 +293378,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "고",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "풍산고등학교",
@@ -293006,10 +293401,12 @@
           "school_code": "8750475"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 안동",
+      "support_office": "경상북도안동교육지원청",
+      "subregion": "안동",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "경북 안동시 풍산읍 풍산중앙길 39 풍산고등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608071415173",
@@ -294925,9 +295322,9 @@
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "창신초등학교",
@@ -294957,10 +295354,12 @@
           "school_code": "8011203"
         }
       ],
-      "support_office": "",
-      "subregion": "동래 / 청주 / 평택",
+      "support_office": "경기도평택교육지원청",
+      "subregion": "평택",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 평택시 오성면 창신뜰길 138 (신리,창신초등학교 교육행정실)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202608041409618",
@@ -300098,9 +300497,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "예당중학교",
@@ -300121,12 +300520,12 @@
           "school_code": "8602010"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도보성교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "전남 보성군 득량면 예당길 155-14 예당중학교",
       "support_office_source": "business_place",
-      "subregion": "보성 / 화성,오산",
+      "subregion": "보성",
       "school_type": ""
     },
     {
@@ -301458,9 +301857,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -301481,12 +301880,12 @@
           "school_code": "8452049"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "전북 고창군 고창읍 보릿골로 35 (덕산리,고창중학교) 교무실",
       "support_office_source": "business_place",
-      "subregion": "고창 / 김포",
+      "subregion": "고창",
       "school_type": "선도"
     },
     {
@@ -301505,9 +301904,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "예당중학교",
@@ -301528,12 +301927,12 @@
           "school_code": "8602010"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도보성교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "전남 보성군 득량면 예당길 155-14 예당중학교",
       "support_office_source": "business_place",
-      "subregion": "보성 / 화성,오산",
+      "subregion": "보성",
       "school_type": ""
     },
     {
@@ -301552,9 +301951,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "예당중학교",
@@ -301575,12 +301974,12 @@
           "school_code": "8602010"
         }
       ],
-      "support_office": "",
+      "support_office": "전라남도보성교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "전남 보성군 득량면 예당길 155-14 예당중학교",
       "support_office_source": "business_place",
-      "subregion": "보성 / 화성,오산",
+      "subregion": "보성",
       "school_type": ""
     },
     {
@@ -305539,7 +305938,8 @@
       "support_office": "",
       "subregion": "동래 / 부여",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "내산초등학교"
     },
     {
       "id": "202607241397176",
@@ -305997,9 +306397,9 @@
       "last_imported_at": "2026-10-08 08:11",
       "school_level": "초",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "군북초등학교",
@@ -306020,10 +306420,12 @@
           "school_code": "9131007"
         }
       ],
-      "support_office": "",
-      "subregion": "금산 / 함안",
+      "support_office": "충청남도금산교육지원청",
+      "subregion": "금산",
       "first_imported_at": "2026-09-23 14:51",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "충남 금산군 군북면 두두리 355-1",
+      "support_office_source": "business_place"
     },
     {
       "id": "202607231394702",
@@ -307195,9 +307597,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도암초등학교",
@@ -307218,12 +307620,12 @@
           "school_code": "8632020"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도이천교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 4,
       "business_place": "경기 이천시 증신로 550 도암초등학교",
       "support_office_source": "business_place",
-      "subregion": "강진 / 이천",
+      "subregion": "이천",
       "school_type": "선도"
     },
     {
@@ -307314,9 +307716,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "전북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "고창중학교",
@@ -307337,12 +307739,12 @@
           "school_code": "8452049"
         }
       ],
-      "support_office": "",
+      "support_office": "전북특별자치도고창교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "전북 고창군 고창읍 보릿골로 35 (덕산리,고창중학교) 교무실",
       "support_office_source": "business_place",
-      "subregion": "고창 / 김포",
+      "subregion": "고창",
       "school_type": "선도"
     },
     {
@@ -313011,9 +313413,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "경산초등학교",
@@ -313034,12 +313436,12 @@
           "school_code": "8851060"
         }
       ],
-      "support_office": "",
+      "support_office": "충청북도청주교육지원청",
       "first_imported_at": "2026-08-16 07:54",
       "import_count": 3,
       "business_place": "충북 청주시 흥덕구 경산로 82-12 경산초등학교",
       "support_office_source": "business_place",
-      "subregion": "경산 / 청주",
+      "subregion": "청주",
       "school_type": "선도"
     },
     {
@@ -325059,9 +325461,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "대구",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "경화여자고등학교",
@@ -325084,10 +325486,10 @@
       ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 4,
-      "support_office": "",
+      "support_office": "대구광역시남부교육지원청",
       "business_place": "대구 달서구 당산로30길 20 (성당동,경화여자고등학교), 행정실",
       "support_office_source": "business_place",
-      "subregion": "광주,하남 / 남부",
+      "subregion": "남부",
       "school_type": "선도"
     },
     {
@@ -325142,9 +325544,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "서울",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "신도고등학교",
@@ -325165,12 +325567,12 @@
           "school_code": "7150114"
         }
       ],
-      "support_office": "",
+      "support_office": "서울특별시서부교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 3,
       "business_place": "서울특별시 은평구 통일로 961, 신도고등학교",
       "support_office_source": "business_place",
-      "subregion": "서부 / 해운대",
+      "subregion": "서부",
       "school_type": "선도"
     },
     {
@@ -330524,9 +330926,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "고",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금천고등학교",
@@ -330556,12 +330958,12 @@
           "school_code": "8750090"
         }
       ],
-      "support_office": "",
+      "support_office": "충청북도청주교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 3,
       "business_place": "충북 청주시 상당구 호미로233번길 65 금천고 행정실",
       "support_office_source": "business_place",
-      "subregion": "남부 / 청도 / 청주",
+      "subregion": "청주",
       "school_type": "선도"
     },
     {
@@ -331540,9 +331942,9 @@
       "search_period_to": "2026.08.31",
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "울산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도산초등학교",
@@ -331592,10 +331994,10 @@
       ],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 2,
-      "support_office": "",
+      "support_office": "울산광역시강남교육지원청",
       "business_place": "울산 남구 번영로54번길 25 도산초등학교 교무실",
       "support_office_source": "business_place",
-      "subregion": "강남 / 구미 / 논산,계룡 / 산청 / 서부",
+      "subregion": "강남",
       "school_type": "선도"
     },
     {
@@ -339516,9 +339918,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "수청초등학교",
@@ -339539,12 +339941,12 @@
           "school_code": "8291104"
         }
       ],
-      "support_office": "",
+      "support_office": "충청남도당진교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 3,
       "business_place": "충청남도 당진시 수청2로 37 수청초등학교 (수청동)",
       "support_office_source": "business_place",
-      "subregion": "당진 / 화성,오산",
+      "subregion": "당진",
       "school_type": ""
     },
     {
@@ -340802,16 +341204,16 @@
       "search_period_to": "2026.08.31",
       "last_imported_at": "2026-09-23 14:51",
       "school_level": "기타",
-      "region": "",
-      "region_status": "unknown",
-      "region_source": "",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [],
       "first_imported_at": "2026-08-13 07:23",
       "import_count": 2,
-      "support_office": "",
+      "support_office": "경기도구리남양주교육지원청",
       "business_place": "경기 구리시 산마루로 72",
       "support_office_source": "business_place",
-      "subregion": "",
+      "subregion": "구리,남양주",
       "school_type": ""
     },
     {
@@ -345371,9 +345773,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "오산초등학교",
@@ -345421,12 +345823,12 @@
           "school_code": "8572013"
         }
       ],
-      "support_office": "",
+      "support_office": "충청남도서산교육지원청",
       "first_imported_at": "2026-08-16 06:54",
       "import_count": 3,
       "business_place": "충남 서산시 오남동 305-6번지",
       "support_office_source": "business_place",
-      "subregion": "곡성 / 서산 / 여주 / 익산 / 화성,오산",
+      "subregion": "서산",
       "school_type": "선도"
     },
     {
@@ -385720,7 +386122,8 @@
       "support_office": "",
       "subregion": "동부 / 서부",
       "first_imported_at": "2026-10-07 23:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "수요기관 지정장소"
     },
     {
       "id": "202606151308656",
@@ -424395,7 +424798,8 @@
       "support_office": "",
       "subregion": "보성 / 서귀포 / 예산 / 정읍",
       "first_imported_at": "2026-11-06 15:27",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202605281270633",
@@ -428130,7 +428534,8 @@
       "support_office": "",
       "subregion": "나주 / 양산 / 영동 / 화성,오산",
       "first_imported_at": "2026-10-07 23:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "온라인학습"
     },
     {
       "id": "202605221259152",
@@ -468783,7 +469188,8 @@
       "support_office": "",
       "subregion": "김해 / 청주",
       "first_imported_at": "2026-11-06 15:27",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "봉명초등학교 각 학년 연구실"
     },
     {
       "id": "202605181243880",
@@ -532339,9 +532745,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "충북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "용두초등학교",
@@ -532371,10 +532777,12 @@
           "school_code": "8031031"
         }
       ],
-      "support_office": "",
-      "subregion": "고양 / 동부 / 제천",
+      "support_office": "충청북도제천교육지원청",
+      "subregion": "제천",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "충북 제천시 하소동 405번지 용두초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604271194345",
@@ -549444,9 +549852,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도곡초등학교",
@@ -549467,10 +549875,12 @@
           "school_code": "8612018"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 화순",
+      "support_office": "경기도광주하남교육지원청",
+      "subregion": "광주,하남",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 광주시 초월읍 경충대로 1033-13 (쌍동리,도곡초등학교) 1-2(1층 택배함)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604231188522",
@@ -549489,9 +549899,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "도곡초등학교",
@@ -549512,10 +549922,12 @@
           "school_code": "8612018"
         }
       ],
-      "support_office": "",
-      "subregion": "광주,하남 / 화순",
+      "support_office": "경기도광주하남교육지원청",
+      "subregion": "광주,하남",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경기 광주시 초월읍 경충대로 1033-13 (쌍동리,도곡초등학교) 1-2(1층 택배함)",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604231186141",
@@ -549534,9 +549946,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "초",
       "school_type": "선도",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "강원",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서면초등학교",
@@ -549566,10 +549978,12 @@
           "school_code": "8241023"
         }
       ],
-      "support_office": "",
-      "subregion": "광명 / 서천 / 철원",
+      "support_office": "강원특별자치도철원교육지원청",
+      "subregion": "철원",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "강원 철원군 서면 자등로 634 서면초등학교",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604221180755",
@@ -578451,9 +578865,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경기",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "양곡중학교",
@@ -578474,12 +578888,12 @@
           "school_code": "9022152"
         }
       ],
-      "support_office": "",
+      "support_office": "경기도김포교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 3,
       "business_place": "경기 김포시 양촌읍 양곡4로 138 양곡중학교",
       "support_office_source": "business_place",
-      "subregion": "김포 / 창원",
+      "subregion": "김포",
       "school_type": ""
     },
     {
@@ -578524,9 +578938,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서광초등학교",
@@ -578547,12 +578961,12 @@
           "school_code": "9299062"
         }
       ],
-      "support_office": "",
+      "support_office": "광주광역시서부교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서귀포 / 서부",
+      "subregion": "서부",
       "school_type": "선도"
     },
     {
@@ -578571,9 +578985,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서광초등학교",
@@ -578594,12 +579008,12 @@
           "school_code": "9299062"
         }
       ],
-      "support_office": "",
+      "support_office": "광주광역시서부교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서귀포 / 서부",
+      "subregion": "서부",
       "school_type": "선도"
     },
     {
@@ -578618,9 +579032,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "초",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "광주",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "서광초등학교",
@@ -578641,12 +579055,12 @@
           "school_code": "9299062"
         }
       ],
-      "support_office": "",
+      "support_office": "광주광역시서부교육지원청",
       "first_imported_at": "2026-08-15 08:46",
       "import_count": 3,
       "business_place": "광주광역시 서구 상무오월로38번길 36 서광초등학교 행정실 (쌍촌동)",
       "support_office_source": "business_place",
-      "subregion": "서귀포 / 서부",
+      "subregion": "서부",
       "school_type": "선도"
     },
     {
@@ -581441,7 +581855,8 @@
       "support_office": "",
       "subregion": "영광 / 영주",
       "first_imported_at": "2026-10-07 22:00",
-      "import_count": 3
+      "import_count": 3,
+      "business_place": "영광고등학교"
     },
     {
       "id": "202604101145757",
@@ -588984,7 +589399,8 @@
       "support_office": "",
       "subregion": "강서,양천 / 남부",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 2
+      "import_count": 2,
+      "business_place": "교무실"
     },
     {
       "id": "202604151162407",
@@ -593996,9 +594412,9 @@
       "search_period_to": "2026.09.30",
       "last_imported_at": "2026-10-07 23:11",
       "school_level": "중",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "부산",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "대천중학교",
@@ -594019,12 +594435,12 @@
           "school_code": "8171008"
         }
       ],
-      "support_office": "",
+      "support_office": "부산광역시남부교육지원청",
       "first_imported_at": "2026-08-15 07:13",
       "import_count": 3,
       "business_place": "부산광역시 남구 신선로 491 대천중학교 행정실 (대연동)",
       "support_office_source": "business_place",
-      "subregion": "남부 / 보령",
+      "subregion": "남부",
       "school_type": "선도"
     },
     {
@@ -597801,9 +598217,9 @@
       "last_imported_at": "2026-10-15 08:41",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경북",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "금성중학교",
@@ -597833,10 +598249,12 @@
           "school_code": "8871048"
         }
       ],
-      "support_office": "",
-      "subregion": "김제 / 나주 / 의성",
+      "support_office": "경상북도의성교육지원청",
+      "subregion": "의성",
       "first_imported_at": "2026-10-15 08:41",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경북 의성군 금성면 탑리1리 582",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604131149214",
@@ -639179,9 +639597,9 @@
       "last_imported_at": "2026-11-06 15:27",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상주중학교",
@@ -639202,10 +639620,12 @@
           "school_code": "9171026"
         }
       ],
-      "support_office": "",
-      "subregion": "남해 / 상주",
+      "support_office": "남해교육지원청",
+      "subregion": "남해",
       "first_imported_at": "2026-11-06 15:27",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 남해군 상주면 상주리 590-1",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604011116999",
@@ -643521,9 +643941,9 @@
       "last_imported_at": "2026-11-06 15:27",
       "school_level": "중",
       "school_type": "",
-      "region": "",
-      "region_status": "ambiguous",
-      "region_source": "neis_school_info",
+      "region": "경남",
+      "region_status": "matched",
+      "region_source": "business_place",
       "region_candidates": [
         {
           "school_name": "상주중학교",
@@ -643544,10 +643964,12 @@
           "school_code": "9171026"
         }
       ],
-      "support_office": "",
-      "subregion": "남해 / 상주",
+      "support_office": "남해교육지원청",
+      "subregion": "남해",
       "first_imported_at": "2026-11-06 15:27",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "경남 남해군 상주면 상주리 590-1",
+      "support_office_source": "business_place"
     },
     {
       "id": "202604021122194",
@@ -650390,7 +650812,8 @@
       "support_office": "",
       "subregion": "서부 / 안성",
       "first_imported_at": "2026-11-06 15:27",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "동신초지정장소"
     },
     {
       "id": "202603311115575",
@@ -652075,7 +652498,8 @@
       "support_office": "",
       "subregion": "용인 / 청주 / 횡성",
       "first_imported_at": "2026-10-07 23:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202604011117495",
@@ -653097,7 +653521,8 @@
       "support_office": "",
       "subregion": "고양 / 해남",
       "first_imported_at": "2026-10-07 23:11",
-      "import_count": 1
+      "import_count": 1,
+      "business_place": "교무실"
     },
     {
       "id": "202604011117311",
