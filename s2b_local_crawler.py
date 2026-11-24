@@ -2518,7 +2518,7 @@ function setMonthPurchaseType(value){activeMonthPurchaseType=value||'';try{local
 
 var VENDOR_ALIAS_RULES=[{keywords:['스쿨플랫','매쓰플랫'],vendor:'(주)프리윌린',keepVendors:['위멘토피아','에누마코리아','팀플백']}];
 // 확실한 유통사: 이 업체가 계약대상자이면 계약명의 제품을 만든 제조사 매출로 집계한다 (제품이 없거나 제조사가 둘 이상이거나 '외 N종/건'처럼 여러 상품이 묶인 계약명이면 유통사 그대로).
-var DISTRIBUTOR_VENDORS=['나이스쿨','교육의정석','올댓스쿨','아이티존'];
+var DISTRIBUTOR_VENDORS=['나이스쿨','교육의정석','올댓스쿨','아이티존','엘위드'];
 // 코스웨어 유형 계약만 제품 제조사로 귀속하는 유통사 (그 밖의 유형은 해당 업체 매출 그대로)
 var TYPED_DISTRIBUTORS=[{vendor:'테크빌교육',type:'courseware'}];
 var PRODUCT_MAKERS=[{keywords:['초코클래스','초코팝','달달'],maker:'(주)미래엔'},{keywords:['토도'],maker:'주식회사 에누마코리아'},{keywords:['아이스크림홈런','홈런','스쿨런'],maker:'(주)아이스크림에듀'},{keywords:['기출탭탭','비상교육'],maker:'(주)비상교육'},{keywords:['스마트올'],maker:'(주)웅진씽크빅'},{keywords:['리딩앤'],maker:'(주)아이포트폴리오'},{keywords:['자작자작'],maker:'(주)팀플백'},{keywords:['클래스팅'],maker:'주식회사 씨티'},{keywords:['플랭'],maker:'주식회사 플랭'},{keywords:['지니아','천재교과서'],maker:'(주) 천재교과서'},{keywords:['천재교육'],maker:'(주)천재교육'},{keywords:['스쿨플랫','매쓰플랫'],maker:'(주)프리윌린'},{keywords:['마타수학'],maker:'마타에듀 주식회사'},{keywords:['원아워'],maker:'주식회사 제로엑스플로우'},{keywords:['코들','Codle'],maker:'주식회사 팀모노리스'},{keywords:['알공'],maker:'주식회사 디엔소프트'},{keywords:['매쓰홀릭'],maker:'주식회사 매쓰홀릭'}];
