@@ -1911,10 +1911,13 @@ def fallback_purchase_type_key(name):
 #   - 계약명에 SIDO_OFFICE_PLATFORM_TERMS 가 있고 SIDO_OFFICE_PLATFORM_EXCLUDES 는 없다
 #   - 계약명에 특정 제품·도구 키워드가 없다 (토도영어·클로드처럼 제품이 분명하면 그 유형 그대로)
 SIDO_OFFICE_RE = re.compile(
-    r"(서울특별시|부산광역시|대구광역시|인천광역시|광주광역시|대전광역시|울산광역시|세종특별자치시|경기도|강원특별자치도|강원도"
+    r"(서울특별시|부산광역시|부산시|전남광주통합특별시|대구광역시|인천광역시|광주광역시|대전광역시|울산광역시|세종특별자치시|경기도|강원특별자치도|강원도"
     r"|충청북도|충청남도|전북특별자치도|전라북도|전라남도|경상북도|경상남도|제주특별자치도)교육청")
 SIDO_OFFICE_PLATFORM_TERMS = ("구축", "플랫폼", "특화서비스", "교육서비스", "교육시스템", "AI서비스", "도입", "챗봇", "교육비서")
 SIDO_OFFICE_PLATFORM_EXCLUDES = ("물품", "용품", "인쇄", "홍보", "원가계산", "비상벨")
+# 교육청 플랫폼 이름: 계약명에 이 이름이 있으면 제품 키워드가 있어도 AIEP로 본다
+# (전남 "아이모두", 광주 "광주아이온(AI-ON)"에 붙여 쓰려고 교육청이 사는 프로그램·도구)
+SIDO_OFFICE_PLATFORM_NAMES = ("아이모두", "아이온")
 # 코스웨어 키워드 가운데 제품 이름이 아닌 일반 표현 (제품이 분명한지 볼 때 뺀다)
 COURSEWARE_GENERIC_KEYWORDS = ("코스웨어", "AI 코스웨어", "문제은행", "진단평가", "학력진단", "단원평가", "평가지원", "평가",
                                "수학 학습 프로그램", "영어독후활동프로그램", "두드림")
@@ -1945,9 +1948,11 @@ def is_sido_office_platform(name, institution):
     if not is_sido_office(institution):
         return False
     text = normalize_search_text(name)
-    if not any(normalize_search_text(term) in text for term in SIDO_OFFICE_PLATFORM_TERMS):
-        return False
     if any(word in text for word in SIDO_OFFICE_PLATFORM_EXCLUDES):
+        return False
+    if any(platform in text for platform in SIDO_OFFICE_PLATFORM_NAMES):
+        return True
+    if not any(normalize_search_text(term) in text for term in SIDO_OFFICE_PLATFORM_TERMS):
         return False
     return not has_specific_type_keyword(name)
 
