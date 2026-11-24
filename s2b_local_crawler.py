@@ -1787,6 +1787,11 @@ def vendor_name_key(name):
     return re.sub(r"[()\[\]·.,-]", "", compact)
 
 
+# 상호에 제조사 이름이 들어간 계열 업체는 제조사 매출로 합친다 (비상교육FC, 비상교육 러닝 -> (주)비상교육).
+# (아이스크림미디어·아이스크림아트처럼 이름만 비슷한 다른 회사는 넣지 않는다)
+VENDOR_FAMILY_MERGES = (("비상교육", "(주)비상교육"),)
+
+
 def build_vendor_canonical(counterparts):
     # 표기가 갈라진 업체는 가장 많이 쓰인 표기(동수면 사전순)로 통일한다. {원래 표기: 대표 표기}
     groups = {}
@@ -1800,6 +1805,11 @@ def build_vendor_canonical(counterparts):
         if len(bucket) > 1:
             best = sorted(bucket.items(), key=lambda item: (-item[1], item[0]))[0][0]
             canonical.update({raw: best for raw in bucket if raw != best})
+    for token, target in VENDOR_FAMILY_MERGES:
+        target_name = canonical.get(target, target)
+        for name in set(counterparts):
+            if name and token in re.sub(r"\s+", "", name) and canonical.get(name, name) != target_name:
+                canonical[name] = target_name
     return canonical
 
 
@@ -1812,6 +1822,111 @@ def is_vendor_courseware(counterpart):
 
 
 VENDOR_COURSEWARE_AIDT_KEYWORDS = ("AIDT", "디지털 교육자료", "디지털교육자료", "AI디지털교과서", "AI 디지털 교과서", "발행사 AIDT")  # JS PURCHASE_TYPES의 aidt 키워드와 동일하게 유지
+
+# ---------------------------------------------------------------------------
+# 구매 유형 규칙 (대시보드 분류의 정본). 페이지 스크립트의 PURCHASE_TYPES로 그대로 실리고,
+# 영업관리 화면(market.js)도 페이지에서 이 목록을 읽어 같은 기준으로 분류한다.
+# 계약명에 키워드가 들어 있으면 위에서부터 처음 걸리는 유형으로 본다 (공백·대소문자 무시).
+# 단, 코스웨어의 '코스웨어' 한 단어는 다른 유형 키워드가 하나도 없을 때만 코스웨어로 본다.
+# ---------------------------------------------------------------------------
+PURCHASE_TYPES = [
+    {"key": "aidt", "label": "AI디지털 교육자료 (AIDT)", "keywords": ["AIDT", "디지털 교육자료", "디지털교육자료", "AI디지털교과서", "AI 디지털 교과서", "발행사 AIDT"]},
+    {"key": "courseware", "label": "코스웨어", "keywords": ["코들", "Codle", "초코팝", "초코클래스", "달달", "옥수수", "홈런", "아이스크림홈런", "밀크티", "스마트올", "엘리하이", "자작자작", "클래스팅", "클래스팅 AI", "토도수학", "알공 수학", "똑똑수학탐험대", "토도한글", "러니", "레서", "매일국어T", "리드", "토도영어", "알공 영어", "쿠키영어", "리딩앤", "리딩게이트", "리딩오션", "원아워", "영어독후활동프로그램", "코드모스", "엘리스스쿨", "엘리스 LXP", "플랭", "플랭스쿨", "스쿨런", "두드림", "AI 코스웨어", "코스웨어", "지니아튜터", "매쓰홀릭", "매쓰홀릭T", "스쿨플랫", "매쓰플랫", "수학대왕", "기출탭탭", "일프로연산", "문제은행", "진단평가", "학력진단", "단원평가", "리드 인공지능 문해력 진단", "수학 학습 프로그램", "평가지원", "평가"]},
+    {"key": "teacherAi", "label": "교사업무지원 AI", "keywords": ["마이클", "MyClass", "My Class", "이음AI", "이음 AI", "AI 구독", "AI구독", "인라인AI", "인라인 AI", "InlineAI", "Inline AI", "유튜브", "YouTube", "GPT", "지피티", "챗지피티", "클로드", "Claude", "제미나이", "Gemini", "캡컷", "CapCut", "진로진학상담", "수파베이스", "Supabase", "supabase", "커서", "Cursor", "Google AI Pro", "구글 AI", "Grok", "퍼플렉시티", "Perplexity", "구글원", "구글 원", "Google One", "마누스", "Manus", "하마룸"]},
+    {"key": "tool", "label": "수업도구", "keywords": ["젠스파크", "Genspark", "학습지원", "Zoom", "줌", "Vrew", "vrew", "브루", "캔바", "Canva", "미리캔버스", "젭", "ZEP", "카훗", "Kahoot", "북크리에이터", "패들렛", "Padlet", "감마", "Gamma", "수노", "Suno", "뤼튼", "노션", "Notion", "띵커벨", "퀴즈앤", "클래스카드", "퀴즈렛", "다했니", "슬라이도", "망고보드", "투닝", "스픽", "Speak", "일레븐랩스", "ElevenLabs", "런웨이", "Runway", "미드저니", "Midjourney", "교우관계", "화상영어", "메타버스", "클링AI", "클링", "공학도구", "심스페이스", "마음일기", "AI대화", "감정사전", "마음관리", "라포라포", "냅킨AI", "냅킨 AI", "아트봉봉", "힉스필드", "히그스필드", "스카이워크"]},
+    {"key": "hardware", "label": "하드웨어·디바이스", "keywords": ["태블릿", "태블릿PC", "태블릿 PC", "태블릿컴퓨터", "태블릿 컴퓨터", "테블릿", "테블릿PC", "테블릿 PC", "노트북", "전자칠판", "충전함", "실물화상기", "실물 화상기", "크롬북", "아이패드", "거치대", "갤럭시탭", "갤럭시 탭", "S10FE", "S11", "키보드", "마우스", "카메라", "웹캠", "모니터", "스마트기기", "디바이스", "비스포크", "무선청소기", "청소기", "AI제트", "청정스테이션", "텔레비전", "냉장고"]},
+    {"key": "coding", "label": "코딩", "keywords": ["코딩", "Coding", "퓨너스"]},
+    {"key": "material", "label": "교구·실물자료", "keywords": ["레고", "LEGO", "스파이크", "포디랜드", "4D프레임", "고피쉬", "카드게임", "보드게임", "키트", "모형", "드론", "로봇", "메이커", "3D펜", "VR", "AR"]},
+    {"key": "book", "label": "교재·도서", "keywords": ["만점왕", "EBS", "워크북", "문제집", "받아쓰기", "일일수학", "기능중심수학", "한걸음 수학", "학습지", "교과서 외", "권세트", "4권세트", "느린학습자용 교재 세트", "초등 쓰기 워크북"]},
+    {"key": "aiep", "label": "AIEP(AI데이터 교육플랫폼)", "keywords": ["디지털플랫폼 운영 및 유지관리", "AI-데이터 중심"]},
+    {"key": "service", "label": "연수·컨설팅·용역", "keywords": ["연수", "강사", "컨설팅", "직무연수", "교원연수", "운영용역"]},
+    {"key": "etcDevice", "label": "기타기기", "keywords": []},
+    {"key": "uncategorized", "label": "미분류", "keywords": []},
+]
+# 계약 하나하나를 손으로 정한 유형 (계약번호 → 유형 key). 아래 자동 보조 규칙보다 먼저다.
+PURCHASE_TYPE_MANUAL_OVERRIDES = {
+    "202608031409153": "tool",
+    "202607161381940": "tool",
+    "202607161380648": "tool",
+    "202606301340573": "tool",
+    "202606301340572": "tool",
+    "202606301340571": "tool",
+    "202606261336675": "tool",
+    "202606221322176": "tool",
+    "202605221258266": "tool",
+    "202604301207798": "tool",
+    "202604271195124": "tool",
+    "202604271195767": "tool",
+    "contract:R26TA02260184": "aiep",
+    "contract:R26TA01931534": "aiep",
+    "contract:R26TA01573010": "aiep",
+}
+# 키워드에 하나도 걸리지 않은 계약(미분류)을 계약명 표현으로 한 번 더 나누는 보조 규칙 (2026-11-24).
+#   1) 구독·이용권·라이선스·소프트웨어            -> 코스웨어  ("프로그램 구독", "소프트웨어 라이선스 구입")
+#   2) 물품                                       -> 기타기기  ("AI 디지털 활용 선도학교 운영 물품 구입")
+#   3) 에듀테크·프로그램                          -> 코스웨어  ("에듀테크 구입", "프로그램 구입")
+# 물품이 2)에서 먼저 걸리므로 "에듀테크 물품 구입", "프로그램 운영 물품 구입"은 기타기기다.
+# 태블릿·노트북처럼 다른 유형 키워드가 있는 계약은 이 규칙까지 오지 않는다 (그 유형 그대로).
+FALLBACK_COURSEWARE_STRONG = ("구독", "이용권", "라이선스", "라이센스", "소프트웨어")
+FALLBACK_ETC_DEVICE = ("물품",)
+FALLBACK_COURSEWARE_WEAK = ("에듀테크", "프로그램")
+
+
+def normalize_search_text(value):
+    # 페이지 스크립트의 normalizeSearchText와 같다 (소문자 + 공백 제거)
+    return re.sub(r"\s+", "", (value or "").lower())
+
+
+def classify_purchase_type_key(name):
+    # 페이지 스크립트의 classifyPurchaseType 키워드 판정과 같다 (수동 지정·업체 지정은 뺀 순수 키워드 판정)
+    text = normalize_search_text(name)
+    courseware_generic = False
+    for purchase_type in PURCHASE_TYPES:
+        for keyword in purchase_type["keywords"]:
+            if normalize_search_text(keyword) in text:
+                if purchase_type["key"] == "courseware" and keyword in ("코스웨어", "AI 코스웨어"):
+                    courseware_generic = True
+                if purchase_type["key"] != "courseware" or keyword != "코스웨어":
+                    return purchase_type["key"]
+    return "courseware" if courseware_generic else "uncategorized"
+
+
+def fallback_purchase_type_key(name):
+    # 미분류로 남는 계약명에만 쓴다. 해당 없으면 ""
+    text = normalize_search_text(name)
+    if any(word in text for word in FALLBACK_COURSEWARE_STRONG):
+        return "courseware"
+    if any(word in text for word in FALLBACK_ETC_DEVICE):
+        return "etcDevice"
+    if any(word in text for word in FALLBACK_COURSEWARE_WEAK):
+        return "courseware"
+    return ""
+
+
+def build_purchase_type_overrides(id_name_pairs):
+    # {레코드 id: 유형 key}. 페이지 스크립트의 PURCHASE_TYPE_OVERRIDES로 실린다 (분류할 때 가장 먼저 본다).
+    overrides = {}
+    for record_id, name in id_name_pairs:
+        if not record_id or classify_purchase_type_key(name) != "uncategorized":
+            continue
+        key = fallback_purchase_type_key(name)
+        if key:
+            overrides[str(record_id)] = key
+    overrides.update(PURCHASE_TYPE_MANUAL_OVERRIDES)
+    return overrides
+
+
+def extra_purchase_type_pairs():
+    # 통합 페이지에는 싣지 않지만 영업관리 화면이 같은 규칙으로 분류하는 레코드 (나라장터 발주계획·공공기관 건, 학교장터 공고)
+    pairs = []
+    for file_name in ("g2b_cumulative.json", "s2b_notices.json"):
+        try:
+            with open(os.path.join(APP_DIR, file_name), "r", encoding="utf-8") as file:
+                records = json.load(file).get("records", [])
+        except Exception:
+            continue
+        pairs.extend((record.get("id", ""), record.get("name", "")) for record in records)
+    return pairs
 
 GEO_FIELDS = ("region", "region_status", "region_source", "region_candidates", "support_office", "subregion")
 
@@ -2212,6 +2327,11 @@ def build_cumulative_html(data):
         and not any(re.sub(r"\s+", "", kw).lower() in re.sub(r"\s+", "", rec["name"]).lower() for kw in VENDOR_COURSEWARE_AIDT_KEYWORDS)
     }
     vendor_courseware_json = json.dumps(vendor_courseware, ensure_ascii=False, separators=(",", ":"))
+    purchase_type_overrides = build_purchase_type_overrides(
+        [(rec["id"], rec["name"]) for rec in dashboard_records if str(rec["id"]) not in vendor_courseware] + extra_purchase_type_pairs()
+    )
+    purchase_type_overrides_json = json.dumps(purchase_type_overrides, ensure_ascii=False, separators=(",", ":"))
+    purchase_types_json = json.dumps(PURCHASE_TYPES, ensure_ascii=False, separators=(",", ":"))
     vendor_canonical_json = json.dumps(build_vendor_canonical([rec["counterpart"] for rec in dashboard_records]), ensure_ascii=False, separators=(",", ":"))
 
     css = """
@@ -2330,36 +2450,8 @@ var dashboardDetailFilter=null;
 var activePurchaseType='';
 var purchaseVendorScope='all';
 var lastPurchaseStats=null;
-const PURCHASE_TYPES=[
-{key:'aidt',label:'AI디지털 교육자료 (AIDT)',keywords:['AIDT','디지털 교육자료','디지털교육자료','AI디지털교과서','AI 디지털 교과서','발행사 AIDT']},
-{key:'courseware',label:'코스웨어',keywords:['코들','Codle','초코팝','초코클래스','달달','옥수수','홈런','아이스크림홈런','밀크티','스마트올','엘리하이','자작자작','클래스팅','클래스팅 AI','토도수학','알공 수학','똑똑수학탐험대','토도한글','러니','레서','매일국어T','리드','토도영어','알공 영어','쿠키영어','리딩앤','리딩게이트','리딩오션','원아워','영어독후활동프로그램','코드모스','엘리스스쿨','엘리스 LXP','플랭','플랭스쿨','스쿨런','두드림','AI 코스웨어','코스웨어','지니아튜터','매쓰홀릭','매쓰홀릭T','스쿨플랫','매쓰플랫','수학대왕','기출탭탭','일프로연산','문제은행','진단평가','학력진단','단원평가','리드 인공지능 문해력 진단','수학 학습 프로그램','평가지원','평가']},
-{key:'teacherAi',label:'교사업무지원 AI',keywords:['마이클','MyClass','My Class','이음AI','이음 AI','AI 구독','AI구독','인라인AI','인라인 AI','InlineAI','Inline AI','유튜브','YouTube','GPT','지피티','챗지피티','클로드','Claude','제미나이','Gemini','캡컷','CapCut','진로진학상담','수파베이스','Supabase','supabase','커서','Cursor','Google AI Pro','구글 AI','Grok','퍼플렉시티','Perplexity','구글원','구글 원','Google One','마누스','Manus','하마룸']},
-{key:'tool',label:'수업도구',keywords:['젠스파크','Genspark','학습지원','Zoom','줌','Vrew','vrew','브루','캔바','Canva','미리캔버스','젭','ZEP','카훗','Kahoot','북크리에이터','패들렛','Padlet','감마','Gamma','수노','Suno','뤼튼','노션','Notion','띵커벨','퀴즈앤','클래스카드','퀴즈렛','다했니','슬라이도','망고보드','투닝','스픽','Speak','일레븐랩스','ElevenLabs','런웨이','Runway','미드저니','Midjourney','교우관계','화상영어','메타버스','클링AI','클링','공학도구','심스페이스','마음일기','AI대화','감정사전','마음관리','라포라포','냅킨AI','냅킨 AI','아트봉봉','힉스필드','히그스필드','스카이워크']},
-{key:'hardware',label:'하드웨어·디바이스',keywords:['태블릿','태블릿PC','태블릿 PC','태블릿컴퓨터','태블릿 컴퓨터','테블릿','테블릿PC','테블릿 PC','노트북','전자칠판','충전함','실물화상기','실물 화상기','크롬북','아이패드','거치대','갤럭시탭','갤럭시 탭','S10FE','S11','키보드','마우스','카메라','웹캠','모니터','스마트기기','디바이스','비스포크','무선청소기','청소기','AI제트','청정스테이션','텔레비전','냉장고']},
-{key:'coding',label:'코딩',keywords:['코딩','Coding','퓨너스']},
-{key:'material',label:'교구·실물자료',keywords:['레고','LEGO','스파이크','포디랜드','4D프레임','고피쉬','카드게임','보드게임','키트','모형','드론','로봇','메이커','3D펜','VR','AR']},
-{key:'book',label:'교재·도서',keywords:['만점왕','EBS','워크북','문제집','받아쓰기','일일수학','기능중심수학','한걸음 수학','학습지','교과서 외','권세트','4권세트','느린학습자용 교재 세트','초등 쓰기 워크북']},
-{key:'aiep',label:'AIEP(AI데이터 교육플랫폼)',keywords:['디지털플랫폼 운영 및 유지관리','AI-데이터 중심']},
-{key:'service',label:'연수·컨설팅·용역',keywords:['연수','강사','컨설팅','직무연수','교원연수','운영용역']},
-{key:'uncategorized',label:'미분류',keywords:[]}
-];
-const PURCHASE_TYPE_OVERRIDES={
-'202608031409153':'tool',
-'202607161381940':'tool',
-'202607161380648':'tool',
-'202606301340573':'tool',
-'202606301340572':'tool',
-'202606301340571':'tool',
-'202606261336675':'tool',
-'202606221322176':'tool',
-'202605221258266':'tool',
-'202604301207798':'tool',
-'202604271195124':'tool',
-'202604271195767':'tool',
-'contract:R26TA02260184':'aiep',
-'contract:R26TA01931534':'aiep',
-'contract:R26TA01573010':'aiep'
-};
+const PURCHASE_TYPES=__PURCHASE_TYPES__;
+const PURCHASE_TYPE_OVERRIDES=__PURCHASE_TYPE_OVERRIDES__;
 const VENDOR_COURSEWARE_IDS=__VENDOR_COURSEWARE_IDS__;
 const VENDOR_CANONICAL=__VENDOR_CANONICAL__;
 var REGION_SUPPORT_TOKENS={서울:['서울','서울특별시'],부산:['부산','부산광역시'],대구:['대구','대구광역시'],인천:['인천','인천광역시'],광주:['광주','광주광역시'],대전:['대전','대전광역시'],울산:['울산','울산광역시'],세종:['세종','세종특별자치시'],경기:['경기','경기도'],강원:['강원','강원특별자치도'],충북:['충북','충청북도'],충남:['충남','충청남도'],전북:['전북','전라북도','전북특별자치도'],전남:['전남','전라남도'],경북:['경북','경상북도'],경남:['경남','경상남도'],제주:['제주','제주특별자치도']};
@@ -2449,7 +2541,7 @@ function sortedEntries(map,counts){return Object.keys(map).map(function(key){ret
 function escapeHtml(value){return String(value||'').replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch];});}
 function normalizedIncludes(text,keyword){return normalizeSearchText(text).indexOf(normalizeSearchText(keyword))!==-1;}
 function purchaseTypeByKey(key){for(var i=0;i<PURCHASE_TYPES.length;i++){if(PURCHASE_TYPES[i].key===key){return PURCHASE_TYPES[i];}}return PURCHASE_TYPES[PURCHASE_TYPES.length-1];}
-function purchaseTypeTooltip(item){var desc={aidt:'AI 디지털 교육자료, AI 디지털 교과서, 발행사 AIDT 계약입니다. 많이 보이는 품목: AIDT, 디지털교육자료, AI디지털교과서.',courseware:'교과 학습형 코스웨어와 진단·평가·문제은행 도구입니다. 많이 보이는 품목: 초코, 홈런, 밀크티, 스마트올, 토도수학, 리딩앤, 플랭, 스쿨플랫, 매쓰플랫, 지니아튜터, 코스웨어.',teacherAi:'교사의 업무, 콘텐츠 제작, 검색, 상담, AI 활용을 돕는 도구입니다. 많이 보이는 품목: GPT, Claude, Gemini, 유튜브, 캡컷, 커서, Supabase, 진로진학상담.',tool:'수업 진행, 활동, 발표, 협업, 생성형 AI 활용을 돕는 수업도구입니다. 많이 보이는 품목: Canva, Padlet, Kahoot, ZEP, Zoom, Vrew, 메타버스, 클링, 심스페이스.',hardware:'수업이나 학교 운영에 쓰이는 하드웨어와 디바이스입니다. 많이 보이는 품목: 태블릿, 노트북, 전자칠판, 크롬북, 청소기, TV, 냉장고.',coding:'코딩, SW, 개발 학습 관련 도구입니다. 많이 보이는 품목: 코딩, Coding, 퓨너스.',material:'실물 교구와 체험형 자료입니다. 많이 보이는 품목: 레고, 스파이크, 4D프레임, 보드게임, 키트, 드론, 로봇, VR/AR.',book:'교재, 도서, 워크북, 문제집류입니다. 많이 보이는 품목: EBS, 만점왕, 워크북, 문제집, 학습지, 교재 세트.',service:'연수, 컨설팅, 강사, 운영 용역입니다. 많이 보이는 품목: 교원연수, 직무연수, 강사, 컨설팅, 운영용역.',uncategorized:'아직 사전 규칙에 걸리지 않은 항목입니다. 목록을 확인해 반복 키워드를 새 유형 규칙에 추가하는 후보입니다.'};var key=item&&item.key?item.key:'uncategorized';return (item&&item.label?item.label:'미분류')+'\\n'+(desc[key]||desc.uncategorized);}
+function purchaseTypeTooltip(item){var desc={aidt:'AI 디지털 교육자료, AI 디지털 교과서, 발행사 AIDT 계약입니다. 많이 보이는 품목: AIDT, 디지털교육자료, AI디지털교과서.',courseware:'교과 학습형 코스웨어와 진단·평가·문제은행 도구입니다. 많이 보이는 품목: 초코, 홈런, 밀크티, 스마트올, 토도수학, 리딩앤, 플랭, 스쿨플랫, 매쓰플랫, 지니아튜터, 코스웨어. 제품명 없이 에듀테크·프로그램·구독·이용권·라이선스·소프트웨어로만 적힌 계약도 여기에 넣습니다.',teacherAi:'교사의 업무, 콘텐츠 제작, 검색, 상담, AI 활용을 돕는 도구입니다. 많이 보이는 품목: GPT, Claude, Gemini, 유튜브, 캡컷, 커서, Supabase, 진로진학상담.',tool:'수업 진행, 활동, 발표, 협업, 생성형 AI 활용을 돕는 수업도구입니다. 많이 보이는 품목: Canva, Padlet, Kahoot, ZEP, Zoom, Vrew, 메타버스, 클링, 심스페이스.',hardware:'수업이나 학교 운영에 쓰이는 하드웨어와 디바이스입니다. 많이 보이는 품목: 태블릿, 노트북, 전자칠판, 크롬북, 청소기, TV, 냉장고.',coding:'코딩, SW, 개발 학습 관련 도구입니다. 많이 보이는 품목: 코딩, Coding, 퓨너스.',material:'실물 교구와 체험형 자료입니다. 많이 보이는 품목: 레고, 스파이크, 4D프레임, 보드게임, 키트, 드론, 로봇, VR/AR.',book:'교재, 도서, 워크북, 문제집류입니다. 많이 보이는 품목: EBS, 만점왕, 워크북, 문제집, 학습지, 교재 세트.',service:'연수, 컨설팅, 강사, 운영 용역입니다. 많이 보이는 품목: 교원연수, 직무연수, 강사, 컨설팅, 운영용역.',etcDevice:'제품명 없이 물품 구입으로만 적힌 계약입니다(태블릿·노트북 등 하드웨어 유형에 드는 것은 제외). 많이 보이는 표현: 운영 물품 구입, 물품 구매.',uncategorized:'아직 사전 규칙에 걸리지 않은 항목입니다. 목록을 확인해 반복 키워드를 새 유형 규칙에 추가하는 후보입니다.'};var key=item&&item.key?item.key:'uncategorized';return (item&&item.label?item.label:'미분류')+'\\n'+(desc[key]||desc.uncategorized);}
 function isComplexContract(name){return /외\\s*\\d+\\s*종/.test(name||'');}
 function amountFromRow(row){var cell=row.querySelector('td.tr');var digits=(cell?cell.textContent:'').replace(/[^0-9]/g,'');return Number(digits||0);}
 function vendorMatchesScope(row){var vendor=row.getAttribute('data-counterpart')||'';var has=normalizeSearchText(vendor).indexOf(normalizeSearchText('미래엔'))!==-1;if(purchaseVendorScope==='mirae'){return has;}if(purchaseVendorScope==='other'){return !has;}return true;}
@@ -2512,6 +2604,7 @@ document.addEventListener('DOMContentLoaded',function(){populateMonthPurchaseTyp
     js = js.replace("__DEFAULT_DATE_FROM__", default_date_from).replace("__DEFAULT_DATE_TO__", default_date_to)
     js = js.replace("__DASHBOARD_RECORDS__", dashboard_json.replace("</", "<\\/"))
     js = js.replace("__VENDOR_COURSEWARE_IDS__", vendor_courseware_json)
+    js = js.replace("__PURCHASE_TYPES__", purchase_types_json).replace("__PURCHASE_TYPE_OVERRIDES__", purchase_type_overrides_json)
     js = js.replace("__VENDOR_CANONICAL__", vendor_canonical_json)
 
     return (
