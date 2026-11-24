@@ -529,7 +529,7 @@ def filter_records(records, covers, backfill_terms=None):
         if backfill_terms:
             if not any(term in name for term in backfill_terms):
                 continue
-        elif is_excluded_contract_name(name):
+        elif is_excluded_contract_name(name) or is_irrelevant_uncategorized(name, record.get("계약대상자", "")):
             continue
         tagged = dict(record)
         tagged["매칭키워드"] = tag_keywords(name) or list(covers)
@@ -1831,13 +1831,13 @@ VENDOR_COURSEWARE_AIDT_KEYWORDS = ("AIDT", "디지털 교육자료", "디지털�
 # ---------------------------------------------------------------------------
 PURCHASE_TYPES = [
     {"key": "aidt", "label": "AI디지털 교육자료 (AIDT)", "keywords": ["AIDT", "디지털 교육자료", "디지털교육자료", "AI디지털교과서", "AI 디지털 교과서", "발행사 AIDT"]},
-    {"key": "courseware", "label": "코스웨어", "keywords": ["코들", "Codle", "초코팝", "초코클래스", "달달", "옥수수", "홈런", "아이스크림홈런", "밀크티", "스마트올", "엘리하이", "자작자작", "클래스팅", "클래스팅 AI", "토도수학", "알공 수학", "똑똑수학탐험대", "토도한글", "러니", "레서", "매일국어T", "리드", "토도영어", "알공 영어", "쿠키영어", "리딩앤", "리딩게이트", "리딩오션", "원아워", "영어독후활동프로그램", "코드모스", "엘리스스쿨", "엘리스 LXP", "플랭", "플랭스쿨", "스쿨런", "두드림", "AI 코스웨어", "코스웨어", "지니아튜터", "매쓰홀릭", "매쓰홀릭T", "스쿨플랫", "매쓰플랫", "수학대왕", "기출탭탭", "일프로연산", "문제은행", "진단평가", "학력진단", "단원평가", "리드 인공지능 문해력 진단", "수학 학습 프로그램", "평가지원", "평가", "아이글", "AiGLE"]},
-    {"key": "teacherAi", "label": "교사업무지원 AI", "keywords": ["마이클", "MyClass", "My Class", "이음AI", "이음 AI", "AI 구독", "AI구독", "인라인AI", "인라인 AI", "InlineAI", "Inline AI", "유튜브", "YouTube", "GPT", "지피티", "챗지피티", "클로드", "Claude", "제미나이", "Gemini", "캡컷", "CapCut", "진로진학상담", "수파베이스", "Supabase", "supabase", "커서", "Cursor", "Google AI Pro", "구글 AI", "Grok", "퍼플렉시티", "Perplexity", "구글원", "구글 원", "Google One", "마누스", "Manus", "하마룸"]},
-    {"key": "tool", "label": "수업도구", "keywords": ["젠스파크", "Genspark", "학습지원", "Zoom", "줌", "Vrew", "vrew", "브루", "캔바", "Canva", "미리캔버스", "젭", "ZEP", "카훗", "Kahoot", "북크리에이터", "패들렛", "Padlet", "감마", "Gamma", "수노", "Suno", "뤼튼", "노션", "Notion", "띵커벨", "퀴즈앤", "클래스카드", "퀴즈렛", "다했니", "슬라이도", "망고보드", "투닝", "스픽", "Speak", "일레븐랩스", "ElevenLabs", "런웨이", "Runway", "미드저니", "Midjourney", "교우관계", "화상영어", "메타버스", "클링AI", "클링", "공학도구", "심스페이스", "마음일기", "AI대화", "감정사전", "마음관리", "라포라포", "냅킨AI", "냅킨 AI", "아트봉봉", "힉스필드", "히그스필드", "스카이워크"]},
-    {"key": "hardware", "label": "하드웨어·디바이스", "keywords": ["태블릿", "태블릿PC", "태블릿 PC", "태블릿컴퓨터", "태블릿 컴퓨터", "테블릿", "테블릿PC", "테블릿 PC", "노트북", "전자칠판", "충전함", "실물화상기", "실물 화상기", "크롬북", "아이패드", "거치대", "갤럭시탭", "갤럭시 탭", "S10FE", "S11", "키보드", "마우스", "카메라", "웹캠", "모니터", "스마트기기", "디바이스", "비스포크", "무선청소기", "청소기", "AI제트", "청정스테이션", "텔레비전", "냉장고"]},
+    {"key": "courseware", "label": "코스웨어", "keywords": ["코들", "Codle", "초코팝", "초코클래스", "달달", "옥수수", "홈런", "아이스크림홈런", "밀크티", "스마트올", "엘리하이", "자작자작", "클래스팅", "클래스팅 AI", "토도수학", "알공 수학", "똑똑수학탐험대", "토도한글", "러니", "레서", "매일국어T", "리드", "토도영어", "알공 영어", "쿠키영어", "리딩앤", "리딩게이트", "리딩오션", "원아워", "영어독후활동프로그램", "코드모스", "엘리스스쿨", "엘리스 LXP", "플랭", "플랭스쿨", "스쿨런", "두드림", "AI 코스웨어", "코스웨어", "지니아튜터", "매쓰홀릭", "매쓰홀릭T", "스쿨플랫", "매쓰플랫", "수학대왕", "기출탭탭", "일프로연산", "문제은행", "진단평가", "학력진단", "단원평가", "리드 인공지능 문해력 진단", "수학 학습 프로그램", "평가지원", "평가", "아이글", "AiGLE", "밀크T", "홀링", "Ai영어쌤", "2MEU", "온라인 학습콘텐츠"]},
+    {"key": "teacherAi", "label": "교사업무지원 AI", "keywords": ["마이클", "MyClass", "My Class", "이음AI", "이음 AI", "AI 구독", "AI구독", "인라인AI", "인라인 AI", "InlineAI", "Inline AI", "유튜브", "YouTube", "GPT", "지피티", "챗지피티", "클로드", "Claude", "제미나이", "Gemini", "캡컷", "CapCut", "진로진학상담", "수파베이스", "Supabase", "supabase", "커서", "Cursor", "Google AI Pro", "구글 AI", "Grok", "퍼플렉시티", "Perplexity", "구글원", "구글 원", "Google One", "마누스", "Manus", "하마룸", "헬피챗"]},
+    {"key": "tool", "label": "수업도구", "keywords": ["젠스파크", "Genspark", "학습지원", "Zoom", "줌", "Vrew", "vrew", "브루", "캔바", "Canva", "미리캔버스", "젭", "ZEP", "카훗", "Kahoot", "북크리에이터", "패들렛", "Padlet", "감마", "Gamma", "수노", "Suno", "뤼튼", "노션", "Notion", "띵커벨", "퀴즈앤", "클래스카드", "퀴즈렛", "다했니", "슬라이도", "망고보드", "투닝", "스픽", "Speak", "일레븐랩스", "ElevenLabs", "런웨이", "Runway", "미드저니", "Midjourney", "교우관계", "화상영어", "메타버스", "클링AI", "클링", "공학도구", "심스페이스", "마음일기", "AI대화", "감정사전", "마음관리", "라포라포", "냅킨AI", "냅킨 AI", "아트봉봉", "힉스필드", "히그스필드", "스카이워크", "Snorkl", "스노클"]},
+    {"key": "hardware", "label": "하드웨어·디바이스", "keywords": ["태블릿", "태블릿PC", "태블릿 PC", "태블릿컴퓨터", "태블릿 컴퓨터", "테블릿", "테블릿PC", "테블릿 PC", "노트북", "전자칠판", "충전함", "실물화상기", "실물 화상기", "크롬북", "아이패드", "거치대", "갤럭시탭", "갤럭시 탭", "S10FE", "S11", "키보드", "마우스", "카메라", "웹캠", "모니터", "스마트기기", "디바이스", "비스포크", "무선청소기", "청소기", "AI제트", "청정스테이션", "텔레비전", "냉장고", "스피커", "스마트플러그"]},
     {"key": "coding", "label": "코딩", "keywords": ["코딩", "Coding", "퓨너스"]},
-    {"key": "material", "label": "교구·실물자료", "keywords": ["레고", "LEGO", "스파이크", "포디랜드", "4D프레임", "고피쉬", "카드게임", "보드게임", "키트", "모형", "드론", "로봇", "메이커", "3D펜", "VR", "AR"]},
-    {"key": "book", "label": "교재·도서", "keywords": ["만점왕", "EBS", "워크북", "문제집", "받아쓰기", "일일수학", "기능중심수학", "한걸음 수학", "학습지", "교과서 외", "권세트", "4권세트", "느린학습자용 교재 세트", "초등 쓰기 워크북"]},
+    {"key": "material", "label": "교구·실물자료", "keywords": ["레고", "LEGO", "스파이크", "포디랜드", "4D프레임", "고피쉬", "카드게임", "보드게임", "키트", "모형", "드론", "로봇", "메이커", "3D펜", "VR", "AR", "망원경", "현미경", "과학탐구 도구", "NFC", "키링", "DIY", "카미봇"]},
+    {"key": "book", "label": "교재·도서", "keywords": ["만점왕", "EBS", "워크북", "문제집", "받아쓰기", "일일수학", "기능중심수학", "한걸음 수학", "학습지", "교과서 외", "권세트", "4권세트", "느린학습자용 교재 세트", "초등 쓰기 워크북", "디딤돌 초등", "수학리더", "하루한장독해"]},
     {"key": "aiep", "label": "AIEP(AI데이터 교육플랫폼)", "keywords": ["디지털플랫폼 운영 및 유지관리", "AI-데이터 중심"]},
     {"key": "service", "label": "연수·컨설팅·용역", "keywords": ["연수", "강사", "컨설팅", "직무연수", "교원연수", "운영용역"]},
     {"key": "etcDevice", "label": "기타기기", "keywords": []},
@@ -1950,6 +1950,26 @@ def is_sido_office_platform(name, institution):
     if any(word in text for word in SIDO_OFFICE_PLATFORM_EXCLUDES):
         return False
     return not has_specific_type_keyword(name)
+
+
+# 어느 유형에도 들지 않는(미분류로 남을) 계약 가운데 교육 제품 구매와 무관한 것 (2026-11-24).
+# 인쇄·홍보물, 시상품·상품권, 가구·시설·임차, 다과, 내용을 알 수 없는 운영비 지출 등.
+# 유형 키워드가 있는 계약에는 적용하지 않는다 ("태블릿 임차"는 하드웨어 그대로).
+# 계약(학교장터 계약, 나라장터 계약)에만 쓴다 — 입찰공고·발주계획에는 쓰지 않는다 ("AI 학습 플랫폼 임차" 공고를 놓치지 않게).
+UNCATEGORIZED_EXCLUDE_RE = re.compile(
+    "인쇄|제본|현수막|리플렛|문집|발간"
+    "|시상|상품권|기념품|상장"
+    "|가구|의자|인테리어|부스(?!트)|임차|대여|방수|건축설계|캐노피|블라인드|변전실|단체복"
+    "|과자|다과|초콜릿"
+    "|운영비")
+
+
+def is_irrelevant_uncategorized(name, counterpart=""):
+    if is_vendor_courseware(counterpart):
+        return False
+    if classify_purchase_type_key(name) != "uncategorized" or fallback_purchase_type_key(name):
+        return False
+    return bool(UNCATEGORIZED_EXCLUDE_RE.search(name or ""))
 
 
 def build_purchase_type_overrides(records):
@@ -2581,7 +2601,7 @@ var VENDOR_ALIAS_RULES=[{keywords:['스쿨플랫','매쓰플랫'],vendor:'(주)�
 var DISTRIBUTOR_VENDORS=['나이스쿨','교육의정석','올댓스쿨','아이티존','엘위드'];
 // 코스웨어 유형 계약만 제품 제조사로 귀속하는 유통사 (그 밖의 유형은 해당 업체 매출 그대로)
 var TYPED_DISTRIBUTORS=[{vendor:'테크빌교육',type:'courseware'}];
-var PRODUCT_MAKERS=[{keywords:['초코클래스','초코팝','달달'],maker:'(주)미래엔'},{keywords:['토도'],maker:'주식회사 에누마코리아'},{keywords:['아이스크림홈런','홈런','스쿨런'],maker:'(주)아이스크림에듀'},{keywords:['기출탭탭','비상교육'],maker:'(주)비상교육'},{keywords:['스마트올'],maker:'(주)웅진씽크빅'},{keywords:['리딩앤'],maker:'(주)아이포트폴리오'},{keywords:['자작자작'],maker:'(주)팀플백'},{keywords:['클래스팅'],maker:'주식회사 씨티'},{keywords:['플랭'],maker:'주식회사 플랭'},{keywords:['지니아','천재교과서'],maker:'(주) 천재교과서'},{keywords:['천재교육'],maker:'(주)천재교육'},{keywords:['스쿨플랫','매쓰플랫'],maker:'(주)프리윌린'},{keywords:['마타수학'],maker:'마타에듀 주식회사'},{keywords:['원아워'],maker:'주식회사 제로엑스플로우'},{keywords:['코들','Codle'],maker:'주식회사 팀모노리스'},{keywords:['알공'],maker:'주식회사 디엔소프트'},{keywords:['매쓰홀릭'],maker:'주식회사 매쓰홀릭'},{keywords:['아이글','AiGLE'],maker:'주식회사 네오랩컨버전스'}];
+var PRODUCT_MAKERS=[{keywords:['초코클래스','초코팝','달달'],maker:'(주)미래엔'},{keywords:['토도'],maker:'주식회사 에누마코리아'},{keywords:['아이스크림홈런','홈런','스쿨런'],maker:'(주)아이스크림에듀'},{keywords:['기출탭탭','비상교육'],maker:'(주)비상교육'},{keywords:['스마트올'],maker:'(주)웅진씽크빅'},{keywords:['리딩앤'],maker:'(주)아이포트폴리오'},{keywords:['자작자작'],maker:'(주)팀플백'},{keywords:['클래스팅'],maker:'주식회사 씨티'},{keywords:['플랭'],maker:'주식회사 플랭'},{keywords:['지니아','천재교과서','밀크T'],maker:'(주) 천재교과서'},{keywords:['천재교육'],maker:'(주)천재교육'},{keywords:['스쿨플랫','매쓰플랫'],maker:'(주)프리윌린'},{keywords:['마타수학'],maker:'마타에듀 주식회사'},{keywords:['원아워'],maker:'주식회사 제로엑스플로우'},{keywords:['코들','Codle'],maker:'주식회사 팀모노리스'},{keywords:['알공'],maker:'주식회사 디엔소프트'},{keywords:['매쓰홀릭','홀링'],maker:'주식회사 매쓰홀릭'},{keywords:['아이글','AiGLE'],maker:'주식회사 네오랩컨버전스'}];
 function distributorMaker(text){if(/외[0-9]+(종|건)/.test(text)){return '';}var makers=[];PRODUCT_MAKERS.forEach(function(rule){var hit=rule.keywords.some(function(k){return text.indexOf(normalizeSearchText(k))!==-1;});if(hit&&makers.indexOf(rule.maker)===-1){makers.push(rule.maker);}});return makers.length===1?makers[0]:'';}
 function vendorAlias(name,counterpart,recordId){var text=normalizeSearchText(name||'');var own=normalizeSearchText(counterpart||'');var base=counterpart;var isDistributor=DISTRIBUTOR_VENDORS.some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;})||TYPED_DISTRIBUTORS.some(function(d){return own.indexOf(normalizeSearchText(d.vendor))!==-1&&classifyPurchaseType(name||'',recordId).key===d.type;});if(isDistributor){base=distributorMaker(text)||counterpart;}else{for(var i=0;i<VENDOR_ALIAS_RULES.length&&base===counterpart;i++){var rule=VENDOR_ALIAS_RULES[i];for(var j=0;j<rule.keywords.length;j++){if(text.indexOf(rule.keywords[j])!==-1){var keep=(rule.keepVendors||[]).some(function(v){return own.indexOf(normalizeSearchText(v))!==-1;});if(!keep){base=rule.vendor;}break;}}}}return VENDOR_CANONICAL[base]||base;}
 function pad2(n){return (n<10?'0':'')+n;}

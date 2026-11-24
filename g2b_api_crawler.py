@@ -513,7 +513,11 @@ def enrich(record, category):
     record["category"] = category
     record["keywords"] = local.tag_keywords(record.get("name", ""))
     name = record.get("name", "")
-    record["excluded"] = local.is_excluded_contract_name(name) if record.get("source") == "contract" else is_excluded_g2b_name(name)
+    if record.get("source") == "contract":
+        # 계약은 매출 집계로 들어가므로, 미분류로 남을 무관한 계약(인쇄·임차·운영비 등)도 뺀다
+        record["excluded"] = local.is_excluded_contract_name(name) or local.is_irrelevant_uncategorized(name, record.get("counterpart", ""))
+    else:
+        record["excluded"] = is_excluded_g2b_name(name)
     region = local.region_from_institution_name(institution) or {}
     resolved_region = region.get("region", "") or local.short_region(institution)
     record["region"] = "전남" if resolved_region == "광주" else resolved_region
